@@ -10,6 +10,22 @@
     <link href="./Theme Template for Bootstrap_files/bootstrap-theme.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="./Theme Template for Bootstrap_files/MyTheme.css" rel="stylesheet">
+    <!--为什么图标只有下面这个文件才有呢？？？-->
+    <!--<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+    <!--找到原因了，见笔记。-->
+
+    <style>
+        .main-content {
+            margin-top: 80px;
+        }
+
+        .carousel-inner .item {
+            line-height:300px;
+            text-align: center;
+            height: 400px;
+            background: black;
+        }
+    </style>
 
 </head>
 <body>
@@ -221,7 +237,7 @@
 
     <div class="section">
         <div class="page-header">
-            <h1>Labels</h1>
+            <h1>Labels and Badges</h1>
             <h1>
                 <span class="label label-danger">Danger</span>
                 <span class="label label-primary">Primary</span>
@@ -229,11 +245,15 @@
             </h1>
             <h2>
                 <span class="label label-danger">Danger</span>
-                <span class="label label-primary">Primary</span>
+                <span class="label label-primary">Primary
+                    <span class="badge">45</span></span>
                 <span class="label label-info">Info</span>
             </h2>
             <h3>
-                <span class="label label-danger">Danger</span>
+                <span class="label label-danger">
+                    Danger
+                    <span class="badge">45</span>
+                </span>
                 <span class="label label-primary">Primary</span>
                 <span class="label label-info">Info</span>
             </h3>
@@ -242,21 +262,188 @@
 
     <div class="section">
         <div class="page-header">
+            <h1>Navs</h1>
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#j1" data-toggle="tab">JuniorTour1</a></li>
+                <li>
+                    <a href="#j2" data-toggle="tab">JuniorTour2</a></li>
+                <li>
+                    <a href="#j3" data-toggle="tab">JuniorTour3</a></li>
+            </ul>
 
+            <div class="tab-content">
+                <div class="tab-pane active" id="j1">
+                    <h1>junortour1</h1>
+                </div>
+                <div class="tab-pane" id="j2">
+                    <h1>junortour2</h1>
+                </div>
+                <div class="tab-pane" id="j3">
+                    <h1>junortour3</h1>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="section">
         <div class="page-header">
-
+            <h1>Progress bars</h1>
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active"
+                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                    40%
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 40%">
+                    40%
+                </div>
+                <div class="progress-bar progress-bar-primary progress-bar-striped active" style="width: 20%">
+                    20%
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="section">
         <div class="page-header">
+            <h1>List groups</h1>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="list-group">
+                        <a href="" class="list-group-item active">
+                            <h4>Heading1</h4>
+                            <p>content1</p>
+                        </a><a href="" class="list-group-item">
+                        <h4>Heading2</h4>
+                        <p>content2</p>
+                    </a><a href="" class="list-group-item">
+                        <h4>Heading3</h4>
+                        <p>content3</p>
+                    </a><a href="" class="list-group-item">
+                        <h4>Heading4</h4>
+                        <p>content4</p>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="list-group">
+                        <a href="" class="list-group-item active">
+                            <h4>Heading1</h4>
+                            <p>content1</p>
+                        </a><a href="" class="list-group-item">
+                        <h4>Heading2</h4>
+                        <p>content2</p>
+                    </a><a href="" class="list-group-item">
+                        <h4>Heading3</h4>
+                        <p>content3</p>
+                    </a><a href="" class="list-group-item">
+                        <h4>Heading4</h4>
+                        <p>content4</p>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="page-header">
+            <h1>Panels</h1>
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h2>panel-heading</h2>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h2>panel-heading</h2>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="page-header">
+            <h1>Dismissible Alert</h1>
+            <div class="alert alert-info alert-dismissible">
+                <button class="close" data-dismiss="alert">
+                    <span>x</span>
+                </button>
+                Oh,no,look the right.I can be dismissed!!!
+            </div>
+            <div class="alert alert-success alert-dismissible">
+                <button class="close" data-dismiss="alert">
+                    <span>x</span>
+                </button>
+                Oh,no,look the right.I can be dismissed!!!
+            </div>
+            <div class="alert alert-danger alert-dismissible">
+                <button class="close" data-dismiss="alert">
+                    <span>x</span>
+                </button>
+                Oh,no,look the right.I can be dismissed!!!
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="page-header">
+            <h1>Carousel</h1>
+            <div class="carousel slide" id="example-carousel" data-ride="carousel">
+                <!--指针-->
+                <ol class="carousel-indicators">
+                    <li data-target="#example-carousel" data-slide-to="1" class="active"></li>
+                    <li data-target="#example-carousel" data-slide-to="2"></li>
+                    <li data-target="#example-carousel" data-slide-to="3"></li>
+                </ol>
+
+                <!--content-->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="Theme%20Template%20for%20Bootstrap_files/example.jpg" alt="">
+                        <h1>First</h1>
+                    </div>
+                    <div class="item">
+                        <img src="Theme%20Template%20for%20Bootstrap_files/example.jpg" alt="">
+                        <h1>First</h1>
+                    </div>
+                    <div class="item">
+                        <img src="Theme%20Template%20for%20Bootstrap_files/example.jpg" alt="">
+                        <h1>First</h1>
+                    </div>
+                </div>
+
+                <!--control-->
+                <a href="#example-carousel" class="left carousel-control"
+                data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"
+                    style="font-size: 50px">&lt;</span>
+                </a>
+                <a href="#example-carousel" class="right carousel-control"
+                   data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"
+                          style="font-size: 50px">&gt;</span>
+                </a>
+
+            </div>
 
         </div>
     </div>
+    
 
 </div>
 
