@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pseudo-class of anchor</title>
+    <style>
+        a:link {
+            color: blue;
+        }
+        a:hover {
+            color: red;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:active {
+            color: orange;
+        }
+        /*LHVA这种顺序使得未访问的链接呈现blue，只有未访问的才有悬停样式。
+        但是不论是否访问，都会有激活样式。
+        妙*/
+    </style>
+</head>
+<body>
+<a href="#1">醉漾轻舟1</a>
+<a href="#2">醉漾轻舟2</a>
+<a href="#3">醉漾轻舟3</a>
+<a href="#4">醉漾轻舟4</a>
+
+</body>
+</html>

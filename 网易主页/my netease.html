@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Netease</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="my%20neteasy.css">
+</head>
+<body>
+    <div class="top">
+        <div class="wrapper">
+            <ul class="left">
+                <li class="app">
+                    应用
+                    <em class="triangle"></em>
+                    <!--不一定非得只用ul，div也可以-->
+                        <ul class="hover-nav">
+                            <li class="app-news"><a href=""><span>网易新闻</span></a></li>
+                            <li class="app-music"><a href=""><span>网易云音乐</span></a></li>
+                            <li class="app-class"><a href=""><span>网易云课堂</span></a></li>
+                            <li class="app-note"><a href=""><span>有道云笔记</span></a></li>
+                            <li class="app-lofter"><a href=""><span>LOFTER</span></a></li>
+                        </ul>
+                </li>
+                <a href="#" class="home-page">设为首页</a>
+            </ul>
+
+            <span class="nav-right">
+                    <span class="login-wrapper">
+                        <a href="#" class="login-block">
+                            登录
+                        </a>
+                    </span>
+                    <span class=" register-email dropdown-trigger">
+                        <a href="#" class="email-block">
+                            <em class="nav-right-em-email">注册免费邮箱</em>
+                            <em class="triangle"></em>
+                        </a>
+                        <div class="dropdown-wrapper">
+                            <!--简单！没有尝试外包padding！-->
+                            <ul class="dropdown-menu clearfix">
+                                <!--似乎是不可能的，绝对定位的元素是不会被父元素包裹的。
+                                所以无法实现外边距。
+                                可以考虑用透明的边框？？-->
+                                <li><span><a href="">花溪碧1</a></span></li>
+                                <li><span><a href="">花溪碧2</a></span></li>
+                                <li class="dropdown-list-last"><span><a href="">花溪碧3</a></span></li>
+                            </ul>
+                        </div>
+                    </span>
+                <ul class="right">
+                <li class="nav-right-list">
+                    <a href="#" class="nav-right-block">
+                        <em class="nav-right-em entry-kaola">kaola</em>
+                        <em class="triangle"></em>
+                    </a>
+                </li>
+                <li class="nav-right-list">
+                    <a href="#" class="nav-right-block"> <em class="nav-right-em entry-email">邮箱</em><em class="triangle"></em></a></li>
+                <li class="nav-right-list">
+                    <a href="#" class="nav-right-block "><em class="nav-right-em entry-rmb">人民币</em><em class="triangle"></em></a></li>
+                <li class="nav-right-list">
+                    <a href="#" class="nav-right-block "><em class="nav-right-em entry-basket">购物车</em><em class="triangle"></em></a></li>
+                <li class="nav-right-list">
+                    <a href="#" class="nav-right-block "><em class="nav-right-em entry-love">爱心</em><em class="triangle"></em></a></li>
+                <li class="nav-right-list">
+                    <a href="#" class="nav-right-block "><em class="nav-right-em entry-lofter">LOFTER</em><em class="triangle"></em></a></li>
+                <li class="nav-right-list">
+                    <a href="#" class="nav-right-block "><em class="nav-right-em entry-bobo">BOBO</em><em class="triangle"></em></a></li>
+                <li class="nav-right-list">
+                    <a href="#" class="nav-right-block last-right-block"><em class="nav-right-em  entry-phone">手机</em></a></li>
+            </ul>
+            </span>
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="header">
+            <div class="two-logo clearfix">
+                <div class="logo"></div>
+                <div class="report"></div>
+            </div>
+
+            <div class="station-block clearfix">
+                <div class="station-group sg-1 clearfix">
+                    <ul class="station-nav strong clearfix">
+                        <li><a href="">新闻</a></li>
+                        <li><a href="">体育</a></li>
+                        <li><a href="">娱乐</a></li>
+                    </ul>
+                    <ul class="station-nav">
+                        <li><a href="">图片</a></li>
+                        <li><a href="">中超</a></li>
+                        <li><a href="">音乐</a></li>
+                    </ul>
+                    <ul class="station-nav">
+                        <li><a href="">军事</a></li>
+                        <li><a href="">NBA</a></li>
+                        <li><a href="">购彩</a></li>
+                    </ul>
+                    <ul class="station-nav">
+                        <li><a href="">评论</a></li>
+                        <li><a href="">电影</a></li>
+                        <li><a href="">电视</a></li>
+                    </ul>
+                </div>
+                <div class="station-group sg-1">
+                    <ul class="station-nav strong clearfix">
+                        <li><a href="">新闻</a></li>
+                        <li><a href="">体育</a></li>
+                        <li><a href="">娱乐</a></li>
+                    </ul>
+                    <ul class="station-nav">
+                        <li><a href="">图片</a></li>
+                        <li><a href="">中超</a></li>
+                        <li><a href="">音乐</a></li>
+                    </ul>
+                    <ul class="station-nav">
+                        <li><a href="">军事</a></li>
+                        <li><a href="">NBA</a></li>
+                        <li><a href="">购彩</a></li>
+                    </ul>
+                    <ul class="station-nav">
+                        <li><a href="">评论</a></li>
+                        <li><a href="">公开课</a></li>
+                        <li><a href="">电视</a></li>
+                    </ul>
+                </div>
+                <div class="station-group sg-3">
+                    <ul class="station-nav strong clearfix">
+                        <li><a href="">新闻</a></li>
+                        <li><a href="">体育</a></li>
+                        <li><a href="">娱乐</a></li>
+                    </ul>
+                    <ul class="station-nav">
+                        <li><a href="">军事</a></li>
+                        <li><a href="">NBA</a></li>
+                        <li><a href="">购彩</a></li>
+                    </ul>
+                    <ul class="station-nav">
+                        <li><a href="">智能硬件</a></li>
+                        <li><a href="">手机库</a></li>
+                        <li><a href="">电视</a></li>
+                    </ul>
+                </div>
+                <div class="station-group sg-4">
+                    <ul class="station-nav strong clearfix">
+                        <li><a href="">新闻</a></li>
+                        <li><a href="">体育</a></li>
+                        <li><a href="">娱乐</a></li>
+                    </ul>
+                    <ul class="station-nav">
+                        <li><a href="">军事</a></li>
+                        <li><a href="">NBA</a></li>
+                        <li><a href="">购彩</a></li>
+                    </ul>
+                    <ul class="station-nav">
+                        <li><a href="">评论</a></li>
+                        <li><a href="">电影</a></li>
+                        <li><a href="">电视</a></li>
+                    </ul>
+                </div>
+                <div class="station-group sg-4">
+                    <ul class="station-nav strong clearfix">
+                        <li><a href="">新闻</a></li>
+                        <li><a href="">体育</a></li>
+                        <li><a href="">娱乐</a></li>
+                    </ul>
+                    <ul class="station-nav">
+                        <li><a href="">军事</a></li>
+                        <li><a href="">NBA</a></li>
+                        <li><a href="">购彩</a></li>
+                    </ul>
+                    <ul class="station-nav">
+                        <li><a href="">评论</a></li>
+                        <li><a href="">电影</a></li>
+                        <li><a href="">电视</a></li>
+                    </ul>
+                </div>
+                <div class="station-group sg-4">
+                    <ul class="station-nav strong clearfix">
+                        <li><a href="">教育</a></li>
+                        <li><a href="">亲子</a></li>
+                        <li><a href="">哒哒</a></li>
+                    </ul>
+                    <ul class="station-nav">
+                        <li><a href="">军事</a></li>
+                        <li><a href="">NBA</a></li>
+                        <li><a href="">购彩</a></li>
+                    </ul>
+                    <ul class="station-nav">
+                        <li><a href="">评论</a></li>
+                        <li><a href="">电影</a></li>
+                        <li><a href="">电视</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="area clearfix">
+            <div class="main">
+                <div class="left-part">
+                    <div class="left-left">
+                        <div class="slide-img">
+                            <a href=""><img src="网易_files/slide.jpg" alt="slide-img"></a>
+                            <p>忍把浮名，且换了浅斟低唱</p>
+                        </div>
+
+                        <div class="video-class column">
+                            <div class="title-tab title-tab-2">
+                                <span class="tab " id="current-tab"><a href="">视频</a></span>
+                                <span class="tab"><a href="">公开课</a></span>
+                            </div>
+
+                                <div class="video-display">
+                                    <div class="recommend-video">
+                                        <div class="video-img"></div>
+                                        <p>偶学念奴声调</p>
+                                    </div>
+                                    <div class="recommend-video">
+                                        <div class="video-img"></div>
+                                        <p>不辞遍唱阳春</p>
+                                    </div>
+                                </div>
+
+                                    <div class="video-news">
+                                        <ul class="news-list">
+                                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                                            <li><a href="">落霞与孤鹜齐飞,秋水共长天一色</a></li>
+                                            <li><a href="" class="strong">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                                            <li><a href="">落霞与孤鹜齐飞,秋水共长天一色</a></li>
+                                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                                        </ul>
+                                        <ul class="news-list">
+                                            <li><a href="" class="strong">云销雨霁，彩彻区明</a></li>
+                                            <li><a href="">秋水共长天一色1</a><a href="">秋水共长天一色2</a></li>
+                                            <li><a href="">秋水共长天一色1</a><a href="">秋水共长天一色2</a></li>
+                                            <li><a href="">秋水共长天一色1</a><a href="">秋水共长天一色2</a></li>
+                                            <li><a href="">秋水共长天一色1</a><a href="">秋水共长天一色2</a></li>
+                                        </ul>
+                                    </div>
+
+                                <div class="yun-class">
+                                    <ul class="news-list">
+                                    <li><a href="" class="strong">云课堂</a><a href="">日日深杯酒满2</a><a
+                                            href="">日日深杯酒满3</a></li>
+                                    <li><a href="">日日深杯酒满1</a><a href="">日日深杯酒满2</a></li>
+                                </ul>
+                                    <ul class="news-list">
+                                    <li><a href="" class="strong">公开课</a><a href="">日日深杯酒满2</a><a
+                                            href="">日日深杯酒满3</a></li>
+                                    <li><a href="">日日深杯酒满1</a><a href="">日日深杯酒满2</a></li>
+                                </ul>
+                                 </div>
+                        </div>
+                        <div class="like-hot column">
+                            <div class="title-tab title-tab-3">
+                                <span class="tab " id="current-tab"><a href="">热点排行</a></span>
+                                <span class="tab"><a href="">精彩跟帖</a></span>
+                                <span class="tab"><a href="">热点排行</a></span>
+                            </div>
+
+
+                            <ul class="hot-list news-list">
+                                <li><a href="">二十年来如一梦，此身虽在堪惊1</a></li>
+                                <li><a href="">二十年来如一梦，此身虽在堪惊2</a></li>
+                                <li><a href="">二十年来如一梦，此身虽在堪惊3</a></li>
+                                <li><a href="">二十年来如一梦，此身虽在堪惊4</a></li>
+                                <li><a href="">二十年来如一梦，此身虽在堪惊5</a></li>
+                                <li><a href="">二十年来如一梦，此身虽在堪惊6</a></li>
+                                <li><a href="">二十年来如一梦，此身虽在堪惊7</a></li>
+                                <li><a href="">二十年来如一梦，此身虽在堪惊8</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class=" news-img column">
+                        <div class="title-tab title-tab-3">
+                            <span class="tab strong" id="current-tab"><a href="">新闻</a></span>
+                            <span class="tab"><a href="">公开课</a></span>
+                            <span class="tab"><a href="">军事 航空</a></span>
+                        </div>
+
+                        <ul class="news-list">
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="" class="strong">杏花疏影里，吹笛到天明</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        </ul>
+                        <ul class="news-list">
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="" class="strong">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        </ul>
+                        <ul class="news-list">
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="" class="strong">小舟从此逝，江海寄余生。</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        </ul>
+                        <ul class="news-list">
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="" class="strong">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="" class="strong">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        </ul>
+                        <ul class="news-list">
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="" class="strong">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="ad-special">
+                        <div class="advertisemen ad-content">
+                            <ul class="clearfix">
+                                <li><a href="">极目天涯百尺楼1</a><a href="">极目天涯百尺楼2</a></li>
+                                <li><a href="">极目天涯百尺楼1</a><a href="">极目天涯百尺楼2</a></li>
+                                <li><a href="">极目天涯百尺楼1</a><a href="">极目天涯百尺楼2</a></li>
+                                <li><a href="">极目天涯百尺楼1</a><a href="">极目天涯百尺楼2</a></li>
+                            </ul>
+                        </div>
+                        <div class="advertisement ad-wide">
+                            <p>I'm an advertisement. \(^o^)/~</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-main column">
+                <div class="product-list">
+                    <div class="title-tab title-tab-3 title-tab-3-pro">
+                        <span class="tab strong" id="current-tab"><a href="">网易产品</a></span>
+                        <div class="tab" id="smart-homepage"><a href="">智能主页</a></div>
+                    </div>
+
+                    <div class="product-block clearfix mailbox">
+                        <a class="product" href=""></a>
+                        <ul>
+                            <li><a href="">免费邮1</a></li>
+                            <li><a href="">企业邮箱</a></li>
+                            <li><a href="">邮箱大师</a></li>
+                            <li><a href="">易信</a></li>
+                                <li><a href="">VIP邮箱</a></li>
+                        </ul>
+                    </div>
+                    <div class="product-block clearfix games">
+                        <a class="product" href=""></a>
+                        <ul>
+                            <li><a href="">梦幻西游</a></li>
+                            <li><a href="">梦幻西游手游</a></li>
+                            <li><a href="">新大话</a></li>
+                            <li><a href="">魔兽世界</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">免费邮1</a></li>
+                            <li><a href="">免费邮2</a></li>
+                            <li><a href="">免费邮3</a></li>
+                            <li><a href="">免费邮4</a></li>
+                            <li><a href="">免费邮5</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">免费邮1</a></li>
+                            <li><a href="">免费邮2</a></li>
+                            <li><a href="">免费邮3</a></li>
+                            <li><a href="">免费邮4</a></li>
+                            <li><a href="">免费邮5</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">免费邮1</a></li>
+                            <li><a href="">免费邮2</a></li>
+                            <li><a href="">免费邮3</a></li>
+                            <li><a href="">免费邮4</a></li>
+                            <li><a href="">免费邮5</a></li>
+                        </ul>
+                    </div>
+                    <div class="product-block clearfix smell">
+                        <a class="product" href=""></a>
+                        <ul>
+                            <li><a href="">免费邮1</a></li>
+                            <li><a href="">免费邮2</a></li>
+                            <li><a href="">免费邮3</a></li>
+                            <li><a href="">免费邮4</a></li>
+                            <li><a href="">免费邮5</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">免费邮1</a></li>
+                            <li><a href="">免费邮2</a></li>
+                            <li><a href="">免费邮3</a></li>
+                            <li><a href="">免费邮4</a></li>
+                            <li><a href="">免费邮5</a></li>
+                        </ul>
+                    </div>
+                    <div class="product-block clearfix star">
+                        <a class="product" href=""></a>
+                        <ul>
+                            <li><a href="">免费邮1</a></li>
+                            <li><a href="">免费邮2</a></li>
+                            <li><a href="">免费邮3</a></li>
+                            <li><a href="">免费邮4</a></li>
+                            <li><a href="">免费邮5</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">免费邮1</a></li>
+                            <li><a href="">免费邮2</a></li>
+                            <li><a href="">免费邮3</a></li>
+                            <li><a href="">免费邮4</a></li>
+                            <li><a href="">免费邮5</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">免费邮1</a></li>
+                            <li><a href="">免费邮2</a></li>
+                            <li><a href="">免费邮3</a></li>
+                            <li><a href="">免费邮4</a></li>
+                            <li><a href="">免费邮5</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">免费邮1</a></li>
+                            <li><a href="">免费邮2</a></li>
+                            <li><a href="">免费邮3</a></li>
+                            <li><a href="">免费邮4</a></li>
+                            <li><a href="">免费邮5</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="advertisement advertisement-block">
+                    <h1>I'm an advertisement. \(^o^)/~</h1>
+                </div>
+
+                <div class="charity-media clearfix">
+                    <span class="title-charity">
+                        <strong>
+                            <a href="">公益</a>
+                            -
+                            <a href="">传媒</a>
+                        </strong>
+                        <p>网易新闻，世界在你手中</p>
+                    </span>
+
+                    <ul class="news-list">
+                        <li>
+                            <a href="">[公益]</a>
+                            <a href="">少年听雨歌楼上，红烛昏罗帐</a>
+                        </li>
+                        <li>
+                            <a href="">[公益]</a>
+                            <a href="">少年听雨歌楼上，红烛昏罗帐</a>
+                        </li>
+                        <li>
+                            <a href="">[公益]</a>
+                            <a href="">少年听雨歌楼上，红烛昏罗帐</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="advertisement ad-car">
+                    <span class="ad-car-tab active">
+                        <a href="">暗香1</a></span>
+                    <span class="ad-car-tab">
+                        <a href="">暗香2</a></span>
+                    <span class="ad-car-tab">
+                        <a href="">暗香3</a></span>
+                    <span class="ad-car-tab">
+                        <a  href="">暗香4</a></span>
+
+                    <div class="car-content">
+                        <h1>Let us try!</h1>
+                    </div>
+                </div>
+                <div class="advertisement advertisement-block">
+                    <h1>I'm an advertisement. \(^o^)/~</h1>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="area-body clearfix">
+            <div class="area-main">
+                <div class="column main-area">
+                    <div class="title-tab title-tab-3">
+                        <span class="tab strong" id="current-tab"><a href="">新闻</a></span>
+                        <span class="tab"><a href="">公开课</a></span>
+                        <span class="tab"><a href="">军事 航空</a></span>
+                    </div>
+                    <div class="head-part clearfix">
+                        <div class="head-screen">
+                            <a class="clearfix" href="">
+                                <img src="网易_files/head-part.jpg" alt="">
+                                <p>四川冠军</p>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="">人在楼中否1</a></li>
+                            <li><a href="">人在楼中否2</a></li>
+                            <li><a href="">人在楼中否3</a></li>
+                            <li><a href="">人在楼中否4</a></li>
+                            <li><a href="">人在楼中否5</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="news-list">
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="" class="strong">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                    </ul>
+                    <ul class="news-list">
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="" class="strong">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                    </ul>
+                </div>
+                <div class="column main-area">
+                    <div class="title-tab title-tab-3">
+                        <span class="tab strong" id="current-tab"><a href="">新闻</a></span>
+                        <span class="tab"><a href="">公开课</a></span>
+                        <span class="tab"><a href="">军事 航空</a></span>
+                    </div>
+                    <div class="head-part clearfix">
+                        <div class="head-screen">
+                            <a href="">
+                                <img src="网易_files/head-part.jpg" alt="">
+                                <p>四川冠军</p>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="">人在楼中否1</a></li>
+                            <li><a href="">人在楼中否2</a></li>
+                            <li><a href="">人在楼中否3</a></li>
+                            <li><a href="">人在楼中否4</a></li>
+                            <li><a href="">人在楼中否5</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="news-list">
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="" class="strong">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                    </ul>
+                    <ul class="news-list">
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="" class="strong">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                        <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="area-sub">
+                <div class="haitao-duobao">
+                    <div class="title-tab title-tab-2">
+                        <span class="tab strong" id="current-tab"><a href="">新闻</a></span>
+                        <span class="tab"><a href="">公开课</a></span>
+                    </div>
+                    <div class="area-sub-content">
+                        <div class="head-part clearfix">
+                            <div class="head-screen list-figure-covered">
+                                <a href="">
+                                    <img src="网易_files/head-part.jpg" alt="">
+                                    <p>网易自营</p>
+                                </a>
+                            </div>
+                            <ul>
+                                <li><a href="">人在楼中否1</a></li>
+                                <li><a href="">人在楼中否2</a></li>
+                                <li><a href="">人在楼中否3</a></li>
+                                <li><a href="">人在楼中否4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pet-health">
+                    <div class="title-tab title-tab-2">
+                        <span class="tab strong" id="current-tab"><a href="">新闻</a></span>
+                        <span class="tab"><a href="">公开课</a></span>
+                    </div>
+                    <div class="area-sub-content">
+                        <div class="list-figure-group clearfix">
+                            <div class="list-figure-covered">
+                                <a href="">
+                                    <img src="网易_files/head-part.jpg" alt="">
+                                    <p>网易自营</p>
+                                </a>
+                            </div>
+                            <div class="list-figure-covered">
+                                <a href="">
+                                    <img src="网易_files/head-part.jpg" alt="">
+                                    <p>网易自营</p>
+                                </a>
+                            </div>
+                            <div class="list-figure-covered">
+                                <a href="">
+                                    <img src="网易_files/head-part.jpg" alt="">
+                                    <p>网易自营</p>
+                                </a>
+                            </div>
+                            <div class="list-figure-covered">
+                                <a href="">
+                                    <img src="网易_files/head-part.jpg" alt="">
+                                    <p>网易自营</p>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="news-list">
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                            <li><a href="">落霞与孤鹜齐飞1</a><a href="">落霞与孤鹜齐飞2</a></li>
+                    </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom-site-map clearfix">
+        <div class="content">
+            <div class="bottom-main clearfix">
+                <div class="fix-button"></div>
+                <div class="site-map">
+                    <div class="section brand-img">
+                        <a href="#" class="sitemap-logo">网易有态度</a>
+                    </div>
+                    <div class="section">
+                        <ul>
+                            <li><a href="">标题</a>
+                            <li><a href="">暗香1</a></li>
+                            <li><a href="">暗香2</a></li>
+                            <li><a href="">暗香3</a></li>
+                            <li><a href="">暗香4</a></li>
+                            <li><a href="">暗香5</a></li>
+                            <li><a href="">暗香6</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <ul>
+                            <li><a href="">标题</a>
+                            <li><a href="">暗香1</a></li>
+                            <li><a href="">暗香2</a></li>
+                            <li><a href="">暗香3</a></li>
+                            <li><a href="">暗香4</a></li>
+                            <li><a href="">暗香5</a></li>
+                            <li><a href="">暗香6</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <ul>
+                            <li><a href="">标题</a>
+                            <li><a href="">暗香1</a></li>
+                            <li><a href="">暗香2</a></li>
+                            <li><a href="">暗香3</a></li>
+                            <li><a href="">暗香4</a></li>
+                            <li><a href="">暗香5</a></li>
+                            <li><a href="">暗香6</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <ul>
+                            <li><a href="">标题</a>
+                            <li><a href="">暗香1</a></li>
+                            <li><a href="">暗香2</a></li>
+                            <li><a href="">暗香3</a></li>
+                            <li><a href="">暗香4</a></li>
+                            <li><a href="">暗香5</a></li>
+                            <li><a href="">暗香6</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <ul>
+                            <li><a href="">标题</a>
+                            <li><a href="">暗香1</a></li>
+                            <li><a href="">暗香2</a></li>
+                            <li><a href="">暗香3</a></li>
+                            <li><a href="">暗香4</a></li>
+                            <li><a href="">暗香5</a></li>
+                            <li><a href="">暗香6</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <ul>
+                            <li><a href="">标题</a>
+                            <li><a href="">暗香1</a></li>
+                            <li><a href="">暗香2</a></li>
+                            <li><a href="">暗香3</a></li>
+                            <li><a href="">暗香4</a></li>
+                            <li><a href="">暗香5</a></li>
+                            <li><a href="">暗香6</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <ul>
+                            <li><a href="">标题</a>
+                            <li><a href="">暗香1</a></li>
+                            <li><a href="">暗香2</a></li>
+                            <li><a href="">暗香3</a></li>
+                            <li><a href="">暗香4</a></li>
+                            <li><a href="">暗香5</a></li>
+                            <li><a href="">暗香6</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <ul>
+                            <li><a href="">标题</a>
+                            <li><a href="">暗香1</a></li>
+                            <li><a href="">暗香2</a></li>
+                            <li><a href="">暗香3</a></li>
+                            <li><a href="">暗香4</a></li>
+                            <li><a href="">暗香5</a></li>
+                            <li><a href="">暗香6</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <ul>
+                            <li><a href="">标题</a>
+                            <li><a href="">暗香1</a></li>
+                            <li><a href="">暗香2</a></li>
+                            <li><a href="">暗香3</a></li>
+                            <li><a href="">暗香4</a></li>
+                            <li><a href="">暗香5</a></li>
+                            <li><a href="">暗香6</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <ul>
+                            <li><a href="">标题</a>
+                            <li><a href="">暗香1</a></li>
+                            <li><a href="">暗香2</a></li>
+                            <li><a href="">暗香3</a></li>
+                            <li><a href="">暗香4</a></li>
+                            <li><a href="">暗香5</a></li>
+                            <li><a href="">暗香6</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <ul>
+                            <li><a href="">标题</a>
+                            <li><a href="">暗香1</a></li>
+                            <li><a href="">暗香2</a></li>
+                            <li><a href="">暗香3</a></li>
+                            <li><a href="">暗香4</a></li>
+                            <li><a href="">暗香5</a></li>
+                            <li><a href="">暗香6</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="" class="site-map-button">查看网易地图</a>
+            </div>
+            <div class="bottom-sub">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td><a href="">青梅如豆柳如眉1</a></td>
+                        <td><a href="">青梅如豆柳如眉,日长蝴蝶飞。</a></td>
+                        <td><a href="">青梅如豆柳如眉3</a></td>
+                        <td><a href="">青梅如豆柳如眉4</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">青梅如豆柳如眉1</a></td>
+                        <td><a href="">青梅如豆柳如眉2</a></td>
+                        <td><a href="">青梅如豆柳如眉3</a></td>
+                        <td><a href="">青梅如豆柳如眉4</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">青梅如豆柳如眉1</a></td>
+                        <td><a href="">青梅如豆柳如眉2</a></td>
+                        <td><a href="">青梅如豆柳如眉3</a></td>
+                        <td><a href="">青梅如豆柳如眉4</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">青梅如豆柳如眉1</a></td>
+                        <td><a href="">青梅如豆柳如眉2</a></td>
+                        <td><a href="">青梅如豆柳如眉3</a></td>
+                        <td><a href="">青梅如豆柳如眉4</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-nav">
+        <div class="content">
+            <span>© 1997-2015 网易公司版权所有,made by juniortour in 2016/4</span>
+            <ul>
+                <li><a href="">沉醉东风1</a></li>
+                <li>|<a href="">沉醉东风2</a></li>
+                <li>|<a href="">沉醉东风3</a></li>
+                <li>|<a href="">沉醉东风4</a></li>
+                <li>|<a href="">沉醉东风5</a></li>
+                <li>|<a href="">沉醉东风6</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

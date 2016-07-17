@@ -1,0 +1,447 @@
+body {
+	background: url(jingdong/head-bg.gif) repeat-x;	/*选择body不加“点”。这条属性的效果也很有意思。*/
+}
+
+.clr {
+	clear: both;
+	display: block;
+}
+
+.container {
+	margin: 0 auto;					/*该居中效果需要设置宽高。*/
+	width: 1000px;
+	height: 3000px;
+}
+
+/*头部开始*/
+
+.head {
+	width: 1000px;
+	height: 170px;
+}
+
+	.top {
+		height: 35px;
+		width: auto;
+	}
+
+	.login{
+		float: left;
+		font-size: 12px;	
+		line-height: 30px;				/*使用text-align：right；加上padding-top：xpx；也能实现居中靠左右显示*/
+	}
+
+	.personal {
+		float: right;
+		font-size: 12px;	
+		line-height: 30px;
+		margin: 0 5px;
+	}
+
+	.mid {
+		margin: 15px 5px;
+	}
+
+	.mid img {
+		display: inline;
+	}
+
+	.search {
+		position: relative;
+		left: 30px;
+		bottom: 10px;
+
+	}
+
+	.mid a {
+		background: url(jingdong/basket.gif) no-repeat;
+		display: inline;
+		float: right;
+		height: 30px;
+		width: 140px;
+		font-size: 15px;
+		line-height: 30px;
+		text-align: center;
+	}
+
+	.nav {
+		background: url(jingdong/nav.gif) no-repeat;
+		width: 1000px;
+		height: 38px;
+	}
+
+	.nav a {
+		color: white;
+		display: block;
+		float: left;
+
+		/*font-size: 14px;
+		font-family: "simsong" sans-serif;
+		font-weight: bold;
+		line-height: 20px;*/
+
+		font: bold 14px/20px "simsong",sans-serif; 		/*简写属性*/
+		height: 20px;
+		width: 65px;
+		padding: 7px 20px;
+		margin: 0 8px;						
+		text-align: center;
+	}
+
+	.nav a:hover {
+		background: url(jingdong/nav-bg.gif);			/*padding的大小会影响效果*/
+	}
+
+/*头部结束*/
+
+/*左侧开始*/
+
+.left {
+	width: 200px;
+	float: left;
+}
+
+	.title {
+		background: url(jdbuy/titlebg.gif) repeat-x;
+		height: 25px;
+		padding-left: 5px;
+	}
+
+	.title a 	{
+		color: white;
+		font: bold 14px/25px "simsong",sans-serif;
+	}
+
+	.categroy {
+		width: 200px;
+		height: 130px;
+		margin-bottom: 5px;
+		border:1px solid #e2e2e2;
+	}
+
+
+	.upcont {
+		padding: 5px 10px;
+	}
+
+	.upcont a {
+		color: rgb(66,66,66);
+		display: block;
+		font:bold 12px/100% "simsong",sans-serif;
+		padding: 8px 0;
+		border-bottom: 1px solid #e2e2e2;
+	}
+
+	.cont a:hover {
+		color: black;
+	}
+
+	.history {
+		width: 200px;
+		height: 430px;
+		border:1px solid #e2e2e2;
+	}
+
+	.downcont {
+		padding: 5px 10px;
+	}
+
+	.goods {
+		height: 60px;
+		padding: 5px 0;
+		border-bottom: 1px solid #e2e2e2;
+	}
+
+	.goodspicture {
+		width: 60px;
+		height: 60px;
+		display: inline;
+	}
+
+	.names {
+		float: right;
+		padding-right: 18px;
+	}
+
+	.names a {
+		color: rgb(66,66,66);
+	}
+
+	.names a:hover {
+		color: black;
+	}
+
+	.names p {
+		color: rgb(102,102,102);
+		margin-top: 5px;
+	}
+
+	.names span {
+		color: rgb(255,108,2);
+		font: 12px;
+	}
+
+	.goods a {
+		padding-right: 5px;
+	}
+
+	.goods img {
+		width: 60px;
+		height: 60px;
+		display: inline;
+		border: 1px solid #e2e2e2;
+	}
+
+/*左侧结束*/
+
+.right {
+	width: 780px;
+	float: right;
+	margin: 10px;
+}
+
+	.position {
+		color: rgb(102,102,102);
+		font: 12px/20px;
+		height: 15px;
+		background: url(jdbuy/position.png) 5px no-repeat;		/*注意position的移动，用于图片居中。*/
+		padding-left: 30px;
+		margin-bottom: 10px;
+	}
+
+	.position a {
+		color: rgb(66,66,66);
+	}
+
+	.position a:hover {
+		color: black;
+	}
+
+	.merchandise {
+		display: inline;
+	}
+
+	.infor {
+		width: 450px;
+		height: 300px;
+		color: rgb(152,152,152);
+		font: 12px;
+		float: right;
+	}
+
+	.infor h2 {
+		color: rgb(102,102,102);
+		font: 300 18px/18px "黑体",sans-serif;
+		padding: 5px;
+		border-bottom: 1px solid #e2e2e2;
+	}
+
+
+	.information img {
+		display: inline;
+	}
+
+	.llist {
+		float: left;
+		margin-right: 80px;
+	}
+
+	.llist li {
+		padding: 5px;
+	}
+
+	.rlist {
+		float: right;
+	}
+
+	.rlist li {
+		padding: 5px;
+	}
+
+	.grades {
+		color: red;
+	}
+
+	.numbutton img {
+		width: 18px;
+		height: 18px;
+		position: relative;						/*没有，成功做成了加减按钮！！*/
+		top: 4px;
+	}
+
+	.numtext {
+		width: 50px;
+	}
+
+	.mainprice {
+		clear: both;
+		border-top: 1px solid #e2e2e2;
+		border-bottom: 1px solid #e2e2e2;
+		margin: 5px 0;
+	}
+
+	.mainprice p {
+		padding: 5px;
+	}
+
+	.nowprice {
+		color: red;
+		font: bold 20px/22px "simsong",sans-serif;
+	}
+
+	.pastprice {
+		text-decoration: line-through;
+	}
+
+	.addbutton {
+		clear: both;
+	}
+
+/*右侧结束*/
+
+/*内容开始*/
+
+.rightdown {
+	float: right;
+}
+
+	.label {
+		width: 780px;
+		border-bottom: 5px solid rgb(189,19,55);
+	}
+
+	.describe {
+		display: inline-block;
+		background: url(jdbuy/label-link.gif);
+		height: 28px;
+		line-height: 28px;
+		color: rgb(102,102,102);
+		padding: 0px 12px;
+		border: 1px solid #e2e2e2;
+		border-bottom: 0px solid #e2e2e2;
+	}
+
+	.describe:hover {
+		color: white;
+		background: url(jdbuy/label-hover.gif);
+	}
+
+	.detail {
+		width: 780px;
+	}
+
+	.nocomment {
+		font: bold 14px/78px "simsong",sans-serif;
+		color: rgb(205,102,0);
+		padding: 30px 300px;
+	}
+
+	.makecomment {
+		color: rgb(102,102,102);
+		height: 200px;
+		border: 1px solid #e2e2e2;
+	}
+
+	.commentcontent {
+		padding: 10px ;
+	}
+
+	.makecomment li {
+		padding: 5px;
+	}
+
+	.makecomment li  img{
+		display: inline;
+	}
+
+	.testnumber {
+		position: relative;
+		top: 5px;
+	}
+
+	.submit {
+		position: relative;
+		bottom: 25px;
+		left: 510px;
+	}
+
+/**/
+
+/**/
+.foot {
+	clear: both;
+	width: 1000px;
+	height: 300px;					/*页面的底部长度受此影响，我认为略长一些比较好。显得不突兀。*/
+}
+
+	.help {
+		background-color: #f8f8f8;
+		width: 1000px;
+		height: 130px;
+		margin: 5px 0;
+		border: 1px solid #e2e2e2;
+	}
+
+	.helplist {
+		width: 140px;
+		height: 80px;
+		display: inline-block;
+		padding: 5px;
+		border-right: 1px solid #e2e2e2;
+	}
+
+	.helplist dl a {
+		color: black;
+	}
+
+	.helplist dl {
+		padding-left: 5px;
+	}
+
+	.helplist dt {
+		padding-left: 5px;
+		margin: 10px;
+	}
+
+	.helplist dd {
+		font-size: 12px;
+		line-height: 100%;
+		background: url(jingdong/dot.gif) no-repeat left center;					/*ATTENTION*/
+		padding-left: 10px;
+		margin: 5px;
+	}
+
+	.footcontent {
+		padding: 5px;
+	}
+
+	.tel {
+		float: right;
+		width: 190px;
+		height: 120px;
+		display: inline-block;
+	}
+
+	/*.telnumber {
+		margin: 5px 0;										导致了该部分的错位
+	}*/
+
+	.telnumber {
+		padding: 
+	}
+
+	.content {
+		color: rgb(102,102,102);
+		font-family: "simsong" sans-serif;
+		font-size: 12px;
+		line-height: 25px;
+		padding: 15px 10px;
+	}
+
+	.copyright {
+		text-align: center;
+		margin: 5px;
+	}
+
+/*比较顺利的于2015年9月5日16:36完成。*/
+

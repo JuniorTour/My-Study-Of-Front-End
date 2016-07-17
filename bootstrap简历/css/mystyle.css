@@ -1,0 +1,92 @@
+
+body {
+    font: 16px/1 "Open Sans", sans-serif;
+}
+.header {
+    color: white;
+    background: url("../images/banner.png");
+    background-size: 100% 100%;
+    min-height: 760px;
+}
+.nav.navbar-default {
+    margin-top: 1em;
+    background: transparent;
+}
+.nav .navbar-right li a {
+    font-size: 1.25em;
+    color: white;
+}
+.nav li {
+    margin-right: 1.2em;
+}
+.nav li:first-child a {
+    border-bottom: 5px solid #fff;
+}
+.nav li a:hover {
+    text-decoration: none;
+    color: #00a2c1;
+    border-bottom: 5px solid #fff;
+}
+.nav .navbar-brand {
+    color: white;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.jumbotron {
+    text-align: left;
+    margin: 8% auto 1em;
+    width:74%;
+}
+.jumbotron h1 {
+    font-size: 4em;
+    line-height:1.4em;
+}
+.jumbotron p {
+    font-size: 2em;
+    line-height:1.7em;
+}
+.view-work {
+    display: inline-block;
+    width:15%;
+    background: #496E90;
+    padding: 0.8em 1em;
+    font-size: 1.1em;
+    text-align: center;
+}
+.view-work:hover {
+    text-decoration: none;
+    background: #343a56;
+}
+
+
+/*320px and lower*/
+@media(max-width: 320px) {
+    .header {
+        min-height:283px;
+    }
+    .nav.navbar-default {
+        margin-top: 0;
+    }
+    .jumbotron {
+        text-align: left;
+        padding: 0;
+        width:91%;
+    }
+    .jumbotron h1 {
+        font-size: 1.5em;
+        line-height:1.4em;
+    }
+    .jumbotron p {
+        font-size: 15px;
+        line-height:1.7em;
+    }
+    .view-work {
+        display: inline-block;
+        width:45%;
+        background: #496E90;
+        padding: 0.6em;
+        font-size: 15px;
+        text-align: center;
+    }
+}

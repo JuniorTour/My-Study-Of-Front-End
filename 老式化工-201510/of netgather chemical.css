@@ -1,0 +1,435 @@
+body {
+	background: #f6f6f6 url("images/body-bg.gif") top repeat-x;
+	/*背景很短，所以添加背景色作为补充，，妙！*/
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.header {
+	position: relative;
+	/*height: 200px;*/
+}
+
+.nav {
+	height: 30px;
+	background: url("images/nav-bg.gif") no-repeat;
+	position: relative;
+	/*共后面的下箭头使用*/
+}
+
+.nav ul {
+	overflow: hidden;
+}
+
+.nav li {
+	float: left;
+	text-align: center;
+	width: 100px;
+	height: 30px;
+	margin: 0 4px;
+}
+
+.nav a {		/*并不需要写作.nav li a，并且要考虑前后的优先性*/
+	color: black;
+	/*background: url("images/down.gif") 80px 12px no-repeat;*/
+	display: block;
+	font: 12px/30px simsong,sans-serif;
+	padding: 0 5px;
+}
+.nav a:hover {
+	color: white;
+}
+
+.homepage a {
+	color: white;
+	background: url("images/mainmenu.gif") -10px 0 no-repeat;
+	/*-10px为了对齐背景的缺口。*/
+}
+
+/*通过以下三个属性终于实现了
+带箭头的hover效果。
+2016年1月7日17:46:57*/
+
+.nav li a.down-arrow {
+	background: url("images/down.gif") 80px	 center no-repeat;
+
+}
+
+.nav li a.down-arrow:hover {
+	background: url("images/down.gif") 80px	 center no-repeat;
+}
+
+div.nav li:hover {
+	display: block;
+	/*color: white;因为优先级的问题，被最后属性的覆盖了。*/
+	background: url("images/mainmenu.gif")  -10px -30px no-repeat;
+	/*本想尝试css3多背景效果，发现不行。*/		
+	/*背景图片的精确定位！*/
+	/*url需要引号。*/
+}
+
+/*.nav ul li img {
+	position: relative;			不用absolute
+	就错在这里，下箭头相对的定位保留了原来的空间，造成了次级ul
+	的错位。
+	position: absolute;
+	top: -15px;
+	left: 80px;
+}*/
+
+.pop li {
+	background: url("images/mainmenu.gif") 0 -60px repeat-x;
+	width: 180px;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+}
+
+/*.pop {
+	display: none;
+	font: 12px/1 simsong,sans-serif;
+	z-index:1;			have a try,seems invalid
+	position: relative;
+	top:-5px;
+
+}*/
+/*成功了！！！！！！要注意z-index只能在有position的元素上应用。*/
+
+/*2015年12月30日20:55:01
+尝试从《精通》一书中学到的技术改进该导航，
+使其次级链接可以点击。*/
+
+.nav ul li ul {
+	width: 180px;
+	position: absolute;
+	left: -999em;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+
+/*终于成功了！2015年10月9日18:39:27*/
+/*但是他不能使用，因为会消失...*/
+/*.nav ul li:hover ul {		
+	display: block;	
+}*/
+
+/*2015年12月30日20:58:31;*/
+.nav ul li:hover ul {
+	left: auto;	/*UNSETTLED*/
+	/*暂时没有发现其中空当的原因，留待日后解决！*/
+	/*auto值时，被定位的元素将跟随文本流，即保持原位。*/
+
+	/*找到原因了，不知为何，导航标签中的下箭头标签竟然
+	影响了次级ul的位置*/
+}
+
+.pop li a {
+	text-align: left;
+}
+
+.pop li a:hover {
+	display: block;
+	color: rgb(3,79,171);
+	font-weight: bold;
+	background: url("images/mainmenu.gif") 0 -90px repeat-x;
+}
+
+
+.banner {
+	background: rgb(255,255,255);
+	padding: 4px;
+	border: 1px solid rgb(240,240,240);
+}
+
+.slogan {
+	background: rgba(0,0,0,0.6);	/*css3*/
+	width: 950px;			/*not elegant!!need to change!*/
+	height: 32px;
+	position: absolute;			/*relative have bugs!*/
+	top: 245px;				/*relative，该部分会影响main*/
+	left: 5px;
+}
+
+.slogan p {
+	color: white;
+	font: 12px/35px simsong,sans-serif;
+	padding-left: 5px;
+}
+
+.slogan ul li {
+	background: rgb(45,45,45);
+	width: 18px;
+	height: 18px;
+	color: white;
+	font: 12px/19px verdana,sans-serif;
+	text-align: center;
+	display: block;
+	float: left;
+	border: 1px solid rgb(74,74,74);
+	margin: 2px;
+	position: relative;				/*效果相当赞！*/
+	top: -30px;
+	left: 860px;
+}
+/*the end of HEADER*/
+
+.main {
+	width: 960px;
+	height: 750px;
+}
+
+.left {
+	float: left;
+	width: 715px;
+}
+
+.recommend {
+	height: 165px;
+	margin: 5px;
+}
+
+.title {
+	background: url("images/titles.gif") 0 -3px no-repeat ;
+	height: 30px;
+}
+
+.title a {
+	float: right;
+	padding: 12.5px 10px;
+}
+
+.rec-content {
+	padding: 5px;
+}
+
+.left-arrow {
+	background: url("images/arrow.gif") -25px 0 no-repeat;
+	width: 25px;				/*负的！！*/
+	height: 128px;
+	float: left;
+}
+
+.right-arrow {
+	background: url("images/arrow.gif") -50px 0 no-repeat;
+	width: 25px;				/*负的！！*/
+	height: 128px;
+	float: right;
+}
+
+.goods-list li {
+	float: left;
+	width: 149px;
+	height: 125px;
+	border: 1px solid #e5e5e5;
+	margin: 0 5px;
+}
+
+.goods-list li a {
+	color: black;
+	display: block;
+	padding: 4px;
+}
+
+.goods-list p {
+	text-align: center;
+	font: 8px/1 simsong,sans-serif;
+	padding: 6px 0;				/*差强人意*/
+}
+
+.goods-list li .name {
+	padding: 1px;
+}
+
+.goods-list li a img {
+	width: 140px;
+	height: 95px;
+}
+
+.goods-list li a:hover {
+	outline: 1px solid #008aff;
+	color: #008aff;
+}
+
+/*recommend end*/
+
+.news {
+	width: 345px;
+	padding: 5px;
+	float: left;
+}
+
+.news div.title {			/*新学的选择器。x: ;*/
+	background: url("images/titles.gif") 0 -38px no-repeat ;
+						/*负的！！*/
+}
+
+.news-content {
+	padding: 5px 0;
+}
+
+.news-content li {
+	padding: 3px 0;
+}
+
+.news-content li a {
+	font: 12px/18px simsong,sans-serif;
+	color: black;
+}
+
+.news-content li img {
+	width: 110px;
+	height: 80px;
+	float: left;			/*浮起后，竟然不会遮挡h和p！*/
+	margin-right: 5px;
+}
+
+.news-content li h3 a {
+	font: bold 13px/1 simsong,sans-serif;
+	color: black;
+}
+
+.news-content li a:hover {
+	color: #008aff;		/*一并使用开头的总属性！*/
+}					/*然因优先性，需要使用。*/
+
+.news-content p {
+	font: 12px/1.5 simsong,sans-serif;
+	color: gray;
+	padding: 5px;
+}
+
+.news-content p a {
+	color: black;
+}
+
+.news-content li span {
+	float: right;
+	font: 12px/18px simsong,sans-serif;
+	color: gray;
+	padding: 0 5px 0 0;
+}
+
+.about {
+	width: 345px;
+	padding: 5px;
+	float: right;
+	border-left: 1px solid #e5e5e5;
+}
+
+.about title {
+	background: url("images/titles.gif") 0 -58px no-repeat ;
+}
+
+.abou-content {
+	padding: 5px 0;
+}
+
+.about img {
+	float: left;
+	margin-right: 5px;
+}
+
+.about a {
+	color: black;
+	font: 12px/23px simsong,sans-serif;
+}
+
+/*2015年10月12日21:51:55*/
+
+.display {
+	height: 330px;
+	margin: 5px;
+	clear: both;
+}
+
+.display div.title {
+	background: url("images/titles.gif") 0 -104px no-repeat ;
+}
+
+.display ul li {
+	float: left;
+	margin: 5px;
+}
+
+.display li a img {
+	width: 150px;
+	height: 120px;
+}
+
+.display a {				/*纠结了几次优先级影响效果的问题。*/
+	color: black;
+	display: block;
+	padding: 5px;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+}
+
+.display a:hover {
+	border: 1px solid #008aff;
+}
+/*the end of left*/
+
+.right {
+	width: 240px;		/*结合left仔细思量*/
+	height: 750px;
+	float: right;
+}
+
+.content {
+	padding: 5px;		/*universal*/
+}
+
+.search {
+	height: 20%;
+}
+
+.search p {
+	padding: 5px;
+}
+
+.search p input[type="text"] {
+	width: 200px;
+	background: url("images/search-back.gif") repeat-x;
+	padding: 2px;
+	border: 1px solid #e6e6e6;
+}
+
+/*该设置应用了属性选择器，而且学习了给搜索框设置效果的手法，例如背景、
+内边距、好看的边框。*/
+
+.employ {
+	height: 25%;
+}
+
+.employ li a {
+	font: 12px/28px simsong,sans-serif;
+	color: black;
+	padding: 5px 0;
+}
+
+.contact {
+	height: 30%;
+}
+
+.contact pre {
+	font: 12px/25px simsong,sans-serif;
+}
+/*main end*/
+.footer {
+	padding: 10px;
+}
+.footer pre {
+	font: 12px/1.5 simsong,sans-serif;
+	text-align: center;
+	color: rgb(51,51,51);
+}
+
+a:hover {
+	color: #008aff;
+}
+
+/*2015年10月13日21:46:25*/

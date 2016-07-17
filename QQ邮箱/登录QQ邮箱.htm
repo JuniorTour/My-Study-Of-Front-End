@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)https://mail.qq.com/ -->
+<html lang="zh-cmn"><style type="text/css" id="958914386000"><script></script></style><head><meta http-equiv="Content-Type" content="text/html; charset=gb18030"><script>
+(function() {
+if(isMobile()) {
+location.replace("https://w.mail.qq.com");
+}
+function isMobile() {
+return navigator.userAgent.match(/Mobile|iPhone|iPad|Android/i) || Math.min(screen.height,screen.width) <= 480;
+}
+})();
+</script><script>
+(function()
+{
+if(location.protocol=="http:")
+{
+document.cookie = "edition=; expires=-1; path=/; domain=.mail.qq.com";
+location.href="https://mail.qq.com";
+}
+})();
+</script><title>登录QQ邮箱</title><meta name="renderer" content="webkit"><meta name="save" content="history"><meta name="description" content="QQ邮箱，为亿万用户提供高效稳定便捷的电子邮件服务。你可以在电脑网页、iOS/iPad客户端、及Android客户端上使用它，通过邮件发送3G的超大附件，体验文件中转站、日历、记事本、漂流瓶等特色功能。QQ邮箱，常联系。"><link rel="stylesheet" type="text/css" href="./登录QQ邮箱_files/loginpage25194d.css"><link rel="icon" type="images/png" sizes="16*16" href="https://mail.qq.com/zh_CN/htmledition/images/favicon/qqmail_favicon_16h.png"><link rel="icon" type="images/png" sizes="32*32" href="https://mail.qq.com/zh_CN/htmledition/images/favicon/qqmail_favicon_32h.png"><link rel="icon" type="images/png" sizes="48*48" href="https://mail.qq.com/zh_CN/htmledition/images/favicon/qqmail_favicon_48h.png"><link rel="icon" type="images/png" sizes="96*96" href="https://mail.qq.com/zh_CN/htmledition/images/favicon/qqmail_favicon_96h.png"><meta name="theme-color" content="gray"><style type="text/css" adt="123"></style><style type="text/css" lanyezi="lanyezi"></style><script>if(!document.URL.match(/^http:\/\/v\.baidu\.com|http:\/\/music\.baidu\.com|http:\/\/dnf\.duowan\.com|http:\/\/bbs\.duowan\.com|http:\/\/newgame\.duowan\.com|http:\/\/my\.tv\.sohu\.com/)){
+(function() {
+    Function.prototype.bind = function() {
+        var fn = this, args = Array.prototype.slice.call(arguments), obj = args.shift();
+        return function() {
+            return fn.apply(obj, args.concat(Array.prototype.slice.call(arguments)));
+        };
+    };
+    function A() {}
+    A.prototype = {
+        rules: {
+            /*'youku_loader': {
+                'find': /^http:\/\/static\.youku\.com\/.*(loader|player_.*)(_taobao)?\.swf/,
+                'replace': 'http://swf.adtchrome.com/loader.swf'
+            },
+            'youku_out': {
+                'find': /^http:\/\/player\.youku\.com\/player\.php\/.*sid\/(.*)/,
+                'replace': 'http://swf.adtchrome.com/loader.swf?VideoIDS=$1'
+            },*/
+            'pps_pps': {
+                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
+                'replace': 'http://swf.adtchrome.com/pps_20140420.swf'
+            },
+            /*'iqiyi_1': {
+                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/.+\.swf$/,
+                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+            },
+            'iqiyi_2': {
+                'find': /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/\d+\/.+\.swf$/,
+                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+            },*/
+            'ku6': {
+                'find': /^http:\/\/player\.ku6cdn\.com\/default\/.*\/\d+\/(v|player|loader)\.swf/,
+                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf'
+            },
+            'ku6_topic': {
+                'find': /^http:\/\/player\.ku6\.com\/inside\/(.*)\/v\.swf/,
+                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf?vid=$1'
+            },
+            'sohu': {
+                'find': /^http:\/\/tv\.sohu\.com\/upload\/swf(\/p2p)?\/\d+\/Main\.swf/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+            },
+            'sohu2':{
+                'find':/^http:\/\/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\/testplayer\/Main0?\.swf/,
+                'replace':'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+            },
+            'sohu_share': {
+                'find': /^http:\/\/share\.vrs\.sohu\.com\/my\/v\.swf&/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?'
+            },
+            'sohu_sogou' : {
+                'find': /^http:\/\/share\.vrs\.sohu\.com\/(\d+)\/v\.swf/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?vid=$1'
+            },
+            /*'letv': {
+                'find': /^http:\/\/player\.letvcdn\.com\/.*p\/.*\/newplayer\/LetvPlayer\.swf/,
+                'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+            },
+            'letv_topic': {
+                'find': /^http:\/\/player\.hz\.letv\.com\/hzplayer\.swf\/v_list=zhuanti/,
+                'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+            },
+            'letv_duowan': {
+                'find': /^http:\/\/assets\.dwstatic\.com\/video\/vpp\.swf/,
+                'replace': 'http://yuntv.letv.com/bcloud.swf'
+            },*/
+            '17173_in':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFile(Customer)?\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_in_20150522.swf"
+            },
+            '17173_out':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFileFirstpage\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_out_20150522.swf"
+            },
+            '17173_live':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream(_firstpage)?\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_stream_20150522.swf"
+            },
+            '17173_live_out':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream_(custom)?Out\.swf/,
+                'replace':"http://swf.adtchrome.com/17173.out.Live.swf"
+            }
+        },
+        _done: null,
+        get done() {
+            if(!this._done) {
+                this._done = new Array();
+            }
+            return this._done;
+        },
+        addAnimations: function() {
+            var style = document.createElement('style');
+            style.type = 'text/css';
+            style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+            document.getElementsByTagName('head')[0].appendChild(style);
+        },
+        animationsHandler: function(e) {
+            if(e.animationName === 'playerInserted') {
+                this.replace(e.target);
+            }
+        },
+        replace: function(elem) {
+            if(this.done.indexOf(elem) != -1) return;
+            this.done.push(elem);
+            var player = elem.data || elem.src;
+            if(!player) return;
+            var i, find, replace = false;
+            for(i in this.rules) {
+                find = this.rules[i]['find'];
+                if(find.test(player)) {
+                    replace = this.rules[i]['replace'];
+                    if('function' === typeof this.rules[i]['preHandle']) {
+                        this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                    }else{
+                        this.reallyReplace.bind(this, elem, find, replace)();
+                    }
+                    break;
+                }
+            }
+        },
+        reallyReplace: function(elem, find, replace) {
+            elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+            var b = elem.querySelector("param[name='movie']");
+            this.reloadPlugin(elem);
+        },
+        reloadPlugin: function(elem) {
+            var nextSibling = elem.nextSibling;
+            var parentNode = elem.parentNode;
+            parentNode.removeChild(elem);
+            var newElem = elem.cloneNode(true);
+            this.done.push(newElem);
+            if(nextSibling) {
+                parentNode.insertBefore(newElem, nextSibling);
+            } else {
+                parentNode.appendChild(newElem);
+            }
+        },
+        init: function() {
+            var desc = navigator.mimeTypes['application/x-shockwave-flash'].description.toLowerCase();
+            /*if(desc.indexOf('adobe')>-1){
+                delete this.rules["iqiyi_1"];
+                delete this.rules["iqiyi_2"];
+            }*/
+            if(document.URL.indexOf('tv.sohu.com')<=0){
+                delete this.rules["sohu"];
+            }
+            var handler = this.animationsHandler.bind(this);
+            document.body.addEventListener('webkitAnimationStart', handler, false);
+            document.body.addEventListener('msAnimationStart', handler, false);
+            document.body.addEventListener('oAnimationStart', handler, false);
+            document.body.addEventListener('animationstart', handler, false);
+            this.addAnimations();
+        }
+    };
+    new A().init();
+})();
+}
+// 20140730
+(function cnbeta() {
+    if (document.URL.indexOf('cnbeta.com') >= 0) {
+        var elms = document.body.querySelectorAll("p>embed");
+        Array.prototype.forEach.call(elms, function(elm) {
+            elm.style.marginLeft = "0px";
+        });
+    }
+})();
+// 20150108
+setTimeout(function(){
+    if (document.URL.indexOf('www.baidu.com') >= 0) {
+        var a = function(){
+            Array.prototype.forEach.call(document.body.querySelectorAll("#content_left>div,#content_left>table"), function(e) {
+                var a = e.getAttribute("style");
+                if(a && /display:(table|block)\s!important/.test(a)){
+                    e.removeAttribute("style")
+                }
+            });
+        };
+        a();
+        document.getElementById("su").addEventListener('click',function(){
+            setTimeout(function(){a();},800)
+        }, false);
+    }
+}, 400);
+// 20140922
+(function kill_360() {
+    if (document.URL.indexOf('so.com') >= 0) {
+        document.getElementById("e_idea_pp").style.display = none;
+    }
+})();
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style></head><body><script type="text/javascript">
+var reportPtlogin = (function ()
+{
+var gbIsPTReport = false,
+gnPTTimer = setTimeout(function()
+{
+reportPtlogin(-1);
+}, 5000);
+return function(_anRet)
+{
+clearTimeout(gnPTTimer);
+
+if(!gbIsPTReport)
+{
+gbIsPTReport = true;
+
+var _oImg = document.createElement("img"),
+_sUserName = document.getElementById("u")&&encodeURIComponent(document.getElementById("u").value) || "",
+_sDomain = "https://rl.mail.qq.com" || "https://rl.mail.qq.com",
+_sStat = _sDomain + "/cgi-bin/getinvestigate?stat=loginerr&code=#code#&err=&un="+_sUserName+"&r="+Math.random();
+_sStat = _sStat.replace("#code#", ({"1":920,"0":921,"-1":922})[_anRet]);
+_oImg.src = _sStat;
+_oImg.style.display = "none";
+document.body.appendChild(_oImg);
+_oImg = null;
+}
+}
+})();
+</script><img src="./登录QQ邮箱_files/testimg" style="display:none" onload="reportPtlogin(1)" onerror="reportPtlogin(0)"><div class="container"><div class="header"><a class="header_logo" href="./登录QQ邮箱_files/登录QQ邮箱.htm">QQ邮箱</a><div class="header_link"><a href="http://w.mail.qq.com/cgi-bin/loginpage?f=xhtml">基本版</a>&nbsp;|&nbsp;<a href="http://en.mail.qq.com/">English</a>&nbsp;|&nbsp;<a href="http://app.mail.qq.com/" target="_blank">手机版</a>&nbsp;|&nbsp;<a href="http://exmail.qq.com/?referrer=index_top" target="_blank">企业邮箱</a></div></div><div class="content"><div id="downError" class="login_msg" style="display:none;"><p><span class="login_msg_warning"></span>由于加载安全组件失败，为了您的帐号安全，无法正常登录邮箱，解决方法：</p><ul><li>按下F5重新刷新页面。</li><li>打开浏览器“选项”菜单，选择“Internet选项”，执行清空缓存功能，确定后按F5刷新本页面。</li><li>如上述方式仍然无法解决问题，请登录<a href="http://maildisk.bbs.qq.com/" target="_blank">邮箱论坛通知我们</a>，我们将尽快为您解决。</li></ul></div><div class="content_wrapper"><div class="login_container" id="login" style="width: 334px; height: 387px; visibility: visible;"> <iframe id="login_frame" name="login_frame" height="100%" scrolling="no" width="100%" frameborder="0" src="./登录QQ邮箱_files/xlogin.htm"></iframe>       <div class="login_box second_login_box" style="display:none;"><div class="login_box_header"><h1 class="login_box_title">登录QQ邮箱</h1></div><div id="msgContainer" class="login_box_msg" style="display:none;"></div><noscript>&lt;div class="login_box_msg noScript"&gt;您的浏览器不支持或已经禁止网页脚本，您无法正常登录。&lt;a href="/zh_CN/help/error_noscript.html" title="了解网页脚本限制的更多信息" target="_blank"&gt;&lt;img src="https://rescdn.qqmail.com/zh_CN/htmledition/images/webp/ico_help1e9c5d.gif" style="margin:0 2px;" align="absmiddle" /&gt;如何解除脚本限制&lt;/a&gt;&lt;/div&gt;</noscript><div class="login_box_msg noCookie" id="infobarNoCookie" style="display:none">你的浏览器不支持或已经禁止使用Cookie，导致无法正常登录。请<a href="http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=7&&no=1001007#chrome" title="了解Cookie的更多信息" target="_blank">启用Cookie<img src="./登录QQ邮箱_files/ico_help1e9c5d.gif" style="margin:0 2px;" align="absmiddle"></a>后重试。</div><div style="display:none" id="qlogin" class="qlogin"></div><div class="login_operate" id="web_login"><form id="loginform" onsubmit="return QMLogin.checkInput();" method="post" name="loginform" target="_self" autocomplete="on"><div class="login_submit" style=""><input class="login_button" id="btlogin" name="btlogin" type="submit" value="登录" tabindex="5"></div></form></div><a class="login_box_forgotpassword" href="https://aq.qq.com/cn2/findpsw/pc/pc_find_pwd_input_account?pw_type=6&aquin=&source_id=2705" target="_blank">忘了密码？</a><div style="display:none;" id="switch" class="lineright" onmouseup="QMLogin.switchMode()"></div></div></div><div class="login_pictures"><div class="login_pictures_picture" style="background-image:url(&#39;https://rescdn.qqmail.com/zh_CN/htmledition/images/webp/tg-silence1e9c5d.jpg&#39;);background-position:right 40px;"></div><div class="login_pictures_txt"><p class="login_pictures_title">QQ邮箱，常联系！</p><p>到头来，</p><p>我们记住的，</p><p>不是敌人的攻击，</p><p>而是朋友的沉默。</p><p>——马丁·路德·金</p><p class="login_pictures_info">插画来自丑丑(两岁)</p></div>     </div></div></div><div class="footer"><a href="http://www.tencent.com/" target="_blank">关于腾讯</a>&nbsp;|&nbsp;<a href="http://mail.qq.com/cgi-bin/readtemplate?check=false&t=mail_clause" target="_blank">服务条款</a>&nbsp;|&nbsp;<a href="http://kf.qq.com/product/email.html" target="_blank">客服中心</a>&nbsp;|&nbsp;<a href="http://mail.qq.com/contact_us.html" target="_blank">联系我们</a>&nbsp;|&nbsp;<a href="http://service.mail.qq.com/" target="_blank">帮助中心</a>&nbsp;|&nbsp;<span class="gray">©1998 - 2015 Tencent Inc. All Rights Reserved.</span></div></div><script type="text/javascript">
+
+if (typeof window.postMessage !== 'undefined') {
+window.onmessage = function(event) {
+var msg = event || window.event; var data;
+if (typeof  JSON !== 'undefined') data = JSON.parse(msg.data);
+else
+data = str2JSON(msg.data);
+ 
+switch (data.action) {
+case 'close':
+ptlogin2_onClose();
+break;
+case 'resize':
+ptlogin2_onResize(data.width, data.height);
+break;
+default: break;
+}
+}
+}
+function str2JSON(str) {
+eval('var __pt_json='+str);
+return __pt_json;
+}
+function ptlogin2_onResize(width, height) {
+var login_wnd = document.getElementById("login");
+if (login_wnd)  {
+login_wnd.style.width  = width + "px";
+login_wnd.style.height = height + "px";
+login_wnd.style.visibility = "hidden";
+login_wnd.style.visibility = "visible";
+}
+}
+
+(function()
+{
+var _sLen = document.cookie.length, 
+_nCookieNum = Math.random(),
+_sTestCookie = ["test", _nCookieNum, "test=test", ";expires=Thu, 01 Jan 9970 00:00:00 GMT",";path=/",";domain=.mail.qq.com"].join("");
+document.cookie = _sTestCookie;
+if (document.cookie.length == _sLen)
+{
+document.getElementById("infobarNoCookie").style.display = "";
+}
+_sTestCookie = ["test", _nCookieNum, "test=test", ";expires=Thu, 01 Jan 1970 00:00:00 GMT",";path=/",";domain=.mail.qq.com"].join("");
+document.cookie = _sTestCookie;
+})();
+</script><img src="./登录QQ邮箱_files/getinvestigate" style="display: none;"></body><style type="text/css" id="958914387000"></style></html>

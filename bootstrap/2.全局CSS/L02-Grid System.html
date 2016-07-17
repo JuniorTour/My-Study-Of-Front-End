@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grid</title>
+    <link rel="stylesheet" href="../Materials/bootstrap.min.css">
+    <style>
+        div.row {
+                margin: 20px 0;
+        }
+        [class*="col-"] {
+            padding:15px 10px;
+            border: 1px solid #ddd;
+            background-color: #eee;
+        }
+        [class*="-sm"] {
+            background-color: #7d7d7d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">hello</div>
+            <div class="col-md-2 col-md-push-4">hello col-md-push-3</div>
+            <div class="col-md-2">hello</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">hello</div>
+            <div class="col-md-2 col-md-pull-3">hello col-md-pull-3</div>
+            <div class="col-md-2">hello</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-push-9">col-md-3 col-md-push-9</div>
+            <div class="col-md-9 col-md-pull-3">col-md-9 col-md-pull-3</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">hello</div>
+            <div class="col-md-2 col-md-offset-3">hello col-md-offset-3</div>
+            <div class="col-md-2">hello</div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                hello
+                <div class="row">
+                    <div class="col-sm-4">nesting col</div>
+                    <!--注意嵌套后的大小是按照比例缩小了的-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

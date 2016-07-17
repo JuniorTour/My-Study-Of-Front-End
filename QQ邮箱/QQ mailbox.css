@@ -1,0 +1,215 @@
+#container {
+	min-height: 800px;
+	min-width: 1000px;
+	color: rgb(182,182,182);
+	font-family: "lucida Grande",Verdana,"Microsoft YaHei";
+}
+
+#container a{
+	color: rgb(29,84,148);
+}
+
+#container a:hover {
+	text-decoration: underline;
+}
+
+.header {
+	height: 60px;
+	background: rgb(239,244,250);
+	border-top: 1px solid rgb(214,223,234);
+	border-bottom: 1px solid rgb(214,223,234);
+}
+
+.header div.left-top {
+	float: left;
+	margin:  10px 0 10px 40px;
+}
+
+.header div.left-top a {
+	display: block;
+	width: 182px;
+	height: 34px;
+	/*margin-left: -9999px;*/
+	text-indent: -9999px;	/*no performance?!*/
+	background: url("material/logo.png") no-repeat left top;
+	/*看来首行缩进的办法只能用在元素中无其他内容时*/
+}
+
+.header ul {
+	float: right;
+	margin: 20px 40px 0 0;
+}
+
+.header nav li {
+	display: inline;
+	color: rgb(29,84,148);
+	font-size: 12px;
+}
+
+
+
+.main {
+	min-height: 800px;
+	background: url("material/main.jpg") no-repeat 29% 24%;
+	position: relative;
+}
+
+.main div.logbox {
+	background: white;
+	width: 340px;
+	height: 390px;
+	border-radius: 10px;
+	border: 1px solid rgb(160,177,196);
+	position: absolute;
+	left: 59%;
+	top: 12%;
+	z-index: 100;
+}
+
+.logbox div.title {
+	background: rgb(249,251,254);
+	border-bottom: 1px solid rgb(160,177,196) ;
+	border-radius: 10px 10px 0 0;
+}
+
+.logbox div.title span {
+	display: inline-block;
+	text-align: center;
+	width: 145px;
+	height: 50px;
+}
+
+.logbox div.title span a {
+	display: block;
+	width: 115px;
+	height: 50px;
+	font-size: 16px;
+	line-height: 50px;
+	border-bottom: 1px solid black;
+	margin-left: 25px;
+}
+
+.logbox div.title span a:hover {
+	text-decoration: none;
+}
+
+.logbox div.title span#nomal a {
+	color: black;
+	text-decoration: none;
+}
+
+.logbox div.title span#quick a {
+	color: rgb(153,153,153);
+	border: none;
+	text-decoration: none;
+}
+
+.logbox div.title span#quick a:hover {
+	color:black;
+}
+
+.logbox div.content {
+	padding: 20px 20px;
+	position: relative;
+}
+
+.logbox div.input div.textbox {
+	width: 280px;
+	height: 40px;
+	border-radius: 4px;
+	border: 1px solid rgb(150,165,180);
+	margin: 20px 0;
+}
+
+.logbox div.input input {
+	background: transparent;
+	width: 260px;
+	height: 15px;
+	border: none;
+	padding: 12.5px 10px;
+	position: relative;
+	top: -15px;
+}
+
+.logbox div.input label {
+	color: gray;
+	position: relative;
+	top: 11px;
+	left: 10px;
+	font: 14px/16px 'Microsoft YaHei',sans-serif;
+}
+
+.logbox div.input input:focus div.textbox {
+	color: #ddd;
+}
+
+.logbox div.input div.auto {
+	margin: 10px 0;
+}
+
+.logbox div.input div.auto input {
+	width: 18px;
+	height: 18px;
+	position: relative;
+	top: 0;
+	left: -110px;
+}
+
+.logbox div.input div.auto label {
+	color: black;
+	margin-left: 23px;
+	top: -4px;
+	left: 0;
+}
+
+.logbox a#login {
+	display: block;
+	width: 285px;
+	height: 40px;
+	color: white;
+	font: 18px/40px  Verdana, 'Microsoft YaHei',sans-serif;
+	text-decoration: none;
+	text-align: center;
+	background: rgb(90,152,222);
+	border-radius: 4px;
+}
+
+.logbox a#login:hover {
+	background: rgb(106,122,224);
+}
+
+.logbox div.hint {
+	width: 285px;
+	position: relative;
+	top: 60px;
+	text-align: right;
+}
+
+.logbox div.hint li {
+	display: inline;
+}
+
+.footer {
+	height: 36px;
+	background: rgb(239,244,250);
+	border-top: 1px solid rgb(214,223,234);
+	border-bottom: 1px solid rgb(214,223,234);
+	position: fixed;		/*固定底栏！！*/
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.footer div.foot-nav {
+	margin: auto 0;
+	text-align: center;
+	line-height: 36px;	
+}
+
+.footer li {
+	display: inline;
+}
+
+.footer span {
+	color: gray;
+}

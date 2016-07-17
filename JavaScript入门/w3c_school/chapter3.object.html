@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>object</title>
+    <style>
+        body {
+            font:25px/1 "microsoft yahei",sans-serif;
+        }
+        button {
+            line-height:30px;
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="person.tellName()">tell me your name?</button>
+    <button onclick="car_qq.when()">tell me when you are made?</button>
+    <button onclick="car_bmw.when()">(构造方法)tell me when you are made?</button>
+    <button onclick="car_bmw.tellName()">(构造方法)tell me what the name of car?</button>
+    <button onclick="car_pro.tellName()">(prototype)tell me what the name of car?</button>
+    <button onclick="car_mixed.show()">(mixed)tell me what the name of car?</button>
+
+    <script>
+        //primitive method
+        var person=new Object();
+        person.name="nanan";
+        person.tellName=function () {
+            document.write("my name is "+person.name);
+        };
+        /*勿忘上面结尾的的分号*/
+
+        //factory method
+        function createCar(sname,scolor,stime) {
+            var tempCar=new Object();
+            tempCar.name=sname;
+            tempCar.color=scolor;
+            tempCar.when= function () {
+                document.write("<h1>"+sname+"was made in "+stime);
+            };
+            /*勿忘上面结尾的的分号*/
+            return tempCar;
+            /*勿忘！*/
+        }
+        var car_qq=createCar("qq","gold",2010);
+
+        //external function
+        function tellName() {
+            document.write(this.name);
+        }
+
+        //构造函数
+        function Car (sname,scolor,stime) {
+            this.name=sname;
+            this.color=scolor;
+            this.tellName=tellName;
+            this.when= function () {
+                document.write("<h1>"+sname+"was made in "+stime);
+            };
+            /*勿忘上面结尾的的分号*/
+        }
+
+        var car_bmw=new Car("bmw","pink",2016);
+
+        //prototype
+        function proCar() {}
+        proCar.prototype.name="pro-name";
+        /*IDE提醒我说，constructor的名字建议使用全大写。*/
+        proCar.prototype.color="dull";
+        proCar.prototype.tellName=tellName;
+
+        var car_pro=new proCar();
+
+        //mixed advanced method
+        function mixedCar(sname,scolor) {
+            this.name=sname;
+            this.color=scolor;
+        }
+        mixedCar.prototype.show=tellName;
+
+        var car_mixed= new mixedCar("mixed","different")
+
+        var num=123;
+        document.write(Number.MAX_VALUE);
+
+        var txt="hahaha!"
+        document.write(txt.length+"<br/>");
+        document.write(txt.bold()+"<br/>");
+        document.write(txt.strike()+"<br/>");
+        document.write(txt.fontcolor("pink")+"<br/>");
+
+        document.write("i found it:"+txt.match("ha!")+"<br/>");
+
+
+    </script>
+</body>
+</html>

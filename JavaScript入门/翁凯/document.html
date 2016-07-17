@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+</head>
+<!--<body bgcolor="aqua" onload="setInterval('change()',800)">-->
+<body onload="setInterval('change_background_color()',800)">
+    <img name="carousel" src="0.jpg" alt="">
+    <p id="p1">i am just a paragraph.</p>
+    <script>
+
+        var index=0;
+        var images=new Array(5);
+        for (var i=0;i<5;i++) {
+            images[i]=new Image();
+            images[i].src=i+".jpg";
+        }
+        var x=0, y=0,z=0;
+        i=0;
+        var colors=["pink","red","aqua"];
+        function change_background_color() {
+//            x=(x++)%255;
+            /*这一句又错在哪里呢？
+            * 似乎是因为不能把变量赋给自身吗？*/
+            x=(x+1)%255;
+            y++;
+            z++;
+            i=(i+1)%3;
+//            document.bgColor=colors[i];
+            document.bgColor="rgb("+x+","+y+","+z+")";
+            /*问题来了，这个对象只支持字符串值，如果想传递动态变化的rgb（）中
+            已成为字符的xyz， 则难以实现。
+            make it!*/
+        }
+        function change() {
+            document.carousel.src=images[index].src;
+            index=(index+1)%5;
+        }
+        function br() {
+            document.write("<br/>");
+        }
+        document.write(document.images[0]);
+        document.images[0].width=300;
+        br();
+        document.write("get:"+document.getElementById("p1"));
+        br();
+//        for (x in document.getElementById("p1")){
+//            document.write(x+br());
+//        }
+
+        br();
+//        document.bgColor="pink";
+        document.write("bgColor="+document.bgColor);
+        for (x in document.bgColor){
+                    document.write(x+br());
+                }
+    </script>
+
+</body>
+</html>

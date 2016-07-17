@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-4</title>
+    <link rel="stylesheet" href="../Materials/bootstrap.min.css">
+    <script src="../Materials/jquery.min.js"></script>
+    <script src="../Materials/bootstrap.min.js"></script>
+
+    <style>
+        .container {
+            position: relative;
+            /*以body为对象对齐，易错位。*/
+        }
+        .transtion {
+            -webkit-transition: display .6s;
+            -moz-transition: all time;
+            -ms-transition: all time;
+            -o-transition: all time;
+            transition: display 1.6s;
+        }
+
+        .affix-top {
+            top:200px;
+        }
+        .affix {
+            top:100px;
+        }
+        .affix-bottom {
+            position: relative;
+        }
+
+        .affix-example {
+            position: absolute;
+            top:30px;
+            left:-15%;
+        }
+        .nav .nav {
+            display: none;
+        }
+        .nav .active .nav {
+            display: block;
+        }
+        .nav .active a {
+            background: red;
+        }
+        .active .active {
+            background-color: salmon;
+            border-left: 3px solid black;
+        }
+
+        /*.sidebar {*/
+            /*display: none;*/
+        /*}*/
+        /*.active .sidebar {*/
+            /*display: block;*/
+        /*}*/
+        /*.sidebar a {*/
+            /*padding-left:10px;*/
+        /*}*/
+        /*.nav-pills {*/
+            /*width:150px;*/
+            /*text-align: center;*/
+        /*}*/
+    </style>
+</head>
+<body data-spy="scroll" data-target=".affix-example">
+    <div class="container">
+        
+        <!--<div class="scrollspy affix-example col-md-3" role="complementary">-->
+                <!--<ul data-spy="scroll" class="affix nav nav-pills nav-stacked">-->
+                    <!--<li class="">-->
+                        <!--<a href="#" data-target="#nav-collapse" data-toggle="collapse" aria-expanded="false">-->
+
+                            <!--春日游1-->
+                            <!--<span class="caret"></span>-->
+                        <!--</a>-->
+                                                                                                                        <!--&lt;!&ndash;一个bug，在最底部时，两个标签同时激活？&ndash;&gt;-->
+                        <!--<ul class="nav sidebar transtion" id="nav-collapse">-->
+                            <!--&lt;!&ndash;我想让这个下拉菜单默认关闭，该怎么做？&ndash;&gt;-->
+                            <!--&lt;!&ndash;似乎是锚点的问题，当处于指向锚点时，就是开启的。这改变不了。&ndash;&gt;-->
+                            <!--<li><a href="#">杏花吹满头1</a></li>-->
+                                                                                                    <!--&lt;!&ndash;又一个BUG，次级的.active 不生效？&ndash;&gt;-->
+
+                            <!--&lt;!&ndash;定位不对！！！打开收藏夹后...&ndash;&gt;-->
+                            <!--&lt;!&ndash;已通过向container对齐解决。&ndash;&gt;-->
+                            <!--<li><a href="#well1">杏花吹满头2</a></li>&lt;!&ndash;找到了，原来是这个次级列表，拥有和春日游3同样的锚点。&ndash;&gt;-->
+                            <!--<li><a href="#well2">杏花吹满头3</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li class=""><a href="#accordian1">春日游2</a></li>-->
+                    <!--<li class=""><a href="#accordian2">春日游3</a></li>-->
+                <!--</ul>-->
+        <!--</div>-->
+        
+        <!--<div class="affix-example col-md-3">-->
+            <!--<ul class="nav hidden-xs hidden-sm" data-spy="affix">-->
+                <!--<li>-->
+                    <!--<a href="#carousel-example">春日游1</a>-->
+                    <!--<ul class="nav">-->
+                        <!--<li><a href="#accordian1">杏花满天1</a></li>-->
+                        <!--<li><a href="#well1">杏花满天2</a></li>-->
+                        <!--<li><a href="#well2">杏花满天3</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+                <!--<li><a href="#accordian2">春日游2</a></li>-->
+                <!--<li><a href="#well3">春日游3</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+
+        <!--<div class="col-md-3 affix-example">-->
+            <!--<ul id="nav" class="nav affix hidden-xs hidden-sm" data-spy="affix">-->
+                <!--<li><a href="#carousel-example">#carousel-example</a></li>-->
+                <!--<li>-->
+                    <!--<a href="#accordian1">#accordian1</a>-->
+                    <!--<ul class="nav">-->
+                        <!--<li><a href="#collapseONE">#collapseONE</a></li>-->
+                        <!--<li><a href="#collapseTWO">#collapseTWO</a></li>-->
+                    <!--</ul>&lt;!&ndash;end of sub navigation&ndash;&gt;-->
+                <!--</li>-->
+                <!--<li><a href="#well1">well1</a></li>-->
+                <!--<li><a href="#well2">well2</a></li>-->
+            <!--</ul>&lt;!&ndash; end of main navigation &ndash;&gt;-->
+        <!--</div>-->
+        <!--这个做的不成熟，见5.affix-->
+
+        <div class="carousel slide" id="carousel-example" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example" data-slide-to="1"></li>
+                <li data-target="#carousel-example" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="../Materials/Images/example-md.jpg" alt="carousel">
+                    <div class="carousel-caption">
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../Materials/Images/example-md.jpg" alt="carousel">
+                    <div class="carousel-caption">
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../Materials/Images/example-md.jpg" alt="carousel">
+                    <div class="carousel-caption">
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a href="#carousel-example" class="left carousel-control"
+             data-slide="prev"  role="button">
+                <span class="glyphicon glyphicon-chevron-left" style=" color="black";">&lt;</span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a href="#carousel-example" class="right carousel-control"
+               data-slide="next"  role="button">
+                <span class="glyphicon glyphicon-chevron-right"  style=" color="black";">&gt;</span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <br>
+        <div class="collapse-button">
+            <a href="#collapse-example" class="btn btn-danger"
+               data-toggle="collapse" aria-expanded="false">
+                Link with href
+            </a>
+            <div class="collapse" id="collapse-example">
+                <div class="well">
+                    <p>What a nice day!</p>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!--不能在打开一个的同时，隐藏另一个了？-->
+        <!-- data-parent="#accordian1" 不能少，也不能错.-->
+        <div class="panel-group" id="accordian1" role="tablist"
+            aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#collapseONE" data-parent="#accordian1" data-toggle="collapse"
+                               role="button" aria-expanded="true"
+                               aria-controls="collapseOne">
+                                Collapse group item 1
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="collapseONE"
+                         role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, n
+                                on cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                nesciunt sapiente ea proident.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#collapseTWO" data-toggle="collapse"
+                               role="button" data-parent="#accordian1" aria-expanded="true"
+                               aria-controls="collapseOne">
+                                Collapse group item 1
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="collapseTWO"
+                         role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, n
+                                on cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                nesciunt sapiente ea proident.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#collapseTHREE" role="button"
+                               data-toggle="collapse" data-parent="#accordian1"
+                               aria-expanded="true"  aria-controls="collapseTHREE">
+                                Collapse group item 1
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="collapseTHREE"
+                         role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, n
+                                on cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                nesciunt sapiente ea proident.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="well " id="well1">
+            <h4>id="well1"</h4>
+            <p>Anim pariatur cliche reprehenderit,
+                enim eiusmod high life accusamus terry richardson ad squid.
+                3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+        </div>
+        <div class="well " id="well2">
+            <h4>id="well2"</h4>
+            <p>Anim pariatur cliche reprehenderit,
+                enim eiusmod high life accusamus terry richardson ad squid.
+                3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+        </div>
+        <div class="well " id="well3">
+            <h4>id="well2"</h4>
+            <p>Anim pariatur cliche reprehenderit,
+                enim eiusmod high life accusamus terry richardson ad squid.
+                3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+        </div>
+
+    </div>
+</body>
+</html>

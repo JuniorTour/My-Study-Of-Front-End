@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2d,3d,animation test</title>
+
+	<style>
+		div.part {
+			width: 100%;
+			border: 1px solid #00ffff;
+			padding: 50px;
+			margin-bottom: 50px;
+
+			-webkit-perspective: 200px;
+			-moz-perspective: 200px;
+			-ms-perspective: 200px;
+			perspective: 200px;
+		}
+
+		div.test {
+			width: 300px;
+			height: 200px;
+			background-color: #ffb909;
+			margin: 0 auto;
+		}
+
+		div.two {-webkit-transition: all 3s ease;	
+			/*原以为过渡需要加在原来的元素，而非伪类上*/
+			-o-transition: all 3s ease;
+			transition: all 3s ease;
+			trans
+			/*emmet插件的快捷键并非tab而是ctrl+e。
+			这样就可以不受干扰生成带前缀的transform了！*/
+		}
+
+		div.two:hover {
+			-webkit-transform-origin: top left;
+			-moz-transform-origin: top left;
+			-ms-transform-origin: top left;
+			-o-transform-origin: top left;
+			transform-origin: top left;
+			/*transform属性只能有一条,所以下面的注释无效*/
+			-webkit-transform: scale(0.5,0.5) rotate(30deg);
+			-ms-transform: scale(0.5,0.5) rotate(30deg);
+			-o-transform: scale(0.5,0.5) rotate(30deg);
+			transform: scale(0.5,0.5) rotate(30deg);
+			/*-webkit-transform: rotate(30deg);
+			-ms-transform: rotate(30deg);
+			-o-transform: rotate(30deg);
+			transform: rotate(30deg);*/
+			/*-webkit-transition: all 1s linear;
+			-o-transition: all 1s linear;
+			transition: all 1s linear;
+			background: #92b901;*/	
+			background: #92b901;
+			/*原以为过渡需要加在原来的元素，而非伪类上*/
+		}
+
+		div.three {
+			-webkit-transform: rotateX(60deg) scale(0.8) translateZ(-50px);
+			-ms-transform: rotateX(60deg) scale(0.8) translateZ(-50px);
+			-o-transform: rotateX(60deg) scale(0.8) translateZ(-50px);
+			transform: rotateX(60deg) scale(0.8) translateZ(-50px);
+
+			
+			/*perspective: 1900px;*/
+			/*位置放错了，要在父元素上*/
+		}
+
+		div.animation {
+			-webkit-animation: animated 3s 2;
+			-o-animation: animated 3s 2;
+			animation: animated 3s 2;
+			/*通过下面这条声明就能实现正序逆序各播放一遍了！*/
+			animation-direction:alternate;
+			-webkit-animation-direction:alternate; /* Safari 和 Chrome */
+			position: relative;
+		}
+
+		@keyframes my {
+			from{left:10px;	background: red;}
+			/*50%{left:80px;	background: pink;	}*/
+			to{left: 150px;	background: blue; 	
+				-webkit-transform: rotate(60deg) scale(0.5);
+				-ms-transform: rotate(60deg) scale(0.5);
+				-o-transform: rotate(60deg) scale(0.5);
+				transform: rotate(60deg) scale(0.5);
+			}
+		}
+		
+		/*来自w3cschool*/
+		@-webkit-keyframes animated
+		{
+		0%		{-webkit-transform: rotate(0deg);left:0px;}
+		25%		{-webkit-transform: rotate(20deg);left:0px;}
+		50%		{-webkit-transform: rotate(0deg);left:500px;}
+		55%		{-webkit-transform: rotate(0deg);left:500px;}
+		70%		{-webkit-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+		100%	{-webkit-transform: rotate(-360deg);left:0px;}
+		}
+	</style>
+</head>
+<body>
+	<div class="part">
+		<div class="two test">
+			<p>I am 2d,and touch me!</p>
+		</div>
+	</div>
+	<div class="part">
+		<div class="three test">
+			<p>I am 3d</p>
+		</div>
+	</div>
+	<div class="part">
+		<div class="animation test">
+			<p>I am anim</p>
+		</div>
+	</div>
+</body>
+</html>

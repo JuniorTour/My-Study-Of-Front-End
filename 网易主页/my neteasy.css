@@ -1,0 +1,979 @@
+
+/*
+一、项目简介：
+网易门户部分主体，始于2016/2，结束于2016/4，尚留有一些小细节未完善。
+
+二、学到的经验
+1.不应该用特殊性太高的选择器，应该尽量保持较低的特殊性。
+诸如ul.hover-nav,是不必要且有害的，直接写作.hover-nav即可。
+
+2.以后ul的nav最好都注意overflow: hidden;，尤其是有浮动的li，其实这还是个clearfix的问题。
+
+3.一般宽度都需要指定，而高度则是自适应的。                !important
+
+4.感觉多类症似乎无法解决，如果不用许多类的话样式重叠非常严重！
+或许这是因为我对样式的定义还不够规范所致。但是我看网易的网页也是有数不清的类。
+
+5.对于属性/类的重复利用还不熟练。尤其是字体、颜色等，应该总的用body或 * 声明一个样式，
+再在特殊版块声明特殊的。
+第41行，通配符的优先级相当高，不建议轻易使用！而且继承的属性根本没有任何优先级，连0也没有。连0也没有。连0也没有。
+
+三、结语：
+    这是我学前端以来做的最大的项目（html+css近2000行，60+kb），断断续续做了两个多月，自感不易。
+    当然，也学到了非常多经验，获益匪浅。
+
+    目前还剩几个细节问题没有解决：
+    1.需要有外边距、通用性强的下拉菜单。
+    COMPLETED! 见“注册免费邮箱”,still can be optimize! COMPLETED AGAIN!这次就相当完美了！2016年5月15日20:10:21
+
+    2.有几个顶部标题边框的宽度不对，差了几个像素。    COMPLETED!
+    3.product-list中标题图片“网之易”没有盖住蓝色顶边框。  积重难返，难以实现。
+    4.div.head-screen中有莫名其妙的一块空白。
+    似乎和vertical -align有关。  详见：juniortour.net/
+
+    5.应用下拉菜单中的上下边框没对齐。  COMPLETED!见“注册免费邮箱”
+    6.兼容。
+    大致看了一下，兼容性问题不多。做了这几个微小的贡献：CSS3的gradient-line 231、一个宽度的修正-line 243。
+
+
+*/
+
+* {
+    font-family: simsong ,Arial,sans-serif;
+}
+/*
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before, .clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+/* For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats. */
+.clearfix {
+    *zoom: 1;
+}
+
+
+/*top-bar*/
+* a {
+    /*通配符的优先级相当高啊，不建议轻易使用！*/
+    /*font: 14px/27px "simsong","arial";*/
+    color: black;
+    /*text-decoration: none;*/
+}
+a:hover {
+    color: #BA2636;
+    text-decoration: underline;
+}
+            /*对于属性的重复利用还差很多*/
+.top a {
+    font-size:12px;
+    color: white;
+}
+.top li:hover {
+    background: rgb(30,30,30);
+    /*border-left:1px solid #1e1e1e;*/
+    /*加在这里影响了左侧的下拉菜单*/
+}
+.triangle {
+    display: inline-block;
+    width:0;
+    height:0;
+    border-width: 4px 4px 0;
+    border-style:  solid;
+    border-color: #c2c2c2 transparent transparent;
+}
+.top {
+    width:100%;
+    height:43px;
+    background: rgb(51,51,51);
+    color: white;
+    font-size:12px;
+    line-height:43px;
+    position: fixed;
+    /*反而是这个声明，让top偏离了*/
+    /*因为fixed也要声明top等*/
+    top:0;
+    border-bottom:2px solid#606060;
+    z-index:1;
+}
+.wrapper {
+    width:960px;
+    margin:0 auto;
+}
+.top ul.left {
+    float: left;
+}
+.top ul.left li.app {
+    display: inline-block;
+    width:75px;
+    text-align: center;
+    position: relative;
+}
+/*.hover-nav-wrapper {*/
+    /*border:10px solid transparent;*/
+    /*width:0;*/
+    /*height:0;*/
+    /*display: inline-block;*/
+    /*overflow: hidden;*/
+/*}*/
+/*bug：没有形成包裹；
+因为绝对定位的内容物--下拉菜单是不属于文档流的。*/
+li.app ul.hover-nav {
+    background: white;
+    position: absolute;
+    left:-999em;
+    color: black;
+    border: 1px solid gray;
+    padding:10px 0;
+    /*margin-top:10px;*/
+    -webkit-box-shadow: 0 0 8px #cdcdcd;
+    -moz-box-shadow:  0 0 8px #cdcdcd;
+    box-shadow: 0 0 8px #cdcdcd;
+    zoom: 1;
+}
+li.app ul.hover-nav li {
+    line-height:30px;
+    /*没有规定高的时候，行高就是高，且行高可以继承至span*/
+    display: block;
+    text-align: left;
+    padding:0 10px;
+}
+li.app ul.hover-nav li a {
+    width:115px;
+    height:30px;
+    display: inline-block;
+    color: rgb(88,88,88);
+    text-decoration: none;
+}
+li.app ul.hover-nav li a:hover {
+    background-color: #f2f2f2;
+    color: #252525;
+    /*以下两条属性可以形成“跳动一下”的效果。*/
+    /*margin-top:1px;*/
+    margin-top: -1px;
+    padding-top:1px;
+    /*经过试验，margin应该为-1，且其作用并非跳动，
+    而是让背景能遮盖住上面一条的底边虚线！！*/
+    /*终于找到了！！！2016年2月16日16:02:33*/
+
+    /*仍然有bug，顶部没有对齐；
+    还是因为写的不规范可以看我后来做的注册免费邮箱中的下拉菜单。2016年5月10日12:59:30*/
+}
+.hover-nav li span {
+    background: url("网易_files/nav-sprite.png") no-repeat;
+    width:83px;
+    display: inline-block;
+    border-bottom:1px dashed #dcdddd;
+    padding-left:32px;
+ }
+li.app ul.hover-nav li a:hover span {
+    border:0 none;
+    /*加个零是出于兼容性的考虑吗？*/
+    /*作用
+    1.值为0时，浏览器仍然会渲染一下border，使用了内存。
+    2.两个值同时写出确实是为了解决ie6，7上的none无效问题。*/
+}
+li.app ul.hover-nav li:hover {
+    background: #f2f2f2;
+}
+.hover-nav li.app-news span {
+    background-position: 0 -156px;
+}
+.hover-nav li.app-music span {
+    background-position: 0 -366px;
+}
+.hover-nav li.app-class span {
+    background-position: 0 -186px;
+}
+.hover-nav li.app-note span {
+    background-position: 0 -247px;
+}
+.hover-nav li.app-lofter span {
+    background-position: 0 -443px;
+}
+li.app:hover ul.hover-nav {
+    left:0;
+}
+.left .home-page {
+    padding: 0 17px;
+}
+/*未实现，后来都已经解决。*/
+/*
+1.顶部外边距；可以尝试用div包裹，并改为对div定位，右侧有尝试。 这个恐怕只用HTML和CSS做不到。
+2.悬停时，上下虚线边框消失；
+*/
+
+/*顶部导航右侧开始*/
+
+.nav-right {
+    float: right;
+}
+
+/*右侧登录，邮箱块*/
+.nav-right span {
+    float: left;
+}
+.login-wrapper {
+    border-bottom:4px solid #8f2f2f;
+}
+.login-block {
+    background-color: #e11515;
+    background-image: -webkit-linear-gradient(top,#e11515,#bb0e0e);
+    background-image: -moz-linear-gradient(top,#e11515,#bb0e0e);
+    background-image: -ms-linear-gradient(top,#e11515,#bb0e0e);
+    display: inline-block;
+    width:60px;
+    height:45px;
+    text-align: center;
+}
+.login-block:hover {
+    text-decoration: none;
+}
+.register-email {
+    display: inline-block;
+    border-right: 1px solid #1f1f1f;
+    width:90px;
+    height:43px;
+    padding: 0 15px 0 13px;
+    cursor: pointer;
+}
+.register-email:hover {
+    background-color: rgb(30,30,30);
+}
+.email-block {
+    text-decoration: none;
+}
+.nav-right-em-email {
+    font: 12px/1 "simsun";
+}
+
+/*顶部导航右侧的ul开始*/
+
+.top ul.right {
+    float: right;
+    /*height: 43px;没用*/
+    overflow: hidden;
+    /*以后的nav中的ul最好都加上;
+    非也，视情况而定，万万不能盲目的加声明啊。*/
+}
+.right li {
+    position: relative;
+    float: left;
+    height:43px;
+    border-right: 1px solid #1f1f1f;
+    border-left:1px solid #3f3f3f;
+}
+.right li:hover {
+    border-left:1px solid #1e1e1e;
+}
+.nav-right-block {
+    display: inline-block;
+    height:43px;
+    text-align: center;
+    padding:0 15px 0 5px;
+}
+.nav-right-em {
+    background: url("网易_files/nav-sprite.png") no-repeat;
+    text-indent: -999em;
+    display: block;
+    width: 25px;
+    height: 23px;
+    margin-top:10px;
+}
+/*学习bootstrap的下拉菜单*/
+.dropdown-trigger {
+    position: relative;
+}
+.dropdown-wrapper {
+    padding: 12px 0;
+}
+.dropdown-trigger:hover .dropdown-menu {
+    /*left: 0;*/
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown-menu {
+    width:100%;
+
+    /*use the declaration below to realize the
+    effect of transition! see more here:http://www.zhangxinxu.com/wordpress/2013/05/transition-visibility-show-hide/*/
+    transition: all .3s;
+    visibility:hidden;
+    opacity: 0;
+    /*position: absolute;*/
+    /*top:43px;*/
+    /*距离顶部的距离不能超过.top的2px的下部border，否则会
+    难以hover.*/
+    /*left: 0;*/
+
+    background: white;
+    /*用display：none是不是可以搭配过渡效果？？
+    不行，transition不支持display属性。*/
+    /*left:-999em;*/
+    padding:5px 0;
+    border: 1px solid #cdcdcd;
+
+    /*give up the outside */
+    /*margin:20px 0;*/
+    /*不能用margin，他不算是box的一部分。*/
+    /*border-top: 30px solid transparent;*/
+    /*不知道为什么透明的边框并不透明，而是和背景色一样。*/
+}
+.dropdown-menu li {
+    width:100%;
+    float: left;
+    line-height:30px;
+}
+.dropdown-menu li:hover{
+    background: #f2f2f2;
+    font-weight:bold;
+    margin-top: -1px;
+}
+.dropdown-menu li:hover span {
+    border-bottom: none;
+}
+.dropdown-menu span {
+    width:90%;
+    margin: 0 5px;
+    border-bottom: 1px dashed #dcdddd;
+}
+.dropdown-list-last span {
+    border: none;
+}
+/*匪夷所思？怎么这个伪类没用呢？*/
+/*.dropdown-menu li span:last-child  {*/
+    /*border-bottom: none;*/
+/*}*/
+.dropdown-menu li a {
+    line-height:30px;
+    text-decoration: none;
+    color: black;
+}
+
+.entry-kaola {
+    width:56px;
+    background-position: 0 -394px;
+}
+.entry-email {
+    background-position: 0 -23px;
+}
+.entry-rmb {
+    background-position: 0 -23px;
+}
+.entry-basket {
+    background-position: 0 -504px;
+}
+.entry-love {
+    background-position: 0 -92px;
+}
+.entry-lofter {
+    background-position: 0 -477px;
+}
+.entry-bobo {
+    width:50px;
+    background-position: 0 -114px;
+}
+.entry-phone {
+    background-position: 0 -542px;
+}
+.last-right-block {
+    padding:0 10px;
+}
+.right .triangle {
+    position: absolute;
+    right:4px;
+    top:20px;
+}
+/*三角形旋转功能*/
+li:hover .triangle {
+    transform: rotate(180deg);
+    transition: transform linear .2s ;
+}
+.register-email:hover .triangle {
+    transform: rotate(180deg);
+    transition: transform linear .2s ;
+}
+
+
+/*主体开始*/
+.body-container {
+    width: 960px;
+    margin:45px auto 0 auto;
+}
+.body-container a {
+    font-size: 14px;
+    line-height:27px;
+    color: black;
+}
+.body-container a:hover {
+    color: #ba2636;
+}
+.header a {
+    font:12px/22px "simsong";
+}
+.two-logo {
+    padding:40px 0 15px 0;
+    border-bottom: 4px solid #206f96;
+}
+.two-logo .logo {
+    background: url("网易_files/bg_sprites.png") 0 0 no-repeat;
+    width:122px;
+    height:38px;
+    float: left;
+}
+.two-logo .report {
+    background: url("网易_files/report.png") 0 0 no-repeat;
+    width:122px;
+    height:38px;
+    float: right;
+}
+.station-block {
+    margin:10px 0;
+}
+.station-group {
+    margin-right: 18px;
+    padding-right: 18px;
+    border-right: 1px dashed #dcdddd;
+    color: black;
+    float: left;
+}
+.strong a {
+    font-weight:bold !important;
+    /*用伪类也很方便*/
+}
+
+/*第一次使用：first-child伪类，选择属于其父元素（.station-group）
+的首个<ul>子元素*/
+.station-group ul:first-child {
+    font-weight:bold;
+    margin-left:0;
+}
+.station-block .station-group:last-child  {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: none;
+}
+.station-nav {
+    float: left;
+    margin-left:18px;
+}
+.station-nav li {
+
+    width:25px;
+    white-space: nowrap;
+    /*如果没有这两行，将会溢出。
+    注意white-space这个属性*/
+}
+.station-nav a{
+    color: black;
+}
+.sg-1 {
+    width:155px;
+}
+.sg-3 {
+    width:124px;
+}
+.sg-4 {
+    width:112px;
+}
+
+/*头部结束，这一部分做的相当顺利、完美！*/
+
+/*内容部分开始*/
+
+.area {
+    margin-top:30px;
+}
+a.strong {
+    font-weight:bold;
+}
+.main {
+    width:100%;
+}
+.left-part {
+    float: left;
+    width:640px;
+    margin-right: 20px;
+}
+.slide-img {
+    width:310px;
+    position: relative;
+    margin-bottom:40px;
+}
+.slide-img p {
+    display: block;
+    width:310px;
+    height:40px;
+    color: white;
+    text-indent:9px;
+    font:bold 14px/40px "simsong",sans-serif;
+    /*粗体、斜体要写在前面*/
+    background-color: rgba(76,76,76,0.7);
+    
+    position: absolute;
+    top:180px;
+    left:0;
+}
+.left-left {
+    float: left;
+}
+.column {
+    width:310px;
+}
+
+/*tab标签部分开始*/
+.title-tab {
+    font-size: 14px;
+    overflow: hidden;
+    margin-bottom:18px;
+    border-top:2px solid #0b6ee9;
+}
+.title-tab-3 .tab {
+    float: left;
+    width:102px;
+    line-height:30px;
+    text-align: center;
+    cursor: pointer;
+    border-left:1px solid #cfcfcf;
+    border-bottom:1px solid #cfcfcf;
+    background-image: -webkit-linear-gradient(top ,rgb(254,254,254),rgb(237,237,237));
+    background-image: linear-gradient(top ,rgb(254,254,254),rgb(237,237,237));
+}
+.title-tab-3-pro .tab {
+    width:182px;
+    text-align: left;
+    text-indent: 5px;
+    border-right: 1px solid #cfcfcf;
+}
+.title-tab-3-pro #current-tab {
+    width:115px;
+    border-left:1px solid #cfcfcf;
+    border-bottom:1px solid #cfcfcf;
+    background-image: -webkit-linear-gradient(top ,rgb(254,254,254),rgb(237,237,237));
+    background-image: linear-gradient(top ,rgb(254,254,254),rgb(237,237,237));
+}
+.title-tab-2 .tab:first-child {
+    width:154px;
+}
+/*此处上下两者先后有影响！*/
+.area-sub .title-tab-2 .tab{
+    width:148px;
+}.area-sub .title-tab-2 .tab:first-child{
+     width:149px;
+ }
+.title-tab-2 .tab {
+    float: left;
+                                                                    /*浮动之后，span才能拥有宽度？？*/
+    width:153px;
+    line-height:30px;
+    text-align: center;
+    cursor: pointer;
+    border-left:1px solid #cfcfcf;
+    border-bottom:1px solid #cfcfcf;
+    background-image: -webkit-linear-gradient(top ,rgb(254,254,254),rgb(237,237,237));
+    background-image: linear-gradient(top ,rgb(254,254,254),rgb(237,237,237));
+}
+.title-tab span:last-child {
+    border-right: 1px solid #cfcfcf;
+}
+#current-tab {
+    border-right:none;
+    border-bottom:none;
+    background-image: none;
+}
+/*tab标签部分结束*/
+
+.video-display  {
+    margin:20px 0 20px 0;
+    width:100%;
+}
+.recommend-video {
+    /*width:49.5%;*/
+    /*上一句在Firefox中有错位的BUG。定是因为百分比计算的误差造成。*/
+    width:153px;
+    display: inline-block;
+}
+.video-img {
+    width:130px;
+    height:90px;
+    border:1px solid #cfcfcf;
+    margin: 0 auto;
+}
+.recommend-video p {
+    text-align: center;
+    line-height:20px;
+}
+.video-news .news-list li a:first-child {
+    padding-left:20px;
+    background: url("网易_files/icons-new-v6.png")  no-repeat;
+}
+.like-hot {
+    margin-top:26px;
+}
+.like-hot #current-tab {
+    background: url("网易_files/net%20of%20easy.png") center no-repeat;
+    text-indent: -999em;
+}
+.hot-list li:before {
+    content: '1';
+    color: #c5c5c5;
+    font: bold 16px/27px "arial",sans-serif;
+    padding-right: 25px;
+
+    float: left;
+}
+
+
+/*新闻列表部分*/
+.news-list {
+    font: 14px/27px "simisong","arial";
+    margin-bottom: 11px;
+}
+.head-part li {
+    padding-left: 5px;
+    background: url("网易_files/icon_v9.png") 0 -124px no-repeat;
+}
+.news-list li {
+    background: url("网易_files/icon_v9.png") 0 -124px no-repeat;
+    height:27px;
+    line-height:27px;
+}
+.news-list li a {
+    margin-left: 8px;
+}
+
+.news-img {
+    float: right;
+}
+.sub-main {
+    float: right;
+    width:300px;
+}
+
+/*产品列表开始*/
+#smart-homepage {
+    background: url("网易_files/slogan.png") no-repeat;
+    text-indent: -999em;
+    margin-top: -2px;                                                                               /*顶部边框还没遮蔽住*/
+    float: right;
+    border:none;
+    height:32px;
+}
+.product-list {
+    background: rgb(247,247,247);
+}
+.product-list #current-tab {
+    border-bottom: 1px solid #cdcdcd;
+}
+/*背景采用了整体浅黑色，小块白色遮挡的技巧*/
+.product-list div li {
+    display: inline;
+    margin-left:5px;
+    background: none;
+}
+.product-list li a {
+    font:12px/25px "simsong";
+}
+.product-list ul {
+    /*margin-left:40px;*/
+    /*marigin也会影响到绝对定位的元素*/
+}
+.product-block {
+    position: relative;
+    padding: 13px 0 13px 50px;
+}
+a.product {
+    display: block;
+    width:40px;
+    height:40px;
+    background: url("网易_files/icon_v9.png") 7px -217px no-repeat;
+    position: absolute;
+    left:0;
+    top:50%;
+    margin-top: -20px;
+                                                                                                /*没想明白，为什么需要-20的外边距才能对齐？？？*/
+}
+.mailbox {
+    margin-top:-20px;
+}
+.mailbox a {
+    background-position: 12px -167px;
+}
+.mailbox,.smell {
+    background-color: #fff;
+}
+.games a {
+    background-position: 7px -217px;
+}
+/*Advertisement*/
+.advertisement {
+    width:100%;
+    margin: 12px 0;
+    background: #f9f9f9;
+    height:250px;
+}
+.advertisement-block {
+}
+.ad-special {
+    width:100%;
+    float: left;
+}
+.ad-content {
+    border:1px solid rgb(221,221,221);
+}
+.ad-content li {
+    width:300px;
+    float: left;
+    margin-left: 10px;
+    line-height:27px;
+}
+.ad-content li a {
+    margin-right:5px;
+}
+.ad-wide {
+    height:100px;
+}
+
+.charity-media {
+    width:280px;
+    border: 1px solid #cfcfcf;
+    font:14px/27px "simsong";
+    padding: 10px;
+                                                        /*竟然忘了内边距也是算在盒模型里，影响大小的！！！*/
+    margin-top:10px;
+}
+.title-charity {
+    line-height:18px;
+}
+ .title-charity strong {
+     float: left;
+}
+ .title-charity p {
+     float: right;
+     padding-left:20px;
+     background: url("网易_files/newsapp_logo.png") no-repeat;
+ }
+ .charity-media ul {
+     margin:10px 0 0 0;
+     float: left;
+ }
+ .ad-car {
+    border: 1px solid #e3e3e3;
+ }
+ .ad-car-tab {
+     float: left;
+     width:74px;
+     line-height:30px;
+     text-align: center;
+     border-left: 1px solid #e3e3e3;
+     border-bottom: 1px solid #e3e3e3;
+ }
+ .ad-car .active {
+     border: none;
+     font-weight:bold;
+ }
+
+ /*Body*/
+.main-area {
+    margin-right: 10px;
+    float: left;
+}
+.area-main {
+    float: left;
+}
+.area-sub {
+    float: right;
+}
+.column.main-area {
+    /*两个类相连，选择同时拥有这两个类的元素的新选择器*/
+    margin-right: 20px;
+}
+.head-part {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #e3e3e3;
+}
+.head-part a {
+    font:12px/25px "simsong";
+}
+.head-part .head-screen {
+    width:130px;
+    float: left;
+    margin-right: 10px;
+}
+.head-screen a {
+    /*line-height:0;*/
+    /*和vertical-align: top; 只用留存其一。*/
+}
+.head-screen img {
+    vertical-align: top;            /*又一个没见过的属性，而且很有效果。*/
+    width:130px;
+    margin: 0;
+}
+.head-screen p {
+    /*为什么和图片之间有一些边距？？
+    大概是因为a标签有行高，虽然没有文字，但还是产生了一点占用空间。
+    故产生了这些边距，当把a的行高设为0后，即消失。
+    但相应的*/
+    line-height:25px;
+}
+.head-screen p:hover {
+    color: #ba2636;
+}
+.head-part ul {
+    width:160px;
+    float: right;
+}
+
+.area-sub {
+    width:300px;
+    float: right;
+}
+.area-sub .head-part ul {
+    width:130px;
+}
+.area-sub img {
+}
+.area-sub-content {
+    padding: 0 14px;
+}
+.haitao-duobao .head-part {
+    border: none;
+    margin: 0 auto;
+}
+.list-figure-covered {
+    position: relative;
+}
+.list-figure-covered p {
+    color: white;
+    width:100%;
+    position: absolute;
+    top: 66px;
+    background: rgba(0,0,0,.7);
+    text-indent: 4px;
+}
+.list-figure-group {
+    width:288px;
+    border-bottom: 1px dashed #e3e3e3;
+    margin-left: -15px;
+}
+.list-figure-group .list-figure-covered {
+    width:130px;
+    float: left;
+    margin: 0 0 15px 14px;
+}
+.list-figure-covered img {
+    height:90px;
+}
+
+/*bottom-sitemap*/
+.bottom-site-map {
+    font:12px/25px "simsong","arial",sans-serif;
+    width:100%;
+    border-top: 1px solid #ddd;
+    background: #f6f6f6;
+}
+                                                                                                                        .content {
+                                                                                                                            width:960px;
+                                                                                                                            margin: 0 auto;
+                                                                                                                        }
+.bottom-main {
+    color: black;
+    padding: 20px 0;
+    border-bottom: 1px solid #DEDEDE;
+}
+.site-map {
+    margin-left: -12px;
+                                                                     /*这一句很奇怪！为了让内容对齐，采用这样的方法是第一次见到。*/
+}
+.section.brand-img {
+    background: none;
+}
+.section.brand-img:hover {
+    background: none;
+}
+.brand-img a {
+    float: left;
+                                                        /*不知道为什么，只有浮动了，a 标签才能有宽高和缩进？*/
+    text-indent: -999em;
+    background: url("网易_files/bg_sprites.png") no-repeat;
+    width:128px;
+    height:71px;
+}
+.section {
+    background: #E8E8E8;
+    float: left;
+    width:150px;
+    height:150px;
+    margin: 0 0 10px 10px;
+}
+.section:hover {
+    background: #206f96;
+}
+.section:hover a {
+    color: #fff;
+}
+.section ul li:first-child {
+                                                     /*用了宽度，就解决了对齐的问题！*/
+    width:82px;
+    clear: both;
+    font-weight: bold;
+    padding: 5px 0;
+}
+.section li {
+    width:52px;
+    float: left;
+    margin-left: 10px;
+}
+.site-map-button {
+    padding-right: 12px;
+    float: right;
+}
+.bottom-sub {
+    padding: 36px 0;
+    border-top: 1px solid #fff;
+}
+.bottom-sub td {
+    width:180px;
+    /*margin-left: 20px;*/
+    /* td 不接受外边距？*/
+    padding-right: 20px;
+}
+.bottom-sub a {
+    color: #666;
+    white-space: nowrap;
+    line-height: 26px;
+}
+/*bottom-nav*/
+.bottom-nav {
+    width:100%;
+    height:39px;
+    background: #333;
+    color: #616161;
+    line-height:39px;
+}
+.bottom-nav span {
+    float: left;
+    color: #ddd;
+}
+.bottom-nav a {
+    padding: 0 12px;
+    color: #ddd;
+}
+.bottom-nav ul {
+    float: left;
+}
+.bottom-nav li {
+    display: inline;
+}

@@ -1,0 +1,273 @@
+
+/*终于在2015年11月16日19:07:52完成了修改工作，
+实现了中部背景突出；
+精美的登录框效果；
+半成品--选择按钮；
+登录框对齐；
+登录注册按钮添加漂亮的阴影效果；*/
+
+/*以后不再用li做导航了，直接使用nav标签*/
+
+
+body {
+	background: white;
+}
+
+.container {
+	min-width: 1000px;
+	color: rgb(132,133,133);
+	font: 12px/1 /*rgb(132,133,133)*/ simsong,sans-serif;	
+	/*不支持颜色*/
+}
+
+a {
+	color: rgb(132,133,133);
+}
+
+a:hover {
+	color: rgb(98,98,98);
+}
+
+.header {
+	width: 1000px;
+	/*为什么min-width不能居中呢？*/
+	height: 65px;
+	margin: 0 auto;
+}
+
+.header img {
+	float: left;
+	padding: 8px 0;
+}
+
+.nav {
+	overflow: auto;		/*清除浮动*/
+	padding-top: 25px;
+	padding-left: 110px;
+}
+			/*以后不再用li做导航了，直接使用nav标签*/
+.nav li {
+	display: inline;		/*新学的！！！*/
+	margin: 24px 10px;
+}
+
+.main {
+	background: url("material/main.jpg") center center  no-repeat;
+	background-color: rgb(47,48,52);
+	height: 600px;
+	width: 100%;
+	margin: 0 auto;
+	/*背景突出怎么做呢？？？？？*/
+	/*其实很简单，就是分成了两块*/
+	/*2015年11月16日16:46:40，解决！*/
+}
+/*如何让登录框适应窗口大小，不错位的显示呢？*/
+.logbox {
+	background: rgb(234,234,235);
+	width: 300px;
+	height: 465px;
+	position: absolute;		
+	/*绝对加百分比，即可实现适应窗口*/
+	top: 120px;
+	left: 60%;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+.logbox div.selected,div.unselected {
+	display: inline-block;
+	width: 106px;
+	height: 30px;
+	font: 14px/30px simsong,sans-serif;
+	color: black;
+	padding: 10px 20px;
+}
+
+.unselected {
+	background: rgb(218,225,231);
+	border-right: 1px solid rgb(205,206,205);
+	border-bottom: 1px solid rgb(205,206,205);
+}
+
+.selected {
+	/*border-left: 1px solid white;*/
+}
+
+.log {
+	padding-top: 0px;
+	margin-top: 40px;
+}
+
+.textbox {
+	background: url("material/bg.png") no-repeat  0 -352px ;
+	width: 245px;
+	height: 42px;
+	margin: 15px auto;
+}
+
+.icon-log  {
+	background: url("material/bg.png") no-repeat ;
+	display: inline-block;
+	width: 15px;
+	height: 17px;
+	position: relative;
+	top: 7px;
+	left: 8px;
+}
+
+.icon-account {
+	background-position: -154px -61px;
+}
+
+.icon-password {
+	background-position: -178px -63px;
+}
+
+.log input {
+	background: transparent;
+	border: none;
+	width: 205px;
+	height: 30px;
+	position: relative;
+	top: 7px;
+	left: 8px;
+}
+
+.textbox label {
+	color: #c9c9c9;
+	font-size: 14px;
+	position: relative;
+	top: -17px;
+	left: 30px;
+}
+
+.textbox span.mailadress {
+	font: 14px/1 verdana,sans-serif;
+	color: rgb(97,97,97);
+	position: relative;
+	top: -17px;
+	left: 40px;
+}
+
+.log-info{
+	width: 84%;
+	margin: 0 auto;
+}
+
+.log-info span.check {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background: url("material/bg.png") no-repeat -40px -160px ;
+	position: absolute;
+	top: 208px;
+	left: 25px;
+	z-index: 1;
+	cursor: pointer;
+	/*该声明让指针变为手指。*/
+}
+
+.log-info span.check:hover {
+	background: url("material/bg.png") no-repeat -40px -180px ;
+}
+
+.log-info input {
+	visibility: hidden;
+	position: relative;
+	top: 2px;
+	left: 2px;
+}
+
+.log-info a {
+	float: right;
+}
+
+.button {
+	width: 84%;
+	margin: 20px auto;
+}
+
+.button input {
+	display: inline-block;
+	background: url("material/bg.png") 0 -208px no-repeat;
+	background-color: transparent;
+	font: 14px/38px simsong,sans-serif;
+	font-weight: bold;
+	width: 110px;
+	height: 40px;
+	border-radius: 6px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	/*这个阴影的效果很漂亮！*/
+}
+
+.button a.register {
+	background: url("material/bg.png") -117px -208px no-repeat;
+	display: inline-block;
+	width: 110px;
+	height: 38px;
+	font: 14px/38px simsong,sans-serif;
+	text-align: center;
+	font-weight: bold;
+	float: right;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.version {
+	width: 84%;
+	margin: 0 auto;
+}
+
+.version a {
+	float: left;
+}
+
+.version span {
+	float: right;
+}
+
+#app-logo {
+	display: inline-block;
+	margin: 30px 15px;
+}
+
+.notification {
+	width: 84%;
+	margin: 0 auto;
+}
+
+.notification li {
+	line-height: 1.5;
+}
+
+#improtant a {
+	font-weight: bold;
+	color: red;
+}
+
+/*main 结束*/
+
+.footer {
+	width: 1000px;
+	margin: 15px auto;
+	color: #848585;
+}
+
+.footer img {
+	margin-left: 20px;
+}
+
+.footer nav {
+	float: right;
+	margin-right: 20px;
+}
+
+.footer nav a {
+	margin: 0 10px;
+}
+
+#believe {
+	position: relative;
+	top: 2px;
+}
+
+/*2015年10月24日22:12:01*/
