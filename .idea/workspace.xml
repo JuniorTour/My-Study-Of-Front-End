@@ -6,9 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cadbaf1-4db6-4833-b669-1764b4758af1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap例子/MyJumbotron Template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript小应用/JavaScript Clock.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap例子/Jumbotron Template for Bootstrap.html" afterPath="$PROJECT_DIR$/bootstrap例子/Jumbotron Template for Bootstrap.html" />
     </list>
     <ignored path="已完成.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,49 +52,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Jumbotron Template for Bootstrap.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap例子/Jumbotron Template for Bootstrap.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="9.608696">
-              <caret line="1979" column="34" selection-start-line="1979" selection-start-column="34" selection-end-line="1979" selection-end-column="34" />
-              <folding>
-                <element signature="n#script#1;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#100745#109169#0" expanded="false" />
-                <element signature="e#109201#109436#0" expanded="false" />
-                <marker date="1468824425204" expanded="true" signature="12251:12552" placeholder="..." />
-                <marker date="1468824425204" expanded="true" signature="66037:66045" placeholder="..." />
-                <marker date="1468824425204" expanded="true" signature="66101:66109" placeholder="..." />
-                <marker date="1468824425204" expanded="true" signature="66527:66535" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Theme Template for Bootstrap.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap例子/Theme Template for Bootstrap.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.8695652">
-              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-              <folding>
-                <marker date="1468747850598" expanded="true" signature="12346:12647" placeholder="..." />
-                <marker date="1468747850598" expanded="true" signature="66132:66140" placeholder="..." />
-                <marker date="1468747850598" expanded="true" signature="66196:66204" placeholder="..." />
-                <marker date="1468747850598" expanded="true" signature="66622:66630" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyJumbotron Template.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyJumbotron Template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap例子/MyJumbotron Template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28754812">
+            <state vertical-scroll-proportion="-4.869565">
               <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
               <folding>
                 <element signature="n#p#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#p#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#p#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chapter3.object-2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript入门/w3c_school/chapter3.object-2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.043478">
+              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaScript Clock.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JavaScript小应用/JavaScript Clock.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.85494226">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#strong#0;n#h1#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,8 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/网易主页/网易_files/my netease.html" />
-        <option value="$PROJECT_DIR$/bootstrap/L04-Frame-more.html" />
         <option value="$PROJECT_DIR$/bootstrap/7.Button Group.html" />
         <option value="$PROJECT_DIR$/bootstrap/6.dropdown list.html" />
         <option value="$PROJECT_DIR$/bootstrap/5.Button and Inline Image.html" />
@@ -169,6 +155,8 @@
         <option value="$PROJECT_DIR$/bootstrap例子/MyThemeTemplate.html" />
         <option value="$PROJECT_DIR$/bootstrap例子/Jumbotron Template for Bootstrap.html" />
         <option value="$PROJECT_DIR$/bootstrap例子/MyJumbotron Template.html" />
+        <option value="$PROJECT_DIR$/JavaScript小应用/距高考还有X天.html" />
+        <option value="$PROJECT_DIR$/JavaScript小应用/JavaScript Clock.html" />
       </list>
     </option>
   </component>
@@ -287,7 +275,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="网易主页" />
+              <option name="myItemId" value="JavaScript小应用" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -301,7 +289,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap例子" />
+              <option name="myItemId" value="JavaScript入门" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="已完成" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaScript入门" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="w3c_school" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -321,18 +327,19 @@
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0/cmd/git.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\3.组件" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\2.全局CSS" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\Materials" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\html相关资料\已完成\网易主页\网易_files" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\作品\bootstrap-简历\js" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\Materials\Images" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\Materials" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\网易主页\网易_files" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\3.组件" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\2.全局CSS" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\Materials" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\html相关资料\已完成\网易主页\网易_files" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.6.dropdown list.html">
@@ -485,20 +492,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/common.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="198" column="18" selection-start-line="198" selection-start-column="18" selection-end-line="198" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/3.组件/9.Breadcrumb Pagination Badge Label.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.351051">
-          <caret line="117" column="12" selection-start-line="117" selection-start-column="12" selection-end-line="117" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap-3.3.5/dist/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
@@ -650,13 +643,6 @@
     <entry file="file://$PROJECT_DIR$/QQ邮箱/material/load.gif">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript入门/w3c_school/chapter3.object-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="41.02174">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript入门/w3c_school/chapter3.regular expression.html">
@@ -884,13 +870,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap例子/MyJumbotron Template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28754812">
+        <state vertical-scroll-proportion="-4.869565">
           <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
           <folding>
             <element signature="n#p#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#p#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#p#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript入门/w3c_school/chapter3.object-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.043478">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript小应用/JavaScript Clock.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.85494226">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#strong#0;n#h1#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

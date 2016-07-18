@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js clock</title>
+</head>
+<!--<body onload="daojishi()" >-->
+<!--onload只能加载一个函数！-->
+<body>
+<h1 id="clock"></h1>
+
+<h1>
+    距高考还有
+    <strong id="day" style="color: red;font-size: 1.5em;"></strong>
+    天
+</h1>
+
+<script>
+    function addLoadEvent(func){
+    var oldonload=window.onload;
+    if(typeof window.onload!='function'){
+        window.onload=func;
+    } else{
+        window.onload=function(){
+            oldonload();
+            func();
+        }
+    }
+}
+    addLoadEvent(showTime());
+    addLoadEvent(daojishi());
+    function checkTime(i) {
+        if (i<10) {
+            i="0"+i;
+        }
+        return i;
+    }
+    function showTime() {
+        var myDate= new Date();
+        var year=myDate.getFullYear();
+        var month=myDate.getMonth()+1;
+        var weekday=myDate.getDay();
+
+        var week= new Array("sunday","monday","tuesday","wednesday","thursday","friday","saturday");
+
+        var h=myDate.getHours();
+        var m=myDate.getMinutes();
+        var s=myDate.getSeconds();
+
+        h=checkTime(h);
+        m=checkTime(m);
+        s=checkTime(s);
+
+        document.getElementById("clock").innerHTML=year+"年"+month+"月"+week[weekday]+h+":"+m+":"+s;
+
+        setTimeout(showTime,1000);
+    }
+
+    function daojishi() {
+        var curTime=new Date();
+        var endTime=new Date("2017/6/6");
+
+        var leftTime=Math.ceil((endTime-curTime)/(24*60*60*1000));
+//        alert(leftTime);
+        document.getElementById("day").innerHTML=leftTime;
+    }
+</script>
+</body>
+</html>
