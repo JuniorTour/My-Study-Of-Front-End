@@ -7,8 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cadbaf1-4db6-4833-b669-1764b4758af1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript小应用/top-btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript小应用/ToTop.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="已完成.iws" />
@@ -33,7 +31,7 @@
       <file leaf-file-name="水平格式化.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Some Demo/CSS权威指南/水平格式化.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-69.978264">
               <caret line="87" column="58" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
               <folding />
             </state>
@@ -109,8 +107,8 @@
       <file leaf-file-name="ToTop.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JavaScript小应用/ToTop.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33504492">
-              <caret line="122" column="7" selection-start-line="122" selection-start-column="7" selection-end-line="122" selection-end-column="7" />
+            <state vertical-scroll-proportion="-0.12708601">
+              <caret line="124" column="39" selection-start-line="124" selection-start-column="39" selection-end-line="124" selection-end-column="39" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -253,6 +251,26 @@
       <pane id="Scratches">
         <subPane />
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="已完成" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="已完成" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -276,54 +294,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="已完成" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="已完成" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="作品" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="已完成" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="作品" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScript小应用" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="已完成" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="作品" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap例子" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,19 +308,19 @@
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0/cmd/git.exe" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\JavaScript小应用" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\作品\bootstrap-简历\js" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\Materials\Images" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\Materials" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\3.组件" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\2.全局CSS" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\Materials" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\html相关资料\已完成\网易主页\网易_files" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\译文" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\JavaScript小应用" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\作品\bootstrap-简历\js" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\Materials\Images" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.6.dropdown list.html">
@@ -457,20 +427,20 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282887" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282887" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19427083" sideWeight="0.512965" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39813736" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39813736" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -503,13 +473,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bootstrap/Materials/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3329098">
-          <caret line="5" column="25793" selection-start-line="5" selection-start-column="25787" selection-end-line="5" selection-end-column="25793" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/Materials/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36131388">
@@ -743,13 +706,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap-3.3.5/dist/css/bootstrap.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24798928">
           <caret line="0" column="618" selection-start-line="0" selection-start-column="610" selection-end-line="0" selection-end-column="620" />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/4.JavaScript/4.Collapse Carousel and Affix.html">
@@ -768,7 +731,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Some Demo/CSS权威指南/水平格式化.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-69.978264">
           <caret line="87" column="58" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
           <folding />
         </state>
@@ -874,8 +837,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript小应用/ToTop.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33504492">
-          <caret line="122" column="7" selection-start-line="122" selection-start-column="7" selection-end-line="122" selection-end-column="7" />
+        <state vertical-scroll-proportion="-0.12708601">
+          <caret line="124" column="39" selection-start-line="124" selection-start-column="39" selection-end-line="124" selection-end-column="39" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
