@@ -27,6 +27,9 @@
         .clearfix {
              zoom: 1;
          }
+        h1 {
+            margin: 100px 0;
+        }
 
 
         .nav {
@@ -49,7 +52,9 @@
             position: relative;
         }
         .nav li a {
-            display: inline-block;
+            text-align: center;
+            display: block;
+            /*a标签为块状时就能自动布满父元素。*/
             line-height:50px;
             padding: 0 30px;
         }
@@ -71,7 +76,6 @@
             float: none;
             line-height:50px;
             margin-top: 5px;
-            padding: 0;
         }
         .dropdown-menu li a {
             padding: 0 10px;
@@ -88,7 +92,6 @@
             margin: 0 auto;
         }
         #nav ul li {
-            margin-bottom: 5px;
             background: #eee;
             float: left;
             /*width:90px;*/
@@ -115,6 +118,7 @@
             background: #666;
         }
         #nav ul li ul li {
+            margin-top: 5px;
             float: none;
         }
         #nav ul li ul li a:hover {

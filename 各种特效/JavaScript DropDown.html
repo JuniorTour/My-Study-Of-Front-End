@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS dropdown</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        ul {
+            padding:0;
+            margin: 0;
+        }
+        li {
+            list-style: none;
+        }
+
+        nav {
+            background: #eee;
+            display: block;
+            font: 24px/1 "microsoft yahei",sans-serif;
+            text-align: center;
+            width:960px;
+            margin: 100px auto;
+        }
+        .nav {
+            background: #eee;
+        }
+        .nav li {
+            background: #eee;
+            float: left;
+            line-height:50px;
+            position: relative;
+        }
+        .nav li a {
+            color: #000;
+            display: block;
+            padding: 0 10px;
+        }
+        .nav li a:hover {
+            background: #666;
+        }
+        .dropdown {
+            background: #fff;
+            display: none;
+            opacity: 0;
+            transition: .3s all linear;
+            position: absolute;
+        }
+        .dropdown li {
+            background: #eee;
+            float: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav">
+            <li><a href="#">hello1</a></li>
+            <li onmouseover="showSub(this)" onmouseout="hideSub(this)">
+                <a href="#">hello world</a>
+                <ul class="dropdown">
+                    <li><a href="#">goodbye1</a></li>
+                    <li><a href="#">goodbye2</a></li>
+                    <li><a href="#">goodbye3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">hello3</a></li>
+            <li><a href="#">hello4</a></li>
+        </ul>
+    </nav>
+
+    <script>
+
+        function showSub(li) {
+            var subMenu=li.getElementsByTagName("ul")[0];
+//            subMenu.style.opacity=1;
+            subMenu.style.display="block";
+        }
+        function hideSub(li) {
+            var subMenu=li.getElementsByTagName("ul")[0];
+//            subMenu.style.opacity=0;
+            subMenu.style.display="none";
+        }
+    </script>
+
+</body>
+</html>
