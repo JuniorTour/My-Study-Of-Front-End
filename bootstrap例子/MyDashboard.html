@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>my dashboard</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./Dashboard Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        ul,li {
+            padding: 0;
+            margin: 0;
+        }
+        /* Move down content because we have a fixed navbar that is 50px tall */
+        body {
+            padding-top: 50px;
+        }
+
+        .nav-sidebar {
+            margin-top: 20px;
+            margin-left: -20px;
+            margin-right: -21px;
+        }
+        .nav-sidebar li a {
+            padding: 10px 20px;
+        }
+        .nav-sidebar>li.active>a {
+            color: #fff;
+            background-color: #428bca;
+        }
+
+        .label-group {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .img-responsive {
+            display: inline-block;
+            /*I guess that the i-b elements will be aligned by text-align property*/
+            border-radius: 50%;
+        }
+
+        .sidebar {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .sidebar {
+                display: block;
+                position: fixed;
+                border-right: 1px solid #eee;
+                background-color: #f5f5f5;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+
+            .main {
+                padding: 0 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#example-nav">
+                    <span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">My Dashboard</a>
+            </div>
+            
+            <div id="example-nav" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Settings1</a></li>
+                    <li><a href="#">Settings2</a></li>
+                    <li><a href="#">Settings3</a></li>
+                    <li><a href="#">Settings4</a></li>
+                </ul>
+                <form action="" class="navbar-form navbar-right">
+                    <input type="text" placeholder="搜索..." class="form-control">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar col-md-2 col-sm-3">
+                <ul class="nav nav-sidebar">
+                    <li class="active"><a href="">Overviews1</a></li>
+                    <li><a href="">Overviews2</a></li>
+                    <li><a href="">Overviews3</a></li>
+                    <li><a href="">Overviews4</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="">Overviews1</a></li>
+                    <li><a href="">Overviews2</a></li>
+                    <li><a href="">Overviews3</a></li>
+                    <li><a href="">Overviews4</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="">Overviews1</a></li>
+                    <li><a href="">Overviews2</a></li>
+                    <li><a href="">Overviews3</a></li>
+                    <li><a href="">Overviews4</a></li>
+                </ul>
+            </div>
+            <div class="main col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2">
+                <h1 class="page-header">Dashboard</h1>
+                <div class="row label-group">
+                    <div class="col-xs-6 col-sm-3 each-label">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                             alt="" class="img-responsive" width="200px" height="200px">
+                        <h4>Label</h4>
+                        <span class="text-muted">something else</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 each-label">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                             alt="" class="img-responsive" width="200px" height="200px">
+                        <h4>Label</h4>
+                        <span class="text-muted">something else</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 each-label">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                             alt="" class="img-responsive" width="200px" height="200px">
+                        <h4>Label</h4>
+                        <span class="text-muted">something else</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 each-label">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                             alt="" class="img-responsive" width="200px" height="200px">
+                        <h4>Label</h4>
+                        <span class="text-muted">something else</span>
+                    </div>
+                </div>
+
+                <h1 class="page-header">Part Two</h1>
+                <div class="table-responsive main-table">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>head</th>
+                            <th>head</th>
+                            <th>head</th>
+                            <th>head</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1,001</td>
+                            <td>liberty1</td>
+                            <td>liberty2</td>
+                            <td>liberty3</td>
+                            <td>liberty4</td>
+                        </tr>
+                        <tr>
+                            <td>1,002</td>
+                            <td>liberty1</td>
+                            <td>liberty2</td>
+                            <td>liberty3</td>
+                            <td>liberty4</td>
+                        </tr>
+                        <tr>
+                            <td>1,003</td>
+                            <td>liberty1</td>
+                            <td>liberty2</td>
+                            <td>liberty3</td>
+                            <td>liberty4</td>
+                        </tr>
+                        <tr>
+                            <td>1,004</td>
+                            <td>liberty1</td>
+                            <td>liberty2</td>
+                            <td>liberty3</td>
+                            <td>liberty4</td>
+                        </tr>
+                        <tr>
+                            <td>1,005</td>
+                            <td>liberty1</td>
+                            <td>liberty2</td>
+                            <td>liberty3</td>
+                            <td>liberty4</td>
+                        </tr>
+                        <tr>
+                            <td>1,006</td>
+                            <td>liberty1</td>
+                            <td>liberty2</td>
+                            <td>liberty3</td>
+                            <td>liberty4</td>
+                        </tr>
+                        <tr>
+                            <td>1,007</td>
+                            <td>liberty1</td>
+                            <td>liberty2</td>
+                            <td>liberty3</td>
+                            <td>liberty4</td>
+                        </tr>
+                        <tr>
+                            <td>1,008</td>
+                            <td>liberty1</td>
+                            <td>liberty2</td>
+                            <td>liberty3</td>
+                            <td>liberty4</td>
+                        </tr>
+                        <tr>
+                            <td>1,009</td>
+                            <td>liberty1</td>
+                            <td>liberty2</td>
+                            <td>liberty3</td>
+                            <td>liberty4</td>
+                        </tr>
+                        <tr>
+                            <td>1,0010</td>
+                            <td>liberty1</td>
+                            <td>liberty2</td>
+                            <td>liberty3</td>
+                            <td>liberty4</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Jumbotron Template for Bootstrap_files/jquery.min.js"></script>
+    <script src="./Jumbotron Template for Bootstrap_files/bootstrap.min.js"></script>
+
+</body>
+</html>
