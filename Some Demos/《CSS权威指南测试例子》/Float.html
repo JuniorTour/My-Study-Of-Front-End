@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <style>
+        p {
+            margin: 20px;
+        }
+        .section {
+            width:500px;
+        }
+        .section img {
+            float: left;
+        }
+        .section p em {
+            padding: 1000px;
+        }
+
+        #img-example {
+            margin: 50px;
+        }
+        h1 {
+            clear: left;
+        }
+
+        #pos {
+            width:500px;
+            height:500px;
+            position: relative;
+            background: yellow;
+        }
+        .pos {
+            position: absolute;
+            background: deeppink;
+            left:0;
+            right: 50%;
+            top: 0;
+            bottom:0;
+
+            padding: 150px;
+            /*margin: 250px;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <p>
+            Donec sed odio dui.
+            <em>
+                Etiam porta sem malesuada
+            </em>
+            magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+        </p>
+        <p>
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+            Nullam id dolor id nibh ultricies vehicula ut id elit.
+            <img src="test.png" alt="test">
+            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+        </p>
+        <p>
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+        </p>
+        <p>
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+        </p>
+    </div>
+    <div class="section">
+        <p>
+            <img id="img-example" src="test.png" alt="">
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. 
+        </p>
+        <h1>FIRST HEADING</h1>
+    </div>
+    <div id="pos">
+        包含块
+        <div class="pos">定位元素</div>
+    </div>
+
+</body>
+</html>

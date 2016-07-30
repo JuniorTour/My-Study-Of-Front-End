@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>img gallery</title>
+    <style>
+        body {
+            font:24px/1 "microsoft yahei",sans-serif;
+        }
+        .nav {
+            width:30%;
+            float: left;
+            margin-left: 100px;
+        }
+        .nav li {
+            font-size: 30px;
+            margin: 20px 0;
+        }
+        .viewport {
+            width:500px;
+            float: left;
+            padding: 50px;
+            background: blue;
+        }
+        .viewport img {
+            width:500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1>Snapshots</h1>
+        <ul>
+            <li>
+                <a onclick="showPic(this); return false;" href="img/white-flower.jpg"
+                   title="white-flower">white-flower</a>
+            </li>
+            <li>
+                <a onclick="showPic(this); return false;" href="img/pink-peach.jpeg"
+                   title="pink-flower">pink-peach</a>
+            </li>
+            <li>
+                <a onclick="showPic(this); return false;" href="img/ample.jpg"
+                   title="ample">ample</a>
+            </li>
+            <li>
+                <a onclick="showPic(this); return false;" href="img/green-water.jpg"
+                   title="green-water">green-water</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="viewport">
+        <img id="placeholder" src="img/white-flower.jpg" alt="">
+    </div>
+
+    <script>
+        function  showPic(whichpic) {
+            var source=whichpic.getAttribute("href");
+            var placeholder=document.getElementById("placeholder");
+            placeholder.setAttribute("src",source);
+
+            var text=whichpic.getAttribute("title");
+
+        }
+    </script>
+</body>
+</html>
