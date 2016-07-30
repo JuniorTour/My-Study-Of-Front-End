@@ -7,42 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cadbaf1-4db6-4833-b669-1764b4758af1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/Float.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/background.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/2d、3d转换及动画测试.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/CSS3 Gradient.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/CSS权威指南/line-height explain in detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/CSS权威指南/pseudo-class of anchor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/CSS权威指南/test of inline and block.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/CSS权威指南/test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/CSS权威指南/vertical align.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/CSS权威指南/where is baseline.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/CSS权威指南/格式化.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/CSS权威指南/水平格式化.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/CSS权威指南/清除浮动测试.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/Combined Form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/SXU-HELP/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/SXU-HELP/山大服务助手-sxuhelp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/SXU-HELP/山大服务助手-sxuhelp_files/amazeui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/SXU-HELP/山大服务助手-sxuhelp_files/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/SXU-HELP/山大服务助手.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/SXU-HELP/手机端-山大服务助手-sxuhelp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/SXU-HELP/桌面端-山大服务助手-sxuhelp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/Table Exercise.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/cube transform example/css transform example.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/cube transform example/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/cube transform example/images/chimpified.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/cube transform example/images/contact.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/cube transform example/images/jilt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/cube transform example/images/olark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/cube transform example/images/ordoro.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/cube transform example/images/yotpo.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/cube transform example/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/cube transform example/transform card.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/example.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demo/refresh 重定向.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/各种特效/Mgical Menu.html" afterPath="$PROJECT_DIR$/各种特效/Mgical Menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Some Demos/DOM编程艺术/images gallery.html" afterPath="$PROJECT_DIR$/Some Demos/DOM编程艺术/images gallery.html" />
     </list>
     <ignored path="已完成.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -148,8 +113,8 @@
       <file leaf-file-name="images gallery.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/images gallery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57362354">
-              <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.18950064">
+              <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -491,7 +456,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14941922" sideWeight="0.48703495" order="0" side_tool="false" content_ui="combo" />
@@ -950,8 +915,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/images gallery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57362354">
-          <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.18950064">
+          <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
           <folding />
         </state>
       </provider>
