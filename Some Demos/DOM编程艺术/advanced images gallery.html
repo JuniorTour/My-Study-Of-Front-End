@@ -7,12 +7,12 @@
         body {
             font:24px/1 "microsoft yahei",sans-serif;
         }
-        .nav {
+        ul {
             width:30%;
             float: left;
             margin-left: 100px;
         }
-        .nav li {
+        ul li {
             font-size: 30px;
             margin: 20px 0;
         }
@@ -22,14 +22,18 @@
             padding: 50px;
             background: blue;
         }
-        .viewport img {
+        #placeholder {
             width:500px;
             height: 500px;
+            border: 50px solid black;
+        }
+        #description {
+            font-size: 60px;
+            float: right;
         }
     </style>
 </head>
 <body>
-    <div class="nav">
         <h1>Snapshots</h1>
         <ul id="gallery">
             <li>
@@ -49,33 +53,63 @@
                    title="green-water">green-water</a>
             </li>
         </ul>
-    </div>
 
-    <div class="viewport">
-        <img id="placeholder" src="img/white-flower.jpg" alt="">
-        <h2 id="description">NONE</h2>
-    </div>
 
     <script>
-        //用于增加绑定在onload事件上的函数
+
         function addLoadEvent(func) {
             var oldload=window.onload;
             if (typeof oldload !='function') {
-                //如果已有的onload上已经有了函数，
                 window.onload=func;
             }   else    {
-                //如果没有，把旧的和新的一并添加上去。
                 window.onload=function() {
                     oldonload();
-                    func;
+                    func();
                 }
             }
         }
-//        window.onload=countBody();
-//        window.onload=prepareGallery();
+        //        window.onload=countBody();
+        //        window.onload=prepareGallery();
 
         addLoadEvent(prepareGallery());
-//        addLoadEvent(countBody())
+        //        addLoadEvent(countBody())
+
+        function insertAfter(newEle,targetEle) {
+            var parent=targetEle.parentNode;
+            if (parent.lastChild == targetEle ) {
+                //如果目标元素就是父元素的最后一个子元素，那么就把新元素直接追加至父元素。
+                parent.appendChild(newEle);
+            }   else {
+                //如果不是，把新元素插入到目标元素的下一个兄弟元素之间。
+                parent.insertBefore(newEle,targetEle.nextSibling);
+            }
+        }
+
+        function preparePlaceholder() {
+            if (!document.createElement) return false;
+            if (!document.createTextNode) return false;
+            if (!document.getElementById) return false;
+            var gallery=document.getElementById("gallery");
+            var placeholder=document.createElement("img");
+            placeholder.setAttribute("id","placeholder");
+            placeholder.setAttribute("src","img/white-flower.jpg")
+
+            var description=document.createElement("p");
+            description.setAttribute("id","description");
+            var des_text=document.createTextNode("a description");
+
+            description.appendChild(des_text);
+
+//            document.getElementsByTagName("body")[0].appendChild(placeholder);
+//            document.getElementsByTagName("body")[0].appendChild(description);
+
+//            var gallery=document.getElementById("gallery");
+//            gallery.parentNode.insertBefore(placeholder,gallery)
+            insertAfter(placeholder,gallery);
+            insertAfter(description,placeholder);
+        }
+
+        addLoadEvent(preparePlaceholder());
 
         function prepareGallery() {
             if (!document.getElementById) return false;
@@ -84,13 +118,12 @@
             var gallery=document.getElementById("gallery");
             var links=gallery.getElementsByTagName("a");
             for (var i=0;i<links.length;i++) {
-                //给每个链接的onclick事件绑定上showpic函数。
                 links[i].onclick=function() {
 //                    showPic(this);
 //                    return false;
 //                    return !showPic(this);
                     return showPic(this) ? false : true;
-                };
+                }
 //                links[i].onkeypress=links[i].onclick;
             }
 
@@ -100,13 +133,11 @@
         function  showPic(whichpic) {
             if (!document.getElementById("placeholder")) return false;
 
-            //获取原链接的地址，改变img的source
             var source=whichpic.getAttribute("href");
             var placeholder=document.getElementById("placeholder");
             if (placeholder.nodeName!="IMG") return false;
             placeholder.setAttribute("src",source);
 
-            //获取原链接的title用作description
             if (document.getElementById("description")) {
                 var text=whichpic.getAttribute("title") ? whichpic.getAttribute("title") : " ";
                 var description=document.getElementById("description");

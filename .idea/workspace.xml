@@ -7,8 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cadbaf1-4db6-4833-b669-1764b4758af1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/Float.html" afterPath="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/Float.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Some Demos/DOM编程艺术/images gallery.html" afterPath="$PROJECT_DIR$/Some Demos/DOM编程艺术/images gallery.html" />
     </list>
     <ignored path="已完成.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +31,7 @@
       <file leaf-file-name="MyDashboard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap例子/MyDashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -90,7 +89,7 @@
       <file leaf-file-name="Mgical Menu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/各种特效/Mgical Menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.8043478">
+            <state vertical-scroll-proportion="0.0">
               <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
               <folding />
             </state>
@@ -100,8 +99,18 @@
       <file leaf-file-name="images gallery.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/images gallery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2173913">
-              <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+            <state vertical-scroll-proportion="2.326087">
+              <caret line="108" column="38" selection-start-line="108" selection-start-column="38" selection-end-line="108" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="advanced images gallery.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/advanced images gallery.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.62099874">
+              <caret line="90" column="55" selection-start-line="90" selection-start-column="55" selection-end-line="90" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -110,7 +119,7 @@
       <file leaf-file-name="Blog Template for Bootstrap.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap例子/Blog Template for Bootstrap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.7391305">
+            <state vertical-scroll-proportion="0.0">
               <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
               <folding>
                 <marker date="1469440725938" expanded="true" signature="12216:12517" placeholder="..." />
@@ -122,23 +131,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap例子/Blog Template for Bootstrap_files/blog.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.021739">
-              <caret line="5" column="55" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="My Blog Template.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="My Blog Template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap例子/My Blog Template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33546734">
-              <caret line="115" column="25" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
+            <state vertical-scroll-proportion="-9.065217">
+              <caret line="143" column="10" selection-start-line="143" selection-start-column="10" selection-end-line="143" selection-end-column="10" />
               <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#p#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -198,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bootstrap/4.JavaScript/3.Toggle-Tab.html" />
         <option value="$PROJECT_DIR$/网易主页/reset.css" />
         <option value="$PROJECT_DIR$/bootstrap/4.JavaScript/2.Scrollspy.html" />
         <option value="$PROJECT_DIR$/bootstrap/4.JavaScript/5.Affix.html" />
@@ -245,10 +242,11 @@
         <option value="$PROJECT_DIR$/Some Demos/background.html" />
         <option value="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/background.html" />
         <option value="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/DOM编程艺术/images gallery.html" />
-        <option value="$PROJECT_DIR$/Some Demos/DOM编程艺术/images gallery.html" />
         <option value="$PROJECT_DIR$/bootstrap例子/MY Blog Template.html" />
         <option value="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/Float.html" />
         <option value="$PROJECT_DIR$/bootstrap例子/My Blog Template.html" />
+        <option value="$PROJECT_DIR$/Some Demos/DOM编程艺术/images gallery.html" />
+        <option value="$PROJECT_DIR$/Some Demos/DOM编程艺术/advanced images gallery.html" />
       </list>
     </option>
   </component>
@@ -313,32 +311,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches">
-        <subPane />
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="作品">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -367,11 +339,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap例子" />
+              <option name="myItemId" value="Some Demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="已完成" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Some Demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DOM编程艺术" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="作品">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches">
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -500,7 +516,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14941922" sideWeight="0.48703495" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282887" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -552,13 +568,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41988304">
-          <caret line="1197" column="14" selection-start-line="1196" selection-start-column="0" selection-end-line="1202" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3766082">
@@ -831,12 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2121" column="10" selection-start-line="2121" selection-start-column="10" selection-end-line="2121" selection-end-column="10" />
-          <folding>
-            <marker date="1469441362378" expanded="true" signature="12497:12798" placeholder="..." />
-            <marker date="1469441362378" expanded="true" signature="66283:66291" placeholder="..." />
-            <marker date="1469441362378" expanded="true" signature="66347:66355" placeholder="..." />
-            <marker date="1469441362378" expanded="true" signature="66773:66781" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -844,12 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
-          <folding>
-            <marker date="1469441562765" expanded="true" signature="12490:12791" placeholder="..." />
-            <marker date="1469441562765" expanded="true" signature="66276:66284" placeholder="..." />
-            <marker date="1469441562765" expanded="true" signature="66340:66348" placeholder="..." />
-            <marker date="1469441562765" expanded="true" signature="66766:66774" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -857,12 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1469109490661" expanded="true" signature="11759:12060" placeholder="..." />
-            <marker date="1469109490661" expanded="true" signature="65545:65553" placeholder="..." />
-            <marker date="1469109490661" expanded="true" signature="65609:65617" placeholder="..." />
-            <marker date="1469109490661" expanded="true" signature="66035:66043" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -931,33 +922,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.90524966">
           <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/各种特效/Mgical Menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8043478">
+        <state vertical-scroll-proportion="0.0">
           <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/images gallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2173913">
-          <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap例子/Blog Template for Bootstrap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7391305">
+        <state vertical-scroll-proportion="0.0">
           <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
           <folding>
             <marker date="1469440725938" expanded="true" signature="12216:12517" placeholder="..." />
@@ -970,7 +948,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap例子/Blog Template for Bootstrap_files/blog.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.021739">
+        <state vertical-scroll-proportion="0.0">
           <caret line="5" column="55" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="55" />
           <folding />
         </state>
@@ -978,10 +956,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap例子/My Blog Template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33546734">
-          <caret line="115" column="25" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
+        <state vertical-scroll-proportion="-9.065217">
+          <caret line="143" column="10" selection-start-line="143" selection-start-column="10" selection-end-line="143" selection-end-column="10" />
           <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#p#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1020,6 +997,22 @@
             <element signature="n#p#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/images gallery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.326087">
+          <caret line="108" column="38" selection-start-line="108" selection-start-column="38" selection-end-line="108" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/advanced images gallery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62099874">
+          <caret line="90" column="55" selection-start-line="90" selection-start-column="55" selection-end-line="90" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
