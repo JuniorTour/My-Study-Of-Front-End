@@ -7,8 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cadbaf1-4db6-4833-b669-1764b4758af1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Some Demos/DOM编程艺术/Ajax.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Some Demos/DOM编程艺术/example.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Some Demos/DOM编程艺术/abbr.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="已完成.iws" />
@@ -111,19 +110,32 @@
       <file leaf-file-name="advanced images gallery.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/advanced images gallery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.130435">
+            <state vertical-scroll-proportion="15.195652">
               <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ajax.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ajax.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/Ajax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42637643">
+            <state vertical-scroll-proportion="-22.52174">
               <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="abbr.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/abbr.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="4.6491675">
+              <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+              <folding>
+                <element signature="n#p#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#p#0;n#blockquote#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -208,7 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bootstrap/4.JavaScript/5.Affix.html" />
         <option value="$PROJECT_DIR$/../../../array of javascript.html" />
         <option value="$PROJECT_DIR$/JavaScript入门/array of javascript.html" />
         <option value="$PROJECT_DIR$/JavaScript入门/object of javascript.html" />
@@ -259,6 +270,7 @@
         <option value="$PROJECT_DIR$/Some Demos/DOM编程艺术/advanced images gallery.html" />
         <option value="$PROJECT_DIR$/Some Demos/DOM编程艺术/example.txt" />
         <option value="$PROJECT_DIR$/Some Demos/DOM编程艺术/Ajax.html" />
+        <option value="$PROJECT_DIR$/Some Demos/DOM编程艺术/abbr.html" />
       </list>
     </option>
   </component>
@@ -580,11 +592,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/QQ邮箱/material/main.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QQ邮箱/material/logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1006,14 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/advanced images gallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.130435">
-          <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/example.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1024,9 +1023,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/Ajax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42637643">
+        <state vertical-scroll-proportion="-22.52174">
           <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/advanced images gallery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="15.195652">
+          <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/abbr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.6491675">
+          <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+          <folding>
+            <element signature="n#p#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#p#0;n#blockquote#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

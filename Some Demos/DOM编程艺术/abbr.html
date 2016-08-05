@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>abbr</title>
+    <style>
+        abbr {
+            text-decoration: underline;
+        }
+        sup {
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<h1>What is the document model?</h1>
+<p>
+    这是一个获取IE浏览器的异步对象的方法，只能用于IE浏览器的ajax应用。具体意思是如果XMLHttpRequest这个对象还没有定义，就定义一个该对象，该对象从三个try catch语句里面的任何一个对象中获取，如果都没有，就返回false。不过这个方法目前已经过时了，从IE9开始就不需要这样写了，IE9以后的IE浏览器和其它如chrome、firefox等浏览器都已经内置了XMLHttpRequest对象，直接new XMLHttpRequest()就可以返回一个XMLHttpRequest对象，而不需要自己写函数。
+</p>
+<blockquote cite="http://ask.csdn.net/questions/202041">
+    <p>
+        IE9以后的IE浏览器和其它如chrome、firefox等浏览器都已经内置了XMLHttpRequest对象，直接new XMLHttpRequest()就可以返回一个XMLHttpRequest对象，而不需要自己写函数。
+    </p>
+</blockquote>
+<blockquote cite="http://juniortour.net">
+    <p>
+        IE9以后的IE浏览器和其它如chrome、firefox等浏览器都已经内置了XMLHttpRequest对象，直接new XMLHttpRequest()就可以返回一个XMLHttpRequest对象，而不需要自己写函数。
+    </p>
+</blockquote>
+<p>
+    It's an
+    <abbr title="Application programing interface">API</abbr>
+    that can be used o navigate
+    <abbr title="Hypertex markup language">HTTP</abbr>
+    documents.
+</p>
+
+<script>
+    function addOnloadEvent(func) {
+        var oldonload=window.onload;
+        if (typeof oldonload == 'function') {
+            window.onload=function () {
+                oldonload();
+                func();
+            }
+        }   else    {
+            window.onload=func;
+        }
+    }
+    function displayAbbreviations() {
+        if (!document.getElementsByTagName || !document.createTextNode ||
+        !document.createElement) return false;
+
+        var abbrs =document.getElementsByTagName("abbr");
+        if (abbrs.length<1) return false;
+
+        //保存abbr元素信息的数值
+        var defs=new Array();
+
+        //遍历abbr，取得其中的信息。
+        for (var i=0;i<abbrs.length;i++) {
+            var current_abbr=abbrs[i];  //提高可读性
+            if (current_abbr.length<1) continue;
+            var definition=current_abbr.getAttribute("title");
+            var key=current_abbr.lastChild.nodeValue;
+
+            //以文本为下标（键），把title值保存进数组。
+            defs[key]=definition;
+        }
+
+        //创建标记
+        var dlist=document.createElement("dl");
+        var wrong_defs=new Array();
+
+        //遍历defs数组，取出其中的值，用于创建定义列表。
+        for (key in defs) {
+            var definition=defs[key];
+            var dtitle=document.createElement("dt");
+            var dtitle_text=document.createTextNode(key);
+            dtitle.appendChild(dtitle_text);
+
+            var ddesc=document.createElement("dd");
+            var ddesc_text=document.createTextNode(definition);
+            ddesc.appendChild(ddesc_text);
+
+            dlist.appendChild(dtitle);
+            dlist.appendChild(ddesc);
+        }
+        if (dlist.childNodes.length<1) return false;
+
+        //添加一个描述性标题
+        var header=document.createElement("h1");
+        var header_text=document.createTextNode("Abbretions");
+        header.appendChild(header_text);
+
+        document.body.appendChild(header);
+        document.body.appendChild(dlist);
+    }
+
+    addOnloadEvent(displayAbbreviations());
+
+    function displayCitation() {
+        var blockquotes=document.getElementsByTagName("blockquote");
+
+        //
+        for (var i=0;i<blockquotes.length;i++) {
+            var current_bq=blockquotes[i];
+            if (!current_bq.getAttribute("cite")) continue;
+            var cite=current_bq.getAttribute("cite");
+            var sup=document.createElement("sup");
+
+            var source=document.createElement("a");
+            var source_text=document.createTextNode(">>");
+
+            //取得引用中的最后一个元素节点-<p>
+            var allQuotesElement=current_bq.getElementsByTagName("*");
+            var elem=allQuotesElement[allQuotesElement.length-1];
+
+//            alert(blockquotes[i].lastChild.nodeType);
+            //得到3，说明是文本节点-换行符而非想要的元素节点-p。
+
+            source.setAttribute("href",cite);
+            source.appendChild(source_text);
+            sup.appendChild(source);
+//            current_bq.appendChild(sup);
+            elem.appendChild(sup);
+        }
+    }
+
+    addOnloadEvent(displayCitation());
+</script>
+</body>
+</html>
