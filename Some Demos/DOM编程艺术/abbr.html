@@ -106,11 +106,13 @@
         //
         for (var i=0;i<blockquotes.length;i++) {
             var current_bq=blockquotes[i];
+            //如果当前的blockquote没有cite属性，退出本次循环。
             if (!current_bq.getAttribute("cite")) continue;
             var cite=current_bq.getAttribute("cite");
             var sup=document.createElement("sup");
 
             var source=document.createElement("a");
+            source.setAttribute("accesskey","z");
             var source_text=document.createTextNode(">>");
 
             //取得引用中的最后一个元素节点-<p>
@@ -129,6 +131,46 @@
     }
 
     addOnloadEvent(displayCitation());
+
+    function displayAccesskeys() {
+        if (!document.getElementById||!document.createElement||
+                !document.createTextNode) return false;
+
+        var links=document.getElementsByTagName("a");
+        var akeys=new Array();
+
+        for (var i=0;i<links.length;i++) {
+            var current_link=links[i];
+
+            if (!current_link.getAttribute("accesskey")) continue;
+            var key=current_link.getAttribute("accesskey");
+            var link_text=current_link.lastChild.nodeValue;
+
+            //添加到数组里
+            akeys[key]=link_text;
+        }
+
+        var ak_list=document.createElement("ul");
+
+        for (key  in akeys) {
+            var text=akeys[key];
+            var string=key+" : "+text;
+
+            var item=document.createElement("li");
+            var item_text=document.createTextNode(string);
+
+            item.appendChild(item_text);
+            ak_list.appendChild(item);
+        }
+        var header=document.createElement("h1");
+        var header_text=document.createTextNode("AccessKey:");
+        header.appendChild(header_text);
+
+        document.body.appendChild(header);
+        document.body.appendChild(ak_list);
+    }
+
+    addOnloadEvent(displayAccesskeys());
 </script>
 </body>
 </html>
