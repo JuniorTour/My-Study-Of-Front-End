@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practical animation</title>
+    <style>
+        ul,li {
+            /*padding: 0;*/
+            /*margin: 0;*/
+        }
+        
+        .wrapper {
+            width:105px;
+            height:202px;
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<h1>Choose what you want!</h1>
+<ul>
+    <li><a href="">part1</a></li>
+    <li><a href="">part2</a></li>
+    <li><a href="">part3</a></li>
+</ul>
+<div class="wrapper">
+    <img id="preview" src="img/spirte.jpg" alt="">
+</div>
+
+<script>
+    function prepareSlide() {
+        var preview=document.getElementById("preview");
+        //预设图片的默认位置
+        preview.style.position="absolute";
+        preview.style.top="0px";
+        preview.style.left="0px";
+
+        //取得链接
+        var links=document.getElementsByTagName("a");
+
+        links[0].onmouseover=function () {
+//            alert("sdad");
+            moveEle("preview",-100,0,10);
+        };
+        links[1].onmouseover=function () {
+            moveEle("preview",-200,0,10);
+        }
+    }
+
+    window.onload=prepareSlide;
+
+    function moveEle(targetId,final_x,final_y,interval) {
+        var ele=document.getElementById(targetId);
+
+        var xpos=parseInt(ele.style.left);
+        var ypos=parseInt(ele.style.top);
+
+        if (xpos==final_x&&ypos==final_y) return true;
+        if (xpos<final_x) {
+            xpos++;
+        }
+        if (ypos<final_y) {
+            ypos++;
+        }
+        if (xpos>final_x) {
+            xpos--;
+        }
+        if (ypos>final_y) {
+            ypos--;
+        }
+
+        ele.style.left=xpos+"px";
+        ele.style.top=ypos+"px";
+
+        var repeat="moveEle('"+targetId+"',"+final_x+","+final_y+"  ,"+interval+")";
+        movement=setTimeout(repeat,interval);
+    }
+</script>
+</body>
+</html>

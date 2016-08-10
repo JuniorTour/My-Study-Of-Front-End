@@ -1,14 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/bootstrap/2.全局CSS/L02-Grid System.html" />
-    <bookmark url="file://$PROJECT_DIR$/bootstrap/2.全局CSS/5.Button and Inline Image.html" line="8" />
-    <bookmark url="file://$PROJECT_DIR$/各种特效/ToTop.html" line="26" mnemonic="5" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="2cadbaf1-4db6-4833-b669-1764b4758af1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/各种特效/responsive dropdown.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/各种特效/three-level menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demos/DOM编程艺术/img/spirte.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demos/DOM编程艺术/10.2 practical animation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demos/DOM编程艺术/10.animation.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/CSS3 Gradient.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/Combined Form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/DOM编程艺术/Ajax.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/DOM编程艺术/abbr.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/DOM编程艺术/advanced images gallery.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/DOM编程艺术/example.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/DOM编程艺术/images gallery.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/DOM编程艺术/img/ample.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/DOM编程艺术/img/green-water.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/DOM编程艺术/img/pink-peach.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/DOM编程艺术/img/white-flower.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/DOM编程艺术/style object.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/SXU-HELP/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/SXU-HELP/山大服务助手-sxuhelp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/SXU-HELP/山大服务助手-sxuhelp_files/amazeui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/SXU-HELP/山大服务助手-sxuhelp_files/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/SXU-HELP/山大服务助手.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/SXU-HELP/手机端-山大服务助手-sxuhelp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/SXU-HELP/桌面端-山大服务助手-sxuhelp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/Table Exercise.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/cube transform example/2d、3d转换及动画测试.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/cube transform example/css transform example.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/cube transform example/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/cube transform example/images/chimpified.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/cube transform example/images/contact.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/cube transform example/images/jilt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/cube transform example/images/olark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/cube transform example/images/ordoro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/cube transform example/images/yotpo.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/cube transform example/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/cube transform example/transform card.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/example.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/refresh 重定向.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/Float.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/background.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/line-height explain in detail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/pseudo-class of anchor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/test of inline and block.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/test.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/vertical align.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/where is baseline.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/格式化.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/水平格式化.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/清除浮动测试.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/2.全局CSS/5.Button and Inline Image.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/2.全局CSS/L01-bootstrap-nav.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/2.全局CSS/L02-Grid System.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/2.全局CSS/L03-form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/2.全局CSS/L04-Frame-more.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/2.全局CSS/L04-Frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/3.组件/10.Novelty-2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/3.组件/6.dropdown list and button group.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/3.组件/7.input group.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/3.组件/8.Navigation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/3.组件/9.Breadcrumb Pagination Badge Label.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/4.JavaScript/1.transition and modal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/4.JavaScript/2.Scrollspy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/4.JavaScript/3.Toggle-Tab.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/4.JavaScript/4.Collapse Carousel and Affix.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/4.JavaScript/5.Affix.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/adsbygoogle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/affix_plugin_demo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/core.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/hm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/push.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/qrcode(1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/qrcode.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/quote.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/stat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件_files/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件_files/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件_files/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/docs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/docs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/h(1).js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/h.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/ie-emulation-modes-warning.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/ie10-viewport-bug-workaround.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/patch.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/docs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/docs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/h(1).js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/h.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/ie-emulation-modes-warning.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/ie10-viewport-bug-workaround.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/patch.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/组件 · Bootstrap v3 中文文档.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/docs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/docs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/h(1).js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/h.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/ie-emulation-modes-warning.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/ie10-viewport-bug-workaround.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/patch.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Materials/Images/carousel.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Materials/Images/example-md.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Materials/Images/example-xs.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Materials/Images/example.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Materials/alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Materials/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Materials/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/Materials/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap/山大服务助手.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/各种特效/JavaScript Clock.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/各种特效/JavaScript DropDown.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/各种特效/Mgical Menu.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/各种特效/ToTop.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/各种特效/dropdown.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/各种特效/responsive dropdown.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/各种特效/three-level menu.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/各种特效/top-btn.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="已完成.iws" />
@@ -29,45 +159,32 @@
     <favorites_list name="已完成" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="advanced images gallery.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/advanced images gallery.html">
+    <leaf>
+      <file leaf-file-name="style object.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demos/DOM编程艺术/style object.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-69.978264">
-              <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
+            <state vertical-scroll-proportion="16.086956">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ajax.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/Ajax.html">
+      <file leaf-file-name="10.animation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demos/DOM编程艺术/10.animation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+            <state vertical-scroll-proportion="-12.152174">
+              <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="abbr.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/abbr.html">
+      <file leaf-file-name="10.2 practical animation.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Demos/DOM编程艺术/10.2 practical animation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-              <folding>
-                <element signature="n#p#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#p#0;n#blockquote#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style object.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/style object.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6914213">
-              <caret line="140" column="17" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.24199744">
+              <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -90,8 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JavaScript入门/document.html" />
-        <option value="$PROJECT_DIR$/JavaScript入门/window.html" />
         <option value="$PROJECT_DIR$/网易主页/my netease.html" />
         <option value="$PROJECT_DIR$/JavaScript入门/w3c_school/chapter1.html" />
         <option value="$PROJECT_DIR$/网易主页/my neteasy.css" />
@@ -141,6 +256,8 @@
         <option value="$PROJECT_DIR$/Some Demos/DOM编程艺术/style object.html" />
         <option value="$PROJECT_DIR$/各种特效/three-level menu.html" />
         <option value="$PROJECT_DIR$/各种特效/responsive dropdown.html" />
+        <option value="$PROJECT_DIR$/Demos/DOM编程艺术/10.animation.html" />
+        <option value="$PROJECT_DIR$/Demos/DOM编程艺术/10.2 practical animation.html" />
       </list>
     </option>
   </component>
@@ -155,7 +272,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="1932" />
+    <option name="width" value="1938" />
     <option name="height" value="1048" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -205,6 +322,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -233,7 +353,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="各种特效" />
+              <option name="myItemId" value="Demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="已完成" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DOM编程艺术" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -262,9 +400,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches">
-        <subPane />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,19 +414,19 @@
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0/cmd/git.exe" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\译文" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\JavaScript小应用" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\作品\bootstrap-简历\js" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\Materials\Images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\Some Demos\《CSS权威指南测试例子》" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\3.组件" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\2.全局CSS" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\Materials" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\Demos\DOM编程艺术\img" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\译文" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\JavaScript小应用" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\作品\bootstrap-简历\js" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.6.dropdown list.html">
@@ -391,10 +526,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1932" height="1048" extended-state="1" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14936441" sideWeight="0.48703495" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14889124" sideWeight="0.48703495" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282887" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282887" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -516,27 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/3.组件/8.Navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.047496792">
-          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/3.组件/10.Novelty-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.559692">
-          <caret line="188" column="54" selection-start-line="188" selection-start-column="49" selection-end-line="188" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/4.JavaScript/3.Toggle-Tab.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.048780486">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap-3.3.5/dist/css/bootstrap.css.map">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24798928">
@@ -545,13 +659,6 @@
       </provider>
       <provider editor-type-id="sourcemapFileViewerProvider">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/4.JavaScript/4.Collapse Carousel and Affix.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.047496792">
-          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap例子/Jumbotron Template for Bootstrap.html">
@@ -572,13 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.89858794">
           <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/各种特效/JavaScript Clock.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36328626">
-          <caret line="56" column="35" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -607,16 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.8043478">
           <caret line="17" column="75" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/各种特效/ToTop.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="39" selection-start-line="124" selection-start-column="39" selection-end-line="124" selection-end-column="39" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -676,24 +766,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/background.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7106274">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap例子/My Carousel Template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="276" column="0" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/Float.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90524966">
-          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -711,29 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/images gallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="38" selection-start-line="108" selection-start-column="38" selection-end-line="108" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/example.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/advanced images gallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-69.978264">
-          <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33252722">
@@ -741,59 +794,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/Ajax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/abbr.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-          <folding>
-            <element signature="n#p#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#0;n#blockquote#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/各种特效/dropdown.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.717391">
-          <caret line="120" column="28" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/各种特效/Mgical Menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-39.413044">
-          <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/各种特效/JavaScript DropDown.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.5652175">
-          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap例子/Blog Template for Bootstrap.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.8043478">
           <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-          <folding>
-            <marker date="1469440725938" expanded="true" signature="12216:12517" placeholder="..." />
-            <marker date="1469440725938" expanded="true" signature="66002:66010" placeholder="..." />
-            <marker date="1469440725938" expanded="true" signature="66066:66074" placeholder="..." />
-            <marker date="1469440725938" expanded="true" signature="66492:66500" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -801,43 +805,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.1086955">
           <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/各种特效/responsive dropdown.html">
+    <entry file="file://$PROJECT_DIR$/Demos/DOM编程艺术/style object.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.4212549">
-          <caret line="112" column="13" selection-start-line="112" selection-start-column="13" selection-end-line="112" selection-end-column="13" />
+        <state vertical-scroll-proportion="16.086956">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/各种特效/three-level menu.html">
+    <entry file="file://$PROJECT_DIR$/Demos/DOM编程艺术/10.animation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62099874">
-          <caret line="88" column="25" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
-          <folding>
-            <element signature="n#ul#0;n#li#1;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-12.152174">
+          <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Some Demos/DOM编程艺术/style object.html">
+    <entry file="file://$PROJECT_DIR$/Demos/DOM编程艺术/10.2 practical animation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6914213">
-          <caret line="140" column="17" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.24199744">
+          <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
           <folding />
         </state>
       </provider>
