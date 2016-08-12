@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>frame</title>
+    <link rel="stylesheet" href="../Materials/bootstrap.min.css">
+</head>
+<body>
+
+    <h2 class="text-center">form is below</h2>
+
+    <form action="" role="form" >
+        <div class="form-group">
+            <label for="account">Enter Your Account</label>
+            <input id="account" class="form-control" type="text" placeholder="Enter Your Account">
+        </div>
+        <div class="form-group">
+            <label for="file" class="control-label">Choose Your File</label>
+            <input id="file"  class="form-control col-md-4" type="file" placeholder="Enter Your Account">
+            <p class="help-block">选择你需要的文件</p>
+        </div>
+        <div class="form-group">
+            <div class="col-md-2">
+                <label for="password">Enter Your Password</label>
+                <input id="password" class="form-control col-md-4"  type="password" placeholder="Enter Your Account">
+                <!--可以看到，非.form-horizontal 类的表单并不能使用栅格-->
+                <!--错！！！只是input不能用栅格类-->
+                <!--但其实这样bug非常严重！！-->
+            </div>
+        </div>
+    </form>
+
+    <hr>
+
+    <h2 class="text-center">form-inline is below</h2>
+    <h2 class="text-center">这种form最起码需要768px以上的宽度，否则与普通的一样。</h2>
+
+    <form action="" role="form" class="form-inline" >
+        <div class="form-group">
+            <label for="account">Enter Your Account</label>
+            <input id="account" class="form-control" type="text" placeholder="Enter Your Account">
+        </div>
+        <div class="form-group">
+            <label for="file" class="control-label">Choose Your File</label>
+            <input id="file"  class="form-control col-md-4" type="file" placeholder="Enter Your Account">
+            <p class="help-block">选择你需要的文件</p>
+        </div>
+        <div class="form-group">
+            <label for="password2" >Enter Your Password</label>
+            <input id="password2" class="form-control"  type="password" placeholder="Enter Your Account">
+            <!--可以看到，非.form-horizontal 类的表单并不能使用栅格-->
+        </div>
+    </form>
+
+    <hr>
+
+    <h2 class="text-center">form-horizontal is below</h2>
+
+    <form action="" class="form-horizontal">
+        <div class="form-group">
+            <label for="email" class="col-md-2 control-label">Emali</label>
+            <!--control-label类使其右对齐了-->
+            <div class="col-md-3">
+                <input type="text" id="email" class="col-md-8 form-control" placeholder="Enter Your Email">
+                <!--准确的说，只要是input标签都不支持栅格，但是label却支持-->
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="address" class="col-md-2 control-label">Address</label>
+            <div class="col-md-3">
+                <input type="text" id="address" class="col-md-8 form-control" placeholder="Enter Your Address">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-2 col-md-offset-2">
+                <!--push和offset的视觉效果是一样的，但off是添加了margin，而push则是position-->
+                <!--但是官方实例用了offset，相信他！-->
+                <div class="checkbox">
+                    <label for="check" class="control-label">
+                        <input id="check" type="checkbox">Remember me
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-2 col-md-offset-2">
+                <button class="btn btn-group-justified">Log in</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

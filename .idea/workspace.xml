@@ -1,586 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cadbaf1-4db6-4833-b669-1764b4758af1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/CSS3 Gradient.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/Combined Form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/DOM编程艺术/10.2 practical animation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/DOM编程艺术/10.animation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/DOM编程艺术/Ajax.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/DOM编程艺术/abbr.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/DOM编程艺术/advanced images gallery.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/DOM编程艺术/example.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/DOM编程艺术/images gallery.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/DOM编程艺术/img/ample.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/DOM编程艺术/img/green-water.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/DOM编程艺术/img/pink-peach.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/DOM编程艺术/img/spirte.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/DOM编程艺术/img/white-flower.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/DOM编程艺术/style object.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/SXU-HELP/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/SXU-HELP/山大服务助手-sxuhelp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/SXU-HELP/山大服务助手-sxuhelp_files/amazeui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/SXU-HELP/山大服务助手-sxuhelp_files/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/SXU-HELP/山大服务助手.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/SXU-HELP/手机端-山大服务助手-sxuhelp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/SXU-HELP/桌面端-山大服务助手-sxuhelp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/Table Exercise.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/cube transform example/2d、3d转换及动画测试.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/cube transform example/css transform example.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/cube transform example/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/cube transform example/images/chimpified.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/cube transform example/images/contact.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/cube transform example/images/jilt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/cube transform example/images/olark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/cube transform example/images/ordoro.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/cube transform example/images/yotpo.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/cube transform example/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/cube transform example/transform card.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/example.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/refresh 重定向.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/《CSS权威指南测试例子》/Float.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/《CSS权威指南测试例子》/background.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/《CSS权威指南测试例子》/line-height explain in detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/《CSS权威指南测试例子》/pseudo-class of anchor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/《CSS权威指南测试例子》/test of inline and block.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/《CSS权威指南测试例子》/test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/《CSS权威指南测试例子》/vertical align.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/《CSS权威指南测试例子》/where is baseline.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/《CSS权威指南测试例子》/格式化.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/《CSS权威指南测试例子》/水平格式化.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/《CSS权威指南测试例子》/清除浮动测试.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/下拉菜单/JavaScript DropDown.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/下拉菜单/Mgical Menu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/下拉菜单/dropdown.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/下拉菜单/responsive dropdown.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/下拉菜单/three-level menu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/各种特效/JavaScript Clock.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/各种特效/ToTop.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/各种特效/top-btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/w3c_school/chapter1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/w3c_school/chapter2.DOM.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/w3c_school/chapter3.object-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/w3c_school/chapter3.object.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/w3c_school/chapter3.regular expression.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/w3c_school/chapter4.BOM.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/翁凯/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/翁凯/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/翁凯/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/翁凯/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/翁凯/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/翁凯/array of javascript.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/翁凯/document.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/翁凯/hello world.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/翁凯/object of javascript.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript入门/翁凯/window.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/CNAME" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/_config.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/dist/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/dist/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/dist/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/dist/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/dist/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/dist/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/dist/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/dist/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/dist/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_data/browser-bugs.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_data/core-team.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_data/glyphicons.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_data/sass-team.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_data/showcase.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_data/translations.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/ads.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/alerts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/badges.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/breadcrumbs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/button-dropdowns.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/button-groups.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/dropdowns.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/glyphicons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/input-groups.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/jumbotron.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/labels.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/list-group.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/media.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/navbar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/navs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/page-header.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/pagination.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/panels.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/progress-bars.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/responsive-embed.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/thumbnails.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/components/wells.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/css/buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/css/code.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/css/forms.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/css/grid.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/css/helpers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/css/images.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/css/less.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/css/overview.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/css/responsive-utilities.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/css/sass.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/css/tables.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/css/type.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/customizer-variables.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/footer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/getting-started/accessibility.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/getting-started/browser-device-support.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/getting-started/community.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/getting-started/disabling-responsiveness.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/getting-started/download.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/getting-started/examples.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/getting-started/grunt.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/getting-started/license.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/getting-started/template.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/getting-started/third-party-support.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/getting-started/tools.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/getting-started/translations.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/getting-started/whats-included.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/header.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/js/affix.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/js/alerts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/js/buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/js/carousel.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/js/collapse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/js/dropdowns.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/js/modal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/js/overview.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/js/popovers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/js/scrollspy.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/js/tabs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/js/tooltips.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/js/transitions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/nav/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/nav/components.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/nav/css.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/nav/customize.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/nav/getting-started.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/nav/javascript.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/nav/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/nav/migration.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_includes/social-buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_jade/customizer-nav.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_jade/customizer-variables.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_layouts/default.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_layouts/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_plugins/bridge.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/_plugins/bugify.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/brand/bootstrap-outline.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/brand/bootstrap-punchout.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/brand/bootstrap-solid.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/css/docs.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/css/src/docs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/css/src/pygments-manni.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/flash/ZeroClipboard.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/img/components.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/img/devices.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/img/sass-less.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/customize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/docs.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/ie-emulation-modes-warning.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/ie10-viewport-bug-workaround.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/ie8-responsive-file-warning.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/raw-files.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/src/application.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/src/customizer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/vendor/Blob.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/vendor/FileSaver.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/vendor/ZeroClipboard.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/vendor/anchor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/vendor/autoprefixer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/vendor/holder.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/vendor/jszip.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/vendor/less.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/assets/js/vendor/uglify.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/browser-bugs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/components.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/css.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/customize.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/dist/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/dist/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/dist/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/dist/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/dist/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/dist/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/dist/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/dist/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/dist/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/blog/blog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/blog/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/carousel/carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/carousel/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/cover/cover.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/cover/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/dashboard/dashboard.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/dashboard/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/grid/grid.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/grid/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/jumbotron-narrow/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/jumbotron-narrow/jumbotron-narrow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/jumbotron/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/jumbotron/jumbotron.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/justified-nav/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/justified-nav/justified-nav.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/navbar-fixed-top/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/navbar-fixed-top/navbar-fixed-top.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/navbar-static-top/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/navbar-static-top/navbar-static-top.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/navbar/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/navbar/navbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/non-responsive/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/non-responsive/non-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/offcanvas/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/offcanvas/offcanvas.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/offcanvas/offcanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/blog.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/carousel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/cover.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/dashboard.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/equal-height-columns.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/grid.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/jumbotron-narrow.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/jumbotron.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/justified-nav.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/navbar-fixed.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/navbar-static.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/navbar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/non-responsive.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/offcanvas.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/sign-in.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/starter-template.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/sticky-footer-navbar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/sticky-footer.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/screenshots/theme.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/signin/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/signin/signin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/starter-template/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/starter-template/starter-template.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/sticky-footer-navbar/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/sticky-footer-navbar/sticky-footer-navbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/sticky-footer/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/sticky-footer/sticky-footer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/theme/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/theme/theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/tooltip-viewport/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/tooltip-viewport/tooltip-viewport.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/examples/tooltip-viewport/tooltip-viewport.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/getting-started.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/javascript.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/migration.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/docs/sitemap.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/grunt/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/grunt/bs-commonjs-generator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/grunt/bs-glyphicons-data-generator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/grunt/bs-lessdoc-parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/grunt/bs-raw-files-generator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/grunt/configBridge.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/grunt/sauce_browsers.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/.jscsrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/affix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/unit/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/unit/affix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/unit/alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/unit/button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/unit/carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/unit/collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/unit/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/unit/modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/unit/phantom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/unit/popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/unit/scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/unit/tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/unit/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/vendor/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/vendor/qunit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/vendor/qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/visual/affix-with-sticky-footer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/visual/affix.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/visual/alert.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/visual/button.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/visual/carousel.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/visual/collapse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/visual/dropdown.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/visual/modal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/visual/popover.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/visual/scrollspy.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/visual/tab.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tests/visual/tooltip.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/js/transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/.csscomb.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/.csslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/badges.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/bootstrap.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/breadcrumbs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/button-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/carousel.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/close.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/code.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/component-animations.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/dropdowns.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/forms.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/glyphicons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/grid.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/input-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/jumbotron.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/labels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/list-group.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/media.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/background-variant.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/border-radius.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/center-block.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/clearfix.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/forms.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/gradients.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/grid-framework.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/grid.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/hide-text.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/image.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/labels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/list-group.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/nav-divider.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/nav-vertical-align.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/opacity.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/panels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/progress-bar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/reset-filter.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/reset-text.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/resize.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/responsive-visibility.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/size.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/tab-focus.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/table-row.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/text-emphasis.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/text-overflow.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/mixins/vendor-prefixes.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/modals.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/navs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/normalize.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/pager.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/panels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/popovers.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/print.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/progress-bars.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/responsive-embed.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/responsive-utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/scaffolding.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/tables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/theme.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/thumbnails.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/tooltip.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/type.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/less/wells.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/package.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/test-infra/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/test-infra/S3Cachefile.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/test-infra/npm-shrinkwrap.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/test-infra/requirements.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/test-infra/s3_cache.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.3.5/test-infra/uncached-npm-install.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Blog Template for Bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Blog Template for Bootstrap_files/blog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Blog Template for Bootstrap_files/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Blog Template for Bootstrap_files/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Blog Template for Bootstrap_files/ie-emulation-modes-warning.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Blog Template for Bootstrap_files/ie10-viewport-bug-workaround.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Blog Template for Bootstrap_files/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Carousel Template for Bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Carousel Template for Bootstrap_files/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Carousel Template for Bootstrap_files/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Carousel Template for Bootstrap_files/carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Carousel Template for Bootstrap_files/holder.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Carousel Template for Bootstrap_files/ie-emulation-modes-warning.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Carousel Template for Bootstrap_files/ie10-viewport-bug-workaround.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Carousel Template for Bootstrap_files/ie10-viewport-bug-workaround.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Carousel Template for Bootstrap_files/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Dashboard Template for Bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Dashboard Template for Bootstrap_files/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Dashboard Template for Bootstrap_files/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Dashboard Template for Bootstrap_files/dashboard.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Dashboard Template for Bootstrap_files/holder.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Dashboard Template for Bootstrap_files/ie-emulation-modes-warning.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Dashboard Template for Bootstrap_files/ie10-viewport-bug-workaround.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Dashboard Template for Bootstrap_files/ie10-viewport-bug-workaround.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Dashboard Template for Bootstrap_files/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Jumbotron Template for Bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Jumbotron Template for Bootstrap_files/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Jumbotron Template for Bootstrap_files/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Jumbotron Template for Bootstrap_files/ie-emulation-modes-warning.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Jumbotron Template for Bootstrap_files/ie10-viewport-bug-workaround.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Jumbotron Template for Bootstrap_files/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Jumbotron Template for Bootstrap_files/jumbotron.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/My Blog Template.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/My Carousel Template.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/My Narrow Jumbotron.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/MyDashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/MyJumbotron Template.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/MyThemeTemplate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Narrow Jumbotron Template for Bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Narrow Jumbotron Template for Bootstrap_files/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Narrow Jumbotron Template for Bootstrap_files/ie-emulation-modes-warning.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Narrow Jumbotron Template for Bootstrap_files/ie10-viewport-bug-workaround.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Narrow Jumbotron Template for Bootstrap_files/jumbotron-narrow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Theme Template for Bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Theme Template for Bootstrap_files/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Theme Template for Bootstrap_files/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Theme Template for Bootstrap_files/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Theme Template for Bootstrap_files/docs.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Theme Template for Bootstrap_files/example.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Theme Template for Bootstrap_files/ie-emulation-modes-warning.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Theme Template for Bootstrap_files/ie10-viewport-bug-workaround.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Theme Template for Bootstrap_files/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap例子/Theme Template for Bootstrap_files/theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/2.全局CSS/5.Button and Inline Image.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/2.全局CSS/L01-bootstrap-nav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/2.全局CSS/L02-Grid System.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/2.全局CSS/L03-form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/2.全局CSS/L04-Frame-more.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/2.全局CSS/L04-Frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/3.组件/10.Novelty-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/3.组件/6.dropdown list and button group.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/3.组件/7.input group.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/3.组件/8.Navigation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/3.组件/9.Breadcrumb Pagination Badge Label.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/4.JavaScript/1.transition and modal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/4.JavaScript/2.Scrollspy.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/4.JavaScript/3.Toggle-Tab.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/4.JavaScript/4.Collapse Carousel and Affix.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/4.JavaScript/5.Affix.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/adsbygoogle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/affix_plugin_demo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/core.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/hm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/prettify.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/push.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/qrcode(1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/qrcode.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/quote.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/stat.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件 _ 菜鸟教程_files/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件_files/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件_files/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/Bootstrap 附加导航（Affix）插件_files/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/docs.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/docs.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/h(1).js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/h.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/ie-emulation-modes-warning.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/ie10-viewport-bug-workaround.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/JavaScript 插件 · Bootstrap v3 中文文档_files/patch.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/docs.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/docs.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/h(1).js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/h.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/ie-emulation-modes-warning.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/ie10-viewport-bug-workaround.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/全局 CSS 样式 · Bootstrap v3 中文文档_files/patch.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/组件 · Bootstrap v3 中文文档.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/docs.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/docs.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/h(1).js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/h.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/ie-emulation-modes-warning.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/ie10-viewport-bug-workaround.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Bootstrap文档网页/组件 · Bootstrap v3 中文文档_files/patch.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Materials/Images/carousel.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Materials/Images/example-md.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Materials/Images/example-xs.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Materials/Images/example.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Materials/alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Materials/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Materials/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/Materials/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap文档/山大服务助手.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/译文/A new micro clearfix hack – Nicolas Gallagher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/译文/A new micro clearfix hack – Nicolas Gallagher_files/analytics.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/译文/A new micro clearfix hack – Nicolas Gallagher_files/build.bf79eca437ec82048f86600e4f5493a7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/译文/A new micro clearfix hack – Nicolas Gallagher_files/css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/译文/A new micro clearfix hack.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/译文/Demo_ A new micro clearfix hack — Nicolas Gallagher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/译文/Demo_ A new micro clearfix hack — Nicolas Gallagher_files/analytics.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/译文/一种新的微型清浮技巧.docx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
-    <ignored path="已完成.iws" />
+    <list default="true" id="245d3670-3895-4aed-8406-06a940ee5abe" name="Default" comment="" />
+    <ignored path="Web前端.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -595,25 +17,37 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="已完成" />
+    <favorites_list name="Web前端" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="已完成.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/已完成.iml">
+    <leaf>
+      <file leaf-file-name="10.2 practical animation.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/10.2 practical animation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.4775353">
+              <caret line="129" column="33" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <file leaf-file-name="ToTop.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demos/各种特效/ToTop.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-53.916775">
-              <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+            <state vertical-scroll-proportion="45.130436">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="10.animation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/10.animation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -621,72 +55,10 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JavaScript入门/w3c_school/chapter1.html" />
-        <option value="$PROJECT_DIR$/网易主页/my neteasy.css" />
-        <option value="$PROJECT_DIR$/JavaScript入门/w3c_school/chapter2.DOM.html" />
-        <option value="$PROJECT_DIR$/JavaScript入门/w3c_school/chapter4.BOM.html" />
-        <option value="$PROJECT_DIR$/JavaScript入门/w3c_school/chapter3.object-2.html" />
-        <option value="$PROJECT_DIR$/JavaScript入门/w3c_school/chapter3.regular expression.html" />
-        <option value="$PROJECT_DIR$/Some Demo/pseudo-class of anchor.html" />
-        <option value="$PROJECT_DIR$/Some Demo/line-height explain in detail.html" />
-        <option value="$PROJECT_DIR$/Some Demo/vertical align.html" />
-        <option value="$PROJECT_DIR$/JavaScript入门/w3c_school/chapter3.object.html" />
-        <option value="$PROJECT_DIR$/Some Demo/水平格式化.html" />
-        <option value="$PROJECT_DIR$/Some Demo/where is baseline.html" />
-        <option value="$PROJECT_DIR$/bootstrap-简历/index.html" />
-        <option value="$PROJECT_DIR$/bootstrap-简历/my-resume.html" />
-        <option value="$PROJECT_DIR$/bootstrap-简历/css/mystyle.css" />
-        <option value="$PROJECT_DIR$/Some Demo/CSS权威指南/line-height explain in detail.html" />
-        <option value="$PROJECT_DIR$/Some Demo/CSS权威指南/水平格式化.html" />
-        <option value="$PROJECT_DIR$/Some Demo/CSS权威指南/格式化.html" />
-        <option value="$PROJECT_DIR$/bootstrap例子/Theme Template for Bootstrap.html" />
-        <option value="$PROJECT_DIR$/bootstrap例子/Theme Template for Bootstrap_files/MyTheme.css" />
-        <option value="$PROJECT_DIR$/bootstrap/4.JavaScript/4.Collapse Carousel and Affix.html" />
-        <option value="$PROJECT_DIR$/bootstrap例子/MyThemeTemplate.html" />
-        <option value="$PROJECT_DIR$/bootstrap例子/Jumbotron Template for Bootstrap.html" />
-        <option value="$PROJECT_DIR$/bootstrap例子/MyJumbotron Template.html" />
-        <option value="$PROJECT_DIR$/JavaScript小应用/距高考还有X天.html" />
-        <option value="$PROJECT_DIR$/JavaScript小应用/JavaScript Clock.html" />
-        <option value="$PROJECT_DIR$/bootstrap例子/My Narrow Jumbotron.html" />
-        <option value="$PROJECT_DIR$/JavaScript小应用/ToTop.html" />
-        <option value="$PROJECT_DIR$/各种特效/dropdown.html" />
-        <option value="$PROJECT_DIR$/bootstrap例子/Dashboard Template for Bootstrap.html" />
-        <option value="$PROJECT_DIR$/各种特效/JavaScript DropDown.html" />
-        <option value="$PROJECT_DIR$/bootstrap例子/MyDashboard.html" />
-        <option value="$PROJECT_DIR$/bootstrap例子/My Carousel Template.html" />
-        <option value="$PROJECT_DIR$/各种特效/Mgical Menu.html" />
-        <option value="$PROJECT_DIR$/Some Demos/background.html" />
-        <option value="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/background.html" />
-        <option value="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/DOM编程艺术/images gallery.html" />
-        <option value="$PROJECT_DIR$/bootstrap例子/MY Blog Template.html" />
-        <option value="$PROJECT_DIR$/Some Demos/《CSS权威指南测试例子》/Float.html" />
-        <option value="$PROJECT_DIR$/bootstrap例子/My Blog Template.html" />
-        <option value="$PROJECT_DIR$/Some Demos/DOM编程艺术/images gallery.html" />
-        <option value="$PROJECT_DIR$/Some Demos/DOM编程艺术/advanced images gallery.html" />
-        <option value="$PROJECT_DIR$/Some Demos/DOM编程艺术/example.txt" />
-        <option value="$PROJECT_DIR$/Some Demos/DOM编程艺术/Ajax.html" />
-        <option value="$PROJECT_DIR$/Some Demos/DOM编程艺术/abbr.html" />
-        <option value="$PROJECT_DIR$/Some Demos/DOM编程艺术/style object.html" />
-        <option value="$PROJECT_DIR$/各种特效/three-level menu.html" />
-        <option value="$PROJECT_DIR$/各种特效/responsive dropdown.html" />
-        <option value="$PROJECT_DIR$/Demos/DOM编程艺术/10.animation.html" />
-        <option value="$PROJECT_DIR$/Demos/DOM编程艺术/10.2 practical animation.html" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/10.2 practical animation.html" />
       </list>
     </option>
   </component>
@@ -695,51 +67,26 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="NamedScopeManager">
-    <scope name="Unnamed" pattern="" />
-  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
     <option name="height" value="1048" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>General</id>
-          </State>
-          <State>
-            <id>XPath</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>CoffeeScript</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
-      <showMembers ProjectPane="true" />
+      <showMembers />
       <showModules />
       <showLibraryContents />
       <hideEmptyPackages />
@@ -751,91 +98,103 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches">
-        <subPane />
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="作品">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="已完成" />
+              <option name="myItemId" value="Web前端" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="已完成" />
+              <option name="myItemId" value="Web前端" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="作品" />
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="看过的书" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="看过的书" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DOM编程艺术" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="各种特效" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="settings.editor.splitter.proportion" value="0.21943574" />
+    <property name="settings.editor.selected.configurable" value="settings.xslt" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="editor.config.accepted" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\Some Demos\《CSS权威指南测试例子》" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\3.组件" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\2.全局CSS" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成\bootstrap\Materials" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\Demos\DOM编程艺术\img" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\译文" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\JavaScript小应用" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\作品\bootstrap-简历\js" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Html相关资料\已完成" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JavaScript Debug.6.dropdown list.html">
-    <configuration default="false" name="L01-bootstrap-nav.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/已完成/bootstrap/2.全局CSS/L01-bootstrap-nav.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="L02-Grid System.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/已完成/bootstrap/2.全局CSS/L02-Grid System.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="6.dropdown list.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/已完成/bootstrap/6.dropdown list.html">
-      <method />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -859,11 +218,6 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -884,201 +238,86 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.L01-bootstrap-nav.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.L02-Grid System.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.6.dropdown list.html" />
-    </list>
-    <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.6.dropdown list.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.L02-Grid System.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.L01-bootstrap-nav.html" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="StructureViewFactory">
-    <option name="ACTIVE_ACTIONS" value=",HTML5_OUTLINE_MODE,ALPHA_COMPARATOR" />
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2cadbaf1-4db6-4833-b669-1764b4758af1" name="Default" comment="" />
-      <created>1453648485167</created>
+      <changelist id="245d3670-3895-4aed-8406-06a940ee5abe" name="Default" comment="" />
+      <created>1470918431194</created>
       <option name="number" value="Default" />
-      <updated>1453648485167</updated>
+      <updated>1470918431194</updated>
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14889124" sideWeight="0.48703495" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282887" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282887" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15469904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19427083" sideWeight="0.512965" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39813736" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
-      <path value="$PROJECT_DIR$/../.." />
+      <path value="$PROJECT_DIR$/作品" />
+      <path value="$PROJECT_DIR$" />
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/JavaScript入门/w3c_school/chapter3.object.html</url>
-          <line>26</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="8" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bootstrap简历/images/banner.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap简历/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4130435">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap简历/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36217552">
-          <caret line="5595" column="10" selection-start-line="5595" selection-start-column="1" selection-end-line="5595" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap简历/css/mystyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8043478">
-          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap简历/my-resume.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48020434">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap简历/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04725415">
-          <caret line="645" column="22" selection-start-line="645" selection-start-column="17" selection-end-line="645" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/网易主页/my netease.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.047496792">
-          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/网易主页/my neteasy.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.047496792">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="63" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33252722">
-          <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/.name">
+    <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/10.animation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/已完成.iml">
+    <entry file="file://$PROJECT_DIR$/Demos/各种特效/ToTop.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding />
+        <state vertical-scroll-proportion="45.130436">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/abbr.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-53.916775">
-          <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.35301667">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <last-edited>Unnamed</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-          <order>
-            <scope name="Unnamed" />
-          </order>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/10.2 practical animation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4775353">
+          <caret line="129" column="33" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

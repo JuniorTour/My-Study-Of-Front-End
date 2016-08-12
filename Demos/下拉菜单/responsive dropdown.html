@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--我原来还以为这个meta只对bootstrap有用呢。-->
+    <title>responsive dropdown</title>
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        ul,li {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            list-style: none;
+        }
+
+
+        .menu {
+            font:26px/1 "microsoft yahei";
+            overflow: hidden;
+            /*width:45%;*/
+            width:850px;
+            margin: 0 auto;
+        }
+        .menu li {
+            float: left;
+            margin-right: 5px;
+            line-height:100px;
+        }
+        .menu li a {
+            display: block;
+            /*老是忘了，a要改成块级元素才能填充满父元素的宽度！！*/
+            padding: 10px 20px;
+            background: #0193b7;
+            line-height:1;
+        }
+        #toplogo {
+            display: none;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+        }
+        #main-header {
+            display: block;
+            line-height:60px;
+        }
+        #sandwich-btn {
+            background: white;
+            width:30px;
+            height:30px;
+            position: absolute;
+            right:5%;
+            border: 1px solid #eee;
+            padding: 5px;
+            display: none;
+            /*垂直居中*/
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .icon-bar {
+            width:100%;
+            height:0;
+            border-top: 2px solid black;
+            margin: 4px auto;
+            float: left;
+        }
+        #logo {
+            background: white;
+            font-size: 50px;
+            font-weight:bold;
+        }
+        
+        @media only screen and (min-width: 300px) and (max-width: 850px){
+            #logo {
+                display: none;
+            }
+            #toplogo {
+                width:100%;
+                display: block;
+                background: red;
+                margin: 10px 0;
+            }
+            .menu {
+                width:100%;
+            }
+            .menu li {
+                width:20%;
+                margin: 0 2%;
+            }
+        }
+
+        @media (min-width:300px) and (max-width:650px) {
+            .menu li {
+                display: block;
+                width:100%;
+                margin: 1% 0;
+                line-height:55px;
+                background: green;
+                text-align: center;
+            }
+            #sandwich-btn {
+                display: block;
+            }
+            #dropdown-wrapper {
+                display: none;
+                /*opacity: 0;*/
+                /*transition: all .3s linear;*/
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div id="toplogo">
+            <a id="main-header" href="#">
+                Imooc
+                <a id="sandwich-btn" href="#">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </a>
+            </a>
+        </div>
+        <ul id="dropdown-wrapper">
+            <li><a href="">Courses1</a></li>
+            <li><a href="">Courses2</a></li>
+            <li id="logo"><a href="#">Imooc</a></li>
+            <li><a href="">Courses3</a></li>
+            <li><a href="">Courses4</a></li>
+        </ul>
+    </div>
+
+    <script>
+        var drop_btn=document.getElementById("sandwich-btn");
+        drop_btn.onclick=function showDropdown() {
+            var dd_wrapper=document.getElementById("dropdown-wrapper");
+            if (dd_wrapper.style.display=="block") {
+                dd_wrapper.style.display="none";
+//                dd_wrapper.style.opacity="0";
+//                dd_wrapper.setAttribute("opcity","0");
+            }   else    {
+                dd_wrapper.style.display="block";
+//                dd_wrapper.style.opacity="1";
+//                dd_wrapper.setAttribute("opcity","1");
+            }
+        }
+    </script>
+</body>
+</html>

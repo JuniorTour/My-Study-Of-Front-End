@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>第55课 表单</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 xhtml 12小时入门教程" />
+</head>
+    <body>
+    	<div>在用户注册,在线报名等场合时,
+    		需要把用户的信息,填写并提交,这时要用到表单来收集用户的信息<br />
+    	</div>
+    	<form action="http://www.baidu.com" method="post">
+    		<p>
+    			用户名: <input type="text" name="username" value="lisi" />
+    		</p>
+    		<p>
+    			密码: <input type="password" name="password" />
+    		</p>
+    		<p>
+    			性别: 男:<input type="radio" name="xingbie" value="男" />
+    				女:<input type="radio" name="xingbie" value="女"  checked="checked" />
+    		</p>
+    		<p>
+    			爱好:篮球 <input type="checkbox" name="hobby" value="篮球" />
+    				足球 <input type="checkbox" name="hobby" value="足球" />
+    			    台球 <input type="checkbox" name="hobby" value="台球" checked="checked" />
+    			    混球 <input type="checkbox" name="hobby" value="混球" />
+    		</p>
+    		<p>
+    			<select name="xueli">
+    				<option value="大学">大学</option>
+    				<option value="高中" selected="selected">高中</option>
+    				<option value="初中">初中</option>
+    			</select>
+    		</p>
+    		<p>
+    			<textarea name="intro">i am from china</textarea>
+    		</p>
+    		<p>
+    			上传头像: <input type="file" name="pic" />
+    		</p>
+    		<p>
+    			隐藏域: 你看不见<input type="hidden" name="IP" value="192.168.1.100" />
+    		</p>
+    		<p>
+    			<input type="submit" value="提交" />
+    		</p>
+    		<p></p>
+    	</form>
+    </body>
+</html>

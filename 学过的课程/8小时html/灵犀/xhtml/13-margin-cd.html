@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>第20课 margin重叠现象研究</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 xhtml 12小时入门教程" />
+<style>
+	#test1{
+		height:100px;
+		background: blue;
+		margin-bottom: 50px;
+	}
+
+	#test2 {
+		height: 100px;
+		background: green;
+		margin-top: 80px;
+	}
+</style>
+</head>
+    <body>
+    	<div id="test1">
+    		上下相邻的普通元素,上下边距,并非简单的相加,<br />
+    		而是取其中较大的边距值<br />
+    		这种现象叫做margin重叠
+    	</div>
+    	<div id="test2"></div>
+    </body>
+</html>

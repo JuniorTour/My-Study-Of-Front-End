@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom</title>
+</head>
+<body id="parent">
+<div id="section1">
+    <p id="existed">existed!</p>
+    <button onclick="delete_p()">remove the child over.</button>
+</div>
+<p>when you leave the input below,it will turn into uppercase.</p>
+<input type="text" id="to-uppercase" onchange="turnIntoUppercase()">
+
+<script>
+    function turnIntoUppercase() {
+        var x=document.getElementById("to-uppercase");
+        x.value= x.value.toUpperCase();
+    }
+
+    var new_para=document.createElement("p");
+    var node=document.createTextNode("i was made by myself.")
+    new_para.appendChild(node);
+//    document.write(new_para.innerHTML);
+
+    var ele=document.getElementById("parent");
+    var node_notification=document.createTextNode("it is appended:")
+//    ele.appendChild(node_notification+new_para);
+    /*node_notification这个元素不是NODE类型的，会提示：“Failed to execute 'appendChild' on 'Node':
+    parameter 1 is not of type 'Node'.”*/
+        ele.appendChild(new_para);
+    /*如果不把<script>放在body尾部，就会在这一句上提示："Cannot read property 'appendChild' of null"。
+    * 因为相应的#parent还没有加载好。*/
+
+    function delete_p() {
+        var child=document.getElementById("existed");
+        child.parentNode.removeChild(child);
+    }
+</script>
+</body>
+</html>

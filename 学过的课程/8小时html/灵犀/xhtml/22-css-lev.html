@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>第29课 css优先级</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 xhtml 12小时入门教程" />
+<style>
+	p{
+		color: red;
+	}
+
+	.test2{
+		color: green;
+	}
+
+	#test1{
+		color: blue;
+	}
+
+	div #test1 {
+		color:pink;
+	}
+</style>
+</head>
+    <body>
+    	<div>
+    		<p id="test1" class="test2">天天向上</p>
+    	</div>
+    </body>
+</html>

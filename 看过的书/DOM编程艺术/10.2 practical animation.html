@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practical animation</title>
+    <style>
+        ul,li {
+            /*padding: 0;*/
+            /*margin: 0;*/
+        }
+        body {
+            font-size:25px;
+        }
+        
+        .wrapper {
+            width:105px;
+            height:202px;
+            overflow: hidden;
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Choose what you want!</h1>
+<ul id="list">
+    <li><a href="">part1</a></li>
+    <li><a href="">part2</a></li>
+    <li><a href="">part3</a></li>
+    <li><a href="#">Stop All</a></li>
+</ul>
+<!--<div class="wrapper">-->
+    <!--<img id="preview" src="img/spirte.jpg" alt="">-->
+<!--</div>-->
+
+<script>
+
+    function moveEle(targetId,final_x,final_y,interval) {
+        var ele=document.getElementById(targetId);
+
+        var xpos=parseInt(ele.style.left);
+        var ypos=parseInt(ele.style.top);
+        var speed=0;
+
+        if (ele.movement) {
+            /*让movement成为ele对象的一个自定义属性，从而既不受变量作用域的限制，
+            * 又能避免clearTimeout不合时宜的过早取消上一次的移动动画。*/
+            /*如果没有这一块代码，当在两个锚之间快速移动时，
+            * 会产生左右抖动的“来回撕扯”问题。*/
+            clearTimeout(ele.movement);
+            /*勿忘修改下面*/
+        }
+
+        if (xpos==final_x&&ypos==final_y) return true;
+        if (xpos<final_x) {
+            speed=Math.ceil((final_x-xpos)/10);
+            xpos+=speed;
+        }
+        if (ypos<final_y) {
+            speed=Math.ceil((ypos-final_y)/10);
+            ypos-=speed;
+        }
+        if (xpos>final_x) {
+            speed=Math.ceil((xpos-final_x)/10);
+            xpos-=speed;
+        }
+        if (ypos>final_y) {
+            speed=Math.ceil((final_y-ypos)/10);
+            ypos+=speed;
+        }
+
+        ele.style.left=xpos+"px";
+        ele.style.top=ypos+"px";
+
+        var repeat="moveEle('"+targetId+"',"+final_x+","+final_y+"  ,"+interval+")";
+        /*勿忘修改下面*/
+        ele.movement=setTimeout(repeat,interval);
+    }
+
+    function stopMove() {
+//        clearTimeout(ele.movement);
+    }
+
+    function insertAfter(newEle,targetEle) {
+        var parent=targetEle.parentNode;
+        if (parent.lastChild==targetEle) {
+            parent.appendChild(newEle);
+        }   else    {
+                parent.insertBefore(newEle,targetEle.nextSibling);
+        }
+    }
+
+    function createEle() {
+        var list=document.getElementById("list");
+        var wrapper=document.createElement("div");
+        wrapper.setAttribute("class","wrapper");
+
+        var preview=document.createElement("img");
+        preview.setAttribute("id","preview");
+        preview.setAttribute("src","img/spirte.jpg");
+
+        wrapper.appendChild(preview);
+        insertAfter(wrapper,list);
+    }
+
+    function prepareSlide() {
+        var preview=document.getElementById("preview");
+        //预设图片的默认位置
+        preview.style.position="absolute";
+        preview.style.top="0px";
+        preview.style.left="0px";
+
+        //取得链接
+        var links=document.getElementsByTagName("a");
+
+        links[0].onmouseover=function () {
+//            alert("sdad");
+            moveEle("preview",-100,0,10);
+        };
+        links[1].onmouseover=function () {
+            moveEle("preview",-200,0,10);
+        };
+        links[2].onmouseover=function () {
+            moveEle("preview",-0,0,10);
+        };
+        links[3].onclick=stopMove;
+    }
+
+    window.onload=function() {
+        createEle();    //顺序不能颠倒！
+        prepareSlide();
+    };
+
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>第31课 css初始化</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 xhtml 12小时入门教程" />
+<style>
+    /*css reset code */
+
+/****  文字大小初始化,使1em=10px *****/
+body {
+font-size:62.5%;
+} /* for IE/Win */
+html>body {
+font-size:10px;
+} /* for everything else */
+
+/*字体边框等初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+ padding: 0;
+ margin: 0;
+ }
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+ }
+fieldset,img {
+ border: 0;
+ }
+ img {
+ display:block;
+ }
+address,caption,cite,code,dfn,th,var {
+ font-weight: normal;
+ font-style: normal;
+ }
+ol,ul {
+ list-style: none;
+ }
+caption,th {
+ text-align: left;
+ }
+h1,h2,h3,h4,h5,h6 {
+ font-weight: normal;
+ font-size: 100%;
+ }
+q:before,q:after {
+ content:'';
+ }
+abbr,acronym { border: 0;
+ }
+
+a {
+text-decoration:none;
+}
+</style>
+</head>
+    <body>
+    	<div>
+    		相同的元素,如li,在不同的浏览器下,显示的效果稍有不同,<br />
+    		是因为,而浏览器对各元素的margin,border,font-size等略有不同,<br />
+    		如果杜绝这种情况,我们通过css强制让所有元素的属性值都一样,<br />
+    		这样,浏览器显示就一致了,减少了不兼容情况的发生.<br />
+    		这个过程,叫做css初始化
+    		<ul>
+    			<li>a</li>
+    			<li>b</li>
+    			<li>c</li>
+    			<li>d</li>
+    		</ul>
+    	</div>
+    </body>
+</html>

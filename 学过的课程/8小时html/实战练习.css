@@ -1,0 +1,216 @@
+
+    .hot {
+        position: relative;
+        top: 92px;
+        left: 667px;
+        display: inline-block;                                                      /*absolute会导致该图片在网页放大缩小时，仍固定不动，显示错位;但这是目前使用较多的方法了。 
+                                                                                                relative又会排挤“导航”这几个字。*/
+    }
+
+    .clr {
+        clear: both;                                                                   /*阻挡nav与左浮的logo冲突*/
+    }
+
+    .container {
+        width: 1000px;
+        height: 940;
+        margin: 0 auto;
+    }
+
+
+    .header {
+        width: 1000px;
+        height: 125px;
+        background: url(images/top_bg.jpg);
+    }
+
+    .logo {
+        float:left;
+        display: block;
+    }
+
+
+
+    .header li {
+        float:left;
+        width: 89px;
+        margin: 0 1px;
+        text-align: center;                                                                             /*important*/
+    }
+
+    .header a {
+        color: #363636;
+        font-size: 20px;
+        line-height: 37px;
+        font-family: "simhei" sans-serif;                                       /* firefox doesn't recognise font:12px/37px simhei sans-serif;*/
+        display: block;
+        height: 37px;
+    }
+
+    .header a:hover {
+        color: white;
+        background: url(images/nav-orange.gif);
+
+    }
+
+    .body {
+        width: 1000px;
+        height: 500px;
+        background: white;
+    }
+
+    .about img {
+        margin: 10px 0px;
+    }
+
+    .title {
+        font: 15px/35px "微软雅黑";
+        height: 35px;
+        background: rgb(229,229,229);
+        background-image: url(images/main-top.gif); 
+        border-radius-top: 55px; 
+        margin-bottom: 1px;
+    }
+
+    .title img {
+        float: left;
+        margin: 3px 5px;
+    }
+
+    .title h1 {
+        float: left;
+        margin-left: 3px;
+
+    }
+
+    .title a {
+        display: block;
+        float: right;
+        color: gray;
+        font: 15px/35px "微软雅黑";
+
+    }
+
+    .left {
+        float: left;
+        border: 1px solid rgb(217,217,217);
+        border-radius-top: 5px;
+        background: white;
+        width: 680px;
+        height: 500px;
+    }
+
+    .four{
+        float: left;
+        background: rgb(239,239,239);
+        width: 320px;
+        height: 210px;
+        margin: 10px;
+        _display:inline;
+    }
+
+    .four h2 {
+        font: 16px "simhei" sans-serif;
+        display: block;
+        margin: 5px;
+        color: gray;
+    }
+
+    .four img {
+        float: left;
+        display: block;
+        margin-left: 5px;
+        border: 5px solid white; 
+    }
+
+    .four ul {
+        width: 110px;
+        float: right;
+        margin-left: 5px;
+
+    }
+
+    .four li {
+        height: 25px;
+        padding-left: 10px;
+        background: url("images/intro.gif") no-repeat;
+        color: gray;
+        font-size: 12px;
+    }
+
+    .right {
+        float: right;
+        border: 1px solid rgb(217,217,217);
+        background: white;
+        width: 300px;
+        height: 500px;
+
+    }
+
+    .art {
+        width: 300px;
+        height: 220px;
+        background: rgb(239,239,239);
+    }
+
+
+    .art a {
+        color: #808080;
+        display: block;
+        height: 29px; 
+        background: url(images/article.gif) no-repeat;
+        padding: 0px 30px;                                                          /*firefox's bug    font: 17px/29px "simhei" sans-serif;*/
+        font: 17px;
+        line-height: 29px;
+        font-family: "simhei" sans-serif;
+    }
+
+    .art a:hover {
+        background: url(images/article-top.gif);
+        color: orange;
+    }
+
+    .rbar {
+        margin-top: 10px;
+    }
+
+    .contact {
+        width: 300px;
+        height: 200px;
+        background: rgb(239,239,239);
+    }
+
+    .contact p {
+        padding: 25px;
+        color: #808080;
+        font: 13px "simhei" sans-serif;
+    }
+
+    .foot {
+        width: 1000px;
+        height: 190px;
+        color: rgb(151,151,151);
+        font: 12px arial tahoma;
+    }
+
+    .foot ul {
+        height: 40px;
+        margin-top: 15px;
+        background: rgb(239,239,239);
+    }
+
+    .foot li {
+        float: left;
+        color: black;
+        font: 15px "simhei";
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .foot a {
+        color: #979797;
+    }
+
+    .foot a:hover {
+        color: orange;
+    }

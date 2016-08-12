@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>第11课 盒模型之margin设置</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 xhtml 12小时入门教程" />
+<style>
+	#cont{
+		width:1000px;
+		height:600px;
+		background: green;
+	}
+
+	div {
+		width:400px;
+		height:200px;
+		float:left;
+	}
+
+	#test{
+		/*
+		margin:10px;
+		*/
+		/*
+		
+		margin-top:10px;
+		margin-left: 20px;
+		margin-bottom: 30px;
+		margin-right: 40px;
+		*/
+
+		/*margin:10px 20px;*/
+		margin: 10px 20px 30px;
+		background: red;
+	}
+
+	#test2 {
+		background: orange;
+	}
+
+	#test3{
+		width:1000px;
+		background: blue;
+	}
+</style>
+</head>
+    <body>
+    	<div id="cont">
+    		<div id="test"></div>
+    		<div id="test2"></div>
+    		<div id="test3"></div>
+    	</div>
+    </body>
+</html>

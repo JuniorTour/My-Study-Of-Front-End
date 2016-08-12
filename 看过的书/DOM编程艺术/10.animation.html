@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    <style></style>
+</head>
+<body>
+    <p id="target">Wooooo!</p>
+    <button id="stop" >Stop!</button>
+
+    <script>
+        function addOnloadEvents(func) {
+            var oldonload=window.onload;
+            if (typeof oldonload =='function') {
+                window.onload=function () {
+                    oldonload();
+                    func();
+                }
+            }   else    {
+                window.onload=func;
+            }
+        }
+
+        function positionEle() {
+            if (!document.getElementById) return false;
+            var ele=document.getElementById("target");
+
+            ele.style.position="absolute";
+            ele.style.top="100px";
+            ele.style.left="500px";
+
+            moveEle('target',200,600,20);
+
+//            movement=setTimeout("moveEle('target',200,600,20)",200);
+        }
+
+        addOnloadEvents(positionEle);
+
+//        var movement;
+
+        function moveEle(targetId,final_x,final_y,interval) {
+            var ele=document.getElementById(targetId);
+
+//            ele.style.left="800px";
+            var xpos=parseInt(ele.style.left);
+            var ypos=parseInt(ele.style.top);
+
+            if (xpos==final_x&&ypos==final_y) return true;  //到达指定位置，退出。
+            if (xpos<final_x) {
+                xpos++;
+            }
+            if (ypos<final_y) {
+                ypos++;
+            }
+            if (xpos>final_x) {
+                xpos--;
+            }
+            if (ypos>final_y) {
+                ypos--;
+            }
+
+            ele.style.top=ypos+"px";
+            ele.style.left=xpos+"px";   //转为字符串。
+
+            var repeat="moveEle('"+targetId+"',"+final_x+","+final_y+"  ,"+interval+")";
+            //这一串拼接操作实在复杂，不懂？？？
+            movement=setTimeout(repeat,interval);
+        }
+
+        function stopMove() {
+            clearTimeout(movement);
+        }
+
+        var stop_btn=document.getElementById("stop");
+        stop_btn.onclick= stopMove;
+//        stop_btn.onclick= stopMove();
+        //不能带括号，不是调用，而是赋值！
+    </script>
+</body>
+</html>

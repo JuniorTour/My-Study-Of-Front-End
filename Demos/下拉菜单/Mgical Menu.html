@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mgical Menu</title>
+    <style>
+        ul,li {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        .clearfix:before,.clearfix:after {
+            content: "";
+            display: table;
+        }
+        .clearfix:after {
+            clear: both;
+        }
+        .clearfix {
+            zoom: 1;
+        }
+
+         body {
+             font:bold 24px/1 "microsoft yahei";
+         }
+
+        ul {
+            width:960px;
+            margin: 0 auto;
+            border-bottom: 10px solid orange;
+        }
+        #hisway {
+            overflow: auto;
+        }
+        li {
+            border-right: 1px solid white;
+            float: left;
+        }
+        li a {
+            text-align: center;
+            line-height:40px;
+            width:160px;
+            display: block;
+            color: #666;
+            background: #ddd;
+        }
+        li span {
+            background: deepskyblue;
+            color: #eee;
+            display: none;
+        }
+        li a:hover span {
+            display: block;
+        }
+        #hisway li a:hover {
+            margin-top: -40px;
+        }
+
+        #myway {
+            overflow: hidden;
+            /*要采用不同的清浮方式，否则有滚动条。*/
+        }
+        #myway a {
+            position: relative;
+        }
+        #myway a div {
+            transition: top .6s linear;
+            width:100%;
+            background: deepskyblue;
+            position: absolute;
+            display: block;
+        }
+        #myway a:hover div {
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+<h1>慕课网的方式：display:none;</h1>
+<ul id="hisway" class="">
+    <li><a href="">English1<span>中文1</span></a></li>
+    <li><a href="">课程大厅<span>Course</span></a></li>
+    <li><a href="">English3<span>中文3</span></a></li>
+    <li><a href="">English4<span>中文4</span></a></li>
+</ul>
+
+<br>
+
+<h1>我的方式：绝对定位</h1>
+
+<ul id="myway" class="">
+    <li><a href="">English1<div>中文1</div></a></li>
+    <li><a href="">课程大厅<div>Course</div></a></li>
+    <li><a href="">English3<div>中文3</div></a></li>
+    <li><a href="">English4<div>中文4</div></a></li>
+</ul>
+</body>
+</html>

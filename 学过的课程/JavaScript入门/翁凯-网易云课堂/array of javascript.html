@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>array of JS</title>
+</head>
+<body>
+	<script>
+		function print (s) {
+			document.write("<h1>"+s+"</h1>")
+		}
+//		function  name(a) {
+//			return "a";
+//		}
+		/*本来想做一个函数得到变量名，但是发现有点难。*/
+
+		var a=new Array(10);
+		document.write("<h1>a.length="+a.length+"</h1>");
+		a[100]=100;
+		document.write("<h1>a.length="+a.length+"</h1>");
+		document.write("<h1>a[99]="+a[99]+"</h1>");
+
+		var colors=["red","blue","black"];
+		colors.length=2;
+		print("colors[2]="+colors[2]);
+//		colors.length=100;
+//		print("colors[2]="+colors[2]);
+
+		colors[colors.length]="pink";
+		print("colors:"+colors);
+
+		/*转换为字符*/
+		print("<br/>")
+		print("colors.toString():"+colors.toString());
+		print("colors.valueOf():"+colors.valueOf());
+		print("colors:"+colors);
+		print("colors:"+colors.join("/"));
+		print("<br/>")
+
+		/*堆栈操作*/
+		var color_two=["PINK","SCARKET"];
+		var count=color_two.push("yellow","green");
+//		print("count="+count);
+//		count=color_two.push("salmon");
+//		print("count2="+count);
+
+		var item=color_two.pop();
+//		alert(".pop-item:"+item);
+		var item2=color_two.shift();
+//		alert(".shift-item2:"+item2);
+
+
+		function sort_it(a,b) {
+			return a-b;
+//			return b-a;	/*从大到小排列*/
+
+		}
+		var order=[1,5,7,10];
+		print("order.sort()="+order.sort(sort_it));
+		print("order.reverse()="+order.reverse());
+		print("<br/>")
+
+        /*连接*/
+        var color_three;
+        color_three=color_two.concat(order);
+		print("color_three: "+color_three);
+        print("<br/>")
+
+        /*截取*/
+        color_three=colors.slice(0,2);
+        print("color_three="+color_three);
+        print("<br/>")
+
+        /*splice()*/
+        var arr=[1,2,3,4,5];
+        print("arr.splice(0,2,0,0)="+arr.splice(0,2,0));
+        /*这种写法打印的其实是splice方法返回的删除内容。*/
+        print("arr-after-splice:"+arr);
+        print("arr-after-splice:"+arr[0]);
+        print("arr-after-splice:"+arr[1]);
+        print("arr-after-splice:"+arr[2]);
+	</script>
+</body>
+</html>

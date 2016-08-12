@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>obj-2</title>
+</head>
+<body onload="startTime()">
+<!--<body onload="setInterval('clock()',500)">-->
+<label for="your-date">
+    input the date you want:
+    <input type="text" id="your-date">
+</label>
+<button onclick="setOwnDate()">OK</button>
+
+<h1 id="txt"></h1>
+
+    <script>
+//        var yourdate="2002,2,3";  不能是字串
+        var yourdate;
+        function setOwnDate() {
+            var yourdate=document.getElementById("your-date").value;/*用value属性*/
+        mydate.setFullYear(yourdate,2,2);
+            if(today>mydate) {
+                alert("how time flyes!"+"<br/>");
+            }   else {
+                alert("sooner or later!"+"<br/>");
+            }
+        }
+        var mydate=new Date();
+
+        document.write("<br/>"+mydate+"<br/>");
+//        mydate.setFullYear(yourdate,2,2);
+//        document.write(mydate+"<br/>");
+
+        var today=new Date();
+
+
+        function checkTime(i) {
+            if (i<10) {
+                i="0"+i;
+            }
+            return i;
+        }
+        function startTime() {
+            var today=new Date();
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();
+            var ms=today.getMilliseconds();
+
+            //add zero in front of n<10
+            m=checkTime(m);
+            s=checkTime(s);
+
+            document.getElementById("txt").innerHTML=h+":"+m+":"+s+":"+ms;
+            setTimeout('startTime()',50);
+        }
+
+        var colors=["white","blue","pink"];
+        document.write(colors.toString()+"<br/>");
+        document.write(colors.valueOf()+"<br/>");
+        document.write(colors.join("*")+"<br/>"+"<br/>");
+
+        var b1=new Boolean("false");
+        document.write(b1);
+        var b2=new Boolean(null);
+        document.write(b2+"<br/>"+"<br/>");
+
+        var num=10;
+        num*=Math.E;
+        document.write(num+"<br/>");
+        document.write("random:"+Math.random(10));
+    </script>
+
+</body>
+</html>

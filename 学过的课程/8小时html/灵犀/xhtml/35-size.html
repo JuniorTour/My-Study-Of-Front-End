@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>第51课 尺寸的表示</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 xhtml 12小时入门教程" />
+<style>
+	#par{
+		width: 600px;
+		height: 300px;
+		background: green;
+	}
+
+	#son1 {
+		width: 300px;
+		height: 100px;
+		background: blue;
+	}
+
+	#son2 {
+		width: 50%;
+		height: 50%;
+		background: pink;
+	}
+
+	#test1 {
+		font-size: 10px;
+	}
+
+	#p1 {
+		font-size: 20px;
+	}
+
+	#p2 {
+		font-size: 1.5em;
+	}
+
+</style>
+</head>
+    <body>
+    	<div id="par">
+    		<div id="son1">我用像素来表示</div>
+    		<div id="son2">我用百分比来表示,块状子元素要是不说宽度,默认占满父元素的宽度</div>
+    	</div>
+
+    	<div id="test1">
+    		父div
+    		<p id="p1">我用px表示文字大小</p>
+    		<p id="p2">我用em表示文字大小,em是相对大小,是指其父元素中的1个"M"的大小,简单理解为父元素的fon-size就是1个em单位</p>
+    	</div>
+
+    </body>
+</html>

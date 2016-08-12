@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reg exp</title>
+</head>
+<body>
+
+<script>
+    var patt1=new RegExp("g");
+    /*似乎这些参数都只是要寻找的值啊？*/
+
+    document.write(patt1.test("i do have e!")+"<br/>");
+    document.write(patt1.exec("i do have many eeee e!")+"<br/>");
+    patt1.compile("n")
+    document.write(patt1.test("i do have e!")+"<br/>");
+    document.write(patt1.exec("i do have many eeee e!"));
+</script>
+</body>
+</html>

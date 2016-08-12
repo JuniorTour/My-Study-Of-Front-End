@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			table {
+				width: 300px;
+				height: 300px;
+			}
+
+			/*td[colspan="2"] {
+				border: 2px solid pink;
+			}*/
+		</style>
+	</head>
+	<body>
+		<table border=1>
+			<col align="left" span="2">
+			<col align="center" span="3">	<!-- invalid? -->
+			<col align="right" span="1">
+			<caption>I am first-heading</caption>
+			<thead>
+				<tr>
+					<th>001</th>
+					<th>002</th>
+					<th>003</th>
+					<th>004</th>
+				</tr>
+<!-- 				<th>
+					<tr>001</tr>
+	WRONG!				<tr>002</tr>
+					<tr>003</tr>
+				</th> -->
+			</thead>
+			<tr>
+				<td colspan="2">01</td>
+				<td>02</td>
+				<td>03</td>
+				<td>04</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td rowspan="2">2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+		</table>
+	</body>
+</html>

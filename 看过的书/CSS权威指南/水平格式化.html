@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Horizontal Formatting</title>
+    <style>
+        body {
+            font-size: 30px;
+        }
+        p {
+            margin: 0;
+        }
+        div[id*="sec"] {
+            width:80%;
+            height: 400px;
+            margin: 40px;
+            /*padding: 10px;*/
+            border: 5px solid blue;
+        }
+        .son {
+            width:200px;
+            height:200px;
+        }
+        #sec1 {
+            background: yellow;
+        }
+        #sec1 span {
+            background: greenyellow;
+            float: left;
+            margin: 30px;
+        }
+        #perpendicular-margin {
+            font-size: 20px;
+            margin: 20px;
+            padding: 50px;
+            background: red;
+            float:left;
+        }
+        #mix-margin {
+            margin: 0 50px;
+            background: #2DC1C9;
+            float: left;
+        }
+        #sec2 {
+            font-size: 30px;
+            background: green;
+        }
+        #negative-margin {
+            background: pink;
+            margin-left: -1em;
+        }
+        #three-auto {
+            width:auto;
+            margin: auto;
+            background: orange;
+        }
+        #sec2 p {
+            color: #fff;
+            width:1300px;
+            margin-left: -30px;
+            background: black;
+        }
+        #part3 {
+            width:420px;
+            margin-top: 50px;
+        }
+        .neg {
+            margin: 0 10px -50px;
+            border: 1px solid gray;
+        }
+        line {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="sec1">
+    <div id="perpendicular-margin" class="son">
+        <p>按照w3c规范，如果块级父元素没有padding或border，那么子元素的垂直（注意，只有垂直方向上的）margin将被绘制到块级父元素之外。</p>
+    </div>
+    <div id="mix-margin" class="son">测试水平外边距是否会合并</div>
+    <span>FIRST SPAN</span>
+    <span>SECOND SPAN</span>
+</div>
+<div id="sec2">
+    <div id="negative-margin" class="on">我有 -1em 的负外边距！(๑•ᴗ•๑)我变长了30px!
+    正好是一个字符（我字）的宽度。</div>
+    <div id="three-auto">我有宽度和左右外边距共三个auto值!然而和没有声明宽和外边距效果是一样的。~(￣0￣)/</div>
+    <p>我是一段&lt;p&gt;。也有 -30px 的负外边距！</p>
+    <line>I am a self-made element-&lt;line&gt;.</line>
+</div>
+<div id="part3">
+    <p class="neg">A paragraph.</p>
+</div>
+<p>The next paragraph.</p>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Form and Complex Form</title>
+	<style>
+		body {
+			font: 14px/1 "microsoft yahei";
+		}
+		form div {
+			position: relative;
+			margin: 10px 0;
+		}
+		fieldset {
+			width: 40%;
+			background: rgb(245,245,245);
+			border: 1px solid gray;
+			margin: 1em 0;
+			padding: 1em;
+		}
+		input:focus {
+			border-top: 2px solid #999;
+			border-left: 2px solid #999;
+			border-right: 2px solid #ccc;	
+			border-bottom: 2px solid #ccc;
+
+			outline: none;
+		}
+		label {
+			display: inline-block;
+			width: 7em;
+			cursor: pointer;
+		}
+		textarea {
+			width: 100%;
+			height: 10em;
+		}
+		label {
+			display: inline-block;
+			width: 10em;
+		}
+		select {
+			display: inline-block;
+			width: 10em;
+		}
+		.date #month,#day {
+			text-indent: -999em;
+			width: 0;
+			/*重要！！！*/
+		}
+		.date input,select {
+			width: 80px;
+		}
+		.color {
+			overflow: hidden;
+			/*还有一个清除浮动的问题*/
+		}
+		.color label,.color .col {
+			float: left;
+		}
+		.color div {
+			margin: 0;
+		}
+		.col {
+			width: 10%;
+			display: inline-block;
+		}
+		em.tip {
+			font-weight: bold;
+			color: red;
+			position: absolute;
+			left: 410px;
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+		<fieldset>
+			<legend>Place Information</legend>
+			<div>
+				<label for="Place of Birth">Place of Birth</label>
+				<select name="Place of Birth" id="Place of Birth">
+					<option value="USA">USA</option>
+					<option value="UK">UK</option>
+				</select>
+			</div>
+			<div class="date">
+				<label for="date">
+					Date of Birth
+					<em class="tip">▲Attention</em>
+				</label>
+				<input type="text" class="year">
+				<label for="month" id="month">Month</label>
+				<select name="month" id=""></select>
+				<label for="" id="day">Day</label>
+				<input type="text">
+			</div>
+			<div class="color">
+				<label for="">Favorite Color</label>
+				<span class="wrapper">
+					<div class="col">
+						<label for=""><input type="radio">blue</label>
+						<label for=""><input type="radio">blue</label>
+						<label for=""><input type="radio">blue</label>
+						<label for=""><input type="radio">blue</label>
+					</div>
+					<div class="col">
+						<label for=""><input type="radio">blue</label>
+						<label for=""><input type="radio">blue</label>
+						<label for=""><input type="radio">blue</label>
+						<label for=""><input type="radio">blue</label>
+					</div>
+				</span>
+			</div>
+			<div>
+				<label for="">
+					Test Clearfix
+					<em class="tip">▲Attention</em>
+				</label>
+				<input type="text">
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Your Details</legend>
+			<div>
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" >
+				<!-- ID用于与label相连接，name用于服务器识别 -->
+			</div>
+			<div>
+				<label for="name">Email Adress</label>
+				<input type="text" name="name" id="name" >
+				<!-- ID用于与label相连接，name用于服务器识别 -->
+			</div>
+			<div>
+				<label for="name">Web</label>
+				<input type="text" name="name" id="name" >
+				<!-- ID用于与label相连接，name用于服务器识别 -->
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Remember Me</legend>
+			<div>
+				<label for="remember-yes">
+					<input type="radio" id="remember-yes" name="remember" value="remember-yes">
+					Yes
+				</label>
+			</div>
+			<div>
+				<label for="remember-no">
+					<input type="radio" id="remember-no" name="remember" value="remember-no">
+					No
+				</label>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Comment</legend>
+			<div>
+				<textarea name="comment" id="text"></textarea>
+			</div>
+		</fieldset>
+		<div>
+			<input type="submit" name="submit">
+		</div>
+	</form>
+</body>
+</html>

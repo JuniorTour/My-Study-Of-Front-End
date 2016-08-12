@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>style object</title>
+
+    <style>
+        body {
+            font-size: 18px;
+        }
+        table {
+            border: 1px solid red;
+        }
+        tr {
+            border: solid 5px red;
+        }
+        caption {
+            font:bold 25px/1 "simsong";
+        }
+        thead {
+            font-style: italic;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px 10px;
+            background: #666;
+        }
+        td {
+            width:10em;
+        }
+        /*tr:nth-child(even) {*/
+            /*background: #ffc;*/
+        /*}*/
+
+        .stripe {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+<h1 id="header-1">Style Object</h1>
+<table>
+    <caption>Test</caption>
+    <thead>
+    <tr>
+        <td>When</td>
+        <td>How</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>January</td>
+        <td>Walk</td>
+    </tr>
+    <tr>
+        <td>February</td>
+        <td>By bike</td>
+    </tr>
+    <tr>
+        <td>March</td>
+        <td>By rocket</td>
+    </tr>
+    <tr>
+        <td>April</td>
+        <td>Run</td>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>Walk</td>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>Walk</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    function addOnloadEvent(func) {
+        var oldonload=window.onload;
+        if (typeof oldonload !="function") {
+            window.onload=func;
+        }   else    {
+            window.onload=function () {
+                oldonload();
+                func();
+            }
+        }
+    }
+
+    document.getElementById("header-1").style.color="red";
+    document.getElementById("header-1").style.font="30px/1 'microsoft yahei',sans-serif";
+
+    function stripeTables() {
+        var tables=document.getElementsByTagName("table");
+
+        var table_switch=1;
+//        alert(table_switch);
+
+        for (var i=0;i<tables.length;i++) {
+            var current_tables=tables[i];
+            var rows=current_tables.getElementsByTagName("tr");
+
+            for (var j=1;j<=rows.length;j++) {
+                var current_row=rows[j];
+                if (table_switch==1) {
+//                    alert("t-s="+table_switch);
+//                    current_row.style.backgroundColor="yellow";
+                    addClass(current_row,"stripe");
+                    table_switch=-table_switch; //拨动开关
+                }   else {
+                    table_switch=-table_switch; //拨动开关
+                }
+            }
+        }
+    }
+
+    addOnloadEvent(stripeTables());
+
+    function addClass(ele,classname) {
+        if (ele.className) {
+            var new_name=ele.className;
+            new_name+=" ";
+            new_name+=classname;
+        }   else    {
+            ele.className=classname;
+        }
+    }
+
+    //得到下一个“”“元素”“节点（而不是文本节点、属性节点）
+    function getNextElement(node) {
+        if (node.nodeType==1) { //如果传入的元素已经是“元素”节点，就返回其本身
+            return node;
+        }
+        if (node.nextSibling) {    //如果这个元素不是元素节点，
+            return getNextElement(node.nextSibling);    //递归！！
+        }
+        return null;    //如果前两个判断都没有找到，返回空。
+    }
+
+    //给一类元素的下一个相邻元素添加类名（样式）
+    //抽象函数，能普遍适用。
+    function styleSibling(tag,theclass) {
+        var elements=document.getElementsByTagName(tag);
+        var ele;
+
+        for (var i=0;i<elements.length;i++) {
+            ele=getNextElement(elements[i].nextSibling);
+            addClass(ele,theclass);
+        }
+    }
+
+</script>
+</body>
+</html>

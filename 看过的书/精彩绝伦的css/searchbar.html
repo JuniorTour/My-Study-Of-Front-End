@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="reset.css">
+	<style>
+		.search {
+			width: 400px;
+			height: 500px;
+			margin: 0 auto;
+			position: relative;
+		}
+
+		.nav {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			margin-bottom: 50px;
+		}
+
+		.search li {
+			display: block;
+			float: left;
+		}
+
+		.search li a {
+			font-size: 20px;
+			padding: 5px;
+		}
+
+		.search form {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.search input {
+			padding: 0.5%;
+		}
+
+		.search form fieldset {
+			height: 45px;
+			padding: 5%;
+		}
+	</style>
+</html>		
+
+<body>
+		<div class="search">
+			<ul class="nav">
+				<li><a href="">home</a></li>
+				<li><a href="">buy</a></li>
+				<li><a href="">more</a></li>
+				<li><a href="">contact</a></li>
+			</ul>
+
+			<form action="search">
+				<fieldset>
+					<legend>SEARCH!</legend>
+					<input type="text">
+					<input type="submit">
+				</fieldset>
+				
+			</form>
+		</div>
+</body>

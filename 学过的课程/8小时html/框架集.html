@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+<title>新建网页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 http://www.itbool.com" />
+
+</head>
+
+    <frameset rows="30%,*">
+        <frame class="nov" src="images/about.jpg"></frame>                                  /*class无效。*/
+        <frameset cols="300px,*">
+            <frame src="left.html"></frame>                                                            /*相互顺序容易乱，要细心。*/
+            <frame name="right" src="right.html"></frame>                                   /*只能用name*/
+        </frameset>
+    </frameset>
+</html>

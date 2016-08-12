@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>more about frame</title>
+    <!--<link rel="stylesheet" href="bootstrap.min.css">-->
+    <!--保留其一即可-->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- 新 Bootstrap 核心 CSS 文件，用于引入图标-->
+</head>
+<body>
+    <form>
+        <fieldset class="has-success">
+            <input type="date" class="form-control">
+            <input type="datetime-local" class="form-control">
+            <input type="color" class="form-control">
+            <input type="search" class="form-control">
+            <textarea class="form-control" name="" id="" cols="30" rows="5">hhhhh</textarea>
+        </fieldset>
+
+        <hr>
+
+        <div class="checkbox">
+            <!--<label for="apple">apple</label>-->
+            <!--<input type="checkbox" id="apple" class="form-control">-->
+            <!--应该吧input包裹在label中！！！-->
+            <label for="apple">
+                <input type="checkbox" id="apple">apple
+            </label>
+        </div>
+        <div class="checkbox">
+            <label for="orange">
+                <input type="checkbox" id="orange">orange
+            </label>
+        </div>
+        <div class="checkbox">
+            <label for="grape">
+                <input type="checkbox" id="grape">grape
+            </label>
+        </div>
+
+        <hr>
+
+        <div class="ratio">
+            <label>
+                <input type="radio" name="gender" id="male">
+                male
+            </label>
+        </div>
+        <!--相同的name-->
+        <!--相同的name-->
+        <!--相同的name-->
+        <!--重大！！单选必须有相同的name属性，否则无法单选！！value也不行。-->
+        <!--重大！！单选必须有name属性，否则无法单选！！value也不行。-->
+        <!--重大！！单选必须有name属性，否则无法单选！！value也不行。-->
+        <div class="ratio has-error">
+            <label>
+                <input type="radio" name="gender" id="female">
+                female
+            </label>
+        </div>
+
+        <hr>
+
+        <p class="help-block">选择一个</p>
+        <select title="select" multiple name="fruit" class="form-control">
+            <option value="1">111111</option>
+            <option value="1">111111</option>
+            <option value="1">111111</option>
+            <option value="1">111111</option>`
+        </select>
+
+        <hr>
+        <div class="form-group">
+            <label for="inline1">
+                <input type="checkbox" id="inline1">inline1
+            </label>
+            <label for="inline2">
+                <input type="checkbox" id="inline2">inline2
+            </label>
+            <label for="inline3">
+                <input type="checkbox" id="inline3">inline3
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="inline4">
+                <input type="checkbox" id="inline4">inline4
+            </label>
+            <label for="inline5">
+                <input type="checkbox" id="inline5">inline5
+            </label>
+        </div>
+
+        <hr>
+
+        <label for="ratio-inline1">
+            <input type="radio" id="ratio-inline1" name="ratio-inline">ratio-inline1
+        </label>
+        <label for=ratio-inline2>
+            <input type="radio" id="ratio-inline2" name="ratio-inline">ratio-inline2
+        </label>
+        <label for="ratio-inline3">
+            <input type="radio" id="ratio-inline3" name="ratio-inline">ratio-inline3
+        </label>
+        <br>
+        <label for="ratio-inline1">
+            <input type="radio" id="ratio-inline1" name="ratio-inline">ratio-inline1
+        </label>
+        <label for=ratio-inline2>
+            <input type="radio" id="ratio-inline2" name="ratio-inline">ratio-inline2
+        </label>
+        <label for="ratio-inline3">
+            <input type="radio" id="ratio-inline3" name="ratio-inline">ratio-inline3
+        </label>
+
+    </form>
+
+    <form class="form-horizontal">
+<!--图标要想对齐，必须让input与form类匹配。水平input就声明horizontal的form-->
+        <div class="form-group has-feedback">
+            <label for="password" class="col-md-2 control-label">Password</label>
+            <div class="col-md-3">
+                <input type="password" class="form-control" id="password">
+                <span class="glyphicon glyphicon-list-alt form-control-feedback" aria-hidden="true"></span>
+            </div>
+        </div>
+
+        <div class="form-group has-success has-feedback">
+            <label class="control-label col-md-2" for="inputSuccess3">Input with success</label>
+            <div class="col-md-3">
+                <input type="text" class="form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+                <!--阅读器辅助属性，aria-describedby="inputSuccess3Status"与第二个span相匹配-->
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                <span id="inputSuccess3Status" class="sr-only">(success)</span>
+            </div>
+        </div>
+    </form>
+
+    <hr>
+
+    <form>
+        <div class="form-group has-feedback">
+            <label for="input1" class="control-label">input1,同时有两种提示的input,input-lg</label>
+                <div class="input-group">
+                    <!--input要与addon组合在input-group下-->
+                    <span class="input-group-addon">@</span>
+                    <input type="text" class="form-control  input-lg" id="input1" aria-describedby="aria1" placeholder="input-lg">
+                </div>
+            <span class="glyphicon glyphicon-fast-backward form-control-feedback"></span>
+            <span class="sr-only" id="aria1">(test)</span>
+        </div>
+    </form>
+
+</body>
+</html>

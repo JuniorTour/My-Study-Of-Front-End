@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<!-- <body onLoad="alert('hi')"> -->
+<body>
+	<script>
+	function println (s) {
+		document.write(s+"<br/>");
+	}
+	println(gcd(12,4));
+	// JS 竟然连编译顺序都可以不顾！
+	function gcd(u,v) {
+		var a=u;
+		var b=v;
+		var temp=v;
+		while (v != 0) {
+			temp =u%v;
+			u=v;
+			v=temp;
+		}
+		return u;
+	}
+
+	var f=Function("x","y","return x+y");
+	println(f(3,4));
+
+	var n=6
+	n/=3;/*VALID!!*/
+	println(n);
+
+	var t="hh";gtgt
+	switch (t) {
+		case "hh" :
+		alert("hh");
+		break;
+	}
+
+	</script>
+</body>
+</html>
