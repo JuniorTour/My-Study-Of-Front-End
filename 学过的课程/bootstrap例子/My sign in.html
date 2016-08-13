@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>my sign in</title>
+    <link href="./Signin Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #eee;
+            padding: 40px 0;
+        }
+        .example-form {
+            padding: 15px;
+            max-width: 330px;
+            margin: 0 auto;
+        }
+        .form-control {
+            font-size: 16px;
+            height: auto;
+            padding: 10px;
+            /*必须得在auto高度下，padding才有效？？*/
+        }
+        input[type~="email"] {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            margin-bottom: -1px; /*头一次见采用这种方式影响边框*/
+        }
+        input[type="password"] {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form action="" class="example-form">
+        <h2 class="form-title">Please sign in</h2>
+        <label for="input-email" class="sr-only">email address</label>
+        <input type="email" id="input-email" class="form-control" placeholder="Email address">
+        <label for="input-password" class="sr-only">password</label>
+        <input type="password" id="input-password" class="form-control" placeholder="Password">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me">
+                Remember me
+            </label>
+        </div>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Sign in</button>
+    </form>
+</div>
+
+</body>
+</html>
