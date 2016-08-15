@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>video</title>
+    <style>
+        .wrapper {
+            border: 5px solid crimson;
+        }
+        .controls {
+            position: absolute;
+            z-index:1;
+        }
+        .controls button {
+            font-size: 30px;
+            display: block;
+        }
+        .controls button[paused] {
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <video src="sources/exam.mp4" controls preload>
+        <p>
+            Download movie as
+            <a href="sources/exam.mp4">DOWNLOAD</a>
+        </p>
+    </video>
+</div>
+
+<script>
+//        alert("2222");
+
+    function createVideoControls() {
+        var vds=document.getElementsByTagName("video");
+        for (var i=0;i<vds.length;i++) {
+            addControls(vds[i]);
+        }
+    }
+
+    function addControls(vd) {
+        vd.removeAttribute("controls");
+
+        alert("video-width:"+vd.width+" vd-height:"+vd.height);
+        vd.height=vd.videoHeight;
+        vd.width=vd.videoWidth;
+        vd.parentNode.style.height=vd.videoHeight+"px";
+        vd.parentNode.style.width=vd.videoWidth+"px";
+
+//        vd.height=500;
+//        vd.width=500;
+//        vd.parentNode.style.height="500px";
+//        vd.parentNode.style.width="500px";
+
+        var controls=document.createElement("div");
+        controls.setAttribute("class","controls");
+
+        var play=document.createElement("button");
+        play.setAttribute("title","play");
+        play.innerHTML='&#x25BA;';
+
+        controls.appendChild(play);
+
+        vd.parentNode.insertBefore(controls,vd);
+
+        play.onclick=function () {
+            alert("video-width:"+vd.width+" vd-height:"+vd.height);
+            if (vd.ended) {
+                vd.currentTime=0;
+            }
+            if (vd.paused) {
+                vd.play();
+            }   else    {
+                vd.pause();
+            }
+        };
+
+        vd.addEventListener('play',function() {
+            play.innerHTML='&#x2590;&#x2590;';
+            play.setAttribute("paused",true);
+        },false);
+        vd.addEventListener('paused',function () {
+            play.removeAttribute("paused");
+            play.innerHTML="&#x25BA;";
+        },false);
+        vd.addEventListener('ended',function () {
+            vd.paused();
+        },false);
+    }
+
+    window.onload=function () {
+        alert("1111");
+        createVideoControls();
+    };
+
+</script>
+</body>
+</html>
