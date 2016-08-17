@@ -3,13 +3,12 @@
 /*@import url(typography.css);*/
 
 /*我要按我自己熟悉的分类写了。*/
-
+* {
+    padding: 0;
+    margin:0;
+}
 li {
     list-style: none;
-}
-ul,li,h1,p {
-    padding: 0;
-    margin: 0;
 }
 a {
     text-decoration: none;
@@ -28,22 +27,36 @@ a:active {
 body {
     font: 12px/1 "arial";
     color: #223;
-    background: url("../img/background.gif") fixed repeat-x;
+    background: url("../img/background.gif") fixed repeat-x #334;
     margin: 1em 10%;
     max-width: 80em;
 }
 header {
-    background: url(../img/guitarist.gif) rgb(51,51,68) no-repeat right bottom;
+    background: url(../img/slideshow.gif) rgb(51,51,68) no-repeat right center;
     border: .1em solid #667 ;
+    border-bottom: none;
 }
+/*#about header {*/
+    /*background-image: url("../img/bassist.gif");*/
+/*}*/
+/*#contact header {*/
+    /*background-image: url("../img/drummer.gif");*/
+/*}*/
+/*#photos header {*/
+    /*background-image: url("../img/lineup.gif");*/
+/*}*/
+/*#live header {*/
+    /*background-image: url("../img/portrait.gif");*/
+/*}*/
 #heading {
     color: rgb(238,204,136);
     display: inline-block;
-    width:250px;
+    width:720px;
+    background-color: #334;
     height:170px;   /*模仿成一个图片*/
     font-size: 50px;
     font-weight:bold;
-    text-align: center;
+    text-align: left;
     text-shadow: 1px 1px rgb(51,51,68),
                                 2px 2px 2px rgb(102,102,119);
     padding: 50px 40px;
@@ -81,4 +94,20 @@ article h1 {
 }
 article p {
     margin: 1em 0;
+}
+article a {
+    color: #345;
+}
+article a {
+    color: #667;
+    background-color: #fb5;
+}
+
+.here {
+    color: #eef;
+    background: #799;
+}
+.here:hover {
+    color: #eef;
+    background-color: #799;
 }
