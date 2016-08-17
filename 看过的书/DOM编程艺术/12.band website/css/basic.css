@@ -1,0 +1,84 @@
+/*@import url(layout.css);*/
+/*@import url(color.css);*/
+/*@import url(typography.css);*/
+
+/*我要按我自己熟悉的分类写了。*/
+
+li {
+    list-style: none;
+}
+ul,li,h1,p {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #eef;
+    background-color: transparent;
+}
+a:hover {
+     color: #445;
+     background-color: #eb6;
+ }
+a:active {
+      color: #667;
+      background-color: #ec8;
+  }
+
+body {
+    font: 12px/1 "arial";
+    color: #223;
+    background: url("../img/background.gif") fixed repeat-x;
+    margin: 1em 10%;
+    max-width: 80em;
+}
+header {
+    background: url(../img/guitarist.gif) rgb(51,51,68) no-repeat right bottom;
+    border: .1em solid #667 ;
+}
+#heading {
+    color: rgb(238,204,136);
+    display: inline-block;
+    width:250px;
+    height:170px;   /*模仿成一个图片*/
+    font-size: 50px;
+    font-weight:bold;
+    text-align: center;
+    text-shadow: 1px 1px rgb(51,51,68),
+                                2px 2px 2px rgb(102,102,119);
+    padding: 50px 40px;
+}
+header nav {
+    background-color: #789;
+    padding-left: 10%;
+    border: 1px solid #667;
+    border-top: none;
+    border-bottom: none;
+    overflow: hidden;
+}
+header ul {
+    overflow: hidden;
+    border-left: .1em solid #99a;
+}
+header ul li {
+    float: left;
+}
+header ul li a {
+    font-weight:bold;
+    display: block;
+    padding: .5em 2em;
+    border-right: .1em solid #99a;
+}
+
+article {
+    line-height:1.8em;
+    background-color: #edc;
+    padding: 2em 10%;
+}
+article h1 {
+    font-weight:normal;
+    font-size: 2.4em;
+}
+article p {
+    margin: 1em 0;
+}

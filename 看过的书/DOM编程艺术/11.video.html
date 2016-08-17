@@ -32,6 +32,10 @@
 
 <script>
 //        alert("2222");
+/*1.chrome没问题
+2.很怪？！在Firefox中，只有先alert一次，才会执行其余的脚本？？
+* 过了一天，重启电脑，又试了一次，发现Firefox也没问题了。
+* 3.ie11，不知为何videoWidth属性取得的值是0。搜索了很多次，也没有得到有用的资料。*/
 
     function createVideoControls() {
         var vds=document.getElementsByTagName("video");
@@ -43,7 +47,7 @@
     function addControls(vd) {
         vd.removeAttribute("controls");
 
-        alert("video-width:"+vd.width+" vd-height:"+vd.height);
+        alert("video-width:"+vd.videoWidth+" vd-height:"+vd.videoHeight);
         vd.height=vd.videoHeight;
         vd.width=vd.videoWidth;
         vd.parentNode.style.height=vd.videoHeight+"px";
@@ -91,7 +95,6 @@
     }
 
     window.onload=function () {
-        alert("1111");
         createVideoControls();
     };
 
