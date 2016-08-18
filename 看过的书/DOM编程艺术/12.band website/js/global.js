@@ -56,37 +56,66 @@ function highlightLocation() {
 
 addOnloadEvent(highlightLocation());
 
-function moveHeaderBackground(nav_link) {
-    var current_link_text=nav_link.lastChild.nodeValue.toLowerCase();
-    var final_x=0;
+function moveHeaderBackground(current_link_text) {
+    var final_x;
+    var headers=document.getElementsByTagName("header");
+    if (headers[0].movement) {
+        clearTimeout(headers[0].movement);
+        /* 掉了一个[0]，填上后完美！*/
+    }
     switch (current_link_text) {
         case "home":
-            //final_x=0;
+            final_x=100;
             break;
         case "about":
-            final_x=350;
+            final_x=170;
             break;
-        case "photo":
-            final_x=490;
+        case "photos":
+            final_x=240;
             break;
         case "live":
-            final_x=630;
+            final_x=310;
             break;
         case "contact":
-            final_x=750;
+            final_x=380;
             break;
     }
-    var headers=document.getElementsByTagName("header");
-    headers[0].style.backgroundPosition=final_x+"px center";
+    //初始化
+    if (!headers[0].style.backgroundPositionX) {
+        headers[0].style.backgroundPositionX="100%";
+    }
+    //取得当前位置的数值
+    var x_pos=parseInt(headers[0].style.backgroundPositionX);
+    var distance=0;
+    if(x_pos==final_x) {
+         return true;
+    }
+    if (x_pos<final_x) {
+        distance=Math.ceil((final_x-x_pos)/10);
+        x_pos+=distance;
+    }
+    if (x_pos>final_x) {
+        distance=Math.ceil((x_pos-final_x)/10);
+        x_pos-=distance;
+    }
+    //改变原值
+    headers[0].style.backgroundPositionX=x_pos+"%";
+
+    //原来的这种方法我实在理解不了，故放弃了。
+    //var repeat="moveHeaderBackground('"current_link_text"')";
+    //headers[0].movement=setTimeout(repeat,100);
+    headers[0].movement=setTimeout(function () {moveHeaderBackground(current_link_text)},10);
 }
 
 function prepareMoveHeaderBackground() {
-    //gradual enhancement...
+    //gradual enhancement omitted...
     var headers=document.getElementsByTagName("header");
     var nav_links=headers[0].getElementsByTagName("a");
     for (var i=0;i<nav_links.length;i++) {
         nav_links[i].onmouseover=function() {
-            moveHeaderBackground(this);
+            var current_link_text=this.lastChild.nodeValue.toLowerCase();
+            //alert("current_link_text:"+current_link_text);
+            moveHeaderBackground(current_link_text);
         }
     }
 }
