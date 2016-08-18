@@ -6,12 +6,19 @@
     <link rel="stylesheet" href="js/modernizr-1.6.min.js">
     <link rel="stylesheet" href="css/basic.css">
     <style>
+        .cleafix:before,.cleafix:after {
+            content: "";
+            display: table;
+        }
+        .cleafix:after {
+            clear: both;
+        }
         .nav-tab {
             width:100%;
             margin:2em 0;
         }
         .nav-tab ul {
-            overflow: hidden;
+            /*overflow: hidden;*/
             border-bottom: 1px solid #344;
         }
         .nav-tab li {
@@ -21,9 +28,10 @@
             /*position: relative;*/
         }
         .nav-tab a {
-            background: #fff;
+            /*background: #fff;*/
             padding: 10px 20px;
-            border: 1px solid #eee;
+            margin-right: 5px;
+            border: 1px solid transparent;
             border-radius: 8px 8px 0 0;
             display: block;
             font-size: 1.5em;
@@ -32,17 +40,32 @@
         .nav-tab a:hover {
             color: black;
             background-color: #eee;
+            border-bottom-color: #344;
         }
         .nav-tab li.active a {
+            background: #fff;
             cursor: default;
             font-weight:bold;
             color: #000;
             border: 1px solid #000;
             border-bottom-color: transparent;
+            /*这个bug实在匪夷所思，用上了-1的下外边距也没能盖住父元素的底边框。
+            一个小时，修好了！原因是：
+            1.ul的overflow:hiden;使得内部的a的底边框无法遮蔽ul的底边框。
+            我改成了使用clearfix方法。
+            2.上一点改完以后，a标签默认的background: #fff;又会覆盖住未激活部分的ul底边框。
+            我模仿bootstrap默认的tabs标签效果，把他的背景色声明取消了，使之成为透明背景。
+            */
         }
         .nav-tab li.active a:hover {
             color: black;
             background-color: #fff;
+        }
+        section {
+            display: none;
+        }
+        #sec-1{
+            display: block;
         }
     </style>
 </head>
@@ -69,7 +92,7 @@
 <article>
     <h1>About our band:</h1>
     <nav class="nav-tab">
-        <ul>
+        <ul class="cleafix">
             <li class="active"><a href="#sec-1">content1</a></li>
             <li><a href="#sec-2">content2</a></li>
             <li><a href="#sec-3">content3</a></li>
@@ -97,5 +120,6 @@
         alert("nooooooooo");
         /*看来一个script标签引用了js时，其中的内容就不会再执行了。*/
     </script>
+    <script src="js/showSection.js"></script>
 </body>
 </html>

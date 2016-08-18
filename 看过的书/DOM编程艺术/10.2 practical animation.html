@@ -72,9 +72,14 @@
         ele.style.left=xpos+"px";
         ele.style.top=ypos+"px";
 
-        var repeat="moveEle('"+targetId+"',"+final_x+","+final_y+"  ,"+interval+")";
+//        var repeat="moveEle('"+targetId+"',"+final_x+","+final_y+"  ,"+interval+")";
         /*勿忘修改下面*/
-        ele.movement=setTimeout(repeat,interval);
+//        ele.movement=setTimeout(repeat,interval);
+        /*换一种能看得懂的方法：*/
+        ele.movement=setTimeout(function() {
+            moveEle(targetId,final_x,final_y,interval);
+        },interval);
+        /*测试效果也很好！*/
     }
 
     function stopMove() {
