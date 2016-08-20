@@ -5,6 +5,35 @@
     <title>template</title>
     <link rel="stylesheet" href="js/modernizr-1.6.min.js">
     <link rel="stylesheet" href="css/basic.css">
+    <style>
+        #gallery {
+            overflow: hidden;
+        }
+        #gallery li {
+            float: left;
+            margin-right: 10px;
+        }
+        #gallery a {
+            display: block;
+            border: 2px solid transparent;
+        }
+        #gallery li a:hover {
+            border-color: #3cc51f;  /*只改变颜色，以避免增加边框时的抖动。*/
+        }
+        #gallery a img {
+            vertical-align: bottom;
+        }
+        .wrapper {
+            margin: 1em 0;
+        }
+        .wrapper img {
+            vertical-align: bottom;
+            border: 5px solid deepskyblue;
+        }
+        #description {
+            font-size:2em;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -27,17 +56,35 @@
     </header>
 
 <article>
-    <h1>Nice to meet you~~</h1>
-    <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        <a href="#">an example achor</a>
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <h1>Gallery</h1>
+    <ul id="gallery">
+        <li>
+            <a href="img/photos/bassist.jpg">
+                <img src="img/photos/thumbnail_bassist.jpg" alt="bassist">
+            </a>
+        </li>
+        <li>
+            <a href="img/photos/concert.jpg">
+                <img src="img/photos/thumbnail_concert.jpg" alt="concert">
+            </a>
+        </li>
+        <li>
+            <a href="img/photos/crowd.jpg">
+                <img src="img/photos/thumbnail_crowd.jpg" alt="crowd">
+            </a>
+        </li>
+        <li>
+            <a href="img/photos/guitarist.jpg">
+                <img src="img/photos/thumbnail_guitarist.jpg" alt="guitarist">
+            </a>
+        </li>
+    </ul>
 </article>
 
     <script src="js/global.js">
         alert("nooooooooo");
         /*看来一个script标签引用了js时，其中的内容就不会再执行了。*/
     </script>
+    <script src="js/photo%20gallery.js"></script>
 </body>
 </html>
