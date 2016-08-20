@@ -5,6 +5,26 @@
     <title>template</title>
     <link rel="stylesheet" href="js/modernizr-1.6.min.js">
     <link rel="stylesheet" href="css/basic.css">
+    <style>
+        label,input,textarea {
+            font-family:"microsoft yahei";
+            font-size: 2em;
+            display: block;
+            margin: 1em 0 0.1em 0;
+        }
+        input,textarea {
+            padding-left: .2em;
+        }
+        input[type~=submit] {
+            font-weight:bold;
+            color: #fff;
+            background-color: #337ab7;
+            padding: 10px 30px;
+            border-color: transparent;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -27,12 +47,16 @@
     </header>
 
 <article>
-    <h1>Nice to meet you~~</h1>
-    <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        <a href="#">an example achor</a>
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <h1>Contact Us</h1>
+    <form action="">
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input" placeholder="Your name:">
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Your email:">
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" cols="30" rows="5" placeholder="what you want say"></textarea>
+        <input type="submit" value="Send">
+    </form>
 </article>
 
     <script src="js/global.js">
