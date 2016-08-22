@@ -7,10 +7,13 @@ function stripedTable() {
     var trs=tables[0].getElementsByTagName("tr");
     for (var i=1;i<trs.length;i++) {
         if (my_switch==1) {
-            trs[i].style.backgroundColor="#eb6";
+            //trs[i].style.backgroundColor="#eb6";
+            /*不用style属性，因为会覆盖自定义的hover*/
+            trs[i].setAttribute("class","odd");
             my_switch=-my_switch;
         } else {
-            trs[i].style.backgroundColor="#ec8";
+            //trs[i].style.backgroundColor="#ec8";
+            trs[i].setAttribute("class","even");
             my_switch=-my_switch;
         }
     }
