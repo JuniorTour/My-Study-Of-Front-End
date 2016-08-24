@@ -3,7 +3,7 @@
  */
 function addOnloadEvent(func) {
     var oldonload=window.onload;
-    if (typeof oldonload !='function') {
+    if (typeof window.onload !='function') {
         window.onload=func;
     }   else    {
         window.onload=function () {
@@ -54,7 +54,7 @@ function highlightLocation() {
     }
 }
 
-addOnloadEvent(highlightLocation());
+addOnloadEvent(highlightLocation);
 
 function moveHeaderBackground(current_link_text) {
     var final_x;
@@ -120,4 +120,5 @@ function prepareMoveHeaderBackground() {
     }
 }
 
-addOnloadEvent(prepareMoveHeaderBackground());
+addOnloadEvent(prepareMoveHeaderBackground);
+

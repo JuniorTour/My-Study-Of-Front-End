@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/basic.css">
     <style>
         label,input,textarea {
-            font-family:"microsoft yahei";
+            font-family:"microsoft yahei",sans-serif;
             font-size: 2em;
             display: block;
             margin: 1em 0 0.1em 0;
@@ -23,6 +23,9 @@
             border-color: transparent;
             border-radius: 5px;
             cursor: pointer;
+        }
+        .placeholder {
+            color: red;
         }
     </style>
 </head>
@@ -50,17 +53,16 @@
     <h1>Contact Us</h1>
     <form action="">
         <label for="name-input">Name:</label>
-        <input type="text" id="name-input" placeholder="Your name:">
+        <input type="text" id="name-input" placeholder="Your name:" required="required">
         <label for="email">Email:</label>
-        <input type="text" id="email" placeholder="Your email:">
+        <input type="email" id="email" placeholder="Your email:" required="required">
         <label for="message">Message:</label>
-        <textarea name="message" id="message" cols="30" rows="5" placeholder="What you want say"></textarea>
+        <textarea name="message" id="message" cols="30" rows="5" placeholder="What you want say:" required="required"></textarea>
         <input type="submit" value="Send">
     </form>
 </article>
 
     <script src="js/global.js">
-        alert("nooooooooo");
         /*看来一个script标签引用了js时，其中的内容就不会再执行了。*/
     </script>
     <script src="js/form.js"></script>

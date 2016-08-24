@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="245d3670-3895-4aed-8406-06a940ee5abe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/submit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/contact.html" afterPath="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/striped table.js" afterPath="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/striped table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/live.html" afterPath="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/live.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/form.js" afterPath="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/global.js" afterPath="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/global.js" />
     </list>
     <ignored path="Web前端.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,43 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="live.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/live.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.956522">
-              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-              <folding>
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#tr#0;n#tbody#0;n#table#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#tr#2;n#tbody#0;n#table#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#tr#4;n#tbody#0;n#table#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#tr#6;n#tbody#0;n#table#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#tr#8;n#tbody#0;n#table#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#tr#9;n#tbody#0;n#table#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#tr#10;n#tbody#0;n#table#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#tr#11;n#tbody#0;n#table#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="striped table.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/striped table.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-              <folding>
-                <element signature="n#!!doc;n#stripedTable#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43149808">
-              <caret line="52" column="67" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="67" />
+            <state vertical-scroll-proportion="-7.326087">
+              <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -92,13 +58,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="form.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/form.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.62636036">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/global.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="72" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="72" />
+              <caret line="122" column="6" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="6" />
               <folding>
-                <element signature="n#!!doc;n#supportLabel#0" expanded="false" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,7 +83,7 @@
       <file leaf-file-name="submit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/submit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.347826">
+            <state vertical-scroll-proportion="0.0">
               <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -144,7 +120,6 @@
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/css/color.css" />
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/template.html" />
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/index.html" />
-        <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/global.js" />
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/10.2 practical animation.html" />
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/showSection.js" />
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/about.html" />
@@ -154,8 +129,9 @@
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/striped table.js" />
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/live.html" />
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/submit.html" />
-        <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/form.js" />
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/contact.html" />
+        <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/global.js" />
+        <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/form.js" />
       </list>
     </option>
   </component>
@@ -195,8 +171,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -404,7 +380,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15417106" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -513,9 +489,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -523,7 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -568,9 +541,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -578,7 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,7 +753,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/live.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.956522">
+        <state vertical-scroll-proportion="0.0">
           <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -803,13 +773,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25096032">
           <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/submit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.347826">
+        <state vertical-scroll-proportion="0.0">
           <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -817,29 +786,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/global.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.5187426">
-          <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/modernizr-1.6.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.044740025">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="72" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="72" />
-          <folding>
-            <element signature="n#!!doc;n#supportLabel#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -855,11 +805,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43149808">
-          <caret line="52" column="67" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="67" />
+        <state vertical-scroll-proportion="-7.326087">
+          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="122" column="6" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62636036">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
