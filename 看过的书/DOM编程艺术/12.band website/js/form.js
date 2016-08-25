@@ -76,6 +76,7 @@ function validateForm(a_form) {
             }
         }
     }
+    return true;
 }
 
 function prepareForms() {
@@ -83,7 +84,11 @@ function prepareForms() {
     for (var i=0;i<forms.length;i++) {
         var current_form=forms[i];
         current_form.onsubmit=function() {
-            return validateForm(this);
+            //return validateForm(this);
+            if(!validateForm(this)) return false;
+            var articles=document.getElementsByTagName("article");
+            if(submitByAjax(this,articles[0])) return false;
+            return true;
         }
     }
 }
