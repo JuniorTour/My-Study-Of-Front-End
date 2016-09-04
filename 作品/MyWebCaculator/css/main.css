@@ -1,0 +1,65 @@
+table,tr,td,input {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width:474px;
+    height:800px;
+    margin: 0 auto;
+    font: 25px/1 "microsoft yahei",sans-serif;
+    color: black;
+}
+.outcome-window {
+    width:100%;
+    height:27.3%;
+    background-color: rgb(32,32,32);
+    position: relative;
+}
+.outcome-window input {
+    cursor: default;
+    width:90%;
+    text-align: right;
+    color: #fff;
+    font-size: 120px;
+    background-color: transparent;
+    padding: 5% 5%;
+    border: none;
+    outline: none;
+    position: absolute;
+    bottom: 0;
+}
+table {
+    width:100%;
+    height:72.7%;
+    background-color: rgb(202,202,205);
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+table tr:first-child {
+    background-color: rgb(190,190,190);
+}
+td {
+    cursor: pointer;
+    font-size: 50px;
+    font-weight:lighter;
+    width:25%;
+    height: 20%;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+}
+.special-button td {
+    font-size: 40px;
+}
+table td:last-child {
+    font-size: 50px;
+    color: white;
+    background-color: rgb(249,137,16);
+}
+td:active {
+    background-color: rgb(181,181,181);
+}
+td.active-border {
+    border: 3px solid black;
+}
