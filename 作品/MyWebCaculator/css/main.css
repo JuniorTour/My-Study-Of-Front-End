@@ -16,7 +16,7 @@ table,tr,td,input {
     background-color: rgb(32,32,32);
     position: relative;
 }
-.outcome-window input {
+.outcome-window p {
     cursor: default;
     width:90%;
     text-align: right;
@@ -25,6 +25,7 @@ table,tr,td,input {
     background-color: transparent;
     padding: 5% 5%;
     border: none;
+    margin: 0;
     outline: none;
     position: absolute;
     bottom: 0;
@@ -57,7 +58,7 @@ table td:last-child {
     color: white;
     background-color: rgb(249,137,16);
 }
-td:active {
+table td:active {
     background-color: rgb(181,181,181);
 }
 td.active-border {
