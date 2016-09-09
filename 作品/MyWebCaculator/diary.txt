@@ -1,0 +1,16 @@
+2016年9月9日16:23:50：
+  做的很快，JavaScript的弱类型、方便的字符串操作...用起来比C舒服多了！
+  一天时间就已经实现了多次计算。
+
+  To do list:
+  1.解决多位数重复的问题。 /*completed*/
+  2.给符号按钮添加点击增加边框类的效果。
+  3.截短过长的浮点数，注意避免误差,即保留2位小数。    /*completed*/
+  4.给显示窗口增加内容较多时，字号变小的功能,且有一个最小限度。   /**/
+  5.clear()  /*completed*/
+  6.float type,"." input.
+  7.keyboardListen()
+  8.添加对于继承上一步的结果，连续计算的支持。
+  9.避免连续快速点击按钮时，选中按钮文字的问题。
+  10.input number has a limited max length.
+  11.compatibility

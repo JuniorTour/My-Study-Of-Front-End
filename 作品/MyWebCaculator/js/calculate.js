@@ -41,48 +41,75 @@ function mouseListen() {
 
     for (var i=0;i<each_key.length;i++) {
         var current_key=each_key[i];
-        //var current_value=current_key.getAttribute("data-value");
+        var current_value=current_key.getAttribute("data-value");
         current_key.onclick=function () {
             calculate(this.getAttribute("data-value"));
-        }
-        //current_key.onclick=calculate(this.getAttribute("data-value"));
+
+            /*think about adding border class to the last td in each tr.*/
+            //if (i/4==0) {
+            //    current_key.addClass("active-border");
+            //}
+        };
+        /*使用下面这种写法，页面加载后会产生所有按键都点了一遍的效果。*/
+        //current_key.onclick=calculate(current_key.getAttribute("data-value"));
     }
 }
 
 addOnloadEvent(mouseListen);
 
-function keyboardResponse() {}
+//function keyboardResponse() {}
 
-var calculate_process="";
+/*变量的作用域很重要*/
+var outcome;
 var para1=undefined,para2=undefined;    /*global variable*/
+var flag_of_operator=-1; /*used for mark the operator*/
+var calculate_process="";
+var flag_of_display=-1;  /*a flag indicates to whether the outcome is displayed.*/
 
-var num=10;
-switch (true) {
-    case (num<0):
-        alert("<0");
-        break;
-    case (num=10):
-        alert("10");
-        break;
+{                                                                                                                       /*BUG*/
+    var num=10;
+    switch (true) {
+        case (num<0):
+            alert("<0");
+            break;
+        case (num=10):
+            alert("10");
+            break;
+    }
 }
+//var test=NaN;
+//alert(test.toString()=="NaN");
 
 function calculate(input_value) {
-    //if(!pressed_btn) return false;
-    //var input_value=pressed_btn.getAttribute("data-value");
-
     if (!input_value||input_value=="") return false;
 
-    var outcome;
-    var flag_of_operator=-1; /*used for mark the operator*/
     var int_input=parseInt(input_value);
-    //alert(int_input);
     /*除了几个数字键，其余均会被转化为Not a Number.*/
+    if (int_input>=0&&int_input<=9) {
+        /*use int_input to test the input_value,if i_v is number,then change its value to "number",
+        * indicate to number type input.*/
+        input_value="number";
+
+        if (flag_of_display!=-1) {
+            calculate_process="";
+            flag_of_display=-1;
+            para1=undefined;
+            para2=undefined;
+        }
+    }
+    if (flag_of_display==1&&int_input.toString()=="NaN") {
+        para1=outcome;
+        para2=undefined;
+    }
+
 
     /*下面这一块，用于检测应该对哪一个参数进行操作。*/
     var flag_operate_target=1; /*一个flag，默认值1表示要操作的数是p1*/
     var operate_intermediary;
     if(para1==undefined&&para2==undefined) {
         operate_intermediary=0;
+    } else if(para1!=undefined&&flag_of_operator==-1) {
+        operate_intermediary=para1;
     } else if(para2==undefined&&flag_of_operator!=-1) {
         operate_intermediary=0;
         flag_operate_target=2; /*值2表示要操作的数是p2*/
@@ -99,35 +126,43 @@ function calculate(input_value) {
             /*而上面这一句是可以运行的。*/
         //case (int_input<=9):
             /*也不行，跳过了。*/
-        case (input_value<="9"):
+                                                                                                                        /*关于case value的问题，js高程（P60）也没说清。*/
+        case "number":
             operate_intermediary=operate_intermediary*10+int_input;
-            calculate_process+=operate_intermediary;
+            calculate_process+=int_input;
             break;
         case ("+/-") :
             operate_intermediary=-operate_intermediary;
+            calculate_process+=operate_intermediary;
             break;
         case ("%") :
             operate_intermediary/=100;
+            calculate_process+=operate_intermediary;
             break;
         case (".") :
                                                                                             /*暂时搁置对浮点数的处理。*/
             break;
         case ("+") :
             flag_of_operator=1;
+            calculate_process+="+";
             break;
         case ("-") :
             flag_of_operator=2;
+            calculate_process+="-";
             break;
         case ("*") :
             flag_of_operator=3;
+            calculate_process+="×";
             break;
         case ("/") :
             flag_of_operator=4;
+            calculate_process+="÷";
             break;
         case ("clear") :
-                                                                                                        //clear();
+            flag_of_display=2;  /*value 2 indicate to clear()*/
             break;
         case ("=") :
+            flag_of_display=1;
             switch (flag_of_operator) {
                 case 1:
                     outcome=para1+para2;
@@ -146,7 +181,6 @@ function calculate(input_value) {
                     }
                     break;
             }
-            displayOutcome(outcome);
             break;
     }
 
@@ -157,7 +191,14 @@ function calculate(input_value) {
         para2=operate_intermediary;
     }
 
-    displayProcess(calculate_process);
+    /*a part that used to decide display what*/
+    if (flag_of_display==1) {
+        displayOutcome(Math.round(outcome*100000000)/100000000);
+    } else if(flag_of_display==-1) {
+        displayProcess(calculate_process);
+    } else if (flag_of_display==2) {
+        clear();
+    }
 
     return true;    /*indicate to run success.*/
 }
@@ -166,6 +207,10 @@ function displayOutcome(outcome) {
     if(!outcome) return false;
 
     var cal_window=document.getElementById("cal-window");
+    if(outcome.toString().length>=6&&outcome.toString().length<=12) {
+        var font_size_number=120-15*(outcome.toString().length-6);
+        cal_window.style.fontSize=font_size_number+"px";
+    }
     cal_window.innerHTML=outcome.toString();
     return true;
 }
@@ -174,6 +219,18 @@ function displayProcess(calculate_process) {
     if(!calculate_process) return false;
 
     var cal_window=document.getElementById("cal-window");
+    if(calculate_process.length>=6&&calculate_process.length<=9) {
+        var font_size_number=120-15*(calculate_process.length-6);
+        cal_window.style.fontSize=font_size_number+"px";
+    }
     cal_window.innerHTML=calculate_process;
+    //if (calculate_process.length<=9) {
+    //    cal_window.innerHTML=calculate_process;
+    //}
     return true;
+}
+
+function clear() {
+    var cal_window=document.getElementById("cal-window");
+    cal_window.innerHTML="0";
 }
