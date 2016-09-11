@@ -22,9 +22,9 @@ function addOnloadEvent(func) {
     }
 }
 
-function addClass(newClass,targetId) {
-    if (!document.getElementById(targetId)) return false;
-    var target=document.getElementById(targetId);
+function addClass(newClass,target) {
+    //if (!document.getElementById(targetId)) return false;
+    //var target=document.getElementById(targetId);
     var current_class=target.className;
     if (current_class=="") {
         current_class=newClass;
@@ -37,21 +37,27 @@ function addClass(newClass,targetId) {
 
 function mouseListen() {
     var calculator_keyboard=document.getElementById("calculator-keyboard");
+    var all_trs=calculator_keyboard.getElementsByTagName("tr");
     var each_key=calculator_keyboard.getElementsByTagName("td");
+    var i;
 
-    for (var i=0;i<each_key.length;i++) {
+    for (i=0;i<each_key.length;i++) {
         var current_key=each_key[i];
         var current_value=current_key.getAttribute("data-value");
         current_key.onclick=function () {
             calculate(this.getAttribute("data-value"));
-
-            /*think about adding border class to the last td in each tr.*/
-            //if (i/4==0) {
-            //    current_key.addClass("active-border");
-            //}
         };
         /*使用下面这种写法，页面加载后会产生所有按键都点了一遍的效果。*/
         //current_key.onclick=calculate(current_key.getAttribute("data-value"));
+    }
+
+    for (i=0;i<all_trs.length-1;i++) {
+        var current_tr=all_trs[i];
+        var operate_btn=current_tr.lastElementChild;
+        operate_btn.onclick=function() {
+            addClass("active-border",this);
+            calculate(this.getAttribute("data-value"));
+        }
     }
 }
 
@@ -162,6 +168,7 @@ function calculate(input_value) {
             flag_of_display=2;  /*value 2 indicate to clear()*/
             break;
         case ("=") :
+            removeBorderedBtn();
             flag_of_display=1;
             switch (flag_of_operator) {
                 case 1:
@@ -233,4 +240,13 @@ function displayProcess(calculate_process) {
 function clear() {
     var cal_window=document.getElementById("cal-window");
     cal_window.innerHTML="0";
+    cal_window.style.fontSize="120px";
+    para1=undefined;
+    para2=undefined;
+}
+
+function removeBorderedBtn() {
+    var bordered_btn=document.getElementsByClassName("active-border");
+    //delete bordered_btn[0].className;
+    bordered_btn[0].className="";
 }

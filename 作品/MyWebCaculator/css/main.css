@@ -3,6 +3,9 @@ table,tr,td,input {
     margin: 0;
 }
 
+body {
+    -moz-user-select:none;
+}
 .container {
     width:474px;
     height:800px;
