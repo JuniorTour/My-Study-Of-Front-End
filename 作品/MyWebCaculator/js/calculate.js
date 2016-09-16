@@ -43,7 +43,6 @@ function mouseListen() {
 
     for (i=0;i<each_key.length;i++) {
         var current_key=each_key[i];
-        var current_value=current_key.getAttribute("data-value");
         current_key.onclick=function () {
             calculate(this.getAttribute("data-value"));
         };
@@ -51,10 +50,12 @@ function mouseListen() {
         //current_key.onclick=calculate(current_key.getAttribute("data-value"));
     }
 
+                                        /*这两个循环不知道为什么会互相覆盖。*/
     for (i=0;i<all_trs.length-1;i++) {
         var current_tr=all_trs[i];
         var operate_btn=current_tr.lastElementChild;
         operate_btn.onclick=function() {
+            removeBorderedBtn();
             addClass("active-border",this);
             calculate(this.getAttribute("data-value"));
         }
@@ -63,9 +64,74 @@ function mouseListen() {
 
 addOnloadEvent(mouseListen);
 
-//function keyboardResponse() {}
+document.onkeydown=keyboardResponse;
+
+function keyboardResponse() {
+    var evt=event || window.event || arguments.callee.caller.arguments[0];
+    var key_code=evt.which||evt.keyCode||evt.charCode;
+    //alert(key_code);
+    switch (key_code) {
+        case 8:
+            calculate("clear");
+            break;
+        case 13:
+            calculate("=");
+            break;
+        case 96:
+            calculate("0");
+            break;
+        case 97:
+            calculate("1");
+            break;
+        case 98:
+            calculate("2");
+            break;
+        case 99:
+            calculate("3");
+            break;
+        case 100:
+            calculate("4");
+            break;
+        case 101:
+            calculate("5");
+            break;
+        case 102:
+            calculate("6");
+            break;
+        case 103:
+            calculate("7");
+            break;
+        case 104:
+            calculate("8");
+            break;
+        case 105:
+            calculate("9");
+            break;
+        case 106:
+            calculate("*");
+            break;
+        case 107:
+            calculate("+");
+            break;
+        case 109:
+            calculate("-");
+            break;
+        case 110:
+            calculate(".");
+            break;
+        case 111:
+            calculate("/");
+            break;
+        case 112:
+            calculate("=");
+            break;
+    }
+}
+
+//addOnloadEvent(keyboardResponse);
 
 /*变量的作用域很重要*/
+var cal_window=document.getElementById("cal-window");
 var outcome;
 var para1=undefined,para2=undefined;    /*global variable*/
 var flag_of_operator=-1; /*used for mark the operator*/
@@ -109,6 +175,9 @@ function calculate(input_value) {
     }
 
 
+    if(cal_window.innerHTML.length>=9&&input_value=="number"&&flag_of_operator!=-1) return false;
+
+
     /*下面这一块，用于检测应该对哪一个参数进行操作。*/
     var flag_operate_target=1; /*一个flag，默认值1表示要操作的数是p1*/
     var operate_intermediary;
@@ -150,19 +219,19 @@ function calculate(input_value) {
             break;
         case ("+") :
             flag_of_operator=1;
-            calculate_process+="+";
+            //calculate_process+="+";
             break;
         case ("-") :
             flag_of_operator=2;
-            calculate_process+="-";
+            //calculate_process+="-";
             break;
         case ("*") :
             flag_of_operator=3;
-            calculate_process+="×";
+            //calculate_process+="×";
             break;
         case ("/") :
             flag_of_operator=4;
-            calculate_process+="÷";
+            //calculate_process+="÷";
             break;
         case ("clear") :
             flag_of_display=2;  /*value 2 indicate to clear()*/
@@ -213,7 +282,6 @@ function calculate(input_value) {
 function displayOutcome(outcome) {
     if(!outcome) return false;
 
-    var cal_window=document.getElementById("cal-window");
     if(outcome.toString().length>=6&&outcome.toString().length<=12) {
         var font_size_number=120-15*(outcome.toString().length-6);
         cal_window.style.fontSize=font_size_number+"px";
@@ -225,7 +293,6 @@ function displayOutcome(outcome) {
 function displayProcess(calculate_process) {
     if(!calculate_process) return false;
 
-    var cal_window=document.getElementById("cal-window");
     if(calculate_process.length>=6&&calculate_process.length<=9) {
         var font_size_number=120-15*(calculate_process.length-6);
         cal_window.style.fontSize=font_size_number+"px";
@@ -238,7 +305,7 @@ function displayProcess(calculate_process) {
 }
 
 function clear() {
-    var cal_window=document.getElementById("cal-window");
+    removeBorderedBtn();
     cal_window.innerHTML="0";
     cal_window.style.fontSize="120px";
     para1=undefined;
@@ -247,6 +314,10 @@ function clear() {
 
 function removeBorderedBtn() {
     var bordered_btn=document.getElementsByClassName("active-border");
+    if (bordered_btn.length<=0) return false;
     //delete bordered_btn[0].className;
-    bordered_btn[0].className="";
+                                                                            /*delete directly has no effect??*/
+    for (var i=0;i<bordered_btn.length;i++) {
+        bordered_btn[i].className="";
+    }
 }

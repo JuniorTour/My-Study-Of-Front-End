@@ -9,11 +9,12 @@
   4.给显示窗口增加内容较多时，字号变小的功能,且有一个最小限度。   /**/
   5.clear()  /*completed*/
   6.float type,"." input.
-  7.keyboardListen()
+  7.keyboardListen().    /*,9.16*/
   8.添加对于继承上一步的结果，连续计算的支持。
   9.避免连续快速点击按钮时，选中按钮文字的问题。  /*completed*/
-  10.input number has a limited max length.
-  11.compatibility
+  10.input number has a limited max length.  /**/
+  11.compatibility between ff chrome and ie8+.
+  12.运算过程中，添加允许改变符号的支持。  /*completed,9.16*/
 
     Bugs:
     1.IE之中添加边框时的抖动。
