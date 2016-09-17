@@ -66,10 +66,12 @@ addOnloadEvent(mouseListen);
 
 document.onkeydown=keyboardResponse;
 
-function keyboardResponse() {
-    var evt=event || window.event || arguments.callee.caller.arguments[0];
+function keyboardResponse(e) {
+    /*在Firefox之中，要用所谓“隐藏的事件”e来获取按键事件。*/
+    var evt=e || window.event;
     var key_code=evt.which||evt.keyCode||evt.charCode;
     //alert(key_code);
+    /*a vital problem about keyboard response is how to realize the hover,active and border effect!!!!!*/
     switch (key_code) {
         case 8:
             calculate("clear");
@@ -122,13 +124,8 @@ function keyboardResponse() {
         case 111:
             calculate("/");
             break;
-        case 112:
-            calculate("=");
-            break;
     }
 }
-
-//addOnloadEvent(keyboardResponse);
 
 /*变量的作用域很重要*/
 var cal_window=document.getElementById("cal-window");
@@ -138,17 +135,17 @@ var flag_of_operator=-1; /*used for mark the operator*/
 var calculate_process="";
 var flag_of_display=-1;  /*a flag indicates to whether the outcome is displayed.*/
 
-{                                                                                                                       /*BUG*/
-    var num=10;
-    switch (true) {
-        case (num<0):
-            alert("<0");
-            break;
-        case (num=10):
-            alert("10");
-            break;
-    }
-}
+//{                                                                                                                       /*BUG*/
+//    var num=10;
+//    switch (true) {
+//        case (num<0):
+//            alert("<0");
+//            break;
+//        case (num=10):
+//            alert("10");
+//            break;
+//    }
+//}
 //var test=NaN;
 //alert(test.toString()=="NaN");
 
@@ -157,11 +154,19 @@ function calculate(input_value) {
 
     var int_input=parseInt(input_value);
     /*除了几个数字键，其余均会被转化为Not a Number.*/
+    /*function that use the past outcome as the next parameter.*/
+    if (flag_of_display==1&&int_input.toString()=="NaN") {
+        para1=outcome;
+        para2=undefined;
+        calculate_process="";
+        calculate_process+=outcome;
+        flag_of_display=-1;
+    }
     if (int_input>=0&&int_input<=9) {
         /*use int_input to test the input_value,if i_v is number,then change its value to "number",
-        * indicate to number type input.*/
+   ,indicate to number type input:*/
         input_value="number";
-
+        /*after once calculation,when input is number, restore all the variables:*/
         if (flag_of_display!=-1) {
             calculate_process="";
             flag_of_display=-1;
@@ -169,14 +174,6 @@ function calculate(input_value) {
             para2=undefined;
         }
     }
-    if (flag_of_display==1&&int_input.toString()=="NaN") {
-        para1=outcome;
-        para2=undefined;
-    }
-
-
-    if(cal_window.innerHTML.length>=9&&input_value=="number"&&flag_of_operator!=-1) return false;
-
 
     /*下面这一块，用于检测应该对哪一个参数进行操作。*/
     var flag_operate_target=1; /*一个flag，默认值1表示要操作的数是p1*/
@@ -187,16 +184,20 @@ function calculate(input_value) {
         operate_intermediary=para1;
     } else if(para2==undefined&&flag_of_operator!=-1) {
         operate_intermediary=0;
-        flag_operate_target=2; /*值2表示要操作的数是p2*/
+        flag_operate_target=2;
     } else if (para2!=undefined) {
         operate_intermediary=para2;
         flag_operate_target=2;
     }
 
+    //if(cal_window.innerHTML.toString().length>=9&&input_value=="number"&&flag_of_operator!=-1) return false;
+    /*limit the input length:*/
+    if(operate_intermediary.toString().length>=9&&input_value=="number"&&flag_of_operator==-1) return false;
+
     switch (input_value) {
         //case (parseInt(input_value)>=0&&parseInt(input_value)<=9):
             /*此处的一个问题：case的value似乎必须和input_value相关。上面这句就不行，运行时会被
-            * 直接跳过。*/
+       ,直接跳过。*/
         //case ("8"):
             /*而上面这一句是可以运行的。*/
         //case (int_input<=9):
@@ -219,19 +220,19 @@ function calculate(input_value) {
             break;
         case ("+") :
             flag_of_operator=1;
-            //calculate_process+="+";
+            calculate_process+="+";
             break;
         case ("-") :
             flag_of_operator=2;
-            //calculate_process+="-";
+            calculate_process+="-";
             break;
         case ("*") :
             flag_of_operator=3;
-            //calculate_process+="×";
+            calculate_process+="×";
             break;
         case ("/") :
             flag_of_operator=4;
-            //calculate_process+="÷";
+            calculate_process+="÷";
             break;
         case ("clear") :
             flag_of_display=2;  /*value 2 indicate to clear()*/
@@ -257,6 +258,7 @@ function calculate(input_value) {
                     }
                     break;
             }
+            flag_of_operator=-1;    /*还原符号标志。*/
             break;
     }
 
@@ -281,27 +283,43 @@ function calculate(input_value) {
 
 function displayOutcome(outcome) {
     if(!outcome) return false;
-
-    if(outcome.toString().length>=6&&outcome.toString().length<=12) {
-        var font_size_number=120-15*(outcome.toString().length-6);
-        cal_window.style.fontSize=font_size_number+"px";
-    }
+    /*the rate of change of the size is not fixed,it should be dynamic!
+     *1-6,no changes,always 120px;6-8,minus 15px per char input till 90px;9,80px,10,70px,11,65px,12,60,13,55,14,50,15,45,16,40,17,35,18-n,min size 35px (can contain 19 characters,9 digits of para1,9 of para2,1 sign)*/
+    //if(outcome.toString().length>=6&&outcome.toString().length<=12) {
+    //    var font_size_number=120-15*(outcome.toString().length-6);
+    //    cal_window.style.fontSize=font_size_number+"px";
+    //}
+    cal_window.style.fontSize=getFontSize(outcome.toString().length)+"px";
     cal_window.innerHTML=outcome.toString();
     return true;
 }
 
 function displayProcess(calculate_process) {
     if(!calculate_process) return false;
-
-    if(calculate_process.length>=6&&calculate_process.length<=9) {
-        var font_size_number=120-15*(calculate_process.length-6);
-        cal_window.style.fontSize=font_size_number+"px";
-    }
-    cal_window.innerHTML=calculate_process;
-    //if (calculate_process.length<=9) {
-    //    cal_window.innerHTML=calculate_process;
+    //if(calculate_process.length>=6&&calculate_process.length<=12) {
+    //    var font_size_number=120-15*(calculate_process.length-6);
+    //    cal_window.style.fontSize=font_size_number+"px";
     //}
+    cal_window.style.fontSize=getFontSize(calculate_process.length)+"px";
+    cal_window.innerHTML=calculate_process;
     return true;
+}
+
+function getFontSize(input_length) {
+    /*this function used to get the proper font size of window.*/
+    var final_size=120;
+    if (input_length>6&&input_length<=8) {
+        final_size=120-15*(input_length-6);
+    } else if (input_length==9) {
+        final_size=80;
+    } else if (input_length==10) {
+        final_size=70;
+    } else if (input_length>=11&&input_length<=17) {
+        final_size=70-5*(input_length-10);
+    } else if (input_length>17) {
+        final_size=35;
+    }
+    return final_size;
 }
 
 function clear() {

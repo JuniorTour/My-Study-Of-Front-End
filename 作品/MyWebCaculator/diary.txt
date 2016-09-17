@@ -1,20 +1,34 @@
-2016年9月9日16:23:50：
-  做的很快，JavaScript的弱类型、方便的字符串操作...用起来比C舒服多了！
-  一天时间就已经实现了多次计算。
 
   To do list:
   1.解决多位数重复的问题。 /*completed*/
-  2.给符号按钮添加点击增加边框类的效果。/*completed*/
+  2.给符号按钮添加点击增加边框类的效果。
+  Then I found this fuction is not adapted to keyboard responce.    /**/
   3.截短过长的浮点数，注意避免误差,即保留2位小数。    /*completed*/
   4.给显示窗口增加内容较多时，字号变小的功能,且有一个最小限度。   /**/
   5.clear()  /*completed*/
   6.float type,"." input.
-  7.keyboardListen().    /*,9.16*/
-  8.添加对于继承上一步的结果，连续计算的支持。
+  7.keyboardListen().    /**/
+  8.添加对于继承上一步的结果，连续计算的支持。   /*completed*/
   9.避免连续快速点击按钮时，选中按钮文字的问题。  /*completed*/
-  10.input number has a limited max length.  /**/
-  11.compatibility between ff chrome and ie8+.
+  10.input number has a limited max length.   /*completed*/
+  11.compatibility between ff,chrome and ie8+.
   12.运算过程中，添加允许改变符号的支持。  /*completed,9.16*/
+  13.decide whether display the sign in window,and handle the following problems.
 
     Bugs:
     1.IE之中添加边框时的抖动。
+    2.个别偶尔发生的计算错误，如111111*3。
+                解决：原因是等于后忘记还原flag_of_operator了。
+    3.In ff,sometimes when press keyboard,it will select the character like mouse.
+    4.When long decimal outcome was used as parameter,it will not be omitted.
+
+2016年9月9日16:23:50：
+  做的很快，JavaScript的弱类型、方便的字符串操作...用起来比C舒服多了！
+  一天时间就已经实现了多次计算。
+
+2016年9月17日21:37:51：
+    Still very comfortable.
+    80% completed!
+    Main part of left is float and compatibility.
+    And something details left,such as "."sign,"%" and "+/-".
+    And there is no error or warning in my js now,it is congratulated!
