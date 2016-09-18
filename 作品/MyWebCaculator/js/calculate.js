@@ -131,9 +131,10 @@ function keyboardResponse(e) {
 var cal_window=document.getElementById("cal-window");
 var outcome;
 var para1=undefined,para2=undefined;    /*global variable*/
-var flag_of_operator=-1; /*used for mark the operator*/
+var flag_operator=-1; /*used for mark the operator*/
 var calculate_process="";
-var flag_of_display=-1;  /*a flag indicates to whether the outcome is displayed.*/
+var flag_display=-1;  /*a flag indicates to whether the outcome is displayed.*/
+var  flag_intoCirculation=-1;
 
 //{                                                                                                                       /*BUG*/
 //    var num=10;
@@ -152,27 +153,43 @@ var flag_of_display=-1;  /*a flag indicates to whether the outcome is displayed.
 function calculate(input_value) {
     if (!input_value||input_value=="") return false;
 
+    //flag_intoCirculation=-1;
+    /*when two parameters and a operator is input,if get the another operator input,treat it as "=" and the input operator*/
+    if (para1!=undefined&&para2!=undefined&&flag_operator!=-1
+        &&(input_value!="+"||input_value!="-"||input_value!="*"||input_value!="/")
+        && flag_intoCirculation!=1) {
+        /*two things to do:1."=" 2.the operator*/
+        flag_intoCirculation=1;
+        calculate("=");
+    }
+
     var int_input=parseInt(input_value);
     /*除了几个数字键，其余均会被转化为Not a Number.*/
     /*function that use the past outcome as the next parameter.*/
-    if (flag_of_display==1&&int_input.toString()=="NaN") {
-        para1=outcome;
+    if (flag_display==1&&int_input.toString()=="NaN") {
+        para1=Math.round(outcome*100000000)/100000000;
         para2=undefined;
         calculate_process="";
-        calculate_process+=outcome;
-        flag_of_display=-1;
+        calculate_process+=para1;
+        flag_display=-1;
     }
     if (int_input>=0&&int_input<=9) {
         /*use int_input to test the input_value,if i_v is number,then change its value to "number",
    ,indicate to number type input:*/
         input_value="number";
         /*after once calculation,when input is number, restore all the variables:*/
-        if (flag_of_display!=-1) {
+        if (flag_display!=-1) {
             calculate_process="";
-            flag_of_display=-1;
+            flag_display=-1;
             para1=undefined;
             para2=undefined;
         }
+    }
+
+    /*when operator was changed during the calculate,update window simultaneously with this flag.*/
+    var flag_has_operator=-1;
+    if (flag_operator!=-1) {
+        flag_has_operator=1;
     }
 
     /*下面这一块，用于检测应该对哪一个参数进行操作。*/
@@ -180,9 +197,9 @@ function calculate(input_value) {
     var operate_intermediary;
     if(para1==undefined&&para2==undefined) {
         operate_intermediary=0;
-    } else if(para1!=undefined&&flag_of_operator==-1) {
+    } else if(para1!=undefined&&flag_operator==-1) {
         operate_intermediary=para1;
-    } else if(para2==undefined&&flag_of_operator!=-1) {
+    } else if(para2==undefined&&flag_operator!=-1) {
         operate_intermediary=0;
         flag_operate_target=2;
     } else if (para2!=undefined) {
@@ -190,9 +207,9 @@ function calculate(input_value) {
         flag_operate_target=2;
     }
 
-    //if(cal_window.innerHTML.toString().length>=9&&input_value=="number"&&flag_of_operator!=-1) return false;
+    //if(cal_window.innerHTML.toString().length>=9&&input_value=="number"&&flag_operator!=-1) return false;
     /*limit the input length:*/
-    if(operate_intermediary.toString().length>=9&&input_value=="number"&&flag_of_operator==-1) return false;
+    if(operate_intermediary.toString().length>=9&&input_value=="number"&&flag_operator==-1) return false;
 
     switch (input_value) {
         //case (parseInt(input_value)>=0&&parseInt(input_value)<=9):
@@ -213,34 +230,50 @@ function calculate(input_value) {
             break;
         case ("%") :
             operate_intermediary/=100;
-            calculate_process+=operate_intermediary;
+            calculate_process=operate_intermediary;
             break;
         case (".") :
-                                                                                            /*暂时搁置对浮点数的处理。*/
+                                                                                            /*暂时搁置对浮点数的处理,9.7.*/
             break;
         case ("+") :
-            flag_of_operator=1;
-            calculate_process+="+";
+            flag_operator=1;
+            if (flag_has_operator==-1) {
+                calculate_process+="+";
+            } else {
+                calculate_process=para1+"+";
+            }
             break;
         case ("-") :
-            flag_of_operator=2;
-            calculate_process+="-";
+            flag_operator=2;
+            if (flag_has_operator==-1) {
+                calculate_process+="-";
+            } else {
+                calculate_process=para1+"-";
+            }
             break;
         case ("*") :
-            flag_of_operator=3;
-            calculate_process+="×";
+            flag_operator=3;
+            if (flag_has_operator==-1) {
+                calculate_process+="×";
+            } else {
+                calculate_process=para1+"×";
+            }
             break;
         case ("/") :
-            flag_of_operator=4;
-            calculate_process+="÷";
+            flag_operator=4;
+            if (flag_has_operator==-1) {
+                calculate_process+="÷";
+            } else {
+                calculate_process=para1+"÷";
+            }
             break;
         case ("clear") :
-            flag_of_display=2;  /*value 2 indicate to clear()*/
+            flag_display=2;  /*value 2 indicate to clear()*/
             break;
         case ("=") :
             removeBorderedBtn();
-            flag_of_display=1;
-            switch (flag_of_operator) {
+            flag_display=1;
+            switch (flag_operator) {
                 case 1:
                     outcome=para1+para2;
                     break;
@@ -258,7 +291,7 @@ function calculate(input_value) {
                     }
                     break;
             }
-            flag_of_operator=-1;    /*还原符号标志。*/
+            flag_operator=-1;    /*还原符号标志。*/
             break;
     }
 
@@ -270,11 +303,11 @@ function calculate(input_value) {
     }
 
     /*a part that used to decide display what*/
-    if (flag_of_display==1) {
+    if (flag_display==1) {
         displayOutcome(Math.round(outcome*100000000)/100000000);
-    } else if(flag_of_display==-1) {
+    } else if(flag_display==-1) {
         displayProcess(calculate_process);
-    } else if (flag_of_display==2) {
+    } else if (flag_display==2) {
         clear();
     }
 
