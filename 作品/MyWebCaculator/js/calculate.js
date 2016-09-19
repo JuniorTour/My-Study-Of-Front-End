@@ -134,48 +134,20 @@ var para1=undefined,para2=undefined;    /*global variable*/
 var flag_operator=-1; /*used for mark the operator*/
 var calculate_process="";
 var flag_display=-1;  /*a flag indicates to whether the outcome is displayed.*/
-var  flag_intoCirculation=-1;
-
-//{                                                                                                                       /*BUG*/
-//    var num=10;
-//    switch (true) {
-//        case (num<0):
-//            alert("<0");
-//            break;
-//        case (num=10):
-//            alert("10");
-//            break;
-//    }
-//}
-//var test=NaN;
-//alert(test.toString()=="NaN");
+var  flag_into_Circulation=-1;
 
 function calculate(input_value) {
-    if (!input_value||input_value=="") return false;
-
-    //flag_intoCirculation=-1;
-    /*when two parameters and a operator is input,if get the another operator input,treat it as "=" and the input operator*/
-    if (para1!=undefined&&para2!=undefined&&flag_operator!=-1
-        &&(input_value!="+"||input_value!="-"||input_value!="*"||input_value!="/")
-        && flag_intoCirculation!=1) {
-        /*two things to do:1."=" 2.the operator*/
-        flag_intoCirculation=1;
-        calculate("=");
+    if (!input_value||input_value=="") {
+        alert("Please input something.");
+        return false;
     }
 
     var int_input=parseInt(input_value);
     /*除了几个数字键，其余均会被转化为Not a Number.*/
-    /*function that use the past outcome as the next parameter.*/
-    if (flag_display==1&&int_input.toString()=="NaN") {
-        para1=Math.round(outcome*100000000)/100000000;
-        para2=undefined;
-        calculate_process="";
-        calculate_process+=para1;
-        flag_display=-1;
-    }
+
     if (int_input>=0&&int_input<=9) {
         /*use int_input to test the input_value,if i_v is number,then change its value to "number",
-   ,indicate to number type input:*/
+         ,indicate to number type input:*/
         input_value="number";
         /*after once calculation,when input is number, restore all the variables:*/
         if (flag_display!=-1) {
@@ -184,6 +156,27 @@ function calculate(input_value) {
             para1=undefined;
             para2=undefined;
         }
+    }
+
+    /*when two parameters and a operator is input,if get the another operator input,treat it as "=" and the input operator*/
+    if (para1!=undefined&&para2!=undefined&&flag_operator!=-1
+        &&(input_value=="+"||input_value=="-"||input_value=="*"||input_value=="/")
+        && flag_into_Circulation!=1) {
+        /*two things to do:1."=" 2.the operator*/
+        flag_into_Circulation=1;
+        if (input_value!="number") {
+            calculate("=");
+        }
+        flag_into_Circulation=-1;
+    }
+
+    /*function that use the past outcome as the next parameter.*/
+    if (flag_display==1&&int_input.toString()=="NaN") {
+        para1=Math.round(outcome*100000000)/100000000;
+        para2=undefined;
+        calculate_process="";
+        calculate_process+=para1;
+        flag_display=-1;
     }
 
     /*when operator was changed during the calculate,update window simultaneously with this flag.*/
@@ -207,9 +200,10 @@ function calculate(input_value) {
         flag_operate_target=2;
     }
 
-    //if(cal_window.innerHTML.toString().length>=9&&input_value=="number"&&flag_operator!=-1) return false;
     /*limit the input length:*/
-    if(operate_intermediary.toString().length>=9&&input_value=="number"&&flag_operator==-1) return false;
+    if(operate_intermediary.toString().length>=9&&input_value=="number") return false;
+    /*Old version:*/
+    //if(cal_window.innerHTML.toString().length>=9&&input_value=="number"&&flag_operator!=-1) return false;
 
     switch (input_value) {
         //case (parseInt(input_value)>=0&&parseInt(input_value)<=9):
@@ -226,10 +220,19 @@ function calculate(input_value) {
             break;
         case ("+/-") :
             operate_intermediary=-operate_intermediary;
-            calculate_process+=operate_intermediary;
+            calculate_process=operate_intermediary;
+            /*Can not complete the function that can display negative parameter2 and its operator.
+            * So I chose to jump from it with a inelegant way.*/
+            //if (flag_has_operator==-1) {
+            //    calculate_process=operate_intermediary;
+            //} else {
+            //    //calculate_process=para1.toString()+operate_intermediary;
+            //    calculate_process=operate_intermediary;
+            //}
             break;
         case ("%") :
             operate_intermediary/=100;
+            /*Can not complete the function that can display parameter2 in percentage and its operator. */
             calculate_process=operate_intermediary;
             break;
         case (".") :
@@ -291,7 +294,10 @@ function calculate(input_value) {
                     }
                     break;
             }
-            flag_operator=-1;    /*还原符号标志。*/
+            if (flag_into_Circulation!=1) {
+                /*if have not recurred into calculate("=")*/
+                flag_operator=-1;    /*还原符号标志。*/
+            }
             break;
     }
 
