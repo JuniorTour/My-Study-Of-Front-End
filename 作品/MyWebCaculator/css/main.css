@@ -3,11 +3,18 @@ table,tr,td,input {
     margin: 0;
 }
 
+html {
+    height: 100%;
+    /*A hack used to let 100% height valid.*/
+}
 body {
+    height: 100%;
+    /*A hack used to let 100% height valid.*/
     -moz-user-select:none;
+    margin: 0;
 }
 .container {
-    width:474px;
+    width:427px;
     height:800px;
     margin: 0 auto;
     font: 25px/1 "microsoft yahei",sans-serif;
@@ -70,4 +77,38 @@ table td:active {
 }
 td.active-border {
     border: 3px solid black;
+}
+/*Responsive design:
+Mainly about
+1.the width and height of container
+2.the font size*/
+@media (max-width:800px ) {
+    .container {
+        width:100%;
+        height:100%;
+    }
+    table td:last-child {
+        font-size: 3.5em;
+    }
+    td {
+        font-size: 2.5em;
+    }
+    .special-button td {
+        font-size: 2em;
+    }
+}
+@media (max-width: 500px) {
+    .container {
+        width:100%;
+        height:100%;
+    }
+    table td:last-child {
+        font-size: 1.5em;
+    }
+    td {
+        font-size: 1.5em;
+    }
+    .special-button td {
+        font-size: 1em;
+    }
 }
