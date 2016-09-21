@@ -16,6 +16,25 @@
             margin: 40px;
             /*padding: 10px;*/
             border: 5px solid blue;
+        }div#parent {
+             width:500px;
+         }
+        div#child {
+            padding-left:50px;
+            width:200px;
+            border:1px solid red;
+        }
+        div#parent {
+            width:500px;
+        }
+        div#child {
+            background-color: pink;
+
+            width:200px;
+            height:200px;
+            padding-left:50px;
+            border:10px solid red;
+            margin-right: 50px;
         }
         .son {
             width:200px;
@@ -74,6 +93,9 @@
     </style>
 </head>
 <body>
+<div id="sec0 parent">
+    <div id="child"></div>
+</div>
 <div id="sec1">
     <div id="perpendicular-margin" class="son">
         <p>按照w3c规范，如果块级父元素没有padding或border，那么子元素的垂直（注意，只有垂直方向上的）margin将被绘制到块级父元素之外。</p>

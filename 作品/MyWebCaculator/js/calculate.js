@@ -134,7 +134,8 @@ var para1=undefined,para2=undefined;    /*global variable*/
 var flag_operator=-1; /*used for mark the operator*/
 var calculate_process="";
 var flag_display=-1;  /*a flag indicates to whether the outcome is displayed.*/
-var  flag_into_Circulation=-1;
+var  flag_into_Circulation=-1;  /*a flag */
+var flag_float_input=-1;    /*a flag indicates to judge float input. */
 
 function calculate(input_value) {
     if (!input_value||input_value=="") {
@@ -142,13 +143,14 @@ function calculate(input_value) {
         return false;
     }
 
+    var input_type="";
+
     var int_input=parseInt(input_value);
     /*除了几个数字键，其余均会被转化为Not a Number.*/
-
     if (int_input>=0&&int_input<=9) {
         /*use int_input to test the input_value,if i_v is number,then change its value to "number",
          ,indicate to number type input:*/
-        input_value="number";
+        input_type="number";
         /*after once calculation,when input is number, restore all the variables:*/
         if (flag_display!=-1) {
             calculate_process="";
@@ -157,6 +159,16 @@ function calculate(input_value) {
             para2=undefined;
         }
     }
+    if (input_value=="+"||input_value=="-"||input_value=="*"||input_value=="/") {
+        input_type="operator";
+    }
+    if (input_value=="%"||input_value=="."||input_value=="clear"||input_value=="="||input_value=="+/-") {
+        input_type="special";
+    }
+
+    if (input_type=="operator") {
+        flag_float_input=-1;
+    }
 
     /*when two parameters and a operator is input,if get the another operator input,treat it as "=" and the input operator*/
     if (para1!=undefined&&para2!=undefined&&flag_operator!=-1
@@ -164,7 +176,7 @@ function calculate(input_value) {
         && flag_into_Circulation!=1) {
         /*two things to do:1."=" 2.the operator*/
         flag_into_Circulation=1;
-        if (input_value!="number") {
+        if (input_type!="number") {
             calculate("=");
         }
         flag_into_Circulation=-1;
@@ -201,105 +213,228 @@ function calculate(input_value) {
     }
 
     /*limit the input length:*/
-    if(operate_intermediary.toString().length>=9&&input_value=="number") return false;
+    if(operate_intermediary.toString().length>=9&&input_type=="number") return false;
     /*Old version:*/
     //if(cal_window.innerHTML.toString().length>=9&&input_value=="number"&&flag_operator!=-1) return false;
 
-    switch (input_value) {
-        //case (parseInt(input_value)>=0&&parseInt(input_value)<=9):
-            /*此处的一个问题：case的value似乎必须和input_value相关。上面这句就不行，运行时会被
-       ,直接跳过。*/
-        //case ("8"):
-            /*而上面这一句是可以运行的。*/
-        //case (int_input<=9):
-            /*也不行，跳过了。*/
-                                                                                                                        /*关于case value的问题，js高程（P60）也没说清。*/
+    switch (input_type) {
         case "number":
-            operate_intermediary=operate_intermediary*10+int_input;
-            calculate_process+=int_input;
-            break;
-        case ("+/-") :
-            operate_intermediary=-operate_intermediary;
-            calculate_process=operate_intermediary;
-            /*Can not complete the function that can display negative parameter2 and its operator.
-            * So I chose to jump from it with a inelegant way.*/
-            //if (flag_has_operator==-1) {
-            //    calculate_process=operate_intermediary;
-            //} else {
-            //    //calculate_process=para1.toString()+operate_intermediary;
-            //    calculate_process=operate_intermediary;
-            //}
-            break;
-        case ("%") :
-            operate_intermediary/=100;
-            /*Can not complete the function that can display parameter2 in percentage and its operator. */
-            calculate_process=operate_intermediary;
-            break;
-        case (".") :
-                                                                                            /*暂时搁置对浮点数的处理,9.7.*/
-            break;
-        case ("+") :
-            flag_operator=1;
-            if (flag_has_operator==-1) {
-                calculate_process+="+";
-            } else {
-                calculate_process=para1+"+";
+            if (flag_float_input==1) {
+                //alert(operate_intermediary.toString().indexOf("."));
+                operate_intermediary=operate_intermediary/100*100;
+                var float_decimal=operate_intermediary.toString().length-operate_intermediary.toString().indexOf(".");
+                operate_intermediary=operate_intermediary.number()+int_input/(10*float_decimal);
+                calculate_process+=int_input;
+            } else if (flag_float_input==-1) {
+                operate_intermediary=operate_intermediary*10+int_input;
+                calculate_process+=int_input;
             }
             break;
-        case ("-") :
-            flag_operator=2;
-            if (flag_has_operator==-1) {
-                calculate_process+="-";
-            } else {
-                calculate_process=para1+"-";
-            }
-            break;
-        case ("*") :
-            flag_operator=3;
-            if (flag_has_operator==-1) {
-                calculate_process+="×";
-            } else {
-                calculate_process=para1+"×";
-            }
-            break;
-        case ("/") :
-            flag_operator=4;
-            if (flag_has_operator==-1) {
-                calculate_process+="÷";
-            } else {
-                calculate_process=para1+"÷";
-            }
-            break;
-        case ("clear") :
-            flag_display=2;  /*value 2 indicate to clear()*/
-            break;
-        case ("=") :
-            removeBorderedBtn();
-            flag_display=1;
-            switch (flag_operator) {
-                case 1:
-                    outcome=para1+para2;
-                    break;
-                case 2:
-                    outcome=para1-para2;
-                    break;
-                case 3:
-                    outcome=para1*para2;
-                    break;
-                case 4:
-                    if(para1==0||para2==0) {
-                        outcome=0;
+        case "operator":
+            switch (input_value) {
+                case ("+") :
+                    flag_operator=1;
+                    /*this part can be functioned!*/
+                    if (flag_has_operator==-1) {
+                        calculate_process+="+";
                     } else {
-                        outcome=para1/para2;
+                        calculate_process=para1+"+";
+                    }
+                    break;
+                case ("-") :
+                    flag_operator=2;
+                    if (flag_has_operator==-1) {
+                        calculate_process+="-";
+                    } else {
+                        calculate_process=para1+"-";
+                    }
+                    break;
+                case ("*") :
+                    flag_operator=3;
+                    if (flag_has_operator==-1) {
+                        calculate_process+="×";
+                    } else {
+                        calculate_process=para1+"×";
+                    }
+                    break;
+                case ("/") :
+                    flag_operator=4;
+                    if (flag_has_operator==-1) {
+                        calculate_process+="÷";
+                    } else {
+                        calculate_process=para1+"÷";
                     }
                     break;
             }
-            if (flag_into_Circulation!=1) {
-                /*if have not recurred into calculate("=")*/
-                flag_operator=-1;    /*还原符号标志。*/
+            break;
+        case "special":
+            switch (input_value) {
+                case ("+/-") :
+                    operate_intermediary=-operate_intermediary;
+                    calculate_process=operate_intermediary;
+                    /*Can not complete the function that can display negative parameter2 and its operator.
+                     * So I chose to jump from it with a inelegant way.*/
+                    //if (flag_has_operator==-1) {
+                    //    calculate_process=operate_intermediary;
+                    //} else {
+                    //    //calculate_process=para1.toString()+operate_intermediary;
+                    //    calculate_process=operate_intermediary;
+                    //}
+                    break;
+                case ("%") :
+                    operate_intermediary/=100;
+                    /*Can not complete the function that can display parameter2 in percentage and its operator. */
+                    calculate_process=operate_intermediary;
+                    break;
+                case (".") :
+                    /*暂时搁置对浮点数的处理,9.7.
+                     * At last,handle with float type.*/
+                    flag_float_input=1;
+                    calculate_process+=".";
+                    operate_intermediary+=".";
+                    break;
+                case ("clear") :
+                    flag_display=2;  /*value 2 indicate to clear()*/
+                    break;
+                case ("=") :
+                    if (para1==undefined||para2==undefined) {
+                        break;
+                    }
+                    removeBorderedBtn();
+                    flag_display=1;
+                    switch (flag_operator) {
+                        case 1:
+                            outcome=para1+para2;
+                            break;
+                        case 2:
+                            outcome=para1-para2;
+                            break;
+                        case 3:
+                            outcome=para1*para2;
+                            break;
+                        case 4:
+                            if(para1==0||para2==0) {
+                                outcome=0;
+                            } else {
+                                outcome=para1/para2;
+                            }
+                            break;
+                    }
+                    if (flag_into_Circulation!=1) {
+                        /*if have not recurred into calculate("=")*/
+                        flag_operator=-1;    /*还原符号标志。*/
+                    }
+                    break;
             }
             break;
     }
+
+    /*Old version(before 9.21)*/
+    //switch (input_value) {
+    //    //case (parseInt(input_value)>=0&&parseInt(input_value)<=9):
+    //        /*此处的一个问题：case的value似乎必须和input_value相关。上面这句就不行，运行时会被
+    //   ,直接跳过。*/
+    //    //case ("8"):
+    //        /*而上面这一句是可以运行的。*/
+    //    //case (int_input<=9):
+    //        /*也不行，跳过了。*/
+    //                                                                                                                    /*关于case value的问题，js高程（P60）也没说清。*/
+    //    case "number":
+    //        if (flag_float_input==1) {
+    //            operate_intermediary=operate_intermediary+int_input/10;
+    //        } else if (flag_float_input==-1) {
+    //            operate_intermediary=operate_intermediary*10+int_input;
+    //        }
+    //        calculate_process+=int_input;
+    //        break;
+    //    case ("+/-") :
+    //        operate_intermediary=-operate_intermediary;
+    //        calculate_process=operate_intermediary;
+    //        /*Can not complete the function that can display negative parameter2 and its operator.
+    //        * So I chose to jump from it with a inelegant way.*/
+    //        //if (flag_has_operator==-1) {
+    //        //    calculate_process=operate_intermediary;
+    //        //} else {
+    //        //    //calculate_process=para1.toString()+operate_intermediary;
+    //        //    calculate_process=operate_intermediary;
+    //        //}
+    //        break;
+    //    case ("%") :
+    //        operate_intermediary/=100;
+    //        /*Can not complete the function that can display parameter2 in percentage and its operator. */
+    //        calculate_process=operate_intermediary;
+    //        break;
+    //    case (".") :
+    //        /*暂时搁置对浮点数的处理,9.7.
+    //        * At last,handle with float type.*/
+    //        flag_float_input=1;
+    //        break;
+    //    case ("+") :
+    //        flag_operator=1;
+    //                                                                                                                    /*this part can be functioned!*/
+    //        if (flag_has_operator==-1) {
+    //            calculate_process+="+";
+    //        } else {
+    //            calculate_process=para1+"+";
+    //        }
+    //        break;
+    //    case ("-") :
+    //        flag_operator=2;
+    //        if (flag_has_operator==-1) {
+    //            calculate_process+="-";
+    //        } else {
+    //            calculate_process=para1+"-";
+    //        }
+    //        break;
+    //    case ("*") :
+    //        flag_operator=3;
+    //        if (flag_has_operator==-1) {
+    //            calculate_process+="×";
+    //        } else {
+    //            calculate_process=para1+"×";
+    //        }
+    //        break;
+    //    case ("/") :
+    //        flag_operator=4;
+    //        if (flag_has_operator==-1) {
+    //            calculate_process+="÷";
+    //        } else {
+    //            calculate_process=para1+"÷";
+    //        }
+    //        break;
+    //    case ("clear") :
+    //        flag_display=2;  /*value 2 indicate to clear()*/
+    //        break;
+    //    case ("=") :
+    //        if (para1==undefined||para2==undefined) {
+    //            break;
+    //        }
+    //        removeBorderedBtn();
+    //        flag_display=1;
+    //        switch (flag_operator) {
+    //            case 1:
+    //                outcome=para1+para2;
+    //                break;
+    //            case 2:
+    //                outcome=para1-para2;
+    //                break;
+    //            case 3:
+    //                outcome=para1*para2;
+    //                break;
+    //            case 4:
+    //                if(para1==0||para2==0) {
+    //                    outcome=0;
+    //                } else {
+    //                    outcome=para1/para2;
+    //                }
+    //                break;
+    //        }
+    //        if (flag_into_Circulation!=1) {
+    //            /*if have not recurred into calculate("=")*/
+    //            flag_operator=-1;    /*还原符号标志。*/
+    //        }
+    //        break;
+    //}
 
     /*做完操作之后，把得出的值赋还给参数。*/
     if (flag_operate_target==1) {

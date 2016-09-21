@@ -13,8 +13,7 @@
                 11.compatibility between ff,chrome and ie8+.
   12.运算过程中，添加允许改变符号的支持,and update the window。  /*completed*/
                 13.decide whether display the sign in window,and handle the following problems.  /*completed*/
-  14.When two parameters and a operator is input,if get the another operator input,
-treat it as "=" and the input operator.    /*completed*/
+  14.When two parameters and a operator is input,if get the another operator input,treat it as "=" and the input operator.    /*completed*/
   15.Complete the "+/-","%" btn and its display.    /*completed inelegant*/
   16.Responsive layout. /*completed easily.*/
 
