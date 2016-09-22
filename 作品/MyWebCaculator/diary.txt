@@ -39,3 +39,6 @@
 2016年9月19日21:25:25：
     Finished the important No.14 to do item.
     Handling with some details.
+
+2016年9月22日20:56:50：
+    Still blocked by the float type part...
