@@ -49,7 +49,6 @@ function mouseListen() {
         /*使用下面这种写法，页面加载后会产生所有按键都点了一遍的效果。*/
         //current_key.onclick=calculate(current_key.getAttribute("data-value"));
     }
-
                                         /*这两个循环不知道为什么会互相覆盖。*/
     for (i=0;i<all_trs.length-1;i++) {
         var current_tr=all_trs[i];
@@ -125,6 +124,9 @@ function keyboardResponse(e) {
             calculate("/");
             break;
     }
+    if (evt.shiftKey&&key_code==53) {
+        calculate("%");
+    }
 }
 
 /*变量的作用域很重要*/
@@ -136,6 +138,7 @@ var calculate_process="";
 var flag_display=-1;  /*a flag indicates to whether the outcome is displayed.*/
 var  flag_into_Circulation=-1;  /*a flag */
 var flag_float_input=-1;    /*a flag indicates to judge float input. */
+
 
 function calculate(input_value) {
     if (!input_value||input_value=="") {
@@ -161,6 +164,10 @@ function calculate(input_value) {
     }
     if (input_value=="+"||input_value=="-"||input_value=="*"||input_value=="/") {
         input_type="operator";
+        /*after input an operator,switch flag_float_input to off(-1)*/
+        if (flag_float_input==1) {
+            flag_float_input=-1;
+        }
     }
     if (input_value=="%"||input_value=="."||input_value=="clear"||input_value=="="||input_value=="+/-") {
         input_type="special";
@@ -179,7 +186,7 @@ function calculate(input_value) {
     }
 
     /*function that use the past outcome as the next parameter.*/
-    if (flag_display==1&&int_input.toString()=="NaN") {
+    if (flag_display==1&&input_type=="operator") {
         para1=Math.round(outcome*100000000)/100000000;
         para2=undefined;
         calculate_process="";
@@ -187,7 +194,7 @@ function calculate(input_value) {
         flag_display=-1;
     }
 
-    /*when operator was changed during the calculate,update window simultaneously with this flag.*/
+    /*when operator was changed during the calculate,help to update window simultaneously with this flag.*/
     var flag_has_operator=-1;
     if (flag_operator!=-1) {
         flag_has_operator=1;
@@ -221,12 +228,13 @@ function calculate(input_value) {
                 if (operate_intermediary.toString().indexOf(".")!=-1) {     /*UGLY!!!*/
                     decimal_length=operate_intermediary.toString().length-operate_intermediary.toString().indexOf(".");
                 }
-                operate_intermediary=operate_intermediary+int_input/(Math.pow(10,decimal_length));
-                /*1.this sentence will loss accuracy.For example:3.321+0.0001=3.32000999999999994
-                * 2.if directly input ".",the number 0 can not display.*/
-
-                //operate_intermediary=operate_intermediary+int_input/10;
+                operate_intermediary=operate_intermediary*Math.pow(10,decimal_length)+int_input;
+                operate_intermediary=operate_intermediary/Math.pow(10,decimal_length);
                 calculate_process+=int_input;
+
+                /*old version:*/
+                //operate_intermediary=operate_intermediary+int_input/(Math.pow(10,decimal_length));
+                //operate_intermediary=operate_intermediary+int_input/10;
             } else if (flag_float_input==-1) {
                 operate_intermediary=operate_intermediary*10+int_input;
                 calculate_process+=int_input;
@@ -238,12 +246,26 @@ function calculate(input_value) {
                     /*暂时搁置对浮点数的处理,9.7.
                      * At last,handle with float type.*/
                     flag_float_input=1;
-                    calculate_process+=".";
-                    //operate_intermediary+=".";
+                    if (flag_display==1) {
+                        operate_intermediary=0;
+                        flag_display=-1;
+                    }
+                    if (operate_intermediary==0&&flag_operator==-1) {
+                        calculate_process=operate_intermediary+".";
+                    } else if (operate_intermediary==0&&flag_operator!=-1) {
+                        calculate_process+=operate_intermediary+".";
+                    } else {
+                        calculate_process+=".";
+                    }
                     break;
                 case ("+/-") :
                     operate_intermediary=-operate_intermediary;
                     calculate_process=operate_intermediary;
+                    //if (flag_operator!=-1) {
+                    //    calculate_process=calculate_process.substring(0,calculate_process.indexOf("+"))+"+"+operate_intermediary;
+                    //} else {
+                    //    calculate_process=operate_intermediary;
+                    //}
                     /*Can not complete the function that can display negative parameter2 and its operator.
                      * So I chose to jump from it with a inelegant way.*/
                     //if (flag_has_operator==-1) {
@@ -293,10 +315,6 @@ function calculate(input_value) {
             }
             break;
         case "operator":
-            /*after input an operator,switch flag_float_input to off(-1)*/
-            if (flag_float_input==1) {
-                flag_float_input=-1;
-            }
             switch (input_value) {
                 case ("+") :
                     flag_operator=1;
@@ -334,113 +352,6 @@ function calculate(input_value) {
             }
             break;
     }
-
-    /*Old version(before 9.21)*/
-    //switch (input_value) {
-    //    //case (parseInt(input_value)>=0&&parseInt(input_value)<=9):
-    //        /*此处的一个问题：case的value似乎必须和input_value相关。上面这句就不行，运行时会被
-    //   ,直接跳过。*/
-    //    //case ("8"):
-    //        /*而上面这一句是可以运行的。*/
-    //    //case (int_input<=9):
-    //        /*也不行，跳过了。*/
-    //                                                                                                                    /*关于case value的问题，js高程（P60）也没说清。*/
-    //    case "number":
-    //        if (flag_float_input==1) {
-    //            operate_intermediary=operate_intermediary+int_input/10;
-    //        } else if (flag_float_input==-1) {
-    //            operate_intermediary=operate_intermediary*10+int_input;
-    //        }
-    //        calculate_process+=int_input;
-    //        break;
-    //    case ("+/-") :
-    //        operate_intermediary=-operate_intermediary;
-    //        calculate_process=operate_intermediary;
-    //        /*Can not complete the function that can display negative parameter2 and its operator.
-    //        * So I chose to jump from it with a inelegant way.*/
-    //        //if (flag_has_operator==-1) {
-    //        //    calculate_process=operate_intermediary;
-    //        //} else {
-    //        //    //calculate_process=para1.toString()+operate_intermediary;
-    //        //    calculate_process=operate_intermediary;
-    //        //}
-    //        break;
-    //    case ("%") :
-    //        operate_intermediary/=100;
-    //        /*Can not complete the function that can display parameter2 in percentage and its operator. */
-    //        calculate_process=operate_intermediary;
-    //        break;
-    //    case (".") :
-    //        /*暂时搁置对浮点数的处理,9.7.
-    //        * At last,handle with float type.*/
-    //        flag_float_input=1;
-    //        break;
-    //    case ("+") :
-    //        flag_operator=1;
-    //                                                                                                                    /*this part can be functioned!*/
-    //        if (flag_has_operator==-1) {
-    //            calculate_process+="+";
-    //        } else {
-    //            calculate_process=para1+"+";
-    //        }
-    //        break;
-    //    case ("-") :
-    //        flag_operator=2;
-    //        if (flag_has_operator==-1) {
-    //            calculate_process+="-";
-    //        } else {
-    //            calculate_process=para1+"-";
-    //        }
-    //        break;
-    //    case ("*") :
-    //        flag_operator=3;
-    //        if (flag_has_operator==-1) {
-    //            calculate_process+="×";
-    //        } else {
-    //            calculate_process=para1+"×";
-    //        }
-    //        break;
-    //    case ("/") :
-    //        flag_operator=4;
-    //        if (flag_has_operator==-1) {
-    //            calculate_process+="÷";
-    //        } else {
-    //            calculate_process=para1+"÷";
-    //        }
-    //        break;
-    //    case ("clear") :
-    //        flag_display=2;  /*value 2 indicate to clear()*/
-    //        break;
-    //    case ("=") :
-    //        if (para1==undefined||para2==undefined) {
-    //            break;
-    //        }
-    //        removeBorderedBtn();
-    //        flag_display=1;
-    //        switch (flag_operator) {
-    //            case 1:
-    //                outcome=para1+para2;
-    //                break;
-    //            case 2:
-    //                outcome=para1-para2;
-    //                break;
-    //            case 3:
-    //                outcome=para1*para2;
-    //                break;
-    //            case 4:
-    //                if(para1==0||para2==0) {
-    //                    outcome=0;
-    //                } else {
-    //                    outcome=para1/para2;
-    //                }
-    //                break;
-    //        }
-    //        if (flag_into_Circulation!=1) {
-    //            /*if have not recurred into calculate("=")*/
-    //            flag_operator=-1;    /*还原符号标志。*/
-    //        }
-    //        break;
-    //}
 
     /*做完操作之后，把得出的值赋还给参数。*/
     if (flag_operate_target==1) {

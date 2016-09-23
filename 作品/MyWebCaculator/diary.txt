@@ -1,12 +1,17 @@
 
   To do list:
   1.解决多位数重复的问题。 /*completed*/
-  2.给符号按钮添加点击增加边框类的效果。Then I found this function is not adapted to keyboard response.    /**/
+  2.给符号按钮添加点击增加边框类的效果。Then I found this function is not adapted to keyboard response,
+  at last,i give up it.    /*completed*/
   3.截短过长的浮点数，注意避免误差,即保留2位小数。    /*completed*/
   4.给显示窗口增加内容较多时，字号变小的功能,且有一个最小限度。  /*completed*/
   5.clear()  /*completed*/
-                6.float type,"." input.
-                7.keyboardListen().    /**/
+                6.float type,"." input. /*completed hardly at last*/
+/*1.this sentence will loss accuracy.For example:3.321+0.0001=3.32000999999999994.
+In order to avoid it,i will do so hack.
+* 2.if directly input ".",the number 0 can not display.*/
+
+                7.keyboardListen().      /*completed*/
   8.添加对于继承上一步的结果，连续计算的支持。   /*completed*/
   9.避免连续快速点击按钮时，选中按钮文字的问题。  /*completed*/
   10.Input number has a limited max length.   /*completed,not*/ Both Tow parameter!   /*completed*/
@@ -24,6 +29,9 @@
     3.In ff,sometimes when press keyboard,it will select the character like mouse.
     4.When long decimal outcome was used as parameter,it will not be omitted.    /*solved*/
     5.During the debug,when click the browser window,it will begin to debug the onselectstart="return false;" attribute.
+    /*it seems like it is an normal behavior.*/
+    6.When had gotten an outcome,if input is ".",reset it to "0.".
+    7.After clear(),"." input is invalid.
 
 2016年9月9日16:23:50：
   做的很快，JavaScript的弱类型、方便的字符串操作...用起来比C舒服多了！
@@ -42,3 +50,111 @@
 
 2016年9月22日20:56:50：
     Still blocked by the float type part...
+
+
+/*Old version(before 9.21)*/
+    //switch (input_value) {
+    //    //case (parseInt(input_value)>=0&&parseInt(input_value)<=9):
+    //        /*此处的一个问题：case的value似乎必须和input_value相关。上面这句就不行，运行时会被
+    //   ,直接跳过。*/
+    //    //case ("8"):
+    //        /*而上面这一句是可以运行的。*/
+    //    //case (int_input<=9):
+    //        /*也不行，跳过了。*/
+    //                                                                                                                    /*关于case value的问题，js高程（P60）也没说清。*/
+    //    case "number":
+    //        if (flag_float_input==1) {
+    //            operate_intermediary=operate_intermediary+int_input/10;
+    //        } else if (flag_float_input==-1) {
+    //            operate_intermediary=operate_intermediary*10+int_input;
+    //        }
+    //        calculate_process+=int_input;
+    //        break;
+    //    case ("+/-") :
+    //        operate_intermediary=-operate_intermediary;
+    //        calculate_process=operate_intermediary;
+    //        /*Can not complete the function that can display negative parameter2 and its operator.
+    //        * So I chose to jump from it with a inelegant way.*/
+    //        //if (flag_has_operator==-1) {
+    //        //    calculate_process=operate_intermediary;
+    //        //} else {
+    //        //    //calculate_process=para1.toString()+operate_intermediary;
+    //        //    calculate_process=operate_intermediary;
+    //        //}
+    //        break;
+    //    case ("%") :
+    //        operate_intermediary/=100;
+    //        /*Can not complete the function that can display parameter2 in percentage and its operator. */
+    //        calculate_process=operate_intermediary;
+    //        break;
+    //    case (".") :
+    //        /*暂时搁置对浮点数的处理,9.7.
+    //        * At last,handle with float type.*/
+    //        flag_float_input=1;
+    //        break;
+    //    case ("+") :
+    //        flag_operator=1;
+    //                                                                                                                    /*this part can be functioned!*/
+    //        if (flag_has_operator==-1) {
+    //            calculate_process+="+";
+    //        } else {
+    //            calculate_process=para1+"+";
+    //        }
+    //        break;
+    //    case ("-") :
+    //        flag_operator=2;
+    //        if (flag_has_operator==-1) {
+    //            calculate_process+="-";
+    //        } else {
+    //            calculate_process=para1+"-";
+    //        }
+    //        break;
+    //    case ("*") :
+    //        flag_operator=3;
+    //        if (flag_has_operator==-1) {
+    //            calculate_process+="×";
+    //        } else {
+    //            calculate_process=para1+"×";
+    //        }
+    //        break;
+    //    case ("/") :
+    //        flag_operator=4;
+    //        if (flag_has_operator==-1) {
+    //            calculate_process+="÷";
+    //        } else {
+    //            calculate_process=para1+"÷";
+    //        }
+    //        break;
+    //    case ("clear") :
+    //        flag_display=2;  /*value 2 indicate to clear()*/
+    //        break;
+    //    case ("=") :
+    //        if (para1==undefined||para2==undefined) {
+    //            break;
+    //        }
+    //        removeBorderedBtn();
+    //        flag_display=1;
+    //        switch (flag_operator) {
+    //            case 1:
+    //                outcome=para1+para2;
+    //                break;
+    //            case 2:
+    //                outcome=para1-para2;
+    //                break;
+    //            case 3:
+    //                outcome=para1*para2;
+    //                break;
+    //            case 4:
+    //                if(para1==0||para2==0) {
+    //                    outcome=0;
+    //                } else {
+    //                    outcome=para1/para2;
+    //                }
+    //                break;
+    //        }
+    //        if (flag_into_Circulation!=1) {
+    //            /*if have not recurred into calculate("=")*/
+    //            flag_operator=-1;    /*还原符号标志。*/
+    //        }
+    //        break;
+    //}
