@@ -5,22 +5,24 @@
   at last,i give up it.    /*completed*/
   3.截短过长的浮点数，注意避免误差,即保留2位小数。    /*completed*/
   4.给显示窗口增加内容较多时，字号变小的功能,且有一个最小限度。  /*completed*/
-  5.clear()  /*completed*/
-                6.float type,"." input. /*completed hardly at last*/
-/*1.this sentence will loss accuracy.For example:3.321+0.0001=3.32000999999999994.
+  5.Clear()  /*completed*/
+                6.Float type,"." input. /*completed hardly at last*/
+/*<1>This sentence will loss accuracy.For example:3.321+0.0001=3.32000999999999994.
 In order to avoid it,i will do so hack.
-* 2.if directly input ".",the number 0 can not display.*/
+* <2>If directly input ".",the number 0 can not display.*/
 
                 7.keyboardListen().      /*completed*/
   8.添加对于继承上一步的结果，连续计算的支持。   /*completed*/
   9.避免连续快速点击按钮时，选中按钮文字的问题。  /*completed*/
   10.Input number has a limited max length.   /*completed,not*/ Both Tow parameter!   /*completed*/
-                11.compatibility between ff,chrome and ie8+.
+                11.Compatibility between ff,chrome and ie8+.
   12.运算过程中，添加允许改变符号的支持,and update the window。  /*completed*/
-                13.decide whether display the sign in window,and handle the following problems.  /*completed*/
+                13.Decide whether display the sign in window,and handle the following problems.  /*completed*/
   14.When two parameters and a operator is input,if get the another operator input,treat it as "=" and the input operator.    /*completed*/
   15.Complete the "+/-","%" btn and its display.    /*completed inelegant*/
   16.Responsive layout. /*completed easily.*/
+  17.Responsive font-size.
+  18.When +/- and % apply to para2,display them simultaneously in the whole expression, not current another expression.
 
     Bugs:
     1.IE之中添加边框时的抖动。
@@ -29,9 +31,12 @@ In order to avoid it,i will do so hack.
     3.In ff,sometimes when press keyboard,it will select the character like mouse.
     4.When long decimal outcome was used as parameter,it will not be omitted.    /*solved*/
     5.During the debug,when click the browser window,it will begin to debug the onselectstart="return false;" attribute.
-    /*it seems like it is an normal behavior.*/
-    6.When had gotten an outcome,if input is ".",reset it to "0.".
-    7.After clear(),"." input is invalid.
+    /*It seems like it is an normal behavior.*/
+    6.When had gotten an outcome,if input is ".",reset it to "0.".    /*solved*/
+    7.After clear(),"." input is invalid.    /*solved*/
+    8.Alert(9.87*100)   /*986.9999999999*/
+    /*solved by .toFixed(10),to round off it to 987.00000000.
+    Not absolutely accurate,but i have done my best.*/
 
 2016年9月9日16:23:50：
   做的很快，JavaScript的弱类型、方便的字符串操作...用起来比C舒服多了！
@@ -51,6 +56,10 @@ In order to avoid it,i will do so hack.
 2016年9月22日20:56:50：
     Still blocked by the float type part...
 
+2016年9月25日20:18:37：
+    90%.
+    Left +/- and % applied to para2.
+    And the responsive font-size.
 
 /*Old version(before 9.21)*/
     //switch (input_value) {
