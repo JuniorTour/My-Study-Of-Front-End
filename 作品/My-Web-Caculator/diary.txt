@@ -21,8 +21,9 @@ In order to avoid it,i will do so hack.
   14.When two parameters and a operator is input,if get the another operator input,treat it as "=" and the input operator.    /*completed*/
   15.Complete the "+/-","%" btn and its display.    /*completed inelegant*/
   16.Responsive layout. /*completed easily.*/
-  17.Responsive font-size.
-  18.When +/- and % apply to para2,display them simultaneously in the whole expression, not current another expression.
+  17.Responsive font-size.  /*completed*/
+  18.When +/- and % apply to para2,display them simultaneously in the whole expression, not current  another expression.
+  /*completed*/
 
     Bugs:
     1.IE之中添加边框时的抖动。
@@ -37,6 +38,7 @@ In order to avoid it,i will do so hack.
     8.Alert(9.87*100)   /*986.9999999999*/
     /*solved by .toFixed(10),to round off it to 987.00000000.
     Not absolutely accurate,but i have done my best.*/
+    9.0.0025 and 1.234506 incorrect.
 
 2016年9月9日16:23:50：
   做的很快，JavaScript的弱类型、方便的字符串操作...用起来比C舒服多了！
@@ -166,4 +168,72 @@ In order to avoid it,i will do so hack.
     //            flag_operator=-1;    /*还原符号标志。*/
     //        }
     //        break;
+    //}
+
+    /*Original line 301+:*/
+
+/*1.Use .match() method and regular expression to match +--*,so that we can manage
+ * the c_p string.
+ * 2.Many flags.*/
+//if (flag_operator!=-1) {
+//    calculate_process=calculate_process.substring(0,calculate_process.indexOf("+"))+"+"+operate_intermediary;
+//} else {
+//    calculate_process=operate_intermediary;
+//}
+/*Can not complete the function that can display negative parameter2 and its operator.
+ * So I chose to jump from it with a inelegant way.*/
+//if (flag_has_operator==-1) {
+//    calculate_process=operate_intermediary;
+//} else {
+//    //calculate_process=para1.toString()+operate_intermediary;
+//    calculate_process=operate_intermediary;
+//}
+
+
+/*Old version of limited input length:*/
+//if(cal_window.innerHTML.toString().length>=9&&input_value=="number"&&flag_operator!=-1) return false;
+
+
+
+/*old version of float input:*/
+//operate_intermediary=operate_intermediary+int_input/(Math.pow(10,decimal_length));
+//operate_intermediary=operate_intermediary+int_input/10;
+
+/*Old version type judge in line 185+:*/
+
+    //if (int_input>=0&&int_input<=9) {
+    //    /*use int_input to test the input_value,if i_v is number,then change its value to "number",
+    //     ,indicate to number type input:*/
+    //    input_type="number";
+    //    /*after once calculation,when input is number, restore all the variables:*/
+    //    if (flag_display!=-1) {
+    //        calculate_process="";
+    //        flag_display=-1;
+    //        para1=undefined;
+    //        para2=undefined;
+    //    }
+    //}
+    //if (input_value=="+"||input_value=="-"||input_value=="*"||input_value=="/") {
+    //    input_type="operator";
+    //    /*after input an operator,switch flag_float_input to off(-1)*/
+    //    if (flag_float_input==1) {
+    //        flag_float_input=-1;
+    //    }
+    //}
+    //if (input_value=="%"||input_value=="."||input_value=="clear"||input_value=="="||input_value=="+/-") {
+    //    input_type="special";
+    //}
+
+/*Old version of font-size in line 377+:*/
+
+    /*the rate of change of the size is not fixed,it should be dynamic!
+     *1-6,no changes,always 120px;6-8,minus 15px per char input till 90px;9,80px,10,70px,11,65px,12,60,13,55,14,50,15,45,16,40,17,35,18-n,min size 35px (can contain 19 characters,9 digits of para1,9 of para2,1 sign)*/
+    //if(outcome.toString().length>=6&&outcome.toString().length<=12) {
+    //    var font_size_number=120-15*(outcome.toString().length-6);
+    //    cal_window.style.fontSize=font_size_number+"px";
+    //}
+
+    //if(calculate_process.length>=6&&calculate_process.length<=12) {
+    //    var font_size_number=120-15*(calculate_process.length-6);
+    //    cal_window.style.fontSize=font_size_number+"px";
     //}

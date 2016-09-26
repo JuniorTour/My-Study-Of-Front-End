@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="245d3670-3895-4aed-8406-06a940ee5abe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/asus_pc.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/asus_pc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/MyWebCaculator/My-Caculator.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/MyWebCaculator/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/MyWebCaculator/diary.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/MyWebCaculator/img/caculator_design_guide.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/MyWebCaculator/img/caculator_guide_size.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/MyWebCaculator/js/calculate.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/MyWebCaculator/css/main.css" afterPath="$PROJECT_DIR$/作品/MyWebCaculator/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/MyWebCaculator/diary.txt" afterPath="$PROJECT_DIR$/作品/MyWebCaculator/diary.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/MyWebCaculator/js/calculate.js" afterPath="$PROJECT_DIR$/作品/MyWebCaculator/js/calculate.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/看过的书/CSS权威指南/水平格式化.html" afterPath="$PROJECT_DIR$/看过的书/CSS权威指南/水平格式化.html" />
     </list>
     <ignored path="Web前端.iws" />
@@ -28,59 +30,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="My-Caculator.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/作品/MyWebCaculator/My-Caculator.html">
+      <file leaf-file-name="水平格式化.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/看过的书/CSS权威指南/水平格式化.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.456522">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.67905825">
+              <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="My-Caculator.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/作品/My-Web-Caculator/My-Caculator.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="calculate.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/作品/MyWebCaculator/js/calculate.js">
+        <entry file="file://$PROJECT_DIR$/作品/My-Web-Caculator/js/calculate.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="425" column="71" selection-start-line="425" selection-start-column="71" selection-end-line="425" selection-end-column="71" />
+              <caret line="241" column="17" selection-start-line="241" selection-start-column="17" selection-end-line="241" selection-end-column="17" />
               <folding>
-                <element signature="e#5187#5222#0" expanded="false" />
-                <element signature="e#10314#10340#0" expanded="false" />
-                <element signature="e#10614#10774#0" expanded="false" />
-                <element signature="e#10795#10825#0" expanded="false" />
-                <element signature="e#14713#14998#0" expanded="false" />
-                <element signature="e#15003#15070#0" expanded="false" />
-                <element signature="e#15566#15631#0" expanded="false" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="diary.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/作品/MyWebCaculator/diary.txt">
+        <entry file="file://$PROJECT_DIR$/作品/My-Web-Caculator/diary.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="99" selection-start-line="24" selection-start-column="99" selection-end-line="24" selection-end-column="99" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/作品/MyWebCaculator/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.282609">
-              <caret line="119" column="21" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="水平格式化.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/看过的书/CSS权威指南/水平格式化.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6332094">
-              <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -89,7 +75,7 @@
       <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-10.304348">
               <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -137,9 +123,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/作品/MyWebCaculator/js/calculate.js" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -171,10 +154,12 @@
         <option value="$PROJECT_DIR$/作品/MyWebCaculator/js/caculate.js" />
         <option value="$PROJECT_DIR$/作品/MyWebCaculator/My Caculator.html" />
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/10.2 practical animation.html" />
-        <option value="$PROJECT_DIR$/作品/MyWebCaculator/diary.txt" />
         <option value="$PROJECT_DIR$/作品/MyWebCaculator/My-Caculator.html" />
-        <option value="$PROJECT_DIR$/作品/MyWebCaculator/js/calculate.js" />
+        <option value="$PROJECT_DIR$/作品/MyWebCaculator/diary.txt" />
         <option value="$PROJECT_DIR$/作品/MyWebCaculator/css/main.css" />
+        <option value="$PROJECT_DIR$/作品/MyWebCaculator/js/calculate.js" />
+        <option value="$PROJECT_DIR$/作品/My-Web-Caculator/js/calculate.js" />
+        <option value="$PROJECT_DIR$/作品/My-Web-Caculator/diary.txt" />
         <option value="$PROJECT_DIR$/看过的书/CSS权威指南/水平格式化.html" />
       </list>
     </option>
@@ -215,7 +200,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -330,13 +315,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MyWebCaculator" />
+              <option name="myItemId" value="My-Web-Caculator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My-Web-Caculator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -735,16 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/作品/MyWebCaculator/img/caculator_guide_size.PNG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/作品/MyWebCaculator/img/caculator_design_guide.PNG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/form.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -808,16 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/global.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -825,6 +812,13 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33294255">
+          <caret line="829" column="0" selection-start-line="829" selection-start-column="0" selection-end-line="829" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -838,58 +832,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33294255">
-          <caret line="829" column="0" selection-start-line="829" selection-start-column="0" selection-end-line="829" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/作品/MyWebCaculator/My-Caculator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.456522">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/作品/MyWebCaculator/diary.txt">
+    <entry file="file://$PROJECT_DIR$/作品/My-Web-Caculator/My-Caculator.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="99" selection-start-line="24" selection-start-column="99" selection-end-line="24" selection-end-column="99" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/作品/MyWebCaculator/js/calculate.js">
+    <entry file="file://$PROJECT_DIR$/作品/My-Web-Caculator/js/calculate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="425" column="71" selection-start-line="425" selection-start-column="71" selection-end-line="425" selection-end-column="71" />
+          <caret line="241" column="17" selection-start-line="241" selection-start-column="17" selection-end-line="241" selection-end-column="17" />
           <folding>
-            <element signature="e#5187#5222#0" expanded="false" />
-            <element signature="e#10314#10340#0" expanded="false" />
-            <element signature="e#10614#10774#0" expanded="false" />
-            <element signature="e#10795#10825#0" expanded="false" />
-            <element signature="e#14713#14998#0" expanded="false" />
-            <element signature="e#15003#15070#0" expanded="false" />
-            <element signature="e#15566#15631#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/作品/MyWebCaculator/css/main.css">
+    <entry file="file://$PROJECT_DIR$/作品/My-Web-Caculator/diary.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.282609">
-          <caret line="119" column="21" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.304348">
+          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/看过的书/CSS权威指南/水平格式化.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6332094">
-          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.67905825">
+          <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
           <folding />
         </state>
       </provider>

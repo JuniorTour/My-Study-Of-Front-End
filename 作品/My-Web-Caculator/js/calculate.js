@@ -9,6 +9,9 @@
  3.键盘、鼠标产生输入时，由各自的函数处理为统一的格式，交给计算部分计算，
  最后由显示部分显示在input之中。
 
+
+    The End~~2016年9月26日20:47:46
+    Learned a lot from it!
  * */
 function addOnloadEvent(func) {
     var oldOnload=window.onload;
@@ -126,6 +129,9 @@ function keyboardResponse(e) {
         case 189:
             calculate("+/-");
             break;
+        case 173:
+            calculate("+/-");
+            break;
     }
     if (evt.shiftKey&&key_code==53) {
         calculate("%");
@@ -134,14 +140,13 @@ function keyboardResponse(e) {
 
 /*变量的作用域很重要*/
 var cal_window=document.getElementById("cal-window");
-var outcome;
 var para1=undefined,para2=undefined;    /*global variable*/
 var flag_operator=-1; /*used for mark the operator*/
 var calculate_process="";
+var outcome;
 var flag_display=-1;  /*a flag indicates to whether the outcome is displayed.*/
-var  flag_into_Circulation=-1;  /*a flag */
+//var  flag_into_Circulation=-1;  /*a flag indicate to recur,deserted.*/
 var flag_float_input=-1;    /*a flag indicates to judge float input. */
-
 
 function calculate(input_value) {
     if (!input_value||input_value=="") {
@@ -150,6 +155,8 @@ function calculate(input_value) {
     }
 
     var input_type="";
+    var manage_process_pattern=/^\d{1,9}\.\d{1,9}[×÷\+\-]|^\d{1,9}[×÷\+\-]/g;
+    /*2016年9月26日13:21:02，此生的第一个正则*/
 
     var int_input=parseInt(input_value);
     /*除了几个数字键，其余均会被转化为Not a Number.*/
@@ -181,38 +188,13 @@ function calculate(input_value) {
             break;
     }
 
-    //if (int_input>=0&&int_input<=9) {
-    //    /*use int_input to test the input_value,if i_v is number,then change its value to "number",
-    //     ,indicate to number type input:*/
-    //    input_type="number";
-    //    /*after once calculation,when input is number, restore all the variables:*/
-    //    if (flag_display!=-1) {
-    //        calculate_process="";
-    //        flag_display=-1;
-    //        para1=undefined;
-    //        para2=undefined;
-    //    }
-    //}
-    //if (input_value=="+"||input_value=="-"||input_value=="*"||input_value=="/") {
-    //    input_type="operator";
-    //    /*after input an operator,switch flag_float_input to off(-1)*/
-    //    if (flag_float_input==1) {
-    //        flag_float_input=-1;
-    //    }
-    //}
-    //if (input_value=="%"||input_value=="."||input_value=="clear"||input_value=="="||input_value=="+/-") {
-    //    input_type="special";
-    //}
-
     /*when two parameters and a operator is input,if get the another operator input,treat it as "=" and the input operator*/
     if (para1!=undefined&&para2!=0&&flag_operator!=-1
-        &&input_type=="operator" && flag_into_Circulation!=1) {
-        /*two things to do:1."=" 2.the operator*/
-        flag_into_Circulation=1;
+        &&input_type=="operator") {
+        /*two things to do:1."=" 2.the operator itself.*/
         if (input_type!="number") {
             calculate("=");
         }
-        flag_into_Circulation=-1;
     }
 
     /*function that use the past outcome as the next parameter.*/
@@ -247,8 +229,6 @@ function calculate(input_value) {
 
     /*limit the input length:*/
     if(operate_intermediary.toString().length>=9&&input_type=="number") return false;
-    /*Old version:*/
-    //if(cal_window.innerHTML.toString().length>=9&&input_value=="number"&&flag_operator!=-1) return false;
 
     switch (input_type) {
         case "number":
@@ -257,14 +237,12 @@ function calculate(input_value) {
                 var decimal_length=1;
                 if (operate_intermediary.toString().indexOf(".")!=-1) {     /*UGLY!!!*/
                     decimal_length=operate_intermediary.toString().length-operate_intermediary.toString().indexOf(".");
+                } else if (calculate_process.toString().indexOf(".")!=-1) {
+                    decimal_length=calculate_process.match(/\.\d{0,9}/g).toString().length;
                 }
                 operate_intermediary=(operate_intermediary*Math.pow(10,decimal_length)+int_input).toFixed(10);
                 operate_intermediary=operate_intermediary/Math.pow(10,decimal_length);
                 calculate_process+=int_input;
-
-                /*old version:*/
-                //operate_intermediary=operate_intermediary+int_input/(Math.pow(10,decimal_length));
-                //operate_intermediary=operate_intermediary+int_input/10;
             } else if (flag_float_input==-1) {
                 operate_intermediary=operate_intermediary*10+int_input;
                 calculate_process+=int_input;
@@ -296,32 +274,18 @@ function calculate(input_value) {
                     break;
                 case ("+/-") :
                     operate_intermediary=-operate_intermediary;
-                    calculate_process=operate_intermediary;
-                    /*1.Use .match() method and regular expression to match +--*,so that we can manage
-                     * the c_p string.
-                     * 2.Many flags.*/
-                    //if (flag_operator!=-1) {
-                    //    calculate_process=calculate_process.substring(0,calculate_process.indexOf("+"))+"+"+operate_intermediary;
-                    //} else {
-                    //    calculate_process=operate_intermediary;
-                    //}
-                    /*Can not complete the function that can display negative parameter2 and its operator.
-                     * So I chose to jump from it with a inelegant way.*/
-                    //if (flag_has_operator==-1) {
-                    //    calculate_process=operate_intermediary;
-                    //} else {
-                    //    //calculate_process=para1.toString()+operate_intermediary;
-                    //    calculate_process=operate_intermediary;
-                    //}
+                    //calculate_process=operate_intermediary;
+                    calculate_process=calculate_process.toString().match(manage_process_pattern)+operate_intermediary;
                     break;
                 case ("%") :
                     operate_intermediary/=100;
-                    /*Can not complete the function that can display parameter2 in percentage and its operator. */
-                    calculate_process=operate_intermediary;
+                    //calculate_process=operate_intermediary;
+                    calculate_process=calculate_process.toString().match(manage_process_pattern)+operate_intermediary;
                     break;
                 case ("clear") :
                     flag_float_input=-1;
                     flag_display=2;  /*value 2 indicate to clear()*/
+                    //clear();
                     break;
                 case ("=") :
                     if (para1==undefined||para2==undefined) {
@@ -347,10 +311,7 @@ function calculate(input_value) {
                             }
                             break;
                     }
-                    if (flag_into_Circulation!=1) {
-                        /*if have not recurred into calculate("=")*/
-                        flag_operator=-1;    /*还原符号标志。*/
-                    }
+                    flag_operator=-1;    /*还原符号标志。*/
                     break;
             }
             break;
@@ -407,6 +368,7 @@ function calculate(input_value) {
         displayProcess(calculate_process);
     } else if (flag_display==2) {
         clear();
+        flag_display=-1;
     }
 
     return true;    /*indicate to run success.*/
@@ -417,12 +379,6 @@ function displayOutcome(outcome) {
         alert("outcome invalid!");
         return false;
     }
-    /*the rate of change of the size is not fixed,it should be dynamic!
-     *1-6,no changes,always 120px;6-8,minus 15px per char input till 90px;9,80px,10,70px,11,65px,12,60,13,55,14,50,15,45,16,40,17,35,18-n,min size 35px (can contain 19 characters,9 digits of para1,9 of para2,1 sign)*/
-    //if(outcome.toString().length>=6&&outcome.toString().length<=12) {
-    //    var font_size_number=120-15*(outcome.toString().length-6);
-    //    cal_window.style.fontSize=font_size_number+"px";
-    //}
     cal_window.style.fontSize=getFontSize(outcome.toString().length)/27+"em";
     cal_window.innerHTML=outcome.toString();
     return true;
@@ -434,10 +390,6 @@ function displayProcess(calculate_process) {
         alert("calculate_process invalid!");
         return false;
     }
-    //if(calculate_process.length>=6&&calculate_process.length<=12) {
-    //    var font_size_number=120-15*(calculate_process.length-6);
-    //    cal_window.style.fontSize=font_size_number+"px";
-    //}
     cal_window.style.fontSize=getFontSize(calculate_process.length)/27+"em";
     cal_window.innerHTML=calculate_process;
     return true;
@@ -468,6 +420,7 @@ function clear() {
     cal_window.style.fontSize="4.8em";
     para1=undefined;
     para2=undefined;
+    calculate_process="";
     flag_operator=-1;
 }
 
