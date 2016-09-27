@@ -147,6 +147,7 @@ var outcome;
 var flag_display=-1;  /*a flag indicates to whether the outcome is displayed.*/
 //var  flag_into_Circulation=-1;  /*a flag indicate to recur,deserted.*/
 var flag_float_input=-1;    /*a flag indicates to judge float input. */
+var decimal_length=0;
 
 function calculate(input_value) {
     if (!input_value||input_value=="") {
@@ -169,6 +170,7 @@ function calculate(input_value) {
             /*after input an operator,switch flag_float_input to off(-1)*/
             if (flag_float_input==1) {
                 flag_float_input=-1;
+                decimal_length=0;
             }
             break;
         case (input_value=="%"||input_value=="."||input_value=="clear"||input_value=="="||input_value=="+/-") :
@@ -234,12 +236,13 @@ function calculate(input_value) {
         case "number":
             if (flag_float_input==1) {
                 //alert(operate_intermediary.toString().indexOf("."));
-                var decimal_length=1;
-                if (operate_intermediary.toString().indexOf(".")!=-1) {     /*UGLY!!!*/
-                    decimal_length=operate_intermediary.toString().length-operate_intermediary.toString().indexOf(".");
-                } else if (calculate_process.toString().indexOf(".")!=-1) {
-                    decimal_length=calculate_process.match(/\.\d{0,9}/g).toString().length;
-                }
+                decimal_length++;
+                /*Inspired suddenly!!!Solved it smartly!!*/
+                //if (operate_intermediary.toString().indexOf(".")!=-1) {     /*UGLY!!!*/
+                //    decimal_length=operate_intermediary.toString().length-operate_intermediary.toString().indexOf(".");
+                //} else if (calculate_process.toString().indexOf(".")!=-1) {
+                //    decimal_length=calculate_process.match(/\.\d{0,9}/g).toString().length;
+                //}
                 operate_intermediary=(operate_intermediary*Math.pow(10,decimal_length)+int_input).toFixed(10);
                 operate_intermediary=operate_intermediary/Math.pow(10,decimal_length);
                 calculate_process+=int_input;
@@ -251,6 +254,8 @@ function calculate(input_value) {
         case "special":
             switch (input_value) {
                 case (".") :
+                    /*if has a point,and input another point,ignore it.*/
+                    if (flag_float_input==1) return false;
                     /*暂时搁置对浮点数的处理,9.7.
                      * At last,handle with float type.*/
                     flag_float_input=1;
@@ -312,6 +317,7 @@ function calculate(input_value) {
                             break;
                     }
                     flag_operator=-1;    /*还原符号标志。*/
+                    decimal_length=0;
                     break;
             }
             break;
@@ -375,10 +381,6 @@ function calculate(input_value) {
 }
 
 function displayOutcome(outcome) {
-    if(outcome=="") {
-        alert("outcome invalid!");
-        return false;
-    }
     cal_window.style.fontSize=getFontSize(outcome.toString().length)/27+"em";
     cal_window.innerHTML=outcome.toString();
     return true;

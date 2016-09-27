@@ -24,6 +24,8 @@ In order to avoid it,i will do so hack.
   17.Responsive font-size.  /*completed*/
   18.When +/- and % apply to para2,display them simultaneously in the whole expression, not current  another expression.
   /*completed*/
+  19.Forbid scale.
+  20.Solve the active window of safari on iphone.
 
     Bugs:
     1.IE之中添加边框时的抖动。
@@ -38,7 +40,7 @@ In order to avoid it,i will do so hack.
     8.Alert(9.87*100)   /*986.9999999999*/
     /*solved by .toFixed(10),to round off it to 987.00000000.
     Not absolutely accurate,but i have done my best.*/
-    9.0.0025 and 1.234506 incorrect.
+    9.0.0025 and 1.234506 incorrect.    /*Inspired suddenly!!!Solved it smartly!!In line 240.*/
 
 2016年9月9日16:23:50：
   做的很快，JavaScript的弱类型、方便的字符串操作...用起来比C舒服多了！
