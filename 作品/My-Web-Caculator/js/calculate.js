@@ -13,6 +13,10 @@
     The End~~2016年9月26日20:47:46
     Learned a lot from it!
  * */
+
+document.onselectstart=function () {
+    return false;
+};
 function addOnloadEvent(func) {
     var oldOnload=window.onload;
     if (typeof oldOnload=="function") {
@@ -247,7 +251,11 @@ function calculate(input_value) {
                 operate_intermediary=operate_intermediary/Math.pow(10,decimal_length);
                 calculate_process+=int_input;
             } else if (flag_float_input==-1) {
-                operate_intermediary=operate_intermediary*10+int_input;
+                if (operate_intermediary<0) {
+                    operate_intermediary=operate_intermediary*10-int_input;
+                } else {
+                    operate_intermediary=operate_intermediary*10+int_input;
+                }
                 calculate_process+=int_input;
             }
             break;
@@ -256,15 +264,14 @@ function calculate(input_value) {
                 case (".") :
                     /*if has a point,and input another point,ignore it.*/
                     if (flag_float_input==1) return false;
-                    /*暂时搁置对浮点数的处理,9.7.
-                     * At last,handle with float type.*/
                     flag_float_input=1;
-                    /*after had gotten a outcome,reset "."input to "0."*/
+                    /*After had gotten a outcome,reset "." input to "0."*/
                     if (flag_display==1) {
                         operate_intermediary=0;
                         para2=undefined;
                         flag_display=-1;
                     }
+
                     if (operate_intermediary==0&&flag_operator==-1) {
                         calculate_process=operate_intermediary+".";
                     } else if (operate_intermediary==0&&flag_operator!=-1) {
@@ -280,12 +287,12 @@ function calculate(input_value) {
                 case ("+/-") :
                     operate_intermediary=-operate_intermediary;
                     //calculate_process=operate_intermediary;
-                    calculate_process=calculate_process.toString().match(manage_process_pattern)+operate_intermediary;
+                    calculate_process=(calculate_process.toString().match(manage_process_pattern)+operate_intermediary).toString();
                     break;
                 case ("%") :
                     operate_intermediary/=100;
                     //calculate_process=operate_intermediary;
-                    calculate_process=calculate_process.toString().match(manage_process_pattern)+operate_intermediary;
+                    calculate_process=(calculate_process.toString().match(manage_process_pattern)+operate_intermediary).toString();
                     break;
                 case ("clear") :
                     flag_float_input=-1;
@@ -389,7 +396,7 @@ function displayOutcome(outcome) {
 function displayProcess(calculate_process) {
     if(!calculate_process) {
         /*!var will be true,if the var=0.Pay attention to it. */
-        alert("calculate_process invalid!");
+        //alert("calculate_process invalid!");
         return false;
     }
     cal_window.style.fontSize=getFontSize(calculate_process.length)/27+"em";

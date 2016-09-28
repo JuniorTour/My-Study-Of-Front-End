@@ -41,6 +41,11 @@ In order to avoid it,i will do so hack.
     /*solved by .toFixed(10),to round off it to 987.00000000.
     Not absolutely accurate,but i have done my best.*/
     9.0.0025 and 1.234506 incorrect.    /*Inspired suddenly!!!Solved it smartly!!In line 240.*/
+    10.The .active-border will cause layout shake.  /*solved*/
+    11.In safari of iphone,the window is active,it has a active window header and footer,
+    it causes incomplete display!
+    12.The sensitivity of keyboard is not enough to input quickly,and i think it is unable to be solved.
+    13.Continue input number to a negative number or a % number,it should be a digit.
 
 2016年9月9日16:23:50：
   做的很快，JavaScript的弱类型、方便的字符串操作...用起来比C舒服多了！
@@ -64,6 +69,18 @@ In order to avoid it,i will do so hack.
     90%.
     Left +/- and % applied to para2.
     And the responsive font-size.
+
+2016年9月28日20:23:54：
+    Deploy it to my server last night.
+    Find some bugs,and ready to solve it.
+
+
+<!--<body onselectstart="return false;">-->
+<!--一个bug？有时一旦点击页面就会触发这个事件？？？   Normal.-->
+<!--Instead of mark the event directly in html,I finally declare it in js(line 17).
+    It has two advantages:
+    1.Avoid the bug of not enough height of <body>.
+    2.Separate mark and behavior.-->
 
 /*Old version(before 9.21)*/
     //switch (input_value) {
