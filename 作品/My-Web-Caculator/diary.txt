@@ -46,6 +46,8 @@ In order to avoid it,i will do so hack.
     it causes incomplete display!
     12.The sensitivity of keyboard is not enough to input quickly,and i think it is unable to be solved.
     13.Continue input number to a negative number or a % number,it should be a digit.
+    14.-5+3,+/-,-3   /*solved*/
+    15.Disable scale.
 
 2016年9月9日16:23:50：
   做的很快，JavaScript的弱类型、方便的字符串操作...用起来比C舒服多了！

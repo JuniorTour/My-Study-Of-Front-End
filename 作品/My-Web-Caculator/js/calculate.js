@@ -285,11 +285,23 @@ function calculate(input_value) {
                     }
                     break;
                 case ("+/-") :
+                    if(para1==undefined&&para2==undefined) return false;
                     operate_intermediary=-operate_intermediary;
                     //calculate_process=operate_intermediary;
                     calculate_process=(calculate_process.toString().match(manage_process_pattern)+operate_intermediary).toString();
                     break;
                 case ("%") :
+                    if(para1==undefined&&para2==undefined) return false;
+                    flag_float_input=1;
+                    /*Continue input number to a % number,it should be the next digit.
+                    * eg:120,%,1.2,0,5,+,3,=.   4.205*/
+                    var temp_operate_intermediary=operate_intermediary;
+                    while (temp_operate_intermediary>=1) {
+                        if (temp_operate_intermediary%10!=0) {
+                            decimal_length++;
+                        }
+                        temp_operate_intermediary/=10;
+                    }
                     operate_intermediary/=100;
                     //calculate_process=operate_intermediary;
                     calculate_process=(calculate_process.toString().match(manage_process_pattern)+operate_intermediary).toString();
