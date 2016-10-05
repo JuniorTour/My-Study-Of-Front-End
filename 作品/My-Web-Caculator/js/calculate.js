@@ -204,7 +204,7 @@ function calculate(input_value) {
     }
 
     /*function that use the past outcome as the next parameter.*/
-    if (flag_display==1&&input_type=="operator") {
+    if (flag_display==1&&(input_type=="operator" || input_value=="+/-" || input_value=="%")) {
         para1=Math.round(outcome*100000000)/100000000;
         para2=undefined;
         calculate_process="";
@@ -295,15 +295,26 @@ function calculate(input_value) {
                     flag_float_input=1;
                     /*Continue input number to a % number,it should be the next digit.
                     * eg:120,%,1.2,0,5,+,3,=.   4.205*/
-                    var temp_operate_intermediary=operate_intermediary;
-                    while (temp_operate_intermediary>=1) {
-                        if (temp_operate_intermediary%10!=0) {
-                            decimal_length++;
+                    if (operate_intermediary<10) {
+                        decimal_length+=2;
+                    } else {    /*o_i>=10*/
+                        if (operate_intermediary%10!=0) {
+                            decimal_length+=1;
                         }
-                        temp_operate_intermediary/=10;
+                        if (operate_intermediary%100>=10) {
+                            decimal_length+=1;
+                        }
                     }
+                    //var temp_operate_intermediary=operate_intermediary;
+                    //operate_intermediary/=100;
+                    //if (para2==undefined) {
+                    //    if (temp_operate_intermediary%100==0) {
+                    //        calculate_process=operate_intermediary+".0";
+                    //    }
+                    //} else {
+                    //    calculate_process=(calculate_process.toString().match(manage_process_pattern)+operate_intermediary).toString();
+                    //}
                     operate_intermediary/=100;
-                    //calculate_process=operate_intermediary;
                     calculate_process=(calculate_process.toString().match(manage_process_pattern)+operate_intermediary).toString();
                     break;
                 case ("clear") :
@@ -341,6 +352,9 @@ function calculate(input_value) {
             }
             break;
         case "operator":
+            if(para1==undefined&&para2==undefined) {
+                calculate_process+="0";
+            }
             switch (input_value) {
                 case ("+") :
                     flag_operator=1;
