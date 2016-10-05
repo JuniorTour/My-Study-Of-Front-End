@@ -44,10 +44,15 @@ In order to avoid it,i will do so hack.
     10.The .active-border will cause layout shake.  /*solved*/
     11.In safari of iphone,the window is active,it has a active window header and footer,
     it causes incomplete display!
+    /*I have found millions of answers that indicate it is impossible to be solved now.
+    eg:http://stackoverflow.com/questions/24889100/
+    ios-8-removed-minimal-ui-viewport-property-are-there-other-soft-fullscreen/26884561#26884561
+    So i am tring some other way.......*/
+
     12.The sensitivity of keyboard is not enough to input quickly,and i think it is unable to be solved.
-    13.Continue input number to a negative number or a % number,it should be a digit.
+    13.Continue input number to a negative number or a % number,it should be a digit.    /*solved*/
     14.-5+3,+/-,-3   /*solved*/
-    15.Disable scale.
+    15.Disable scale.    /*solved*/
 
 2016年9月9日16:23:50：
   做的很快，JavaScript的弱类型、方便的字符串操作...用起来比C舒服多了！
@@ -75,6 +80,10 @@ In order to avoid it,i will do so hack.
 2016年9月28日20:23:54：
     Deploy it to my server last night.
     Find some bugs,and ready to solve it.
+
+2016年10月5日21:32:38：
+    Always stumbled by some little bugs.
+    I am going to mad!
 
 
 <!--<body onselectstart="return false;">-->

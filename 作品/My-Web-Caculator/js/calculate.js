@@ -88,31 +88,61 @@ function keyboardResponse(e) {
         case 96:
             calculate("0");
             break;
+        case 48:
+            calculate("0");
+            break;
         case 97:
+            calculate("1");
+            break;
+        case 49:
             calculate("1");
             break;
         case 98:
             calculate("2");
             break;
+        case 50:
+            calculate("2");
+            break;
         case 99:
+            calculate("3");
+            break;
+        case 51:
             calculate("3");
             break;
         case 100:
             calculate("4");
             break;
+        case 52:
+            calculate("4");
+            break;
         case 101:
+            calculate("5");
+            break;
+        case 53:
             calculate("5");
             break;
         case 102:
             calculate("6");
             break;
+        case 54:
+            calculate("6");
+            break;
         case 103:
+            calculate("7");
+            break;
+        case 55:
             calculate("7");
             break;
         case 104:
             calculate("8");
             break;
+        case 56:
+            calculate("8");
+            break;
         case 105:
+            calculate("9");
+            break;
+        case 57:
             calculate("9");
             break;
         case 106:
@@ -127,18 +157,30 @@ function keyboardResponse(e) {
         case 110:
             calculate(".");
             break;
+        case 190:
+            calculate(".");
+            break;
         case 111:
             calculate("/");
             break;
         case 189:
             calculate("+/-");
             break;
-        case 173:
-            calculate("+/-");
-            break;
     }
     if (evt.shiftKey&&key_code==53) {
         calculate("%");
+    }
+    if (evt.shiftKey&&key_code==187) {
+        calculate("+");
+    }
+    if (evt.shiftKey&&key_code==189) {
+        calculate("-");
+    }
+    if (evt.shiftKey&&key_code==56) {
+        calculate("*");
+    }
+    if (evt.shiftKey&&key_code==191) {
+        calculate("/");
     }
 }
 
