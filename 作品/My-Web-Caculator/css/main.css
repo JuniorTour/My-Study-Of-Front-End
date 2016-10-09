@@ -60,7 +60,7 @@ td {
     height: 20%;
     text-align: center;
     border: 1px solid black;
-    padding: 20px;
+    padding: 14px;
 }
 .special-button td {
     font-size: 1.6em;
@@ -88,21 +88,7 @@ Mainly about
 2.the font size*/
 
 /*After refer to some examples,I decided to treat the ipad similar to pc.*/
-/*@media (max-width:800px ) {*/
-    /*.container {*/
-        /*width:100%;*/
-        /*height:100%;*/
-    /*}*/
-    /*table td:last-child {*/
-        /*font-size: 3.5em;*/
-    /*}*/
-    /*td {*/
-        /*font-size: 2.5em;*/
-    /*}*/
-    /*.special-button td {*/
-        /*font-size: 2em;*/
-    /*}*/
-/*}*/
+
 @media (min-width:320px) and (max-width: 473px) {
     .container {
         width:100%;
@@ -119,9 +105,6 @@ Mainly about
     }
 }
 @media (min-width:320px) and (max-width: 350px) {
-    .container {
-        height:468px;
-    }
     .outcome-window {
         font-size: 18px;
     }

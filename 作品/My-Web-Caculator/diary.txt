@@ -48,11 +48,14 @@ In order to avoid it,i will do so hack.
     eg:http://stackoverflow.com/questions/24889100/
     ios-8-removed-minimal-ui-viewport-property-are-there-other-soft-fullscreen/26884561#26884561
     So i am tring some other way.......*/
+     /*solved eventually*/
 
-    12.The sensitivity of keyboard is not enough to input quickly,and i think it is unable to be solved.
+    12.The sensitivity of keyboard is not enough to input quickly,and i think it is /*unable to be solved.*/
     13.Continue input number to a negative number or a % number,it should be a digit.    /*solved*/
     14.-5+3,+/-,-3   /*solved*/
     15.Disable scale.    /*solved*/
+    16.Though the td is box-sizing: border-box;,but the active-border class still have influence on height.
+    /*spend too much time on this project,I don't want to solve it at all.*/
 
 2016年9月9日16:23:50：
   做的很快，JavaScript的弱类型、方便的字符串操作...用起来比C舒服多了！
@@ -84,6 +87,13 @@ In order to avoid it,i will do so hack.
 2016年10月5日21:32:38：
     Always stumbled by some little bugs.
     I am going to mad!
+2016年10月6日16:58:15：
+    Finally,finally!I found the answer to the "not 100% height problem in ios safari".
+    It is produced by the padding of td,height of <td> is 80px,it is too big.
+    And increase the height of table#keyboard to 400px,overflow the viewport,covered by the foot bar of safari.
+    Originally,I think it is the fault of the address bar and foot bar of safari,
+    so I had lost in searching the solution of it several days.
+    2016年10月6日16:57:56.
 
 
 <!--<body onselectstart="return false;">-->
