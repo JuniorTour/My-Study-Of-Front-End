@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>frfe</title>
+</head>
+<body>
+<script>
+    function createComparisonFunction(propertyName) {
+        return function (obj1,obj2,canshu3) {
+            alert(obj1.name+"\n"+obj2.name+"\n"+canshu3);
+            var v1=obj1[propertyName];
+            var v2=obj2[propertyName];
+            var ret=0;
+            if (v1<v2) {
+                ret=-1;
+            } else if (v1>v2) {
+                ret=1;
+            }
+            return ret;
+        };
+    }
+
+    var data=[{name:"nan",age:10},{name:"bei",age:20}];
+
+    data.sort(createComparisonFunction("name"));
+    alert(data[0].name);
+    data.sort(createComparisonFunction("age"));
+    alert(data[0].name);
+</script>
+</body>
+</html>

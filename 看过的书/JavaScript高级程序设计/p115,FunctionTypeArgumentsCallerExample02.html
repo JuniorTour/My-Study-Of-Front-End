@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p115,FunctionTypeArgumentsCallerExample02</title>
+</head>
+<body>
+<script>
+    function outer() {
+        inner();
+    }
+    function mid() {
+        inner();
+    }
+    function  inner() {
+//        alert(inner.caller);
+        alert(arguments.callee.caller);
+    }
+    outer();
+    mid();
+//    inner();
+</script>
+</body>
+</html>
