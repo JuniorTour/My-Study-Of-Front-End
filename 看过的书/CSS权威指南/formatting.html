@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Horizontal Formatting</title>
+    <title>Formatting</title>
     <style>
         body {
             font-size: 30px;
@@ -12,7 +12,7 @@
             margin-left:2em;
         }
         p {
-            margin: 0;
+            margin-left:2em;
         }
         .section {
             width:300px;
@@ -74,22 +74,33 @@
     <div id="child-1"></div>
 </div>
 <h1>例（二）:</h1>
+<p>当width为auto，margin-left、margin -right显式声明固定值时，width会被设置为所需的值，以满足水平格式化定律。</p>
 <div class="section">
     <div class="child" id="child-2"></div>
 </div>
 <h1>例（三）:</h1>
+<p>
+    当width显式声明，而margin-left、margin -right其中之一值为auto时，这个auto值的外边距会被用来“填充”父元素，以满足水平格式化定律，比如上面的例（一）中，margin -right就被用来填充了。
+</p>
 <div class="section">
     <div class="child" id="child-3"></div>
 </div>
 <h1>例（四）:</h1>
+<p>
+    当width和一个左右margin为auto时，设置为auto的margin会被设置为0，而width则会尽可能伸展来“填充”父元素。
+</p>
 <div class="section">
     <div class="child" id="child-4"></div>
 </div>
 <h1>例（五）:</h1>
+<p>
+    当width显式声明，而左右margin为auto时，就是我们常用的水平居中。
+</p>
 <div class="section">
     <div class="child" id="child-5"></div>
 </div>
 <h1>例（六）:</h1>
+<p>当这三个值均为auto时，左右margin会被设置为0，而width则“填充”父元素。</p>
 <div class="section">
     <div class="child" id="child-6"></div>
 </div>
