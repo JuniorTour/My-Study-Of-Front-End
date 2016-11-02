@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p116,CallAndApply</title>
+</head>
+<body>
+<script>
+    var obj={
+        showSum:function (n1,n2) {
+            alert(n1*n2);
+        }
+    };
+    function sum(n1,n2) {
+        return n1+n2;
+    }
+    function callSum1(n1,n2) {
+        return sum.apply(this,arguments);
+    }
+    function callSum2(n1,n2) {
+        return sum.apply(this,[n1,n2]);
+    }
+    function callSum3(n1,n2) {
+        return obj.showSum.apply(this,arguments);
+    }
+    callSum3(5,6);
+//    alert(callSum1(1,2));
+//    alert(callSum2(3,4));
+</script>
+</body>
+</html>

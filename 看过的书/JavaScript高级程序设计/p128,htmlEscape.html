@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p128,htmlEscape</title>
+</head>
+<body>
+<script>
+    function htmlEscape(text) {
+        return text.replace(/[<>"&]/g,function(match,pos,originalText) {
+          switch (match) {
+              case "<" :
+                  return "&lt;";
+              case ">":
+                  return "&gt;";
+              case "&" :
+                  return "&amp;";
+              case "\"":
+                  return "&quot";
+          }
+        });
+    }
+
+//    var text=prompt("What message you want to escape?");
+//    alert(htmlEscape(text));
+
+    var str="abc";
+    alert(str.localeCompare("abd"));
+
+//    alert(String.fromCharCode(97,104,101,108,108,111));
+</script>
+</body>
+</html>
