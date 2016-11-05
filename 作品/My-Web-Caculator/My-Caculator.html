@@ -5,10 +5,12 @@
     <title>My-Calculator</title>
     <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0, user-scalable=0
     , minimal-ui">
+    <!--The following two meta tags will be helpful in the "add to home screen" function in ios safari.
+    It will make the page more native-->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link rel="stylesheet" href="css/main.css">
-    <!--兼容性检测：IE9+ -->
+    <!--兼容性：IE9+ -->
 </head>
 <body>
 <div class="container">
@@ -50,6 +52,7 @@
     </table>
 </div>
 
+<script src="js/fastclick.min.js"></script>
 <script src="js/calculate.js"></script>
 </body>
 </html>

@@ -13,6 +13,12 @@
     The End~~2016年9月26日20:47:46
     Learned a lot from it!
  * */
+/*Add fastclick.js to solve the 300ms delay in mobile browsers like safari on 2016/11/5.*/
+if ('addEventListener' in document) {
+    document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+    }, false);
+}
 
 document.onselectstart=function () {
     return false;

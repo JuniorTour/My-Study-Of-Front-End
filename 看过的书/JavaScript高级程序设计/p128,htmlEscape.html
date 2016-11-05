@@ -24,10 +24,19 @@
 //    var text=prompt("What message you want to escape?");
 //    alert(htmlEscape(text));
 
+    //p129
     var str="abc";
-    alert(str.localeCompare("abd"));
+    document.body.innerHTML+=str.localeCompare("abd")+"<br/>";
 
+    //p130
+    document.body.innerHTML+=String.fromCharCode(97,104,101,108,108,111)+"<br/>";
 //    alert(String.fromCharCode(97,104,101,108,108,111));
+
+    //p135
+    var value=[1,2,3,9,5,6,7];
+    var max=Math.max.apply(Math,value);
+//    var max=Math.max([1,2,3,9,5,6,7]); //Nan
+    document.body.innerHTML+=max+"<br/>";
 </script>
 </body>
 </html>

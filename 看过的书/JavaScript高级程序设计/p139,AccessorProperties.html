@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p139,AccessorProperties</title>
+</head>
+<body>
+
+<script>
+    var book={
+        year:2000,
+        _year:2004,
+        edition:1
+    };
+    Object.defineProperty(book,"year",{
+        /*Invalid property descriptor.
+        Cannot both specify acces78usors and a value or writable attribute, #<Object>*/
+//        value:2016,
+        /*Only set "set attribute",the property will be unreadable.*/
+//        get:function () {
+//            return this._year;
+//        },
+        set:function (nv) {
+            if(nv>2004) {
+                this._year=nv;
+                this.edition+=nv-2004;
+            }
+        }
+    });
+
+//    book.year=2008;
+    alert(book.year);
+    alert(book._year);
+    alert(book.edition);
+
+    var newBook={
+//        _year:2020,
+//        edition:2
+    };
+    Object.defineProperties(newBook,{
+        _year:{
+            value:2021
+        },
+        edition:{
+            value:1
+        },
+        year:{
+            get:function () {
+                return this._year;
+            },
+                set:function (nv) {
+                    if(nv>2004) {
+                        this._year=nv;
+                        this.edition+=nv-2004;
+                    }
+                }
+        }
+    });
+
+//    newBook.year=2019;
+//    alert(newBook.year);
+//    alert(newBook._year);
+//    alert(newBook.edition);
+</script>
+</body>
+</html>
