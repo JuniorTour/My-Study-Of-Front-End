@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p159,HybridPatternExample</title>
+</head>
+<body>
+<script>
+    function Person(name,age,job) {
+        this.name=name;
+        this.age=age;
+        this.job=job;
+        this.friends=["you","me"];
+    }
+    Person.prototype={
+        constructor:Person,
+        sayName:function() {
+            alert(this.name);
+        }
+    };
+
+    var p1=new Person("nan",20,"student");
+    var p2=new Person("bei",25,"teacher");
+
+//    p1.sayName();
+    alert(p1.constructor);
+
+</script>
+</body>
+</html>

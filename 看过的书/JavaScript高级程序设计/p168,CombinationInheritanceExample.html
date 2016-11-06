@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p168,CombinationInheritanceExample</title>
+</head>
+<body>
+<script>
+    function SuperType(name) {
+        this.name=name;
+        this.color=["red","green","blue"];
+    }
+    SuperType.prototype.sayName=function() {
+        alert(this.name);
+    };
+    function SubType(name,age) {
+        //inherit property.
+        SuperType.call(this,name);
+        this.age=age;
+    }
+    //inherit method.
+    SubType.prototype=new SuperType();
+//    SubType.prototype.constructor=SubType;
+    SubType.prototype.sayAge=function() {
+        alert(this.age);
+    };
+
+    var insatance1=new SubType("nanan",20);
+    insatance1.sayAge();
+    insatance1.sayName();
+//    alert(insatance1.color);
+    alert(SubType.prototype.constructor);
+</script>
+</body>
+</html>

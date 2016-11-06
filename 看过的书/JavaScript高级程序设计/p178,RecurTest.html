@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p178,RecurTest</title>
+</head>
+<body>
+<script>
+    var test=function named() {
+        alert("named function is ok.");
+    };
+//    named();
+    test();
+
+    var factorial = function f(num) {
+        if (num<=1)  {
+            return 1;
+        } else {
+            f=null;
+            return num*f(num-1);
+        }
+    };
+
+    alert(factorial(4));
+</script>
+</body>
+</html>
