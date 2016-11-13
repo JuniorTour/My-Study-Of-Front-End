@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)https://g.alicdn.com/alilog/oneid/blk.html#coid=hqrWD1QU4GwCAXZRVeTNzkak&noid= -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<style type="text/css" adt="123"></style><script>if(document.URL.indexOf("v.youku.com/v_show/id_X") >= 0){
+    if(document.querySelector("#movie_player>param[name='flashvars']").value.indexOf('category=98')>-1){
+        console.log('youku test')
+    }else{
+        doAdblock();
+    }
+}else if(!document.URL.match(/^http:\/\/v\.baidu\.com|http:\/\/music\.baidu\.com|http:\/\/dnf\.duowan\.com|http:\/\/bbs\.duowan\.com|http:\/\/newgame\.duowan\.com|http:\/\/my\.tv\.sohu\.com/)){
+    doAdblock();
+}
+function doAdblock(){
+    (function() {
+        function A() {}
+        A.prototype = {
+            rules: {
+                /*youku_loader: {
+                 find: /^http:\/\/static\.youku\.com(\/v[\d\.]*)?\/v\/swf\/loaders?[^\.]*\.swf/,
+                 replace: "http://2016.adtchrome.com/loader.swf"
+                 },
+                 youku_player: {
+                 find: /^http:\/\/static\.youku\.com(\/v[\d\.]*)?\/v\/swf\/(q?player[^\.]*|\w{13})\.swf/,
+                 replace: "http://2016.adtchrome.com/player.swf"
+                 },*/
+                'pps_pps': {
+                    'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
+                    'replace': 'http://swf.adtchrome.com/pps_20140420.swf'
+                },
+                /*'iqiyi_1': {
+                 'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/.+\.swf$/,
+                 'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+                 },
+                 'iqiyi_2': {
+                 'find': /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/\d+\/.+\.swf$/,
+                 'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+                 },*/
+                'ku6': {
+                    'find': /^http:\/\/player\.ku6cdn\.com\/default\/.*\/\d+\/(v|player|loader)\.swf/,
+                    'replace': 'http://swf.adtchrome.com/ku6_20140420.swf'
+                },
+                'ku6_topic': {
+                    'find': /^http:\/\/player\.ku6\.com\/inside\/(.*)\/v\.swf/,
+                    'replace': 'http://swf.adtchrome.com/ku6_20140420.swf?vid=$1'
+                },
+                'sohu': {
+                    'find':/http:\/\/(tv\.sohu\.com\/upload\/swf\/(?!(ap|56)).*\d+|(\d+\.){3}\d+(:\d+)?\/(web|test)player)\/(Main|PlayerShell)[^\.]*\.swf/,
+                    'replace': "http://adtchrome.b0.upaiyun.com/sohu_live.swf"
+                },
+                /*'sohu2':{
+                 'find':/^http:\/\/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\/testplayer\/Main0?\.swf/,
+                 'replace':'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+                 },
+                 'sohu_share': {
+                 'find': /^http:\/\/share\.vrs\.sohu\.com\/my\/v\.swf&/,
+                 'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?'
+                 },
+                 'sohu_sogou' : {
+                 'find': /^http:\/\/share\.vrs\.sohu\.com\/(\d+)\/v\.swf/,
+                 'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?vid=$1'
+                 },
+                 'letv': {
+                 'find': /^http:\/\/player\.letvcdn\.com\/.*p\/.*\/newplayer\/LetvPlayer\.swf/,
+                 'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+                 },
+                 'letv_topic': {
+                 'find': /^http:\/\/player\.hz\.letv\.com\/hzplayer\.swf\/v_list=zhuanti/,
+                 'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+                 },
+                 'letv_duowan': {
+                 'find': /^http:\/\/assets\.dwstatic\.com\/video\/vpp\.swf/,
+                 'replace': 'http://yuntv.letv.com/bcloud.swf'
+                 },*/
+                '17173_in':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFile(Customer)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_in_20150522.swf"
+                },
+                '17173_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFileFirstpage\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_out_20150522.swf"
+                },
+                '17173_live':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream(_firstpage)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_stream_20150522.swf"
+                },
+                '17173_live_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream_(custom)?Out\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173.out.Live.swf"
+                }
+            },
+            _done: null,
+            get done() {
+                if(!this._done) {
+                    this._done = new Array();
+                }
+                return this._done;
+            },
+            addAnimations: function() {
+                var style = document.createElement('style');
+                style.type = 'text/css';
+                style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+                document.getElementsByTagName('head')[0].appendChild(style);
+            },
+            animationsHandler: function(e) {
+                if(e.animationName === 'playerInserted') {
+                    this.replace(e.target);
+                }
+            },
+            replace: function(elem) {
+                if (/http:\/\/v.youku.com\/v_show\/.*/.test(window.location.href)){
+                    var tag = document.getElementById("playerBox").getAttribute("player")
+                    if (tag == "adt"){
+                        console.log("adt adv")
+                        return;
+                    }
+                }
+                if(this.done.indexOf(elem) != -1) return;
+                this.done.push(elem);
+                var player = elem.data || elem.src;
+                if(!player) return;
+                var i, find, replace = false;
+                for(i in this.rules) {
+                    find = this.rules[i]['find'];
+                    if(find.test(player)) {
+                        replace = this.rules[i]['replace'];
+                        if('function' === typeof this.rules[i]['preHandle']) {
+                            this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                        }else{
+                            this.reallyReplace.bind(this, elem, find, replace)();
+                        }
+                        break;
+                    }
+                }
+            },
+            reallyReplace: function(elem, find, replace) {
+                elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+                var b = elem.querySelector("param[name='movie']");
+                this.reloadPlugin(elem);
+            },
+            reloadPlugin: function(elem) {
+                var nextSibling = elem.nextSibling;
+                var parentNode = elem.parentNode;
+                parentNode.removeChild(elem);
+                var newElem = elem.cloneNode(true);
+                this.done.push(newElem);
+                if(nextSibling) {
+                    parentNode.insertBefore(newElem, nextSibling);
+                } else {
+                    parentNode.appendChild(newElem);
+                }
+            },
+            init: function() {
+                var desc = navigator.mimeTypes['application/x-shockwave-flash'].description.toLowerCase();
+                /*if(desc.indexOf('adobe')>-1){
+                 delete this.rules["iqiyi_1"];
+                 delete this.rules["iqiyi_2"];
+                 }*/
+                if(document.URL.indexOf('tv.sohu.com')<=0){
+                    delete this.rules["sohu"];
+                }
+                var handler = this.animationsHandler.bind(this);
+                document.body.addEventListener('webkitAnimationStart', handler, false);
+                document.body.addEventListener('msAnimationStart', handler, false);
+                document.body.addEventListener('oAnimationStart', handler, false);
+                document.body.addEventListener('animationstart', handler, false);
+                this.addAnimations();
+            }
+        };
+        new A().init();
+    })();
+}
+// 20140730
+(function cnbeta() {
+    if (document.URL.indexOf('cnbeta.com') >= 0) {
+        var elms = document.body.querySelectorAll("p>embed");
+        Array.prototype.forEach.call(elms, function(elm) {
+            elm.style.marginLeft = "0px";
+        });
+    }
+})();
+//baidu
+//display: inline !important; visibility: visible !important;
+//display:block !important;visibility:visible !important; display:block !important;visibility:visible !important
+if(document.URL.indexOf('www.baidu.com') >= 0){
+    if(document && document.getElementsByTagName && document.getElementById && document.body){
+        var a = function(){
+            Array.prototype.forEach.call(document.body.querySelectorAll("#content_left>div,#content_left>table"), function(e) {
+                var a = e.getAttribute("style");
+                if(a && /display:(table|block)\s!important/.test(a)){
+                    e.parentNode.removeChild(e)
+                }
+            });
+        };
+        a();
+        var MutationObserver = window.MutationObserver ||  window.WebKitMutationObserver || window.MozMutationObserver;
+        var callback = function(records) {
+            records.map(function(record) {
+                console.log('block baidu')
+                a();
+            });
+        };
+        var mo = new MutationObserver(callback);
+        mo.observe(document.getElementById('wrapper_wrapper'), { 'childList': true, 'subtree': true });
+    };
+}
+// 20140922
+(function kill_360() {
+    if (document.URL.indexOf('so.com') >= 0) {
+        document.getElementById("e_idea_pp").style.display = none;
+    }
+})();
+//解决腾讯视频列表点击无效
+if(document.URL.indexOf("v.qq.com") >= 0){
+    if (document.getElementById("mod_videolist")){
+        var listBox = document.getElementById("mod_videolist")
+        var list = listBox.getElementsByClassName("list_item")
+        for (i = 0;i < list.length;i++){
+            list[i].addEventListener("click", function() {
+                var url = this.getElementsByTagName("a")[0]
+                url = url.getAttribute("href")
+                var host = window.location.href
+                url = host.replace(/cover\/.*/,url)
+                window.location.href = url
+            })
+        }
+    }
+}
+if(document.URL.indexOf("iqiyi.com") >= 0){
+    !function(){var player=document.getElementById("flash");var box=document.getElementById("flashbox");if(box!==null){var tmp=box.getAttribute("data-player-flashvars");if(tmp==null||tmp==""){box.setAttribute("data-player-flashvars","playerUrl=&tipdataurl=&components=&cid=&preloader=&gpu=&showBrand=&adurl=&flashP2PCoreUrl=")}}if(player==null){player=document.getElementById("swf_flashbox")}if(player==null){return}var divs=player.parentElement;var flashVars=document.getElementsByName("flashVars")[0];if(typeof flashVars=="undefined"){return}if(flashVars.value.indexOf('ddv')>-1){return}var params=flashVars.value.split("&");var value="";for(var i=0;i<params.length;i++){if(params[i].indexOf("adurl")==0){value+="&adurl=http://2016.adtchrome.com/am.swf"}else if(params[i].indexOf("cid")==0){value+="&cid=qc_100001_100141"}else{if(value!=""){value+="&"}value+=params[i]}}if(value.indexOf("qc_100001_100141")<1){value+="&cid=qc_100001_100141"}value+="&ddv=1";flashVars.value=value;divs.removeChild(player);divs.appendChild(player)}()
+}
+if (document.URL.indexOf("tv.sohu.com") >= 0){
+    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
+}
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style></head>
+<body>
+	<script type="text/javascript" charset="utf-8">!function e(a,i,t){function o(r,s){if(!i[r]){if(!a[r]){var l="function"==typeof require&&require;if(!s&&l)return l(r,!0);if(n)return n(r,!0);throw new Error("Cannot find module '"+r+"'")}var c=i[r]={exports:{}};a[r][0].call(c.exports,function(e){var i=a[r][1][e];return o(i?i:e)},c,c.exports,e,a,i,t)}return i[r].exports}for(var n="function"==typeof require&&require,r=0;r<t.length;r++)o(t[r]);return o}({1:[function(e,a,i){!function(e,a){function i(){var e=(new Date).getTime();e-f.times<8e3&&(S.getHashParam("coid")||S.getHashParam("noid")?(f.acookie=S.getHashParam("coid"),f.nickname=S.getHashParam("noid"),p(r)):m.getCookie("cna")||m.getCookie("nickname")?(f.acookie=m.getCookie("cna"),f.nickname=m.getCookie("nickname"),p(r)):t.setTimeout(function(){i()},100))}var t=e,o=a,n=t.navigator,r=["acookie","nickname","token","lastTime","tokenLastTime","request","hash","first_cna"],s={aidver:"1025162626",aid:"",aid_tanx:"http://a.tanx.com/tanx/img",aid_cnzz:"http://aid.cnzz.com/cnzz/img",aid_taonei:"https://oneid.mmstat.com/taobao/img",reportToken:"",reportTokenHttp:"http://jsonp.aid.alibaba.com/Umid/getDeviceInfo",reportTokenHttps:"https://oneid.mmstat.com/taobao/getDeviceInfo",umservice:"https://ynuf.alipay.com/service/um.json",umjs:"https://assets.alicdn.com/g/security/umscript/2.1.4/um.js"},l=36e5,c={aid:12*l,aidSecond:4e3,tokenInverseTime:336*l,token:360*l,reportDelay:500,reportDelaySecond:3e3},d=["1688.com","alibaba.com","alimama.com","aliloan.com","alipay.com","aliyun.com","cnzz.com","etao.com","hichina.com","hitao.com","juhuasuan.com","net.cn","phpwind.com","tao123.com","taobao.com","tmall.com","tmall.hk","taohua.com"],u="__id_fl_swf",h="./fl2.swf",g="/alilog/oneid",m=function(e){var a,i=n.cookieEnabled,r=/msie (\d+\.\d)/i.test(n.userAgent);try{supportStorage="localStorage"in t&&null!==t.localStorage&&"object"==typeof t.localStorage}catch(e){supportStorage=!1}if(r)try{a=o.createElement("INPUT"),a.type="hidden",a.style.display="none",a.addBehavior("#default#userData"),o.body.appendChild(a)}catch(e){r=!1}return{get:function(e){return this.getStorage(e)||this.getCookie(e)||this.getUserData(e)||null},set:function(e,a,t){var o,n=!1;return i&&(o=new Date,o.setTime(o.getTime()+8760*l),this.setCookie(e,a,{expires:o,path:t}),i=n=this.getCookie(e)==a),supportStorage&&(this.setStorage(e,a),supportStorage=n=this.getStorage(e)==a),!n&&r&&(this.setUserData(e,a),r=n=this.getUserData(e)==a),n},clear:function(e){e=e||"_lastvisited",i&&this.setCookie(e,"",{expires:new Date(1)}),supportStorage&&t.localStorage.removeItem(e)},getCookie:function(e){var a=new RegExp("(^| )"+e+"=([^;]*)(;|$)"),i=o.cookie.match(a);return i?decodeURIComponent(i[2])||null:null},setCookie:function(e,a,i){o.cookie=e+"="+encodeURIComponent(a)+("; path="+((i=i||{}).path||"/"))+(i.expires?"; expires="+i.expires.toGMTString():"")+(i.domain?"; domain="+i.domain:"")+(i.secure?"; secure":"")},getStorage:function(e){var a=null;return supportStorage&&(a=t.localStorage.getItem(e)),a},setStorage:function(e,a){supportStorage&&t.localStorage.setItem(e,a)},getUserData:function(i){if(r)try{return a.load(e.host),a.getAttribute(i)||null}catch(e){r=!1}},setUserData:function(i,t){if(r)try{a.load(e.host),a.setAttribute(i,t),a.save(e.host)}catch(e){r=!1}}}}(r),S=function(i,r){var s={};return s.toHexStr=function(e){for(var a,i="",t=7;t>=0;t--)a=e>>>4*t&15,i+=a.toString(16);return i},s.hashCode=function(e){var a=0;if(0==e.length)return s.toHexStr(a);for(var i=0;i<e.length;i++){var t=e.charCodeAt(i);a=(a<<5)-a+t,a&=a}return s.toHexStr(a)},s.encrypt=function(e,a){for(var i="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",t=9==e.length?Number(e.substr(8,1)):0,o=e.substr(0,8),n=t;n<a;n++)o=s.hashCode(o+i.substr(n));return o+a},{nuh:s,hash:s.hashCode,guid:function(e){for(var a=[],i="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",t=(e||32)-1;t>-1;t--)a[t]=i.charAt(Math.random()*i.length);return a.join("")},token:function(){var e=f.acookie?f.acookie.replace(/[^\da-z]/gi,""):"";return(e+this.guid()).substr(0,32)},requestImg:function(e,a){var i=[],o=t["img_"+this.guid(8)]=new Image;if(a&&"object"==typeof a)for(var n in a)a.hasOwnProperty(n)&&(i[i.length]=n+"="+encodeURIComponent(a[n]));i.length&&(e+=(e.indexOf("?")>-1?"&":"?")+i.join("&")),o.src=e},crxReq:function(e,a){this.isTaoDomain()?this.requestImg(e,a):this.jsonp(e,a)},jsonp:function(e,a,i){var n="fn_"+this.guid(8);t[n]=function(e){"function"==typeof i&&i(e);var a,r;t[n]=null,(a=l||o.getElementById("id_"+n))&&(r=a.parentNode,r&&11!=r.nodeType&&r.removeChild(a)),l=null};var r=["_cbFunction="+n];a=a||{};for(var s in a)a.hasOwnProperty(s)&&(r[r.length]=s+"="+encodeURIComponent(a[s]));var l=o.createElement("SCRIPT");l.type="text/javascript",l.id="id_"+n,e+=e.indexOf("?")===-1?"?":"&",l.src=e+r.join("&");var c=o.getElementsByTagName("HEAD");c&&c[0]&&c[0].appendChild(l)},stringify:function(e){for(var a=new Array(r.length),i=0;i<r.length;i++)a[i]=e[r[i]];return a.join(",")},parse:function(e){for(var a={},i=e.split(","),t=0;t<r.length;t++)a[r[t]]=i[t];return a},getHostFromURL:function(e){if(/https?:\/\/([^:\/]+)(:|\/)/.test(e)){e=RegExp.$1;var a=e.split(".");return a.length<=2?a.join("."):a.slice(1).join(".")}return""},reportUM:function(t,s){if(!o.getElementById("_umfp")){var l=o.createElement("DIV");l.id="_umfp",l.style.width="1px",l.style.height="1px",l.style.overflow="hidden",o.body.appendChild(l);var c=o.createElement("SCRIPT");c.type="text/javascript",c.charset="utf-8",c.onload=c.onreadystatechange=function(){if(!this.readyState||"loaded"==this.readyState||"complete"==this.readyState){if(!c)return;c.onload=c.onreadystatechange=null;var p=o.getElementById("_umfp");e&&e.um&&um.init({appName:"aliyun_aid",enableMod:null!==s&&""!==s&&(d.join("").indexOf(s)>-1&&n.userAgent.indexOf("Firefox")<0),serviceUrl:i.umservice,token:t,timeout:1500,timestamp:(new Date).getTime(),containers:{flash:p,dcp:p},callback:function(){r.tokenLastTime=r.times.toString(36),m.set("_lastvisited",S.stringify(r),g),S.jsonp(i.reportToken,{tokenid:t,acookie:r.acookie,n:"callback"})}});var f={tokenid:t,acookie:r.acookie,n:"first"};r.hasFlash&&(f.f="1"),r.hasPdf&&(f.p="1"),f.scr1=r.screenWidth+"x"+r.screenHeight,f.scr2=r.screenAWidth+"x"+r.screenAHeight;var M=S.getPluginsHash().join("");f.p1=M.substr(0,144),f.p2=M.substr(144,144),S.jsonp(i.reportToken,f),r.hasFlash?S.getSysFont(h,u,function(e){var t=a.getElementById(u);if(t){var o=t.get("cna");o||t.set("cna",r.first_cna)}if(e&&e.length){var n=S.getCfOf(e);t&&(f.fc=t.get("cna")),f.cf=n.cf,f.of=n.of,delete f.p1,delete f.p2,S.jsonp(i.reportToken,f)}l=null,c=null}):(l=null,c=null)}},c.src=i.umjs,o.getElementsByTagName("HEAD")[0].appendChild(c)}},getPlugins:function(){var e=n.plugins||[];if(e.length){for(var a=[],i=0;i<e.length;i++)this.fuckHint(e[i],a);return a}return this.getPluginsIE()},fuckHint:function(e,a){try{if(e){for(var i=[],t=0;t<e.length;t++)e.item(t)&&i.push(e.item(t).type);var o=e.name+";";e.version&&(o+=e.version+";"),o+=e.filename+";",o+=i.join(";"),a.push(o)}}catch(e){}},getPluginsIE:function(){for(var a=[],i=function(i){if(e&&i&&e.ActiveXObject){for(var t=0,o=null;null===o&&t<i.ids.length;){try{o=new e.ActiveXObject(i.ids[t])}catch(e){}t++}if(o)try{a.push(i.name+"=="+i.getVersion(o,i.ids[t]))}catch(e){}}},t=[{name:"Quicktime",ids:["QuickTimeCheckObject.QuickTimeCheck.1","QuickTime.QuickTime"],getVersion:function(e){return e.QuickTimeVersion.toString(16).replace(/^(.)(.)(.).*/,"$1.$2.$3")}},{name:"Acrobat",ids:["PDF.PdfCtrl.7","PDF.PdfCtrl.6","PDF.PdfCtrl.5","PDF.PdfCtrl.4","PDF.PdfCtrl.3","AcroPDF.PDF.1"],getVersion:function(e,a){return a.replace(/^[a-zA-Z.]+\.([0-9][0-9.]*)/,"$1")}},{name:"RealPlayer",ids:["RealPlayer.RealPlayer(tm) ActiveX Control (32-bit)","RealVideo.RealVideo(tm) ActiveX Control (32-bit)","rmocx.RealPlayer G2 Control"],getVersion:function(e){return e.GetVersionInfo()}},{name:"Flash",ids:["ShockwaveFlash.ShockwaveFlash.9","ShockwaveFlash.ShockwaveFlash.8.5","ShockwaveFlash.ShockwaveFlash.8","ShockwaveFlash.ShockwaveFlash.7","ShockwaveFlash.ShockwaveFlash.6","ShockwaveFlash.ShockwaveFlash.5","ShockwaveFlash.ShockwaveFlash.4"],getVersion:function(e){return e.GetVariable("$version").replace(/[a-zA-Z ]*([0-9,]+)/,"$1").replace(/,/g,".")}},{name:"Adobe SVG",ids:["Adobe.SVGCtl"],getVersion:function(e){return e.getSVGViewerVersion().replace(/[a-zA-Z; ]*([0-9.]+)/,"$1")}},{name:"Windows Media Player",ids:["WMPlayer.OCX","MediaPlayer.MediaPlayer.1"],getVersion:function(e){return e.versionInfo}},{name:"DivX",ids:["npdivx.DivXBrowserPlugin.1","npdivx.DivXBrowserPlugin"],getVersion:function(e){return e.GetVersion()}},{name:"WPFe (Silverlight)",ids:["AgControl.AgControl"],getVersion:function(e){for(var a="1",i="0",t="0";e.IsVersionSupported(a+"."+i+"."+t);)a++;for(a--;e.IsVersionSupported(a+"."+i+"."+t);)i++;for(i--;e.IsVersionSupported(a+"."+i+"."+t);)t++;return t--,a+"."+i+"."+t}},{name:"MSXML",ids:["MSXML2.DOMDocument.6.0","MSXML2.DOMDocument.5.0","MSXML2.DOMDocument.4.0","MSXML2.DOMDocument.3.0"],getVersion:function(e,a){return a.replace(/^[a-zA-Z.2]+\.([0-9]+\.[0-9.]+)/,"$1")}}],o=0;o<t.length;o++)i(t[o]);return a},getPluginsHash:function(){for(var e=this.getPlugins(),a=0;a<e.length;a++)e[a]=s.hashCode(e[a]),e[a]=s.encrypt(e[a],Math.round(5*Math.random()));return e},getClientInfoHash:function(){var e=this.getPlugins(),a=e.length?e.join(","):"",i=t.screen.width,o=t.screen.height,l=t.screen.availWidth,c=t.screen.availHeight,d=n.userAgent;return this.hasPdfAndFlash(a),r.ua=d,r.screenWidth=i,r.screenHeight=o,r.screenAWidth=l,r.screenAHeight=c,e=[a,i,o,l,c,d],s.hashCode(e.join("@"))},hasPdfAndFlash:function(e){r.hasPdf=/pdf/i.test(e),r.hasFlash=/flash/i.test(e)},getHashParam:function(e){var a=location.hash.match(new RegExp("[#&?]"+e+"=([^&?]+)"));return decodeURIComponent(a?a[1]:"")},getCfOf:function(e){for(var a=";Abadi MT Condensed Extra Bold;Abadi MT Condensed Light;Adobe Arabic;Adobe Caslon Pro;Adobe Caslon Pro Bold;Adobe Devanagari;Adobe Garamond Pro;Adobe Garamond Pro Bold;Adobe Gothic Std B;Adobe Hebrew;Adobe Myungjo Std M;Adobe Naskh Medium;Adobe 繁黑體 Std B;Adobe 仿宋 Std R;Adobe 黑体 Std R;Adobe 楷体 Std R;Adobe 明體 Std L;Adobe 宋体 Std L;Agency FB;Aharoni;Al Bayan;Al Nile;Al Tarikh;Aldhabi;Algerian;American Typewriter;Andale Mono;Andalus;Angsana New;AngsanaUPC;Aparajita;Apple Braille;Apple Chancery;Apple Color Emoji;Apple SD Gothic Neo;Apple Symbols;AppleGothic;AppleMyungjo;Arabic Transparent;Arabic Typesetting;Arial;Arial Baltic;Arial Black;Arial CE;Arial CYR;Arial Greek;Arial Hebrew;Arial Hebrew Scholar;Arial Narrow;Arial Rounded MT Bold;Arial TUR;Arial Unicode MS;Arvo;Athelas;Avenir;Avenir Next;Avenir Next Condensed;Ayuthaya;Baghdad;Bangla MN;Bangla Sangam MN;Baoli SC;Baskerville;Baskerville Old Face;Batang;BatangChe;Bauhaus 93;Beirut;Bell MT;Berlin Sans FB;Berlin Sans FB Demi;Bernard MT Condensed;Big Caslon;Birch Std;Blackadder ITC;Blackoak Std;Bodoni 72;Bodoni 72 Oldstyle;Bodoni 72 Smallcaps;Bodoni MT;Bodoni MT Black;Bodoni MT Condensed;Bodoni MT Poster Compressed;Bodoni Ornaments;Book Antiqua;Bookman Old Style;Bookshelf Symbol 7;Bradley Hand;Bradley Hand ITC;Braggadocio;Britannic Bold;Broadway;Browallia New;BrowalliaUPC;Brush Script MT;Brush Script Std;Calibri;Calibri Light;Californian FB;Calisto MT;Cambria;Cambria Math;Candara;Castellar;Centaur;Century;Century Gothic;Century Schoolbook;Chalkboard;Chalkboard SE;Chalkduster;Chaparral Pro;Chaparral Pro Light;Charlemagne Std;Charter;Chiller;Cochin;Colonna MT;Comic Sans MS;Consolas;Constantia;Cooper Black;Cooper Std Black;Copperplate;Copperplate Gothic Bold;Copperplate Gothic Light;Corbel;Cordia New;CordiaUPC;Corsiva Hebrew;Courier;Courier New;Courier New Baltic;Courier New CE;Courier New CYR;Courier New Greek;Courier New TUR;Curlz MT;Damascus;DaunPenh;David;DecoType Naskh;Desdemona;Devanagari MT;Devanagari Sangam MN;DFKai-SB;Didot;DilleniaUPC;DIN Alternate;DIN Condensed;Diwan Kufi;Diwan Thuluth;DokChampa;Dotum;DotumChe;Droid Serif;Ebrima;Edwardian Script ITC;Elephant;Engravers MT;Eras Bold ITC;Eras Demi ITC;Eras Light ITC;Eras Medium ITC;Estrangelo Edessa;EucrosiaUPC;Euphemia;Euphemia UCAS;Eurostile;FangSong;Farah;Farisi;Felix Titling;Fixedsys;Footlight MT Light;Forte;Franklin Gothic Book;Franklin Gothic Demi;Franklin Gothic Demi Cond;Franklin Gothic Heavy;Franklin Gothic Medium;Franklin Gothic Medium Cond;FrankRuehl;FreesiaUPC;Freestyle Script;French Script MT;Futura;Gabriola;Gadugi;Garamond;Gautami;GB18030 Bitmap;Geeza Pro;Geneva;Georgia;Giddyup Std;Gigi;Gill Sans;Gill Sans MT;Gill Sans MT Condensed;Gill Sans MT Ext Condensed Bold;Gill Sans Ultra Bold;Gill Sans Ultra Bold Condensed;Gisha;Gloucester MT Extra Condensed;Goudy Old Style;Goudy Stout;Gujarati MT;Gujarati Sangam MN;Gulim;GulimChe;GungSeo;Gungsuh;GungsuhChe;Gurmukhi MN;Gurmukhi MT;Gurmukhi Sangam MN;Haettenschweiler;Hannotate SC;Hannotate TC;HanziPen SC;HanziPen TC;Harlow Solid Italic;Harrington;HeadLineA;Heiti SC;Heiti TC;Helvetica;Helvetica Neue;Herculanum;High Tower Text;Hiragino Kaku Gothic Pro;Hiragino Kaku Gothic ProN;Hiragino Kaku Gothic Std;Hiragino Kaku Gothic StdN;Hiragino Maru Gothic Pro;Hiragino Maru Gothic ProN;Hiragino Mincho Pro;Hiragino Mincho ProN;Hiragino Sans GB;Hobo Std;Hoefler Text;icomoon;Impact;Imprint MT Shadow;InaiMathi;Indie Flower;Informal Roman;Iowan Old Style;IrisUPC;Iskoola Pota;ITF Devanagari;JasmineUPC;Javanese Text;Jokerman;Juice ITC;Kailasa;KaiTi;Kaiti SC;Kaiti TC;Kalinga;Kannada MN;Kannada Sangam MN;Kartika;Kefa;Khmer MN;Khmer Sangam MN;Khmer UI;Kino MT;KodchiangUPC;Kohinoor Devanagari;Kokila;Kokonor;Kozuka Gothic Pr6N B;Kozuka Gothic Pr6N EL;Kozuka Gothic Pr6N H;Kozuka Gothic Pr6N L;Kozuka Gothic Pr6N M;Kozuka Gothic Pr6N R;Kozuka Gothic Pro B;Kozuka Gothic Pro EL;Kozuka Gothic Pro H;Kozuka Gothic Pro L;Kozuka Gothic Pro M;Kozuka Gothic Pro R;Kozuka Mincho Pr6N B;Kozuka Mincho Pr6N EL;Kozuka Mincho Pr6N H;Kozuka Mincho Pr6N L;Kozuka Mincho Pr6N M;Kozuka Mincho Pr6N R;Kozuka Mincho Pro B;Kozuka Mincho Pro EL;Kozuka Mincho Pro H;Kozuka Mincho Pro L;Kozuka Mincho Pro M;Kozuka Mincho Pro R;Kristen ITC;Krungthep;KufiStandardGK;Kunstler Script;Lantinghei SC;Lantinghei TC;Lao MN;Lao Sangam MN;Lao UI;Latha;Leelawadee;Leelawadee UI;Leelawadee UI Semilight;Letter Gothic Std;Levenim MT;Libian SC;LiHei Pro;LilyUPC;LiSong Pro;Lithos Pro Regular;Lobster;Lucida Blackletter;Lucida Bright;Lucida Calligraphy;Lucida Console;Lucida Fax;Lucida Grande;Lucida Handwriting;Lucida Sans;Lucida Sans Typewriter;Lucida Sans Unicode;Luminari;Magneto;Maiandra GD;Malayalam MN;Malayalam Sangam MN;Malgun Gothic;Malgun Gothic Semilight;Mangal;Marion;Marker Felt;Marlett;Matura MT Script Capitals;Meiryo;Meiryo UI;Menlo;Mesquite Std;Microsoft Himalaya;Microsoft JhengHei;Microsoft JhengHei Light;Microsoft JhengHei UI;Microsoft JhengHei UI Light;Microsoft New Tai Lue;Microsoft PhagsPa;Microsoft Sans Serif;Microsoft Tai Le;Microsoft Uighur;Microsoft YaHei;Microsoft YaHei UI;Microsoft YaHei UI Light;Microsoft Yi Baiti;MingLiU;MingLiU_HKSCS;MingLiU_HKSCS-ExtB;MingLiU-ExtB;Minion Pro;Minion Pro Cond;Minion Pro Med;Minion Pro SmBd;Miriam;Miriam Fixed;Mishafi;Mishafi Gold;Mistral;Modern;Modern No. 20;Monaco;Mongolian Baiti;Monotype Corsiva;Monotype Sorts;MoolBoran;MS Gothic;MS Mincho;MS Outlook;MS PGothic;MS PMincho;MS Reference Sans Serif;MS Reference Specialty;MS Sans Serif;MS Serif;MS UI Gothic;Mshtakan;MT Extra;Muna;MV Boli;Myanmar MN;Myanmar Sangam MN;Myanmar Text;Myriad Arabic;Myriad Hebrew;Myriad Pro;Myriad Pro Cond;Myriad Pro Light;Nadeem;Nanum Brush Script;Nanum Gothic;Nanum Myeongjo;Nanum Pen Script;Narkisim;New Peninim MT;News Gothic MT;Niagara Engraved;Niagara Solid;Nirmala UI;Nirmala UI Semilight;Noteworthy;Nueva Std;Nueva Std Cond;Nyala;OCR A Extended;Old English Text MT;Onyx;Open Sans;Optima;Orator Std;Oriya MN;Oriya Sangam MN;Osaka;Palace Script MT;Palatino;Palatino Linotype;Papyrus;Parchment;PCMyungjo;Perpetua;Perpetua Titling MT;Phosphate;PilGi;Plantagenet Cherokee;Playbill;PMingLiU;PMingLiU-ExtB;Poiret One;Poor Richard;Poplar Std;Prestige Elite Std;Pristina;PT Mono;PT Sans;PT Sans Caption;PT Sans Narrow;PT Serif;PT Serif Caption;Raanana;Raavi;Rage Italic;Raleway;Ravie;Roboto;Roboto Condensed;Roboto Slab;Rockwell;Rockwell Condensed;Rockwell Extra Bold;Rod;Roman;Rosewood Std Regular;Sakkal Majalla;Sana;Sathu;Savoye LET;Script;Script MT Bold;Segoe MDL2 Assets;Segoe Print;Segoe Script;Segoe UI;Segoe UI Black;Segoe UI Emoji;Segoe UI Historic;Segoe UI Light;Segoe UI Semibold;Segoe UI Semilight;Segoe UI Symbol;Seravek;Shonar Bangla;Showcard Gothic;Shree Devanagari 714;Shruti;SignPainter;Silom;SimHei;Simplified Arabic;Simplified Arabic Fixed;SimSun;SimSun-ExtB;Sinhala MN;Sinhala Sangam MN;Sitka Banner;Sitka Display;Sitka Heading;Sitka Small;Sitka Subheading;Sitka Text;Skia;Small Fonts;Snap ITC;Snell Roundhand;Songti SC;Songti TC;Stencil;Stencil Std;STFangsong;STHeiti;STHupo;STIXGeneral;STIXIntegralsD;STIXIntegralsSm;STIXIntegralsUp;STIXIntegralsUpD;STIXIntegralsUpSm;STIXNonUnicode;STIXSizeFiveSym;STIXSizeFourSym;STIXSizeOneSym;STIXSizeThreeSym;STIXSizeTwoSym;STIXVariants;STKaiti;STLiti;STSong;STXingkai;STXinwei;STZhongsong;Sukhumvit Set;Superclarendon;Sylfaen;Symbol;System;Tahoma;Tamil MN;Tamil Sangam MN;Tekton Pro;Tekton Pro Cond;Tekton Pro Ext;Telugu MN;Telugu Sangam MN;Tempus Sans ITC;Terminal;Thonburi;Times;Times New Roman;Times New Roman Baltic;Times New Roman CE;Times New Roman CYR;Times New Roman Greek;Times New Roman TUR;Traditional Arabic;Trajan Pro;Trattatello;Trebuchet MS;Tunga;Tw Cen MT;Tw Cen MT Condensed;Tw Cen MT Condensed Extra Bold;Urdu Typesetting;Utsaah;Vani;Verdana;Vijaya;Viner Hand ITC;Vivaldi;Vladimir Script;Vrinda;Waseem;Wawati SC;Wawati TC;Webdings;Weibei SC;Weibei TC;Wide Latin;Wingdings;Wingdings 2;Wingdings 3;Xingkai SC;Yu Gothic;Yu Gothic Light;Yu Gothic Medium;Yu Gothic UI;Yu Gothic UI Light;Yu Gothic UI Semibold;Yu Gothic UI Semilight;Yu Mincho;Yu Mincho Demibold;Yu Mincho Light;Yuanti SC;YuGothic;YuMincho;Yuppy SC;Yuppy TC;Zapf Dingbats;Zapfino;等线;等线 Light;方正兰亭超细黑简体;方正舒体;方正姚体;仿宋;仿宋_GB2312;黑体;华文彩云;华文仿宋;华文行楷;华文琥珀;华文楷体;华文隶书;华文宋体;华文细黑;华文新魏;华文中宋;楷体;楷体_GB2312;隶书;宋体;宋体-PUA;微软雅黑;微软雅黑 Light;新宋体;幼圆;",i=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","#"],t={},o={},n=0;n<i.length;++n)t[i[n]]=[],o[i[n]]=[];for(var n=0;n<e.length;++n){var r=a.indexOf(";"+e[n]+";"),l=e[n].substr(0,1).toLowerCase();(l<"a"||l>"z")&&(l="#"),r>=0?t[l].push(e[n]):o[l].push(e[n])}for(var c=[],n=0;n<i.length;++n){var d=t[i[n]];if(d.length){var u=s.hashCode(d.join(";")),h=s.encrypt(u,Math.round(8*Math.random()))+i[n];c.push(h)}}for(var g=[],n=0;n<i.length;++n){var d=o[i[n]];if(d.length){var u=s.hashCode(d.join(";")),h=s.encrypt(u,Math.round(8*Math.random()))+i[n];g.push(h)}}return{cf:c.join(""),of:g.join("")}},getSysFont:function(a,i,t){var o=S.detectEnv();if(o.flash[0]>=9)try{var n="___fp_swf_loaded";e[n]=function(e){t(e)},S.renderFlash({flashUrl:a,id:i,callback:n})}catch(e){t([])}else t([])},isTaoDomain:function(){return"https:"===t.location.protocol},isIE8SP3:function(){return n.userAgent.indexOf("Windows NT 5.1")>=0&&(n.userAgent.indexOf("MSIE 6")>=0||n.userAgent.indexOf("MSIE 7")>=0||n.userAgent.indexOf("MSIE 8")>=0)&&"https:"===location.protocol},append:function(e,a){e||(e=o.body);var i=o.createElement("span");i.innerHTML=a,e.insertBefore(i.firstChild,e.firstChild),i=null},renderFlash:function(e){var a='<object type="application/x-shockwave-flash" data="'+e.flashUrl+'" width="1" height="1" id="'+e.id+'">';a+='<param name="movie" value="'+e.flashUrl+'" />',a+='<param name="flashvars" value="onReady='+e.callback+'">',a+='<param name="menu" value="false"><param name="allowScriptAccess" value="always" /></object>',S.append(o.body,a)},isIE:function(){var e=function(){var e=n.userAgent,a=e.indexOf("MSIE ");if(a>0)return parseInt(e.substring(a+5,e.indexOf(".",a)),10);var i=e.indexOf("Trident/");if(i>0){var t=e.indexOf("rv:");return parseInt(e.substring(t+3,e.indexOf(".",t)),10)}var o=e.indexOf("Edge/");return o>0&&parseInt(e.substring(o+5,e.indexOf(".",o)),10)}();return e},detectPlugin:function(e,a){return!!(n.plugins&&n.plugins[e]&&n.mimeTypes&&n.mimeTypes[a]&&n.mimeTypes[a].enabledPlugin)&&n.plugins[e]},detectActiveX:function(e){var a=!1;try{a=new ActiveXObject(e)}catch(e){}return a},detectEnv:function(){var e,a=[0,0,0],i=0;if(S.isIE()){if(e=S.detectActiveX("ShockwaveFlash.ShockwaveFlash"))try{(t=e.GetVariable("$version"))&&(t=t.split(" ")[1].split(","),a=[parseInt(t[0],10),parseInt(t[1],10),parseInt(t[2],10)])}catch(e){}}else if(e=S.detectPlugin("Shockwave Flash","application/x-shockwave-flash"),e&&e.description){var t=e.description.replace(/^.*\s+(\S+\s+\S+$)/,"$1");a[0]=parseInt(t.replace(/^(.*)\..*$/,"$1"),10),a[1]=parseInt(t.replace(/^.*\.(.*)\s.*$/,"$1"),10),a[2]=/[a-zA-Z]/.test(t)?parseInt(t.replace(/^.*[a-zA-Z]+(.*)$/,"$1"),10):0}return{flash:a,mod:i}}}}(s,r),p=function(e){var a=e.nickname?"taobao_nick":e.acookie?"acookie_id":"";if(a){var i=0,t=m.get("_lastvisited"),o=S.parse(t||"");if(e.request|="nickname"==a?4:1,e.first_cna=o.first_cna||e.acookie,o.token&&o.lastTime&&o.tokenLastTime){var n=o.request||0,r=!1,l=!1;e.token=o.token,e.lastTime=o.lastTime,e.tokenLastTime=o.tokenLastTime;var d=parseInt(o.tokenLastTime||0,36);(e.times-d>=c.token||e.hash!=o.hash)&&(e.token=S.token(),e.lastTime=e.times.toString(36),e.tokenLastTime=(e.times-c.tokenInverseTime).toString(36),r=!0,S.reportUM(e.token,e.domain));var u=parseInt(o.lastTime||0,36);e.times-u>=c.aid&&(e.lastTime=e.times.toString(36),l=!0),e.times-u>=c.aidSecond&&(r||l||1&n&&o.acookie!=e.acookie||2&n&&o.token!=e.token||4&n&&o.nickname!=e.nickname||2!=(2&n))&&(e.request|=2,m.set("_lastvisited",S.stringify(e),g),i|=1)}else e.token=S.token(),e.lastTime=e.times.toString(36),e.tokenLastTime=(e.times-c.tokenInverseTime).toString(36),i|=3,S.reportUM(e.token,e.domain),m.set("_lastvisited",S.stringify(e),g);if(1==(1&i)){var h={};h.type=a,h.id="taobao_nick"==a?e.nickname:e.acookie,2!=(2&i)&&(h.type_add="tokenid",h.id_add=e.token),h._ts="3"+S.guid(4),h.cad=m.getCookie("cad"),h.cap=m.getCookie("cap"),h.cna=m.getCookie("cna"),h._lastvisited=m.get("_lastvisited"),S.requestImg(s.aid,h)}}};if(t.aid={util:S,storage:m,currentData:r},!S.isIE8SP3()){var f=r;f.now=new Date,f.times=f.now.getTime(),f.request=0,f.host=S.getHostFromURL(t.location.href),f.domain=S.getHostFromURL(o.referrer||""),f.hash=S.getClientInfoHash(),s.aid=s.aid_tanx,"cnzz.com"==f.host.toLowerCase()?s.aid=s.aid_cnzz:S.isTaoDomain()&&(s.aid=s.aid_taonei),S.isTaoDomain()?s.reportToken=s.reportTokenHttps:s.reportToken=s.reportTokenHttp,i()}}(window,document)},{}]},{},[1]);</script>
+
+</body></html>

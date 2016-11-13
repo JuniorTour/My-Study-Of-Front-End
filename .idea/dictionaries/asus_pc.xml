@@ -2,10 +2,13 @@
   <dictionary name="asus-pc">
     <words>
       <w>accessors</w>
+      <w>dropdown</w>
       <w>fullscreen</w>
       <w>ipad</w>
+      <w>jumbotron</w>
       <w>onload</w>
       <w>onselectstart</w>
+      <w>taobao</w>
     </words>
   </dictionary>
 </component>
