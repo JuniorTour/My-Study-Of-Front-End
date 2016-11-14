@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CreateObejct</title>
+</head>
+<body>
+<script>
+    /*Factory */
+    function createPerson(name,job) {
+        var tempPerson=new Object;
+        tempPerson.name=name;
+        tempPerson.job=job;
+        tempPerson.sayName=function () {
+            alert("Hello,I am"+this.name+"!");
+        };
+        return tempPerson; //这个return是该工厂方式与后续几个方式主要的不同之处。
+    }
+
+//    var person1=createPerson("JuniorTour","Front-end Engineer");
+//    var person2=createPerson("yourname","yourjob");
+    //注意！也不需要new运算符。这也是与后续的方式不同之处。
+
+//    alert("Person1 instanceof Object : "+(Person1 instanceof Object));
+//    alert("typeof Person1 : "+(typeof Person1));
+//    alert("Person1 instanceof Person : "+(Person1 instanceof Person));   // Uncaught ReferenceError: Person is not defined
+
+    /*构造函数模式*/
+    function Person(name,job) {
+        this.name=name;
+        this.job=job;
+        this.sayName=function () {
+            alert(this.name);
+        };
+    }
+
+    var person1 = new Person("juniortour","front-end engineer");
+    var person2 = new Person("somebody","some job");
+
+    //检测实例的类型：
+//    alert("person1 instanceof Person : "+(person1 instanceof Person));  //true
+//    alert("person1 instanceof Object : "+(person1 instanceof Object));  //true
+//    alert("person2 instanceof Person : "+(person1 instanceof Person));  //true
+//    alert("person2 instanceof Object : "+(person1 instanceof Object));  //true
+//    alert("typeof person1 : "+(typeof person1)); //object
+//    person1.sayName();
+//    alert(person1.sayName==person2.sayName);    //false
+</script>
+</body>
+</html>
