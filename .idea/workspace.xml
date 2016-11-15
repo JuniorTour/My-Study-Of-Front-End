@@ -2,93 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="245d3670-3895-4aed-8406-06a940ee5abe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/CreateObejct.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1.xLqLXXXXXXQXVXXXXXXXXXX-60-60.jpg_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB10.cgNVXXXXbrXVXXXXXXXXXX-70-70.jpg_60x60.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB12umjNVXXXXbYapXXXXXXXXXX-240-130.png_120x120.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB13WeSLXXXXXXWapXXXXXXXXXX-200-200.jpg_80x80.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB13__qLXXXXXaDXXXXXXXXXXXX-240-130.png_120x120.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB16pftLXXXXXcrXFXXXXXXXXXX-60-60.jpg_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB171otNFXXXXcyXXXXXXXXXXXX_80x80.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB187tfLpXXXXXaXFXXOyPdGpXX-140-140.jpg_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB19eA1LVXXXXaSaXXXXXXXXXXX-120-120.jpg_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1BYEBGVXXXXXZXFXXXXXXXXXX_100x100.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1BkgkGVXXXXc3XVXXXXXXXXXX_100x100.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1CKSgIpXXXXccXXXX07tlTXXX-200-200.png_60x60.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1CdKJJFXXXXaeXFXXXXXXXXXX_30x30q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1CpM_LXXXXXb.XFXXOyPdGpXX-140-140.jpg_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1DGkJJFXXXXaZXFXX07tlTXXX-200-200.png_60x60.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1FIa3LpXXXXX4aXXXXXXXXXXX-90-90.jpg_60x60.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1H4NYLpXXXXb5XpXXXXXXXXXX-70-70.png_60x60.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1HdPwLXXXXXauXFXXXXXXXXXX-60-60.jpg_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1IRHhLXXXXXbgXVXXXXXXXXXX-60-60.jpg_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1Jjg2LXXXXXa8XFXXuAZJYXXX-180-180.png_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1Ml2QLXXXXXbHXVXXXXXXXXXX_30x30q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1O0XjMXXXXXcmXXXXXXXXXXXX-120-120.jpg_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1PjvkLXXXXXcaXVXXXXXXXXXX-60-60.jpg_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1ReYsLXXXXXcDXFXXXXXXXXXX-60-60.jpg_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1SKvfNXXXXXaTaXXXXXXXXXXX_30x30q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1SpFALpXXXXXrapXXXXXXXXXX-70-70.png_60x60.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1TF.wGXXXXXbkXpXXXXXXXXXX_!!0-item_pic.jpg_100x100.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1W4xfLFXXXXc0XFXXXXXXXXXX_30x30q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1WOdpKXXXXXboaXXXXXXXXXXX_30x30q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1WjQ7LXXXXXX8XVXXOyPdGpXX-140-140.jpg_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1_wyMKVXXXXcmXFXXXXXXXXXX_30x30q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1aU6iLXXXXXaqaXXXXXXXXXXX-60-60.jpg_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1anbWNFXXXXXKXXXXXXXXXXXX-360-280.png_180x180.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1bx0dLpXXXXc_XXXXuAZJYXXX-180-180.png_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1dNjfKFXXXXafXpXXXXXXXXXX_30x30q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1fxXGMpXXXXXtXpXXj64lTXXX-200-200.jpg_80x80.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1g.ZyNXXXXXcLXXXXXXXXXXXX-200-200.png_80x80.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1gV.nNFXXXXazaXXXXXXXXXXX-306-306.jpg_80x80.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1gfZqNFXXXXcyXpXXXXXXXXXX_30x30q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1h3IXGFXXXXXsXFXXDANtWXXX-175-175.png_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1hRb1IXXXXXX3XVXXXQaP.pXX-87-87.jpeg_60x60.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1kUwwIXXXXXXqXpXXUAkPJpXX-87-87.png_60x60.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1mZfZNpXXXXcuXVXXXXXXXXXX-200-200.png_80x80.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1p6PILXXXXXbdXXXXXXXXXXXX-200-200.jpg_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1p6kgIXXXXXXTXXXXezUPJpXX-87-87.jpg_60x60.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1pypgLpXXXXbwXpXXszjdGpXX-140-140.png_50x50.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1rPMzIXXXXXX3XpXXUAkPJpXX-87-87.png_60x60.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1rTq3LXXXXXbWaXXXXXXXXXXX-200-200.jpg_80x80.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1s8FjMXXXXXb_XXXXXXXXXXXX-120-120.jpg_80x80.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1yE1aNXXXXXcBXpXXXXXXXXXX_30x30q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1zkDeIFXXXXXrXVXX07tlTXXX-200-200.png_60x60.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB267OAdfOM.eBjSZFqXXculVXa_!!0-tbCommonAudio.jpg_160x160q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB26vaIdk5M.eBjSZFrXXXPgVXa_!!0-dgshop.jpg_160x160q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB27y3ZkpXXXXaDXXXXXXXXXXXX_!!0-dgshop.jpg_100x100.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB29CA.ammK.eBjSZPfXXce2pXa_!!0-saturn_solar.jpg_220x220.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2At9MpFXXXXXMXpXXXXXXXXXX_!!0-saturn_solar.jpg_220x220.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2CmM0cOGO.eBjSZFpXXb3tFXa_!!0-saturn_solar.jpg_140x140.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2F2AbalzA11Bjy0FbXXcRXVXa_!!0-tbCommonAudio.jpg_160x160q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2FsqblFXXXXa_XXXXXXXXXXXX_!!0-dgshop.jpg_100x100.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2GUYgXBPzQeBjSZFLXXa3cXXa_!!745831182.jpg_60x60.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2J3zLc.OO.eBjSZFLXXcxmXXa_!!0-tbCommonAudio.jpg_160x160q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2K5U5c3CN.eBjSZFoXXXj0FXa_!!0-tbCommonAudio.jpg_160x160q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2KTuncb1K.eBjSszbXXcTHpXa_!!0-dgshop.jpg_60x60.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2LLJrcNuI.eBjy0FdXXXgbVXa_!!0-tbCommonAudio.jpg_400x400q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2M9EKrVXXXXakXpXXXXXXXXXX_!!0-saturn_solar.jpg_140x140.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2ShhdhXXXXXc_XXXXXXXXXXXX_!!780077270-0-dgshop.jpg_100x100.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2UfhsdpXXXXXOXpXXXXXXXXXX_!!355547535.jpg_80x40.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2VS7uXr1J.eBjSspnXXbUeXXa_!!0-saturn_solar.jpg_140x140.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2WHeiXw6B11BjSspoXXcwVXXa_!!0-saturn_solar.jpg_140x140.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2YP8tlVXXXXblXpXXXXXXXXXX_!!0-saturn_solar.jpg_220x220.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2ZJh6dfOM.eBjSZFqXXculVXa_!!0-dgshop.jpg_60x60.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2a085aZeJ.eBjy0FiXXXqapXa_!!0-dgshop.jpg_100x100.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2dos7c4aK.eBjSZFwXXXjsFXa_!!0-dgshop.jpg_60x60.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2jWnLa5GO.eBjSZFjXXcU9FXa_!!0-saturn_solar.jpg_140x140.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2l_YkeFXXXXaVXpXXXXXXXXXX_!!1085934055-0-dgshop.jpg_100x100.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2rlRGbQ5M.eBjSZFrXXXPgVXa_!!0-saturn_solar.jpg_140x140.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2rrnwhpXXXXb7XXXXXXXXXXXX_!!1085934055-0-dgshop.jpg_100x100.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2ukI7cOGO.eBjSZFEXXcy9VXa_!!0-tbCommonAudio.jpg_160x160q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2vBzXbk1M.eBjSZFOXXc0rFXa_!!0-tbCommonAudio.jpg_160x160q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2wo_NbVXXXXaQXpXXXXXXXXXX_!!1891132294-0-dgshop.jpg_100x100.jpg_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2xeGCdX5N.eBjSZFmXXboSXXa_!!0-dgshop.jpg_160x160q90_.webp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/getAvatar.do" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/homeFeed.do" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/作品/淘宝首页/css/header.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/作品/淘宝首页/diary.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/asus_pc.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/asus_pc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/淘宝首页/My-TaoBao.html" afterPath="$PROJECT_DIR$/作品/淘宝首页/My-TaoBao.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/CreateObejct.html" afterPath="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/CreateObejct.html" />
     </list>
     <ignored path="Web前端.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,7 +31,7 @@
       <file leaf-file-name="p116,CallAndApply.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p116,CallAndApply.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-4.021739">
               <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
               <folding />
             </state>
@@ -142,8 +61,38 @@
       <file leaf-file-name="My-TaoBao.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/作品/淘宝首页/My-TaoBao.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68773234">
-              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.2527881">
+              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/作品/淘宝首页/css/header.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.282609">
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Demo_ A new micro clearfix hack — Nicolas Gallagher.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/译文/一种新的微型清浮技巧/Demo_ A new micro clearfix hack — Nicolas Gallagher.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.043478">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="13" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="diary.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/作品/淘宝首页/diary.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -152,8 +101,8 @@
       <file leaf-file-name="CreateObejct.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/看过的书/JavaScript高级程序设计/CreateObejct.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.108696">
-              <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="69" column="50" selection-start-line="69" selection-start-column="50" selection-end-line="71" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -164,10 +113,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="txt" />
         <option value="HTML File" />
+        <option value="txt" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -177,9 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/学过的课程/bootstrap例子/My sign in.html" />
-        <option value="$PROJECT_DIR$/学过的课程/bootstrap例子/Signin Template for Bootstrap.html" />
-        <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/canvas example.html" />
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/gray scale 灰度图片转换.html" />
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/10.animation.html" />
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/11.video.html" />
@@ -226,6 +172,10 @@
         <option value="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p116,CallAndApply.html" />
         <option value="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p139,AccessorProperties.html" />
         <option value="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/CreateObejct.html" />
+        <option value="$PROJECT_DIR$/作品/淘宝首页/diary.txt" />
+        <option value="$PROJECT_DIR$/作品/淘宝首页/css/reset.css" />
+        <option value="$PROJECT_DIR$/作品/淘宝首页/css/default.css" />
+        <option value="$PROJECT_DIR$/作品/淘宝首页/css/header.css" />
         <option value="$PROJECT_DIR$/作品/淘宝首页/My-TaoBao.html" />
       </list>
     </option>
@@ -252,7 +202,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -266,75 +216,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="看过的书" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="看过的书" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScript高级程序设计" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="作品" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches">
-        <subPane />
-      </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Changed Files">
@@ -401,6 +282,24 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="网易主页">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Web前端">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="作品">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="淘宝首页">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
@@ -408,6 +307,83 @@
           </PATH>
         </subPane>
         <subPane subId="Tests" />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="淘宝首页" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="淘宝首页" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches">
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -592,34 +568,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Demos/各种特效/ToTop.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/abbr.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35301667">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/bootstrap例子/Signin Template for Bootstrap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="14" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/bootstrap例子/My sign in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/gray scale 灰度图片转换.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.130435">
@@ -635,13 +583,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/bootstrap文档/3.组件/8.Navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/译文/一种新的微型清浮技巧/Demo_ A new micro clearfix hack — Nicolas Gallagher.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -895,7 +836,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p116,CallAndApply.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-4.021739">
           <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
           <folding />
         </state>
@@ -920,7 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7707559">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -928,6 +868,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22057001">
           <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/JavaScript入门/翁凯-网易云课堂/object of javascript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.014869888">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/看过的书/JavaScript高级程序设计/CreateObejct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="50" selection-start-line="69" selection-start-column="50" selection-end-line="71" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -939,18 +894,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/看过的书/JavaScript高级程序设计/CreateObejct.html">
+    <entry file="file://$PROJECT_DIR$/作品/淘宝首页/diary.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.108696">
-          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/淘宝首页/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/译文/一种新的微型清浮技巧/Demo_ A new micro clearfix hack — Nicolas Gallagher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.043478">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="13" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/淘宝首页/css/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.282609">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/作品/淘宝首页/My-TaoBao.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68773234">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.2527881">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
           <folding />
         </state>
       </provider>

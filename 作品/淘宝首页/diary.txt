@@ -1,0 +1,29 @@
+
+1.main structure outline:
+    .container->
+        .site-nav->
+            .left-nav-part
+            .right-nav-part
+        .side-nav
+        .main
+        .middle
+        .bottom
+        .footer
+
+2.css outline:
+    reset.css   !important
+    my-taobao-frame.css !important //???
+    default.css->
+        header.css
+        main.css
+        middle.css
+        footer.css
+
+3.js outline:
+        //divide by function???
+        dropdown.js
+        search-tab.js
+        carousel.js
+        toTop.js
+        hover-function-tab.js //main中右侧充话费，游戏充值等
+        affix and scroll spy.js //滚动监听，配合side-nav

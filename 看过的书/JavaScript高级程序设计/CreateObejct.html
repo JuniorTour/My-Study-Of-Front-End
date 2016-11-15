@@ -26,16 +26,16 @@
 //    alert("Person1 instanceof Person : "+(Person1 instanceof Person));   // Uncaught ReferenceError: Person is not defined
 
     /*构造函数模式*/
-    function Person(name,job) {
-        this.name=name;
-        this.job=job;
-        this.sayName=function () {
-            alert(this.name);
-        };
-    }
-
-    var person1 = new Person("juniortour","front-end engineer");
-    var person2 = new Person("somebody","some job");
+//    function Person(name,job) {
+//        this.name=name;
+//        this.job=job;
+//        this.sayName=function () {
+//            alert(this.name);
+//        };
+//    }
+//
+//    var person1 = new Person("juniortour","front-end engineer");
+//    var person2 = new Person("somebody","some job");
 
     //检测实例的类型：
 //    alert("person1 instanceof Person : "+(person1 instanceof Person));  //true
@@ -45,6 +45,31 @@
 //    alert("typeof person1 : "+(typeof person1)); //object
 //    person1.sayName();
 //    alert(person1.sayName==person2.sayName);    //false
+
+    /*Hybrid*/
+function Person(name,job) {
+    this.name=name;
+    this.job=job;
+    this.friends=["xiaoming","xiaohong"];
+}
+Person.prototype = {
+    constructor:Person,
+    sayHello:function () {
+        alert("Hello,I am "+this.name+".");
+    }
+};
+
+var person1 = new Person("JuniorTour","Software Engineer");
+var person2 = new Person("somebody","some job");
+
+person1.friends.push("xiaogang");  //只对person1的friends属性推入"xiaogang"项。
+
+alert(person1.friends);  //"xiaoming","xiaohong","xiaogang"
+alert(person2.friends);  //"xiaoming","xiaohong"
+alert(person1.friends==person2.friends);  //false
+alert(person1.sayName==person2.sayName);    //true
+alert("person1 instanceof Person : "+(person1 instanceof Person));  //true
+alert("person1 instanceof Object : "+(person1 instanceof Object));  //true
 </script>
 </body>
 </html>
