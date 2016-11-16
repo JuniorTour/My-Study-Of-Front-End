@@ -19,8 +19,12 @@
         .clearfix:after { clear: both; }
 
         @font-face {
-            font-family: global-iconfont;
-            src: url(font/icon.eot);
+            font-family: 'iconfont';
+            src: url('font/iconfont.eot');
+            src: url('font/iconfont.eot?#iefix') format('embedded-opentype'),
+            url('font/iconfont.woff') format('woff'),
+            url('font/iconfont.ttf') format('truetype'),
+            url('font/iconfont.svg#font/iconfont') format('svg');
         }
     </style>
     <link rel="stylesheet" href="css/header.css">
@@ -45,43 +49,50 @@
                 <li>
                     <a href="">我的淘宝</a>
                     <span class="site-nav-arrow">
-                        <span class="site-nav-icon"></span>
+                        <span class="site-nav-icon">&#xe607;</span>
                     </span>
                 </li>
                 <li>
-                    <a href="">购物车</a>
+                    <a href="">
+                        <span class="site-nav-icon site-nav-icon-highlight">&#xe688;</span>
+                        购物车
+                    </a>
                     <span class="site-nav-arrow">
-                        <span class="site-nav-icon"></span>
+                        <span class="site-nav-icon">&#xe607;</span>
                     </span>
                 </li>
                 <li>
-                    <a href="">收藏夹</a>
+                    <a href="">
+                        <span class="site-nav-icon site-nav-icon-highlight">&#xe688;</span>
+                        收藏夹
+                    </a>
                     <span class="site-nav-arrow">
-                        <span class="site-nav-icon"></span>
+                        <span class="site-nav-icon">&#xe607;</span>
                     </span>
                 </li>
                 <li>
                     <a href="">商品分类</a>
-                    <span class="site-nav-arrow">
-                        <span class="site-nav-icon"></span>
-                    </span>
                 </li>
+                <li class="site-nav-pipe">|</li>
                 <li>
                     <a href="">卖家中心</a>
                     <span class="site-nav-arrow">
-                        <span class="site-nav-icon"></span>
+                        <span class="site-nav-icon">&#xe607;</span>
                     </span>
                 </li>
                 <li>
                     <a href="">联系客服</a>
                     <span class="site-nav-arrow">
-                        <span class="site-nav-icon"></span>
+                        <span class="site-nav-icon">&#xe607;</span>
                     </span>
                 </li>
                 <li>
-                    <a href="">网址导航</a>
+                    <a href="">
+                        <span class="site-nav-icon site-nav-icon-highlight">&#xe688;</span>
+                        网址导航
+                    </a>
                     <span class="site-nav-arrow">
-                        <span class="site-nav-icon"></span>
+                        <span class="site-nav-icon">&#xe607;</span>
                     </span>
                 </li>
             </ul>

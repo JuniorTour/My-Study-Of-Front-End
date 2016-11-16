@@ -37,18 +37,29 @@
 }
 .right-site-nav li {
     float: left;
+    margin-right:10px;
+}
+.right-site-nav li a {
     margin-right:5px;
 }
+.site-nav-pipe {
+    line-height:35px;
+    padding: 0 5px;
+    color: #ddd;
+}
 .site-nav-arrow {
-    /*width:12px;*/
-    /*height:6px;*/
-    /*line-height:6px;*/
+    width:12px;
+    height:6px;
+    line-height:6px;
 }
 .site-nav-icon {
-    font-family:"global-iconfont" !important;
-    font-size:16px;
+    font-family:"iconfont" !important;
+    font-size:12px;
     font-style:normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
+}
+.site-nav-icon-highlight {
+    color: #f40;
 }

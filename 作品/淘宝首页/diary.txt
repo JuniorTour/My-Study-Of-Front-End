@@ -1,4 +1,4 @@
-
+<1>.OUTLINE:
 1.main structure outline:
     .container->
         .site-nav->
@@ -27,3 +27,9 @@
         toTop.js
         hover-function-tab.js //main中右侧充话费，游戏充值等
         affix and scroll spy.js //滚动监听，配合side-nav
+
+
+<2>.DIARY:
+    2016年11月16日22:47:19,
+    After a long time of planning,I began the project in last night.
+    Tonight,I learned the usage of iconfont. Visit http://www.iconfont.cn/plus/home/index to see detail.
