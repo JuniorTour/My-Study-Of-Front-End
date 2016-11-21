@@ -29,5 +29,6 @@ a {
 text-decoration:none;
 }
 input {
-	margin: 0;
+   outline: none;
+   margin: 0;
 }

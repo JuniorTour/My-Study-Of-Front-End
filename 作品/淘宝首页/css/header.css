@@ -51,21 +51,21 @@
     border-width: 0 1px;
     border-style: solid;
     border-color: #eee;
-    z-index:10002;
-}
-.right-site-nav li:hover a {
-    position: relative;
-    z-index:10002;
 }
 .right-site-nav a {
     float: left;
     display: block;
     margin-right:5px;
 }
+li.site-nav-pipe:hover {
+    padding: 0 6px;
+    background-color: transparent;
+    border: none;
+}
 .site-nav-pipe {
     line-height:35px;
     margin-right:-5px;
-    padding: 0 5px;
+    padding: 0 6px;
     color: #ddd;
 }
 .site-nav-arrow {
@@ -88,19 +88,19 @@
 .right-site-nav li:hover .dropdown {
     display: block;
 }
-.dropdown-wrapper {
-    position: relative;
-    z-index:10001;
-    margin-top:-1px;
-}
 .dropdown {
     display: none;
     background-color: white;
     position: absolute;
     top:100%;
-    left:0;
+    left:-1px;  /*Handle with the border???Not perfect!!!*/
     padding: 5px 0;
     border: 1px solid #eee;
+    z-index:10001;
+    /*Z-index只可比较同级元素。这也许是大家很容易忽视的问题，也就是说，Z-index只能对同级元素进行分层展示；
+    The structure of my page is differ from the origin.So I did not make it.
+    I do not want to change my structure,so I will try other way later.*/
+    margin-top:-1px;
 }
 .dropdown a {
     line-height:28px;
@@ -113,4 +113,64 @@
 .dropdown a:hover {
     color: #6c6c6c;
     background-color: #f5f5f5;
+}
+
+/*top*/
+.top {
+    padding: 30px 0 34px 0;
+    background-color: white;
+    height: 100px;
+}
+.top-wrapper {
+    width:1190px;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+}
+.logo a {
+    text-indent: -999em;
+    display: block;
+    width:142px;
+    height: 0;
+    margin: 8px 0 0 22px;
+    /*Find a question:why the origin use one negative and two positive margin-top in the outer mark?
+    I just calculate the outcome and set it to 8px . And get the similar effct*/
+    padding-top: 58px;
+    background-image: url(../img/taobao-logo.jpg);
+}
+.search-box {
+    margin: 0 300px 0 265px;
+}
+.search-tabs {
+    height:25px;
+}
+.search-tabs ul li {
+    color: #f40;
+    width:50px;
+    height:25px;
+    line-height:25px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+}
+.search-tabs ul li:hover {
+    background-color: #f6e6e6;
+    color: #c60000;
+}
+.search-tabs ul li.active-tab {
+    color: #fff;
+    background-color: #ff5400;
+    font-weight:700;
+}
+.search-field {
+    
+}
+.search-box input {
+    width:472px;
+    height:22px;
+    line-height:22px;
+    padding: 6px 0;
+    text-indent:10px;
+    border: 3px solid #f50;
 }
