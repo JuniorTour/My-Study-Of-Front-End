@@ -49,7 +49,7 @@
                 <li>
                     <a href="">我的淘宝</a>
                     <span class="site-nav-arrow">
-                        <span class="site-nav-icon">&#xe60c;</span>
+                        <span class="tb-icon">&#xe60c;</span>
                     </span>
                     <div class="dropdown">
                         <a href="">已买到的宝贝</a>
@@ -58,24 +58,24 @@
                 </li>
                 <li class="no-dropdown">
                     <a href="">
-                        <span class="site-nav-icon site-nav-icon-highlight">&#xe688;</span>
+                        <span class="tb-icon tb-icon-highlight">&#xe688;</span>
                         购物车
                     </a>
                     <span class="site-nav-arrow">
-                        <span class="site-nav-icon">&#xe60c;</span>
+                        <span class="tb-icon">&#xe60c;</span>
                     </span>
                 </li>
                 <li>
                     <a href="">
-                        <span class="site-nav-icon site-nav-icon-highlight">&#xe688;</span>
+                        <span class="tb-icon tb-icon-highlight">&#xe688;</span>
                         收藏夹
                         <div class="dropdown">
-                            <a href="">已买到的宝贝</a>
-                            <a href="">我的足迹</a>
+                            <a href="">收藏的宝贝</a>
+                            <a href="">收藏的店铺</a>
                         </div>
                     </a>
                     <span class="site-nav-arrow">
-                        <span class="site-nav-icon">&#xe60c;</span>
+                        <span class="tb-icon">&#xe60c;</span>
                     </span>
                 </li>
                 <li class="no-dropdown">
@@ -85,17 +85,21 @@
                 <li>
                     <a href="">卖家中心</a>
                     <span class="site-nav-arrow">
-                        <span class="site-nav-icon">&#xe60c;</span>
+                        <span class="tb-icon">&#xe60c;</span>
                     </span>
                     <div class="dropdown">
-                        <a href="">已买到的宝贝</a>
-                        <a href="">我的足迹</a>
+                        <a href="">免费开店</a>
+                        <a href="">已卖出的宝贝</a>
+                        <a href="">体检中心</a>
+                        <a href="">免费开店</a>
+                        <a href="">已卖出的宝贝</a>
+                        <a href="">体检中心</a>
                     </div>
                 </li>
                 <li>
                     <a href="">联系客服</a>
                     <span class="site-nav-arrow">
-                        <span class="site-nav-icon">&#xe60c;</span>
+                        <span class="tb-icon">&#xe60c;</span>
                     </span>
                     <div class="dropdown">
                         <a href="">已买到的宝贝</a>
@@ -104,11 +108,11 @@
                 </li>
                 <li>
                     <a href="">
-                        <span class="site-nav-icon site-nav-icon-highlight">&#xe688;</span>
+                        <span class="tb-icon tb-icon-highlight">&#xe688;</span>
                         网址导航
                     </a>
                     <span class="site-nav-arrow">
-                        <span class="site-nav-icon">&#xe60c;</span>
+                        <span class="tb-icon">&#xe60c;</span>
                     </span>
                 </li>
             </ul>
@@ -132,10 +136,29 @@
                     </div>
                     <div class="search-field">
                         <form action="">
-                            <input type="text" placeholder="你好，世界">
+                            <div class="search-placeholder">
+                                <label for="search-input">你好，世界</label>
+                            </div>
+                            <i class="tb-icon">&#xe635;</i>
+                            <div class="search-input-wrapper">
+                                <input id="search-input" type="text">
+                            </div>
+
+                            <div class="image-search">
+                                <span class="tb-icon">&#xe62c;</span>
+                                <div class="search-image-upload">
+                                    <a target="_self" href="#">
+                                        <div class="file-input-wrapper">
+                                            <label for="img-upload" aria-hidden="true">upload img</label>
+                                            <input id="img-upload" type="file" value="uploadImage" name="imgFile">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
                         </form>
                         <div class="search-button">
-                            搜索
+                            <button type="submit">搜索</button>
                         </div>
                     </div>
                     <div class="advanced-search"></div>

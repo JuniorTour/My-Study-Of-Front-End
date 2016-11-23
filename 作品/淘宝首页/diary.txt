@@ -29,7 +29,15 @@
         affix and scroll spy.js //滚动监听，配合side-nav
 
 
-<2>.DIARY:
+<2>DIARY:
     2016年11月16日22:47:19,
     After a long time of planning,I began the project in last night.
     Tonight,I learned the usage of iconfont. Visit http://www.iconfont.cn/plus/home/index to see detail.
+
+    2016年11月23日20:57:13,
+    Forget to keep diary.
+    The process is ok,did not meet some fatal problem.
+
+<3>BUGS:
+    1.ul.right-site-nav>li>.dropdown with absolute position is aligned with content but not what I want
+    the border.So there is 1px deviation between <li> and <div>.dropdown.
