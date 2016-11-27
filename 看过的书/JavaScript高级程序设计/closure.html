@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>closure</title>
+</head>
+<body>
+<script>
+    function createFunc1() {
+        var result=new Array();
+        for (var i=0;i<5;i++) {
+            result[i]=function () {
+                return i;
+            };
+        }
+        return result;
+    }
+    var result1=createFunc1();
+    for (var i=0;i<5;i++)
+        document.writeln(result1[i]());
+
+    function createFunc2() {
+        var result=new Array();
+        for (var i=0;i<5;i++) {
+            result[i]=function (num) {
+                return function () {
+                    return num;
+                }
+            }(i);
+        }
+        return result;
+    }
+    var result2=createFunc2();
+    for (var i=0;i<5;i++)
+        document.writeln(result2[i]());
+
+</script>
+</body>
+</html>
