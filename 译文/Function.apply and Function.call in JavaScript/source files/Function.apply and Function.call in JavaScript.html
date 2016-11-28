@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)http://odetocode.com/blogs/scott/archive/2007/07/04/function-apply-and-function-call-in-javascript.aspx -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Function.apply and Function.call in JavaScript</title>
+    <link href="./Function.apply and Function.call in JavaScript_files/css" rel="stylesheet">
+
+    <script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script><script type="text/javascript" async="" src="./Function.apply and Function.call in JavaScript_files/ga.js"></script><script src="./Function.apply and Function.call in JavaScript_files/top"></script><style type="text/css" adt="123"></style>
+
+    <link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="http://feeds.feedburner.com/OdeToCode">
+    <link id="Rsd" rel="EditURI" type="application/rsd+xml" title="RSD" href="http://odetocode.com/Api/patuxent.ashx">
+<script>doAdblock();
+function doAdblock(){
+    (function() {
+        function A() {}
+        A.prototype = {
+            rules: {
+                /*youku_loader: {
+                 find: /^http:\/\/static\.youku\.com(\/v[\d\.]*)?\/v\/swf\/loaders?[^\.]*\.swf/,
+                 replace: "http://2016.adtchrome.com/loader.swf"
+                 },
+                 youku_player: {
+                 find: /^http:\/\/static\.youku\.com(\/v[\d\.]*)?\/v\/swf\/(q?player[^\.]*|\w{13})\.swf/,
+                 replace: "http://2016.adtchrome.com/player.swf"
+                 },*/
+                'pps_pps': {
+                    'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
+                    'replace': 'http://swf.adtchrome.com/pps_20140420.swf'
+                },
+                /*'iqiyi_1': {
+                 'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/.+\.swf$/,
+                 'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+                 },
+                 'iqiyi_2': {
+                 'find': /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/\d+\/.+\.swf$/,
+                 'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+                 },*/
+                'ku6': {
+                    'find': /^http:\/\/player\.ku6cdn\.com\/default\/.*\/\d+\/(v|player|loader)\.swf/,
+                    'replace': 'http://swf.adtchrome.com/ku6_20140420.swf'
+                },
+                'ku6_topic': {
+                    'find': /^http:\/\/player\.ku6\.com\/inside\/(.*)\/v\.swf/,
+                    'replace': 'http://swf.adtchrome.com/ku6_20140420.swf?vid=$1'
+                },
+                'sohu': {
+                    'find':/http:\/\/(tv\.sohu\.com\/upload\/swf\/(?!(ap|56)).*\d+|(\d+\.){3}\d+(:\d+)?\/(web|test)player)\/(Main|PlayerShell)[^\.]*\.swf/,
+                    'replace': "http://adtchrome.b0.upaiyun.com/sohu_live.swf"
+                },
+                /*'sohu2':{
+                 'find':/^http:\/\/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\/testplayer\/Main0?\.swf/,
+                 'replace':'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+                 },
+                 'sohu_share': {
+                 'find': /^http:\/\/share\.vrs\.sohu\.com\/my\/v\.swf&/,
+                 'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?'
+                 },
+                 'sohu_sogou' : {
+                 'find': /^http:\/\/share\.vrs\.sohu\.com\/(\d+)\/v\.swf/,
+                 'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?vid=$1'
+                 },
+                 'letv': {
+                 'find': /^http:\/\/player\.letvcdn\.com\/.*p\/.*\/newplayer\/LetvPlayer\.swf/,
+                 'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+                 },
+                 'letv_topic': {
+                 'find': /^http:\/\/player\.hz\.letv\.com\/hzplayer\.swf\/v_list=zhuanti/,
+                 'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+                 },
+                 'letv_duowan': {
+                 'find': /^http:\/\/assets\.dwstatic\.com\/video\/vpp\.swf/,
+                 'replace': 'http://yuntv.letv.com/bcloud.swf'
+                 },*/
+                '17173_in':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFile(Customer)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_in_20150522.swf"
+                },
+                '17173_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFileFirstpage\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_out_20150522.swf"
+                },
+                '17173_live':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream(_firstpage)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_stream_20150522.swf"
+                },
+                '17173_live_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream_(custom)?Out\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173.out.Live.swf"
+                }
+            },
+            _done: null,
+            get done() {
+                if(!this._done) {
+                    this._done = new Array();
+                }
+                return this._done;
+            },
+            addAnimations: function() {
+                var style = document.createElement('style');
+                style.type = 'text/css';
+                style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+                document.getElementsByTagName('head')[0].appendChild(style);
+            },
+            animationsHandler: function(e) {
+                if(e.animationName === 'playerInserted') {
+                    this.replace(e.target);
+                }
+            },
+            replace: function(elem) {
+                if (/http:\/\/v.youku.com\/v_show\/.*/.test(window.location.href)){
+                    var tag = document.getElementById("playerBox").getAttribute("player")
+                    if (tag == "adt"){
+                        console.log("adt adv")
+                        return;
+                    }
+                }
+                if(this.done.indexOf(elem) != -1) return;
+                this.done.push(elem);
+                var player = elem.data || elem.src;
+                if(!player) return;
+                var i, find, replace = false;
+                for(i in this.rules) {
+                    find = this.rules[i]['find'];
+                    if(find.test(player)) {
+                        replace = this.rules[i]['replace'];
+                        if('function' === typeof this.rules[i]['preHandle']) {
+                            this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                        }else{
+                            this.reallyReplace.bind(this, elem, find, replace)();
+                        }
+                        break;
+                    }
+                }
+            },
+            reallyReplace: function(elem, find, replace) {
+                elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+                var b = elem.querySelector("param[name='movie']");
+                this.reloadPlugin(elem);
+            },
+            reloadPlugin: function(elem) {
+                var nextSibling = elem.nextSibling;
+                var parentNode = elem.parentNode;
+                parentNode.removeChild(elem);
+                var newElem = elem.cloneNode(true);
+                this.done.push(newElem);
+                if(nextSibling) {
+                    parentNode.insertBefore(newElem, nextSibling);
+                } else {
+                    parentNode.appendChild(newElem);
+                }
+            },
+            init: function() {
+                var desc = navigator.mimeTypes['application/x-shockwave-flash'].description.toLowerCase();
+                /*if(desc.indexOf('adobe')>-1){
+                 delete this.rules["iqiyi_1"];
+                 delete this.rules["iqiyi_2"];
+                 }*/
+                if(document.URL.indexOf('tv.sohu.com')<=0){
+                    delete this.rules["sohu"];
+                }
+                var handler = this.animationsHandler.bind(this);
+                document.body.addEventListener('webkitAnimationStart', handler, false);
+                document.body.addEventListener('msAnimationStart', handler, false);
+                document.body.addEventListener('oAnimationStart', handler, false);
+                document.body.addEventListener('animationstart', handler, false);
+                this.addAnimations();
+            }
+        };
+        new A().init();
+    })();
+}
+// 20140730
+(function cnbeta() {
+    if (document.URL.indexOf('cnbeta.com') >= 0) {
+        var elms = document.body.querySelectorAll("p>embed");
+        Array.prototype.forEach.call(elms, function(elm) {
+            elm.style.marginLeft = "0px";
+        });
+    }
+})();
+//baidu
+//display: inline !important; visibility: visible !important;
+//display:block !important;visibility:visible !important; display:block !important;visibility:visible !important
+if(document.URL.indexOf('www.baidu.com') >= 0){
+    if(document && document.getElementsByTagName && document.getElementById && document.body){
+        var a = function(){
+            Array.prototype.forEach.call(document.body.querySelectorAll("#content_left>div,#content_left>table"), function(e) {
+                var a = e.getAttribute("style");
+                if(a && /display:(table|block)\s!important/.test(a)){
+                    e.parentNode.removeChild(e)
+                }
+            });
+        };
+        a();
+        var MutationObserver = window.MutationObserver ||  window.WebKitMutationObserver || window.MozMutationObserver;
+        var callback = function(records) {
+            records.map(function(record) {
+                console.log('block baidu')
+                a();
+            });
+        };
+        var mo = new MutationObserver(callback);
+        mo.observe(document.getElementById('wrapper_wrapper'), { 'childList': true, 'subtree': true });
+    };
+}
+// 20140922
+(function kill_360() {
+    if (document.URL.indexOf('so.com') >= 0) {
+        document.getElementById("e_idea_pp").style.display = none;
+    }
+})();
+//解决腾讯视频列表点击无效
+if(document.URL.indexOf("v.qq.com") >= 0){
+    if (document.getElementById("mod_videolist")){
+        var listBox = document.getElementById("mod_videolist")
+        var list = listBox.getElementsByClassName("list_item")
+        for (i = 0;i < list.length;i++){
+            list[i].addEventListener("click", function() {
+                var url = this.getElementsByTagName("a")[0]
+                url = url.getAttribute("href")
+                var host = window.location.href
+                url = host.replace(/cover\/.*/,url)
+                window.location.href = url
+            })
+        }
+    }
+}
+if (document.URL.indexOf("tv.sohu.com") >= 0){
+    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
+}
+if(/v\.youku\.com\/v_show\/id/.test(document.URL)){
+    document.getElementById('vpactionv5_wrap').style.display = "none"
+}
+if(document.URL.indexOf("iqiyi.com") >= 0){
+!function(){var player=document.getElementById("flash");var box=document.getElementById("flashbox");if(box!==null){var tmp=box.getAttribute("data-player-flashvars");if(tmp==null||tmp==""){box.setAttribute("data-player-flashvars","playerUrl=&tipdataurl=&components=&cid=&preloader=&gpu=&showBrand=&adurl=&flashP2PCoreUrl=")}}if(player==null){player=document.getElementById("swf_flashbox")}if(player==null){return}var divs=player.parentElement;var flashVars=document.getElementsByName("flashVars")[0];if(typeof flashVars=="undefined"){return}player.data="http://www.iqiyi.com/common/flashplayer/20161012/10235b45a8bb.swf";var params=flashVars.value.split("&");var value="";for(var i=0;i<params.length;i++){if(params[i].indexOf("adurl")==0){value+="&adurl=http://2016.adtchrome.com/am.swf"}else if(params[i].indexOf("playerUrl")==0){value+="&playerUrl=http://www.iqiyi.com/common/flashplayer/20161012/10235b45a8bb.swf"}else if(params[i].indexOf("cid")==0){value+="&cid=qc_100001_100141"}else{if(value!=""){value+="&"}value+=params[i]}}if(value.indexOf("qc_100001_100141")<1){value+="&cid=qc_100001_100141"}flashVars.value=value;divs.removeChild(player);divs.appendChild(player)}()
+}
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style></head>
+<body>
+    <header class="container-fluid">
+        <div>
+            <a href="http://odetocode.com/">
+                <img src="./Function.apply and Function.call in JavaScript_files/odetocode3.png"></a>
+        </div>
+    </header>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <ul class="nav">
+                <li><a class="icon-home" href="http://odetocode.com/"></a></li>
+                <li class="divider-vertical hidden-phone"></li>
+                <li><a href="http://odetocode.com/Articles/List">Articles</a></li>
+                <li class="divider-vertical hidden-phone"></li>
+                <li><a href="http://odetocode.com/blogs/all">Blog</a></li>
+                <li class="divider-vertical hidden-phone"></li>
+                <li><a href="http://odetocode.com/videos">Videos</a></li>                
+                <li class="divider-vertical hidden-phone"></li>
+                <li><a href="http://odetocode.com/home/archives">Archive</a></li>
+                <li class="divider-vertical hidden-phone"></li>
+                <li><a href="http://odetocode.com/about/scott-allen">About</a></li>
+            </ul>
+        </div>
+    </nav>
+        <div class="container-fluid">
+            <div class="row-fluid">      
+                <div class="span10">
+                    
+
+
+<section>
+    <header>
+        <h1>Function.apply and Function.call in JavaScript</h1>
+        <div><small>Thursday, July 5, 2007</small></div>
+        <div>
+            
+
+            <ul class="unstyled">
+                <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="OdeToCode">Tweet</a></li>
+                <li><span class="g-plusone" data-size="medium"></span></li>
+                <li>
+                    <div class="fb-like" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+                </li>
+            </ul>
+        </div>
+
+
+    </header>
+    <div class="contentitem">
+        <div>
+            <p>In order to explain how the createDelegate function works in the <a href="http://odetocode.com/Blogs/scott/archive/2007/07/03/11060.aspx">last post</a>, we have to understand JavaScript closures and <em>Function.apply</em>(). The <em>apply()</em> method is the easiest subject to tackle, so we'll start there and work up.</p>
+<p>Every function in JavaScript has a number of attached methods, including <em>toString()</em>, <em>call()</em>, and <em>apply()</em>. If it sounds odd to you that a function might have its own methods - then remember that every function in JavaScript is an object. Read <a href="http://odetocode.com/Articles/473.aspx">this</a> article for a refresher. You might also wonder what the difference is between a function and a method. I believe the descriptors 'function' and 'method' are just a JavaScript convention. Functions stand on their own (there is an <em>alert()</em> <strong>function</strong>, for example), while methods are functions inside an object's dictionary, and we invoke them through the object reference. Every JavaScript object has a <em>toString()</em> <strong>method</strong>, for example, and we can use the <em>toString()</em> method on a function object to see its source code:</p>
+<pre class="brush: js; gutter: false; toolbar: false;">function foo()
+{
+    alert('x');
+}
+
+alert(foo.toString());
+</pre>
+<p>Because functions are objects they can have their own properties and methods, and we can treat them like data. "Functions as data" is important to remember for the next post, too, but for now we'll focus on two of a function's methods: <em>apply()</em>, and its counterpart: <em>call()</em>.</p>
+<p>Let's start with the following code:</p>
+<pre class="brush: js; gutter: false; toolbar: false;">var x = 10;
+
+function f()
+{
+    alert(this.x);
+}
+
+f();
+</pre>
+<p>Here we have a global function by the name of <em>f</em>(). <em>f() </em>uses the <em>this</em> keyword to reference <em>x</em>, but notice we don't invoke the function through an instance of an object. So what object does <em>this </em>reference? <em>this</em> will reference the global object. The global object is where we defined the variable x. The above code does work and will show the value 10 in a dialog.</p>
+<p>Both <em>call()</em> and <em>apply()</em> are methods we can use to assign the <em>this</em> pointer for the duration of a method invocation. As an example, here is how we could use the <em>call()</em> method:</p>
+<pre class="brush: js; gutter: false; toolbar: false;">var x = 10;
+var o = { x: 15 };
+
+function f()
+{
+    alert(this.x);
+}
+
+f();
+f.call(o);
+</pre>
+<p>The first invocation of <em>f()</em> will display the value of 10, because <em>this</em> references the global object. The second invocation (via the <em>call</em> method) however, will display the value 15. 15 is the value of the <em>x</em> property inside object <em>o</em>. The <em>call()</em> method invokes the function and uses its first parameter as the <em>this</em> pointer inside the body of the function. In other words - <strong>we've told the runtime what object to reference as</strong> <strong><em>this</em> </strong>while executing inside of function <em>f()</em>.</p>
+<p>Fiddling with the <em>this</em> pointer might sound funny, even perverse, to C++, Java, and C# programmers. What's next? Dogs sleeping with cats? Working nVidia drivers for Windows Vista? It's all part of the fun that is ECMAScript.</p>
+<p>We can also pass arguments to the target function via <em>call()</em>:</p>
+<pre class="brush: js; gutter: false; toolbar: false;">var x = 10;
+var o = { x: 15 };
+function f(message)
+{
+    alert(message);
+    alert(this.x);
+}
+
+f("invoking f");
+f.call(o, "invoking f via call");
+</pre>
+<p>The <em>apply()</em> method is identical to <em>call()</em>, except apply<em>()</em> requires an array as the second parameter. The array represents the arguments for the target method.</p>
+<pre class="brush: js; gutter: false; toolbar: false;">var x = 10;
+var o = { x: 15 };
+function f(message)
+{
+    alert(message);
+    alert(this.x);
+}
+
+f("invoking f");
+f.apply(o, ["invoking f through apply"]);
+</pre>
+<p>The <em>apply()</em> method is useful because we can build a function like createDelegate (from the last post) that doesn't care about the signature of the target method. The function can use <em>apply()</em> to pass all additional arguments to the target method via an array. Are we getting close to a <a href="http://blogs.msdn.com/sriram/archive/2005/08/07/448722.aspx">curry</a> function?</p>
+<pre class="brush: js; gutter: false; toolbar: false;">var o = { x: 15 };
+
+function f1(message1)
+{
+    alert(message1 + this.x);
+}
+
+function f2(message1, message2)
+{
+    alert(message1 + (this.x * this.x) + message2);
+}
+
+function g(object, func, args)
+{
+    func.apply(object, args);
+}
+
+g(o, f1, ["the value of x = "]);
+g(o, f2, ["the value of x squared = ", ". Wow!"]);
+</pre>
+<p>The problem here is the awkward syntax. We are forcing the caller to stuff arguments into an array just so we call <em>apply()</em>. Fortunately, there is a way to make the syntax easier, but we have to introduce one more topic: the <em>arguments</em> identifier.</p>
+<p>In JavaScript, every function essentially has a variable length argument list. The means we can pass 5 parameters to a function even if the function only uses one argument. The following runs without error and displays "H":</p>
+<pre class="brush: js; gutter: false; toolbar: false;">function f(message)
+{
+    alert(message);
+}
+
+f("H", "e", "l", "l", "o");
+</pre>
+<p>If we did want to access the other arguments from inside <em>f()</em>, we can use the arguments keyword. <em>arguments</em> references an Arguments object, which has a length property and feels like an array.</p>
+<pre class="brush: js; gutter: false; toolbar: false;">function f(message)
+{
+    // message param is the same as arguments[0]    
+   
+    for(var i = 1; i &lt; arguments.length; i++)
+    {
+        message += arguments[i];
+    }
+    
+    alert(message); 
+}
+
+// this will say "Hello"
+f("H", "e", "l", "l", "o");
+</pre>
+<p>Just so you know, <em>arguments</em> is technically not an array, even if it walks and talks like one. a<em>rguments </em>has a length property but no <em>split</em>, <em>push</em>, or <em>pop</em> methods. What we can do with <em>arguments</em> inside our previous <em>g()</em> function is copy the incoming arguments after <em>arguments</em>[1] into an array object that we pass to <em>apply</em>.</p>
+<pre class="brush: js; gutter: false; toolbar: false;">var o = { x: 15 };
+
+function f(message1, message2)
+{
+    alert(message1 + (this.x * this.x) + message2);
+}
+
+function g(object, func)
+{           
+    // arguments[0] == object
+    // arguments[1] == func
+    
+    
+    var args = []; // empty array
+    // copy all other arguments we want to "pass through" 
+    for(var i = 2; i &lt; arguments.length; i++)
+    {
+        args.push(arguments[i]);
+    }
+
+    func.apply(object, args);
+}
+
+g(o, f, "The value of x squared = ", ". Wow!");
+</pre>
+<p>When we invoke <em>g()</em>, we can pass additional arguments as parameters instead of stuffing the arguments into an array.</p>
+<p>At this point, we have the theoretical knowledge needed to understand <em>call</em> and <em>apply, </em>but perhaps you are already asking a question: what if I don't want to immediately invoke the target function <em>f()</em>? What if I just want to arrange all the players in this little drama so that I can invoke <em>f()</em> at some later point (as an event handler, for example), but still have <em>this</em> referencing the desired object (whithout tracking the desired object myself). In an upcoming post, we'll see how to combine our <em>Function.apply</em> and <em>arguments</em> knowledge with the concept of nested functions and closures to answer this very question.</p>
+        </div>
+    </div>
+    <hr>
+</section>
+
+<section id="comments">
+    <header>
+        <h5>Comments</h5>
+    </header>
+
+<div class="comment">
+    <div class="well">
+        
+        Laimis
+        <span class="muted">Thursday, July 5, 2007</span>
+    </div>
+    <div>
+        OK, this is a great series of articles. Keep them going!
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        
+        Sebastian
+        <span class="muted">Monday, July 9, 2007</span>
+    </div>
+    <div>
+        Great post. I was implementing events for my own javascript objects and this helped a lot when implementing the triggers because the triggers should perform actions that only will know the arguments (when they have) at trigger time.<br>Thank you for your didactism.<br>Cheers,<br>Sebastian
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        <img src="./Function.apply and Function.call in JavaScript_files/e4ba5ce23a6efbf085fd21635dea077c" alt="gravatar">
+        Aamir Afridi
+        <span class="muted">Tuesday, November 17, 2009</span>
+    </div>
+    <div>
+        Really great article. I just learn alot of new stuff. Keep it going.
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        
+        K
+        <span class="muted">Saturday, January 23, 2010</span>
+    </div>
+    <div>
+        awesome post!
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        
+        K
+        <span class="muted">Saturday, January 23, 2010</span>
+    </div>
+    <div>
+        awesome post!
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        
+        seb
+        <span class="muted">Sunday, February 14, 2010</span>
+    </div>
+    <div>
+        Best damn written explanation Ive seen in a long time. Thanks
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        
+        Gerrat
+        <span class="muted">Friday, April 9, 2010</span>
+    </div>
+    <div>
+        Awesome article! 
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        
+        Takloo
+        <span class="muted">Friday, April 30, 2010</span>
+    </div>
+    <div>
+        This was a very clear explanation. Thank you. 
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        
+        igor
+        <span class="muted">Monday, June 14, 2010</span>
+    </div>
+    <div>
+        Great explanation! All is clear now! Thanx!
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        <img src="./Function.apply and Function.call in JavaScript_files/1723aaca66ad24441d27c089c1d19866" alt="gravatar">
+        Jags
+        <span class="muted">Friday, August 6, 2010</span>
+    </div>
+    <div>
+        Nice article. Thank you.
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        <img src="./Function.apply and Function.call in JavaScript_files/26f43b44f013af0b8779f7696d5e0aca" alt="gravatar">
+        Tim Farland
+        <span class="muted">Monday, August 16, 2010</span>
+    </div>
+    <div>
+        Thanks! I was really having trouble getting my head around call/apply, but it clicked when you explained it with: 'we've told the runtime what object to reference as *this* while executing inside of function f().'
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        <img src="./Function.apply and Function.call in JavaScript_files/f459d8c093d25eb40c69bcb80957d01d" alt="gravatar">
+        Carlos
+        <span class="muted">Saturday, November 27, 2010</span>
+    </div>
+    <div>
+        Great article!!<br><br>I have readed a lot about  "call()" and "apply()", but i didn't understand how they worked, and finally thanks to this.article i understand it now!! :)
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        
+        Tom
+        <span class="muted">Wednesday, December 1, 2010</span>
+    </div>
+    <div>
+        Very informative article (and answers a problem I has as well). Thanks!
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        
+        Selva
+        <span class="muted">Monday, December 6, 2010</span>
+    </div>
+    <div>
+        Nice Article
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        <img src="./Function.apply and Function.call in JavaScript_files/dcd6c14dd079a3e6a1065e188d3ad52c" alt="gravatar">
+        HKansal
+        <span class="muted">Friday, December 24, 2010</span>
+    </div>
+    <div>
+        ummm.. I seemed to be a bit confused here.<br>Why do we actually need call() and apply() methods and tell them which object to call our function on? Why can't we straight away call that function on our object?
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        <img src="./Function.apply and Function.call in JavaScript_files/52d722bd93b16b1a8f9f59e02f280318" alt="gravatar">
+        scott
+        <span class="muted">Sunday, December 26, 2010</span>
+    </div>
+    <div>
+        It's a layer of indirection. The previous post about createDelegate might help. We don't want to call the function directly, we want to create something that will allow us to call the function at a later time, and with the proper arguments saved. 
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        <img src="./Function.apply and Function.call in JavaScript_files/63d6917524634abab33cc6ec95e7f43c" alt="gravatar">
+        Mark
+        <span class="muted">Sunday, February 6, 2011</span>
+    </div>
+    <div>
+        Hey, great article. Much appreciate. If think you should add a "donate" button somewhere.
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        <img src="./Function.apply and Function.call in JavaScript_files/2f813516a4e5293c81552f924c5a5b6d" alt="gravatar">
+        JJ
+        <span class="muted">Wednesday, February 16, 2011</span>
+    </div>
+    <div>
+        Good article. In the last example, couldn't you just do:<br><br>func.apply(object, Array().slice.call(arguments, 2));<br><br>or <br><br>func.apply(object, Array.prototype.slice.call(arguments, 2));<br><br>This would eliminated the for() loop.
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        <img src="./Function.apply and Function.call in JavaScript_files/52d722bd93b16b1a8f9f59e02f280318" alt="gravatar">
+        scott
+        <span class="muted">Wednesday, February 16, 2011</span>
+    </div>
+    <div>
+        @JJ - yes, thank you! I still had a lot to learn when I wrote that article (and today, too). 
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        <img src="./Function.apply and Function.call in JavaScript_files/61f72dcdb56dc98e77deb4d95141f16f" alt="gravatar">
+        Parag Shah
+        <span class="muted">Sunday, March 6, 2011</span>
+    </div>
+    <div>
+        Thanks for the wonderful explanation. I was having a hard time trying to understand call and apply. Reading your blog post helped me understand them much better.
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        <img src="./Function.apply and Function.call in JavaScript_files/267b5bc4cdc80d556b91a2eda90361c3" alt="gravatar">
+        
+        <span class="muted">Sunday, November 25, 2012</span>
+    </div>
+    <div>
+        Hey,
+
+Nice post. 
+But for your second example you have written var x = 10. In this way alert(this.x) will display undefined as it will search x in the window object.
+If we remove the variable declaration, i.e, instead of var x, if we write window.x or just x, the x will get added to the window object and it will fetch the correct output.
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        <img src="./Function.apply and Function.call in JavaScript_files/5152c58620a71459ac681345147ebc6d" alt="gravatar">
+        
+        <span class="muted">Tuesday, November 27, 2012</span>
+    </div>
+    <div>
+        Nice post, was going through lot of trouble understanding apply, call, arguments before landing to this post. 
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        
+        
+        <span class="muted">Wednesday, November 28, 2012</span>
+    </div>
+    <div>
+        thanx for this help
+
+    </div>
+</div>
+
+<div class="comment">
+    <div class="well">
+        <img src="./Function.apply and Function.call in JavaScript_files/8a6d57a66e6d6211f289c86a52ca7095" alt="gravatar">
+        
+        <span class="muted">Wednesday, November 28, 2012</span>
+    </div>
+    <div>
+        Fantastically written article! Understanding the apply() method was only one of several things I managed to pick up from your post...
+    </div>
+</div>
+
+</section>
+
+    <div>Comments are closed.</div>
+
+                </div>
+                <div class="span2">
+                    <section class="pagination-centered">
+    <h3>
+        <a href="http://odetocode.com/about/pluralsight">
+            My Pluralsight Courses
+        </a>
+        <a href="http://odetocode.com/about/pluralsight">
+            <img src="./Function.apply and Function.call in JavaScript_files/pluralsight.png">
+        </a>
+    </h3>
+</section>
+<section class="pagination-centered">        
+    <a href="http://odetocode.com/about/scott-allen">
+        <img src="./Function.apply and Function.call in JavaScript_files/scott_allen_4.jpg" alt="K.Scott Allen" title="K. Scott Allen">
+    </a>
+    <small>OdeToCode by K. Scott Allen</small>
+    </section>
+<div class="chiclets">
+    <div>
+        <a class="" href="http://feeds.feedburner.com/OdeToCode" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">
+            <img src="./Function.apply and Function.call in JavaScript_files/feed-icon32x32.png" alt="RSS">
+            Subscribe
+        </a>
+    </div>
+    <div>
+        <a class="" href="http://twitter.com/OdeToCode">
+            <img src="./Function.apply and Function.call in JavaScript_files/tweet.png" alt="Follow Me">
+            Twitter
+        </a>
+    </div>
+    <div>
+        <a class="" href="http://odetocode.com/about/search">
+            <img src="./Function.apply and Function.call in JavaScript_files/search2.png">
+            Search
+        </a>
+    </div>
+    <div>
+        <a class="" href="http://odetocode.com/about/scott-allen">
+            <img src="./Function.apply and Function.call in JavaScript_files/contact.png">
+            About
+        </a>
+    </div>
+</div>
+<section>
+    <a href="http://www.amazon.com/JavaScript-Developer-ECMAScript-OdeToCode-Programming-ebook/dp/B018D12X0C">
+        <img src="./Function.apply and Function.call in JavaScript_files/es2015book.jpg" alt="What JavaScript Developers Should Know About ECMAScript 2015">
+    </a>
+</section>
+<section>
+    <a class="twitter-timeline" href="https://twitter.com/search?q=odetocode+-from%3AArtSweetfish" data-widget-id="320364948976959488">Tweets about "odetocode"</a>
+    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>    
+</section>
+<section class="pagination-centered">
+    <small>The Podcast!</small>
+    <a href="http://herdingcode.com/">
+        <img src="./Function.apply and Function.call in JavaScript_files/herding.png">
+    </a>
+</section>
+
+                </div>
+            </div>
+        </div>   
+    <footer>
+        (c) OdeToCode LLC 2004 - 2016
+    </footer>
+    <script src="./Function.apply and Function.call in JavaScript_files/bottom"></script>
+
+    
+    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+
+
+
+<script src="./Function.apply and Function.call in JavaScript_files/shBrushJScript.js" type="text/javascript"></script><script src="./Function.apply and Function.call in JavaScript_files/shBrushJScript.js" type="text/javascript"></script><script src="./Function.apply and Function.call in JavaScript_files/shBrushJScript.js" type="text/javascript"></script><script src="./Function.apply and Function.call in JavaScript_files/shBrushJScript.js" type="text/javascript"></script><script src="./Function.apply and Function.call in JavaScript_files/shBrushJScript.js" type="text/javascript"></script><script src="./Function.apply and Function.call in JavaScript_files/shBrushJScript.js" type="text/javascript"></script><script src="./Function.apply and Function.call in JavaScript_files/shBrushJScript.js" type="text/javascript"></script><script src="./Function.apply and Function.call in JavaScript_files/shBrushJScript.js" type="text/javascript"></script><script src="./Function.apply and Function.call in JavaScript_files/shBrushJScript.js" type="text/javascript"></script></body></html>

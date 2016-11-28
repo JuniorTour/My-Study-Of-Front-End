@@ -2,316 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="245d3670-3895-4aed-8406-06a940ee5abe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/closure.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/译文/HTML5 W3C Recommendation 28 October 2014/relative materials/翻译 - HTML5 Chinese Interest Group Wiki.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/My-TaoBao.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/css/header.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/css/reset.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/diary.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/08e48916-58db-4f92-b5df-6fc95d112d98.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/6e8b9f5a-900e-4f72-bf18-4efc298939ab.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/72126d7e-0fca-4eb0-a6c8-0e0d4af89af7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/92ed2d80-06c5-11e6-9c41-9b82468daefd.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/9cd5b603-0ddd-4b41-9732-b46105af4ed2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/T13M9PXuXgXXXXXXXX_!!0-item_pic.jpg_200x200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/T1Ai5RFzlbXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/T1FpVjFRBcXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1.ct5LXXXXXc9XFXXXXXXXXXX_!!0-item_pic.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB10H3tLVXXXXb.XFXX5L1L.FXX-127-36.png_110x110.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB119x1HpXXXXbdXVXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB11hcgLVXXXXcXXpXX_QC5IVXX-80-36.png_110x110.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB11iX7KFXXXXbsXXXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB11vKJOXXXXXa6XFXXXXXXXXXX_!!0-tejia.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB12Qj5LVXXXXbDXXXXWZcwIXXX-220-48.jpg_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB12UGvMpXXXXaRXpXXXXXXXXXX-220-48.jpg_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB12cIdNFXXXXabaXXXSutbFXXX_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB12vzHOXXXXXaMaXXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB13PQfLVXXXXXuXFXXV2rqJFXX-89-36.png_110x110.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB13RvQLVXXXXXjaXXXXXXXXXXX-220-48.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB13_W9KVXXXXbSXVXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB14S_UMpXXXXbVXFXXAZIwIXXX-220-48.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB14XNtNVXXXXcjXXXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB14YAJJFXXXXavXpXXXXXXXXXX-220-48.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB15OZHNFXXXXXDXpXXXXXXXXXX-180-180.png_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB16CePIVXXXXadXFXXSutbFXXX.jpg_90x90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB16IHnMVXXXXcwXpXXXXXXXXXX-120-120.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB16LnROXXXXXa6aXXXXXXXXXXX-200-200.png_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB16MqBKFXXXXc1XVXXSutbFXXX.jpg_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB17RP_IFXXXXcSXVXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB17e2TLVXXXXcKXpXXXXXXXXXX-220-48.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB18B2QLVXXXXcgXpXXXXXXXXXX-220-48.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB18LY7NFXXXXXtapXXSutbFXXX_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB18Sp.OXXXXXbuXXXXXXXXXXXX-120-120.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB19eGUNVXXXXajXFXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1A0PpLVXXXXbEXpXXXXXXXXXX-200-200.png_100x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1BMiBKXXXXXXXXFXXSutbFXXX.jpg_90x90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1BT1HKVXXXXa5XVXXXXXXXXXX-200-402.png_100x1000.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1BTnSOXXXXXa3aXXXXXXXXXXX_!!0-item_pic.jpg_100x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1CLTHNFXXXXaDXpXXXXXXXXXX_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1CP2oLVXXXXbsXpXXXXXXXXXX-90-90.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1CQi7KVXXXXauXpXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1CbnsOXXXXXbLapXXXXXXXXXX-80-80.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1CxrVHpXXXXcjXpXXSutbFXXX.jpg_90x90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1D0YINXXXXXabXpXXXXXXXXXX-300-300.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1D_2kOXXXXXccaXXXXXXXXXXX-880-70.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1DokOLXXXXXcoaXXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1ER14LXXXXXcnXFXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1EcL_LVXXXXatXVXXXXXXXXXX-126-36.png_110x110.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1F1s.NVXXXXXBapXXXXXXXXXX-346-200.jpg_210x1000q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1FFttMFXXXXbFXVXXSutbFXXX.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1FYVzMpXXXXXWXFXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1Fo5zOXXXXXakaFXXXXXXXXXX-520-280.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1GUR8LXXXXXayXFXXXXXXXXXX-220-48.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1G_3CKVXXXXX7XpXXSutbFXXX.jpg_90x90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1Gq2SLVXXXXa9XFXXXXXXXXXX-220-48.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1HkRELpXXXXarXpXXXXXXXXXX-200-402.png_100x1000.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1IR8oOXXXXXb3aFXXXXXXXXXX-120-120.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1IWsjLVXXXXXAXFXXAMkwIXXX-220-52.jpg_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1IkHYOXXXXXaqXpXXXXXXXXXX-120-120.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1IkxjNXXXXXbCXVXXYXGcGpXX_M2.SS2_100x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1ImjgLVXXXXcxXFXXXXXXXXXX-300-64.jpg_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1Irb5OXXXXXbWXVXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1J.1oNVXXXXbwapXXXXXXXXXX-160-280.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1J6bzLXXXXXXlXVXXSutbFXXX.jpg_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1JSucJVXXXXX3XFXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1JkvFNVXXXXX8XFXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1K0CKKVXXXXa7XFXXXXXXXXXX-120-120.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1KH_lFpXXXXc8apXXXXXXXXXX_!!0-item_pic.jpg_100x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1L5SMKVXXXXbbaXXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1LrkfOXXXXXb3XXXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1MITnNXXXXXX5XVXXXXXXXXXX-300-300.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1N9ZONpXXXXbqXVXXXXXXXXXX-220-48.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1NZwJNFXXXXbPXXXXXXXXXXXX-180-180.png_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1NdoqNpXXXXbQaXXXSutbFXXX.jpg_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1OM3FNXXXXXccapXXXXXXXXXX-90-90.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1OSpmKpXXXXcFXVXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1Oeb1KpXXXXXBXFXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1OvgXOXXXXXcjXpXXXXXXXXXX-146-36.png_110x110.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1Ox7pLVXXXXX5aXXXXXXXXXXX-146-36.png_110x110.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1P1jUHpXXXXcZXXXXSutbFXXX.jpg_90x90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1Pu9OMpXXXXaPXpXXXXXXXXXX-200-402.jpg_100x1000.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1Pvl_NFXXXXbgXXXXSutbFXXX.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1QsYnJVXXXXbVXVXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1RgC1JVXXXXXcXpXXSutbFXXX.jpg_90x90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1S6u.OXXXXXbFXXXXSutbFXXX_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1SPaTNVXXXXarXVXXSutbFXXX.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1SeA5JFXXXXaxXXXXSutbFXXX.jpg_90x90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1URgYLXXXXXazaXXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1UTY.KXXXXXa0XXXXXXXXXXXX-180-400.jpg_200x200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1Uv7NKFXXXXcUXVXXXXXXXXXX-622-622.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1V3mkNpXXXXa5XFXXXXXXXXXX-90-90.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1V6VMLXXXXXcxapXXXXXXXXXX-430-430.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1WPz.NFXXXXagapXXXXXXXXXX-180-400.png_200x200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1WT4VOXXXXXaqXFXXXXXXXXXX-120-120.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1WdoJLVXXXXa1XVXXXXXXXXXX_!!0-item_pic.jpg_100x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1WmBlLpXXXXblXFXXXXXXXXXX-200-200.png_100x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1WnYdJVXXXXbnaXXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1XI3YIVXXXXa7XXXXSutbFXXX.jpg_90x90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1XN1INXXXXXbbaXXXXXXXXXXX_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1XN66MpXXXXXyXFXXj64lTXXX-200-200.jpg_100x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1XVYALVXXXXbCXXXXXXXXXXXX-90-90.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1XtYuKFXXXXa.XpXXSutbFXXX.jpg_90x90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1YHmENVXXXXarXVXXSutbFXXX.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1YJc7LXXXXXbeXVXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1Z9nULVXXXXaaXFXX07tlTXXX-200-200.png_100x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1ZJ_lLVXXXXaEXFXXXXXXXXXX-220-48.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1Zy04GXXXXXcTXVXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1_9lZLpXXXXaQaXXXXXXXXXXX-90-90.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1_EpkLpXXXXXYXpXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1_VDSNXXXXXX5XXXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1_b6jMVXXXXaqXpXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1a5_eLVXXXXaaXVXXeMQwIXXX-220-52.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1ajclLVXXXXaRXpXXAZIwIXXX-220-48.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1b4guLVXXXXbjaXXXXXXXXXXX-220-48.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1bcLpLVXXXXXzXFXXXXXXXXXX-90-90.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1btK6JVXXXXbuXXXXXXXXXXXX-328-328.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1cV3kNFXXXXb1aXXXXXXXXXXX-360-280.jpg_180x180.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1c_LDLXXXXXXoXpXXXXXXXXXX-24-14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1d3p8NFXXXXbvXXXXSutbFXXX.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1d4r6OXXXXXagXpXXSutbFXXX.jpg_240x240.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1dTgLKpXXXXcyXpXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1dqLYOXXXXXckXVXXXXXXXXXX_!!0-item_pic.jpg_200x200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1eSxvJVXXXXaKXFXXYoAvIXXX-220-50.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1eWlgKFXXXXXaXXXXSutbFXXX.jpg_90x90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1e_r8OXXXXXauXFXXXXXXXXXX-200-200.png_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1ekhiLpXXXXb5apXXSutbFXXX.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1fmqfKXXXXXbNXpXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1fxXGMpXXXXXtXpXXj64lTXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1g21UIVXXXXb_XVXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1gWIvJpXXXXX.aXXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1hs23OXXXXXaHXFXXSutbFXXX.jpg_240x240.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1jC_1NpXXXXcpaXXXXXXXXXXX-220-48.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1jGzhLVXXXXcTXXXXXXXXXXXX-220-48.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1jWr5LVXXXXXOXXXXXXXXXXXX-564-558.png_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1kK2oMVXXXXc4XXXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1kKkzJVXXXXc5XXXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1krwfOXXXXXalXpXXXXXXXXXX_!!0-item_pic.jpg_100x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1l1zmNVXXXXcIXVXXXXXXXXXX-380-80.jpg_190x190" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1lfiGMpXXXXXeXFXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1m25EKVXXXXbcXVXXXXXXXXXX-175-175.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1mFNlOXXXXXXnapXXXXXXXXXX-120-120.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1mQplMpXXXXcpXVXXj64lTXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1meAbLVXXXXbvXXXXAZIwIXXX-220-48.png_220x220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1nReeMFXXXXcvXXXXXXXXXXXX_!!0-item_pic.jpg_200x200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1nlPxKpXXXXcDXXXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1oW7ZKFXXXXa6XXXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1odTzJVXXXXcUXXXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1okT0OXXXXXaKXVXXXXXXXXXX-120-120.png_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1okguKFXXXXXHXFXXSutbFXXX.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1oru6GXXXXXcVXXXX8Dt6_pXX_054936.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1pG0yNFXXXXXvaXXXXXXXXXXX_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1qXMgNFXXXXaoaXXXSutbFXXX_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1qk_WNpXXXXaPXXXXYXGcGpXX_M2.SS2_200x200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1qxtELXXXXXXAXXXXSutbFXXX.jpg_90x90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1sLTNNXXXXXcDXXXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1spzNNVXXXXaIXpXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1sq0xOXXXXXX6XFXXXXXXXXXX-276-402.jpg_150x10000.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1tJ6.KFXXXXa.XFXXSutbFXXX.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1teRKNpXXXXahXXXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1tfpgJFXXXXc2XFXXXXXXXXXX_!!0-item_pic.jpg_100x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1uCYSOXXXXXbfXVXXSutbFXXX.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1uPboLVXXXXchXFXXXXXXXXXX-90-90.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1vBtvNXXXXXcaXpXXXXXXXXXX-90-90.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1vM6cNXXXXXXYaXXXXXXXXXXX-300-300.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1vNBeNXXXXXcuXFXXXXXXXXXX-90-90.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1wkDBKpXXXXXZXFXXXXXXXXXX_!!0-item_pic.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1xR5SIXXXXXazXpXXaTBZFVXX_90x90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1yJguLVXXXXbZXVXXXXXXXXXX-158-36.png_110x110.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1yPvKMpXXXXaaXpXXXXXXXXXX-200-200.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1y_BKLXXXXXbXXpXXXXXXXXXX_!!0-item_pic.jpg_100x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1yfPqKFXXXXXZXXXXXXXXXXXX-300-300.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1z2.GLVXXXXbyXpXXXXXXXXXX-131-36.png_110x110.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB1zWb_OXXXXXcmXVXXXXXXXXXX-520-280.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB200SPbgCN.eBjSZFoXXXj0FXa_!!295970294-0-beehive-scenes.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB20MhCbFXXXXbEXpXXXXXXXXXX_!!818701368.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB20QtRXhmI.eBjy0FlXXbgkVXa_!!33-0-yamato.jpg_210x1000q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB20lx9cq9I.eBjy0FeXXXqwFXa_!!71-0-yamato.jpg_200x200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB21gnTjVXXXXbhXXXXXXXXXXXX_!!0-saturn_solar.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB22XuMuXXXXXb_XpXXXXXXXXXX_!!258719112.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB25aegaYaI.eBjSszdXXaB6XXa_!!295970294-0-beehive-scenes.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB26n7Mc.5O.eBjSZFxXXaaJFXa_!!0-juitemmedia.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB28s5CuXXXXXbFXpXXXXXXXXXX_!!245236818.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB29e94XFHzQeBjSZFpXXXm1XXa_!!5-0-yamato.jpg_150x10000.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2DnV_aY1J.eBjSszcXXbFzVXa_!!295970294-0-beehive-scenes.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2EE0kmXXXXXbRXXXXXXXXXXXX_!!0-saturn_solar.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2EyIVc5KO.eBjSZPhXXXqcpXa_!!0-saturn_solar.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2EzDEXSzC11BjSszhXXbGVFXa_!!0-saturn_solar.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2KrxMcraI.eBjSspaXXXIKpXa_!!188-0-yamato.jpg_200x200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2KwTNXXHzQeBjSZFpXXXm1XXa_!!0-saturn_solar.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2L_Ejc71M.eBjSZPiXXawfpXa_!!106-0-yamato.jpg_200x200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2UrDLX2OM.eBjSZFqXXculVXa_!!90362121.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2XQi3sXXXXXXzXFXXXXXXXXXX_!!5-0-yamato.jpg_210x1000q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2YH4ftFXXXXbCXXXXXXXXXXXX_!!258719112.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2ZOVmclyN.eBjSZFIXXXbUVXa_!!0-juitemmedia.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2ZuPOpVXXXXb4XpXXXXXXXXXX_!!5-0-yamato.jpg_210x1000q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2bsQ3aGnyQeBjSspeXXa8WpXa_!!1878976867.jpg_100x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2e40tcsaK.eBjSspjXXXL.XXa_!!17-0-yamato.jpg_200x200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2epIcc6m2.eBjSZFtXXX56VXa_!!168-0-yamato.jpg_200x200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2gMA3aBPxQeBjy1XcXXXHzVXa_!!5-0-yamato.jpg_100x1000.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2h_Muc71M.eBjSZFOXXc0rFXa_!!142-0-yamato.jpg_100x1000.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2he56cq9I.eBjy0FeXXXqwFXa_!!87-0-yamato.jpg_200x200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2itK9spXXXXb5XpXXXXXXXXXX_!!258719112.jpg_250x250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2kFZcppXXXXb2XXXXXXXXXXXX_!!1664945146.png_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2kThCcsaJ.eBjy0FbXXcwrFXa_!!130-0-yamato.jpg_200x200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2koBUXWe5V1BjSspkXXcoqpXa_!!2-dgshop.png_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2q9Pvcr1J.eBjSspnXXbUeXXa_!!3-0-yamato.jpg_150x10000.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2r8vCaH5K.eBjy0FnXXaZzVXa_!!0-juitemmedia.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2sB.6a4aJ.eBjSsziXXaJ_XXa_!!665896450.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2uNtxcwSI.eBjy1XcXXc1jXXa_!!137-0-yamato.jpg_200x200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2urQ2spXXXXcJXpXXXXXXXXXX_!!2203660821.jpg_120x120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/TB2zwPxcw9J.eBjSsppXXXAAVXa_!!65-0-yamato.jpg_210x1000q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/agp_heat.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/aplus_v2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/blk.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/counter6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/creation-229246txqa7vhTONu4-6152714.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/data(1).htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/data(2).htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/data(3).htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/data(4).htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/data(5).htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/data.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/ex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/ex(1)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/ex(10)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/ex(11)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/ex(2)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/ex(3)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/ex(4)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/ex(5)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/ex(6)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/ex(7)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/ex(8)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/ex(9)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/feature_v1.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/guest-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/index(1).js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/index(2).js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/index(3).js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/index-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/lk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/loader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/mget(1).htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/mget(2).htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/mget(3).htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/mget(4).htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/mget(5).htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/mget(6).htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/mget(7).htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/mget.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/recommend" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/recommend(1)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/recommend(2)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/recommend(3)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/recommend2.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/s.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(1)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(10)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(11)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(12)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(13)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(14)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(15)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(16)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(17)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(18)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(2)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(3)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(4)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(5)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(6)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(7)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(8)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/saved_resource(9)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/sufei-kissy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/sug" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/tanxclick.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/tanxssp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/example/淘宝网 - 淘！我喜欢_files/webww.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/font/demo_unicode.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/font/iconfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/font/iconfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/font/iconfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/font/iconfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/font/origin.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/img/icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/img/taobao-logo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/淘宝首页/teset-Z-index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/CreateObejct.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p105,RegExp的字面量和构造函数.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p113,FunctionReturningFunctionExample01.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p115,FunctionTypeArgumentsCallerExample02.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p116,CallAndApply-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p116,CallAndApply.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p128,htmlEscape.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p139,AccessorProperties.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p159,HybridPatternExample.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p168,CombinationInheritanceExample.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p59,BreakStatementExample02.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/作品/淘宝首页/img/qr.webp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/作品/淘宝首页/js/close.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/淘宝首页/My-TaoBao.html" afterPath="$PROJECT_DIR$/作品/淘宝首页/My-TaoBao.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/淘宝首页/css/header.css" afterPath="$PROJECT_DIR$/作品/淘宝首页/css/header.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/淘宝首页/diary.txt" afterPath="$PROJECT_DIR$/作品/淘宝首页/diary.txt" />
     </list>
     <ignored path="Web前端.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -332,11 +28,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="closure.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="closure.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/看过的书/JavaScript高级程序设计/closure.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4126394">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state vertical-scroll-proportion="-4.826087">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="My-TaoBao.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/作品/淘宝首页/My-TaoBao.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.1086955">
+              <caret line="184" column="52" selection-start-line="184" selection-start-column="52" selection-end-line="184" selection-end-column="52" />
+              <folding>
+                <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/作品/淘宝首页/css/header.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.5">
+              <caret line="310" column="14" selection-start-line="310" selection-start-column="14" selection-end-line="310" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="close.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/作品/淘宝首页/js/close.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="diary.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/作品/淘宝首页/diary.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7831184">
+              <caret line="47" column="79" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -347,10 +88,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="txt" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -360,7 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/11.video.html" />
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/css/layout.css" />
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/css/typography.css" />
         <option value="$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/css/color.css" />
@@ -407,10 +147,11 @@
         <option value="$PROJECT_DIR$/作品/淘宝首页/css/default.css" />
         <option value="$PROJECT_DIR$/作品/淘宝首页/teset-Z-index.html" />
         <option value="$PROJECT_DIR$/作品/淘宝首页/css/reset.css" />
-        <option value="$PROJECT_DIR$/作品/淘宝首页/My-TaoBao.html" />
-        <option value="$PROJECT_DIR$/作品/淘宝首页/css/header.css" />
-        <option value="$PROJECT_DIR$/作品/淘宝首页/diary.txt" />
         <option value="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/closure.html" />
+        <option value="$PROJECT_DIR$/作品/淘宝首页/css/header.css" />
+        <option value="$PROJECT_DIR$/作品/淘宝首页/My-TaoBao.html" />
+        <option value="$PROJECT_DIR$/作品/淘宝首页/js/close.js" />
+        <option value="$PROJECT_DIR$/作品/淘宝首页/diary.txt" />
       </list>
     </option>
   </component>
@@ -546,11 +287,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="看过的书" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScript高级程序设计" />
+              <option name="myItemId" value="作品" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -564,14 +301,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="淘宝首页" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="淘宝首页" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="淘宝首页" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
-      </pane>
-      <pane id="Scratches">
-        <subPane />
       </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
@@ -665,6 +447,9 @@
         </subPane>
         <subPane subId="Tests" />
       </pane>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -694,15 +479,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\看过的书\DOM编程艺术\12.band website\js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\译文\HTML5 W3C Recommendation 28 October 2014\relative materials" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\淘宝首页\img" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\译文\HTML5 W3C Recommendation 28 October 2014\relative materials" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\淘宝首页\font" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\My-Web-Caculator\js" />
       <recent name="C:\Users\asus-pc\Desktop" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\看过的书\DOM编程艺术\12.band website\js" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.calculate.js">
@@ -785,8 +570,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12708333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -849,6 +634,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/看过的书/JavaScript高级程序设计/closure.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/12.band website/js/photo gallery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1066,26 +859,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/淘宝首页/My-TaoBao.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45848823">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/译文/HTML5 W3C Recommendation 28 October 2014/relative materials/翻译 - HTML5 Chinese Interest Group Wiki.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/看过的书/JavaScript高级程序设计/closure.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4126394">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state vertical-scroll-proportion="-4.826087">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/淘宝首页/font/demo_unicode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.021739">
+          <caret line="47" column="49" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/淘宝首页/css/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.5">
+          <caret line="310" column="14" selection-start-line="310" selection-start-column="14" selection-end-line="310" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/淘宝首页/My-TaoBao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1086955">
+          <caret line="184" column="52" selection-start-line="184" selection-start-column="52" selection-end-line="184" selection-end-column="52" />
+          <folding>
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/advanced images gallery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="45.195652">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/淘宝首页/js/close.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/淘宝首页/diary.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7831184">
+          <caret line="47" column="79" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="79" />
           <folding />
         </state>
       </provider>

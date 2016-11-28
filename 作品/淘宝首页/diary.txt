@@ -41,3 +41,8 @@
 <3>BUGS:
     1.ul.right-site-nav>li>.dropdown with absolute position is aligned with content but not what I want
     the border.So there is 1px deviation between <li> and <div>.dropdown.
+
+    2.In close.js,
+    //close_buttons[i].onclick=close_Itself(target_Id);
+    /*The above declaration has a bug,It will take effect immediately,but not after click.*/
+    I have not learned the Event chapter in Professional JS,so I do not figure.
