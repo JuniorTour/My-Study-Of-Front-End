@@ -328,3 +328,13 @@ li.site-nav-pipe:hover {
 }.qr-block img {
      width:80px;
  }
+
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#../font/iconfont') format('svg');
+}
