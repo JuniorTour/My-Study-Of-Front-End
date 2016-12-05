@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>commonly used string methods</title>
+</head>
+<body>
+<script>
+    function alert(str) {
+        document.write(str+"<br/>");
+    }
+    var str="hello world";
+    document.write(str.charAt(0));  //h
+    document.write(str.charCodeAt(0)+"<br/>");  //104
+
+    document.write(String.fromCharCode(104,105)+"<br/>");
+
+    document.write(str.concat(",concat me!","once again!!"+"<br/>"));
+
+alert(str.slice(3));  //lo world
+alert(str.substr(3)); //lo world
+alert(str.substring(3)); //lo world
+alert(str.slice(3,7));    //lo w
+alert(str.substr(3,7)); //lo worl
+alert(str.substring(3,7));  //lo w
+</script>
+</body>
+</html>
