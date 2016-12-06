@@ -48,3 +48,42 @@ li.main-site-nav-pipe {
     display: block;
     padding: 0 5px;
 }
+.goods-nav {
+    width:190px;
+}
+.goods-nav li {
+    color: #fff;
+    width:170px;
+    height:30px;
+    line-height:30px;
+    padding: 0 10px;
+    background-color: #ff6537;
+    position: relative;
+}
+.goods-nav li:hover .tb-icon {
+    color: #fff;
+}
+.goods-nav .tb-icon {
+    font-size: 18px;
+    color: #ff905b;
+    margin-right:0;
+    display: inline-block;
+}
+.goods-nav li span {
+    display: inline-block;
+    width:134px;
+    height:27px;
+    vertical-align: top;
+}
+.goods-nav li a {
+    color: #fff;
+    font-size: 13px;
+    font-weight:700;
+}
+.goods-nav li a:hover {
+    text-decoration: underline;
+}
+.goods-nav li i:last-child {
+    position: absolute;
+    right: 10px;
+}

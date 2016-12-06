@@ -313,8 +313,8 @@ function f()
 
 f();
 </pre>
-<p>在这里我们有一个全局函数名为<em>f</em>()。<em>f() </em>使用 <em>this</em> 关键字来引用 <em>x</em>，但是注意我们不通过对象的实例来调用（invoke）这个函数。那么<em>this </em><em>this</em> will reference the global object. The global object is where we defined the variable x. The above code does work and will show the value 10 in a dialog.</p>
-<p>Both <em>call()</em> and <em>apply()</em> are methods we can use to assign the <em>this</em> pointer for the duration of a method invocation. As an example, here is how we could use the <em>call()</em> method:</p>
+<p>在这里我们有一个全局函数名为<em>f</em>()。<em>f() </em>使用 <em>this</em> 关键字来引用 <em>x</em>，但是注意我们不通过对象的实例来调用（invoke）这个函数。那么<em>this </em>究竟引用的是哪个对象呢？<em>this</em>会引用全局对象。全局对象使我们定义变量x的地方。以上的代码会正常工作，并在对话框中显示值10。</p>
+<p><em>call()</em> and <em>apply()</em> 都是可以在方法调用期间用来指定<em>this</em>指针的方法。 例如，我们可以这样使用 <em>call()</em>方法。</p>
 <pre class="brush: js; gutter: false; toolbar: false;">var x = 10;
 var o = { x: 15 };
 
@@ -326,9 +326,9 @@ function f()
 f();
 f.call(o);
 </pre>
-<p>The first invocation of <em>f()</em> will display the value of 10, because <em>this</em> references the global object. The second invocation (via the <em>call</em> method) however, will display the value 15. 15 is the value of the <em>x</em> property inside object <em>o</em>. The <em>call()</em> method invokes the function and uses its first parameter as the <em>this</em> pointer inside the body of the function. In other words - <strong>we've told the runtime what object to reference as</strong> <strong><em>this</em> </strong>while executing inside of function <em>f()</em>.</p>
-<p>Fiddling with the <em>this</em> pointer might sound funny, even perverse, to C++, Java, and C# programmers. What's next? Dogs sleeping with cats? Working nVidia drivers for Windows Vista? It's all part of the fun that is ECMAScript.</p>
-<p>We can also pass arguments to the target function via <em>call()</em>:</p>
+<p> <em>f()</em> 的第一次调用会显示值10，因为<em>this</em>引用了全局对象。然而第二个调用（通过 <em>call</em> 方法）会显示值15。15是对象<em>o</em>  中的 <em>x</em> 属性的值。<em>call()</em> 方法调用函数并以其第一个参数做为函数体内的<em>this</em>指针。换言之，<strong>我们已经告诉了运行时刻（runtime）在函数f()之中执行时以哪一个对象作为</strong><strong><em>this</em></strong>。（we've told the runtime what object to reference as this while executing inside of function f().）<em></em>。</p>
+<p>对于C++、Java和C#程序员来说一直摆弄（fiddling）<em>this</em>指针听起来可能有些滑稽，甚至固执。那么接下来呢？猫和狗一起睡？让英伟达的驱动运行在Windows Vista上？这都是ECMAScript的部分趣味。（It's all part of the fun that is ECMAScript.）</p>
+<p>我们也可以通过<em>call</em>传递参数给目标函数。</p>
 <pre class="brush: js; gutter: false; toolbar: false;">var x = 10;
 var o = { x: 15 };
 function f(message)
@@ -340,7 +340,7 @@ function f(message)
 f("invoking f");
 f.call(o, "invoking f via call");
 </pre>
-<p>The <em>apply()</em> method is identical to <em>call()</em>, except apply<em>()</em> requires an array as the second parameter. The array represents the arguments for the target method.</p>
+<p><em>apply</em>方法和<em>call</em>方法相同，除了apply<em>()</em>需要一个数组作为第二个参数以外。这个数组表示目标方法的参数。</p>
 <pre class="brush: js; gutter: false; toolbar: false;">var x = 10;
 var o = { x: 15 };
 function f(message)
@@ -352,7 +352,7 @@ function f(message)
 f("invoking f");
 f.apply(o, ["invoking f through apply"]);
 </pre>
-<p>The <em>apply()</em> method is useful because we can build a function like createDelegate (from the last post) that doesn't care about the signature of the target method. The function can use <em>apply()</em> to pass all additional arguments to the target method via an array. Are we getting close to a <a href="http://blogs.msdn.com/sriram/archive/2005/08/07/448722.aspx">curry</a> function?</p>
+<p><em>apply()</em> 方法很有用，因为我们可以做一个像上篇文章中的createDelegate函数一样不用在乎目标方法的签名（the signature of the target method）的函数。函数可以用<em>apply()</em>通过数组来给目标方法传递额外的参数。我们越来越接近<a href="http://blogs.msdn.com/sriram/archive/2005/08/07/448722.aspx">咖喱（curry）</a>函数了吗？</p>
 <pre class="brush: js; gutter: false; toolbar: false;">var o = { x: 15 };
 
 function f1(message1)
@@ -373,8 +373,8 @@ function g(object, func, args)
 g(o, f1, ["the value of x = "]);
 g(o, f2, ["the value of x squared = ", ". Wow!"]);
 </pre>
-<p>The problem here is the awkward syntax. We are forcing the caller to stuff arguments into an array just so we call <em>apply()</em>. Fortunately, there is a way to make the syntax easier, but we have to introduce one more topic: the <em>arguments</em> identifier.</p>
-<p>In JavaScript, every function essentially has a variable length argument list. The means we can pass 5 parameters to a function even if the function only uses one argument. The following runs without error and displays "H":</p>
+<p>这里的问题就是别扭的语法了。我们正在强迫调用者（caller）把参数填充进一个数组，以便于我们能调用<em>apply()</em>。幸运的是，有一个办法可以让句法更简单，但我们不得不在介绍一个主题：<em>参数</em>标识符（identifier）。</p>
+<p>在JavaScript之中，每个函数本质上都有一个变量长度参数列表（variable length argument list）。这意味着我们可以传递5个参数给一个函数，即使这个函数只使用一个变量。下面的代码运行无误并且显示“H”。</p>
 <pre class="brush: js; gutter: false; toolbar: false;">function f(message)
 {
     alert(message);
@@ -382,7 +382,7 @@ g(o, f2, ["the value of x squared = ", ". Wow!"]);
 
 f("H", "e", "l", "l", "o");
 </pre>
-<p>If we did want to access the other arguments from inside <em>f()</em>, we can use the arguments keyword. <em>arguments</em> references an Arguments object, which has a length property and feels like an array.</p>
+<p>如果我们确实想要在 <em>f()</em>内部获取其他的参数，我们可以用参数关键字（arguments keyword）。<em>arguments</em> 指向一个参数对象，这个参数对象有一个length属性并且感觉就像数组一样。</p>
 <pre class="brush: js; gutter: false; toolbar: false;">function f(message)
 {
     // message param is the same as arguments[0]
@@ -398,7 +398,7 @@ f("H", "e", "l", "l", "o");
 // this will say "Hello"
 f("H", "e", "l", "l", "o");
 </pre>
-<p>Just so you know, <em>arguments</em> is technically not an array, even if it walks and talks like one. a<em>rguments </em>has a length property but no <em>split</em>, <em>push</em>, or <em>pop</em> methods. What we can do with <em>arguments</em> inside our previous <em>g()</em> function is copy the incoming arguments after <em>arguments</em>[1] into an array object that we pass to <em>apply</em>.</p>
+<p>就像你知道的，<em>arguments</em>技术上不是一个数组，即使它的言行举止都像一个数组。<em>arguments </em>有length属性，但是没有<em>split</em>, <em>push</em>，或 <em>pop</em> 方法。我们能对<em>g()</em>函数内部的<em>arguments</em> 所做的是把 <em>arguments</em>[1]之后输入的参数复制进一个我们传给<em>apply</em>的数组对象。</p>
 <pre class="brush: js; gutter: false; toolbar: false;">var o = { x: 15 };
 
 function f(message1, message2)
@@ -424,8 +424,8 @@ function g(object, func)
 
 g(o, f, "The value of x squared = ", ". Wow!");
 </pre>
-<p>When we invoke <em>g()</em>, we can pass additional arguments as parameters instead of stuffing the arguments into an array.</p>
-<p>At this point, we have the theoretical knowledge needed to understand <em>call</em> and <em>apply, </em>but perhaps you are already asking a question: what if I don't want to immediately invoke the target function <em>f()</em>? What if I just want to arrange all the players in this little drama so that I can invoke <em>f()</em> at some later point (as an event handler, for example), but still have <em>this</em> referencing the desired object (whithout tracking the desired object myself). In an upcoming post, we'll see how to combine our <em>Function.apply</em> and <em>arguments</em> knowledge with the concept of nested functions and closures to answer this very question.</p>
+<p>当我们调用<em>g()</em>时，我们可以传递额外的参数（arguments）作为参数（parameters），而非把参数填充进数组。</p>
+<p>此刻，我们已经有了理解<em>call</em> 和 <em>apply</em>所必需的理论知识。也许你已经问了一个问题：如果我并不想立刻调用目标函数 <em>f()</em>呢？要是我只想把所有的演员都安排进这个小戏剧之中以便于我能在之后的某刻（比如一个事件处理程序（event handler））调用 <em>f()</em>，但是仍然让 <em>this</em>指向想要的对象（而不必跟踪想要的对象自身）呢？ 在下一篇文字中，我们将会看到如何把 <em>Function.apply</em> 和 <em>arguments</em> 的知识和嵌套函数以及闭包相结合以回答这个问题。。</p>
         </div>
     </div>
     <hr>
