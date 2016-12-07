@@ -26,6 +26,32 @@
     callSum3(5,6);
 //    alert(callSum1(1,2));
 //    alert(callSum2(3,4));
+
+    //copy from "ode to code"
+    var o = { x: 15 };
+
+    function f(message1, message2)
+    {
+        alert(message1 + (this.x * this.x) + message2);
+    }
+
+    function g(object, func)
+    {
+        // arguments[0] == object
+        // arguments[1] == func
+
+
+        var args = []; // empty array
+        // copy all other arguments we want to "pass through"
+        for(var i = 2; i < arguments.length; i++)
+        {
+            args.push(arguments[i]);
+        }
+
+        func.apply(object, args);
+    }
+
+    g(o, f, "The value of x squared = ", ". Wow!");
 </script>
 </body>
 </html>

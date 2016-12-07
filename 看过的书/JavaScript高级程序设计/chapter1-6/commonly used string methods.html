@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    function alert(str) {
+    function show(str) {
         document.write(str+"<br/>");
     }
     var str="hello world";
@@ -17,12 +17,64 @@
 
     document.write(str.concat(",concat me!","once again!!"+"<br/>"));
 
-alert(str.slice(3));  //lo world
-alert(str.substr(3)); //lo world
-alert(str.substring(3)); //lo world
-alert(str.slice(3,7));    //lo w
-alert(str.substr(3,7)); //lo worl
-alert(str.substring(3,7));  //lo w
+//alert(str.slice(3));  //lo world
+//alert(str.substr(3)); //lo world
+//alert(str.substring(3)); //lo world
+//alert(str.slice(3,7));    //lo w
+//alert(str.substr(3,7)); //lo worl
+//alert(str.substring(3,7));  //lo w
+//
+//alert(str.indexOf("o"));//4
+//alert(str.lastIndexOf("o"));   //7
+//alert(str.indexOf("o",6)); //7
+//alert(str.lastIndexOf("o",6)); //4
+
+var blank_str="   Hello world,I am juniorTour.   ";
+show(blank_str.trim());
+
+var text="cat,bat,fat,mat";
+var pattern=/.at/;
+
+var matches=text.match(pattern);
+show(matches);  //cat
+show(matches.index);  //0
+show(matches[0]);   //cat
+show(matches[1]);   //undefined
+
+var search_pos=text.search(/at/);
+show(search_pos);   //1
+
+var text="cat,bat,sat,fat";
+var result=text.replace("at","ould");
+show(result);   //could,bat,sat,fat
+result=text.replace(/at/g,"ould");
+show(result);   //could,bould,sould,fould
+result=text.replace(/(.at)/g,"hello($1)");  //$n，即第n个捕获组的子字符串。
+show(result);   //hello(cat),hello(bat),hello(sat),hello(fat)
+
+    var scoreStr = "小明:87;小花:81;小红:97;小天:76;小张:74;小小:94;小西:90;小伍:76;小迪:64;小曼:76";
+    var scores=scoreStr.split(";");
+    var arrLength=scores.length;
+    var sum=0;
+    var average=null;
+    for(var i=0;i<arrLength;i++){
+        sum+=parseInt(scores[i].split(":")[1])
+    }
+
+    average=sum/arrLength;
+
+   show("--"+average);
+
+    var color="red,blue,green,yellow";
+    var color_split1=color.split("e");
+    show(color_split1); //r,d,blu,,gr,,n,y,llow
+    var color_split2=color.split(/[^\,]/);
+    show(color_split2); //---,----,-----,------
+    show(color_split2.join("-")); //---,----,-----,------
+    var color_split3=color.split(/^\,/);
+    show(color_split3.join("-")); //red,blue,green,yellow
+    var color_split4=color.split(/\,/);
+    show(color_split4); //red,blue,green,yellow
 </script>
 </body>
 </html>
