@@ -70,7 +70,7 @@
 .goods-nav li:hover {
     background-color: #f94a14;
 }
-.goods-nav li:hover .tb-icon {
+.goods-nav li:hover .service-arrow {
     color: #fff;
 }
 .goods-nav .tb-icon {
@@ -94,17 +94,86 @@
     background: url("../img/hot-tag.png") no-repeat;
     display: inline-block;
 }
-.goods-nav li a {
+.goods-nav a {
     color: #fff;
     font-size: 13px;
     font-weight:700;
 }
-.goods-nav li a:hover {
+.goods-nav li span a:hover {
     text-decoration: underline;
 }
-.goods-nav li i:last-child {
+.goods-nav li i.service-arrow {
     position: absolute;
     right: 10px;
+}
+.service-float {
+    background-color: #fff;
+    color: #000;
+    width:692px;
+    height:518px;
+    border: 2px solid #f94a14;
+    position: absolute;
+    top:0;
+    left:190px;
+}
+.service-item {
+    padding: 25px 0 0 18px;
+}
+.service-links {
+    width:427px;
+    height:475px;
+}
+.service-panel a {
+    font-weight:normal;
+    color: #666;
+    text-decoration: none;
+}
+.service-panel a:hover {
+    color: #f40;
+    text-decoration: none;
+}
+.service-panel h5 {
+    height:28px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.service-panel  .service-panel-title {
+    font-weight:700;
+    color: #666;
+    /*background: url("../img/service-panel-head.jpg") no-repeat;*/
+    /*padding-left: 30px;*/
+    /*Because of the size of background-img is equal to this anchor,so this way can not show the whole
+    28px image.*/
+    font-size: 14px;
+}
+.service-panel-title img {
+    width:28px;
+}
+.service-panel .service-more {
+    margin-right:-6px;
+    float: right;
+    font-size: 12px;
+}
+.service-panel .service-more .tb-icon {
+    position: relative;
+    left: -4px;
+    color: #3C3C3C;
+    font-size: 10px;
+}
+.service-each-links {
+    padding:8px 0;
+    margin-bottom:22px;
+}
+.service-each-links a {
+    background-color: red;
+    display: inline-block;
+    font-size:12px;
+    line-height:24px;
+    color: #666;
+    margin-right:12px;
+    white-space:nowrap;
+}
+.service-each-links a:hover {
+    color: #666;
 }
 
 .main-right {

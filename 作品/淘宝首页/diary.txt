@@ -38,6 +38,10 @@
     Forget to keep diary.
     The process is ok,did not meet some fatal problem.
 
+    2016年12月8日21:57:11，
+    Smoothly!
+    Meet some difficulties and work out it finally.
+
 <3>BUGS:
     1.ul.right-site-nav>li>.dropdown with absolute position is aligned with content but not what I want
     the border.So there is 1px deviation between <li> and <div>.dropdown.
@@ -46,3 +50,6 @@
     //close_buttons[i].onclick=close_Itself(target_Id);
     /*The above declaration has a bug,It will take effect immediately,but not after click.*/
     I have not learned the Event chapter in Professional JS,so I do not figure.
+
+    3.In  <div class="service-each-links">
+    Each line of <a> has some unexpected white space???
