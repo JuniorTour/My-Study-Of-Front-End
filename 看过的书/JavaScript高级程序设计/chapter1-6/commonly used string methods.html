@@ -65,16 +65,44 @@ show(result);   //hello(cat),hello(bat),hello(sat),hello(fat)
 
    show("--"+average);
 
-    var color="red,blue,green,yellow";
-    var color_split1=color.split("e");
-    show(color_split1); //r,d,blu,,gr,,n,y,llow
-    var color_split2=color.split(/[^\,]/);
-    show(color_split2); //---,----,-----,------
-    show(color_split2.join("-")); //---,----,-----,------
+var color="red,blue,green,yellow";
+var color_split1=color.split("e");
+show(color_split1); //r,d,blu,,gr,,n,y,llow
+var color_split2=color.split(/\e/);
+show(color_split2.join("-")); //r-d,blu-,gr--n,y-llow
+var color_split4=color.split(/[^\,]/);
+    show(color_split4); //---,----,-----,------
+    /*0: ""1: "" 2: "" 3: "," 4: ""5: ""6: ""7: ","8: "" 9: ""
+     10: ""
+     11: ""
+     12: ","
+     13: ""
+     14: ""
+     15: ""
+     16: ""
+     17: ""
+     18: ""
+     length: 19*/
     var color_split3=color.split(/^\,/);
-    show(color_split3.join("-")); //red,blue,green,yellow
-    var color_split4=color.split(/\,/);
-    show(color_split4); //red,blue,green,yellow
+    show(color_split3); //red,blue,green,yellow
+
+    show("<br/>");
+
+var compStr1="#";
+var compStr2="&";
+//    show(compStr1-compStr2);    //NaN
+//按照ASCII，"#"应该在"&"之前。
+show(compStr1.localeCompare(compStr2)); //1,表示"#"在"&"之后；IE中是-1。
+
+var compStr3="a";
+var compStr4="A";
+//按照ASCII，"a"应该在"A"之后。
+show(compStr3.localeCompare(compStr4)); //-1,表示"a"在"A"之前。
+
+var compStr5="yellow";
+var compStr6="yellox";
+//按照ASCII，"w"应该在"x"之前。
+show(compStr5.localeCompare(compStr6)); //-1,"yellow"在"yellox"之前。
 </script>
 </body>
 </html>
