@@ -121,15 +121,18 @@
                 <div class="search-box">
                     <div class="search-tabs">
                         <ul class="clearfix">
-                            <li class="active-tab" target="#baobei">宝贝</li>
-                            <li target="#tianmao">天猫</li>
-                            <li target="#dianpu">店铺</li>
+                            <li class="search-tab active-tab" data-target="treasure">宝贝</li>
+                            <li class="search-tab" data-target="tmall">天猫</li>
+                            <li class="search-tab" data-target="shop">店铺</li>
                         </ul>
                     </div>
                     <div class="search-field">
-                        <form action="">
+                        <form action="//s.taobao.com/search">
                             <div class="search-placeholder">
                                 <label for="search-input">你好，世界</label>
+                            </div>
+                            <div class="search-placeholder search-placeholder-tmall">
+                                <label for="search-input">天猫，你好</label>
                             </div>
                             <i class="tb-icon">&#xe635;</i>
                             <div class="search-input-wrapper">
@@ -1743,5 +1746,6 @@
 </div>
 
 <script src="js/close.js"></script>
+<script src="js/search-tab.js"></script>
 </body>
 </html>

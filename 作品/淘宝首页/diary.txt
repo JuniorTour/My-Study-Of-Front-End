@@ -46,10 +46,31 @@
     1.ul.right-site-nav>li>.dropdown with absolute position is aligned with content but not what I want
     the border.So there is 1px deviation between <li> and <div>.dropdown.
 
+    A:It is the rule of position and z-index.The z-index declaration will only take effect between sibling element,but not
+    parent and son.
+
     2.In close.js,
     //close_buttons[i].onclick=close_Itself(target_Id);
     /*The above declaration has a bug,It will take effect immediately,but not after click.*/
-    I have not learned the Event chapter in Professional JS,so I do not figure.
+
+    A:I have not learned the Event chapter in Professional JS,so I may figure out it later.
 
     3.In  <div class="service-each-links">
     Each line of <a> has some unexpected white space???
+
+    A:Solved by declare display: inline-block; to <a>.I will refer to <CSS definitive guide> to figure it out.
+
+    4.Mutable variable is accessible from closure.
+    currentTab.onclick=function () {
+        switchTab(currentTarget);
+        /*Mutable variable is accessible from closure.*/
+    }
+
+    A:Refer to StackOverflow:
+    <1>.Use anonymous wrapper.
+    currentTab.onclick=(function () {
+        switchTab(currentTarget);
+        /*Mutable variable is accessible from closure.*/
+    })();
+
+    <2>.Nest two functions.I did not figure out it.

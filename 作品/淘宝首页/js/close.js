@@ -9,7 +9,7 @@ for (i=0;i<close_buttons.length;i++) {
     /*The above declaration has a bug,It will take effect immediately,but not after click.*/
     close_buttons[i].onclick=function () {
         close_Itself(target_Id);
-    }
+    };
 }
 function  close_Itself (target_Id) {
     var target=document.getElementById(target_Id);

@@ -2,6 +2,7 @@
   <dictionary name="asus-pc">
     <words>
       <w>accessors</w>
+      <w>asus</w>
       <w>clearfix</w>
       <w>dropdown</w>
       <w>fullscreen</w>
@@ -12,6 +13,8 @@
       <w>onload</w>
       <w>onselectstart</w>
       <w>taobao</w>
+      <w>tmall</w>
+      <w>yahei</w>
     </words>
   </dictionary>
 </component>

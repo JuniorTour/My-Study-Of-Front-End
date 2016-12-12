@@ -194,6 +194,9 @@ li.site-nav-pipe:hover {
     color: #9C9C9C;
     z-index:2;
 }
+.search-placeholder-tmall {
+    display: none;
+}
 .search-input-wrapper {
     width:500px;
     height:34px;
@@ -253,6 +256,9 @@ li.site-nav-pipe:hover {
     font-weight:700;
     color: #fff;
     border: none;
+}
+.search-button button.tmall-search {
+    background-color: #c40000 !important;
 }
 .search-button button:hover {
     background-color: #f52b00;
