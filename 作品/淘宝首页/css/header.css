@@ -176,6 +176,9 @@ li.site-nav-pipe:hover {
     background-color: #ff5400;
     font-weight:700;
 }
+.search-tabs ul li.active-tab.tmall-search-tab {
+    background-color: #c40000;
+}
 .search-field {
     background-color: #f50;
     position: relative;

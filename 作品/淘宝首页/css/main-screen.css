@@ -88,7 +88,7 @@
     line-height:27px;
     vertical-align: top;
 }
-.goods-nav li span.tb-tag:after {
+.goods-nav li span.tb-tag.hot-tag:after {
     content: " ";
     width:10px;
     height: 12px;

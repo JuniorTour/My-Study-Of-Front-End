@@ -122,18 +122,19 @@
                     <div class="search-tabs">
                         <ul class="clearfix">
                             <li class="search-tab active-tab" data-target="treasure">宝贝</li>
-                            <li class="search-tab" data-target="tmall">天猫</li>
+                            <li class="search-tab tmall-search-tab" data-target="tmall">天猫</li>
                             <li class="search-tab" data-target="shop">店铺</li>
                         </ul>
                     </div>
                     <div class="search-field">
-                        <form action="//s.taobao.com/search">
+                        <form id="search-form" action="//s.taobao.com/search">
                             <div class="search-placeholder">
                                 <label for="search-input">你好，世界</label>
                             </div>
-                            <div class="search-placeholder search-placeholder-tmall">
-                                <label for="search-input">天猫，你好</label>
-                            </div>
+                            <!--It seems that there is not this label?!-->
+                            <!--<div class="search-placeholder search-placeholder-tmall">-->
+                                <!--<label for="search-input">天猫，你好</label>-->
+                            <!--</div>-->
                             <i class="tb-icon">&#xe635;</i>
                             <div class="search-input-wrapper">
                                 <input id="search-input" type="text">
@@ -197,7 +198,7 @@
                     <ul class="">
                         <li>
                             <i class="tb-icon">&#xe683;</i>
-                            <span class="tb-tag">
+                            <span class="tb-tag hot-tag">
                                 <a href="">女装</a>
                                 /
                                 <a href="">男装</a>
@@ -672,7 +673,7 @@
                         </li>
                         <li>
                             <i class="tb-icon">&#xe683;</i>
-                            <span class="tb-tag">
+                            <span class="tb-tag hot-tag">
                                 <a href="">女装</a>
                                 /
                                 <a href="">男装</a>
@@ -862,7 +863,7 @@
                         </li>
                         <li>
                             <i class="tb-icon">&#xe683;</i>
-                            <span class="tb-tag">
+                            <span class="tb-tag hot-tag">
                                 <a href="">女装</a>
                                 /
                                 <a href="">男装</a>
@@ -1747,5 +1748,6 @@
 
 <script src="js/close.js"></script>
 <script src="js/search-tab.js"></script>
+<script src="js/revealIconAndPlaceholder.js"></script>
 </body>
 </html>

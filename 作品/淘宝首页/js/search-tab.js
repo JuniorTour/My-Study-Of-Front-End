@@ -17,33 +17,71 @@ var i;
 for (i=0;i<searchTabs.length;i++) {
     var currentTab=searchTabs[i];
     var currentTarget=currentTab.getAttribute("data-target");
-    currentTab.onclick=function (currentTarget) {
+    currentTab.onclick=function () {
+        /*way 1:ok!*/
+        switchTab(this);
+
+        /*way 2:no!*/
         //switchTab(this);
-        return switchTab(currentTarget);
         /*BUG3:Mutable variable is accessible from closure.
-        * And with this invoke,the currentTarget will always be the last value,"shop".*/
+         * And with this invoke,the currentTarget will always be the last value,"shop".*/
+
+        /*way 3:not all ok.*/
+        //return switchTab(this.getAttribute("data-target"));
+        /*Unresolved function or method getAttribute().*/
     };
 }
 
-function switchTab(target) {
-    //var currentTarget=target.getAttribute("data-target");
-    var searchField=document.getElementsByClassName("search-field")[0];
-    var searchForm=searchField.getElementsByTagName("form")[0];
-    var imgSearch=document.querySelectorAll(".image-search")[0];
-    var searchBtn=document.querySelectorAll(".search-button button")[0];
+function switchTab(tabClicked) {
+    var target=tabClicked.getAttribute("data-target");
 
+    /*A problem puzzled me is that which part should be a part of changeSomeStyle function?
+    * and which part should be in this switchTab function individually?*/
     switch (target) {
         case "treasure":
+            changeSomeStyle(tabClicked,"//s.taobao.com/search","#f50","block","block");
             break;
         case "tmall":
-            searchForm.setAttribute("action","//list.tmall.com/search_product.htm");
-            searchField.currentStyle.backgroundColor("#c40000");
-            searchBtn.className="tmall-search";
-            imgSearch.style="display:none;";
-            var searchPlaceholderTmall=document.querySelectorAll(".search-placeholder-tmall");
-            searchPlaceholderTmall.style="display:block;";
+            changeSomeStyle(tabClicked,"//list.tmall.com/search_product.htm","#c40000","none","none");
             break;
         case "shop":
+            changeSomeStyle(tabClicked,"//shopSearch.taobao.com/browse/shop_search.htm","#f50","none","none");
             break;
     }
+}
+
+function changeSomeStyle(tabClicked,actionAddress,targetBackgroundColor,imageSearchDisplay,placeholderDisplay) {
+    var searchField=document.querySelectorAll(".search-field")[0];
+    var searchForm=searchField.querySelectorAll("form")[0];
+    var searchInput=document.querySelectorAll("#search-input")[0];
+    var imgSearch=document.querySelectorAll(".image-search")[0];
+    var searchBtn=document.querySelectorAll(".search-button button")[0];
+    var searchPlaceholder=document.querySelectorAll(".search-placeholder")[0];
+
+    removeActiveClass();
+    tabClicked.className+=" active-tab";
+    searchInput.focus();
+    searchForm.setAttribute("action",actionAddress);
+
+    searchField.style.backgroundColor=targetBackgroundColor;
+    searchBtn.style.backgroundColor=targetBackgroundColor;
+
+    imgSearch.style="display:"+imageSearchDisplay+";";
+
+    searchPlaceholder.style="display:"+placeholderDisplay+";";
+}
+
+function removeActiveClass() {
+    var removeClassTarget=document.querySelectorAll(".active-tab")[0];
+    var removeClasses=removeClassTarget.className.split(/\s+/);
+    /*Find the position of .active-tab,record it by var i. */
+    for (i=0;i<removeClasses.length;i++) {
+        if (removeClasses[i]=="active-tab") {
+            break;
+        }
+    }
+    /*Delete target class*/
+    removeClasses.splice(i,1);
+    /*Rebuild the class*/
+    removeClassTarget.className=removeClasses.join(" ");
 }
