@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>standard js carousel</title>
+    <style>
+        .container {
+            width:500px;
+            border: 10px solid black;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .item-wrapper {
+            width:1500px;
+            height:250px;
+        }
+        .img-div {
+            width:500px;
+            height: 250px;
+            float: left;
+            position: absolute;
+            top: 0;
+        }
+        #no-1 {
+            left:0;
+            background-color: red;
+        }
+        #no-2 {
+            left:500px;
+            background-color: blue;
+        }
+        #no-3 {
+            left:1000px;
+            background-color: yellow;
+        }
+        .btn {
+            display: inline-block;
+            width:80px;
+            height:40px;
+            background-color: cyan;
+            border-radius: 4px;
+            text-align: center;
+            font-size:25px;
+            line-height:40px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item-wrapper">
+        <div class="img-div" id="no-1"></div>
+        <div class="img-div" id="no-2"></div>
+        <div class="img-div" id="no-3"></div>
+    </div>
+    <a href="" class="prev btn">prev</a>
+    <a href="" class="next btn">next</a>
+</div>
+</body>
+</html>

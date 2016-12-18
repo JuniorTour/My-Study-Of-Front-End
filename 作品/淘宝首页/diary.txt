@@ -22,7 +22,7 @@
 3.js outline:
         //divide by function???
         dropdown.js
-        search-tab.js
+        searchTab.js
         carousel.js
         toTop.js
         hover-function-tab.js //main中右侧充话费，游戏充值等
@@ -82,4 +82,4 @@ SOLVED!
     <3>.Finally I chose the way <DOM programing> taught me.To deliver this pointer to the function.
 
 NOT SOLVED!
-    5.The ele.style="display:none;" of close.js and search-tab.js does not work in IE11??
+    5.The ele.style="display:none;" of close.js and searchTab.js does not work in IE11??
