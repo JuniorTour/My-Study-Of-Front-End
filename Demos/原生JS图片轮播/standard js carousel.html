@@ -17,6 +17,7 @@
             position: relative;
             top:0;
             left:0;
+            transition: left .2s ease-in;
         }
         .img-div {
             width:500px;
@@ -40,6 +41,22 @@
         #next {
             right:0;
         }
+        .index-btn-group {
+            position: absolute;
+            top: 80%;
+            left:50%;
+            margin-left: -41px; /*41px is half of its width,it can solve the position is not center.*/
+        }
+        .index-btn {
+            width:20px;
+            height: 20px;
+            border: 1px solid #fff;
+            border-radius: 11px;
+            background-color: #000;
+            float: left;
+            cursor: pointer;
+            margin-left: 5px;
+        }
         .btn {
             display: inline-block;
             width:80px;
@@ -56,10 +73,15 @@
 </head>
 <body>
 <div class="container">
-    <div class="item-wrapper" style="left: 0;">
-        <div class="img-div" id="no-1"></div>
-        <div class="img-div" id="no-2"></div>
-        <div class="img-div" id="no-3"></div>
+    <div class="item-wrapper">
+        <div class="img-div" id="no-1">111111</div>
+        <div class="img-div" id="no-2">222222</div>
+        <div class="img-div" id="no-3">333333</div>
+    </div>
+    <div class="index-btn-group">
+        <div class="index-btn" id="to-1">1</div>
+        <div class="index-btn" id="to-2">2</div>
+        <div class="index-btn" id="to-3">3</div>
     </div>
     <button id="prev" class="btn">prev</button>
     <button id="next" class="btn">next</button>
@@ -67,22 +89,46 @@
 
 <script>
     window.onload=function () {
-        var prev=document.querySelectorAll("#prev")[0];
-        var next=document.querySelectorAll("#next")[0];
+        var prev = document.querySelectorAll("#prev")[0];
+        var next = document.querySelectorAll("#next")[0];
+        var indexBtns = document.querySelectorAll(".index-btn");
 
-        prev.onclick=function () {
-            moveSlide(-600);
+        prev.onclick = function () {
+            moveSlide(500);
         };
-        next.onclick=function () {
-            moveSlide(600);
+        next.onclick = function () {
+            moveSlide(-500);
         };
+
+        for (var i = 0; i < indexBtns.length; i++) {
+            (function (i) {
+                var currentIndexBtn = indexBtns[i];
+                currentIndexBtn.onclick = function () {
+                    console.log("i="+i);
+                    moveTo( i );
+                }
+            })(i);
+        }
     };
 
     function moveSlide(offsetValue) {
         var itemWrapper=document.querySelectorAll(".item-wrapper")[0];
 
-        var newLeftOffset=parseInt(window.getComputedStyle(itemWrapper).getPropertyValue("left"))+offsetValue;
+        var currentLeftOffset=window.getComputedStyle(itemWrapper).getPropertyValue("left");
+        var newLeftOffset=parseInt(currentLeftOffset)+offsetValue;
+        if (newLeftOffset>0) {
+            newLeftOffset+=-1500;
+        }
+        if (newLeftOffset<-1000) {
+            newLeftOffset+=1500;
+        }
         itemWrapper.style.left=newLeftOffset+"px";
+    }
+
+    function moveTo(index) {
+        var itemWrapper=document.querySelectorAll(".item-wrapper")[0];
+
+        itemWrapper.style.left=index*-500+"px";
     }
 </script>
 </body>
