@@ -1,0 +1,1193 @@
+﻿specification	规范
+abstract module	抽象模块
+access	访问、存取
+access control	访问控制
+access control information	访问控制信息
+access mechanism	访问机制
+access rights	访问权限
+accessibility	无障碍性
+accessibility information	无障碍网页信息
+accessibility problem	无障碍网页问题
+accessible	无障碍的
+accessible authoring practice	无障碍创作实践
+acquired infoset	获取信息集
+ACSS (Audio cascading style sheets)	ACSS (音频层叠样式表)
+activate	激活、启用
+active grammar	正在使用的文法
+active perceivable unit	使用中的可视单元
+activity	活动
+actor	角色
+adaptation	适应、适配
+adaptation preferences	适配偏好设定
+additional characters	附加字符
+advisory board	咨询常委会
+advisory committee	咨询委员会
+age	寿命
+agent	代理
+aggregated authored units	集成创作单元
+aggregation	集成
+alert	警告 (信号)
+alpha	alpha
+alpha compaction	alpha 压缩、透明度
+alpha separation	alpha 分割
+alpha table	alpha 表
+alternative information	可选信息
+amaya	amaya
+ancestor	祖先、前辈结点
+anchor	锚点
+ancillary chunk	辅助数据块
+animation	动画
+annotation	标注
+anonymity	匿名性
+antecedent	前提
+apache	apache
+applet	applet (应用小程序)
+application	应用程序、应用
+application personalization	应用程序个性化
+application programming interface (API), conventional input/output/device API	应用程序编程界面 (API)，通用输入/输出/设备 API
+arc	弧
+architecture	架构
+argument	参数
+artifact	物件
+ASCII art	ASCII 艺术
+ASR	自动语音识别
+assertion	断言
+assistive technology	辅助技术
+asynchronous	异步的
+asynchronous exchange	异步交换
+at user option	用户可选择的
+atomic	原子的
+atomic test	原子性测试
+attribute	属性
+attribute name	属性名
+attribute specifications	属性规范
+attribute value	属性值
+attribute, or CC/PP attribute	CC/PP 属性
+attribute-list declarations	属性列表声明
+audio	音频、音讯
+audio description	音频描述
+audio track	音轨
+audio-only presentation	纯音频演示
+audit guard	稽核防护机制
+auditory description	听觉描述
+authentication	身份验证
+author	作者
+author styles	作者样式
+authored unit	创作单元
+authoring	创作
+authoring tool	创作工具
+authorization	授权
+axis	座标轴
+
+
+Translated term entries in the W3C glossary starting with the letter "B"
+
+Terms in English	Chinese Simplified
+back link	返回链接
+background image interference	背景图象干扰
+backward compatible	向下兼容
+base text	基础文本
+baseline	基准线
+basic readability	基本可读性
+binding	绑定
+binding expression	绑定表达式
+bit depth	色彩深度
+black box	黑框
+bopomofo	注音符号
+bot	自动代理程序
+bounding box	边界框、区域框
+box	框
+braille	盲文
+bridge	网桥
+browser	浏览器
+button	按钮
+byte	字节
+byte order	字节序
+
+
+Translated term entries in the W3C glossary starting with the letter "C"
+
+Terms in English	Chinese Simplified
+cache	高速缓存
+cacheable	可缓存的
+Candidate Recommendation (CR)	候选推荐标准 (CR)
+capability	性能
+captions	字幕
+card	卡
+cascading style sheets (CSS)	层叠样式表 (CSS)
+catch element	catch 元素
+CC/PP processor	CC/PP 处理器
+CC/PP repository	CC/PP 资料储存库
+CDATA sections	CDATA 段
+CERN	欧洲粒子物理研究所
+certification	认证
+chair	主持、(小组的) 主席
+chairman	主席
+channel	通道
+character	字符
+character data	字符数据
+character data (CDATA)	字符数据 (CDATA)
+character encoding	字符编码
+character or expression depth	字符或表达式深度
+character or expression height	字符或表达式高度
+character or expression width	字符或表达式宽度
+character reference	字符引用
+check for	检查
+child	子 (元素)
+child	子 (节点)
+choice	选项
+choreography	(Webservice) 编排
+chromaticity (CIE)	色度 (CIE)
+chunk	数据块
+class	类
+class definition	类定义
+class description	类描述
+class name	类名
+class of products	产品类别
+click-stream	点击流
+client	客户端
+collapse	折叠
+collated text transcript	按序文字记录
+colour type	色彩类型、颜色类型
+comm	通信
+comments	注释
+complete	完备的
+complex ruby markup	复杂旁注标记
+compliance	一致性
+component	组件
+composite (verb)	组合
+computed expression	计算所得的表达式
+concept	概念
+condition	条件
+conditional content	条件内容
+conditional sections	条件段
+confidentiality	机密性
+confidentiality	机密性、保密性
+configuration	配置
+configure, control	配置，控制
+conformance	一致性
+conformance clause	一致性条款
+conformance level	一致性级别
+conformance testing	一致性测试
+conforming document	一致性文档
+connection	(网络) 连接
+consequent	结论
+consistent	一致的
+constraint	限制
+constraint onstraint	 
+contained (element A is contained in B)	包含于 (元素A包含于元素B)
+container (Constructor)	容器 (构造器)
+containing document	容器文档
+content	内容
+content developer	内容开发者
+content elements	内容元素
+content generation	内容生成
+content model	内容模型
+content negotiation	内容协商
+content provider	内容供应商
+content selection	内容选择
+content set	内容集
+content token element	内容记号元素
+context (of a given mathML expression)	(给定 mathML 表达式的) 上下文
+context node	上下文节点
+context position	上下文位置
+context size	上下文大小
+contradictory behaviors	矛盾行为
+control	控制
+control item	控制项目
+convenience	便利
+conversation	会话
+conversion tool	转换工具
+COO	首席运营官
+cookie	cookie
+correct	正确的
+credentials	凭证
+critical chunk	关键数据块
+CSS (Cascading style sheets)	CSS (层叠样式表)
+CSS W3C cascading style sheet specification	CSS W3C 层叠样式表规范
+cyberspace	网络空间
+cyc	cyc (知识表示项目)
+
+
+Translated term entries in the W3C glossary starting with the letter "D"
+
+Terms in English	Chinese Simplified
+daemon	独立后台程序
+data category	数据类型
+data element	数据元素
+data model	数据模型
+data resource	数据资源
+data schema	数据纲目
+data set	数据集
+data structure	数据结构
+data-valued property	数据类型属性
+database	数据库
+datastream	数据流
+datatype	数据类型
+datatype property	数据类型属性
+date space	纲站编年区
+decideable	可判定的
+declaration	声明
+declared	已声明的
+decomposition	分解
+deepest	最深的
+default	默认
+default namespace	默认命名空间
+deferred request authentication	推迟请求验证
+defining required attributes	定义必要属性
+defining the type of attribute values	定义属性值类型
+deflate	deflate (一种压缩算法)
+delivered image	传送完成的图象
+delivery context	传送上下文
+delivery policy	传送政策
+delivery unit	传送单位
+deprecated	弃用
+deprecated feature	已弃用的功能
+depth	深度
+dereference a URI	重新访问 URI
+descendant	子节点
+descendants	子节点
+device	设备
+device independent	与设备无关的
+device-independence	设备无关
+dialog	对话
+digital rights management	数字版权管理
+digital signature	数字签名
+dimensions of variability (DoV)	变化维 (DoV)
+direct sub-expression (of a mathML expression of)	(mathML 表达式的) 直接子表达式
+directly contained (element A in B)	(A) 直接包含于 (B)
+director	领导人、总监
+discovery	探索
+discovery service	探索服务
+discretionary choices	任意选项
+discretionary item	任意项目
+document	文档
+document character set	文档字符集
+document content, structure, and presentation	文档内容，结构，表达
+document entity	文档实体
+document language	文档语言
+document model	文档模型
+document object model	文档对象模型
+document object, document	文档对象，文档
+document order	文档顺序
+document profile	文档设置文件
+document source, text source	文档源，文本源
+document style semantics and specification language (DSSSL)	文件样式语义和规范语言 (DSSSL)
+document tree	文档树
+document type	文档类型
+document type declaration	文档类型声明
+document type definition (DTD)	文档类型定义 (DTD)
+documentation	参考文件
+DOM (Document object model)	DOM (文档对象模型)
+DOM (Document object model, see http://www.w3.org/DOM/)	DOM (文档对象模型)
+DOM level 0	DOM level 0
+domain	域
+domain name	域名
+driver	驱动程序
+DTD	DTD
+DTD	文档类型定义 (DTD)
+DTD-determined ID	DTD 确定 ID
+DTMF (Dual tone multi-Frequency)	DTMF (双音多频)
+dublin core	都柏林核心
+dynamic content	动态内容
+dynamic HTML (DHTML)	动态 HTML (DHTML)
+early normalization	提早规范化
+ease of parsing and serializing:	解析和序列化的简化
+EBT (Electronic book technology)	电子图书技术
+eCMAScript	eCMAScript
+EDI (Electronic data interchange)	EDI (电子数据交换)
+editing view	编辑视图
+electronic data interchange (EDI)	电子数据交换 (EDI)
+element	元素
+element content	元素内容
+element name	元素名
+element type	元素类型
+element type declaration	元素类型声明
+element, element type	元素，元素类型
+elements	元素
+embed	嵌入
+embedded object	嵌入式对象
+Embedded Web request	嵌入式 Web 请求
+embellished operator	修饰操作符
+empty	空
+empty-element tag	空元素标签
+enabled element, disabled element	启用的元素，停用的元素
+encryption	加密
+end point	终点
+end-tag	结束标签
+ending resource	结束资源
+enquire	enquire (程序名)
+entail	推导
+entities	实体
+entity	实体
+entity reference	实体引用
+enumerated attributes	枚举属性
+episode	情节
+equable practice	等同的实践
+equivalent	等价的
+equivalent (for content)	(内容上) 等价
+error	错误
+error correction	错误修正
+error recovery	错误修复
+escape	转义
+event	事件
+events and scripting, event handler, event type	事件和脚本，事件处理器，事件类型
+executable content	可执行内容
+expanded name	扩展名
+expanded-name	扩展名
+explicit expiration time	显式过期时间
+explicit user request	显式用户请求
+Explicit Web request	显式 Web 请求
+explicitly undefined behaviors	显式未定义行为
+extended language	扩展语言
+extended link	扩展链接
+extended links	扩展链接
+extending pre-defined elements	扩展预定义元素
+extensible	可扩展的
+extensible markup language (XML)	可扩展标记语言 (XML)
+extensible style language (XSL)	可扩展样式语言 (XSL)
+extension	扩充
+extensional	外延的
+external	外部的
+external entity	外部实体
+external markup declaration	外部标记声明
+externally-determined ID	外部可确定 ID
+
+
+Translated term entries in the W3C glossary starting with the letter "F"
+
+Terms in English	Chinese Simplified
+facet	分面
+facilities	设施
+fatal error	致命错误
+feature	特性、特征、功能
+fellow	研究员
+fences	括号
+FIA (Form interpretation algorithm)	FIA (表单解释算法)
+filter	过滤器
+filtering	过滤
+first node rule	首节点规则
+first-hand	第一手的
+flexible authoring	灵活创作
+focus of attention	关注焦点
+focus, content focus, user interface focus, current focus	焦点，内容焦点，用户界面焦点，当前焦点
+following element	后继元素
+font	字体
+for compatibility	为了兼容性
+for interoperability	为了互用性
+form	表单
+form control	表单控制
+form item	表格项目
+form item variable	表单项目变量
+formal	正规
+fragment identifier	碎片标识符
+fragmentation	碎片
+frame buffer	框缓冲区
+fresh	未过期的
+freshness lifetime	有效期
+FTF	面对面
+functional adaptation	功能适配
+functional user experience	功能用户体验
+
+
+Translated term entries in the W3C glossary starting with the letter "G"
+
+Terms in English	Chinese Simplified
+gamma	gamma
+gateway	网关
+general entities	通用实体
+generic identifier	通用标识符
+GIF (Graphics interchange format)	GIF (图形交换格式)
+GILC (Global internet liberty campaign)	GILC (全球互联网自由化运动)
+glossary of terms for device independence	设备无关的术语表
+glyph	字形
+good practice	优秀实践
+graphical	图形的
+graphics	图形
+greyscale	灰度、灰阶
+group ruby	组旁注
+
+
+Translated term entries in the W3C glossary starting with the letter "H"
+
+Terms in English	Chinese Simplified
+harmonized adaptation	协调适应
+harmonized user experience	协调用户体验
+height	高度
+heuristic expiration time	启发式过期时间
+highlight	突显
+hint	提示
+hiragana	平假名
+host	主机
+host	主办者
+host language	主语言
+host page	主网页、主页
+HTML	HTML
+HTML (Hypertext markup language)	HTML (超文本标记语言)
+HTTP (Hypertext transfer protocol)	HTTP (超文本传输协议)
+HTTP client	HTTP 客户端
+HTTP gateway	HTTP 网关
+HTTP payload entity	HTTP 负载实体
+HTTP proxy	HTTP 代理
+HTTP representation	HTTP 表示
+HTTP request	HTTP 请求
+HTTP response	HTTP 响应
+HTTP server	HTTP 服务器
+hybrid document	混合文档
+hyperlink	超链接
+hypermedia	超媒体
+hypertext	超文本
+
+
+Translated term entries in the W3C glossary starting with the letter "I"
+
+Terms in English	Chinese Simplified
+idempotent	恒等
+identical	等同的
+identified data	被标识的数据
+identifier	标识符
+ideograph	表意文字 (如方块字)
+iff	当且仅当
+image	图象、图形
+image data	图象数据
+image map	图象地图
+implementation	实现
+implementation conformance statement (ICS)	实现一致性声明 (ICS)
+implementation platform	实现平台
+Implicit Web request	隐式 Web 请求
+important	重要的
+imports closure	汇入闭包
+inbound	流入
+inbound/outbound	流入/流出
+include location	包含位置
+include parent	包含父(项目)
+included	包含的
+included items	包含的项目
+inclusion target	包含目标
+inconsistent	不一致的
+independent web	独立网页
+index	索引
+indexed-colour	索引色
+indexical	索引的
+indexing	索引
+indirectly contained	间接包含
+individual	个体
+individual-valued property	个体价值属性
+infer	推理
+inferred mrow	 
+inform	通知
+information resource	信息资源
+information set	信息集
+information space	信息空间
+informative	参考性的
+informative text	参考文本
+initial SOAP sender	初始 SOAP 发送者
+input configuration	输入配置
+input item	输入项目
+input modalities	输入模态
+INRIA (Institut national de recherche en infomatique et automatique)	INRIA (法国国家信息与自动化研究所)
+instance	实例
+instance data	实例数据
+instance data node	实例数据节点
+instance of	(类的) 实例
+instance of mathML	mathML 的实例
+instantiate	示例
+integrity	完整性
+intensional	内涵的
+interaction	交互
+interactive element, non-interactive element	交互式的元素，非交互式的元素
+interlaced PNG image	交错的 PNG 图象
+internal	内部的
+internal entity	内部实体
+internationalized resource identifier	国际化资源标识符
+internet	互联网
+interoperability	互用性
+interpretation	解释、理解
+intranet	内联网
+intrinsic dimensions	固有维度
+inverse function	反函数
+IP (Internet protocol)	IP (互联网协议)
+IPR (Intellectual property rights)	IPR (知识产权)
+IRC	IRC (互联网中继聊天)
+IRI reference	IRI 引用
+ISO (International standards organization)	ISO (国际标准化组织)
+ISP (Internet service provider)	ISP (互联网服务供应商)
+
+
+Translated term entries in the W3C glossary starting with the letter "J"
+
+Terms in English	Chinese Simplified
+java	java (编程语言)
+jigsaw	jigsaw (服務器)
+JPEG (Joint photographic experts group)	JPEG (联合图象专家组): 一种图象编码格式
+JSGF	JSGF (Java API 语音语法格式)
+
+
+Translated term entries in the W3C glossary starting with the letter "K"
+
+Terms in English	Chinese Simplified
+kana	<日> 假名
+kanji	<日> 日本汉字
+katakana	<日> (日本字母) 片假名
+keio university	庆应大学 (日本)
+key	键、密钥、关键
+key binding	密钥绑定
+key location	密钥定位
+key management	密钥管理
+key name	密钥名
+key validation	密钥验证
+
+
+Translated term entries in the W3C glossary starting with the letter "L"
+
+Terms in English	Chinese Simplified
+lambda expression	Lambda 表达式
+language binding	语言绑定
+language identifier	语言标识符
+late normalization	推迟规范化
+layout schema (plural: schemata)	布局纲目
+LCS (Laboratory for computer science)	LCS (计算机科学实验室)
+LEAD (Live early adoption and demonstration)	LEAD (早期采用及示范政策)
+level	级、层
+lexical space	词法空间
+libwww	libwww (WWW相关程序模块库)
+line-mode	(命令) 行模式
+line-mode browser	(命令) 行模式浏览器
+linearized table	线性化表格
+link	链接
+link text	链接描述文字
+linkbases	链接库
+linking element	链接元素
+list	列表
+literal	字面
+literal entity value	字面实体值
+live	使用中的
+local name	本地名
+local part	本地部分
+local resource	本地资源
+logic	逻辑
+longfellow	longfellow (W3C 电话会议的 24 线连接器)
+loose coupling	松散耦合
+lossless compression	无损压缩
+lossy compression	有损压缩
+luminance	亮度
+LZ77	LZ77 (数据压缩算法)
+
+
+Translated term entries in the W3C glossary starting with the letter "M"
+
+Terms in English	Chinese Simplified
+machine understandable	机器可理解的
+manageable service	可管理的服务
+management	管理
+management capability	管理能力
+management interface	管理界面
+management policy	管理政策
+management semantics	管理中的语义
+Manifestation	表征
+MARC record	MARC 记录 (机读目录记录)
+markup	标记
+markup declaration	标记声明
+markup language	标记语言
+markup model	标记模型
+match	匹配
+mathematical markup language (MathML)	数学标记语言 (MathML)
+mathML element	mathML 元素
+mathML expression (within some valid mathML	mathML 表达式
+may	可以
+media type	媒体类型
+member	会员
+menu	菜单
+message	消息
+message correlation	消息相关性
+message exchange pattern (MEP)	消息交换模式 (MEP)
+message receiver	消息接收者
+message reliability	消息可靠性
+message sender	消息发送方
+message transport	消息传输
+meta-	元的 (前缀、表示一个事物应用于其自身)
+metadata	元数据
+metaphysical	形而上的
+micropayments	微支付、小额付款
+minimal constraint, principle of	最小约束原理
+MIT (Massachusetts institute of technology)	MIT (麻省理工学院)
+mixed content	混合内容
+mixed initiative	混合式驱动
+modality	模态
+model binding expression	模型绑定表达式
+model item	模型项目
+model item property	模型项目属性
+model theory	模型论
+modularization	模块化
+modularization model	模块化模型
+module	模块
+monoruby	单一旁注
+monotonic	单调的
+mosaic	mosaic (最早出现在 Internet 上的 Web 浏览器)
+multi-purpose internet mail extensions (MIME)	多用途互联网邮件扩充 (MIME)
+multiple authoring	多元化创作
+must	必须
+mystic	mystic (W3C 电话会议的 6 线连接器)
+
+
+Translated term entries in the W3C glossary starting with the letter "N"
+
+Terms in English	Chinese Simplified
+name	名、名字
+named class	具名类
+namespace	命名空间
+namespace document	名命空间文档
+namespace name	命名空间名
+namespace prefix	命名空间前缀
+namespace-valid	命名空间有效的
+namespace-validating	命名空间验证
+namespace-well-formed	命名空间良构的
+natural language	自然语言
+navigation	导航
+navigation bars	导航栏
+navigation mechanism	导航机制
+NCSA (National center for supercomputing applications)	NCSA (美国国家超级应用计算中心)
+negotiate content	协商内容
+negotiation metadata	协商元数据
+nelson, ted	nelson, ted
+net	互联网 (Internet)
+network byte order	网络字节序
+new	新的
+neXT	neXT (公司名称)
+NNTP (Network news transfer protocol)	NNTP (网络新闻传输协议)
+node	节点
+non-repudiation	不可否认性
+non-variant content	无差异内容
+none	无
+nonmonotonic	非单调的
+normative	规范性的
+normative text	规范文本
+normative, informative	规范性的，参考性的
+notation declarations	符号声明
+notations	符号、记法
+note	笔记
+
+
+Translated term entries in the W3C glossary starting with the letter "O"
+
+Terms in English	Chinese Simplified
+object	对象
+object property	对象属性
+obligation	义务
+obsolete feature	已淘汰的功能
+occurs as attribute value	作为属性值出现
+office	办事处
+onLoad	onLoad
+onRequest	onRequest
+ontological	本体论的
+ontology	本体论、本体
+ontology document	本体文档
+open source	开放源码
+openMath	openMatch
+operating environment	操作环境
+operation	操作
+operator, an mo element	操作符，一个 mo 元素
+operator, content element	操作符 -> 操作符，内容元素
+optional	可选择的
+optional behaviors	可选择行为
+optional features	可选择功能
+orchestration	编排
+origin server	源始服务器
+other	其他
+otherwise	否则
+outbound	流出
+output modalities	输出模态
+override	重载
+OWL class	OWL 类
+OWL Web Ontology Language Guide	OWL 网络本体语言指南
+
+
+Translated term entries in the W3C glossary starting with the letter "P"
+
+Terms in English	Chinese Simplified
+packet	包
+page view	页面视图
+palette	调色板
+parameter entities	参数实体
+parameter entity	参数实体
+parameter-entity references	参数实体参考
+parent	父 (节点)
+parent document type	父文档类型
+parsed character data (PCDATA)	已解析字符数据 (PCDATA)
+parsed entity	已解析实体
+parsed entity's	已解析实体的
+parsing	解析
+partial understanding	部分理解
+partially selected	部份选择
+participate	参与
+pass extraction	阶段抽取
+pass phrase key	通行密钥
+path	路径
+payload security	负载安全
+perceivable unit	可感知单元
+permission	许可
+permission guard	许可保护机制
+person or organization	个人或组织
+personal digital assistant (PDA)	掌上电脑 (PDA)
+PGP (Pretty good privacy)	PGP
+physical transducer	物理的转换器
+PICS (Platform form	PICS
+pixel	像素
+PKC (public key cryptography)	PKC (公钥密码学)
+PKI (Public key infrastructure)	PKI (公钥基础设施)
+placeholder	占位
+plug-in	插件
+PNG (Portable network graphics)	PNG (便携式网络图形格式)
+PNG datastream	PNG 数据流
+PNG decoder	PNG 解码器
+PNG editor	PNG 编辑器
+PNG encoder	PNG 编码器
+PNG file	PNG 文件
+PNG four-byte signed integer	PNG 四字节符号整数
+PNG four-byte unsigned integer	PNG 四字节无符号整数
+PNG image	PNG 图象
+PNG signature	PNG 签名
+point	点
+point of regard	注视点
+pointer	指针
+pointer part	指针部分
+policy	政策
+policy guard	政策保护机制
+practice	实践
+pre-defined function	预定义函数
+preceding element	前序元素
+preference	偏好设定
+presentation elements	表达元素
+presentation layout schema	表达布局纲目
+presentation markup	表达标记
+presentation token element	表达标记元素
+preserve	保持
+principal	主实体
+principal node type	首要节点类型
+principle	原理
+priority 1 (P1)	第 1 优先 (P1)
+priority 2 (P2)	第 2 优先 (P2)
+priority 3 (P3)	第 3 优先 (P3)
+privacy	隐私
+privacy policy	隐私政策
+process	进程、处理
+processing instructions	数据处理指令
+profile	设置文件
+profiling	设置文件
+prompt	提示、提示输入
+proof of possession (POP)	证明所有权 (POP)
+properties, values, and defaults	属性，值和默认
+property	属性
+property definition	属性定义
+Proposed Edited Recommendation	已修正的提议推荐标准
+Proposed Recommendation (PR)	提议推荐标准 (PR)
+proposition	命题
+protection	保护
+protocol	协议
+provider agent	供应商代理
+provider entity	供应商实体
+proximity position	近似位置
+proxy	代理、代理服务器
+public identifier	公共标识符
+publish	发表、发布
+publisher	发布者
+purpose	目的、意图
+
+
+Translated term entries in the W3C glossary starting with the letter "Q"
+
+Terms in English	Chinese Simplified
+qualified name	限定名
+qualified names	限定名
+qualifier	限定符
+quality assurance, QA	质量保证
+quality of service	服务质量、QoS
+
+
+Translated term entries in the W3C glossary starting with the letter "R"
+
+Terms in English	Chinese Simplified
+RDF (Resource description framework)	RDF (资源描述框架)
+RDF resource	RDF 资源
+reader	读者
+reading	读音、读法
+REC	REC
+receiver	接收者
+recognize	识别
+recommendation	推荐、推荐标准
+reduced image	简化过的图象
+reference architecture	参考架构
+reference image	参考图象
+reference in attribute value	属性值参考
+reference in content	内容参考
+reference in DTD	DTD 参考
+reference in entity value	实体值参考
+registry	注册、登记
+reify	具体化
+relation	关系
+remote resource	远程资源
+render	渲染、显示
+rendered content	渲染过/显示的内容
+rendered content, rendered text	渲染过/显示的内容，文字
+rendering	渲染、显示
+rendering preferences	渲染/显示的偏好设定
+repair content, repair text	修复内容
+replace	替换
+replaced element	被替换的元素
+replacement text	替换文字
+repository	资料库、档案库
+representation	表示
+request	请求、要求
+requester agent	请求方代理
+requester entity	请求方实体
+Rescinded Recommendation	作废的推荐标准
+reserved	保留的
+resource	资源
+resource error	资源错误
+resource manifestation	资源表征
+response	响应、回应
+restriction	约束
+restriction, global	全域约束
+restriction, local	本地约束
+result infoset	结果信息集
+results verification	结果确认
+reverse document order	文档逆序
+RFC (Request for comments)	RFC (徵求意见)
+RGB merging	RGB 合并
+root	根
+RPC (remote procedure call)	RPC (远程过程调用)
+RSA	RSA (加密算法)
+ruby text	旁注文字
+
+
+Translated term entries in the W3C glossary starting with the letter "S"
+
+Terms in English	Chinese Simplified
+safe	安全的
+safe interaction	安全交户
+safe zone	安全区域
+sample	样本
+sample depth	采样深度
+sample depth scaling	采样深度映射
+satisfy	满足
+scanline	扫描线
+schema	纲目
+schema (pl., schemata)	纲目
+schema constraint	纲目约束
+schema representation constraint	纲目表示约束
+schema, RDF schema	纲目，RDF 纲目
+schema-determined ID	由纲目决定的标识
+scheme	scheme
+scope of a declaration	声明作用域
+screen magnifier	屏幕放大器
+screen reader	读屏器
+scribe	会议记录员
+script	脚本语言、脚本
+secondary resource	次要资源
+security	安全
+security administration	安全管理
+security architecture	安全架构
+security auditing	安全审核
+security domain	安全域
+security mechanism	安全机制
+security model	安全模型
+security policy	安全政策
+security policy expression	安全政策表达式
+security service	安全服务
+selected	选择的
+selected sub-expression (of an maction element)	(maction 元素中的) 被选子表达式
+selection, current selection	选择，当前选择
+semantic	语义的
+semantic requirement	语义需求 (同“测试断言”)
+semantic web	语义网
+semantically transparent	语义透明的
+sender	发送者
+separation of form from content	内容形式相分离
+serial access, sequential navigation	序列访问，顺序导航
+server	服务器、服务器端程序
+server session	服务器 session
+service	服务
+service description	服务描述
+service interface	服务界面
+service intermediary	服务中介
+service provider	服务供应商
+service provider (Data controller, legal entity)	服务供应商 (数据管理员，法人实体)
+service requester	服务请求者
+service role	服务角色
+service semantics	服务语义
+service-oriented architecture	面向服务架构
+session	session
+set	集
+SGML (Standard generalized markup language)	SGML (标准通用标记语言)
+shall	必须
+should	应该
+sibling	兄弟
+simple link	简单链接
+simple links	简单链接
+simple ruby markup	简单旁注标记
+single authoring	单一创作
+site maps	网站地图
+size and color of non-text content	非文本内容的大小和颜色
+SMIL (Synchronized multimedia integration language)	SMIL (同步多媒体集成语言)
+SOAP	简单对象访问协议
+SOAP application	SOAP 应用软件
+SOAP binding	SOAP 绑定
+SOAP body	SOAP 主体
+SOAP envelope	SOAP 信封
+SOAP fault	SOAP 错误
+SOAP feature	SOAP 功能
+SOAP header	SOAP 报头
+SOAP header block	SOAP 报头块
+SOAP intermediary	SOAP 中介
+SOAP message	SOAP 消息
+SOAP message exchange pattern (MEP)	SOAP 消息交换模式 (MEP)
+SOAP message path	SOAP 消息路径
+SOAP module	SOAP 模块
+SOAP node	SOAP 节点
+SOAP receiver	SOAP 接收者
+SOAP role	SOAP 角色
+SOAP sender	SOAP 发送者
+sophia	sophia (地名: Sophia-Antipolis)
+source document	源文档
+source image	源图象
+source infoset	源信息集
+space-like (MathML expression)	类空( MathML 表达式)
+specification	规范
+speech	语音
+speech synthesis	语音合成
+SRGS (Speech recognition grammar specification)	SRGS (语音识别语法规范)
+SSML (Speech synthesis markup language)	SSML (语音合成标记语言)
+stale	陈旧的、过时的
+standard	标准
+standard generalized markup language (SGML)	通用标记语言标准
+start-tag	起始标签
+starting resource	起始资源
+state	状态
+statement	声明
+strict conformance	严格一致
+string identity matching	字符串匹配
+string indexing	字符串索引
+string-value	字符串值
+structural markup	结构化标记
+style sheet	样式表
+style sheets	样式表
+sub-expression (of a mathML expression)	(mathML 表达式的) 子表达式
+subdialog	子对话
+submission	提交的文档
+subset language	子集语言
+subsite	子站
+suggested rendering rules for mathML presentation elements	推荐的 mathML 表达元素渲染/显示规则
+supersite	父站
+support, implement, conform	支持，实现，符合
+supported	支持
+SVG (Scalable vector graphics)	SVG (可缩放矢量图形)
+synchronize	同步
+synchronous	同步的
+synthesis processor	合成处理器
+system entity	系统实体
+system identifier	系统标识符
+sysWeb	sysWeb (W3C 系统网络组)
+
+
+Translated term entries in the W3C glossary starting with the letter "T"
+
+Terms in English	Chinese Simplified
+tables of contents	目录
+tabular information	表格式信息
+tag	标签
+TAG	技术架构组
+tangle	tangle (程序名)
+tapered prompts	渐缩式提示
+TCP (Transmission control protocol)	TCP (传输控制协议)
+team	团队
+technical architecture group	技术架构组
+technical report	技术报告
+term taken verbatim from another source	自其他源逐字沿用的词汇
+test area	测试区
+test assertion	测试断言
+test case	测试用例
+test framework	测试框架
+test purpose	测试目的
+test requirement	测试需求、测试断言
+test suite	测试集
+testability	可测试性
+TEX	TEX
+text	文本
+text content, non-text content	文本内容，非文本内容
+text decoration	文本修饰
+text transcript	文本抄本
+text-To-Speech	文语转换
+the empty string	空字符串
+third-party	第三方
+throw	抛出
+time parameters	时间参数
+TLS	传输层安全
+tobin	tobin (人名: MauriceJ.Tobin)
+token	标记
+token element	标记元素
+tokenized	标记化的
+top-level element (of mathML)	(mathML 的) 最高层元素
+top-level included items	最高层包含项目
+topology	拓扑结构
+tracing	跟踪
+transaction	事务
+transcript	抄本
+transformation	转换、变换
+traversal	遍历
+triple	三元组
+truecolour	真彩色
+trust service	信任服务
+TTS	TTS (文语转换)
+tunnel	通道
+type	类型
+typeface	字体
+
+
+Translated term entries in the W3C glossary starting with the letter "U"
+
+Terms in English	Chinese Simplified
+UCS	通用字符集
+UI or action binding expression	用户界面或动作绑定的表达式
+ultimate SOAP receiver	最终 SOAP 接收者
+unconditional conformance	无条件符合
+uniform resource identifier	统一资源标识符
+uniform resource identifier (URI)	统一资源标识符 (URI)
+union	联合、合并
+universe	全球的、通用的
+unnamed class	未命名类
+unparsed entity	非解析实体
+unsafe interaction	不安全交互
+unspecified	未指定的
+upstream/downstream	上游/下游
+URI	统一资源标识符
+URI (Universal resource identifier)	URI (统一资源标识符)
+URI aliases	URI 别名
+URI collision	URI 冲突
+URI ownership	URI 拥有权
+URI persistence	URI 恒久性
+URI reference	URI 引用
+URIs	URIs
+URL	统一资源定位器
+URL (Uniform resource locator)	URL (统一资源定位器)
+usage auditing	使用审核
+usage scenario	使用场景
+use	使用、采用
+use case	用例
+user	用户、使用者
+user agent	用户代理，useragent
+user agent (UA)	用户代理，UA
+user agent default styles	用户代理默认样式
+user agent profile	用户代理设置文件
+user control of every user interface component	每个用户界面组建的用户控制
+user experience	用户体验
+user experience preferences	用户体验偏好设定
+user interface, user interface control	用户界面，用户界面控制
+user session	用户 session
+user styles	用户样式
+User-input Web request	用户输入式 Web 请求
+
+
+Translated term entries in the W3C glossary starting with the letter "V"
+
+Terms in English	Chinese Simplified
+valid	有效的
+valid mathML data	有效的 mathML 数据
+valid style sheet	有效的样式表
+validating processors	验证处理器
+validation	验证
+validation rule	验证规则
+validation, validate, validating	验证，确认，校验
+validator	验证器、校验器
+validity constraint	有效性约束
+value space	数值空间
+variant	变体
+variant content	可变内容
+versioning	版本化
+video	视频、视讯
+view	视图
+view, viewport	视图，视图窗口
+viola	viola 语言
+virtual hypertext	虚拟超文本
+visual track	视轨
+visual-only presentation	纯视觉演示
+visualText	可视化文本
+vocabulary	词汇
+voice	语音
+voice browser	语音浏览器
+voiceXML document	voiceXML 文档
+voiceXML interpreter	voiceXML 解释器
+voiceXML interpreter context	voiceXML 解释环境
+VRML	虚拟现实建模语言
+VRML (Virtual reality modeling language)	VRML (虚拟现实建模语言)
+
+
+Translated term entries in the W3C glossary starting with the letter "W"
+
+Terms in English	Chinese Simplified
+W3C	W3C
+W3C (World wide web consortium)	W3C (万维网联盟)
+W3C recommendation	W3C 推荐标准
+W3C Recommendation (REC)	W3C 推荐标准 (REC)
+WAI (Web accessibility initiative)	WAI (无障碍网页倡议)
+WAIS (Wide area information servers)	广域信息服务系统
+web	万维网
+web agent	web 代理
+web client	web 客户端
+web collection	web 集合
+web core	web 核心
+web neighborhood	web 邻居
+web page	网页
+web page identifier	网页标识符
+web periphery	web 外设
+web request	web 请求
+web request body	web 请求主体
+web request header	web 请求标头
+web resource	web 资源
+web response	web 响应
+web response body	web 响应主体
+web response header	web 响应报头
+web server	web 服务器
+web service	web 服务
+web site	网站
+web site publisher	网站发布者
+well-formed	良构的
+well-formedness constraint	良构性约束
+white point	白色点
+width (of a box)	(文本或图形框的) 宽度
+Working Draft (WD)	工作草案
+Working Group Note	工作组笔记
+world	世界、领域
+world wide web	万维网
+worldWideWeb (one word; no spaces)	浏览器
+WWW	WWW (万维网)
+
+
+Translated term entries in the W3C glossary starting with the letter "X"
+
+Terms in English	Chinese Simplified
+X	X
+xanadu	xanadu
+xForms model	xForms 模型
+xForms processor	xForms 处理器
+XLL (eXtensible linking language)	XLL (可扩展链接语言)
+XML (Extensible markup language)	XML (可扩展标记语言)
+XML declaration	XML 声明
+XML document	XML 文档
+XML name	XML 名
+XML namespace	XML 命名空间
+XML processor	XML 处理器
+xML-based format	基于 XML 的格式
+xPointer processor	xPointer 处理器
+XSL (Extensible style sheet language)	XSL (可扩展样式表语言)
+XSL formatting objects (XSL FO)	XSL 格式化对象 (XSL FO)
+XSL transformation (XSLT)	XSL 转换语言 (XSLT)
+
+
+Translated term entries in the W3C glossary starting with the letter "Z"
+
+Terms in English	Chinese Simplified
+zakim	zakim (W3C 视频会议)
+zlib	zlib 压缩格式authoring practice	创作实践
+revision	修订
+This specification	本规范	用本，比较庄重
+this document	本文档	庄重！
