@@ -12,27 +12,31 @@
             position: relative;
         }
         .item-wrapper {
-            width:1500px;
+            width:2500px;
             height:250px;
             position: relative;
             top:0;
-            left:0;
+            left:-500px;
             transition: left .2s ease-in;
         }
         .img-div {
             width:500px;
             height: 250px;
             float: left;
-            /*position: absolute;*/
-            /*top: 0;*/
         }
         #no-1 {
+            background-color: red;
+        }
+        #no-copy-1 {
             background-color: red;
         }
         #no-2 {
             background-color: blue;
         }
         #no-3 {
+            background-color: yellow;
+        }
+        #no-copy-3 {
             background-color: yellow;
         }
         #prev {
@@ -57,6 +61,9 @@
             cursor: pointer;
             margin-left: 5px;
         }
+        .active-index {
+            background-color: green;
+        }
         .btn {
             display: inline-block;
             width:80px;
@@ -74,12 +81,14 @@
 <body>
 <div class="container">
     <div class="item-wrapper">
+        <div class="img-div" id="no-copy-3">333333</div>
         <div class="img-div" id="no-1">111111</div>
         <div class="img-div" id="no-2">222222</div>
         <div class="img-div" id="no-3">333333</div>
+        <div class="img-div" id="no-copy-1">copy copy copy111111</div>
     </div>
     <div class="index-btn-group">
-        <div class="index-btn" id="to-1">1</div>
+        <div class="index-btn active-index" id="to-1">1</div>
         <div class="index-btn" id="to-2">2</div>
         <div class="index-btn" id="to-3">3</div>
     </div>
@@ -88,47 +97,123 @@
 </div>
 
 <script>
+    /*Devoted to realize the Circulatory Play:
+    * 1.Observe the solution of taobao:
+    *   a.It has 5 items,but 7 div,2 of them is duplications.
+    *   The duplication is duplicated from the first one and the second one.
+    * 2.Record the position offset:
+    *   auto-slide:-520,-1040,-1560,-2080,-2600,,,,-3120,-1040,-1560,-2080,-2600,,,-3120;
+    *   click-next:-520,-1040,-1560,-2080,-2600,,,,-3120
+    *   PUZZLED!!!*/
+
     window.onload=function () {
         var prev = document.querySelectorAll("#prev")[0];
         var next = document.querySelectorAll("#next")[0];
         var indexBtns = document.querySelectorAll(".index-btn");
+        var container=document.querySelectorAll(".container")[0];
 
         prev.onclick = function () {
-            moveSlide(500);
+            moveSlide(500,false);
         };
         next.onclick = function () {
-            moveSlide(-500);
+            moveSlide(-500,false);
         };
 
         for (var i = 0; i < indexBtns.length; i++) {
             (function (i) {
                 var currentIndexBtn = indexBtns[i];
                 currentIndexBtn.onclick = function () {
-                    console.log("i="+i);
-                    moveTo( i );
+//                    console.log("i="+i);
+                    moveSlide( (i+1) *-500,true);
                 }
             })(i);
         }
+
+        var timerScroll;
+
+        function play() {
+            timerScroll=setInterval(function () {
+//                next.onclick();
+                moveSlide(-500,false);
+            },1000 );
+        }
+        play();
+
+        function stop() {
+            clearInterval(timerScroll);
+        }
+
+        container.onmouseover=function () {
+            stop();
+        };
+        container.onmouseout=function () {
+            play();
+        };
     };
 
-    function moveSlide(offsetValue) {
+    function moveSlide(offsetValue,isIndex) {
         var itemWrapper=document.querySelectorAll(".item-wrapper")[0];
-
+        var indexBtns = document.querySelectorAll(".index-btn");
+        var newLeftOffset;
         var currentLeftOffset=window.getComputedStyle(itemWrapper).getPropertyValue("left");
-        var newLeftOffset=parseInt(currentLeftOffset)+offsetValue;
+
+        if (isIndex==true) {
+            //if press index btn,then calculate its offset
+            newLeftOffset=offsetValue;
+        } else {
+            //if press next/prev btn or auto move ,then calculate its offset
+            newLeftOffset=parseInt(currentLeftOffset)+offsetValue;
+        }
+
+        //not elegant!
         if (newLeftOffset>0) {
-            newLeftOffset+=-1500;
+            newLeftOffset+=-2500;
         }
-        if (newLeftOffset<-1000) {
-            newLeftOffset+=1500;
+        if (newLeftOffset<-2000) {
+            newLeftOffset+=2500;
         }
+
         itemWrapper.style.left=newLeftOffset+"px";
+
+        switch (newLeftOffset) {
+            case 0:
+                indexBtnClassSwitch(indexBtns[2]);
+                setTimeout(function () {
+                    startCirculatoryPlay(itemWrapper,-1500);
+                },200);
+                break;
+            case -500:
+                indexBtnClassSwitch(indexBtns[0]);
+                break;
+            case -1000:
+                indexBtnClassSwitch(indexBtns[1]);
+                break;
+            case -1500:
+                indexBtnClassSwitch(indexBtns[2]);
+                break;
+            case -2000:
+                indexBtnClassSwitch(indexBtns[0]);
+                setTimeout(function () {
+                    startCirculatoryPlay(itemWrapper,-500);
+                },200);
+                break;
+        }
     }
 
-    function moveTo(index) {
-        var itemWrapper=document.querySelectorAll(".item-wrapper")[0];
+    function indexBtnClassSwitch(activeTarget) {
+        //delete the past active-index class
+        var activeBtn=document.querySelectorAll(".active-index")[0];
+        activeBtn.className=activeBtn.className.replace(" active-index","");
 
-        itemWrapper.style.left=index*-500+"px";
+        activeTarget.className+=" active-index";
+    }
+
+    function startCirculatoryPlay (itemWrapper,targetOffset) {
+        itemWrapper.style.transition="none";
+        itemWrapper.style.left=targetOffset+"px";
+        setTimeout(function () {
+            itemWrapper.style.transition="left .2s ease-in";
+        },20);
     }
 </script>
 </body>
