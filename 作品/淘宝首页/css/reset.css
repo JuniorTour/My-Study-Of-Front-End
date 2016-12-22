@@ -32,3 +32,6 @@ input {
    outline: none;
    margin: 0;
 }
+button {
+ border: none;
+}

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.6.0" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Copyright&lt;/a0&gt; © 2014 &lt;a1&gt;&lt;a2&gt;W3C&lt;/a2&gt;&lt;/a1&gt;&lt;s3&gt;®&lt;/s3&gt; (&lt;a4&gt;&lt;a5&gt;MIT&lt;/a5&gt;&lt;/a4&gt;, &lt;a6&gt;&lt;a7&gt;ERCIM&lt;/a7&gt;&lt;/a6&gt;, &lt;a8&gt;Keio&lt;/a8&gt;, &lt;a9&gt;Beihang&lt;/a9&gt;), All Rights Reserved.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T123629Z" creationid="asus-pc" creationdate="20161220T123629Z">
+        <seg>&lt;a0&gt;Copyright&lt;/a0&gt; © 2014 &lt;a1&gt;&lt;a2&gt;W3C&lt;/a2&gt;&lt;/a1&gt;&lt;s3&gt;®&lt;/s3&gt; (&lt;a4&gt;&lt;a5&gt;MIT&lt;/a5&gt;&lt;/a4&gt;, &lt;a6&gt;&lt;a7&gt;ERCIM&lt;/a7&gt;&lt;/a6&gt;, &lt;a8&gt;Keio&lt;/a8&gt;, &lt;a9&gt;Beihang&lt;/a9&gt;)，保留所有权利。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A list of current W3C publications and the latest revision of this technical report can be found in the W3C technical reports index at &lt;a0&gt;http://www.w3.org/TR/&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T130547Z" creationid="asus-pc" creationdate="20161220T130547Z">
+        <seg>当前的W3C刊物以及最新的技术报告的列表可以在W3C技术报告索引&lt;a0&gt;http://www.w3.org/TR/&lt;/a0&gt;中找到。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Abstract</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T123757Z" creationid="asus-pc" creationdate="20161220T123757Z">
+        <seg>摘要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All feedback is welcome.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T131452Z" creationid="asus-pc" creationdate="20161220T131452Z">
+        <seg>欢迎各种反馈。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Editors:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092629Z" creationid="asus-pc" creationdate="20161220T092629Z">
+        <seg>编辑者：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you cannot do this then you can also e-mail feedback to &lt;a2&gt;public-html@w3.org&lt;/a2&gt; (&lt;a3&gt;subscribe&lt;/a3&gt;, &lt;a4&gt;archives&lt;/a4&gt;), and arrangements will be made to transpose the comments to our public bug database.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T131424Z" creationid="asus-pc" creationdate="20161220T131424Z">
+        <seg>如果你不能这么做，你也可以通过给&lt;a2&gt;&gt;public-html@w3.org&lt;/a2&gt;发邮件反馈（&lt;a3&gt;订阅&lt;/a3&gt;，&lt;a4&gt;归档&lt;/a4&gt;），会有安排把这些反馈转移到我们的公共bug数据库中。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you wish to make comments regarding this document in a manner that is tracked by the W3C, please submit them via our &lt;a0&gt;our public bug database&lt;/a0&gt; (&lt;a1&gt;open bugs&lt;/a1&gt;).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T131146Z" creationid="asus-pc" creationdate="20161220T131146Z">
+        <seg>如果你想以一种W3C可以跟踪的方式给本文档评论，请通过&lt;a0&gt;我们的公共bug数据库&lt;/a0&gt;提交评论（&lt;a1&gt;创建bug&lt;/a1&gt;）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this version, new features are introduced to help Web application authors, new elements are introduced based on research into prevailing authoring practices, and special attention has been given to defining clear conformance criteria for user agents in an effort to improve interoperability.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T125822Z" creationid="asus-pc" creationdate="20161220T125822Z">
+        <seg>当前版本引入了新特性来帮助万维网应用（Web application）的作者，引入了基于流行的创作实践的新元素，并且特别注意了给用户代理（user agents）定义清楚的、一致的标准从而提升互用性（interoperability）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Latest Editor's Draft of HTML:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092437Z" creationid="asus-pc" creationdate="20161220T092437Z">
+        <seg>HTML的最新编辑草案：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Latest Published Version:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092333Z" creationid="asus-pc" creationdate="20161220T092333Z">
+        <seg>最新发布的版本：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Latest Version of HTML:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092406Z" creationid="asus-pc" creationdate="20161220T092401Z">
+        <seg>HTML的最新版本：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Other documents may supersede this document.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T130041Z" creationid="asus-pc" creationdate="20161220T130041Z">
+        <seg>其他文档可能会接替本文档。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please check the &lt;a0&gt;&lt;s1&gt;errata&lt;/s1&gt;&lt;/a0&gt; for any errors or issues reported since publication.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T123100Z" creationid="asus-pc" creationdate="20161220T094018Z">
+        <seg>请从这份&lt;a0&gt;&lt;s1&gt;勘误表&lt;/s1&gt;&lt;/a0&gt;之中查找自发布以来报告的错误和问题。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Previous Recommendation:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092622Z" creationid="asus-pc" creationdate="20161220T092622Z">
+        <seg>从前的推荐文档：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Previous Version:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092603Z" creationid="asus-pc" creationdate="20161220T092603Z">
+        <seg>以前的版本：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See also &lt;a1&gt;&lt;s2&gt;translations&lt;/s2&gt;&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T123336Z" creationid="asus-pc" creationdate="20161220T123336Z">
+        <seg>另请参阅&lt;a1&gt;&lt;s2&gt;翻译版本&lt;/s2&gt;&lt;/a1&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Status of This document</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T125838Z" creationid="asus-pc" creationdate="20161220T125838Z">
+        <seg>文档状态</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The W3C &lt;a0&gt;HTML Working Group&lt;/a0&gt; is the W3C working group responsible for this specification's progress.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T130706Z" creationid="asus-pc" creationdate="20161220T130706Z">
+        <seg>W3C&lt;a0&gt;HTML工作小组&lt;/a0&gt;是W3C负责这份规范进度的工作小组。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This Version:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092318Z" creationid="asus-pc" creationdate="20161220T092318Z">
+        <seg>当前版本：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This section describes the status of this document at the time of its publication.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T130005Z" creationid="asus-pc" creationdate="20161220T130005Z">
+        <seg>这一部分描述了本文档发布时的状态。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This specification defines the 5th major revision of the core language of the World Wide Web: the Hypertext Markup Language (HTML).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T125116Z" creationid="asus-pc" creationdate="20161220T124658Z">
+        <seg>本规范定义了万维网（World Wide Web）的核心语言：超文本标记语言（HTML）的第五次重要修订。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This specification is also available as a &lt;a0&gt;single page HTML&lt;/a0&gt; document.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T123229Z" creationid="asus-pc" creationdate="20161220T123229Z">
+        <seg>本规范也有一份&lt;a0&gt;单页HTML文档&lt;/a0&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This specification is the 28 October 2014 Recommendation.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T130826Z" creationid="asus-pc" creationdate="20161220T130742Z">
+        <seg>本规范年是2016年10月28日的推荐标准。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>W3C &lt;a10&gt;liability&lt;/a10&gt;, &lt;a11&gt;trademark&lt;/a11&gt; and &lt;a12&gt;document use&lt;/a12&gt; rules apply.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T123752Z" creationid="asus-pc" creationdate="20161220T123710Z">
+        <seg>适用于W3C &lt;a10&gt;责任&lt;/a10&gt;, &lt;a11&gt;商标&lt;/a11&gt; 和 &lt;a12&gt;文档使用&lt;/a12&gt;规则 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>W3C Recommendation 28 October 2014</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092312Z" creationid="asus-pc" creationdate="20161220T092312Z">
+        <seg>W3C 推荐文档 28 October 2014</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>
