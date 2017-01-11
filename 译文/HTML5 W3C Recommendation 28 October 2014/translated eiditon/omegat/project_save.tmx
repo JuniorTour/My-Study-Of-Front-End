@@ -86,6 +86,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is a stable document and may be used as reference material or cited from another document.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T155534Z" creationid="asus-pc" creationdate="20170111T155534Z">
+        <seg>这是一份稳定的文档并且可能被用作参考资料或从其他文档中引用。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is possible that future versions will no longer be published as a monolithic specification but rather as a set of smaller modules.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T153652Z" creationid="asus-pc" creationdate="20170111T153652Z">
