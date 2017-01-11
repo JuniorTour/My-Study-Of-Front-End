@@ -1103,3 +1103,4 @@ review	评估、审查
 consult	商讨
 review	评审
 endorse	核准、支持、批准	endorse
+deployment	部署
