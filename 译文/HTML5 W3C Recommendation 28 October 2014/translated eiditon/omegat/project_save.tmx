@@ -190,6 +190,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The bulk of the text of this specification is also available in the WHATWG &lt;a0&gt;HTML Living Standard&lt;/a0&gt;, under a license that permits reuse of the specification text.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T154812Z" creationid="asus-pc" creationdate="20170111T154812Z">
+        <seg>本规范的大部分也可以在WHATWG &lt;a0&gt;HTML Living Standard&lt;/a0&gt;找到，这基于一份允许再次使用规范文本的证书。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This Version:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092318Z" creationid="asus-pc" creationdate="20161220T092318Z">
