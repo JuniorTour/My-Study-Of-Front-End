@@ -1101,3 +1101,4 @@ This specification	本规范	用本，比较庄重
 this document	本文档	庄重！
 review	评估、审查
 consult	商讨
+review	评审
