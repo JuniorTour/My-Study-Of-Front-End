@@ -14,6 +14,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A comprehensive test suite for this specification is maintained and kept up to date as part of the &lt;a0&gt;WebPlatform Tests&lt;/a0&gt; project.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T152456Z" creationid="asus-pc" creationdate="20170111T152454Z">
+        <seg>测试。&lt;a0&gt;&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A list of current W3C publications and the latest revision of this technical report can be found in the W3C technical reports index at &lt;a0&gt;http://www.w3.org/TR/&lt;/a0&gt;.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T130547Z" creationid="asus-pc" creationdate="20161220T130547Z">
