@@ -118,6 +118,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Please see the Working Group's &lt;a1&gt;implementation report&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T152841Z" creationid="asus-pc" creationdate="20170111T152841Z">
+        <seg>请参看工作组的&lt;a1&gt;实现（implementation）报告&lt;/a1&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Previous Recommendation:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092622Z" creationid="asus-pc" creationdate="20161220T092622Z">
