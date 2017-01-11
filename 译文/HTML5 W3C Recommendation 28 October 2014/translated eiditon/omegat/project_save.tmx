@@ -206,6 +206,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This document has been reviewed by W3C Members, by software developers, and by other W3C groups and interested parties, and is endorsed by the Director as a W3C Recommendation.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T155418Z" creationid="asus-pc" creationdate="20170111T155418Z">
+        <seg>本文档已被W3C成员、软件开发者和其他W3C组及兴趣小组评审过，并且也已被W3C推荐标准的总监核准。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This section describes the status of this document at the time of its publication.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T130005Z" creationid="asus-pc" creationdate="20161220T130005Z">
