@@ -16,8 +16,8 @@
       <tuv lang="EN-US">
         <seg>A comprehensive test suite for this specification is maintained and kept up to date as part of the &lt;a0&gt;WebPlatform Tests&lt;/a0&gt; project.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T152456Z" creationid="asus-pc" creationdate="20170111T152454Z">
-        <seg>测试。&lt;a0&gt;&lt;/a0&gt;</seg>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T152810Z" creationid="asus-pc" creationdate="20170111T152454Z">
+        <seg>本规范有一份不断更新的测试集（test suite）作为 &lt;a0&gt;WebPlatform Tests&lt;/a0&gt; 项目的一部分。</seg>
       </tuv>
     </tu>
     <tu>
