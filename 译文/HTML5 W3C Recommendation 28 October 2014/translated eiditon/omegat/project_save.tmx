@@ -78,6 +78,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Irrespective of whether that is the case or not, &lt;a1&gt;http://www.w3.org/TR/html/&lt;/a1&gt; will be maintained as the entry point to the entirety of HTML technology.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T153848Z" creationid="asus-pc" creationdate="20170111T153848Z">
+        <seg>不管是否如此，&lt;a1&gt;http://www.w3.org/TR/html/&lt;/a1&gt; 都会被作为全部HTML技术的一个入口来维护。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is possible that future versions will no longer be published as a monolithic specification but rather as a set of smaller modules.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T153652Z" creationid="asus-pc" creationdate="20170111T153652Z">
