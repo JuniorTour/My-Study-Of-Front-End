@@ -252,6 +252,14 @@
         <seg>本规范的进展工作进行在&lt;a0&gt;http://www.w3.org/TR/html/&lt;/a0&gt;。</seg>
       </tuv>
     </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Work on extending this specification typically proceeds through &lt;a0&gt;extension specifications&lt;/a0&gt; which should be consulted to see what new features are being reviewed.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T154431Z" creationid="asus-pc" creationdate="20170111T154431Z">
+        <seg>本规范的扩充特别地通过&lt;a0&gt;扩充规范（extension specifications）&lt;/a0&gt;进行，在这里会商讨什么新特性将被评估。</seg>
+      </tuv>
+    </tu>
 <!-- Alternative translations -->
   </body>
 </tmx>
