@@ -1,4 +1,4 @@
-﻿specification	规范
+specification	规范
 abstract module	抽象模块
 access	访问、存取
 access control	访问控制
@@ -78,10 +78,6 @@ authoring	创作
 authoring tool	创作工具
 authorization	授权
 axis	座标轴
-
-
-Translated term entries in the W3C glossary starting with the letter "B"
-
 Terms in English	Chinese Simplified
 back link	返回链接
 background image interference	背景图象干扰
@@ -103,10 +99,6 @@ browser	浏览器
 button	按钮
 byte	字节
 byte order	字节序
-
-
-Translated term entries in the W3C glossary starting with the letter "C"
-
 Terms in English	Chinese Simplified
 cache	高速缓存
 cacheable	可缓存的
@@ -207,10 +199,6 @@ CSS (Cascading style sheets)	CSS (层叠样式表)
 CSS W3C cascading style sheet specification	CSS W3C 层叠样式表规范
 cyberspace	网络空间
 cyc	cyc (知识表示项目)
-
-
-Translated term entries in the W3C glossary starting with the letter "D"
-
 Terms in English	Chinese Simplified
 daemon	独立后台程序
 data category	数据类型
@@ -352,10 +340,6 @@ external	外部的
 external entity	外部实体
 external markup declaration	外部标记声明
 externally-determined ID	外部可确定 ID
-
-
-Translated term entries in the W3C glossary starting with the letter "F"
-
 Terms in English	Chinese Simplified
 facet	分面
 facilities	设施
@@ -388,10 +372,6 @@ freshness lifetime	有效期
 FTF	面对面
 functional adaptation	功能适配
 functional user experience	功能用户体验
-
-
-Translated term entries in the W3C glossary starting with the letter "G"
-
 Terms in English	Chinese Simplified
 gamma	gamma
 gateway	网关
@@ -406,10 +386,6 @@ graphical	图形的
 graphics	图形
 greyscale	灰度、灰阶
 group ruby	组旁注
-
-
-Translated term entries in the W3C glossary starting with the letter "H"
-
 Terms in English	Chinese Simplified
 harmonized adaptation	协调适应
 harmonized user experience	协调用户体验
@@ -437,10 +413,6 @@ hybrid document	混合文档
 hyperlink	超链接
 hypermedia	超媒体
 hypertext	超文本
-
-
-Translated term entries in the W3C glossary starting with the letter "I"
-
 Terms in English	Chinese Simplified
 idempotent	恒等
 identical	等同的
@@ -512,19 +484,11 @@ IRC	IRC (互联网中继聊天)
 IRI reference	IRI 引用
 ISO (International standards organization)	ISO (国际标准化组织)
 ISP (Internet service provider)	ISP (互联网服务供应商)
-
-
-Translated term entries in the W3C glossary starting with the letter "J"
-
 Terms in English	Chinese Simplified
 java	java (编程语言)
 jigsaw	jigsaw (服務器)
 JPEG (Joint photographic experts group)	JPEG (联合图象专家组): 一种图象编码格式
 JSGF	JSGF (Java API 语音语法格式)
-
-
-Translated term entries in the W3C glossary starting with the letter "K"
-
 Terms in English	Chinese Simplified
 kana	<日> 假名
 kanji	<日> 日本汉字
@@ -536,10 +500,6 @@ key location	密钥定位
 key management	密钥管理
 key name	密钥名
 key validation	密钥验证
-
-
-Translated term entries in the W3C glossary starting with the letter "L"
-
 Terms in English	Chinese Simplified
 lambda expression	Lambda 表达式
 language binding	语言绑定
@@ -572,10 +532,6 @@ lossless compression	无损压缩
 lossy compression	有损压缩
 luminance	亮度
 LZ77	LZ77 (数据压缩算法)
-
-
-Translated term entries in the W3C glossary starting with the letter "M"
-
 Terms in English	Chinese Simplified
 machine understandable	机器可理解的
 manageable service	可管理的服务
@@ -628,10 +584,6 @@ multi-purpose internet mail extensions (MIME)	多用途互联网邮件扩充 (MI
 multiple authoring	多元化创作
 must	必须
 mystic	mystic (W3C 电话会议的 6 线连接器)
-
-
-Translated term entries in the W3C glossary starting with the letter "N"
-
 Terms in English	Chinese Simplified
 name	名、名字
 named class	具名类
@@ -666,10 +618,6 @@ normative, informative	规范性的，参考性的
 notation declarations	符号声明
 notations	符号、记法
 note	笔记
-
-
-Translated term entries in the W3C glossary starting with the letter "O"
-
 Terms in English	Chinese Simplified
 object	对象
 object property	对象属性
@@ -700,10 +648,6 @@ output modalities	输出模态
 override	重载
 OWL class	OWL 类
 OWL Web Ontology Language Guide	OWL 网络本体语言指南
-
-
-Translated term entries in the W3C glossary starting with the letter "P"
-
 Terms in English	Chinese Simplified
 packet	包
 page view	页面视图
@@ -792,20 +736,12 @@ public identifier	公共标识符
 publish	发表、发布
 publisher	发布者
 purpose	目的、意图
-
-
-Translated term entries in the W3C glossary starting with the letter "Q"
-
 Terms in English	Chinese Simplified
 qualified name	限定名
 qualified names	限定名
 qualifier	限定符
 quality assurance, QA	质量保证
 quality of service	服务质量、QoS
-
-
-Translated term entries in the W3C glossary starting with the letter "R"
-
 Terms in English	Chinese Simplified
 RDF (Resource description framework)	RDF (资源描述框架)
 RDF resource	RDF 资源
@@ -858,10 +794,6 @@ root	根
 RPC (remote procedure call)	RPC (远程过程调用)
 RSA	RSA (加密算法)
 ruby text	旁注文字
-
-
-Translated term entries in the W3C glossary starting with the letter "S"
-
 Terms in English	Chinese Simplified
 safe	安全的
 safe interaction	安全交户
@@ -987,10 +919,6 @@ synthesis processor	合成处理器
 system entity	系统实体
 system identifier	系统标识符
 sysWeb	sysWeb (W3C 系统网络组)
-
-
-Translated term entries in the W3C glossary starting with the letter "T"
-
 Terms in English	Chinese Simplified
 tables of contents	目录
 tabular information	表格式信息
@@ -1041,10 +969,6 @@ TTS	TTS (文语转换)
 tunnel	通道
 type	类型
 typeface	字体
-
-
-Translated term entries in the W3C glossary starting with the letter "U"
-
 Terms in English	Chinese Simplified
 UCS	通用字符集
 UI or action binding expression	用户界面或动作绑定的表达式
@@ -1085,10 +1009,6 @@ user interface, user interface control	用户界面，用户界面控制
 user session	用户 session
 user styles	用户样式
 User-input Web request	用户输入式 Web 请求
-
-
-Translated term entries in the W3C glossary starting with the letter "V"
-
 Terms in English	Chinese Simplified
 valid	有效的
 valid mathML data	有效的 mathML 数据
@@ -1119,10 +1039,6 @@ voiceXML interpreter	voiceXML 解释器
 voiceXML interpreter context	voiceXML 解释环境
 VRML	虚拟现实建模语言
 VRML (Virtual reality modeling language)	VRML (虚拟现实建模语言)
-
-
-Translated term entries in the W3C glossary starting with the letter "W"
-
 Terms in English	Chinese Simplified
 W3C	W3C
 W3C (World wide web consortium)	W3C (万维网联盟)
@@ -1160,10 +1076,6 @@ world	世界、领域
 world wide web	万维网
 worldWideWeb (one word; no spaces)	浏览器
 WWW	WWW (万维网)
-
-
-Translated term entries in the W3C glossary starting with the letter "X"
-
 Terms in English	Chinese Simplified
 X	X
 xanadu	xanadu
@@ -1181,10 +1093,6 @@ xPointer processor	xPointer 处理器
 XSL (Extensible style sheet language)	XSL (可扩展样式表语言)
 XSL formatting objects (XSL FO)	XSL 格式化对象 (XSL FO)
 XSL transformation (XSLT)	XSL 转换语言 (XSLT)
-
-
-Translated term entries in the W3C glossary starting with the letter "Z"
-
 Terms in English	Chinese Simplified
 zakim	zakim (W3C 视频会议)
 zlib	zlib 压缩格式authoring practice	创作实践
