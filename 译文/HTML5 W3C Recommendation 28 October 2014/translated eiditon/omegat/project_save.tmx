@@ -78,6 +78,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is possible that future versions will no longer be published as a monolithic specification but rather as a set of smaller modules.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T153652Z" creationid="asus-pc" creationdate="20170111T153652Z">
+        <seg>将来的版本可能不会再作为一个独立的规范发布，而是作为一套（set）更小的模块（module）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Latest Editor's Draft of HTML:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092437Z" creationid="asus-pc" creationdate="20161220T092437Z">
