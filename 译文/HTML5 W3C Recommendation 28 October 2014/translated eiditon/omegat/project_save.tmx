@@ -206,6 +206,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are various ways to follow this work at the WHATWG:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170112T134430Z" creationid="asus-pc" creationdate="20170112T134430Z">
+        <seg>测试。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This Version:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092318Z" creationid="asus-pc" creationdate="20161220T092318Z">
