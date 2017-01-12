@@ -46,6 +46,9 @@
     Busy with building carousel,70% complete.
     Confused with the recycle process of img and the active of index btn.
 
+    2017年1月11日20:31:32，
+    Go on!
+
 <3>BUGS:
 NOT SOLVED!
     1.ul.right-site-nav>li>.dropdown with absolute position is aligned with content but not what I want

@@ -89,6 +89,7 @@ li.site-nav-pipe:hover {
 }
 .right-site-nav li:hover .dropdown {
     display: block;
+    border-top: 1px solid #fff; /*Not perfect.*/
 }
 .dropdown {
     display: none;
