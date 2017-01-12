@@ -222,6 +222,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This enhances the functionality and interoperability of the Web.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170112T134411Z" creationid="asus-pc" creationdate="20170112T134411Z">
+        <seg>测试。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This section describes the status of this document at the time of its publication.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T130005Z" creationid="asus-pc" creationdate="20161220T130005Z">
