@@ -56,36 +56,17 @@
 }
 .goods-nav {
     width:190px;
-    position: relative;
-    background-color: #ff6537;
-    color: #fff;
-}
-.goods-nav-title {
-    height:33px;
-    line-height:33px;
-    font-weight:700;
-    font-size:14px;
-    padding-left:10px;
-}
-.goods-nav-title a {
-    color: #fff;
-}
-.goods-nav-title i.tb-icon {
-    color: #fff;
-    font-weight:normal;
-    position: absolute;
-    top:0;
-    right:8px;
 }
 .goods-nav ul {
-    height:482px;
     position: relative;
 }
 .goods-nav li {
+    color: #fff;
     width:170px;
     height:30px;
     line-height:30px;
     padding: 0 10px;
+    background-color: #ff6537;
     transition: background-color .2s;
 }
 .goods-nav li:hover {
@@ -138,7 +119,6 @@
     position: absolute;
     top:0;
     left:190px;
-    z-index: 10001;
 }
 .goods-nav li:hover .service-float {
     display: block;
@@ -268,9 +248,6 @@
     left:0;
     bottom:0;
 }
-.goods-bottom-img img {
-    vertical-align: top;
-}
 
 .main-right {
     float: left;
@@ -309,6 +286,7 @@
     font-size:30px;
     color: purple;
     position: absolute;
+    z-index:999;
     top: 0;
 }
 .carousel-control-wrapper {
@@ -351,39 +329,4 @@ button#next {
 }
 .active-carousel-index-btn {
     background-color: #f44103;
-}
-
-.sub-carousel {
-    width:520px;
-    background-color: #fff;
-}
-.tmall-hot-brand-title {
-    background-color: #eee;
-    height: 26px;
-    line-height:36px;
-    border-bottom: 2px solid #c12c26;
-    position: relative;
-}
-.tmall-brand-title>span {
-    color: #3C3C3C;
-    background: url("../img/tmall-title-bg.gif") no-repeat;
-    font-size:14px;
-    font-weight:700;
-    padding-left: 48px;
-}
-.tmall-hot-brand-title em {
-    color: #666;
-    font-size:12px;
-    font-style: normal;
-}
-.tmall-brand-page-num {
-    position: absolute;
-    top:0;
-    right:0;
-}
-.tmall-brand-page-num span {
-    color: #c12c26;
-}
-.sub-carousel .carousel-wrapper {
-    height:201px;
 }
