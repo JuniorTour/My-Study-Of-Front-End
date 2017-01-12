@@ -46,6 +46,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Commit-Watchers mailing list (complete source diffs): &lt;a0&gt;http://lists.whatwg.org/listinfo.cgi/commit-watchers-whatwg.org&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170112T145255Z" creationid="asus-pc" creationdate="20170112T145254Z">
+        <seg>再次测试。&lt;a0&gt;&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Editors:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092629Z" creationid="asus-pc" creationdate="20161220T092629Z">
@@ -162,6 +170,14 @@
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092603Z" creationid="asus-pc" creationdate="20161220T092603Z">
         <seg>以前的版本：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Raw Subversion interface: &lt;c0&gt;svn checkout http://svn.whatwg.org/webapps/&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170112T145322Z" creationid="asus-pc" creationdate="20170112T145320Z">
+        <seg>试一试。&lt;c0&gt;&lt;/c0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -306,6 +322,14 @@
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T154431Z" creationid="asus-pc" creationdate="20170111T154431Z">
         <seg>本规范的扩充特别地通过&lt;a0&gt;扩充规范（extension specifications）&lt;/a0&gt;进行，在这里会商讨什么新特性将被评估。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>http://lists.whatwg.org/listinfo.cgi/commit-watchers-whatwg.org</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170112T145152Z" creationid="asus-pc" creationdate="20170112T145152Z">
+        <seg>测试。</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
