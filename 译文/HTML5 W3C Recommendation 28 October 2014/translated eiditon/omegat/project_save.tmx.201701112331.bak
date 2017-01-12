@@ -78,30 +78,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Irrespective of whether that is the case or not, &lt;a1&gt;http://www.w3.org/TR/html/&lt;/a1&gt; will be maintained as the entry point to the entirety of HTML technology.</seg>
-      </tuv>
-      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T153848Z" creationid="asus-pc" creationdate="20170111T153848Z">
-        <seg>不管是否如此，&lt;a1&gt;http://www.w3.org/TR/html/&lt;/a1&gt; 都会被作为全部HTML技术的一个入口来维护。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>It is a stable document and may be used as reference material or cited from another document.</seg>
-      </tuv>
-      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T155534Z" creationid="asus-pc" creationdate="20170111T155534Z">
-        <seg>这是一份稳定的文档并且可能被用作参考资料或从其他文档中引用。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>It is possible that future versions will no longer be published as a monolithic specification but rather as a set of smaller modules.</seg>
-      </tuv>
-      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T153652Z" creationid="asus-pc" creationdate="20170111T153652Z">
-        <seg>将来的版本可能不会再作为一个独立的规范发布，而是作为一套（set）更小的模块（module）。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Latest Editor's Draft of HTML:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092437Z" creationid="asus-pc" creationdate="20161220T092437Z">
@@ -198,26 +174,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>The bulk of the text of this specification is also available in the WHATWG &lt;a0&gt;HTML Living Standard&lt;/a0&gt;, under a license that permits reuse of the specification text.</seg>
-      </tuv>
-      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T154812Z" creationid="asus-pc" creationdate="20170111T154812Z">
-        <seg>本规范的大部分也可以在WHATWG &lt;a0&gt;HTML Living Standard&lt;/a0&gt;找到，这基于一份允许再次使用规范文本的证书。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>This Version:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20161220T092318Z" creationid="asus-pc" creationdate="20161220T092318Z">
         <seg>当前版本：</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>This document has been reviewed by W3C Members, by software developers, and by other W3C groups and interested parties, and is endorsed by the Director as a W3C Recommendation.</seg>
-      </tuv>
-      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T155418Z" creationid="asus-pc" creationdate="20170111T155418Z">
-        <seg>本文档已被W3C成员、软件开发者和其他W3C组及兴趣小组评审过，并且也已被W3C推荐标准的总监核准。</seg>
       </tuv>
     </tu>
     <tu>
@@ -270,26 +230,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>W3C's role in making the Recommendation is to draw attention to the specification and to promote its widespread deployment.</seg>
-      </tuv>
-      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T155823Z" creationid="asus-pc" creationdate="20170111T155823Z">
-        <seg>W3C在制定这份推荐标准的过程中起到了为本规范引起关注和促进其广泛部署的的作用</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Work on evolutions of this specification proceeds at &lt;a0&gt;http://www.w3.org/TR/html/&lt;/a0&gt;.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T152937Z" creationid="asus-pc" creationdate="20170111T152937Z">
         <seg>本规范的进展工作进行在&lt;a0&gt;http://www.w3.org/TR/html/&lt;/a0&gt;。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Work on extending this specification typically proceeds through &lt;a0&gt;extension specifications&lt;/a0&gt; which should be consulted to see what new features are being reviewed.</seg>
-      </tuv>
-      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T154431Z" creationid="asus-pc" creationdate="20170111T154431Z">
-        <seg>本规范的扩充特别地通过&lt;a0&gt;扩充规范（extension specifications）&lt;/a0&gt;进行，在这里会商讨什么新特性将被评估。</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
