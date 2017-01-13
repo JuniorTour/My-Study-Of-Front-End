@@ -326,6 +326,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Work on this specification is also done at the &lt;a0&gt;WHATWG&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170113T140250Z" creationid="asus-pc" creationdate="20170113T140250Z">
+        <seg>本规范在&lt;a0&gt;WHATWG&lt;/a0&gt;的工作也已完成。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>http://lists.whatwg.org/listinfo.cgi/commit-watchers-whatwg.org</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170112T145152Z" creationid="asus-pc" creationdate="20170112T145152Z">
