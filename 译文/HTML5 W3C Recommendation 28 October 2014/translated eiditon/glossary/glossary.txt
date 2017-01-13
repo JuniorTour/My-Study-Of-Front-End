@@ -1108,3 +1108,4 @@ WHATWG	网页超文本应用技术工作小组	Web Hypertext Application Technol
 summary	摘要、简略的
 unified	标准的
 diff	差异
+Proposed Recommendation	建议推荐标准
