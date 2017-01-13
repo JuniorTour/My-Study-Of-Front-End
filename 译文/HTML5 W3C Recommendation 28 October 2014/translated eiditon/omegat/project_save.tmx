@@ -304,8 +304,8 @@
       <tuv lang="EN-US">
         <seg>W3C's role in making the Recommendation is to draw attention to the specification and to promote its widespread deployment.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T155823Z" creationid="asus-pc" creationdate="20170111T155823Z">
-        <seg>W3C在制定这份推荐标准的过程中起到了为本规范引起关注和促进其广泛部署的的作用</seg>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170113T135618Z" creationid="asus-pc" creationdate="20170111T155823Z">
+        <seg>W3C在制定这份推荐标准的过程中起到了为本规范引起关注和促进其广泛部署（deployment）的的作用</seg>
       </tuv>
     </tu>
     <tu>
