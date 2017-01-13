@@ -48,16 +48,16 @@
       <tuv lang="EN-US">
         <seg>Annotated summary with unified diffs: &lt;a0&gt;http://html5.org/tools/web-apps-tracker&lt;/a0&gt;</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170113T142613Z" creationid="asus-pc" creationdate="20170113T142231Z">
-        <seg>统一不同（ unified diffs）的注释版摘要：&lt;a0&gt;http://html5.org/tools/web-apps-tracker&lt;/a0&gt;</seg>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170113T142934Z" creationid="asus-pc" creationdate="20170113T142231Z">
+        <seg>标准的差异（ unified diffs）的注释版摘要：&lt;a0&gt;http://html5.org/tools/web-apps-tracker&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Commit-Watchers mailing list (complete source diffs): &lt;a0&gt;http://lists.whatwg.org/listinfo.cgi/commit-watchers-whatwg.org&lt;/a0&gt;</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170113T142306Z" creationid="asus-pc" creationdate="20170112T145254Z">
-        <seg>提交观察者邮件列表（彻底根源不同（complete source diffs））：&lt;a0&gt;http://lists.whatwg.org/listinfo.cgi/commit-watchers-whatwg.org&lt;/a0&gt;</seg>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170113T142925Z" creationid="asus-pc" creationdate="20170112T145254Z">
+        <seg>提交观察者邮件列表（彻底根源差异（complete source diffs））：&lt;a0&gt;http://lists.whatwg.org/listinfo.cgi/commit-watchers-whatwg.org&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
