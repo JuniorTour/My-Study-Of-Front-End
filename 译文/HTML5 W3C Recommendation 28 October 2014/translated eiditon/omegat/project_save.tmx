@@ -214,6 +214,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The W3C HTML working group actively pursues convergence of the HTML specification with the WHATWG living standard, within the bounds of the &lt;a1&gt;W3C HTML working group charter&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170113T140736Z" creationid="asus-pc" creationdate="20170113T140736Z">
+        <seg>W3C HTML工作组积极地追求HTML规范和WHATWG当前规范（living standard）在&lt;a1&gt;W3C HTML 工作组许可&lt;/a1&gt;的范围之内的一致。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The bulk of the text of this specification is also available in the WHATWG &lt;a0&gt;HTML Living Standard&lt;/a0&gt;, under a license that permits reuse of the specification text.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170111T154812Z" creationid="asus-pc" creationdate="20170111T154812Z">
