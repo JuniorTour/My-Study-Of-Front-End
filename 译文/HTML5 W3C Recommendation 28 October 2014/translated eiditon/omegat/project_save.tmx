@@ -48,8 +48,8 @@
       <tuv lang="EN-US">
         <seg>Annotated summary with unified diffs: &lt;a0&gt;http://html5.org/tools/web-apps-tracker&lt;/a0&gt;</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170113T142231Z" creationid="asus-pc" creationdate="20170113T142231Z">
-        <seg>统一不同的注释总结：&lt;a0&gt;http://html5.org/tools/web-apps-tracker&lt;/a0&gt;</seg>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170113T142613Z" creationid="asus-pc" creationdate="20170113T142231Z">
+        <seg>统一不同（ unified diffs）的注释版摘要：&lt;a0&gt;http://html5.org/tools/web-apps-tracker&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
