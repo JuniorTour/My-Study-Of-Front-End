@@ -184,8 +184,8 @@
       <tuv lang="EN-US">
         <seg>Raw Subversion interface: &lt;c0&gt;svn checkout http://svn.whatwg.org/webapps/&lt;/c0&gt;</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170112T145322Z" creationid="asus-pc" creationdate="20170112T145320Z">
-        <seg>试一试。&lt;c0&gt;&lt;/c0&gt;</seg>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170113T145128Z" creationid="asus-pc" creationdate="20170112T145320Z">
+        <seg>Raw Subversion 接口：&lt;c0&gt;svn checkout http://svn.whatwg.org/webapps/&lt;/c0&gt;</seg>
       </tuv>
     </tu>
     <tu>
