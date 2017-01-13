@@ -232,8 +232,8 @@
       <tuv lang="EN-US">
         <seg>There are various ways to follow this work at the WHATWG:</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170113T141032Z" creationid="asus-pc" creationdate="20170112T134430Z">
-        <seg>有多种方式可以在wh。</seg>
+      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170113T141305Z" creationid="asus-pc" creationdate="20170112T134430Z">
+        <seg>有多种方式可以在WHATWG追随这项工作：</seg>
       </tuv>
     </tu>
     <tu>
@@ -338,14 +338,6 @@
       </tuv>
       <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170113T140250Z" creationid="asus-pc" creationdate="20170113T140250Z">
         <seg>本规范在&lt;a0&gt;WHATWG&lt;/a0&gt;的工作也已完成。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>http://lists.whatwg.org/listinfo.cgi/commit-watchers-whatwg.org</seg>
-      </tuv>
-      <tuv lang="ZH-CN" changeid="asus-pc" changedate="20170112T145152Z" creationid="asus-pc" creationdate="20170112T145152Z">
-        <seg>测试。</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
