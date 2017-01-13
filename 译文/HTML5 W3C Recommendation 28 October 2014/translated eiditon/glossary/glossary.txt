@@ -1106,3 +1106,5 @@ endorse	核准、支持、批准	endorse
 deployment	部署
 WHATWG	网页超文本应用技术工作小组	Web Hypertext Application Technology Working Group
 summary	摘要、简略的
+unified	标准的
+diff	差异
