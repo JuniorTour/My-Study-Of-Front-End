@@ -273,11 +273,12 @@
 }
 
 .main-right {
+    width:990px;
     float: left;
     margin-top:-34px;
     margin-left:10px;
 }
-.main-right-right {
+.main-right-left {
     float: left;
     width:520px;
 }
@@ -437,4 +438,101 @@ button#next {
 .today-hot h5 {
     padding-top: 12px;
     color: #a1a1a1;
+}
+
+.main-right-right {
+    width:290px;
+    height:598px;
+    float: right;
+}
+.login-box {
+    /*height:;*/
+    background: #fff url("../img/login-bg.png") no-repeat;
+    background-size: cover ;
+    line-height:20px;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #EEE;
+}
+.login-avatar a {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    vertical-align: bottom;
+}
+.login-avatar img {
+    width:60px;
+}
+.login-box p {
+    font-weight:400;
+}
+.login-box p a {
+    color: #f40;
+}
+.coin-icon {
+    display: inline-block;
+    width:16px;
+    height:16px;
+    background: url("../img/icons.png") 0 -882px no-repeat;
+    margin-bottom:-3px;
+}
+.login-btn-group {
+    height:32px;    /*cannot align???*/
+    margin-top:5px;
+}
+.login-btn-group a {
+    background-color: #f40;
+    color: #fff;
+    font-size:14px;
+    font-weight:700;
+    text-align: center;
+    padding: 4px 24px;
+}
+a.login-btn {
+    padding: 4px 32px;
+}
+.register-btn {
+    margin: 0 3px;
+}
+
+.notice-box {
+    background-color: #fff;
+    width:100%;
+    height:100px;
+    padding: 7px 0 4px 0;
+    margin-top: 1px;
+}
+.notice-tab-group {
+    margin: 0 8px 15px 8px;
+}
+.notice-tab {
+    float: left;
+    width:38px;
+    text-align: center;
+    line-height:24px;
+    margin: 0 8px;
+}
+.active-notice-tab {
+    font-weight:700;
+    border-bottom: 2px solid #f40;
+}
+.notice-content-wrapper {
+    margin: 0 10px;
+}
+.notice-content {
+    display: none;
+}
+.active-notice-content {
+    display: block;
+}
+.notice-item {
+    line-height:25px;
+    width:50%;
+    float: left;
+}
+.highlight-notice-item a {
+    color: #f40;
+}
+.headline-notice {
+    width:260px;
 }
