@@ -87,10 +87,14 @@ SOLVED!
         switchTab(currentTarget);
         /*Mutable variable is accessible from closure.*/
     })();
-
     <2>.Nest two functions.I did not figure out it.
-
     <3>.Finally I chose the way <DOM programing> taught me.To deliver this pointer to the function.
+
+    7.There will be a 4px white space between the inline-block ele.
+    StackOverflow has detailed answer about it,but I finally decided to replace i-b with float.
 
 NOT SOLVED!
     5.The ele.style="display:none;" of close.js and searchTab.js does not work in IE11??
+
+    6.When shrink the page to a degree,the login btn will break because of its parent's width is not enough.
+    I do not want to fix it by declare percentage length to login btn.

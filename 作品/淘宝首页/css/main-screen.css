@@ -445,6 +445,9 @@ button#next {
     height:598px;
     float: right;
 }
+.main-right-right>div {
+    background-color: #fff;
+}
 .login-box {
     /*height:;*/
     background: #fff url("../img/login-bg.png") no-repeat;
@@ -535,4 +538,31 @@ a.login-btn {
 }
 .headline-notice {
     width:260px;
+}
+
+.convenient-function-box-wrapper {
+    margin-top: 2px;
+}
+.convenient-function-box {
+    /*display: inline-block;*/
+    float: left;
+}
+.convenient-function-box a {
+    background: url("../img/icons.png") 24px 14px no-repeat;
+    width:69px;
+    /*height:69px;*/
+    text-align: center;
+    padding: 48px 0 4px 0;
+    border-left:1px solid #eee;
+    border-bottom:1px solid #eee;
+    display: inline-block;
+}
+.convenient-function-box:first-child a {
+    border-left: none;
+}
+.function-box--game a {
+    background-position-y: -28px;
+}
+.function-box-travel a {
+    background-position-y: -71px;
 }
