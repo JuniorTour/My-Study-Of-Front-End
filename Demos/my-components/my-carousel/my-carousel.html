@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my-carousel</title>
+
+    <style>
+        * {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+        button {
+            outline: none;
+        }
+        .container {
+            width:960px;
+            margin-top: 50px;
+        }
+        .carousel-wrapper {
+            width:520px;
+            height:280px;
+            overflow: hidden;
+            position: relative;
+            left:50%;
+        }
+        .carousel-item-wrapper {
+            width:3640px;
+            height:280px;
+            position: absolute;
+            top: 0;
+            left: -520px;
+            transition: left .2s ease-in;
+        }
+        .carousel-item-wrapper .carousel-item img {
+            width:520px;
+            height: 280px;
+        }
+        .carousel-item {
+            float: left;
+        }
+        .carousel-index-mark {
+            font-size:30px;
+            color: purple;
+            position: absolute;
+            top: 0;
+        }
+        .carousel-control-wrapper {
+            transition: all .2s;
+        }
+        .carousel-wrapper:hover button {
+            display: block;
+        }
+        .carousel-control-wrapper button {
+            transition: all .2s linear;
+            display: none;
+            width:24px;
+            height:36px;
+            line-height:36px;
+            background-color: rgba(0,0,0,.3);
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+        }
+        button#prev {
+            left:0;
+        }
+        button#next {
+            right:0;
+        }
+        .carousel-index-wrapper {
+            width:65px;
+            height:13px;
+            overflow: hidden;
+            position: absolute;
+            bottom:15px;
+            left:50%;
+            margin-left: -33px;
+        }
+        .carousel-index-btn {
+            width:9px;
+            height:9px;
+            float: left;
+            margin:2px;
+            background-color: #b7b7b7;
+            border-radius: 50%;
+            text-indent: -999em;
+            cursor: pointer;
+        }
+        .active-carousel-index-btn {
+            background-color: #f44103;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="carousel-wrapper">
+        <div class="carousel-item-wrapper">
+            <div class="carousel-item"><a href=""><img src="img/carousel-5.jpg" alt=""></a>
+                <div class="carousel-index-mark">
+                    copy-5
+                </div>
+            </div>
+            <div class="carousel-item"><a href=""><img src="img/carousel-1.jpg" alt=""></a>
+                <div class="carousel-index-mark">
+                    1
+                </div>
+            </div>
+            <div class="carousel-item"><a href=""><img src="img/carousel-2.jpg" alt=""></a>
+                <div class="carousel-index-mark">
+                    2
+                </div>
+            </div>
+            <div class="carousel-item"><a href=""><img src="img/carousel-3.jpg" alt=""></a>
+                <div class="carousel-index-mark">
+                    3
+                </div>
+            </div>
+            <div class="carousel-item"><a href=""><img src="img/carousel-4.jpg" alt=""></a>
+                <div class="carousel-index-mark">
+                    4
+                </div>
+            </div>
+            <div class="carousel-item"><a href=""><img src="img/carousel-5.jpg" alt=""></a>
+                <div class="carousel-index-mark">
+                    5
+                </div>
+            </div>
+            <div class="carousel-item"><a href=""><img src="img/carousel-1.jpg" alt=""></a>
+                <div class="carousel-index-mark">
+                    copy-1
+                </div>
+            </div>
+        </div>
+        <div class="carousel-control-wrapper">
+            <button id="prev">
+                <!--prev-->
+                <i class="tb-icon">&#xe779;</i>
+            </button>
+            <button id="next">
+                <!--next-->
+                <i class="tb-icon">&#xe775;</i>
+            </button>
+        </div>
+        <div class="carousel-index-wrapper">
+            <ul>
+                <li class="carousel-index-btn active-carousel-index-btn" id="carousel-to-1">carousel-index-1</li>
+                <li class="carousel-index-btn" id="carousel-to-2">carousel-index-2</li>
+                <li class="carousel-index-btn" id="carousel-to-3">carousel-index-3</li>
+                <li class="carousel-index-btn" id="carousel-to-4">carousel-index-4</li>
+                <li class="carousel-index-btn" id="carousel-to-5">carousel-index-5</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.onload=function () {
+        var prev = document.querySelectorAll("#prev")[0];
+        var next = document.querySelectorAll("#next")[0];
+        var indexBtns = document.querySelectorAll(".carousel-index-btn");
+        var carouselWrapper=document.querySelectorAll(".carousel-wrapper")[0];
+
+        prev.onclick = function () {
+            moveSlide(520,false);
+        };
+        next.onclick = function () {
+            moveSlide(-520,false);
+        };
+
+        for (var i = 0; i < indexBtns.length; i++) {
+            (function (i) {
+                var currentIndexBtn = indexBtns[i];
+                currentIndexBtn.onclick = function () {
+//                    console.log("i="+i);
+                    moveSlide( (i+1) *-520,true);
+                }
+            })(i);
+        }
+
+        var timerScroll;
+
+        function play() {
+            timerScroll=setInterval(function () {
+//                next.onclick();
+                moveSlide(-520,false);
+            },2000 );
+        }
+        play();
+
+        function stop() {
+            clearInterval(timerScroll);
+        }
+
+        carouselWrapper.onmouseover=function () {
+            stop();
+        };
+        carouselWrapper.onmouseout=function () {
+            play();
+        };
+    };
+
+    function moveSlide(offsetValue,isIndex) {
+        var itemWrapper=document.querySelectorAll(".carousel-item-wrapper")[0];
+        var indexBtns = document.querySelectorAll(".carousel-index-btn");
+        var newLeftOffset;
+        var currentLeftOffset=window.getComputedStyle(itemWrapper).getPropertyValue("left");
+
+        if (isIndex==true) {
+            //if press index btn,then calculate its offset
+            newLeftOffset=offsetValue;
+        } else {
+            //if press next/prev btn or auto move ,then calculate its offset
+            newLeftOffset=parseInt(currentLeftOffset)+offsetValue;
+        }
+
+        itemWrapper.style.left=newLeftOffset+"px";
+
+        switch (newLeftOffset) {
+            case 0:
+                indexBtnClassSwitch(indexBtns[4]);
+                setTimeout(function () {
+                    startCirculatoryPlay(itemWrapper,-2600);
+                },200);
+                break;
+            case -520:
+                indexBtnClassSwitch(indexBtns[0]);
+                break;
+            case -1040:
+                indexBtnClassSwitch(indexBtns[1]);
+                break;
+            case -1560:
+                indexBtnClassSwitch(indexBtns[2]);
+                break;
+            case -2080:
+                indexBtnClassSwitch(indexBtns[3]);
+                break;
+            case -2600:
+                indexBtnClassSwitch(indexBtns[4]);
+                break;
+            case -3120:
+                indexBtnClassSwitch(indexBtns[0]);
+                setTimeout(function () {
+                    startCirculatoryPlay(itemWrapper,-520);
+                },200);
+                break;
+        }
+    }
+
+    function indexBtnClassSwitch(activeTarget) {
+        //delete the past active-index class
+        var activeBtn=document.querySelectorAll(".active-carousel-index-btn")[0];
+        activeBtn.className=activeBtn.className.replace(" active-carousel-index-btn","");
+
+        activeTarget.className+=" active-carousel-index-btn";
+    }
+
+    function startCirculatoryPlay (itemWrapper,targetOffset) {
+        itemWrapper.style.transition="none";
+        itemWrapper.style.left=targetOffset+"px";
+        setTimeout(function () {
+            itemWrapper.style.transition="left .2s ease-in";
+        },20);
+    }
+</script>
+</body>
+</html>
