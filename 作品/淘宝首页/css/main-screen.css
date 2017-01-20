@@ -444,6 +444,7 @@ button#next {
     width:290px;
     height:598px;
     float: right;
+    border-top: 1px solid #EAEAEA;
 }
 .main-right-right>div {
     background-color: #fff;
@@ -540,14 +541,14 @@ a.login-btn {
     width:260px;
 }
 
-.convenient-function-box-wrapper {
-    margin-top: 2px;
+.convenient-function-btn-wrapper {
+    margin-top: 1px;
 }
-.convenient-function-box {
+.convenient-function-btn {
     /*display: inline-block;*/
     float: left;
 }
-.convenient-function-box a {
+.convenient-function-btn a {
     background: url("../img/icons.png") 24px 14px no-repeat;
     width:69px;
     /*height:69px;*/
@@ -557,12 +558,12 @@ a.login-btn {
     border-bottom:1px solid #eee;
     display: inline-block;
 }
-.convenient-function-box:first-child a {
+.convenient-function-btn:first-child a {
     border-left: none;
 }
-.function-box--game a {
+.function-btn--game a {
     background-position-y: -28px;
 }
-.function-box-travel a {
+.function-btn-travel a {
     background-position-y: -71px;
 }
