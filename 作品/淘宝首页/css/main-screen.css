@@ -445,6 +445,7 @@ button#next {
     height:598px;
     float: right;
     border-top: 1px solid #EAEAEA;
+    position: relative;
 }
 .main-right-right>div {
     background-color: #fff;
@@ -484,7 +485,7 @@ button#next {
     height:32px;    /*cannot align???*/
     margin-top:5px;
 }
-.login-btn-group a {
+.main-btn {
     background-color: #f40;
     color: #fff;
     font-size:14px;
@@ -492,13 +493,16 @@ button#next {
     text-align: center;
     padding: 4px 24px;
 }
+.main-btn:hover {
+    background-color: #f22d00;
+    color: #fff;
+}
 a.login-btn {
     padding: 4px 32px;
 }
 .register-btn {
     margin: 0 3px;
 }
-
 .notice-box {
     background-color: #fff;
     width:100%;
@@ -542,28 +546,133 @@ a.login-btn {
 }
 
 .convenient-function-btn-wrapper {
+    border-top: 1px solid #EAEAEA;
     margin-top: 1px;
 }
 .convenient-function-btn {
+    height:67px;
+    overflow: visible;  /*KEY POINT!
+    Accompany with increasing the height of inner <a> ,The bottom border of this wrapper div can be hided.*/
+    background-color: #fff;
     /*display: inline-block;*/
+    /*Dib has unwanted effect,there will be some white-space between them.
+    Search in stack overflow for detail.*/
+    border: 1px solid #eee;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
+    /*It is better than the below,especially when we want to do some effect like
+    "hover and change border".*/
+    /*border-left:1px solid #eee;*/
+    /*border-bottom:1px solid #eee;*/
     float: left;
+    position: relative;
+    /*z-index: 1;*/
+}
+.convenient-function-btn:hover {
+    border: 1px solid #f40;
+    /*border-bottom-color: transparent;*/
+    z-index:2;
+}
+.convenient-function-btn:hover a {
+    padding-bottom: 5px;
 }
 .convenient-function-btn a {
-    background: url("../img/icons.png") 24px 14px no-repeat;
-    width:69px;
+    background: white url("../img/icons.png") 24px 14px no-repeat;
+    width:70px;
     /*height:69px;*/
     text-align: center;
     padding: 48px 0 4px 0;
-    border-left:1px solid #eee;
-    border-bottom:1px solid #eee;
     display: inline-block;
-}
-.convenient-function-btn:first-child a {
-    border-left: none;
 }
 .function-btn--game a {
     background-position-y: -28px;
 }
 .function-btn-travel a {
     background-position-y: -71px;
+}
+
+.convenient-function-box-wrapper {
+    /*display: none;*/
+    position: absolute;
+    top:350px;
+    left:0;
+    z-index:1;
+}
+.function-box-phone {
+    background-color: #fff;
+    width:273px;
+    height:150px;
+    padding: 5px 0 0 15px;
+    border: 1px solid #f40;
+    position: absolute;
+}
+.phone-tab-group {
+    height:26px;
+    line-height:26px;
+    margin-bottom: 4px;
+}
+.phone-tab-group a {
+    padding: 3px 10px;
+}
+.phone-tab-group a.active-phone-tab {
+    color: #f43000;
+}
+.phone-content-group {
+    line-height:24px;
+}
+.phone-input {
+    width:228px;
+    border: 1px solid #ccc;
+}
+.phone-input:hover {
+    border-color: #aaa;
+}
+.phone-input label {
+    display: inline-block;
+    color: #6b6b6b;
+    background-color: #f5f5f5;
+    padding: 0 8px;
+}
+.phone-input input {
+    width:165px;
+    border: none;
+}
+/*http://stackoverflow.com/questions/3790935/can-i-hide-the-HTML5-number-input-s-spin-box*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#phone-face-value {
+    cursor: default;
+}
+.phone-input .tb-icon {
+    color: #CACACA;
+    cursor: pointer;
+    margin-right: 0;
+}
+.phone-input:hover .tb-icon {
+    color: #6C6C6C;
+}
+.phone-price {
+    line-height:16px;
+    color: #666;
+    margin: 6px 0;
+}
+.currency-symbol {
+    color: #999;
+}
+.phone-calculated-price {
+    color: #f60;
+    font-weight:700;
+}
+.phone-submit span {
+    color: #999;
+}
+.phone-submit span:hover {
+    color: #999;
 }

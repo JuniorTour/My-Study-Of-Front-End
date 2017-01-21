@@ -259,7 +259,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <h3 id="background"><span class="secno">1.1</span>背景</h3>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>万维网的标记语言一直是HTML。HTML主要被设计作为一种语言，语义化地描述科学的文档，尽管近年来其总体设计和适配已经使它被用于描述许多其他类型的文档。</p>
 
   <p>其中没有被HTML充分探讨（address）的主要部分（area）是一个模糊的主题——它被称作万维网应用（Web Application）。本规范师徒改正这一点，同时更新HTML规范来探讨（address）近年来出现的一些问题。</p>
@@ -267,40 +267,27 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <h3 id="audience"><span class="secno">1.2</span>读者</h3>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>本规范面向使用了本规范所定义特性的文档和脚本的作者们<span class="impl">，运行在页面上使用了本规范所定义特性的工具的实现者们，以及想要实现（establish）关于本规范的文档或实现的正确性的个人。</span></p>
 
-  <p>本文档可能不适合对于万维网技术还没有基本熟悉的读者，因为在某些地方它为准确性牺牲了清晰性或为简洁性牺牲了完整性。更深入浅出的（approachable）教程和创作指南可以提供更合适的（gentler）介绍。</p>
+  <p>本文档可能不适合对于万维网技术还没有基本熟悉的读者，因为它在某些地方为准确性牺牲了清晰性或为简洁性牺牲了完整性。更深入浅出的（approachable）教程和创作指南可以提供更合适的（gentler）介绍。</p>
 
-  <p>特别地，熟悉DOM的基础对于完全理解本规范更技术性的部分是必要的。对于 Web IDL， HTTP，XML，Unicode， character encodings，JavaScript，和 CSS 的理解也会适当的有帮助，但不是必须的。</p>
+  <p>特别地，熟悉DOM的基础对于完全理解本规范更技术性的部分是必要的。对于 Web IDL， HTTP，XML，Unicode， character encodings，JavaScript，和 CSS 的理解也会适当地有帮助，但这并不是必须的。</p>
 
 
   <h3 id="scope"><span class="secno">1.3 </span>涵盖范围</h3>
 
-  <p><i>这一部分是非规范性的。</i></p>
-  <p>This specification is limited to providing a semantic-level markup language and associated
-  semantic-level scripting APIs for authoring accessible pages on the Web ranging from static
-  documents to dynamic applications.</p>
+  <p><i>本节是非规范性的。</i></p>
+  <p>本规范只限于向创作万维网上从静态页面到动态应用的这一范围内的无障碍页面提供语义层次的（semantic-level）标记语言和相关语义层次的（semantic-level）脚本API。</p>
 
-  <p>The scope of this specification does not include providing mechanisms for media-specific
-  customization of presentation (although default rendering rules for Web browsers are included at
-  the end of this specification, and several mechanisms for hooking into CSS are provided as part of
-  the language).</p>
+  <p>本规范的涵盖范围不包括提供定制具体媒体外观（media-specific customization of presentation）的机制（尽管本规范的结尾包括万维网浏览器默认的渲染规则，且提供一些用于连接上（hooking into）CSS的机制作为本语言的一部分）。</p>
 
-  <p>The scope of this specification is not to describe an entire operating system. In particular,
-  hardware configuration software, image manipulation tools, and applications that users would be
-  expected to use with high-end workstations on a daily basis are out of scope. In terms of
-  applications, this specification is targeted specifically at applications that would be expected
-  to be used by users on an occasional basis, or regularly but from disparate locations, with low
-  CPU requirements. Examples of such applications include online purchasing systems, searching
-  systems, games (especially multiplayer online games), public telephone books or address books,
-  communications software (e-mail clients, instant messaging clients, discussion software), document
-  editing software, etc.</p>
+  <p>本规范的涵盖范围不是描绘一整个操作系统。特别地，硬件配置软件、图像操作工具和应用期望用户日常使用高端工作站（high-end workstations）的超出了范围。就应用而言，本规范特别的针对期望被用户偶尔使用或经常使用但在不同场所、有着较低CPU需求的应用。这种应用的例子包括在线购物系统、搜索系统、游戏（尤其是多人在线游戏）、公共电话簿或地址簿、通讯软件（电子邮件客户端、即时通讯客户端、讨论软件）、文档编辑系统等等。</p>
 
 
   <h3 id="history-0"><span class="secno">1.4 </span>历史</h3>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>For its first five years (1990-1995), HTML went through a number of revisions and experienced a
   number of extensions, primarily hosted first at CERN, and then at the IETF.</p>
 
@@ -386,7 +373,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
   
   <h3 id="design-notes"><span class="secno">1.5 </span>设计笔记</h3>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>It must be admitted that many aspects of HTML appear at first glance to be nonsensical and
   inconsistent.</p>
 
@@ -405,7 +392,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <h4 id="serializability-of-script-execution"><span class="secno">1.5.1 </span>脚本的可串行性（Serializability）</h4>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>To avoid exposing Web authors to the complexities of multithreading, the HTML and DOM APIs are
   designed such that no script can ever detect the simultaneous execution of other scripts. Even
   with <a data-anolis-xref="Worker" href="https://www.w3.org/TR/html5/infrastructure.html#worker">workers</a>, the intent is that the behavior of implementations can
@@ -419,7 +406,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <h4 id="compliance-with-other-specifications"><span class="secno">1.5.2 </span>与其他规范的一致性</h4>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>This specification interacts with and relies on a wide variety of other specifications. In
   certain circumstances, unfortunately, conflicting needs have led to this specification violating
   the requirements of these other specifications. Whenever this has occurred, the transgressions
@@ -428,7 +415,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <h4 id="extensibility"><span class="secno">1.5.3 </span>可扩展性</h4>
   
-    <p><i>这一部分是非规范性的。</i></p>  
+    <p><i>本节是非规范性的。</i></p>  
     <p>HTML has a wide number of extensibility mechanisms that can be used for adding semantics in a
   safe manner:</p>
 
@@ -468,7 +455,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   </ul><h3 id="html-vs-xhtml"><span class="secno">1.6 </span>HTML vs XHTML</h3>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>This specification defines an abstract language for describing documents and applications, and
   some APIs for interacting with in-memory representations of resources that use this language.</p>
 
@@ -500,7 +487,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <h3 id="structure-of-this-specification"><span class="secno">1.7 </span>本规范的结构</h3>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>This specification is divided into the following major sections:</p>
 
   <dl><dt><a href="https://www.w3.org/TR/html5/introduction.html#introduction">Introduction</a></dt>
@@ -677,7 +664,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   </dd></dl><h3 id="fingerprint"><span class="secno">1.8 </span>隐私问题</h3>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>Some features of HTML trade user convenience for a measure of user privacy.</p>
 
   <p>In general, due to the Internet's architecture, a user can be distinguished from another by the
@@ -744,7 +731,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   </ul><h3 id="a-quick-introduction-to-html"><span class="secno">1.9 </span>HTML的简介</h3>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>A basic HTML document looks like this:</p>
 
   <pre id="intro-early-example">&lt;!DOCTYPE html&gt;
@@ -875,7 +862,7 @@ a.setAttribute('href', 'http://example.com/'); // change the content attribute d
 
   <h4 id="writing-secure-applications-with-html"><span class="secno">1.9.1 </span>用HTML编写安全的应用</h4>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>When HTML is used to create interactive sites, care needs to be taken to avoid introducing
   vulnerabilities through which attackers can compromise the integrity of the site itself or of the
   site's users.</p>
@@ -993,7 +980,7 @@ a.setAttribute('href', 'http://example.com/'); // change the content attribute d
 
   </dl><!--REMOVE-TOPIC:Security--><h4 id="common-pitfalls-to-avoid-when-using-the-scripting-apis"><span class="secno">1.9.2 </span>使用脚本API时常见错误</h4>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>Scripts in HTML have "run-to-completion" semantics, meaning that the browser will generally run
   the script uninterrupted before doing anything else, such as firing further events or continuing
   to parse the document.</p>
@@ -1048,7 +1035,7 @@ a.setAttribute('href', 'http://example.com/'); // change the content attribute d
 
   <h4 id="how-to-catch-mistakes-when-writing-html:-validators-and-conformance-checkers"><span class="secno">1.9.3 </span>当编写HTML时如何追踪错误：校验器和一致性检查器</h4>
 
-  <p><i>这一部分是非规范性的。</i></p><!--FORK - point to W3C validator instead of whatwg wiki page SF-->
+  <p><i>本节是非规范性的。</i></p><!--FORK - point to W3C validator instead of whatwg wiki page SF-->
   <p>Authors are encouraged to make use of conformance checkers (also known as <i>validators</i>) to
   catch common mistakes. The W3C provides a number of online validation services, including the <a href="http://validator.w3.org/nu/">Nu Markup Validation Service</a>.</p><!-- FORK end -->
 
@@ -1056,7 +1043,7 @@ a.setAttribute('href', 'http://example.com/'); // change the content attribute d
 
   <h3 id="conformance-requirements-for-authors"><span class="secno">1.10 </span>对作者的一致性要求</h3>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>Unlike previous versions of the HTML specification, this specification defines in some detail
   the required processing for invalid documents as well as valid documents.</p><!-- This has led to
   some questioning the purpose of conformance criteria: if there is no ambiguity in how something
@@ -1072,7 +1059,7 @@ a.setAttribute('href', 'http://example.com/'); // change the content attribute d
 
   <h4 id="presentational-markup"><span class="secno">1.10.1 </span>表达标记（Presentational markup）</h4>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>The majority of presentational features from previous versions of HTML are no longer allowed.
   Presentational markup in general has been found to have a number of problems:</p>
 
@@ -1132,7 +1119,7 @@ a.setAttribute('href', 'http://example.com/'); // change the content attribute d
 
   <h4 id="syntax-errors"><span class="secno">1.10.2 </span>语法错误</h4>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>The syntax of HTML is constrained to avoid a wide variety of problems.</p>
 
   <dl><dt>Unintuitive error-handling behavior</dt>
@@ -1366,7 +1353,7 @@ a.setAttribute('href', 'http://example.com/'); // change the content attribute d
 
   <h4 id="restrictions-on-content-models-and-on-attribute-values"><span class="secno">1.10.3 </span>内容模型和属性值的约束</h4>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>Beyond the syntax of the language, this specification also places restrictions on how elements
   and attributes can be specified. These restrictions are present for similar reasons:</p>
 
@@ -1569,7 +1556,7 @@ a.setAttribute('href', 'http://example.com/'); // change the content attribute d
 
   </dl><h3 id="suggested-reading"><span class="secno">1.11 </span>推荐阅读</h3>
 
-  <p><i>这一部分是非规范性的。</i></p>
+  <p><i>本节是非规范性的。</i></p>
   <p>The following documents might be of interest to readers of this specification.</p>
 
   <dl><dt><cite>Character Model for the World Wide Web 1.0: Fundamentals</cite> <a href="https://www.w3.org/TR/html5/references.html#refsCHARMOD">[CHARMOD]</a></dt>
