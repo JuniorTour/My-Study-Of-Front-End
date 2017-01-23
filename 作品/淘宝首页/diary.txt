@@ -53,6 +53,12 @@
     Q:1.Why the taobao uses a lot of negative margin?And the effect can be achieved through the normal way,such as
     position,float or width/height.
 
+    2017年1月23日20:48:31，
+    Think about one thing:the INTEROPERABILITY（互用性）.
+    I find that many parts in my js are similar.
+    Such as the add "active class" and "close".
+    According to my study experience,I should abstract these part to a function that can be interoperated.
+
 <3>BUGS:
 NOT SOLVED!
     1.ul.right-site-nav>li>.dropdown with absolute position is aligned with content but not what I want

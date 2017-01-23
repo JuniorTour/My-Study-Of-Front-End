@@ -1461,12 +1461,14 @@
                         </div>
                     </div>
                     <div class="convenient-function-btn-wrapper clearfix">
-                        <div class="convenient-function-btn function-btn-phone">
+                        <div class="convenient-function-btn active-convenient-function-btn function-btn-phone"
+                        data-target="function-box-phone">
                             <a href="#">
                                 充话费
                             </a>
                         </div>
-                        <div class="convenient-function-btn function-btn-game">
+                        <div class="convenient-function-btn function-btn-game"
+                             data-target="function-box-game">
                             <a href="#">
                                 游戏
                             </a>
@@ -1523,7 +1525,7 @@
                         </div>
                     </div>
                     <div class="convenient-function-box-wrapper">
-                        <div class="function-box-phone">
+                        <div class="convenient-function-box function-box-phone">
                             <div class="phone-tab-group">
                                 <a class="active-phone-tab" href="#">充话费</a>
                                 <a href="#">充话费</a>
@@ -1531,27 +1533,92 @@
                                 <a href="#">充话费</a>
                             </div>
                             <div class="phone-content-group">
-                                <div class="phone-bill-charge-content">
-                                    <div class="phone-input phone-number-input">
-                                        <label for="phone-number">号码</label>
-                                        <input id="phone-number" type="number" placeholder="请输入电话号码">
-                                        <span class="tb-icon">&#xf007b;</span>
-                                    </div>
-                                    <div class="phone-input phone-face-value-input">
-                                        <label for="phone-face-value">面值</label>
-                                        <input id="phone-face-value" type="text" readonly="readonly" value="30元">
-                                        <span class="tb-icon">&#xe683;</span>
-                                    </div>
-                                    <div class="phone-price">
-                                        售价
-                                        <span class="currency-symbol">￥</span>
-                                        <span class="phone-calculated-price">29.4-30</span>
-                                    </div>
-                                    <div class="phone-submit">
-                                        <a href="#" class="main-btn">立即充值</a>
-                                        <span><a href="#">话费充50抢5</a></span>
-                                    </div>
+                                <div class="phone-input phone-number-input">
+                                    <label for="phone-number">号码</label>
+                                    <input id="phone-number" type="number" placeholder="请输入电话号码">
+                                    <span class="tb-icon">&#xf007b;</span>
+                                    <span class="number-location">✔河南移动</span>
+                                    <ul class="phone-number-history-wrapper">
+                                        <li class="phone-number-history">12345678910</li>
+                                        <li class="phone-number-history">22345678910</li>
+                                        <li class="phone-number-history">32345678910</li>
+                                    </ul>
                                 </div>
+                                <div class="phone-input phone-face-value-input">
+                                    <label for="phone-face-value">面值</label>
+                                    <input id="phone-face-value" class="default-cursor"  type="text" readonly="readonly" value="30元">
+                                    <span class="tb-icon">&#xe683;</span>
+                                    <ul class="phone-face-value-wrapper">
+                                        <li class="phone-face-value-option"><span class="money-amount">30</span>元</li>
+                                        <li class="phone-face-value-option"><span class="money-amount">50</span>元</li>
+                                        <li class="phone-face-value-option"><span class="money-amount">100</span>元</li>
+                                        <li class="phone-face-value-option"><span class="money-amount">150</span>元</li>
+                                    </ul>
+                                </div>
+                                <div class="phone-price">
+                                    售价
+                                    <span class="currency-symbol">￥</span>
+                                    <span class="phone-calculated-price">29.4-30</span>
+                                </div>
+                                <div class="phone-submit">
+                                    <a href="#" class="main-btn">立即充值</a>
+                                    <span><a href="#">话费充50抢5</a></span>
+                                </div>
+                                <form class="phone-bill-form" action="#">
+                                    <!--Ues as an hidden form for recording above content by changing value.-->
+                                </form>
+                            </div>
+                        </div>
+                        <div class="convenient-function-box function-box-game">
+                            <div class="phone-tab-group">
+                                <a class="active-phone-tab" href="#">点卡</a>
+                                <a href="#">QQ</a>
+                            </div>
+                            <div class="phone-content-group">
+                                <div class="phone-input phone-number-input">
+                                    <label for="game-name">游戏</label>
+                                    <input id="game-name" type="text" placeholder="请选择游戏名">
+                                    <span class="tb-icon">&#xe635;</span>
+                                    <ul class="phone-number-history-wrapper">
+                                        <li class="phone-number-history">守望先锋</li>
+                                        <li class="phone-number-history">地下城与勇士</li>
+                                        <li class="phone-number-history">剑侠情缘三</li>
+                                    </ul>
+                                </div>
+                                <div class="phone-input phone-face-value-input">
+                                    <label for="game-face-value">面值</label>
+                                    <input id="game-face-value" class="default-cursor" type="text" readonly="readonly" value="30元">
+                                    <span class="tb-icon">&#xe683;</span>
+                                    <ul class="phone-face-value-wrapper">
+                                        <li class="phone-face-value-option"><span class="money-amount">50</span>元</li>
+                                        <li class="phone-face-value-option"><span class="money-amount">100</span>元</li>
+                                        <li class="phone-face-value-option"><span class="money-amount">150</span>元</li>
+                                        <li class="phone-face-value-option"><span class="money-amount">388</span>元</li>
+                                        <li class="phone-face-value-option"><span class="money-amount">688</span>元</li>
+                                    </ul>
+                                </div>
+                                <div class="phone-price">
+                                    售价
+                                    <span class="currency-symbol">￥</span>
+                                    <span class="phone-calculated-price">29.4-30</span>
+                                    <span class="charge-way">
+                                        <label for="auto-charge">
+                                            <input id="auto-charge" type="radio" name="charge-way">
+                                            自动充值
+                                        </label>
+                                        <label for="buy-card">
+                                            <input id="buy-card" type="radio" name="charge-way">
+                                            购买卡密
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="phone-submit">
+                                    <a href="#" class="main-btn">立即充值</a>
+                                    <span><a href="#">超值游戏礼包马上领取</a></span>
+                                </div>
+                                <form class="phone-bill-form" action="#">
+                                    <!--Ues as an hidden form for recording above content by changing value.-->
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -1567,5 +1634,6 @@
 <script src="js/revealIconAndPlaceholder.js"></script>
 <script src="js/taobaoCarousel.js"></script>
 <script src="js/noticeTab.js"></script>
+<script src="js/phoneBillCharge.js"></script>
 </body>
 </html>

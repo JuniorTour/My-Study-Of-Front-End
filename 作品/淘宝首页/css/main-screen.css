@@ -568,12 +568,12 @@ a.login-btn {
     position: relative;
     /*z-index: 1;*/
 }
-.convenient-function-btn:hover {
+.active-convenient-function-btn {
     border: 1px solid #f40;
     /*border-bottom-color: transparent;*/
     z-index:2;
 }
-.convenient-function-btn:hover a {
+.active-convenient-function-btn a {
     padding-bottom: 5px;
 }
 .convenient-function-btn a {
@@ -584,7 +584,7 @@ a.login-btn {
     padding: 48px 0 4px 0;
     display: inline-block;
 }
-.function-btn--game a {
+.function-btn-game a {
     background-position-y: -28px;
 }
 .function-btn-travel a {
@@ -598,7 +598,8 @@ a.login-btn {
     left:0;
     z-index:1;
 }
-.function-box-phone {
+.convenient-function-box {
+    display: none;
     background-color: #fff;
     width:273px;
     height:150px;
@@ -619,6 +620,7 @@ a.login-btn {
 }
 .phone-content-group {
     line-height:24px;
+    position: relative;
 }
 .phone-input {
     width:228px;
@@ -647,8 +649,42 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-#phone-face-value {
+.default-cursor {
     cursor: default;
+}
+.number-location {
+    display: none;
+    color: #999;
+    position: absolute;
+    top: 0;
+    right: 70px;
+}
+.phone-number-history-wrapper {
+    display: none;
+    width:188px;
+    background-color: #fff;
+    position: absolute;
+    top:26px;
+    left:40px;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+.phone-number-history {
+    cursor: pointer;
+    width:100%;
+    color: #000;
+    font-size: 14px;
+    font-weight:700;
+    line-height:30px;
+    border-bottom: 1px solid #eee;
+    padding-left: 20px;
+}
+.phone-number-history:last-child {
+    border-bottom: none;
+}
+.phone-number-history:hover {
+    color: #f40;
+    background-color: #FFECE5;
 }
 .phone-input .tb-icon {
     color: #CACACA;
@@ -663,6 +699,36 @@ input[type="number"] {
     color: #666;
     margin: 6px 0;
 }
+.phone-face-value-wrapper {
+    display: none;
+    width:188px;
+    background-color: #fff;
+    position: absolute;
+    top:52px;
+    left:40px;
+    border: 1px solid #eee;
+    border-bottom:none;
+    overflow: hidden;
+}
+.phone-face-value-option {
+    cursor: pointer;
+    float: left;
+    width:88px;
+    line-height:26px;
+    padding-left: 5px;
+    /*border-left: 1px solid #eee;*/
+    border-bottom: 1px solid #eee;
+}
+.phone-face-value-option:nth-child(2n) {
+    border-left: 1px solid #eee;
+}
+.phone-face-value-option:hover {
+    color: #f40;
+    background-color: #FFECE5;
+}
+.money-amount {
+    font-weight:700;
+}
 .currency-symbol {
     color: #999;
 }
@@ -675,4 +741,10 @@ input[type="number"] {
 }
 .phone-submit span:hover {
     color: #999;
+}
+.phone-bill-form {
+    display: none;
+}
+.charge-way input {
+    vertical-align: text-top;
 }
