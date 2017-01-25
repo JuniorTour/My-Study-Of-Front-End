@@ -1473,12 +1473,14 @@
                                 游戏
                             </a>
                         </div>
-                        <div class="convenient-function-btn function-btn-travel">
+                        <div class="convenient-function-btn function-btn-travel"
+                             data-target="function-box-phone">
                             <a href="#">
                                 旅行
                             </a>
                         </div>
-                        <div class="convenient-function-btn function-btn-insurance">
+                        <div class="convenient-function-btn function-btn-insurance"
+                             data-target="function-box-game">
                             <a href="#">
                                 车险
                             </a>
@@ -1525,18 +1527,21 @@
                         </div>
                     </div>
                     <div class="convenient-function-box-wrapper">
-                        <div class="convenient-function-box function-box-phone">
+                        <div class="convenient-function-box function-box-phone active-function-box">
                             <div class="phone-tab-group">
                                 <a class="active-phone-tab" href="#">充话费</a>
                                 <a href="#">充话费</a>
                                 <a href="#">充话费</a>
                                 <a href="#">充话费</a>
+                                <div class="convenient-box-close">
+                                    <i class="tb-icon">&#xe63d;</i>
+                                </div>
                             </div>
                             <div class="phone-content-group">
                                 <div class="phone-input phone-number-input">
                                     <label for="phone-number">号码</label>
                                     <input id="phone-number" type="number" placeholder="请输入电话号码">
-                                    <span class="tb-icon">&#xf007b;</span>
+                                    <span class="number-history-btn tb-icon">&#xf007b;</span>
                                     <span class="number-location">✔河南移动</span>
                                     <ul class="phone-number-history-wrapper">
                                         <li class="phone-number-history">12345678910</li>
@@ -1573,6 +1578,9 @@
                             <div class="phone-tab-group">
                                 <a class="active-phone-tab" href="#">点卡</a>
                                 <a href="#">QQ</a>
+                                <div class="convenient-box-close">
+                                    <i class="tb-icon">&#xe63d;</i>
+                                </div>
                             </div>
                             <div class="phone-content-group">
                                 <div class="phone-input phone-number-input">
@@ -1587,7 +1595,7 @@
                                 </div>
                                 <div class="phone-input phone-face-value-input">
                                     <label for="game-face-value">面值</label>
-                                    <input id="game-face-value" class="default-cursor" type="text" readonly="readonly" value="30元">
+                                    <input id="game-face-value" class="default-cursor" type="text" readonly="readonly" value="50元">
                                     <span class="tb-icon">&#xe683;</span>
                                     <ul class="phone-face-value-wrapper">
                                         <li class="phone-face-value-option"><span class="money-amount">50</span>元</li>
@@ -1600,7 +1608,7 @@
                                 <div class="phone-price">
                                     售价
                                     <span class="currency-symbol">￥</span>
-                                    <span class="phone-calculated-price">29.4-30</span>
+                                    <span class="phone-calculated-price">50</span>
                                     <span class="charge-way">
                                         <label for="auto-charge">
                                             <input id="auto-charge" type="radio" name="charge-way">

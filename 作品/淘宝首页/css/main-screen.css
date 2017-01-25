@@ -607,6 +607,9 @@ a.login-btn {
     border: 1px solid #f40;
     position: absolute;
 }
+.active-function-box {
+    display: block;
+}
 .phone-tab-group {
     height:26px;
     line-height:26px;
@@ -617,6 +620,25 @@ a.login-btn {
 }
 .phone-tab-group a.active-phone-tab {
     color: #f43000;
+}
+.convenient-box-close {
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    color: #999;
+    text-align: center;
+    line-height:18px;
+    position: absolute;
+    top: 0;
+    right:0;
+    cursor: pointer;
+}
+.convenient-box-close .tb-icon {
+    margin-right:0;
+}
+.convenient-box-close:hover {
+    background-color: #eee;
+    color: #666;
 }
 .phone-content-group {
     line-height:24px;
@@ -679,6 +701,9 @@ input[type="number"] {
     border-bottom: 1px solid #eee;
     padding-left: 20px;
 }
+.active-function-box .active-phone-number-history {
+    display: block;
+}
 .phone-number-history:last-child {
     border-bottom: none;
 }
@@ -709,6 +734,9 @@ input[type="number"] {
     border: 1px solid #eee;
     border-bottom:none;
     overflow: hidden;
+}
+.active-phone-face-value-wrapper {
+    display: block;
 }
 .phone-face-value-option {
     cursor: pointer;
