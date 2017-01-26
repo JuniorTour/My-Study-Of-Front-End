@@ -776,3 +776,6 @@ input[type="number"] {
 .charge-way input {
     vertical-align: text-top;
 }
+.active-display-block {
+    display: block;
+}

@@ -59,6 +59,17 @@
     Such as the add "active class" and "close".
     According to my study experience,I should abstract these part to a function that can be interoperated.
 
+    2017年1月26日21:56:23，
+    Not a happy new year,but a bit of upset.
+    Puzzled by many things...
+
+    I decided to pause this project at now,because
+    1.I fell like I cannot learn more new from it.
+    2.And I am eager to learn some new,such as the back-end.
+    3.I am tired of this "huge" project a bit.
+
+    Then good bye,cheer up!
+
 <3>BUGS:
 NOT SOLVED!
     1.ul.right-site-nav>li>.dropdown with absolute position is aligned with content but not what I want
