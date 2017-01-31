@@ -262,15 +262,15 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
   <p><i>本节是非规范性的。</i></p>
   <p>万维网的标记语言一直是HTML。HTML主要被设计作为一种语言，语义化地描述科学的文档，尽管近年来其总体设计和适配已经使它被用于描述许多其他类型的文档。</p>
 
-  <p>其中没有被HTML充分探讨（address）的主要部分（area）是一个模糊的主题——它被称作万维网应用（Web Application）。本规范师徒改正这一点，同时更新HTML规范来探讨（address）近年来出现的一些问题。</p>
+  <p>其中没有被HTML充分探讨（address）的主要部分（area）是一个模糊的主题——它被称作网页应用（Web Application）。本规范师徒改正这一点，同时更新HTML规范来探讨（address）近年来出现的一些问题。</p>
 
 
   <h3 id="audience"><span class="secno">1.2</span>读者</h3>
 
   <p><i>本节是非规范性的。</i></p>
-  <p>本规范面向使用了本规范所定义特性的文档和脚本的作者们<span class="impl">，运行在页面上使用了本规范所定义特性的工具的实现者们，以及想要实现（establish）关于本规范的文档或实现的正确性的个人。</span></p>
+  <p>本规范面向使用了本规范所定义特性的文档和脚本的作者们<span class="impl">，运行在页面上使用了本规范所定义特性的工具的实现者们，以及想要建立文档的正确性（correctness of documents）或针对本规范的需求的实现的个人。</span></p>
 
-  <p>本文档可能不适合对于万维网技术还没有基本熟悉的读者，因为它在某些地方为准确性牺牲了清晰性或为简洁性牺牲了完整性。更深入浅出的（approachable）教程和创作指南可以提供更合适的（gentler）介绍。</p>
+  <p>本文档可能不适合对于网页技术还没有基本熟悉的读者，因为它在某些地方为准确性牺牲了清晰性或为简洁性牺牲了完整性。更深入浅出的教程和创作指南可以提供更合适的介绍。</p>
 
   <p>特别地，熟悉DOM的基础对于完全理解本规范更技术性的部分是必要的。对于 Web IDL， HTTP，XML，Unicode， character encodings，JavaScript，和 CSS 的理解也会适当地有帮助，但这并不是必须的。</p>
 
@@ -278,11 +278,11 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
   <h3 id="scope"><span class="secno">1.3 </span>涵盖范围</h3>
 
   <p><i>本节是非规范性的。</i></p>
-  <p>本规范只限于向创作万维网上从静态页面到动态应用的这一范围内的无障碍页面提供语义层次的（semantic-level）标记语言和相关语义层次的（semantic-level）脚本API。</p>
+  <p>本规范只限于向在万维网上创作从静态页面到动态应用的这一范围内的无障碍页面提供语义层的（semantic-level）标记语言和相关语义层的脚本API。</p>
 
-  <p>本规范的涵盖范围不包括提供定制具体媒体外观（media-specific customization of presentation）的机制（尽管本规范的结尾包括万维网浏览器默认的渲染规则，且提供一些用于连接上（hooking into）CSS的机制作为本语言的一部分）。</p>
+  <p>本规范的涵盖范围不包括提供定制具体媒体显示（media-specific customization of presentation）的机制（尽管本规范的结尾包括网页浏览器默认的渲染规则，且提供一些用于连接上（hooking into）CSS的机制作为本语言的一部分）。</p>
 
-  <p>本规范的涵盖范围不是描绘一整个操作系统。特别地，硬件配置软件、图像操作工具和应用期望用户日常使用高端工作站（high-end workstations）的超出了范围。就应用而言，本规范特别的针对期望被用户偶尔使用或经常使用但在不同场所、有着较低CPU需求的应用。这种应用的例子包括在线购物系统、搜索系统、游戏（尤其是多人在线游戏）、公共电话簿或地址簿、通讯软件（电子邮件客户端、即时通讯客户端、讨论软件）、文档编辑系统等等。</p>
+  <p>本规范的范围（scope）不是去描绘一整个操作系统。特别地，硬件配置软件、图像操作工具和期望用户日常使用高端工作站（high-end workstations）的应用超出了范围。就应用而言，本规范特别地针对期望被用户偶尔或经常使用，但在不同场所、有着较低CPU需求的应用。这种应用的例子包括在线购物系统、搜索系统、游戏（尤其是多人在线游戏）、公共电话簿或地址簿、通讯软件（电子邮件客户端、即时通讯客户端、讨论软件）、文档编辑系统等等。</p>
 
 
   <h3 id="history-0"><span class="secno">1.4 </span>历史</h3>
@@ -292,40 +292,21 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <p>随着W3C的创立，HTML的发展再次改换了地点。第一次扩充HTML失败的尝试是在1995年即HTML 3.0，之后转向了一条更务实的路径即HTML3.2，HTML3.2在1997完成。HTML4 在同一年迅速地随之而来。</p>
 
-  <p>下一年，W3C成员决定停止发展HTML，并且转而从事基于XML的等价物，称之为XHTML。 <!-- http://www.w3.org/MarkUp/future/#summary --> 这开始于XML之中HTML4的再形成（reformulation），即XHTML1.0，其中除了新的序列化（serialization），没有添加新的特性，这项工作完成于2000年。XHTML 1.0之后，W3C的焦点转向了使它更容易在XHTML模块化（Modularization）的旗帜下被其他的工作组扩展。与此同时，W3C也致力于一门不兼容早期HTML和XHTML的新语言，将其称之为XHTML2</p>
+  <p>下一年，W3C成员决定停止发展HTML，并且转而致力于称之为XHTML的基于XML的等价物。 <!-- http://www.w3.org/MarkUp/future/#summary --> 这开始于XML之中HTML4的再形成（reformulation），即XHTML1.0，其中除了新的序列化（serialization），没有添加新的特性，这项工作完成于2000年。XHTML 1.0之后，W3C的焦点转向了使它更容易在XHTML模块化（Modularization）的旗帜下被其他的工作组扩展。与此同时，W3C也致力于一门不兼容早期HTML和XHTML的新语言，将其称之为XHTML2</p>
 
-  <p>在1998年HTML的发展停滞的时候，部分由浏览器厂商开发的HTML的API以DOM一级（1998年）和DOM二级核心以及DOM二级HTML（开始于2000年，结束于2003年）的名义指定（specified）和发布。随着一些DOM三级规范于2004年发布，但工作组却即将在全部三级草案完成前解散（being closed），这些努力逐渐消逝了。</p>
+  <p>在1998年HTML的发展停滞的时候，部分由浏览器厂商开发的HTML的API以DOM一级（1998年）和DOM二级核心以及DOM二级HTML（开始于2000年，结束于2003年）的名义指定（specified）和发布。随着一些DOM三级规范于2004年发布，但工作组却即将在全部三级草案完成前解散（being closed），这些努力逐渐消失了。</p>
 
-  <p>在2003年，一项定位成下一代万维网表单的科技，XForms的发布，引了发展HTML本身，而不是为它寻找替代品的兴趣。这个兴趣产生于XML作为万维网技术部署的实现受限于全新的技术（比如RSS 和之后的Atom），却并没有作为一个替代品替代现存的已部署的技术（如HTML）。</p>
+  <p>在2003年，一项定位成下一代网页表单的科技，XForms的发布，引发了发展HTML本身，而不是为它寻找替代品的兴趣。这个兴趣产生于XML作为万维网技术部署的实现受限于全新的技术（比如RSS和之后的Atom），却并没有作为一个替代品替代现存的已部署的技术（如HTML）。</p>
 
-  <p>A proof of concept to show that it was possible to extend HTML4's forms to provide many of the
-  features that XForms 1.0 introduced, without requiring browsers to implement rendering engines
-  that were incompatible with existing HTML Web pages, was the first result of this renewed
-  interest. At this early stage, while the draft was already publicly available, and input was
-  already being solicited from all sources, the specification was only under Opera Software's
-  copyright.</p>
+  <p>表明扩展HTML4的表单来提供许多XForms1.0引入的特性，而不需要浏览器来实现和现存的HTML网页不兼容的渲染引擎，这个想法是可能的的证据是这个新兴趣的第一个结果。在早期，当已经公开草案，从所有的途径征求了投入时，本规范只属于Opera Software版权所有。</p>
 
-  <p>The idea that HTML's evolution should be reopened was tested at a W3C workshop in 2004, where
-  some of the principles that underlie the HTML5 work (described below), as well as the
-  aforementioned early draft proposal covering just forms-related features, were presented to the
-  W3C jointly by Mozilla and Opera. The proposal was rejected on the grounds that the proposal
-  conflicted with the previously chosen direction for the Web's evolution; the W3C staff and
-  membership voted to continue developing XML-based replacements instead.</p>
+  <p>2004年的一次W3C研讨会测试了HTML的发展应该重新开始的想法，在这次研讨会之中，一些原则为HTML5（见下文）的工作奠定了基础，也包括前文所述的由Mozilla和Opera共同提供给W3C，只涵盖表单相关特性的提案。该提议由于与之前所选择的万维网发展方向相背而被拒绝；W3C的工作人员和成员反而投票决定继续发展基于XML的替代品。</p>
 
-  <p>Shortly thereafter, Apple, Mozilla, and Opera jointly announced their intent to continue
-  working on the effort under the umbrella of a new venue called the WHATWG. A public mailing list
-  was created, and the draft was moved to the WHATWG site. The copyright was subsequently amended to
-  be jointly owned by all three vendors, and to allow reuse of the specification.</p>
+  <p>不久之后，Apple，Mozilla和Opera共同宣布了他们将继续在一个名为WHATWG的新会场（new venue）的组织下工作的意图。他们制作了一份公共邮件列表，并把草案移到了WHATWG的网站。随后将版权修订为由三个供应商共同拥有，并且允许重新使用规范。</p>
 
-  <p>The WHATWG was based on several core principles, in particular that technologies need to be
-  backwards compatible, that specifications and implementations need to match even if this means
-  changing the specification rather than the implementations, and that specifications need to be
-  detailed enough that implementations can achieve complete interoperability without
-  reverse-engineering each other.</p>
+  <p>WHATWG基于一些核心原则，特别地，他们的技术需要向下兼容（backward compatible）；规范和实现需要匹配，即使这意味着需要改变规范而不是改变实现；规范需要足够详细以至于实现可以达到完备的互用性而不必互相逆向工程（reverse-engineering，译注：指对产品进行技术拆解的过程）。</p>
 
-  <p>The latter requirement in particular required that the scope of the HTML5 specification include
-  what had previously been specified in three separate documents: HTML4, XHTML1, and DOM2 HTML. It
-  also meant including significantly more detail than had previously been considered the norm.</p>
+  <p>后面的需求特别地需要HTML5规范的涵盖范围包括先前在三份单独的文档：HTML4，XHTML1和DOM2 HTML之中规定了的部分。这也意味着包括比以前的规范所考虑到的更多的细节。</p>
 
   <p>In 2006, the W3C indicated an interest to participate in the development of HTML5 after all,
   and in 2007 formed a working group chartered to work with the WHATWG on the development of the
