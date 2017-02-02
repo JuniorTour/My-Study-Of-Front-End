@@ -294,7 +294,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <p>下一年，W3C成员决定停止发展HTML，并且转而致力于称之为XHTML的基于XML的等价物。 <!-- http://www.w3.org/MarkUp/future/#summary --> 这开始于XML之中HTML4的再形成（reformulation），即XHTML1.0，其中除了新的序列化（serialization），没有添加新的特性，这项工作完成于2000年。XHTML 1.0之后，W3C的焦点转向了使它更容易在XHTML模块化（Modularization）的旗帜下被其他的工作组扩展。与此同时，W3C也致力于一门不兼容早期HTML和XHTML的新语言，将其称之为XHTML2</p>
 
-  <p>在1998年HTML的发展停滞的时候，部分由浏览器厂商开发的HTML的API以DOM一级（1998年）和DOM二级核心以及DOM二级HTML（开始于2000年，结束于2003年）的名义指定（specified）和发布。随着一些DOM三级规范于2004年发布，但工作组却即将在全部三级草案完成前解散（being closed），这些努力逐渐消失了。</p>
+  <p>在1998年HTML的发展停滞的时候，部分由浏览器厂商开发的HTML的API以DOM一级（1998年）和DOM二级核心以及DOM二级HTML（开始于2000年，结束于2003年）的名义规定和发布。随着一些DOM三级规范于2004年发布，但工作组却即将在全部三级草案完成前解散（being closed），这些努力逐渐消失了。</p>
 
   <p>在2003年，一项定位成下一代网页表单的科技，XForms的发布，引发了发展HTML本身，而不是为它寻找替代品的兴趣。这个兴趣产生于XML作为万维网技术部署的实现受限于全新的技术（比如RSS和之后的Atom），却并没有作为一个替代品替代现存的已部署的技术（如HTML）。</p>
 
@@ -308,38 +308,19 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <p>后面的需求特别地需要HTML5规范的涵盖范围包括先前在三份单独的文档：HTML4，XHTML1和DOM2 HTML之中规定了的部分。这也意味着包括比以前的规范所考虑到的更多的细节。</p>
 
-  <p>In 2006, the W3C indicated an interest to participate in the development of HTML5 after all,
-  and in 2007 formed a working group chartered to work with the WHATWG on the development of the
-  HTML5 specification. Apple, Mozilla, and Opera allowed the W3C to publish the specification under
-  the W3C copyright, while keeping a version with the less restrictive license on the WHATWG
-  site.</p>
+  <p>2006年，W3C终究还是表示了有意参与HTML5的发展，并在2007年组建了一个工作组，并特许其为HTML5规范的发展和WHATWG一同工作。Apple，Mozilla和Opera允许W3C以W3C的版权发布该规范，同时在WHATWG网站上保留一份协议较宽松的版本。</p>
 
-    <p>For a number of years, both groups then worked together under the same editor: Ian Hickson.
-  In 2011, the groups came to the conclusion that they had different goals: the W3C wanted to
-  draw a line in the sand for features for a HTML5 Recommendation, while the WHATWG wanted to
-  continue working on a Living Standard for HTML, continuously maintaining the specification
-  and adding new features. In mid 2012, a new editing team was introduced at the W3C to take
-  care of creating a HTML5 Recommendation and prepare a Working Draft for the next HTML
-  version.</p>
+    <p>此后多年，两个工作组在同一个编辑：Ian Hickson的领导下共同工作。2011年，这两个工作组认为他们有着不一样的目标：W3C想要明确划分HTML5推荐标准的特性，然而WHATWG却想要继续发展HTML的现存标准，不断地维护该规范并添加新的特性。在2012年年中，W3C引入了一支新的编辑团队来创作HTML5推荐标准，并为下一个HTML的版本准备工作草案。</p>
 
-  <p>Since then, the W3C HTML WG has been cherry picking patches from the WHATWG that resolved
-  bugs registered on the W3C HTML specification or more accurately represented implemented
-  reality in UAs. At time of publication of this document, patches from the
-  <a href="http://www.whatwg.org/specs/web-apps/current-work/">WHATWG HTML specification</a>
-  have been merged until revision <a href="http://html5.org/r/8152">8152</a> inclusive. The W3C
-  HTML editors have also added patches that resulted from discussions and decisions made by
-  the W3C HTML WG as well a bug fixes from bugs not shared by the WHATWG.
-  
+  <p>此后，W3C HTML工作组一直在从WHATWG之中筛选补丁来解决W3C HTML规范中记录的或是更精确地表现在用户代理实现中的bug。在发布本规范时，一直到<a href="http://html5.org/r/8152">8152</a>版都已合并了来自<a href="http://www.whatwg.org/specs/web-apps/current-work/">WHATWG HTML 规范</a>的补丁。W3C HTML的编辑们也已经添加了由W3C HTML工作组的讨论和决定而产生的补丁以及WHATWG未共享的bug修复。
   </p>
 
-  <p>A separate document is published to document the differences between the HTML specified
-  in this document and the language described in the HTML4 specification. <a href="https://www.w3.org/TR/html5/references.html#refsHTMLDIFF">[HTMLDIFF]</a></p>
+  <p>一份用来记录本文档所规定的HTML与HTML4规范差异的独立的文档也已经发布。<a href="https://www.w3.org/TR/html5/references.html#refsHTMLDIFF">[HTMLDIFF]</a></p>
   
   <h3 id="design-notes"><span class="secno">1.5 </span>设计笔记</h3>
 
   <p><i>本节是非规范性的。</i></p>
-  <p>It must be admitted that many aspects of HTML appear at first glance to be nonsensical and
-  inconsistent.</p>
+  <p>必须承认，HTML的许多方面乍看起来荒谬且前后矛盾。</p>
 
   <p>HTML, its supporting DOM APIs, as well as many of its supporting technologies, have been
   developed over a period of several decades by a wide array of people with different priorities
