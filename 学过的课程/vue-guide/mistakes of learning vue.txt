@@ -1,0 +1,19 @@
+
+The mistakes I made in learning Vue.js
+
+1.el:'#example',  /*need '#'  !!!*/
+
+2.el:'#ele-1'
+    NOT
+    ele:'#ele-1'
+
+3.{{ msg }} should be an attribute of vue instance's data attribute:
+    RIGHT:
+        ...
+        data: {
+            msg:"I love you~"
+        }
+    WRONG:
+        ...
+        msg:"I love you~"
+        ...

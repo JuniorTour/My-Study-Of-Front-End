@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue instance</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="example"></div>
+
+
+<script>
+    function conLog(content) {
+        console.log(content);
+        document.write(content+"<br/>");
+    }
+
+    var MyComponent = Vue.extend({
+        // 扩展选项
+    });
+    // 所有的 `MyComponent` 实例都将以预定义的扩展选项被创建
+    var myComponentInstance = new MyComponent();
+
+    var data = { a: 1 };
+    var vm = new Vue({
+        el:'#example',  /*need '#'  !!!*/
+        data: data,
+        method: function() {
+            conLog("this.a="+this.a);
+        }
+    });
+    conLog("vm.a === data.a : "+(vm.a === data.a)); // -> true
+    // 设置属性也会影响到原始数据
+    vm.a = 2;
+    conLog("after vm.a=2,"+data.a );// -> 2
+    // ... 反之亦然
+    data.a = 3;
+    conLog("after data.a = 3,"+vm.a );// -> 3
+
+    conLog("vm.data===data: "+(vm.$data===data));
+    conLog("vm.$el===document.getElementById('example'): "+(vm.$el === document.getElementById('example')));
+//    vm.method();
+//    Uncaught TypeError: vm.method is not a function.
+//    ???
+</script>
+</body>
+</html>
