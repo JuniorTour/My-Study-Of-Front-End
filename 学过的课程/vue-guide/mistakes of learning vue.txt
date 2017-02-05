@@ -17,3 +17,12 @@ The mistakes I made in learning Vue.js
         ...
         msg:"I love you~"
         ...
+
+4.Control data object need "$":
+     app3.$data.dynamicClass="font-green";
+
+5.If a function is not defined,the error will be remind:
+    vue.js:525 [Vue warn]: Error when rendering root instance:
+    ...
+    vue.js:2229 Uncaught ReferenceError: conLog is not defined
+

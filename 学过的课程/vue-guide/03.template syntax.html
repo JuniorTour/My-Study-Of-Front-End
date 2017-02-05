@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <title>03.template syntax</title>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <style>
+        .font-blue {
+            background-color: red;
+            color: blue;
+        }
+        .font-green {
+            background-color: black;
+            color: green;
+        }
+    </style>
 </head>
 <body>
-<span id="app-1">This will never change: {{ msg }}</span>
+<span id="app-1" v-once>This will never change: {{ msg }}</span>
 
 <div id="app-2" v-html="rawHtml">{{msg}}</div>
 
+<div id="app-3" v-bind:class="dynamicClass">example</div>
+
+<div class="app-4">{{ ok ? 'YES' : 'NO' }}</div>
+
+<div class="app-5">{{ msg.split('').reverse().join('') }}</div>
+
+<p class="app-6" v-if="seen">Now you see me</p>
+
+<a class="app-7" :href="url">url</a>
+
+<p class="app-8">{{'msg' | capitalize}}</p>
+
 <script>
+    function conLog(content) {
+        console.log(content);
+    }
+
     var app1=new Vue({
         el:'#app-1',
         data: {
@@ -23,6 +49,68 @@
         data: {
             msg:"I hate you!",
             rawHtml:"what is raw html?Like a <i>italic</i> or <strong>strong</strong>?"
+        }
+    });
+
+    var app3=new Vue ({
+        el:'#app-3',
+        data: {
+            dynamicClass:"font-blue",
+            changeClass: function () {
+                app3.$data.dynamicClass="font-green";
+            }
+        }
+    });
+
+    var app4=new Vue ({
+        el:'.app-4',
+        data: {
+            ok:true
+        }
+    });
+
+    var app5=new Vue ({
+        el:'.app-5',
+        data: {
+            msg: "reverse me!"
+        }
+    });
+
+    var app6=new Vue ({
+        el:'.app-6',
+        data: {
+            seen: true
+        }
+    });
+
+    var app7=new Vue ({
+        el: '.app-7',
+        data : {
+            url: "http://cn.vuejs.org"
+        }
+    });
+
+//    Vue.filter("capitalize",function (value) {
+//        if (!value) return '';
+//        value = value.toString();
+////        conLog("value.charAt(0).toUpperCase(): "+value.charAt(0).toUpperCase()+"<br/>"+"value.slice(1):"+value.slice(1));
+//        return value.charAt(0).toUpperCase() + value.slice(1);
+//    });
+
+    var app8=new Vue ({
+        el: '.app-8',
+        data: {
+            msg:"allows you to define filters"
+        },
+        filters: {
+            capitalize: function (value) {
+                if (!value) return '';
+                value = value.toString();
+                conLog("value.charAt(0).toUpperCase(): "+value.charAt(0).toUpperCase()+" ,\n"+"value.slice(1):"+value.slice(1));
+                /*value.charAt(0).toUpperCase(): M ,
+                 value.slice(1):sg*/
+                return value.charAt(0).toUpperCase() + value.slice(1);
+            }
         }
     })
 </script>
