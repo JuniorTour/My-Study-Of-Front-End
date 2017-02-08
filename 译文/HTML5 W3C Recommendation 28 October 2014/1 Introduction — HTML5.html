@@ -341,27 +341,16 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
   <h4 id="compliance-with-other-specifications"><span class="secno">1.5.2 </span>与其他规范的一致性</h4>
 
   <p><i>本节是非规范性的。</i></p>
-  <p>This specification interacts with and relies on a wide variety of other specifications. In
-  certain circumstances, unfortunately, conflicting needs have led to this specification violating
-  the requirements of these other specifications. Whenever this has occurred, the transgressions
-  have each been noted as a "<dfn id="willful-violation">willful violation</dfn>", and the reason for the violation has
-  been noted.</p>
+  <p>本规范依赖并互相影响着许多种其他规范。不幸的是，在某些情况下，相互矛盾的需求使得本规范违背了这些其他规范的要求。每次这种过错出现的时候，他们都会被标注为“<dfn id="willful-violation">故意违背（willful violation）</dfn>”，同时也会记录下违背的原因。</p>
 
   <h4 id="extensibility"><span class="secno">1.5.3 </span>可扩展性</h4>
   
     <p><i>本节是非规范性的。</i></p>  
-    <p>HTML has a wide number of extensibility mechanisms that can be used for adding semantics in a
-  safe manner:</p>
+    <p>HTML有大量可以用来为其安全地添加语义的可扩展机制。</p>
 
-  <ul><li>Authors can use the <code data-anolis-xref="attr-class"><a href="https://www.w3.org/TR/html5/dom.html#classes">class</a></code> attribute to extend elements,
-   effectively creating their own elements, while using the most applicable existing "real" HTML
-   element, so that browsers and other tools that don't know of the extension can still support it
-   somewhat well. This is the tack used by microformats, for example.</li>
+  <ul><li>作者们可以用<code data-anolis-xref="attr-class"><a href="https://www.w3.org/TR/html5/dom.html#classes">class</a></code>属性来扩展元素，高效地创建属于他们自己的元素，同时使用最合适的、已有的、真正的HTML元素，以便于那些并不了解这些扩充元素的浏览器和其他工具仍能够较好地支持它们。例如，这是用于微格式（mircroformats）的策略。</li>
 
-   <li>Authors can include data for inline client-side scripts or server-side site-wide scripts to
-   process using the <code data-anolis-xref="attr-data-*"><a href="https://www.w3.org/TR/html5/dom.html#attr-data-*">data-*=""</a></code> attributes. These are guaranteed to
-   never be touched by browsers, and allow scripts to include data on HTML elements that scripts can
-   then look for and process.</li>
+   <li>作者们可以用<code data-anolis-xref="attr-data-*"><a href="https://www.w3.org/TR/html5/dom.html#attr-data-*">data-*=""</a></code> 属性为行内客户端侧的脚本或服务器侧站点范围内的脚本携带（include）用来处理的数据。浏览器保证绝对不会接触到这些数据，同时又允许了脚本在HTML元素上携带脚本可以查询和处理的数据。</li>
 
    <li>Authors can use the <code data-anolis-xref="meta"><a href="https://www.w3.org/TR/html5/document-metadata.html#the-meta-element">&lt;meta name="" content=""&gt;</a></code> mechanism to
    include page-wide metadata by registering <a data-anolis-xref="concept-meta-extensions" href="https://www.w3.org/TR/html5/document-metadata.html#concept-meta-extensions">extensions to the

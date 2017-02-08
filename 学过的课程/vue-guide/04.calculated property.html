@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04.calculated property</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <!-- Since there is already a rich ecosystem of ajax libraries    -->
+    <!-- and collections of general-purpose utility methods, Vue core -->
+    <!-- is able to remain small by not reinventing them. This also   -->
+    <!-- gives you the freedom to just use what you're familiar with. -->
+    <script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
+</head>
+<body>
+<div id="example">
+    <p>Original message: "{{ message }}"</p>
+    <p>Computed reversed message: "{{ reverseMsg }}"</p>
+    <!--A Q:how does it know "reverseMsg" is part of computed property?-->
+    <!--Maybe the A: [Vue warn]: existing instance property "reverseMsg" will be overwritten by
+    a computed property with the same name.-->
+    <!--I think it means that the computed attr has a higher priority.-->
+    <p>Computed reversed message by methods: "{{ reverseMsgMethod() }}"</p>
+</div>
+<div id="demo">{{ fullName }}</div>
+<div id="watch-example">
+    <p>
+        Ask a yes/no question:
+        <input v-model="question">
+        <!--<input v-model="questions">-->
+    </p>
+    <p>{{ answer }}</p>
+</div>
+
+<script>
+    var vm=new Vue({
+        el:"#example",
+        data: {
+            message:"I love you."
+//            reverseMsg:'I replace reverseMsg in data'
+        },
+//        reverseMsg: "",
+        computed: {
+//            message: function() {
+//                return "I hate you.";
+//            },
+            //a computed getter
+            reverseMsg: function () {
+                //this points to the vm instance
+                return this.message.split("").reverse().join("");
+            }
+        },
+        methods: {
+            reverseMsgMethod: function () {
+                return this.message.split("").reverse().join("");
+            }
+        }
+    });
+
+    var vm2=new Vue ({
+        el: "#demo",
+        data:{
+            firstName: "Jean",
+            lastName: "Austin"
+        },
+        computed: {
+            fullName: {
+                get: function () {
+                    return this.firstName+" "+this.lastName;
+                },
+                set: function (newValue) {
+                    var namesArr=newValue.split(" ");
+                    this.firstName=namesArr[0];
+                    this.lastName=namesArr[namesArr.length-1];
+                }
+            }
+        }
+    });
+
+    var vm3=new Vue({
+        el: "#watch-example",
+        data:  {
+            question: "",
+//            questions: "sss",
+            answer: "What is your question?"
+        },
+        watch: {
+            //If question changed,this func will boost:
+            /*Why? Because of vue-model attr?*/
+            /*Yes,by experiment,the 'watch' watch for the property of data.*/
+            questions: function () {
+                this.answer="Waiting for you to typing...";
+                this.getAnswer();
+            }
+        },
+        methods: {
+            // _.debounce 是一个通过 lodash 限制操作频率的函数。
+            // 在这个例子中，我们希望限制访问yesno.wtf/api的频率
+            // ajax请求直到用户输入完毕才会发出
+            // 学习更多关于 _.debounce function (and its cousin
+            // _.throttle), 参考: https://lodash.com/docs#debounce
+            getAnswer: _.debounce(
+                    function () {
+                        var vm=this;
+                        if (this.question.indexOf("?")===-1) {
+                            vm.answer="Question usually contains a question mark.";
+                            return;
+                        }
+                        vm.answer="Thinking...";
+                        axios.get('https://yesno.wtf/api')
+                                .then(function (response) {
+                                    vm.answer = _.capitalize(response.data.answer)
+                                })
+                                .catch(function (error) {
+                                    vm.answer = 'Error! Could not reach the API. ' + error
+                                })
+                    },
+                    //delay for waiting input
+                    500
+            )
+        }
+    })
+</script>
+</body>
+</html>

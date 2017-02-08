@@ -1,13 +1,19 @@
 
 The mistakes I made in learning Vue.js
 
-1.el:'#example',  /*need '#'  !!!*/
+一、Typos:
+el:'#example',
+el:'example',
+/*need '#' selector!!!*/
 
-2.el:'#ele-1'
-    NOT
-    ele:'#ele-1'
+el:'...'  NOT
+ele:'...'
 
-3.{{ msg }} should be an attribute of vue instance's data attribute:
+methods: {...} NOT
+method: {...}
+
+二、Syntax:
+1.{{ msg }} should be an attribute of vue instance's data attribute:
     RIGHT:
         ...
         data: {
@@ -18,10 +24,11 @@ The mistakes I made in learning Vue.js
         msg:"I love you~"
         ...
 
-4.Control data object need "$":
+2.Control data object need "$":
      app3.$data.dynamicClass="font-green";
 
-5.If a function is not defined,the error will be remind:
+三、Error and Warning：
+1.If a function is not defined,the error will be reminded:
     vue.js:525 [Vue warn]: Error when rendering root instance:
     ...
     vue.js:2229 Uncaught ReferenceError: conLog is not defined
