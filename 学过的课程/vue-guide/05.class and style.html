@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>05.class and style</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div class="app-1" v-bind:class="classObject "></div>
+
+<div class="app-1" v-bind:class="classObject">
+    看来，el用类选择符时，只会选择第一个。
+    有点像是，querySelector()。
+</div>
+
+<div class="app-2" v-bind:class="classObject "></div>
+
+<div class="app-3" v-bind:class="[first?second:third,fourth]"></div>
+
+<div class="app-4" v-bind:style="[styleObject,sOTwo]"></div>
+
+<script>
+    var app1=new Vue({
+        el: '.app-1',
+        data: {
+            classObject: {
+                first: true,
+                second: false
+            },
+            classObjectSecond: {
+                third: true
+            }
+        }
+    });
+
+    var app2=new Vue({
+        el: '.app-2',
+        data: {
+            isActive: true,
+            error: null
+        },
+        computed: {
+            classObject: function () {
+                return {
+                    active: this.isActive && !this.error,
+                    'text-danger': this.error && this.error.type === 'fatal'
+                }
+            }
+        }
+    });
+
+    var app3=new Vue({
+        el: '.app-3',
+        data: {
+            first:true,
+            second:"second",
+            third:"third",
+            fourth:"fourth"
+        }
+    });
+
+    var app4=new Vue ({
+        el: '.app-4',
+        data: {
+            styleObject: {
+                fontSize: "30px",
+                backgroundColor: "red"
+            },
+            sOTwo: {
+                transform:'rotate(7deg)'
+            }
+        }
+    })
+
+</script>
+</body>
+</html>

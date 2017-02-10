@@ -27,6 +27,24 @@ method: {...}
 2.Control data object need "$":
      app3.$data.dynamicClass="font-green";
 
+3.Divide instance by ';' NOT ',':
+    var vm1=new Vue({});    NOT     var vm1=new Vue({}),
+    var vm2=new Vue({})                     var vm2=new Vue({})
+
+4.v-bind:class="classObject" ONLY support one object,v-bind:class="classObjectOne classObjectTwo" is WRONG.
+    <div class="app-1" v-bind:class="classObject classObjectSecond"></div>
+    - invalid expression: v-bind:class="classObject classObjectSecond"
+
+    If we need apply a list of class,we can use Array syntax:
+    <div v-bind:class="[activeClass, errorClass]">
+
+    data: {
+      activeClass: 'active',
+      errorClass: 'text-danger'
+    }
+
+5.Leap over section: "class and style-apply on component"
+
 三、Error and Warning：
 1.If a function is not defined,the error will be reminded:
     vue.js:525 [Vue warn]: Error when rendering root instance:

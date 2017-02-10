@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06.conditional rendering</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div class="app-1">
+    <h1 v-if="ok">Yes</h1>
+    <!--What is 'ok' ???-->
+    <!--After my test,I think the 'ok' can be a data property or computed property.-->
+    <h1 v-else>No</h1>
+</div>
+
+<!--<template class="app-2" v-if="loginType === 'username'">-->
+    <!--<label>Username</label>-->
+    <!--<input placeholder="Enter your username">-->
+<!--</template>-->
+
+<div id="no-key-example" class="demo">
+    <div v-if="loginType === 'username'">
+        <label>{{loginType}}</label>
+        <input v-bind:placeholder="'Enter your '+loginType" key="username-input">
+    </div>
+    <div v-else>
+    <label>{{loginType}}</label>
+    <input v-bind:placeholder="'Enter your '+loginType" key="username-input">
+    </div>
+    <button v-on:click="toggleLoginType">Toggle login type</button>
+</div>
+<!--<div id="no-key-example" class="demo" v-if="loginType === 'username'">-->
+    <!--<div>-->
+        <!--<label>{{loginType}}</label>-->
+        <!--<input v-bind:placeholder="'Enter your '+loginType" key="username-input">-->
+    <!--</div>-->
+    <!--<button v-on:click="toggleLoginType">Toggle login type</button>-->
+<!--</div>-->
+
+<!--Even after check the source code in the page,I can not figure out it...-->
+
+<script>
+    var app3=new Vue({
+        el: '#no-key-example',
+        data: {
+            loginType: 'Username'
+        },
+        methods: {
+            toggleLoginType: function () {
+//                alert("click");
+                return this.loginType = this.loginType === 'Username' ? 'Email' : 'Username'
+            }
+        }
+    })
+</script>
+
+<script>
+    var app1=new Vue({
+        el: '.app-1',
+        data: {
+            ok: true
+        },
+//        ok: false,
+        computed: {
+//            ok: function () {
+////                return false;
+//                return true;
+//            }
+        }
+    });
+//
+//    var app2=new Vue({
+//        el: '.app-2',
+//        data: {
+//            loginType: "username"
+//        }
+//    });
+//
+//    var ToggleLoginTypeBtn=new Vue({
+//        el: ".toggle-login-type",
+//        onclick: function () {
+//            app2.loginType="Email"
+//        }
+//    })
+</script>
+</body>
+</html>
