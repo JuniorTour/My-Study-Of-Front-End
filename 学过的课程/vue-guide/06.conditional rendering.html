@@ -19,25 +19,22 @@
 <!--</template>-->
 
 <div id="no-key-example" class="demo">
-    <div v-if="loginType === 'username'">
+    <div v-if="loginType === 'Username'">
         <label>{{loginType}}</label>
-        <input v-bind:placeholder="'Enter your '+loginType" key="username-input">
+        <input class="username-input" v-bind:placeholder="'Enter your '+loginType" key="username-input">
+        <p>Username</p>
     </div>
     <div v-else>
     <label>{{loginType}}</label>
-    <input v-bind:placeholder="'Enter your '+loginType" key="username-input">
+    <input class="username-input"   v-bind:placeholder="'Enter your '+loginType" key="email-input">
+    <p>Email</p>
     </div>
     <button v-on:click="toggleLoginType">Toggle login type</button>
 </div>
-<!--<div id="no-key-example" class="demo" v-if="loginType === 'username'">-->
-    <!--<div>-->
-        <!--<label>{{loginType}}</label>-->
-        <!--<input v-bind:placeholder="'Enter your '+loginType" key="username-input">-->
-    <!--</div>-->
-    <!--<button v-on:click="toggleLoginType">Toggle login type</button>-->
-<!--</div>-->
 
 <!--Even after check the source code in the page,I can not figure out it...-->
+
+<!--key attribute should be a unique value.-->
 
 <script>
     var app3=new Vue({
