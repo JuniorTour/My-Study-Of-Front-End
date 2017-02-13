@@ -34,22 +34,9 @@
 
 <!--Even after check the source code in the page,I can not figure out it...-->
 
-<!--key attribute should be a unique value.-->
+<!--key attribute should be a unique value.
+        Just like a mark.-->
 
-<script>
-    var app3=new Vue({
-        el: '#no-key-example',
-        data: {
-            loginType: 'Username'
-        },
-        methods: {
-            toggleLoginType: function () {
-//                alert("click");
-                return this.loginType = this.loginType === 'Username' ? 'Email' : 'Username'
-            }
-        }
-    })
-</script>
 
 <script>
     var app1=new Vue({
@@ -79,6 +66,20 @@
 //            app2.loginType="Email"
 //        }
 //    })
+
+
+    var app3=new Vue({
+        el: '#no-key-example',
+        data: {
+            loginType: 'Username'
+        },
+        methods: {
+            toggleLoginType: function () {
+//                alert("click");
+                return this.loginType = this.loginType === 'Username' ? 'Email' : 'Username'
+            }
+        }
+    })
 </script>
 </body>
 </html>

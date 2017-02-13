@@ -350,28 +350,17 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <ul><li>作者们可以用<code data-anolis-xref="attr-class"><a href="https://www.w3.org/TR/html5/dom.html#classes">class</a></code>属性来扩展元素，高效地创建属于他们自己的元素，同时使用最合适的、已有的、真正的HTML元素，以便于那些并不了解这些扩充元素的浏览器和其他工具仍能够较好地支持它们。例如，这是用于微格式（mircroformats）的策略。</li>
 
-   <li>作者们可以用<code data-anolis-xref="attr-data-*"><a href="https://www.w3.org/TR/html5/dom.html#attr-data-*">data-*=""</a></code> 属性为行内客户端侧的脚本或服务器侧站点范围内的脚本携带（include）用来处理的数据。浏览器保证绝对不会接触到这些数据，同时又允许了脚本在HTML元素上携带脚本可以查询和处理的数据。</li>
+   <li>作者们可以用<code data-anolis-xref="attr-data-*"><a href="https://www.w3.org/TR/html5/dom.html#attr-data-*">data-*=""</a></code> 属性为行内客户端侧的脚本或服务器侧站点范围内的脚本携带（include）用来处理的数据。浏览器被保证绝对不会接触到这些数据，同时又允许脚本在HTML元素上携带脚本可以查询和处理的数据。</li>
 
-   <li>Authors can use the <code data-anolis-xref="meta"><a href="https://www.w3.org/TR/html5/document-metadata.html#the-meta-element">&lt;meta name="" content=""&gt;</a></code> mechanism to
-   include page-wide metadata by registering <a data-anolis-xref="concept-meta-extensions" href="https://www.w3.org/TR/html5/document-metadata.html#concept-meta-extensions">extensions to the
-   predefined set of metadata names</a>.</li>
+   <li>作者们可以用<code data-anolis-xref="meta"><a href="https://www.w3.org/TR/html5/document-metadata.html#the-meta-element">&lt;meta name="" content=""&gt;</a></code> 机制通过注册<a data-anolis-xref="concept-meta-extensions" href="https://www.w3.org/TR/html5/document-metadata.html#concept-meta-extensions">预定义的元数据名集的扩充（extensions to the predefined set of metadata names）</a>来包括页面范围内的元数据（metadata）。</li>
 
-   <li>Authors can use the <code data-anolis-xref="attr-hyperlink-rel"><a href="https://www.w3.org/TR/html5/links.html#attr-hyperlink-rel">rel=""</a></code> mechanism to annotate
-   links with specific meanings by registering <a data-anolis-xref="concept-rel-extensions" href="https://www.w3.org/TR/html5/links.html#concept-rel-extensions">extensions to
-   the predefined set of link types</a>. This is also used by microformats. Additionally, 
-   absolute URLs that do not contain any non-ASCII characters, nor 
-   characters in the range U+0041 (LATIN CAPITAL LETTER A) through 
-   U+005A (LATIN CAPITAL LETTER Z) (inclusive), may be used as link 
-   types.</li><!--FORK-->
+   <li>作者们可以用 <code data-anolis-xref="attr-hyperlink-rel"><a href="https://www.w3.org/TR/html5/links.html#attr-hyperlink-rel">rel=""</a></code>机制通过注册<a data-anolis-xref="concept-rel-extensions" href="https://www.w3.org/TR/html5/links.html#concept-rel-extensions">预定义的链接类型集的扩充（extensions to the predefined set of link types）</a>来用特定的意义注释链接。这也被用于微格式（microformats）。此外，不包括任何非ASCII字符以及从U+0041 (LATIN CAPITAL LETTER A)到U+005A (LATIN CAPITAL LETTER Z) （包括其本身）这一范围内字符的绝对URL也可与用作链接类型。</li><!--FORK-->
 
-   <li>Authors can embed raw data using the <code data-anolis-xref="script"><a href="https://www.w3.org/TR/html5/scripting-1.html#the-script-element">&lt;script type=""&gt;</a></code>
-   mechanism with a custom type, for further handling by inline or server-side scripts.</li>
+   <li>作者们可以通过<code data-anolis-xref="script"><a href="https://www.w3.org/TR/html5/scripting-1.html#the-script-element">&lt;script type=""&gt;</a></code>机制通过自定义类型来嵌入原始数据，并由在线或服务器端的脚本来进一步处理。</li>
 
-   <li>Authors can create <a data-anolis-xref="plugin" href="https://www.w3.org/TR/html5/infrastructure.html#plugin">plugins</a> and invoke them using the
-   <code><a href="https://www.w3.org/TR/html5/embedded-content-0.html#the-embed-element">embed</a></code> element. This is how Flash works.</li>
+   <li>作者们可以创建<a data-anolis-xref="plugin" href="https://www.w3.org/TR/html5/infrastructure.html#plugin">插件</a>，并通过<code><a href="https://www.w3.org/TR/html5/embedded-content-0.html#the-embed-element">嵌入（embed）</a></code>元素调用它们。这就是Flash如何生效的。</li>
 
-   <li>Authors can extend APIs using the JavaScript prototyping mechanism. This is widely used by
-   script libraries, for instance.</li><!--MD-->
+   <li>作者们可以通过JavaScript扩展APIThis is widely used by script libraries, for instance.</li><!--MD-->
 
 
 

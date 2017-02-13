@@ -19,9 +19,21 @@
 </ul>
 
 <ul class="repeat-object">
-    <div v-for="(value,index,key) in object">
+    <li v-for="(value,index,key) in object">
         {{value}},{{index}},{{key}}
-    </div>
+    </li>
+</ul>
+
+<div class="int-iteration">
+    <div v-for="n in 5">{{ n }}</div>
+</div>
+
+<ul class="app-3">
+    <li v-for="n in evenNumbers">{{n}}</li>
+</ul>
+
+<ul class="app-4">
+    <li v-for="n in even(numbers)">{{n}}</li>
 </ul>
 
 <script>
@@ -55,6 +67,42 @@
                 day: "11",
                 month:"Feb",
                 year:2017
+            }
+        }
+    });
+
+    var intIteration=new Vue({
+        el:'.int-iteration',
+        data: {
+//            n:2
+            //have no effect.
+        }
+    });
+
+    var app3=new Vue ({
+        el: ".app-3",
+        data: {
+            numbers: [1,2,3,4,5,6,7]
+        },
+        computed: {
+            evenNumbers: function () {
+                return this.numbers.filter(function (n) {
+                    return n%2===0
+                })
+            }
+        }
+    });
+
+    var app4=new Vue ({
+        el: ".app-4",
+        data: {
+            numbers: [10,11,12,13,14,15]
+        },
+        methods: {
+            even: function (numbers) {
+                return numbers.filter(function (n) {
+                    return n%2!=0
+                })
             }
         }
     })

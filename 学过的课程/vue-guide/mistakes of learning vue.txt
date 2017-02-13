@@ -43,7 +43,27 @@ method: {...}
       errorClass: 'text-danger'
     }
 
-5.Leap over section: "class and style-apply on component"
+5.Leap over section: "class and style-apply on component" , "components and v-for" in section "list rendering"
+"components and v-for" in list-rendering,
+
+6.methods and computed is different:
+    ,
+            computed: {
+                evenNumbers: function () {
+                    return this.numbers.filter(function (n) {
+                        return n%2===0
+                    })
+                }
+            }
+
+    ,
+            methods: {
+                even: function (numbers) {
+                    return numbers.filter(function (n) {
+                        return n%2!=0
+                    })
+                }
+            }
 
 三、Error and Warning：
 1.If a function is not defined,the error will be reminded:

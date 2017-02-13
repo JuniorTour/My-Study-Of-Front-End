@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08.event handling</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div class="app-1">
+    <button v-on:click="counter+=1" @keyup.tab="counter+=10;">add one</button>
+    <p>{{counter}}</p>
+</div>
+
+<div class="app-2">
+    <button v-on:click="myMethod($event)">Nice to meet you!</button>
+</div>
+
+<form v-on:submit.prevent="onSubmit">
+    <input type="text">
+    <button type="submit">Submit will not reload the page.</button>
+    <!--No effect???
+           And what is "reload "??-->
+</form>
+
+<script>
+    new Vue ({
+        el: ".app-1",
+        data: {
+            counter: 0
+        }
+    });
+
+    new Vue ({
+        el: ".app-2",
+        methods: {
+            myMethod: function (event) {
+//                alert(this)
+                document.querySelector(".app-2").innerHTML+="<br/>What a nice day.You click a "+event.target.tagName+event
+            }
+        }
+    })
+</script>
+</body>
+</html>
