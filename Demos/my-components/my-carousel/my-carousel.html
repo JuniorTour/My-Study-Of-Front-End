@@ -14,6 +14,9 @@
         button {
             outline: none;
         }
+        li {
+            list-style: none;
+        }
 
         .container {
             width:960px;
@@ -40,9 +43,11 @@
             width:520px;
             height: 280px;
         }
+
+        /*When you use <img>,you can delete the following background-color part.*/
         .carousel-item:nth-child(1) a {
             background-color: rgb(129,194,214);
-            /*as a copy of fifth one, its color is same as fifth one.*/
+            /*as a copy of fifth one, its color/img is same as fifth one.*/
         }
         .carousel-item:nth-child(2) a {
             background-color: rgb(129,146,214);
@@ -61,8 +66,9 @@
         }
         .carousel-item:nth-child(7) a {
             background-color: rgb(129,146,214);
-            /*as a copy of second one, its color is same as second one.*/
+            /*as a copy of second one, its color/img is same as second one.*/
         }
+
         .carousel-item {
             float: left;
         }
@@ -116,6 +122,8 @@
             background-color: #b7b7b7;
             border-radius: 50%;
             text-indent: -999em;
+            /*For Accessibility,I keep the string in the element for Screen Reader and declare text-indent to
+            hide the string for style.*/
             cursor: pointer;
         }
         .active-carousel-index-btn {

@@ -65,6 +65,15 @@ method: {...}
                 }
             }
 
+7.data: {
+    ...
+    options: [
+        {text: "you",value:"A"},
+        {text: "you",value:"A"},
+        {text: "you",value:"A"}
+    ]
+}   //options can not be a object???
+
 三、Error and Warning：
 1.If a function is not defined,the error will be reminded:
     vue.js:525 [Vue warn]: Error when rendering root instance:

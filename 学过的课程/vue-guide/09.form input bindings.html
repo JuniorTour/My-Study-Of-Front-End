@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09.form input bindings</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div class="app-1">
+    <input v-model.lazy="msg" placeholder="I am Lazy!">
+    <p>Input is : {{msg}}</p>
+
+    <input v-model.number="number" placeholder="input number">
+    <p>Message is: {{ number }}</p>
+
+    <input id="checkbox" type="checkbox" v-model="checked" :true-value="message">
+    <label for="checkbox">
+        {{checked}}
+    </label>
+
+    <br>
+    <input type="checkbox" id="multi-checkbox-1" value="jack" v-model="checkNames">
+    <label for="multi-checkbox-1">Jack</label>
+    <input type="checkbox" id="multi-checkbox-2" value="Marry" v-model="checkNames">
+    <label for="multi-checkbox-2">Marry</label>
+    <input type="checkbox" id="multi-checkbox-3" value="Alice" v-model="checkNames">
+    <label for="multi-checkbox-3">Alice</label>
+    <p>{{checkNames}}</p>
+
+    <br>
+    <input type="radio" id="radio-you" v-model="radioValue" value="You">
+    <label for="radio-you">You</label>
+    or
+    <input type="radio" id="radio-me" v-model="radioValue" value="me">
+    <label for="radio-me">Me</label>
+    <p>{{radioValue}}</p>
+
+    <br>
+    <select name="" id="" v-model="selected">
+        <option v-for="option in options" :value="option.value">
+            {{option.text}}
+        </option>
+    </select>
+    <p>Select: {{selected}}</p>
+</div>
+
+
+<script>
+    new Vue ({
+        el:'.app-1',
+        data: {
+            msg: "",
+            number: 0,
+//            checked: true
+            checked:"empty",
+            checkNames: [],
+            radioValue: "",
+            selected:"",
+            options: [
+                {text: "you",value:"A"},
+                {text: "you",value:"A"},
+                {text: "you",value:"A"}
+            ],
+        }
+    })
+</script>
+</body>
+</html>
