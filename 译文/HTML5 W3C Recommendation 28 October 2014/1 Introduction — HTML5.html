@@ -272,7 +272,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <p>本文档可能不适合对于网页技术还没有基本熟悉的读者，因为它在某些地方为准确性牺牲了清晰性或为简洁性牺牲了完整性。更深入浅出的教程和创作指南可以提供更合适的介绍。</p>
 
-  <p>特别地，熟悉DOM的基础对于完全理解本规范更技术性的部分是必要的。对于 Web IDL， HTTP，XML，Unicode， character encodings，JavaScript，和 CSS 的理解也会适当地有帮助，但这并不是必须的。</p>
+  <p>熟悉DOM的基础对于完全理解本规范更技术性的部分尤其必要。对于 Web IDL， HTTP，XML，Unicode， character encodings，JavaScript，和 CSS 的理解也会适当地有帮助，但这并不是必须的。</p>
 
 
   <h3 id="scope"><span class="secno">1.3 </span>涵盖范围</h3>
@@ -282,7 +282,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <p>本规范的涵盖范围不包括提供定制具体媒体显示（media-specific customization of presentation）的机制（尽管本规范的结尾包括网页浏览器默认的渲染规则，且提供一些用于连接上（hooking into）CSS的机制作为本语言的一部分）。</p>
 
-  <p>本规范的范围（scope）不是去描绘一整个操作系统。特别地，硬件配置软件、图像操作工具和期望用户日常使用高端工作站（high-end workstations）的应用超出了范围。就应用而言，本规范特别地针对期望被用户偶尔或经常使用，但在不同场所、有着较低CPU需求的应用。这种应用的例子包括在线购物系统、搜索系统、游戏（尤其是多人在线游戏）、公共电话簿或地址簿、通讯软件（电子邮件客户端、即时通讯客户端、讨论软件）、文档编辑系统等等。</p>
+  <p>本规范的范围（scope）不是去描绘一整个操作系统。硬件配置软件、图像操作工具和期望用户日常使用高端工作站（high-end workstations）的应用尤其超出了范围。就应用而言，本规范特别地针对期望被用户偶尔或经常使用，但在不同场所、有着较低CPU需求的应用。这种应用的例子包括在线购物系统、搜索系统、游戏（尤其是多人在线游戏）、公共电话簿或地址簿、通讯软件（电子邮件客户端、即时通讯客户端、讨论软件）、文档编辑系统等等。</p>
 
 
   <h3 id="history-0"><span class="secno">1.4 </span>历史</h3>
@@ -304,9 +304,9 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <p>不久之后，Apple，Mozilla和Opera共同宣布了他们将继续在一个名为WHATWG的新会场（new venue）的组织下工作的意图。他们制作了一份公共邮件列表，并把草案移到了WHATWG的网站。随后将版权修订为由三个供应商共同拥有，并且允许重新使用规范。</p>
 
-  <p>WHATWG基于一些核心原则，特别地，他们的技术需要向下兼容（backward compatible）；规范和实现需要匹配，即使这意味着需要改变规范而不是改变实现；规范需要足够详细以至于实现可以达到完备的互用性而不必互相逆向工程（reverse-engineering，译注：指对产品进行技术拆解的过程）。</p>
+  <p>WHATWG基于一些核心原则，他们的技术尤其需要向下兼容（backward compatible）；规范和实现需要匹配，即使这意味着需要改变规范而不是改变实现；规范需要足够详细以至于实现可以达到完备的互用性而不必互相逆向工程（reverse-engineering，译注：指对产品进行技术拆解的过程）。</p>
 
-  <p>后面的需求特别地需要HTML5规范的涵盖范围包括先前在三份单独的文档：HTML4，XHTML1和DOM2 HTML之中规定了的部分。这也意味着包括比以前的规范所考虑到的更多的细节。</p>
+  <p>后面的需求尤其需要HTML5规范的涵盖范围包括先前在三份单独的文档：HTML4，XHTML1和DOM2 HTML之中规定了的部分。这也意味着包括比以前的规范所考虑到的更多的细节。</p>
 
   <p>2006年，W3C终究还是表示了有意参与HTML5的发展，并在2007年组建了一个工作组，并特许其为HTML5规范的发展和WHATWG一同工作。Apple，Mozilla和Opera允许W3C以W3C的版权发布该规范，同时在WHATWG网站上保留一份协议较宽松的版本。</p>
 
@@ -360,7 +360,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
    <li>作者们可以创建<a data-anolis-xref="plugin" href="https://www.w3.org/TR/html5/infrastructure.html#plugin">插件</a>，并通过<code><a href="https://www.w3.org/TR/html5/embedded-content-0.html#the-embed-element">嵌入（embed）</a></code>元素调用它们。这就是Flash如何生效的。</li>
 
-   <li>作者们可以通过JavaScript原型机制（prototyping mechanism）来扩展API。比如说，脚本库们就广泛的使用了这一机制。</li><!--MD-->
+   <li>作者们可以通过JavaScript原型机制（prototyping mechanism）来扩展API。例如，许多脚本库都广泛的使用了这一机制。</li><!--MD-->
 
 
 
@@ -368,54 +368,40 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
   </ul><h3 id="html-vs-xhtml"><span class="secno">1.6 </span>HTML vs XHTML</h3>
 
   <p><i>本节是非规范的。</i></p>
-  <p>本规范定义了一种描述文档和应用的抽象语言，以及一些使用该语言与内存中资源的表示（in-memory representations of resources）交互的API。</p>
+  <p>本规范定义了一种描述文档和应用的抽象语言，以及一些使用该语言与内存中的资源表示（ representations of resources）交互的API。</p>
 
-  <p>内存中资源的表示即“DOM HTML”，或者简单地称之为“DOM”。</p>
+  <p>内存中表示（representation）即“DOM HTML”，或者简单地称之为“DOM”。</p>
 
   <p>有许多可以用于传输资源的具体语法（concrete syntaxes）使用了这个抽象语言，本规范定义了其中的两个。</p>
 
-  <p>第一个是HTML语法。建议大多数的作者采用这种格式（format）。它兼容大多数旧版本Web浏览器。如果一个文档以<code><a href="https://www.w3.org/TR/html5/iana.html#text/html">text/html</a></code> <a href="https://www.w3.org/TR/html5/infrastructure.html#mime-type">MIME 类型</a>传递，那么它会被Web浏览器处理为HTML文档。本规范定义HTML5.0版本的语法，即“HTML 5”。</p>
+  <p>第一个是HTML语法。建议大多数的作者采用这种格式。它兼容大多数旧版本Web浏览器。如果一个文档以<code><a href="https://www.w3.org/TR/html5/iana.html#text/html">text/html</a></code> <a href="https://www.w3.org/TR/html5/infrastructure.html#mime-type">MIME 类型</a>传输，那么它会被Web浏览器处理为HTML文档。本规范定义HTML5.0版本的语法，即“HTML 5”。</p>
 
-  <p>The second concrete syntax is the XHTML syntax, which is an application of XML. When a document
-  is transmitted with an <a href="https://www.w3.org/TR/html5/infrastructure.html#xml-mime-type">XML MIME type</a>, such as <code><a href="https://www.w3.org/TR/html5/iana.html#application/xhtml+xml">application/xhtml+xml</a></code>,
-  then it is treated as an XML document by Web browsers, to be parsed by an XML processor. Authors
-  are reminded that the processing for XML and HTML differs; in particular, even minor syntax errors
-  will prevent a document labeled as XML from being rendered fully, whereas they would be ignored in
-  the HTML syntax. This specification defines version 5.0 of the XHTML syntax, known as
-  "XHTML 5".</p>
+  <p>第二种具体语法是XHTML语法，这是一个XML的应用。当文档以一个 <a href="https://www.w3.org/TR/html5/infrastructure.html#xml-mime-type">XML MIME 类型</a>，例如<code><a href="https://www.w3.org/TR/html5/iana.html#application/xhtml+xml">application/xhtml+xml</a></code>传输，它会被Web浏览器当做一个XML文档用XML处理器解析。创作者们要注意XML和HTML处理过程的区别；即使一些较小的语法错误也会使得一份文档被标记为XML，从而无法得到完全地渲染，然而在HTML语法之中它们却会被忽略。本规范定义XHTML5.0版本的语法，即“XHTML 5”。</p>
 
-  <p>The DOM, the HTML syntax, and the XHTML syntax cannot all represent the same content. For
-  example, namespaces cannot be represented using the HTML syntax, but they are supported in the DOM
-  and in the XHTML syntax. Similarly, documents that use the <code><a href="https://www.w3.org/TR/html5/scripting-1.html#the-noscript-element">noscript</a></code> feature can be
-  represented using the HTML syntax, but cannot be represented with the DOM or in the XHTML syntax.
-  Comments that contain the string "<code data-anolis-xref="">--&gt;</code>" can only be represented in the
-  DOM, not in the HTML and XHTML syntaxes.</p>
+  <p>DOM，HTML语法和XHTML语法不能完全呈现同样的内容。例如，命名空间（namespace）不能通过HTML语法呈现，但是XHTML语法和DOM却支持它。相似地，使用了<code><a href="https://www.w3.org/TR/html5/scripting-1.html#the-noscript-element">noscript</a></code>特性的文档可以用HTML语法来呈现，但是却不能用DOM或是XHTML语法呈现。包含“<code data-anolis-xref="">--&gt;</code>”字符串的注释不能在HTML和XHTML语法中呈现，而只能在DOM之中呈现。</p>
 
 
   <h3 id="structure-of-this-specification"><span class="secno">1.7 </span>本规范的结构</h3>
 
   <p><i>本节是非规范的。</i></p>
-  <p>This specification is divided into the following major sections:</p>
+  <p>本规范分为以下几个主要章节：</p>
 
-  <dl><dt><a href="https://www.w3.org/TR/html5/introduction.html#introduction">Introduction</a></dt>
+  <dl><dt><a href="https://www.w3.org/TR/html5/introduction.html#introduction">介绍</a></dt>
 
-   <dd>Non-normative materials providing a context for the HTML standard.</dd>
+   <dd>非规范的材料提供了一个HTML标准的背景。</dd>
 
 
    <dt><a href="https://www.w3.org/TR/html5/infrastructure.html#infrastructure">Common infrastructure</a></dt>
 
-   <dd>The conformance classes, algorithms, definitions, and the common underpinnings of the rest of
-   the specification.</dd>
+   <dd>一致性等级（conformance classes），算法，定义和本规范其余部分的共同基础。</dd>
 
 
-   <dt><a href="https://www.w3.org/TR/html5/dom.html#dom">Semantics, structure, and APIs of HTML documents</a></dt>
+   <dt><a href="https://www.w3.org/TR/html5/dom.html#dom">语义（Semantics），结构和HTML文档的API。</a></dt>
 
-   <dd>Documents are built from elements. These elements form a tree using the DOM. This section
-   defines the features of this DOM, as well as introducing the features common to all elements, and
-   the concepts used in defining elements.</dd>
+   <dd>文档由元素构成。这些元素来自一棵使用DOM的树。本节定义了DOM的特性，还介绍了所有元素共有的特性，以及定义元素所用的概念。</dd>
 
 
-   <dt><a href="https://www.w3.org/TR/html5/semantics.html#semantics">The elements of HTML</a></dt>
+   <dt><a href="https://www.w3.org/TR/html5/semantics.html#semantics">HTML的元素</a></dt>
 
    <dd>Each element has a predefined meaning, which is explained in this section. Rules for authors
    on how to use the element<span class="impl">, along with user agent requirements for how to
