@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>component-2</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div class="app-1">
+    <my-child></my-child>
+</div>
+
+
+<script>
+    Vue.component('my-child',{
+        template: '<div v-show="someChildProperty">Child</div>"',
+        data: function () {
+            return {
+                someChildProperty: true
+            }
+        }
+    })
+
+    var app1=new Vue({
+        el: '.app-1'
+    })
+</script>
+</body>
+</html>

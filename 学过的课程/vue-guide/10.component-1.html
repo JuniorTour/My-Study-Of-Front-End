@@ -6,6 +6,125 @@
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
 </head>
 <body>
+<div class="app-1">
+    <my-component></my-component>
+</div>
 
+<my-component></my-component>
+
+<div class="app-2">
+    <my-counter></my-counter>
+    <my-counter></my-counter>
+    <my-counter></my-counter>
+</div>
+
+<div class="app-3">
+    <my-child msg="123456"></my-child>
+</div>
+
+<div class="app-4">
+    <input type="text" v-model="activeProp">
+    <br>
+    <my-child :msg="activeProp"></my-child>
+</div>
+
+<div class="counter-event-example">
+    <h1>{{total}}</h1>
+    <button-counter v-on:increment="incrementTotal"></button-counter>
+    <button-counter v-on:increment="incrementTotal"></button-counter>
+</div>
+
+<script>
+    Vue.component('my-component',{
+        template: '<h1>A custom component</h1>'
+    });
+
+    var childComponent={
+        template: '<p>A custom child component in paragraph.</p>'
+    };
+
+    var app1=new Vue ({
+        el: ".app-1",
+        components: {
+//            'my-component': '<p>A custom component</p>'
+//            'my-component' : childComponent
+        }
+    });
+
+    var data= {
+        counter: 0
+    };
+
+    var myCounter=999;
+
+    Vue.component('my-counter',{
+        template: '<button v-on:click="counter+=1">A counter: {{counter}}</button>',
+        data: function () {
+//            return data;
+            return {
+                counter: 0
+            };
+//            return myCounter
+        }
+    });
+
+    var app2=new Vue ({
+        el: '.app-2'
+    });
+
+    Vue.component('my-child',{
+        props: ['msg'],
+//        computed:{
+//            msg: this.msg+1
+//        },
+        template:'<h3>{{msg}}</h3>'
+    });
+
+    var app3=new Vue ({
+        el:'.app-3',
+        data: {
+//            msg: 'Nice to meet you~'
+        }
+    });
+
+//    app3.msg="What a nice day."
+
+    var app4=new Vue ({
+        el: '.app-4',
+        data: {
+            activeProp: 'Try to input something.'
+        }
+    });
+
+    var counterTemplate= {
+        template:"<button v-on:click='increment'>{{counter}}</button>",
+        data: function () {
+            return {
+                counter: 0
+            }
+        },
+        methods: {
+            increment: function () {
+                this.counter+=1
+                this.$emit('increment')
+            }
+        }
+    }
+
+    var app5=new Vue ({
+        el: '.counter-event-example',
+        data: {
+            total: 0
+        },
+        methods: {
+            incrementTotal: function () {
+                this.total+=1
+            }
+        },
+        components: {
+            'button-counter': counterTemplate
+        }
+    })
+</script>
 </body>
 </html>

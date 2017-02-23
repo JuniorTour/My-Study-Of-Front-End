@@ -74,9 +74,16 @@ method: {...}
     ]
 }   //options can not be a object???
 
+8.In component template,its data must be a FUNCTION and return a OBJECT.
+
+9.Can not understand the Component...
+
 三、Error and Warning：
 1.If a function is not defined,the error will be reminded:
     vue.js:525 [Vue warn]: Error when rendering root instance:
     ...
     vue.js:2229 Uncaught ReferenceError: conLog is not defined
 
+2.[Vue warn]:
+<input v-model="activeProp" value="try input something...">:
+  inline value attributes will be ignored when using v-model. Declare initial values in the component's data option instead.
