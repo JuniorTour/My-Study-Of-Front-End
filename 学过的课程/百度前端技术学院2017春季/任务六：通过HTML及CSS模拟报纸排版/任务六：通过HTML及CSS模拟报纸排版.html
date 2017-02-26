@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务六：通过HTML及CSS模拟报纸排版</title>
+    <style>
+        /*reset*/
+        * {
+            padding: 0;
+            border: 0;
+            margin: 0;
+        }
+
+        body {
+            width:100%;
+            font: 12px "microsoft yahei";
+        }
+        /*main*/
+        .container {
+            width:892px;
+            padding: 0 44px;
+            /*margin: 0 auto;*/
+        }
+        .main-wrapper {
+            width:892px;
+            height:1386px;
+            border-top: 2px solid #938e8c;
+            padding-top: 30px;
+        }
+        .page-eyebrow {
+            width:100%;
+            height:61px;
+        }
+        .name-block {
+            width:105px;
+            height:61px;
+            color: #fff;
+            line-height:101px;
+            background-color: #d55e5d;
+            display: inline-block;
+            padding-left: 5px;
+        }
+        .print-date {
+            color: #d45d5c;
+            line-height:101px;
+            float: right;
+        }
+        .jumbotron {
+            width:641px;
+            height:400px;
+        }
+        .example-img {
+            width:641px;
+            height:301px;
+            background-color: #8192d6;
+        }
+        .img-filter {
+            width:191px;
+            height:301px;
+        }
+        .left-filter {
+            background-color: rgba(57,115,68,0.8);
+            float: left;
+        }
+        .right-filter {
+            background-color: rgba(200,124,122,0.8);
+            float: right;
+        }
+        .short-intro-wrapper {
+            width:100%;
+        }
+        .short-intro-wrapper h4 {
+            font-size: 16px;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .short-intro-wrapper p {
+            font-size: 12px;
+            line-height:16px;
+        }
+        .left-col {
+            width:450px;
+            float: left;
+        }
+        .left-col-left {
+            width:205px;
+            float: left;
+            margin-right: 15px;
+        }
+        .left-col-right {
+            width:200px;
+            float: left;
+        }
+        .right-col {
+            width:191px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-eyebrow">
+            <div class="name-block">ife.baidu.com</div>
+            <div class="print-date">2016.03</div>
+        </div>
+        <div class="main-wrapper">
+            <div class="upper-half">
+                <div class="jumbotron">
+                    <div class="main-screen">
+                        <div class="left-filter img-filter"></div>
+                        <div class="right-filter img-filter"></div>
+                        <div class="example-img"></div>
+                    </div>
+                    <div class="short-intro-wrapper">
+                        <div class="left-col">
+                            <div class="left-col-left">
+                                <h4 class="three-col-title">What</h4>
+                                <p>修昔底德(Thucydides，约公元前460～前400／前396年)，古代希腊著名历史学家，以其所著《伯罗奔尼撒战争史》而在西方史学史上占有重要地位。
+                                    　　关于修昔底德的生平，我们所知甚少。那极有限的一点材料，主要来自他自己的著作中偶尔提及自己的地方。此外，还有来自晚后的希腊罗马作家的零星记载。</p>
+                            </div>
+                            <div class="left-col-right">
+                                <h4 class="three-col-title">When</h4>
+                                <p>修昔底德(Thucydides，约公元前460～前400／前396年)，古代希腊著名历史学家，以其所著《伯罗奔尼撒战争史》而在西方史学史上占有重要地位。
+                                    　　关于修昔底德的生平，我们所知甚少。那极有限的一点材料，主要来自他自己的著作中偶尔提及自己的地方。此外，还有来自晚后的希腊罗马作家的零星记载。</p>
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <h4 class="three-col-title">How</h4>
+                            <p>
+                                修昔底德(Thucydides，约公元前460～前400／前396年)，古代希腊著名历史学家，以其所著《伯罗奔尼撒战争史》而在西方史学史上占有重要地位。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-description"></div>
+            </div>
+            <div class="lower-half">
+                <div class="lower-left">
+                    <h1 class="lower-head-line"></h1>
+                </div>
+                <div class="lower-right">
+                    <div class="sub-screen"></div>
+                    <div class="lower-catalog"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

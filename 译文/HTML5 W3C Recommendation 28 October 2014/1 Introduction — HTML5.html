@@ -310,7 +310,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <p>2006年，W3C终究还是表示了有意参与HTML5的发展，并在2007年组建了一个工作组，并特许其为HTML5规范的发展和WHATWG一同工作。Apple，Mozilla和Opera允许W3C以W3C的版权发布该规范，同时在WHATWG网站上保留一份协议较宽松的版本。</p>
 
-    <p>此后多年，两个工作组在同一个编辑：Ian Hickson的领导下共同工作。2011年，这两个工作组认为他们有着不一样的目标：W3C想要明确划分HTML5推荐标准的特性，然而WHATWG却想要继续发展HTML的现存标准，不断地维护该规范并添加新的特性。在2012年年中，W3C引入了一支新的编辑团队来创作HTML5推荐标准，并为下一个HTML的版本准备工作草案。</p>
+    <p>此后多年，两个工作组在同一个编辑：Ian Hickson的领导下共同工作。2011年，这两个工作组认为他们有着不一样的目标：W3C想要明确划分HTML5推荐标准的特性，然而WHATWG却想要继续发展HTML的活标准（Living Standard），不断地维护该规范并添加新的特性。在2012年年中，W3C引入了一支新的编辑团队来创作HTML5推荐标准，并为下一个HTML的版本准备工作草案。</p>
 
   <p>此后，W3C HTML工作组一直在从WHATWG之中筛选补丁来解决W3C HTML规范中记录的或是更精确地表现在用户代理实现中的bug。在发布本规范时，一直到<a href="http://html5.org/r/8152">8152</a>版都已合并了来自<a href="http://www.whatwg.org/specs/web-apps/current-work/">WHATWG HTML 规范</a>的补丁。W3C HTML的编辑们也已经添加了由W3C HTML工作组的讨论和决定而产生的补丁以及WHATWG未共享的bug修复。
   </p>
@@ -388,7 +388,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <dl><dt><a href="https://www.w3.org/TR/html5/introduction.html#introduction">介绍</a></dt>
 
-   <dd>非规范的材料提供了一个HTML标准的背景。</dd>
+   <dd>非规范的材料为HTML标准提供了一个背景（context）。</dd>
 
 
    <dt><a href="https://www.w3.org/TR/html5/infrastructure.html#infrastructure">Common infrastructure</a></dt>
@@ -403,32 +403,25 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
    <dt><a href="https://www.w3.org/TR/html5/semantics.html#semantics">HTML的元素</a></dt>
 
-   <dd>Each element has a predefined meaning, which is explained in this section. Rules for authors
-   on how to use the element<span class="impl">, along with user agent requirements for how to
-   handle each element,</span> are also given. This includes large signature features of HTML such
-   as video playback and subtitles, form controls and form submission, and a 2D graphics API known
-   as the HTML canvas.</dd><!--MD-->
+   <dd>每个元素都有一个预先定义的含义，本节会解释这一点。创作者们使用元素的规则<span class="impl">，以及用户代理如何处理每个元素的需求</span>都会给出。这包括HTML的许多签名特性（signature features），例如视频重播和字幕，表单控制和表单提交，以及2D图形API，即HTML canvas。</dd><!--MD-->
 
 
 
 
 
-   <dt><a href="https://www.w3.org/TR/html5/browsers.html#browsers">Loading Web pages</a></dt>
+   <dt><a href="https://www.w3.org/TR/html5/browsers.html#browsers">加载网页</a></dt>
 
-   <dd>HTML documents do not exist in a vacuum — this section defines many of the features
-   that affect environments that deal with multiple pages, such as Web browsers and offline
-   caching of Web applications.</dd>
+   <dd>HTML文档并不是凭空存在的——本节定义了许多影响处理多页面环境的特性，例如Web浏览器和Web应用的离线缓存。</dd>
 
 
-   <dt><a href="https://www.w3.org/TR/html5/webappapis.html#webappapis">Web application APIs</a></dt>
+   <dt><a href="https://www.w3.org/TR/html5/webappapis.html#webappapis">Web应用API</a></dt>
 
-   <dd>This section introduces basic features for scripting of applications in HTML.</dd>
+   <dd>本节介绍了在HTML之中为应用编写脚本的基础特性。</dd>
 
 
-   <dt><a href="https://www.w3.org/TR/html5/editing.html#editing">User interaction</a></dt>
+   <dt><a href="https://www.w3.org/TR/html5/editing.html#editing">用户交互</a></dt>
 
-   <dd>HTML documents can provide a number of mechanisms for users to interact with and modify
-   content, which are described in this section, such as how focus works.</dd><!--POSTMSG-->
+   <dd>HTML文档为用户能提供许多机制来交互和修改内容，这在本节之中叙述，例如focus是如何工作的。</dd><!--POSTMSG-->
 
 
 
@@ -440,46 +433,34 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
 
 
-   <dt><a href="https://www.w3.org/TR/html5/syntax.html#syntax">The HTML syntax</a></dt>
-   <dt><a href="https://www.w3.org/TR/html5/the-xhtml-syntax.html#xhtml">The XHTML syntax</a></dt>
+   <dt><a href="https://www.w3.org/TR/html5/syntax.html#syntax">HTML语法</a></dt>
+   <dt><a href="https://www.w3.org/TR/html5/the-xhtml-syntax.html#xhtml">XHTML语法</a></dt>
 
-   <dd>All of these features would be for naught if they couldn't be represented in a serialized
-   form and sent to other people, and so these sections define the syntaxes of HTML and XHTML<span class="impl">, along with rules for how to parse content using those syntaxes</span>.</dd>
-
-
-   <dt><a href="https://www.w3.org/TR/html5/rendering.html#rendering">Rendering</a></dt>
-
-   <dd>This section defines the default rendering rules for Web browsers.</dd>
+   <dd>所有的这些特性如果不能在序列化的表单（serialized form）之中呈现并传输给其他人，那么它就毫无价值，所以这几节定义了HTML和XHTML的语法<span class="impl">，以及使用这些语法解析内容的规则</span>。</dd>
 
 
-  </dl><p>There are also some appendices, listing <a href="https://www.w3.org/TR/html5/obsolete.html#obsolete">obsolete features</a> and <a href="https://www.w3.org/TR/html5/iana.html#iana">IANA considerations</a>, and several indices.</p>
+   <dt><a href="https://www.w3.org/TR/html5/rendering.html#rendering">渲染</a></dt>
+
+   <dd>本节定义了Web浏览器的默认渲染规则。</dd>
+
+
+  </dl><p>还有一些附录和索引，列在了<a href="https://www.w3.org/TR/html5/obsolete.html#obsolete">已淘汰的功能</a>和<a href="https://www.w3.org/TR/html5/iana.html#iana">IANA 考量（IANA considerations）</a>之中。</p>
 
 
 
   <h4 id="how-to-read-this-specification"><span class="secno">1.7.1 </span>如何阅读本规范</h4>
 
-  <p>This specification should be read like all other specifications. First, it should be read
-  cover-to-cover, multiple times. Then, it should be read backwards at least once. Then it should be
-  read by picking random sections from the contents list and following all the cross-references.</p>
+  <p>阅读本规范应该像阅读其他规范一样。首先，应该从头到尾，读上几次。之后，应该回过头来至少再读一次。再然后应该从内容列表里随机挑选一些章节阅读并看看所有的对照参考（cross-reference）。</p>
 
-  <p>As described in the conformance requirements section below, this specification describes
-  conformance criteria for a variety of conformance classes. In particular, there are conformance
-  requirements that apply to <em>producers</em>, for example authors and the documents they create,
-  and there are conformance requirements that apply to <em>consumers</em>, for example Web browsers.
-  They can be distinguished by what they are requiring: a requirement on a producer states what is
-  allowed, while a requirement on a consumer states how software is to act.</p>
+  <p>就像在下面的一致性需求章节所叙述的那样，本规范给各种一致性等级描述了一致性标准。特别地，还有对<em>生产者们</em>例如创作者们和他们所创作的文档的一致性要求，以及对<em>消费者们</em>例如Web浏览器的一致性需求。他们可以通过它们所需求的东西来区分：对生产者们的需求是允许什么，而对消费者们的需求是软件如何行动。</p>
 
   <div class="example">
 
-   <p>For example, "the <code data-anolis-xref="">foo</code> attribute's value must be a <a href="https://www.w3.org/TR/html5/infrastructure.html#valid-integer">valid
-   integer</a>" is a requirement on producers, as it lays out the allowed values; in contrast,
-   the requirement "the <code data-anolis-xref="">foo</code> attribute's value must be parsed using the
-   <a href="https://www.w3.org/TR/html5/infrastructure.html#rules-for-parsing-integers">rules for parsing integers</a>" is a requirement on consumers, as it describes how to
-   process the content.</p>
+   <p>例如，“<code data-anolis-xref="">foo</code>属性的值必须是一个<a href="https://www.w3.org/TR/html5/infrastructure.html#valid-integer">有效的整数</a>”是一个对生产者们的要求，因为它表明了允许的值；相反地，“<code data-anolis-xref="">foo</code>属性的值必须通过<a href="https://www.w3.org/TR/html5/infrastructure.html#rules-for-parsing-integers">解析整数的规则</a>解析”则是一个对消费者们的要求，因为它描述了如何处理内容。</p>
 
   </div>
 
-  <p><strong>Requirements on producers have no bearing whatsoever on consumers.</strong></p>
+  <p><strong>对生产者们和对消费者们的需求毫无关系。</strong></p>
 
   <div class="example">
 

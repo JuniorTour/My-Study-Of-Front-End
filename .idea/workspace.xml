@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="245d3670-3895-4aed-8406-06a940ee5abe" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/component-2.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/任务六：通过HTML及CSS模拟报纸排版/task_1_6_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/任务六：通过HTML及CSS模拟报纸排版/任务六：通过HTML及CSS模拟报纸排版.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/asus_pc.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/asus_pc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/译文/HTML5 W3C Recommendation 28 October 2014/1 Introduction — HTML5.html" afterPath="$PROJECT_DIR$/译文/HTML5 W3C Recommendation 28 October 2014/1 Introduction — HTML5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/译文/HTML5 W3C Recommendation 28 October 2014/HTML5.html" afterPath="$PROJECT_DIR$/译文/HTML5 W3C Recommendation 28 October 2014/HTML5.html" />
     </list>
     <ignored path="Web前端.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +31,7 @@
       <file leaf-file-name="p116,CallAndApply.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/看过的书/JavaScript高级程序设计/chapter1-6/p116,CallAndApply.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.8043478">
+            <state vertical-scroll-proportion="0.0">
               <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
               <folding />
             </state>
@@ -38,17 +41,17 @@
       <file leaf-file-name="09.form input bindings.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/09.form input bindings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="25.73913">
+            <state vertical-scroll-proportion="0.0">
               <caret line="4" column="29" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="10.component-1.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="10.component-1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/10.component-1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4172015">
+            <state vertical-scroll-proportion="-0.8043478">
               <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
               <folding>
                 <element signature="e#831#886#0" expanded="false" />
@@ -59,6 +62,29 @@
                 <element signature="e#1773#1866#0" expanded="false" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="任务六：通过HTML及CSS模拟报纸排版.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/任务六：通过HTML及CSS模拟报纸排版/任务六：通过HTML及CSS模拟报纸排版.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.23620026">
+              <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task_1_6_3.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/任务六：通过HTML及CSS模拟报纸排版/task_1_6_3.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -75,8 +101,8 @@
       <file leaf-file-name="my-carousel.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demos/my-components/my-carousel/my-carousel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9130435">
-              <caret line="102" column="20" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
+            <state vertical-scroll-proportion="-1.6086956">
+              <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
               <folding>
                 <element signature="n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -104,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p113,FunctionReturningFunctionExample01.html" />
         <option value="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p115,FunctionTypeArgumentsCallerExample02.html" />
         <option value="$PROJECT_DIR$/看过的书/CSS权威指南/水平格式化.html" />
         <option value="$PROJECT_DIR$/看过的书/JavaScript高级程序设计/p116,CallAndApply-2.html" />
@@ -155,6 +180,7 @@
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/10.component-1.html" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/mistakes of learning vue.txt" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/component-2.html" />
+        <option value="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/任务六：通过HTML及CSS模拟报纸排版/任务六：通过HTML及CSS模拟报纸排版.html" />
       </list>
     </option>
   </component>
@@ -369,7 +395,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vue-guide" />
+              <option name="myItemId" value="百度前端技术学院2017春季" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="任务六：通过HTML及CSS模拟报纸排版" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -421,16 +451,16 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\Demos" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\看过的书\DOM编程艺术\12.band website\js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\百度前端技术学院2017春季\任务六：通过HTML及CSS模拟报纸排版" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\Demos\my-components\my-carousel\img" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\淘宝首页\img" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\淘宝首页" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\译文\HTML5 W3C Recommendation 28 October 2014\relative materials" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\淘宝首页\font" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\Demos" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\看过的书\DOM编程艺术\12.band website\js" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.calculate.js">
@@ -514,7 +544,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13885956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -577,6 +607,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/09.form input bindings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/作品/My-Web-Caculator/js/calculate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -846,36 +884,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../百度前端学院_files/hm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40363637">
-          <caret line="39" column="251" selection-start-line="39" selection-start-column="251" selection-end-line="39" selection-end-column="251" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../百度前端学院_files/app-0b3c5eee.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4424243">
-          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/my-components/my-carousel/my-carousel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9130435">
-          <caret line="102" column="20" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
-          <folding>
-            <element signature="n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/01.hello vue.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,7 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7599487">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,7 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="60.086956">
           <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,13 +909,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="7" column="2" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/看过的书/JavaScript高级程序设计/chapter1-6/p116,CallAndApply.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8043478">
+        <state vertical-scroll-proportion="0.0">
           <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
           <folding />
         </state>
@@ -913,9 +922,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/09.form input bindings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="25.73913">
+        <state vertical-scroll-proportion="0.0">
           <caret line="4" column="29" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/10.component-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8043478">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="e#831#886#0" expanded="false" />
+            <element signature="e#1194#1220#0" expanded="false" />
+            <element signature="e#1278#1529#0" expanded="false" />
+            <element signature="e#1555#1583#0" expanded="false" />
+            <element signature="e#1616#1747#0" expanded="false" />
+            <element signature="e#1773#1866#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -927,17 +951,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/10.component-1.html">
+    <entry file="file://$PROJECT_DIR$/Demos/my-components/my-carousel/my-carousel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4172015">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state vertical-scroll-proportion="-1.6086956">
+          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
           <folding>
-            <element signature="e#831#886#0" expanded="false" />
-            <element signature="e#1194#1220#0" expanded="false" />
-            <element signature="e#1278#1529#0" expanded="false" />
-            <element signature="e#1555#1583#0" expanded="false" />
-            <element signature="e#1616#1747#0" expanded="false" />
-            <element signature="e#1773#1866#0" expanded="false" />
+            <element signature="n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/任务六：通过HTML及CSS模拟报纸排版/task_1_6_3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/任务六：通过HTML及CSS模拟报纸排版/任务六：通过HTML及CSS模拟报纸排版.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23620026">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
