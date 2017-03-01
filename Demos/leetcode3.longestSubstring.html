@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>leetcode3.longestSubstring</title>
+</head>
+<body>
+
+<script>
+    var inputString=prompt("Input string:","abcabcbb");
+
+
+    var lengthOfLongestSubstring = function (s) {
+        var startPos=0,endPos=1,longestLength=0,
+                strArr=s.split('');
+
+        for(startPos=0;startPos<= s.length;startPos++) {
+            endPos=startPos+1;
+            var tempStr=s.substring(startPos,startPos+1);
+            while (tempStr.indexOf(strArr[endPos])<=-1) {
+                tempStr+=strArr[endPos];
+                endPos++;
+            }
+            if (tempStr.length>longestLength) {
+                longestLength=tempStr.length;
+            }
+        }
+
+        alert("longestLength is "+longestLength);
+        return longestLength;
+    }
+
+    lengthOfLongestSubstring(inputString);
+</script>
+</body>
+</html>
