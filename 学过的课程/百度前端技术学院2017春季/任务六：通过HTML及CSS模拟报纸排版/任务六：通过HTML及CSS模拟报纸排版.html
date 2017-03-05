@@ -21,6 +21,10 @@
             padding: 0 44px;
             /*margin: 0 auto;*/
         }
+        .upper-half {
+            clear: both;
+            /*Hack for widen this wrapper for inner two float div.*/
+        }
         .main-wrapper {
             width:892px;
             height:1386px;
@@ -46,6 +50,7 @@
             float: right;
         }
         .jumbotron {
+            float: left;
             width:641px;
             height:400px;
         }
@@ -69,10 +74,19 @@
         .short-intro-wrapper {
             width:100%;
         }
-        .short-intro-wrapper h4 {
+        .three-col-title {
             font-size: 16px;
             text-decoration: underline;
             font-weight: bold;
+        }
+        .title-green{
+            color: #418c59;
+        }
+        .title-orange {
+            color: #d2994f;
+        }
+        .title-red {
+            color: #cc7680;
         }
         .short-intro-wrapper p {
             font-size: 12px;
@@ -95,6 +109,48 @@
             width:191px;
             float: right;
         }
+        .right-col ul {
+            margin-top:10px;
+        }
+        .right-col ul li {
+            font-size: 12px;
+            line-height:16px;
+        } 
+        .right-col li span {
+            color: #cd4a48;
+            font-style: italic;
+        }
+        .side-description {
+            float: right;
+            width:203px;
+            border-top: 2px solid #cc8091;
+        }
+        .side-description h2 {
+            font-size: 24px;
+            line-height:40px;
+            color: #000;
+            text-decoration: underline;
+        }
+        .sub-h2 {
+            font-family: "kaiti";
+            font-size: 12px;
+            color: #676767;
+        }
+        .side-description .huge-font {
+            font-size: 116px;
+            color: #75b86b;
+            /*font-style: italic;*/
+            /*text-decoration: underline;*/
+        }
+        .big-font {
+            color: #cc8091;
+            display: inline-block;
+            font-size: 55px;
+        }
+        .sub-big-font {
+            color: #cc8091;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -114,25 +170,42 @@
                     <div class="short-intro-wrapper">
                         <div class="left-col">
                             <div class="left-col-left">
-                                <h4 class="three-col-title">What</h4>
+                                <h4 class="three-col-title title-green">What</h4>
                                 <p>修昔底德(Thucydides，约公元前460～前400／前396年)，古代希腊著名历史学家，以其所著《伯罗奔尼撒战争史》而在西方史学史上占有重要地位。
                                     　　关于修昔底德的生平，我们所知甚少。那极有限的一点材料，主要来自他自己的著作中偶尔提及自己的地方。此外，还有来自晚后的希腊罗马作家的零星记载。</p>
                             </div>
                             <div class="left-col-right">
-                                <h4 class="three-col-title">When</h4>
+                                <h4 class="three-col-title title-orange">When</h4>
                                 <p>修昔底德(Thucydides，约公元前460～前400／前396年)，古代希腊著名历史学家，以其所著《伯罗奔尼撒战争史》而在西方史学史上占有重要地位。
                                     　　关于修昔底德的生平，我们所知甚少。那极有限的一点材料，主要来自他自己的著作中偶尔提及自己的地方。此外，还有来自晚后的希腊罗马作家的零星记载。</p>
                             </div>
                         </div>
                         <div class="right-col">
-                            <h4 class="three-col-title">How</h4>
+                            <h4 class="three-col-title title-red">How</h4>
                             <p>
                                 修昔底德(Thucydides，约公元前460～前400／前396年)，古代希腊著名历史学家，以其所著《伯罗奔尼撒战争史》而在西方史学史上占有重要地位。
                             </p>
+                            <ul>
+                                <li>What---<span>10%</span></li>
+                                <li>What---<span>20%</span></li>
+                                <li>What---<span>30%</span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="side-description"></div>
+                <div class="side-description">
+                    <h2>About<br/>Technology</h2>
+                    <p class="sub-h2">About Technology About Technology About Technology</p>
+                    <span class="huge-font">
+                        700
+                    </span>
+                    <div class="big-font">3.2</div>
+                    <div class="sub-big-font">
+                        <span>CSS</span>
+                        <!--<br>-->
+                        <p>csscsscsscsscss</p>
+                    </div>
+                </div>
             </div>
             <div class="lower-half">
                 <div class="lower-left">
