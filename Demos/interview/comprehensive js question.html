@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>comprehensive js question</title>
+</head>
+<body>
+
+<script>
+    function foo () {
+        getName=function () {alert(1)}
+        return this
+    }
+    foo.getName=function () {alert(2)}
+    foo.prototype.getName=function () {alert(3)}
+    var getName=function () {alert(4)}
+    function getName() {alert(5)}
+
+//    foo.getName() //2
+//    getName() //4
+//    foo().getName() //1
+//    getName()   //1
+//    new foo.getName()   //2
+//    new foo().getName() //3
+//    new new foo().getName() //3
+</script>
+</body>
+</html>
