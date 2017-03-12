@@ -1,0 +1,119 @@
+/*reset*/
+* {
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+li {
+    list-style:none;
+}
+
+/*default*/
+body {
+    font: 12px/1 "simsong";
+    /*latest chrome does not support simsong font!*/
+}
+a {
+    color: blue;
+}
+.clearfix:before,.clearfix:after {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/*main*/
+.container {
+    width:960px;
+    padding: 2.5%;
+    margin: 0 auto;
+    /*background-color: #00A2C1;*/
+}
+.btn {
+    display: inline-block;
+    width:90px;
+    height:30px;
+    line-height:30px;
+    color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+.btn-success {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.btn-primary {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+.header {
+    text-align: center;
+}
+.header h1 {
+    font-size: 42px;
+}
+.info {
+    width:100%;
+    font-size: 22px;
+    border-bottom: 2px solid #ccc;
+}
+.info li {
+    margin: 20px 0;
+}
+.left-col {
+    float: left;
+    margin-right: 150px;
+}
+.right-col {
+    float: left;
+}
+.my-photo {
+    float: right;
+    width:160px;
+    height:160px;
+    background-color: red;
+}
+.self-comment {
+    width:100%;
+    font-size: 17px;
+    line-height: 1.2;
+}
+.part-title:before {
+    content: '';
+    display: block;
+    width:10px;
+    height:40px;
+    float: left;
+    background-color: #548dd4;
+    margin-right:20px;
+}
+.part-title {
+    line-height:40px;
+    background: #dce5f1 linear-gradient(to right,#dce5f1,#fff);
+    margin: 30px 0;
+}
+.part-title h3 {
+    font-weight:normal;
+}
+.self-comment p {
+    margin-bottom: 20px;
+}
+/*media query*/
+@media (min-width: 351px) and (max-width: 379px) {
+    .container {
+        width:100%;
+    }
+}
+@media (min-width:380px) and (max-width: 473px) {
+    .container {
+        width:100%;
+    }
+}
+@media (min-width:474px) and (max-width: 960px) {
+    .container {
+        width:90%;
+        padding:5%;
+    }
+}
