@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>juniortour-portfolio</title>
+    <!--<link rel="stylesheet" href="portfolio.css">-->
+    <style>
+        /*reset*/
+        * {
+            padding: 0;
+            border: none;
+            margin: 0;
+        }
+        li {
+            list-style:none;
+        }
+
+        /*default*/
+        body {
+            font: 12px/1 "microsoft yahei",sans-serif;
+        }
+        a {
+            color: #000;
+        }
+        .clearfix:before,.clearfix:after {
+            content: '';
+            display: table;
+        }
+        .clearfix:after {
+            clear: both;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        /*main*/
+        .header {
+            width:960px;
+            text-align: center;
+            margin: 50px auto 0 auto;
+        }
+        .header h1 {
+            font-size: 38px;
+        }
+        .header p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .btn {
+            font-size: 16px;
+            display: inline-block;
+            width: 120px;
+            height: 50px;
+            line-height: 50px;
+            color: #fff;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        .btn-success {
+            background-color: #5cb85c;
+            border-color: #4cae4c;
+        }
+        .btn-primary {
+            background-color: #5bc0de;
+            border-color: #46b8da;
+        }
+        .container {
+            width:960px;
+            padding: 2.5%;
+            margin: 0 auto;
+            background-color: #206082;
+        }
+        .row {
+            width:100%;
+            background-color: #38b1b7;
+            margin-bottom:20px;
+        }
+        .item {
+            position: relative;
+            float: left;
+            width:200px;
+            height:200px;
+            margin: 10px 0 10px 32px;
+            outline: 1px solid #ddd;
+        }
+        .item a {
+            display: inline-block;
+            width:100%;
+            height:100%;
+        }
+        .item img {
+            width:100%;
+            height:100%;
+        }
+        .item div {
+            width:100%;
+            height:80%;
+            text-align: center;
+            font-size: 32px;
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item h3 {
+            position: absolute;
+            bottom: 0;
+            width:100%;
+            height:20%;
+            font-size: 16px;
+            cursor: default;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .last-update {
+            color: #ddd;
+            padding: 2.5%;
+        }
+
+        /*media query*/
+        @media (min-width:300px) and (max-width: 473px) {
+            .header {
+                width:100%;
+            }
+            .container {
+                width:95%;
+                padding:2.5%;
+            }
+            .item {
+                float: none;
+                margin: 5% auto;
+            }
+        }
+        @media (min-width:474px) and (max-width: 960px) {
+            .header {
+                width:100%;
+            }
+            .container {
+                width:95%;
+                padding:2.5%;
+            }
+            .item {
+                float: left;
+                width:45%;
+                height: 320px;
+                margin: 2.5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>少年游的作品集</h1>
+        <p>你好，幸会~</p>
+        <a href="http://juniortour.net" class="btn btn-success">返回博客首页</a>
+        <a href="http://juniortour.net/job/juniortour-resume.html" class="btn btn-primary">查看我的简历</a>
+    </div>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="item">
+                <a href="http://juniortour.net/2017/03/12/static-pages-summary/">
+                    <img src="img/static-page-thumbnail-min.jpg" alt="static-pages">
+                </a>
+                <h3>静态页面</h3>
+            </div>
+            <div class="item">
+                <a href="http://juniortour.net/master-pieces/js/My-Web-Calculator/My-Calculator.html">
+                    <img src="img/web-calculator-thumbnail-min.jpg" alt="web-calculator">
+                </a>
+                <h3>仿IOS网页计算器</h3>
+            </div>
+            <div class="item">
+                <a href="http://juniortour.net/master-pieces/js/standard-js-carousel/standard-js-carousel.html">
+                    <img src="img/carousel-thumbnail-min.jpg" alt="static-pages">
+                </a>
+                <h3>原生JS循环图片轮播</h3>
+            </div>
+            <div class="item">
+                <a href="http://juniortour.net:3000">
+                    <img src="img/dynamic-site-thumbnail-min.jpg" alt="static-pages">
+                </a>
+                <h3>基于Express的动态网站</h3>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="item">
+                <a href="http://juniortour.net/2016/07/14/my-calculator/">
+                    <img src="img/my-calculator-thumbnail-min.gif" alt="static-pages">
+                </a>
+                <h3>C语言图形界面计算器</h3>
+            </div>
+            <div class="item">
+                <a href="http://juniortour.net/categories/translation/">
+                    <div class="translation-thumbnail">A&gt;一<br>B&gt;二<br>C&gt;三</div>
+                </a>
+                <h3>译文</h3>
+            </div>
+            <div class="item">
+                <a href="https://github.com/JuniorTour">
+                    <img src="img/github-thumbnail-min.jpg" alt="static-pages">
+                </a>
+                <h3>我的GitHub</h3>
+            </div>
+            <div class="item">
+                <div class="to-be-continue">
+                    To
+                    <br>
+                    Be
+                    <br>
+                    Continue
+                </div>
+                <h3>未完待续...</h3>
+            </div>
+            <span class="last-update">上次更新于：2017/3/16</span>
+        </div>
+    </div>
+</body>
+</html>

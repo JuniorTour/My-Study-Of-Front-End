@@ -40,10 +40,11 @@ a {
     margin: 20px 0;
 }
 .btn {
+    font-size: 16px;
     display: inline-block;
-    width:80px;
-    height:30px;
-    line-height:30px;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
     color: #fff;
     margin: 20px;
     border-radius: 5px;
@@ -60,36 +61,59 @@ a {
     width:960px;
     padding: 2.5%;
     margin: 0 auto;
-    background-color: #00A2C1;
+    background-color: #206082;
 }
 .row {
     width:100%;
-    background-color: yellow;
+    background-color: #38b1b7;
     margin-bottom:20px;
 }
 .item {
+    position: relative;
     float: left;
-    background-color: pink;
     width:200px;
     height:200px;
     margin: 10px 0 10px 32px;
+    outline: 1px solid #ddd;
+}
+.item a {
+    display: inline-block;
+    width:100%;
+    height:100%;
+}
+.item img {
+    width:100%;
+    height:100%;
+}
+.item div {
+    width:100%;
+    height:80%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item h3 {
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height:20%;
+    font-size: 16px;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+}
+.last-update {
+    color: #ddd;
+    padding: 2.5%;
 }
 
 /*media query*/
-@media (min-width:300px) and (max-width: 350px) {
-    .header {
-        width:100%;
-    }
-    .container {
-        width:310px;
-        padding:5px;
-    }
-    .item {
-        float: none;
-        margin: 0 auto 2.5% auto;
-    }
-}
-@media (min-width: 351px) and (max-width: 379px) {
+@media (min-width:300px) and (max-width: 473px) {
     .header {
         width:100%;
     }
@@ -99,20 +123,7 @@ a {
     }
     .item {
         float: none;
-        margin: 0 auto 2.5% auto;
-    }
-}
-@media (min-width:380px) and (max-width: 473px) {
-    .header {
-        width:100%;
-    }
-    .container {
-        width:95%;
-        padding:2.5%;
-    }
-    .item {
-        float: none;
-        margin: 0 auto 2.5% auto;
+        margin: 5% auto;
     }
 }
 @media (min-width:474px) and (max-width: 960px) {
