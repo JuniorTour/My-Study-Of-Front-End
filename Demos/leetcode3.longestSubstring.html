@@ -14,31 +14,36 @@
      * 2017/3/22,think of another way with one for(),I will try it.
      * */
 
-//    var inputString=prompt("Input string:","pwwkew");
-        var inputString="pwwkew";
+    var inputString=prompt("Input string:","pwwkew");
+//        var inputString="kew";
 
     var lengthOfLongestSubstring = function (s) {
         var currentStartChar,identicalCharPos;
-        var subStrLength=-1,longestLength=-2;
+        var subStrLength=0,longestLength=0;
         /*If there is not the repeating char,record the unique char for a part of the sub str.*/
         var tempUniqueStrLength=0;
 
         for (var subStrStartPos=0;subStrStartPos<s.length;subStrStartPos++) {
             currentStartChar=s.charAt(subStrStartPos);
-            identicalCharPos=s.indexOf(currentStartChar,subStrStartPos);
+            identicalCharPos=s.indexOf(currentStartChar,subStrStartPos+1);
 
-            if (identicalCharPos=-1) {
+            if (identicalCharPos==-1) {
                 tempUniqueStrLength+=1;
             } else if (identicalCharPos>-1) {
                 subStrLength=identicalCharPos-subStrStartPos+tempUniqueStrLength;
                 //If meet a repeating char,use and reset the unique str length.
                 tempUniqueStrLength=0;
             }
-            console.log("subStrLength = "+subStrLength);
+            /*If there is not identical char until end,then add the tempUniqueStrLength to subStrLength*/
+            if(identicalCharPos==-1&&tempUniqueStrLength!=0&&subStrStartPos+1== s.length) {
+                subStrLength=tempUniqueStrLength;
+            }
+
+            //console.log("subStrLength = "+subStrLength);
 
             if(subStrLength>longestLength) {
                 longestLength=subStrLength;
-                console.log("longestLength = "+longestLength);
+                console.log("longestLength of "+inputString+" = "+longestLength);
             }
         }
         return longestLength;
