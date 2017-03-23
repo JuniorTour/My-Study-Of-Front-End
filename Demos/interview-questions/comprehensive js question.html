@@ -7,6 +7,9 @@
 <body>
 
 <script>
+    /*2017/3/23,It may be a question related to scope chain and inheritance.
+    * A structure diagram may be helpful for solving it. */
+
     function foo () {
         getName=function () {alert(1)}
         return this
@@ -23,6 +26,24 @@
 //    new foo.getName()   //2
 //    new foo().getName() //3
 //    new new foo().getName() //3
+
+    function createFuctions() {
+        var result=new Array();
+
+        for (var i=0;i<10;i++) {
+            result[i]=(function (i) {
+                return function () {
+                    return i;
+                }
+            })(i)
+        }
+        return result;
+    }
+
+    var outerResult=createFuctions();
+    for (var i=0;i<outerResult.length;i++) {
+        console.log(outerResult[i]());
+    }
 </script>
 </body>
 </html>

@@ -30,7 +30,7 @@ p {
 /*main*/
 .container {
     width:892px;
-    padding: 0 44px;
+    padding: 44px;
     /*margin: 0 auto;*/
 }
 .upper-half {
@@ -39,10 +39,10 @@ p {
 }
 .main-wrapper {
     width:892px;
-    height:1386px;
+    /*height:1386px;*/
     border-top: 2px solid #938e8c;
     border-bottom: 2px solid #938e8c;
-    padding-top: 30px;
+    padding: 30px 0;
 }
 .page-eyebrow {
     width:100%;
@@ -180,11 +180,11 @@ p {
     padding-right: 25px;
 }
 .lower-headline {
-    font:bold  42px/1 'heiti',sans-serif;
+    font:bold  42px/1 'simhei',sans-serif;
     color: #11456b;
 }
 .lower-left h2 {
-    font: bold 33px/1.8 'heiti',sans-serif;
+    font: bold 33px/1.8 'simhei',sans-serif;
     color: #11456b;
     border-bottom: 2px solid #11456b;
     margin-bottom: 20px;
@@ -206,4 +206,118 @@ p {
     height:300px;
     background-color: #dda0dd;
     margin-left: 15px;
+}
+/*.lower-right*/
+.lower-right {
+    float: right;
+    position: relative;
+}
+.sub-screen {
+    position: relative;
+}
+.example-img-2 {
+    width:458px;
+    height:275px;
+    background-color: #00A2C1;
+}
+.sub-screen-title {
+    width:100%;
+    height:61px;
+    font-size: 26px;
+    line-height:61px;
+    font-weight:normal;
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 0;
+}
+.main-title {
+    padding-left: 10px;
+    border-left: 3px solid #72b16a;
+    margin-left: 30px;
+}
+.sub-title {
+    font: italic 12px/1.4 "microsoft yahei";
+    color: #72b16a;
+}
+.lower-catalog {
+    width:399px;
+    height:258px;
+    background-color: #eeeed6;
+    padding: 30px;
+    margin-top: 30px;
+}
+.lower-catalog ul {
+    margin-bottom: 30px;
+}
+.lower-catalog li {
+    line-height:35px;
+}
+.caret {
+    font: 12px/1 "simsong";
+    color: #5a5b5b;
+}
+.list-content {
+    font: italic 16px/1 "simhei";
+}
+.list-end {
+    font: italic 12px/1 "simsong";
+    text-align: right;
+    color: #5a5b5b;
+}
+.bottom-topic-block {
+    width:200px;
+    background-color: #ff4500;
+    font-size: 12px;
+    line-height:160px;
+    color: #fff;
+    height:160px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    padding: 0 30px;
+}
+.bottom-topic-block .big-font {
+    color: #fff;
+    font-size: 110px;
+}
+.bottom-topic-block .sub-big-font {
+    width:60%;
+    height:86px;
+    font: italic 21px/1 "simhei";
+    color: #fff;
+    padding-left: 5px;
+    border-left: 2px solid #fff;
+}
+.bottom-topic-block .sub-big-font p {
+    font-size:  12px;
+    color: #fff;
+}
+.quote-block {
+    text-indent: 43px;
+    position: relative;
+    width:163px;
+    float: right;
+    font: italic 14px/1 "simhei";
+    color: #5a5b5b;
+}
+.stressed-quote {
+    position: absolute;
+    font-size:72px;
+    line-height:0.1em;
+    color: #d45d5c;
+    font-family:"simhei";
+}
+.quote-left {
+    top: 20px;
+    left: -93px;
+}
+.quote-right {
+    bottom: -27px;
+    right: -20px;
+}
+
+footer {
+    text-align: right;
+    color: #d45d5c;
 }
