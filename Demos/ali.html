@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ali-front-end-interview-online-question</title>
+</head>
+<body style="height: 5000px" id="wrapper">
+<div style=" width: 300px; height: 100px; background:#000;" id="box1"></div>
+<div style=" width: 300px; height: 100px; background:red;" id="box2"></div>
+<script>
+    /*页面上有两个矩形，请使用JavaScript完善 your code here 区域，
+    实现一个视差滚动效果，滚动滚轮，矩形一以两倍的鼠标滚动距离滚动，
+    矩形二以三倍的鼠标滚动距离滚动。效果见下图：*/
+
+    //《高程设》上的跨浏览器的事件对象，用于方便的添加事件：
+    var EventUtil = {
+        addHandler: function (element, type, handler) {
+            if (element.addEventListener) {
+                element.addEventListener(type, handler, false);
+            } else if (element.attachEvent) {
+                element.attachEvent("on" + type, handler);
+            } else {
+                element["on" + type] = handler;
+            }
+        }
+    };
+
+    //获取到两个矩形元素
+    var rect1=document.querySelector('#box1');
+    var rect2=document.querySelector('#box2');
+
+    rect1.style.position="absolute";
+    rect2.style.position="absolute";
+    //避免两个矩形重叠
+    rect2.style.top="100px";
+
+    EventUtil.addHandler(window,"scroll",function (e) {
+        //获取垂直滚动位置（注意兼容性）：
+        var scrollTop =document.body.scrollTop||document.documentElement.scrollTop;
+        console.log(scrollTop);
+        //调用scrollChange()函数，处理滚动产生后两个矩形的移动。
+        scrollChange(scrollTop);
+    });
+
+    function scrollChange(scrollTop) {
+//        console.log(scrollTop)
+        //很简单，就直接给两个矩形设置top声明
+        rect1.style.top=scrollTop*2+"px";
+        rect2.style.top=scrollTop*3+100+"px";
+    }
+</script>
+</body>
+</html>
