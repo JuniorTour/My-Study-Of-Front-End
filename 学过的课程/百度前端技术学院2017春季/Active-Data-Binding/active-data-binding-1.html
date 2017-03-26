@@ -8,7 +8,7 @@
 <script>
     function Observer(data) {
         this.data=data;
-        //recur the data,in order to avoid the data obj has obj property:
+        //recur the data,in order to visit the obj property:
         this.walk(data);
     }
 
@@ -20,14 +20,14 @@
             //avoid to traverse UN-enumerable property,use the hasOwnProperty() method
             if (obj.hasOwnProperty(key)) {
                 val=obj[key];
-            }
 
-            //assure to traverse to the bottom of the obj(not a obj)
-            if (typeof val==='object') {
-                new Observer(val);
-            }
+                //assure to traverse to the bottom of the obj(not a obj)
+                if (typeof val==='object') {
+                    new Observer(val);
+                }
 
-            this.convert(key,val);
+                this.convert(key,val);
+            }
         }
     };
 
@@ -42,28 +42,48 @@
             set:function (newVal) {
                 console.log('You set : '+key+' = '+val);
                 console.log('The new val is : '+newVal);
-                if (newVal===val) {
-                    val=newVal;
+
+                //??????
+                if (newVal===val)  return;
+                //改变该属性的值，必不可少。没有的话相当于没有设置新的属性。
+                val=newVal;
+
+                if (typeof newVal==='object') {
+                    new Observer(val);
+//                    new Observer(newVal);
                 }
             }
         })
     };
 
     let app1 = new Observer({
+        basicInfo: {
+            name: 'liujianhuan',
+            age: 25
+        },
         name: 'juniortour',
-        age: 25
+        age: 2,
+        innerObj:{
+            innerProperty:1
+        }
     });
-
     let app2 = new Observer({
         university: 'sxu',
         major: 'computer'
     });
 
+//    app1.$watch('age',function (age) {
+//        console.log('You changed age,now it is : '+age);
+//    });
+
     // 要实现的结果如下：
-    app1.data.name // 你访问了 name
-    app1.data.age = 100;  // 你设置了 age，新的值为100
-    app2.data.university // 你访问了 university
-    app2.data.major = 'science'  // 你设置了 major，新的值为 science
+//    app1.data.name // 你访问了 name
+//    app1.data.age = 100;  // 你设置了 age，新的值为100
+//    app2.data.university // 你访问了 university
+//    app2.data.major = 'science';  // 你设置了 major，新的值为 science
+
+    app1.data.basicInfo = {like: 'NBA'};//你设置了basicInfo，新的basicInfo为{like: 'NBA'}
+    app1.data.basicInfo.like;//你访问了basicInfo，你访问了like
 </script>
 </body>
 </html>

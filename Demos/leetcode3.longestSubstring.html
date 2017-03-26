@@ -8,18 +8,21 @@
 
 <script>
     /*
-     * 2017年3月7日16:54:53，case1: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKL...........&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopq"
+     * 2017/3/7，case1: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKL...........&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopq"
      * Time Limit Exceeded
      *
      * 2017/3/22,think of another way with one for(),I will try it.
+     *
+     * 2017/3/26,handle with the "abba" pattern.
      * */
 
-    var inputString=prompt("Input string:","pwwkew");
-//        var inputString="kew";
+//    var inputString=prompt("Input string:","abba");
+        var inputString="abba";
 
     var lengthOfLongestSubstring = function (s) {
         var currentStartChar,identicalCharPos;
-        var subStrLength=0,longestLength=0;
+        var tempSubStrLength= 0,subStrLength=0,longestLength=0;
+        var tempStartPos,tempEndPos;
         /*If there is not the repeating char,record the unique char for a part of the sub str.*/
         var tempUniqueStrLength=0;
 
@@ -30,16 +33,30 @@
             if (identicalCharPos==-1) {
                 tempUniqueStrLength+=1;
             } else if (identicalCharPos>-1) {
-                subStrLength=identicalCharPos-subStrStartPos+tempUniqueStrLength;
+                //If meet "abba",the length between a-0 and a-3 is not the sub str length!
+                
+                tempSubStrLength=identicalCharPos-subStrStartPos+tempUniqueStrLength;
+
+                if (identicalCharPos<tempEndPos) {
+                    //it indicate that within the temp sub str,there are repeating chars.
+                    tempSubStrLength=0;
+                }
+
+                tempStartPos=i;
+                tempEndPos=identicalCharPos;
+
+
+//                tempSubStrLength=identicalCharPos-subStrStartPos+tempUniqueStrLength;
+
                 //If meet a repeating char,use and reset the unique str length.
-                tempUniqueStrLength=0;
+                //tempUniqueStrLength=0;
             }
-            /*If there is not identical char until end,then add the tempUniqueStrLength to subStrLength*/
+            /*If there is not identical char until end,then add the tempUniqueStrLength to tempSubStrLength*/
             if(identicalCharPos==-1&&tempUniqueStrLength!=0&&subStrStartPos+1== s.length) {
                 subStrLength=tempUniqueStrLength;
             }
 
-            //console.log("subStrLength = "+subStrLength);
+            //console.log("tempSubStrLength = "+tempSubStrLength);
 
             if(subStrLength>longestLength) {
                 longestLength=subStrLength;
