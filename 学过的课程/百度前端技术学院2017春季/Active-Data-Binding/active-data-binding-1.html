@@ -6,10 +6,40 @@
 </head>
 <body>
 <script>
+    /*implement Event*/
+    function Event() {
+        this.events={};
+    }
+
+    let ep=Event.prototype;
+
+    Event.prototype.on=function (attr,callback) {
+        if (this.events[attr]) {
+            this.events[attr].push(callback);
+        } else {
+            this.events[attr]=[callback];
+        }
+    };
+
+    Event.prototype.off=function (attr) {
+        for (let key in this.events) {
+            if (this.events.hasOwnProperty(key)&&key===attr) {
+                delete this.events[key];
+            }
+        }
+    };
+
+    Event.prototype.emit=function (attr,...arg) {
+        this.events[attr]&&this.events[attr].forEach(function (item) {
+            item(...arg);
+        })
+    };
+
     function Observer(data) {
         this.data=data;
         //recur the data,in order to visit the obj property:
         this.walk(data);
+        this.eventBus=new Event();
     }
 
     let p=Observer.prototype;
@@ -32,6 +62,7 @@
     };
 
     p.convert=function (key,val) {
+        var _this=this;     //???
         Object.defineProperty(this.data,key,{
             enumerable:true,
             configurable:true,
@@ -42,6 +73,9 @@
             set:function (newVal) {
                 console.log('You set : '+key+' = '+val);
                 console.log('The new val is : '+newVal);
+
+                //event emit
+                _this.eventBus.emit(key,val,newVal);
 
                 //??????
                 if (newVal===val)  return;
@@ -56,13 +90,16 @@
         })
     };
 
+    p.$watch=function (attr,callback) {
+        this.eventBus.on(attr,callback);
+    };
+
     let app1 = new Observer({
         basicInfo: {
             name: 'liujianhuan',
-            age: 25
         },
         name: 'juniortour',
-        age: 2,
+        age: 111,
         innerObj:{
             innerProperty:1
         }
@@ -72,9 +109,9 @@
         major: 'computer'
     });
 
-//    app1.$watch('age',function (age) {
-//        console.log('You changed age,now it is : '+age);
-//    });
+    app1.$watch('age',function (age) {
+        console.log('You changed age,now it is : '+age);
+    });
 
     // 要实现的结果如下：
 //    app1.data.name // 你访问了 name
@@ -82,8 +119,9 @@
 //    app2.data.university // 你访问了 university
 //    app2.data.major = 'science';  // 你设置了 major，新的值为 science
 
-    app1.data.basicInfo = {like: 'NBA'};//你设置了basicInfo，新的basicInfo为{like: 'NBA'}
-    app1.data.basicInfo.like;//你访问了basicInfo，你访问了like
+    //app1.data.basicInfo = {like: 'NBA'};//你设置了basicInfo，新的basicInfo为{like: 'NBA'}
+    //app1.data.basicInfo.like;//你访问了basicInfo，你访问了like
+    app1.data.age = 20;
 </script>
 </body>
 </html>
