@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>toutiao_arr</title>
+</head>
+<body>
+<script>
+    var lineOne = read_line();
+    var n=lineOne.split(' ')[0];
+    var q=lineOne.split(' ')[1];
+
+    var arrA= read_line().split(' ');
+    var arrB= read_line().split(' ');
+
+    arrA=arrA.sort(function (a,b) {
+        return a-b;
+    });
+    arrB=arrB.sort(function (a,b) {
+        return a-b;
+    });
+
+    //print(arrA);
+    //print(arrB);
+
+    var i,j;
+    var xTargetIndex,yTargetIndex;
+
+    function compareXY (x,y) {
+        for (i=(arrA.length)/2;i<arrA.length;i++) {
+            if (x<arrA[i]) {
+                i++;
+            } else if (x>arrA[i]) {
+                i--;
+            } else {
+                xTargetIndex=i;
+            }
+        }
+        for (i=(arrB.length)/2;i<arrB.length;i++) {
+            if (y<arrB[i]) {
+                i++;
+            } else if (y>arrB[i]) {
+                i--;
+            } else {
+                yTargetIndex=i;
+            }
+        }
+    }
+
+    for (i=0;i<q;i++) {
+        var xyline = read_line();
+        var x=xyline.split(' ')[0];
+        var y=xyline.split(' ')[1];
+
+        compareXY(x,y);
+    }
+    print(xTargetIndex+1,yTargetIndex+1);
+</script>
+</body>
+</html>

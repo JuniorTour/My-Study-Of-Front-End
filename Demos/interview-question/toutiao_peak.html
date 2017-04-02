@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    var n=3;
+    var arr="0 1 0".split(' ');
+
+    var flagIncrease=0,flagDecrease=0,
+            peakStart=-1,peakEnd=-1,
+            longestPeakStart=-1,longestPeakEnd=-1;
+    var longestPeak=0;
+    var i;
+
+    for (i=0;i<arr.length;i++) {
+        if (arr[i+1]>arr[i]) {
+            /*两个谷底之间的距离即该山峰的宽度*/
+            if (flagDecrease==1) {
+                /*reset flag*/
+                flagIncrease=1;
+                flagDecrease=0;
+
+                if (peakStart!=-1) {
+                    peakEnd=i;
+                } else {
+                    peakStart=i;
+                }
+            }
+        } else {
+            flagDecrease=1;
+        }
+
+        //记录下这一段山峰的长度及其开始和结束下标
+        var peakLength=peakStart-peakEnd;
+
+        if (peakLength>longestPeak) {
+            longestPeak=peakLength;
+            if (peakStart<0) {
+                peakStart=0;
+            }
+            if (peakEnd<0) {
+                peakEnd=0;
+            }
+            if (longestPeakStart<0) {
+                longestPeakStart=0;
+            }
+            if (longestPeakEnd<0) {
+                longestPeakEnd=0;
+            }
+            longestPeak=peakLength;
+            longestPeakStart=peakStart;
+            longestPeakEnd=peakEnd;
+        }
+    }
+
+    console.log(longestPeakStart+' '+peakEnd);
+</script>
+</body>
+</html>

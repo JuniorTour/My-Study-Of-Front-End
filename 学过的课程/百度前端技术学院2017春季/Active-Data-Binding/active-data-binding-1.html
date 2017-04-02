@@ -63,6 +63,14 @@
 
     p.convert=function (key,val) {
         var _this=this;     //???
+        /*http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html
+        *
+        * this是Javascript语言的一个关键字。
+        *它代表函数运行时，自动生成的一个内部对象，只能在函数内部使用。比如，
+        * 随着函数使用场合的不同，this的值会发生变化。但是有一个总的原则，那就是this指的是，调用函数的那个对象。
+        *
+        * apply()是函数对象的一个方法，它的作用是改变函数的调用对象，它的第一个参数就表示改变后的调用这个函数的对象。
+        * 因此，this指的就是这第一个参数。*/
         Object.defineProperty(this.data,key,{
             enumerable:true,
             configurable:true,
