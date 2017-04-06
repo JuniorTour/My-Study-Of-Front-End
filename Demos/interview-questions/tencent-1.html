@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tencent-1</title>
+</head>
+<body>
+<script>
+    /*2017年4月2日20:57:49，这么简单的送分题，又没做对。。。
+    * 绝望了。。。。。。。。
+    * 一开始被没有输出卡住了，后来终于找到了输出的格式，又没有时间了。*/
+    var inputArr=[1,2,2,2,3,3,3,3,4,5,5,5,5,5];
+
+    function main(inputArr) {
+        var arr=inputArr;
+        console.log(arr.toString());
+        var i;
+
+        for (i=0;i<arr.length;) {
+            var currentArrEle=arr[i];
+            var lastIndexPos=arr.lastIndexOf(currentArrEle);
+            var repeatTimes;
+            if (lastIndexPos<=0||lastIndexPos==i) {
+                repeatTimes=1;
+                i++;
+            } else {
+                repeatTimes=lastIndexPos-i+1;
+                i=lastIndexPos+1;
+            }
+
+            console.log(currentArrEle+"("+repeatTimes+")");
+        }
+    }
+
+    main(inputArr);
+</script>
+</body>
+</html>
