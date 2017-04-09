@@ -22,7 +22,6 @@
     var lengthOfLongestSubstring = function (s) {
         var currentStartChar,identicalCharPos;
         var tempSubStrLength= 0,subStrLength=0,longestLength=0;
-        var tempStartPos,tempEndPos;
         /*If there is not the repeating char,record the unique char for a part of the sub str.*/
         var tempUniqueStrLength=0;
 
@@ -34,23 +33,21 @@
                 tempUniqueStrLength+=1;
             } else if (identicalCharPos>-1) {
                 //If meet "abba",the length between a-0 and a-3 is not the sub str length!
-                
-                tempSubStrLength=identicalCharPos-subStrStartPos+tempUniqueStrLength;
+                /*A resolution:check the sub str [subStrStartPos+1,identicalCharPos-1],
+                if there is repeating char of s[subStrStartPos],
+                if yes:give up this sub str,because it is not valid.
+                if no:
 
-                if (identicalCharPos<tempEndPos) {
-                    //it indicate that within the temp sub str,there are repeating chars.
-                    tempSubStrLength=0;
-                }
+                NOPE!The sub str will contain not only the s[subStrStartPos] char,such as "abba",
+                the "bb" has not s[subStrStartPos]='a',but it is not a valid sub str.*/
+                var currentSubStr= s.substring(subStrStartPos+1,identicalCharPos-1);
+                lengthOfLongestSubstring(currentSubStr);
 
-                tempStartPos=i;
-                tempEndPos=identicalCharPos;
-
-
-//                tempSubStrLength=identicalCharPos-subStrStartPos+tempUniqueStrLength;
-
-                //If meet a repeating char,use and reset the unique str length.
-                //tempUniqueStrLength=0;
+                tempSubStrLength++;
             }
+
+            tempSubStrLength+=tempUniqueStrLength;
+
             /*If there is not identical char until end,then add the tempUniqueStrLength to tempSubStrLength*/
             if(identicalCharPos==-1&&tempUniqueStrLength!=0&&subStrStartPos+1== s.length) {
                 subStrLength=tempUniqueStrLength;
