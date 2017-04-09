@@ -12,19 +12,24 @@
     * A window is a range of elements in the array/string which usually defined by the start and end indices,
     * i.e. [i, j)[i,j) (left-closed, right-open).
     * A sliding window is a window "slides" its two boundaries to the certain direction.
-    * For example, if we slide [i, j)[i,j) to the right by 11 element, then it becomes [i+1, j+1)[i+1,j+1) (left-closed, right-open).)*/
+    * For example, if we slide [i, j)[i,j) to the right by 11 element, then it becomes [i+1, j+1)[i+1,j+1) (left-closed, right-open).)
+    *
+    * 982 / 983 test cases passed.          Status: Time Limit Exceeded
+    * The only lucky dog is the longest one.*/
 
-    var inputStr="abba";
+    var inputStr=prompt("Input string:","abba");
+//    var inputStr="abba";
 
     var lengthOfLongestSubstring = function (s) {
+        /*sliding window method:*/
         var i=0,j=0;
-        var strLen= s.length;
-        var longestSubStrLen=0;
-        var tempSubStr='';
+        var strLen= s.length,longestSubStrLen=0;
+        var tempSubStr=s.charAt(i);
+        var currentStartChar,toBeAddedChar;
 
-        for (tempSubStr=s.charAt(i);i<strLen&&j<strLen;) {
-            var currentStartChar=s.charAt(i),
-                    toBeAddedChar=s.charAt(j+1);
+        while (i<strLen&&j<strLen) {
+            currentStartChar=s.charAt(i);
+            toBeAddedChar=s.charAt(j+1);
 
             if (tempSubStr.indexOf(toBeAddedChar)===-1) {
                 /*If subStr does NOT contain s.charAt(j),add it to sub str.*/
@@ -36,10 +41,14 @@
                 if (tempSubStr.length>longestSubStrLen) {
                     longestSubStrLen=tempSubStr.length;
                 }
+                /*reset tempSubStr to another index*/
                 i++;
                 j=i;
+                tempSubStr=s.charAt(i)
             }
         }
+        //console.log(longestSubStrLen);
+        return longestSubStrLen;
     }
 
     lengthOfLongestSubstring(inputStr);

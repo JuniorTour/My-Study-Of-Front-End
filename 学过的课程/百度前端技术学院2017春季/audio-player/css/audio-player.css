@@ -1,0 +1,37 @@
+/*Default:*/
+body {
+    font: 14px/1 "microsoft yahei",Arial,Helvetica,sans-serif;
+    background-color: #FAFAFA;
+}
+a {
+    color: #000;
+}
+a:hover {
+    color: #fff;
+}
+
+/*Main:*/
+.container {
+    width:960px;
+    height:320px;
+    outline: 1px solid red;
+    margin: 50px auto;
+}
+.control-panel {
+    width:65%;
+    height:100%;
+    float: left;
+    outline: 1px solid blue;
+}
+.banner-img-wrapper{
+    width:35%;
+    height:100%;
+    float: right;
+}
+.banner-img {
+    width:280px;
+    height:280px;
+    background-color: green;
+    margin: 20px;
+    border-radius: 50%;
+}
