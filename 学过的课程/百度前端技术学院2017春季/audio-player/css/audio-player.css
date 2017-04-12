@@ -9,29 +9,98 @@ a {
 a:hover {
     color: #fff;
 }
+.icon {
+    cursor: pointer;
+}
+.clearfix:before,.clearfix:after {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
 
 /*Main:*/
 .container {
     width:960px;
     height:320px;
     outline: 1px solid red;
+    padding: 0 50px;
     margin: 50px auto;
 }
 .control-panel {
     width:65%;
-    height:100%;
+    height:82%;
     float: left;
-    outline: 1px solid blue;
+    padding: 3% 0;
+    /*outline: 1px solid blue;*/
 }
-.banner-img-wrapper{
+.song-title {
+    font-size: 28px;
+    margin: 20px 0;
+}
+.singer {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.sub-control-bar {
+    color: #929292;
+}
+.sub-control-wrapper .icon {
+    margin-left: 20px;
+}
+.time-volume-wrapper {
+    float: left;
+}
+.sub-function-wrapper {
+    float: right;
+}
+.sub-function-wrapper .icon {
+    font-size: 20px;
+}
+.progress-bar {
+    cursor: pointer;
+    width:100%;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+.past-progress-bar {
+    width:70%;
+    height:2px;
+    background-color: green;
+}
+
+.main-control-wrapper {
+    margin-top: 60px;
+}
+.main-control-wrapper .icon {
+    font-size: 42px;
+    margin-left: 40px;
+}
+.like-discard-wrapper span:first-child .icon {
+    margin-left:0;
+}
+.like-discard-wrapper {
+    float: left;
+}
+.play-control-wrapper {
+    float: right;
+}
+
+
+.album-cover-wrapper{
     width:35%;
     height:100%;
     float: right;
 }
-.banner-img {
+.album-cover img {
     width:280px;
     height:280px;
-    background-color: green;
-    margin: 20px;
+    /*background-color: black;*/
+    margin: 20px 40px;
     border-radius: 50%;
+    transform: rotate(139deg);
 }

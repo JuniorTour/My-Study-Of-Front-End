@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="245d3670-3895-4aed-8406-06a940ee5abe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/audio-player-example.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/audio-player.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/img/default-album-cover.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/iconfont.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demos/leetcode/3.longest-substring-without-v2-sliding-window.html" afterPath="$PROJECT_DIR$/Demos/leetcode/3.longest-substring-without-v2-sliding-window.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/audio-player.css" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/audio-player.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/index.html" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/index.html" />
     </list>
     <ignored path="Web前端.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,41 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="leetcode3.longestSubstring.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Demos/leetcode/leetcode3.longestSubstring.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="7.2391305">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="3.longest-substring-without-v2-sliding-window.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demos/leetcode/3.longest-substring-without-v2-sliding-window.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0652175">
+            <state vertical-scroll-proportion="-9.5">
               <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="10.component-1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/10.component-1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="18.434782">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mistakes of learning vue.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/mistakes of learning vue.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -71,10 +40,12 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.282609">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.8782609">
+              <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#span#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -83,8 +54,18 @@
       <file leaf-file-name="audio-player.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/audio-player.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6332094">
-              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.4039653">
+              <caret line="97" column="1" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="iconfont.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/iconfont.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.304348">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -116,12 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/02.hello vue part 2.html" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/01.hello vue.html" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/02.vue instance.html" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/mistakes of vue.txt" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/03.template syntax.html" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/04.calculated property.html" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/05.class and style.html" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/06.conditonal rendering.html" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/10.template.html" />
@@ -165,6 +140,12 @@
         <option value="$PROJECT_DIR$/Demos/interview-question/tencent-1.html" />
         <option value="$PROJECT_DIR$/Demos/leetcode3.longestSubstring.html" />
         <option value="$PROJECT_DIR$/Demos/leetcode/3.longest-substring-without-v2-sliding-window.html" />
+        <option value="$PROJECT_DIR$/../../llwebsite 2/llwebsite/Recipe page.html" />
+        <option value="$PROJECT_DIR$/../../llwebsite 2/llwebsite/Home page.html" />
+        <option value="$PROJECT_DIR$/../../llwebsite 2/llwebsite/Recipe page copy.html" />
+        <option value="$PROJECT_DIR$/../../llwebsite 2/recipe page copy/Recipe page copy.html" />
+        <option value="$PROJECT_DIR$/../../llwebsite 2/recipe page copy/css/main.css" />
+        <option value="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/iconfont.css" />
         <option value="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/index.html" />
         <option value="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/audio-player.css" />
       </list>
@@ -272,20 +253,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="译文" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="看过的书" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -535,11 +502,11 @@
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\看过的书\DOM编程艺术\12.band website\js" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\百度前端技术学院2017春季\audio-player\img" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\百度前端技术学院2017春季\audio-player\css" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\百度前端技术学院2017春季\audio-player" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\My-Web-Calculator\js" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\Demos\job\img" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\Demos\my blog" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.calculate.js">
@@ -625,14 +592,14 @@
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13333334" sideWeight="0.4960452" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13333334" sideWeight="0.5039548" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -687,69 +654,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/作品/淘宝首页/diary.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/04.calculated property.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/05.class and style.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/06.conditional rendering.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/07.list rendering.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="21.717392">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="5" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/03.template syntax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="60.086956">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/08.event handling.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/看过的书/JavaScript高级程序设计/chapter1-6/p116,CallAndApply.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.108696">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/09.form input bindings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/01.hello vue.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.2266326">
@@ -781,13 +685,6 @@
     <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/task-6-newspaper-format/task_1_6_3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/译文/一种新的微型清浮技巧/Demo_ A new micro clearfix hack — Nicolas Gallagher.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8711276">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/作品/网易主页/my-netease.html">
@@ -829,13 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4130435">
           <caret line="139" column="44" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/my-components/standard-js-carousel/standard-js-carousel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59107804">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -997,14 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/leetcode/3.longest-substring-without-v2-sliding-window.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0652175">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/10.component-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="18.434782">
@@ -1029,25 +911,138 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../llwebsite 2/llwebsite/Recipe page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33290157">
+          <caret line="422" column="17" selection-start-line="422" selection-start-column="9" selection-end-line="422" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../llwebsite 2/llwebsite/Home page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.7050805">
+          <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../llwebsite 2/llwebsite/Recipe page copy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8711276">
+          <caret line="548" column="14" selection-start-line="548" selection-start-column="14" selection-end-line="548" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../llwebsite 2/llwebsite/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4771395">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/leetcode/3.longest-substring-without-v2-sliding-window.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.5">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../llwebsite 2/recipe page copy/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31226766">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../llwebsite 2/recipe page copy/Recipe page copy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68277574">
+          <caret line="162" column="21" selection-start-line="162" selection-start-column="21" selection-end-line="162" selection-end-column="21" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/my-components/standard-js-carousel/standard-js-carousel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17596035">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/译文/一种新的微型清浮技巧/A new micro clearfix hack – Nicolas Gallagher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.55018586">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/译文/一种新的微型清浮技巧/Demo_ A new micro clearfix hack — Nicolas Gallagher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8711276">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+          <folding>
+            <marker date="1469109490661" expanded="true" signature="11759:12060" placeholder="..." />
+            <marker date="1469109490661" expanded="true" signature="65545:65553" placeholder="..." />
+            <marker date="1469109490661" expanded="true" signature="65609:65617" placeholder="..." />
+            <marker date="1469109490661" expanded="true" signature="66035:66043" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/iconfont.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.304348">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/audio-player-example.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/font/demo_fontclass.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45848823">
+          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="57" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.282609">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.8782609">
+          <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/audio-player.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6332094">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.4039653">
+          <caret line="97" column="1" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
           <folding />
         </state>
       </provider>
