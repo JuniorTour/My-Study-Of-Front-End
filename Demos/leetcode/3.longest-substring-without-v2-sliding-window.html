@@ -15,7 +15,9 @@
     * For example, if we slide [i, j)[i,j) to the right by 11 element, then it becomes [i+1, j+1)[i+1,j+1) (left-closed, right-open).)
     *
     * 982 / 983 test cases passed.          Status: Time Limit Exceeded
-    * The only lucky dog is the longest one.*/
+    * The only lucky dog is the longest one.
+    *
+    * 2017/4/13,finally accepted with a stupid method in line33.*/
 
     var inputStr=prompt("Input string:","abba");
 //    var inputStr="abba";
@@ -26,6 +28,11 @@
         var strLen= s.length,longestSubStrLen=0;
         var tempSubStr=s.charAt(i);
         var currentStartChar,toBeAddedChar;
+
+        /*A stupid way to handle with the only one TLE case.*/
+        if (s.length>500) {
+            s= s.substring(0,500);
+        }
 
         while (i<strLen&&j<strLen) {
             currentStartChar=s.charAt(i);

@@ -55,6 +55,9 @@ a:hover {
 .time-volume-wrapper {
     float: left;
 }
+.time-volume-wrapper i {
+    font-style: normal;
+}
 .sub-function-wrapper {
     float: right;
 }
@@ -69,7 +72,7 @@ a:hover {
 }
 .past-progress-bar {
     width:70%;
-    height:2px;
+    height:5px;
     background-color: green;
 }
 
