@@ -12,6 +12,14 @@ a:hover {
 .icon {
     cursor: pointer;
 }
+.icon:hover {
+    /*background-color: #eff0f1;*/
+    /*color: black;*/
+}
+.icon:active {
+    /*background-color: red;*/
+    /*color: blue;*/
+}
 .clearfix:before,.clearfix:after {
     content: '';
     display: table;
@@ -61,8 +69,15 @@ a:hover {
 .sub-function-wrapper {
     float: right;
 }
+.icon-yinliang:hover {
+    color: #000;
+}
 .sub-function-wrapper .icon {
     font-size: 20px;
+}
+.sub-function-wrapper .icon:hover {
+    background-color: #eff0f1;
+    color: #000;
 }
 .progress-bar {
     cursor: pointer;
@@ -82,6 +97,9 @@ a:hover {
 .main-control-wrapper .icon {
     font-size: 42px;
     margin-left: 40px;
+}
+.icon-aixin-loved {
+    color: red;
 }
 .like-discard-wrapper span:first-child .icon {
     margin-left:0;

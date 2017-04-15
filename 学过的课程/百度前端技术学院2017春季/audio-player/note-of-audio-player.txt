@@ -1,0 +1,9 @@
+1.The currentTime and jump of progress invalid.
+A:http://stackoverflow.com/questions/4572720/html5-video-tag-in-chrome-why-is-currenttime-ignored-when-video-downloaded-fro
+"Make sure your web server is capable of serving the document using byte ranges.
+ Google Chrome requires that this works. Without it, seeking will be disabled and setting currentTime will have no effect."
+
+It means it is related with the server,I tried another external source,the problem solved.
+So I believe it is the answer.
+
+2.The size of icon font should be same,otherwise the outcome will be not beautiful.

@@ -30,4 +30,107 @@
 *       use the e.pageX
 * 6.volume control:same as 5.progress control*/
 
+function addOnloadEvent(func) {
+    var oldOnload=window.onload;
+    if (typeof oldOnload!='function') {
+        window.onload=func;
+    } else {
+        window.onload=function () {
+            oldOnload();
+            func();
+        }
+    }
+}
+
 var audioPlayer=document.querySelector('audio');
+
+//初始化播放器
+function initiatePlay(audioPlayer) {
+    var pauseAndPlayBtn=document.querySelector('.icon-icon-pause');
+    pauseAndPlayBtn.onclick=function () {
+        pauseBtnFunc();
+        changePauseBtnIcon(this.classList);
+    };
+
+    var nextBtn=document.querySelector('.icon-icon-next');
+    nextBtn.onclick=function () {
+        nextSongFunc();
+    };
+
+    var volumeBtn=document.querySelector('.icon-yinliang');
+    volumeBtn.onclick=function () {
+        volumeBtnFunc();
+    };
+
+    var loveBtn=document.querySelector('.icon-aixin');
+    loveBtn.onclick=function () {
+        addClass(this.classList,'icon-aixin-loved');
+    };
+}
+
+addOnloadEvent(initiatePlay);
+
+//暂停/开始按钮功能
+function pauseBtnFunc() {
+    if (audioPlayer.paused===true) {
+        audioPlayer.play();
+    } else {
+        audioPlayer.pause();
+    }
+}
+function changePauseBtnIcon(btnClassList) {
+    exchangeClass(btnClassList,'icon-icon-pause','icon-icon-play');
+
+    //if (btnClassList.contains('icon-icon-pause')) {
+    //    btnClassList.remove('icon-icon-pause');
+    //    btnClassList.add('icon-icon-play');
+    //} else if (btnClassList.contains('icon-icon-play')) {
+    //    btnClassList.remove('icon-icon-play');
+    //    btnClassList.add('icon-icon-pause');
+    //}
+}
+
+function exchangeClass(targetClassList,oneClass,anotherClass) {
+    if (targetClassList.contains(oneClass)) {
+        targetClassList.remove(oneClass);
+        targetClassList.add(anotherClass);
+    } else if (targetClassList.contains(anotherClass)) {
+        targetClassList.remove(anotherClass);
+        targetClassList.add(oneClass);
+    }
+}
+
+function addClass(targetClassList,newClass) {
+    if (targetClassList.contains(newClass)) {
+        targetClassList.remove(newClass);
+    } else {
+        targetClassList.add(newClass);
+    }
+}
+
+//下一首按钮功能
+function nextSongFunc() {
+    audioPlayer.src='http://link.hhtjim.com/163/454285563.mp3';
+}
+
+//音量按钮功能
+function volumeBtnFunc() {
+    if (audioPlayer.volume!==0) {
+        audioPlayer.volume=0;
+    } else {
+        audioPlayer.volume=0.5;
+    }
+}
+
+//进度条点击控制功能
+
+//喜爱按钮功能
+function loveBtnFunc(btnClassList) {
+
+}
+
+//歌词按钮功能
+
+//垃圾桶按钮功能
+
+//改变封面图、标题、歌手、时间功能
