@@ -7,3 +7,7 @@ It means it is related with the server,I tried another external source,the probl
 So I believe it is the answer.
 
 2.The size of icon font should be same,otherwise the outcome will be not beautiful.
+
+3.Bug:the size of .container will change with the animation of .album-cover.
+
+4.Substitute the DOM level 1 'on' Event with a EventUtil.

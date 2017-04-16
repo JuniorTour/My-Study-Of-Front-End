@@ -56,6 +56,7 @@ a:hover {
 }
 .sub-control-bar {
     color: #929292;
+    user-select: none;
 }
 .sub-control-wrapper .icon {
     margin-left: 20px;
@@ -66,10 +67,42 @@ a:hover {
 .time-volume-wrapper i {
     font-style: normal;
 }
+.volume-btn {
+    /*handle with the mouseover event.*/
+    display: inline-block;
+    width:165px;
+    position: relative;
+}
+.volume-bar-wrapper {
+    cursor: pointer;
+    /*display: none;*/
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    left: 45px;
+    width: 0;
+    height:5px;
+    background-color: #929292;
+    transition: all .2s linear;
+}
+.showed-volume-bar {
+    display: block;
+    opacity: 1;
+    width:100px;
+}
+.volume-bar {
+    width:0;
+    height:100%;
+    background-color: #424242;
+    transition: all .3s linear;
+}
+.showed-volume-bar .volume-bar {
+    width:80px;
+}
 .sub-function-wrapper {
     float: right;
 }
-.icon-yinliang:hover {
+.volume-btn:hover .icon-yinliang {
     color: #000;
 }
 .sub-function-wrapper .icon {
@@ -93,6 +126,7 @@ a:hover {
 
 .main-control-wrapper {
     margin-top: 60px;
+    user-select: none;
 }
 .main-control-wrapper .icon {
     font-size: 42px;
@@ -123,5 +157,15 @@ a:hover {
     /*background-color: black;*/
     margin: 20px 40px;
     border-radius: 50%;
-    transform: rotate(139deg);
+    animation: endlessRotation 8s linear infinite;
+}
+
+.audio-wrapper {
+    /*display: none;*/
+}
+
+@keyframes endlessRotation {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
 }
