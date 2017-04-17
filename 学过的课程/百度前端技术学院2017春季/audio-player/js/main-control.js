@@ -65,10 +65,18 @@ var EventUtil={
         } else {
             el['on'+type]=null;
         }
+    },
+    getEvent: function (event) {
+        return event?event:window.event;
+    },
+    getTarget:function (event) {
+        return event.target||event.srcElement;
     }
 };
 
-function exchangeClass(targetClassList,oneClass,anotherClass) {
+function exchangeClass(oneClass,anotherClass) {
+    var target=document.querySelector('.'+oneClass)||document.querySelector('.'+anotherClass);
+    var targetClassList=target.classList;
     if (targetClassList.contains(oneClass)) {
         targetClassList.remove(oneClass);
         targetClassList.add(anotherClass);
@@ -97,29 +105,52 @@ function getSummaryOffsetLeft(el) {
 
 var audioPlayer=document.querySelector('audio');
 
+var playListObj={
+    songsId:[0,1,2],
+    songName:['乐·花海','挂红灯','沉醉东风'],
+    singer:['月之门','俞逊发','天涯明月刀'],
+    songSrc:[
+        'audio/eg-1.mp3',
+        'audio/eg-2.mp3',
+        'audio/eg-3.mp3'
+    ]
+};
+audioPlayer.currentPlayId=2;
+
 //初始化播放器
 function initiatePlay() {
-    var pauseAndPlayBtn=document.querySelector('.icon-icon-pause');
-    EventUtil.addHandler(pauseAndPlayBtn,'click',
-        function () {
-            pauseBtnFunc();
-            changePauseBtnIcon(this.classList);
-        }
-    );
 
-    var nextBtn=document.querySelector('.icon-icon-next');
-    EventUtil.addHandler(nextBtn,'click',
-        function () {
-            nextSongFunc();
-        }
-    );
+    audioPlayer.src=playListObj.songSrc[audioPlayer.currentPlayId];
 
-    var volumeBtn=document.querySelector('.icon-yinliang');
-    EventUtil.addHandler(volumeBtn,'click',
-        function () {
-            volumeBtnFunc();
+    //Event delegate optimize:
+    var controlPanel=document.querySelector('.control-panel');
+    EventUtil.addHandler(controlPanel,'click',function (event) {
+        var targetId=EventUtil.getTarget(event).id;
+        var targetClassList=EventUtil.getTarget(event).classList;
+
+        switch (targetId) {
+            case 'icon-play-and-pause' :
+                pauseBtnFunc();
+                break;
+            case 'icon-next':
+                nextSongFunc();
+                break;
+            case 'icon-yinliang':
+                volumeBtnFunc();
+                break;
+            case 'icon-aixin':
+                loveBtnFunc(targetClassList);
+                break;
+            case 'icon-laji2':
+                garbageBinBtnFunc();
+                break;
+            /*progress bar not suitable.*/
+            //case 'progress-bar':
+            //    progressBarControlFunc();
+            //    break;
         }
-    );
+    });
+
     var volumeWrapper=document.querySelector('.volume-btn');
     EventUtil.addHandler(volumeWrapper,'mouseover',
         function () {
@@ -134,29 +165,19 @@ function initiatePlay() {
         }
     );
 
-    var loveBtn=document.querySelector('.icon-aixin');
-    EventUtil.addHandler(loveBtn,'click',
-        function () {
-            loveBtnFunc(this.classList);
-        }
-    );
-
-    var garbageBtn=document.querySelector('.icon-laji2');
-    EventUtil.addHandler(garbageBtn,'click',
-        function () {
-            garbageBinBtnFunc();
-        }
-    );
-
-
-    var progressBar=document.querySelector('.progress-bar');
+    var progressBar=document.querySelector('#progress-bar');
     EventUtil.addHandler(progressBar,'click',progressBarControlFunc);
+
+    var volumeBarWrapper=document.querySelector('.volume-bar-wrapper');
+    EventUtil.addHandler(volumeBarWrapper,'click',volumeBarControlFunc);
 
 }
 
-
-var volumeBarWrapper=document.querySelector('.volume-bar-wrapper');
-EventUtil.addHandler(volumeBarWrapper,'click',volumeBarControlFunc);
+audioPlayer.oncanplay=function() {
+    /*start album cover animation,
+    * change play icon to pause icon*/
+    changePauseBtnIcon();
+};
 
 addOnloadEvent(initiatePlay);
 
@@ -167,15 +188,20 @@ function pauseBtnFunc() {
     } else {
         audioPlayer.pause();
     }
+    changePauseBtnIcon();
 }
-function changePauseBtnIcon(btnClassList) {
-    exchangeClass(btnClassList,'icon-icon-pause','icon-icon-play');
+function changePauseBtnIcon() {
+    exchangeClass('icon-icon-pause','icon-icon-play');
 }
 
 //下一首按钮功能
 function nextSongFunc() {
     //can use api or data object.
-    audioPlayer.src='http://link.hhtjim.com/163/454285563.mp3';
+    audioPlayer.src='audio/eg-2.mp3';
+    //http://link.hhtjim.com/163/454285563.mp3
+    audioPlayer.currentPlayId=1;
+    changeInfoFunc();
+    pauseBtnFunc();
 }
 
 //音量按钮功能
@@ -212,13 +238,11 @@ function progressBarControlFunc(event) {
     changeProgressWidth(pastProgressPercent);
     changSongProgress(pastProgressPercent);
 }
-
 function changeProgressWidth(pastProgressPercent) {
-    var pastProgressBar=document.querySelector('.past-progress-bar');
+    var pastProgressBar=document.querySelector('#past-progress-bar');
     pastProgressBar.style.width=pastProgressPercent*100+'%';
     console.log('pastProgressPercent='+pastProgressPercent);
 }
-
 function changSongProgress(songProgress) {
     audioPlayer.currentTime=songProgress*audioPlayer.duration;
     console.log(songProgress);
@@ -230,16 +254,20 @@ function loveBtnFunc(btnClassList) {
     //do something...
 }
 
-//歌词按钮功能
-
 //垃圾桶按钮功能,garbage bin btn function
 function garbageBinBtnFunc () {
     //do something...
     nextSongFunc();
 }
 
-//下载功能,download function
-
 //改变封面图、标题、歌手、时间功能
+function changeInfoFunc() {
+    var songTitle=document.querySelector('.song-title');
+    songTitle.innerHTML=playListObj.songName[audioPlayer.currentPlayId];
+}
 
 //封面旋转动画控制功能,album-cover animation control function:
+
+//歌词按钮功能
+
+//下载功能,download function

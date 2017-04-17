@@ -112,13 +112,13 @@ a:hover {
     background-color: #eff0f1;
     color: #000;
 }
-.progress-bar {
+#progress-bar {
     cursor: pointer;
     width:100%;
     background-color: #ddd;
     margin: 10px 0;
 }
-.past-progress-bar {
+#past-progress-bar {
     width:70%;
     height:5px;
     background-color: green;

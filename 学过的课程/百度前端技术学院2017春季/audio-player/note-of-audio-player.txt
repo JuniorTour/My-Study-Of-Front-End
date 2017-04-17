@@ -11,3 +11,7 @@ So I believe it is the answer.
 3.Bug:the size of .container will change with the animation of .album-cover.
 
 4.Substitute the DOM level 1 'on' Event with a EventUtil.
+
+5.Bug:after click the garbage btn,the pause btn will not switch icon.
+
+6.Decided to use Event delegate for optimize performance.4/17
