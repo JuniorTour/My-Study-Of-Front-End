@@ -2,16 +2,15 @@
  * Created by asus-pc on 2017/4/13 0013.
  *
  * To-do:
- * 1.music visible:
+ * 1.***music visible:
  * https://segmentfault.com/a/1190000008278935
- *
  * 2.use 网易云音乐的API:
  * https://api.imjad.cn/cloudmusic/index.html
- *
  * 3.love and throw effect of the btn:
  * can refer the code pen.
- *
  * 4.change song switch album animation
+ * 5.add play list.
+ * 6.add key board support.
  */
 
 /*The useful properties of audio:
@@ -24,7 +23,9 @@
  * 7.ended	返回音频的播放是否已结束。
  * 8.muted	[true | false] 设置或返回是否关闭声音。
  * 9.paused	设置或返回音频是否暂停。
- * 10.played	返回表示音频已播放部分的 TimeRanges 对象。*/
+ * 10.played	返回表示音频已播放部分的 TimeRanges 对象。
+ * 11.ontimeupdate:
+ * 12.oncanplay and oncanplaythrough*/
 
 /*Some thinking:
 * 1.progress bar:the width of it is :(currentTime/duration)*100.
@@ -74,15 +75,14 @@ var EventUtil={
     }
 };
 
-function exchangeClass(oneClass,anotherClass) {
-    var target=document.querySelector('.'+oneClass)||document.querySelector('.'+anotherClass);
-    var targetClassList=target.classList;
-    if (targetClassList.contains(oneClass)) {
-        targetClassList.remove(oneClass);
-        targetClassList.add(anotherClass);
-    } else if (targetClassList.contains(anotherClass)) {
-        targetClassList.remove(anotherClass);
-        targetClassList.add(oneClass);
+function updateClass(oldClass,newClass) {
+    var target=document.querySelector('.'+oldClass);
+    if (target) {
+        var targetClassList=target.classList;
+        if (targetClassList.contains(oldClass)) {
+            targetClassList.remove(oldClass);
+            targetClassList.add(newClass);
+        }
     }
 }
 
@@ -103,24 +103,53 @@ function getSummaryOffsetLeft(el) {
     return offsetLeft;
 }
 
+var Public={
+    parseTimeStr:function (time) {
+        if (typeof time!='number') return;
+
+        var min=parseInt(time/60);
+        var sec=parseInt(time%60);
+        min=min<10?'0'+min:min;
+        sec=sec<10?'0'+sec:sec;
+        return min+':'+sec;
+    }
+};
+
+/*Onload step:
+* 1.Before can play,show the loading animation.
+* 2.When can play,initiate the player by initiatePlay().
+* 3.*/
+
 var audioPlayer=document.querySelector('audio');
 
 var playListObj={
+    currentSongId:0,
     songsId:[0,1,2],
-    songName:['乐·花海','挂红灯','沉醉东风'],
-    singer:['月之门','俞逊发','天涯明月刀'],
+    songName:['闲情逸致','忆相逢','乐·花海'],
+    singer:['魏小涵','骆集益','月之门'],
     songSrc:[
-        'audio/eg-1.mp3',
-        'audio/eg-2.mp3',
-        'audio/eg-3.mp3'
+        'https://m8.music.126.net/20170418215800/58bed9397a7447b682afc6b24b9d5b4a/ymusic/7f98/fa42/2de4/636a4b5d25ecb8af119e94c1e6c480f2.mp3',
+        'https://m7.music.126.net/20170418215844/62a793d09022704c68f6dab3d8c6664a/ymusic/13da/938f/7abd/935e58a82bad6a53ee38859a0f6cc999.mp3',
+        'https://m8.music.126.net/20170418215920/d0bf11eb07c18c038ce5404e7220dbae/ymusic/032d/043b/ab0d/3ef0cef9244bfc20103d8a96619e539f.mp3'
+    ],
+    albumCoverSrc:[
+        'img/default-album-cover.jpg'
     ]
 };
-audioPlayer.currentPlayId=2;
+
+//加载音频,loading audio src:
+function loadingSrc() {
+    //do something
+
+    //setTimeout(function () {
+    //   alert('Internet Error!');
+    //},1000);
+}
 
 //初始化播放器
 function initiatePlay() {
 
-    audioPlayer.src=playListObj.songSrc[audioPlayer.currentPlayId];
+    audioPlayer.src=playListObj.songSrc[playListObj.currentSongId];
 
     //Event delegate optimize:
     var controlPanel=document.querySelector('.control-panel');
@@ -170,14 +199,25 @@ function initiatePlay() {
 
     var volumeBarWrapper=document.querySelector('.volume-bar-wrapper');
     EventUtil.addHandler(volumeBarWrapper,'click',volumeBarControlFunc);
-
 }
 
-audioPlayer.oncanplay=function() {
+EventUtil.addHandler(audioPlayer,'canplay',function () {
     /*start album cover animation,
-    * change play icon to pause icon*/
-    changePauseBtnIcon();
-};
+     * change play icon to pause icon*/
+    //exchangePauseBtnIcon();
+    updatePlayBtnIcon();
+    changeInfoFunc();
+});
+
+EventUtil.addHandler(audioPlayer,'timeupdate',function () {
+    updateCurrentTime();
+    var pastProgressPercent=(audioPlayer.currentTime/audioPlayer.duration).toFixed(2);
+    changeProgressWidth(pastProgressPercent);
+});
+
+EventUtil.addHandler(audioPlayer,'ended',function () {
+    nextSongFunc();
+});
 
 addOnloadEvent(initiatePlay);
 
@@ -188,20 +228,21 @@ function pauseBtnFunc() {
     } else {
         audioPlayer.pause();
     }
-    changePauseBtnIcon();
+    updatePlayBtnIcon();
 }
-function changePauseBtnIcon() {
-    exchangeClass('icon-icon-pause','icon-icon-play');
+function updatePlayBtnIcon () {
+    if (audioPlayer.paused===true) {
+        updateClass('icon-icon-pause','icon-icon-play');
+    } else {
+        updateClass('icon-icon-play','icon-icon-pause');
+    }
 }
 
 //下一首按钮功能
 function nextSongFunc() {
     //can use api or data object.
-    audioPlayer.src='audio/eg-2.mp3';
-    //http://link.hhtjim.com/163/454285563.mp3
-    audioPlayer.currentPlayId=1;
-    changeInfoFunc();
-    pauseBtnFunc();
+    playListObj.currentSongId++;
+    audioPlayer.src=playListObj.songSrc[playListObj.currentSongId];
 }
 
 //音量按钮功能
@@ -221,7 +262,7 @@ function volumeBarControlFunc(event) {
     //console.log(e.pageX+'\n'+this.offsetLeft+'\n'+this.offsetWidth);
     var volumePercent=(e.pageX-getSummaryOffsetLeft(this))/this.offsetWidth;
     audioPlayer.volume=volumePercent;
-    console.log('audioPlayer.volume='+audioPlayer.volume);
+    //console.log('audioPlayer.volume='+audioPlayer.volume);
     changeVolumeBarWidth(volumePercent);
 }
 function changeVolumeBarWidth(targetWidthPercent) {
@@ -229,23 +270,23 @@ function changeVolumeBarWidth(targetWidthPercent) {
     volumeBar.style.width=targetWidthPercent*100+'%';
 }
 
-//进度条点击控制功能
+//进度条控制功能
 function progressBarControlFunc(event) {
     var e=window.event||event;
-    //console.log(e.pageX+'\n'+e.clientX);
-    console.log(e.pageX+'\n'+this.offsetLeft+'\n'+this.offsetWidth);
+    //console.log(e.pageX+'\n'+this.offsetLeft+'\n'+this.offsetWidth);
     var pastProgressPercent= (e.pageX-this.offsetLeft)/this.offsetWidth;
     changeProgressWidth(pastProgressPercent);
     changSongProgress(pastProgressPercent);
 }
 function changeProgressWidth(pastProgressPercent) {
+    pastProgressPercent=parseFloat(pastProgressPercent);
     var pastProgressBar=document.querySelector('#past-progress-bar');
     pastProgressBar.style.width=pastProgressPercent*100+'%';
-    console.log('pastProgressPercent='+pastProgressPercent);
+    //console.log('pastProgressPercent='+pastProgressPercent);
 }
 function changSongProgress(songProgress) {
     audioPlayer.currentTime=songProgress*audioPlayer.duration;
-    console.log(songProgress);
+    //console.log(songProgress);
 }
 
 //喜爱按钮功能
@@ -263,7 +304,16 @@ function garbageBinBtnFunc () {
 //改变封面图、标题、歌手、时间功能
 function changeInfoFunc() {
     var songTitle=document.querySelector('.song-title');
-    songTitle.innerHTML=playListObj.songName[audioPlayer.currentPlayId];
+    songTitle.innerHTML=playListObj.songName[playListObj.currentSongId];
+    var singer=document.querySelector('.singer');
+    singer.innerHTML=playListObj.singer[playListObj.currentSongId];
+    updateCurrentTime();
+    var totalTime=document.querySelector('.total-time');
+    totalTime.innerHTML=Public.parseTimeStr(audioPlayer.duration);
+}
+function updateCurrentTime() {
+    var currentTime=document.querySelector('.current-time');
+    currentTime.innerHTML=Public.parseTimeStr(audioPlayer.currentTime);
 }
 
 //封面旋转动画控制功能,album-cover animation control function:
