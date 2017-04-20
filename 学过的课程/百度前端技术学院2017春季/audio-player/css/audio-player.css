@@ -49,10 +49,12 @@ a:hover {
 .song-title {
     font-size: 28px;
     margin: 20px 0;
+    height:28px;
 }
 .singer {
     font-size: 18px;
     margin-bottom: 30px;
+    height: 18px;
 }
 .sub-control-bar {
     color: #929292;
@@ -157,14 +159,18 @@ a:hover {
     /*background-color: black;*/
     margin: 20px 40px;
     border-radius: 50%;
-    animation: endlessRotation 8s linear infinite;
+    animation: roundRotation 10s linear infinite;
+    animation-play-state: paused;
 }
 
 .audio-wrapper {
+    /*hide the audio ele*/
     display: none;
+    position: absolute;
+    left:-999em;
 }
 
-@keyframes endlessRotation {
+@keyframes roundRotation {
     0% {transform: rotate(0deg);}
     50% {transform: rotate(180deg);}
     100% {transform: rotate(360deg);}

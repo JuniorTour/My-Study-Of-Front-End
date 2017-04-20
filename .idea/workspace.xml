@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="245d3670-3895-4aed-8406-06a940ee5abe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demos/404.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/audio/eg-3.mp3" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/audio/eg-3.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/img/album-cover/cover-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/img/album-cover/cover-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/img/album-cover/cover-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demos/各种特效/like-animation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/like-animation.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/audio/eg-1.mp3" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/audio/eg-1.mp3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/audio/eg-2.mp3" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/audio/eg-2.mp3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/asus_pc.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/asus_pc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/audio-player.css" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/audio-player.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/index.html" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/js/main-control.js" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/js/main-control.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/note-of-audio-player.txt" afterPath="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/note-of-audio-player.txt" />
     </list>
     <ignored path="Web前端.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,8 +38,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0434783">
-              <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+            <state vertical-scroll-proportion="-4.021739">
+              <caret line="57" column="48" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="like-animation.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/like-animation.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.68974">
+              <caret line="46" column="65" selection-start-line="46" selection-start-column="65" selection-end-line="46" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -44,21 +59,26 @@
         <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/js/main-control.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="298" column="0" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+              <caret line="279" column="54" selection-start-line="279" selection-start-column="54" selection-end-line="279" selection-end-column="54" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#!!block;n#addOnloadEvent#0" expanded="false" />
-                <element signature="e#1299#2034#0" expanded="false" />
-                <element signature="n#!!block;n#updateClass#0" expanded="false" />
-                <element signature="n#!!block;n#switchClass#0" expanded="false" />
+                <element signature="e#1135#2489#0" expanded="false" />
+                <element signature="e#1172#1426#0" expanded="false" />
+                <element signature="e#3574#3910#0" expanded="false" />
                 <element signature="n#!!block;n#initiatePlay#0" expanded="false" />
-                <element signature="e#4250#5023#0" expanded="false" />
-                <element signature="n#!!block;n#pauseBtnFunc#0" expanded="false" />
-                <element signature="n#!!block;n#updatePlayBtnIcon#0" expanded="false" />
                 <element signature="n#!!block;n#volumeBtnFunc#0" expanded="false" />
-                <element signature="n#!!block;n#volumeBarControlFunc#0" expanded="false" />
                 <element signature="n#!!block;n#progressBarControlFunc#0" expanded="false" />
-                <element signature="n#!!block;n#loveBtnFunc#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="like-animation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demos/各种特效/like-animation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.2173913">
+              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="338" selection-end-column="12" />
+              <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -68,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/note-of-audio-player.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -77,17 +97,17 @@
       <file leaf-file-name="audio-player.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/audio-player.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.369565">
-              <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+            <state vertical-scroll-proportion="-9.543478">
+              <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="404.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="404.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demos/404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.37206426">
+            <state vertical-scroll-proportion="6.5434785">
               <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
               <folding />
             </state>
@@ -99,10 +119,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="txt" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -113,8 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/07.list rendering.html" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/06.conditional rendering.html" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/08.event handling.html" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/09.form input bindings.html" />
         <option value="$PROJECT_DIR$/Demos/my-components/my-carousel/my-carousel.html" />
@@ -159,11 +177,13 @@
         <option value="$PROJECT_DIR$/../../llwebsite 2/recipe page copy/css/main.css" />
         <option value="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/iconfont.css" />
         <option value="$PROJECT_DIR$/Demos/leetcode/3.longest-substring-without-v2-sliding-window.html" />
-        <option value="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/note-of-audio-player.txt" />
         <option value="$PROJECT_DIR$/Demos/404.html" />
+        <option value="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/note-of-audio-player.txt" />
         <option value="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/audio-player.css" />
-        <option value="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/index.html" />
         <option value="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/js/main-control.js" />
+        <option value="$PROJECT_DIR$/Demos/各种特效/like-animation.html" />
+        <option value="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/index.html" />
+        <option value="$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/like-animation.css" />
       </list>
     </option>
   </component>
@@ -440,7 +460,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="audio" />
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="学过的课程" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="百度前端技术学院2017春季" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="audio-player" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -469,6 +515,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="各种特效" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -506,19 +570,19 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\百度前端技术学院2017春季\audio-player\img\album-cover" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\百度前端技术学院2017春季\audio-player\audio" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\百度前端技术学院2017春季\audio-player\img" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\百度前端技术学院2017春季\audio-player\css" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\百度前端技术学院2017春季\audio-player" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\Demos\leetcode" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\Demos\interview-questions" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\Demos\interview-question" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\Demos" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\看过的书\DOM编程艺术\12.band website\js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\百度前端技术学院2017春季\audio-player\audio" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\百度前端技术学院2017春季\audio-player\img" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\百度前端技术学院2017春季\audio-player\css" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\百度前端技术学院2017春季\audio-player" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\作品\My-Web-Calculator\js" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.calculate.js">
@@ -661,23 +725,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/task-6-newspaper-format/task_1_6_3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/作品/网易主页/my-netease.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27509293">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/作品/旧版京东/jingdong-homepage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="24.094175">
@@ -984,26 +1036,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.5434785">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/note-of-audio-player.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/audio-player.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.369565">
-          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0434783">
-          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+        <state vertical-scroll-proportion="-9.543478">
+          <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1011,29 +1063,40 @@
     <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/js/main-control.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="298" column="0" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+          <caret line="279" column="54" selection-start-line="279" selection-start-column="54" selection-end-line="279" selection-end-column="54" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#addOnloadEvent#0" expanded="false" />
-            <element signature="e#1299#2034#0" expanded="false" />
-            <element signature="n#!!block;n#updateClass#0" expanded="false" />
-            <element signature="n#!!block;n#switchClass#0" expanded="false" />
+            <element signature="e#1135#2489#0" expanded="false" />
+            <element signature="e#1172#1426#0" expanded="false" />
+            <element signature="e#3574#3910#0" expanded="false" />
             <element signature="n#!!block;n#initiatePlay#0" expanded="false" />
-            <element signature="e#4250#5023#0" expanded="false" />
-            <element signature="n#!!block;n#pauseBtnFunc#0" expanded="false" />
-            <element signature="n#!!block;n#updatePlayBtnIcon#0" expanded="false" />
             <element signature="n#!!block;n#volumeBtnFunc#0" expanded="false" />
-            <element signature="n#!!block;n#volumeBarControlFunc#0" expanded="false" />
             <element signature="n#!!block;n#progressBarControlFunc#0" expanded="false" />
-            <element signature="n#!!block;n#loveBtnFunc#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/404.html">
+    <entry file="file://$PROJECT_DIR$/Demos/各种特效/like-animation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.37206426">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        <state vertical-scroll-proportion="-3.2173913">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="338" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.021739">
+          <caret line="57" column="48" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/audio-player/css/like-animation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.68974">
+          <caret line="46" column="65" selection-start-line="46" selection-start-column="65" selection-end-line="46" selection-end-column="65" />
           <folding />
         </state>
       </provider>

@@ -5,14 +5,15 @@
     <title>My-Audio-Player</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/like-animation.css">
     <link rel="stylesheet" href="css/audio-player.css">
 </head>
 <body>
     <div class="container">
         <div class="control-panel">
             <div class="song-info">
-                <h1 class="song-title">乐·花海</h1>
-                <p class="singer">月之门</p>
+                <h1 class="song-title"></h1>
+                <p class="singer"></p>
             </div>
             <div class="sub-control-bar clearfix">
                 <div class="sub-control-wrapper clearfix">
@@ -46,14 +47,19 @@
                     <div id="past-progress-bar"></div>
                 </div>
                 <div class="audio-wrapper">
-                    <audio src="" controls="controls" autoplay="autoplay" preload="metadata"></audio>
+                    <audio src="" autoplay="autoplay" preload="metadata"></audio>
                     <!--http://link.hhtjim.com/163/472006515.mp3-->
                 </div>
             </div>
             <div class="main-control-wrapper clearfix">
                 <div class="like-discard-wrapper">
                     <span>
-                        <i id="icon-aixin" class="icon iconfont icon-aixin"></i>
+                        <i id="icon-aixin" class="icon iconfont icon-aixin">
+                          <span class='like-icon'>
+                            <div class='heart-animation-1'></div>
+                            <div class='heart-animation-2'></div>
+                          </span>
+                        </i>
                     </span>
                     <span>
                         <i id="icon-laji2" class="icon iconfont icon-laji2"></i>
@@ -71,7 +77,7 @@
         </div>
         <div class="album-cover-wrapper">
             <div class="album-cover">
-                <img src="img/default-album-cover.jpg" alt="">
+                <img src="img/album-cover/cover-1.jpg" alt="">
             </div>
         </div>
     </div>

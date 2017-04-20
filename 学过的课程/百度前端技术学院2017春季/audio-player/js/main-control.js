@@ -4,7 +4,7 @@
  * To-do:
  * 1.***music visible:
  * https://segmentfault.com/a/1190000008278935
- * 2.use 网易云音乐的API:
+ * 2.use the API net ease cloud music:
  * https://api.imjad.cn/cloudmusic/index.html
  * 3.love and throw effect of the btn:
  * can refer the code pen.
@@ -12,41 +12,6 @@
  * 5.add play list.
  * 6.add key board support.
  */
-
-/*The useful properties of audio:
- * 1.play()
- * 2.pause()
- * 3.volume:range from [0,1]
- * 4.load()	重新加载音频/视频元素
- * 5.currentTime	设置或返回音频中的当前播放位置（以秒计）。
- * 6.duration	返回音频的长度（以秒计）。
- * 7.ended	返回音频的播放是否已结束。
- * 8.muted	[true | false] 设置或返回是否关闭声音。
- * 9.paused	设置或返回音频是否暂停。
- * 10.played	返回表示音频已播放部分的 TimeRanges 对象。
- * 11.ontimeupdate:
- * 12.oncanplay and oncanplaythrough*/
-
-/*Some thinking:
-* 1.progress bar:the width of it is :(currentTime/duration)*100.
-* 2.current time minute:currentTime%603.
-* 3.click volume btn mute the music:muted='true';
-* 4.transition needed.
-* 5.click the progress bar to control progress:
-*       use the e.pageX
-* 6.volume control:same as 5.progress control*/
-
-function addOnloadEvent(func) {
-    var oldOnload=window.onload;
-    if (typeof oldOnload!='function') {
-        window.onload=func;
-    } else {
-        window.onload=function () {
-            oldOnload();
-            func();
-        }
-    }
-}
 
 var EventUtil={
     addHandler:function (el,type,handler) {
@@ -75,35 +40,18 @@ var EventUtil={
     }
 };
 
-function updateClass(oldClass,newClass) {
-    var target=document.querySelector('.'+oldClass);
-    if (target) {
-        var targetClassList=target.classList;
-        if (targetClassList.contains(oldClass)) {
-            targetClassList.remove(oldClass);
-            targetClassList.add(newClass);
-        }
-    }
-}
-
-function switchClass(targetClassList,newClass) {
-    if (targetClassList.contains(newClass)) {
-        targetClassList.remove(newClass);
-    } else {
-        targetClassList.add(newClass);
-    }
-}
-
-function getSummaryOffsetLeft(el) {
-    var offsetLeft=el.offsetLeft;
-    while (el.offsetParent) {
-        el=el.offsetParent;
-        offsetLeft+=el.offsetLeft;
-    }
-    return offsetLeft;
-}
-
 var Public={
+    addOnloadEvent:function (func) {
+        var oldOnload=window.onload;
+        if (typeof oldOnload!='function') {
+            window.onload=func;
+        } else {
+            window.onload=function () {
+                oldOnload();
+                func();
+            }
+        }
+    },
     parseTimeStr:function (time) {
         if (typeof time!='number') return;
 
@@ -112,43 +60,86 @@ var Public={
         min=min<10?'0'+min:min;
         sec=sec<10?'0'+sec:sec;
         return min+':'+sec;
+    },
+    updateClass:function (oldClass,newClass) {
+        var target=document.querySelector('.'+oldClass);
+        if (target) {
+            var targetClassList=target.classList;
+            if (targetClassList.contains(oldClass)) {
+                targetClassList.remove(oldClass);
+                targetClassList.add(newClass);
+            }
+        }
+    },
+    switchClass:function (targetClassList,newClass) {
+        if (targetClassList.contains(newClass)) {
+            targetClassList.remove(newClass);
+        } else {
+            targetClassList.add(newClass);
+        }
+    },
+    getSummaryOffsetLeft:function (el) {
+        var offsetLeft=el.offsetLeft;
+        while (el.offsetParent) {
+            el=el.offsetParent;
+            offsetLeft+=el.offsetLeft;
+        }
+        return offsetLeft;
     }
 };
 
 /*Onload step:
 * 1.Before can play,show the loading animation.
-* 2.When can play,initiate the player by initiatePlay().
-* 3.*/
+* 2.When can play,initiate the player by initiatePlay().*/
 
 var audioPlayer=document.querySelector('audio');
 
+EventUtil.addHandler(audioPlayer,'canplay',function () {
+    /*start album cover animation,
+     * change play icon to pause icon*/
+    resetCoverAnimation();
+    coverAnimationControlFunc('running');
+    changeInfoFunc();
+});
+
+EventUtil.addHandler(audioPlayer,'play',function () {
+    coverAnimationControlFunc('running');
+    Public.updateClass('icon-icon-play','icon-icon-pause');
+});
+
+EventUtil.addHandler(audioPlayer,'pause',function () {
+    coverAnimationControlFunc('paused');
+    Public.updateClass('icon-icon-pause','icon-icon-play');
+});
+
+EventUtil.addHandler(audioPlayer,'timeupdate',function () {
+    updateCurrentTime();
+    //var pastProgressPercent=(audioPlayer.currentTime/audioPlayer.duration).toFixed(3);
+    changeProgressWidth((audioPlayer.currentTime/audioPlayer.duration).toFixed(4));
+});
+
+EventUtil.addHandler(audioPlayer,'ended',function () {
+    nextSongFunc();
+});
+
 var playListObj={
     currentSongId:0,
-    songsId:[0,1,2],
-    songName:['闲情逸致','忆相逢','乐·花海'],
-    singer:['魏小涵','骆集益','月之门'],
+    songName:['喜洋洋','清平乐','乐·花海'],
+    singer:['中央广播民族乐团','卢小旭','月之门'],
     songSrc:[
-        'https://m8.music.126.net/20170418215800/58bed9397a7447b682afc6b24b9d5b4a/ymusic/7f98/fa42/2de4/636a4b5d25ecb8af119e94c1e6c480f2.mp3',
-        'https://m7.music.126.net/20170418215844/62a793d09022704c68f6dab3d8c6664a/ymusic/13da/938f/7abd/935e58a82bad6a53ee38859a0f6cc999.mp3',
-        'https://m8.music.126.net/20170418215920/d0bf11eb07c18c038ce5404e7220dbae/ymusic/032d/043b/ab0d/3ef0cef9244bfc20103d8a96619e539f.mp3'
+        'audio/eg-1.mp3',
+        'audio/eg-2.mp3',
+        'audio/eg-3.mp3'
     ],
     albumCoverSrc:[
-        'img/default-album-cover.jpg'
+        'img/album-cover/cover-1.jpg',
+        'img/album-cover/cover-2.jpg',
+        'img/album-cover/cover-3.jpg'
     ]
 };
 
-//加载音频,loading audio src:
-function loadingSrc() {
-    //do something
-
-    //setTimeout(function () {
-    //   alert('Internet Error!');
-    //},1000);
-}
-
 //初始化播放器
 function initiatePlay() {
-
     audioPlayer.src=playListObj.songSrc[playListObj.currentSongId];
 
     //Event delegate optimize:
@@ -174,9 +165,6 @@ function initiatePlay() {
                 garbageBinBtnFunc();
                 break;
             /*progress bar not suitable.*/
-            //case 'progress-bar':
-            //    progressBarControlFunc();
-            //    break;
         }
     });
 
@@ -184,13 +172,13 @@ function initiatePlay() {
     EventUtil.addHandler(volumeWrapper,'mouseover',
         function () {
             var volumeBar=document.querySelector('.volume-bar-wrapper');
-            switchClass(volumeBar.classList,'showed-volume-bar');
+            Public.switchClass(volumeBar.classList,'showed-volume-bar');
         }
     );
     EventUtil.addHandler(volumeWrapper,'mouseout',
         function () {
             var volumeBar=document.querySelector('.volume-bar-wrapper');
-            switchClass(volumeBar.classList,'showed-volume-bar');
+            Public.switchClass(volumeBar.classList,'showed-volume-bar');
         }
     );
 
@@ -201,51 +189,25 @@ function initiatePlay() {
     EventUtil.addHandler(volumeBarWrapper,'click',volumeBarControlFunc);
 }
 
-EventUtil.addHandler(audioPlayer,'canplay',function () {
-    /*start album cover animation,
-     * change play icon to pause icon*/
-    //exchangePauseBtnIcon();
-    updatePlayBtnIcon();
-    changeInfoFunc();
-});
+Public.addOnloadEvent(initiatePlay);
 
-EventUtil.addHandler(audioPlayer,'timeupdate',function () {
-    updateCurrentTime();
-    var pastProgressPercent=(audioPlayer.currentTime/audioPlayer.duration).toFixed(2);
-    changeProgressWidth(pastProgressPercent);
-});
-
-EventUtil.addHandler(audioPlayer,'ended',function () {
-    nextSongFunc();
-});
-
-addOnloadEvent(initiatePlay);
-
-//暂停/开始按钮功能
+//暂停/开始按钮功能,pause/play btn func
 function pauseBtnFunc() {
     if (audioPlayer.paused===true) {
         audioPlayer.play();
     } else {
         audioPlayer.pause();
     }
-    updatePlayBtnIcon();
-}
-function updatePlayBtnIcon () {
-    if (audioPlayer.paused===true) {
-        updateClass('icon-icon-pause','icon-icon-play');
-    } else {
-        updateClass('icon-icon-play','icon-icon-pause');
-    }
 }
 
-//下一首按钮功能
+//下一首按钮功能,next btn func
 function nextSongFunc() {
-    //can use api or data object.
     playListObj.currentSongId++;
+    playListObj.currentSongId=playListObj.currentSongId>2?0:playListObj.currentSongId++;
     audioPlayer.src=playListObj.songSrc[playListObj.currentSongId];
 }
 
-//音量按钮功能
+//音量按钮功能,volume btn func
 function volumeBtnFunc() {
     if (audioPlayer.volume!==0) {
         audioPlayer.volume=0;
@@ -260,7 +222,7 @@ function volumeBtnFunc() {
 function volumeBarControlFunc(event) {
     var e=window.event||event;
     //console.log(e.pageX+'\n'+this.offsetLeft+'\n'+this.offsetWidth);
-    var volumePercent=(e.pageX-getSummaryOffsetLeft(this))/this.offsetWidth;
+    var volumePercent=(e.pageX-Public.getSummaryOffsetLeft(this))/this.offsetWidth;
     audioPlayer.volume=volumePercent;
     //console.log('audioPlayer.volume='+audioPlayer.volume);
     changeVolumeBarWidth(volumePercent);
@@ -270,7 +232,7 @@ function changeVolumeBarWidth(targetWidthPercent) {
     volumeBar.style.width=targetWidthPercent*100+'%';
 }
 
-//进度条控制功能
+//进度条控制功能,progress bar control func
 function progressBarControlFunc(event) {
     var e=window.event||event;
     //console.log(e.pageX+'\n'+this.offsetLeft+'\n'+this.offsetWidth);
@@ -289,27 +251,30 @@ function changSongProgress(songProgress) {
     //console.log(songProgress);
 }
 
-//喜爱按钮功能
+//喜爱按钮功能,like btn func
 function loveBtnFunc(btnClassList) {
-    switchClass(btnClassList,'icon-aixin-loved');
-    //do something...
+    Public.switchClass(btnClassList,'icon-aixin-loved');
+    //interact with backend...
 }
 
 //垃圾桶按钮功能,garbage bin btn function
 function garbageBinBtnFunc () {
-    //do something...
     nextSongFunc();
+    //interact with backend...
 }
 
-//改变封面图、标题、歌手、时间功能
+//改变歌曲信息功能,change information of song func
 function changeInfoFunc() {
+    var currentSongId=playListObj.currentSongId;
     var songTitle=document.querySelector('.song-title');
-    songTitle.innerHTML=playListObj.songName[playListObj.currentSongId];
+    songTitle.innerHTML=playListObj.songName[currentSongId];
     var singer=document.querySelector('.singer');
-    singer.innerHTML=playListObj.singer[playListObj.currentSongId];
+    singer.innerHTML=playListObj.singer[currentSongId];
     updateCurrentTime();
     var totalTime=document.querySelector('.total-time');
     totalTime.innerHTML=Public.parseTimeStr(audioPlayer.duration);
+    var coverImg=document.querySelector('.album-cover img');
+    coverImg.src=playListObj.albumCoverSrc[currentSongId];
 }
 function updateCurrentTime() {
     var currentTime=document.querySelector('.current-time');
@@ -317,7 +282,11 @@ function updateCurrentTime() {
 }
 
 //封面旋转动画控制功能,album-cover animation control function:
-
-//歌词按钮功能
-
-//下载功能,download function
+function coverAnimationControlFunc(playState) {
+    var coverImg=document.querySelector('.album-cover img');
+    coverImg.style.animationPlayState=playState;
+}
+function resetCoverAnimation () {
+    var coverImg=document.querySelector('.album-cover img');
+    //coverImg.style.transform='rotate(0deg)';
+}
