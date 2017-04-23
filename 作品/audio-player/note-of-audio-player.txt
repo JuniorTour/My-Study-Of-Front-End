@@ -1,0 +1,43 @@
+1.The currentTime and jump of progress invalid.
+A:http://stackoverflow.com/questions/4572720/html5-video-tag-in-chrome-why-is-currenttime-ignored-when-video-downloaded-fro
+"Make sure your web server is capable of serving the document using byte ranges.
+ Google Chrome requires that this works. Without it, seeking will be disabled and setting currentTime will have no effect."
+
+It means it is related with the server,I tried another external source,the problem solved.
+So I believe it is the answer.
+
+2.The size of icon font should be same,otherwise the outcome will be not beautiful.
+
+3.Bug:the size of .container will change with the animation of .album-cover.
+
+4.Substitute the DOM level 1 'on' Event with a EventUtil.
+
+5.Bug:after click the garbage btn,the pause btn will not switch icon.
+
+6.Decided to use Event delegate for optimize performance.4/17
+
+7.
+/*Some thinking:
+* 1.progress bar:the width of it is :(currentTime/duration)*100.
+* 2.current time minute:currentTime%60.
+* 3.click volume btn mute the music:muted='true';
+* 4.transition needed.
+* 5.click the progress bar to control progress:
+*       use the e.pageX
+* 6.volume control:same as 5.progress control*/
+
+8.
+
+/*The useful properties of audio:
+ * 1.play()
+ * 2.pause()
+ * 3.volume:range from [0,1]
+ * 4.load()	重新加载音频/视频元素
+ * 5.currentTime	设置或返回音频中的当前播放位置（以秒计）。
+ * 6.duration	返回音频的长度（以秒计）。
+ * 7.ended	返回音频的播放是否已结束。
+ * 8.muted	[true | false] 设置或返回是否关闭声音。
+ * 9.paused	设置或返回音频是否暂停。
+ * 10.played	返回表示音频已播放部分的 TimeRanges 对象。
+ * 11.ontimeupdate:
+ * 12.oncanplay and oncanplaythrough*/

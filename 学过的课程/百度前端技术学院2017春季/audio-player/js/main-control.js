@@ -7,7 +7,7 @@
  * 2.use the API net ease cloud music:
  * https://api.imjad.cn/cloudmusic/index.html
  * 3.love and throw effect of the btn:
- * can refer the code pen.
+ * can refer the code pen.  COMPLETED
  * 4.change song switch album animation
  * 5.add play list.
  * 6.add key board support.
@@ -124,12 +124,18 @@ EventUtil.addHandler(audioPlayer,'ended',function () {
 
 var playListObj={
     currentSongId:0,
-    songName:['喜洋洋','清平乐','乐·花海'],
-    singer:['中央广播民族乐团','卢小旭','月之门'],
+    songName:['清平乐','喜洋洋','乐·花海'],
+    singer:['卢小旭','中央广播民族乐团','月之门'],
+    //songSrc:[
+    //    'audio/eg-1.mp3',
+    //    'audio/eg-2.mp3',
+    //    'audio/eg-3.mp3'
+    //],
+    /*Take the load speed into consideration,use the following src instead of local src.*/
     songSrc:[
-        'audio/eg-1.mp3',
-        'audio/eg-2.mp3',
-        'audio/eg-3.mp3'
+        'http://link.hhtjim.com/163/28921897.mp3',
+        'http://link.hhtjim.com/163/5266635.mp3',
+        'http://link.hhtjim.com/163/472006515.mp3'
     ],
     albumCoverSrc:[
         'img/album-cover/cover-1.jpg',
