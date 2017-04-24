@@ -41,3 +41,10 @@ So I believe it is the answer.
  * 10.played	返回表示音频已播放部分的 TimeRanges 对象。
  * 11.ontimeupdate:
  * 12.oncanplay and oncanplaythrough*/
+
+9.
+<a href="http://link.hhtjim.com/163/28921897.mp3" download="music">
+    <i class="icon iconfont icon-xiazai"></i>
+</a>
+
+download="music" attribute can trigger the download of music.

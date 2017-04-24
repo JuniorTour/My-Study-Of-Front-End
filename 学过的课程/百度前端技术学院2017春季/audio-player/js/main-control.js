@@ -255,6 +255,7 @@ function changeProgressWidth(pastProgressPercent) {
 function changSongProgress(songProgress) {
     audioPlayer.currentTime=songProgress*audioPlayer.duration;
     //console.log(songProgress);
+    audioPlayer.play();
 }
 
 //喜爱按钮功能,like btn func
