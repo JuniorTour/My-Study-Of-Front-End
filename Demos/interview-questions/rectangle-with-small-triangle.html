@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rectangle-with-small-triangle</title>
+    <style>#demo {
+        width: 100px;
+        height: 100px;
+        background-color: #fff;
+        position: relative;
+        border: 2px solid #333;
+    }
+    #demo:after, #demo:before {
+        border: solid transparent;
+        content: '';
+        width: 0;
+        height: 0;
+        left: 100%;
+        position: absolute;
+    }
+    /*即通过绝对定位，用一个小一圈（10px）的白色三角形遮盖住大一圈（12px）的黑色三角形，形成一个2px的黑色外边框。*/
+    #demo:after {
+        border-width: 10px;
+        border-left-color: #fff;
+        top: 20px;
+    }
+    #demo:before {
+        border-width: 12px;
+        border-left-color: #000;
+        top: 18px;
+    }
+    </style>
+</head>
+<body>
+<div id="demo"></div>
+</body>
+</html>

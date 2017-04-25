@@ -452,7 +452,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <p>阅读本规范应该像阅读其他规范一样。首先，应该从头到尾，读上几次。之后，应该回过头来至少再读一次。再然后应该从内容列表里随机挑选一些章节阅读并看看所有的对照参考（cross-reference）。</p>
 
-  <p>就像在下面的一致性需求章节所叙述的那样，本规范给各种一致性等级描述了一致性标准。特别地，还有对<em>生产者们</em>例如创作者们和他们所创作的文档的一致性要求，以及对<em>消费者们</em>例如Web浏览器的一致性需求。他们可以通过它们所需求的东西来区分：对生产者们的需求是允许什么，而对消费者们的需求是软件如何行动。</p>
+  <p>就像在下面的一致性需求章节所叙述的那样，本规范给各种一致性等级描述了一致性标准。特别地，还有对<em>生产者们（producers）</em>例如创作者们和他们所创作的文档的一致性要求，以及对<em>消费者们（consumers）</em>例如Web浏览器的一致性需求。他们可以通过它们所需求的东西来区分：对生产者们的需求是允许什么，而对消费者们的需求是软件如何行动。</p>
 
   <div class="example">
 
@@ -464,13 +464,7 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <div class="example">
 
-   <p>Continuing the above example, a requirement stating that a particular attribute's value is
-   constrained to being a <a href="https://www.w3.org/TR/html5/infrastructure.html#valid-integer">valid integer</a> emphatically does <em>not</em> imply anything
-   about the requirements on consumers. It might be that the consumers are in fact required to treat
-   the attribute as an opaque string, completely unaffected by whether the value conforms to the
-   requirements or not. It might be (as in the previous example) that the consumers are required to
-   parse the value using specific rules that define how invalid (non-numeric in this case) values
-   are to be processed.</p>
+   <p>继续上面的例子，一个规定了限制特定属性值需是<a href="https://www.w3.org/TR/html5/infrastructure.html#valid-integer">有效的整数</a>的要求显然<em>没有</em>表明任何对消费者们的要求。这也许意味着消费者们实际上被要求把这个属性当做一个不透明的字符串，完全不受其值是否和要求一致的影响。也许意味着（在前一个例子之中）消费者们被要求去使用定义了什么是需要处理的无效值（该例之中是非数字）的特定的规则解析这个值。</p>
 
   </div>
 
@@ -478,63 +472,50 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <h4 id="typographic-conventions"><span class="secno">1.7.2 </span>排印惯例</h4>
 
-  <p>This is a definition, requirement, or explanation.</p>
+  <p>这是一个定义、要求或者解释。</p>
 
-  <p class="note">This is a note.</p>
+  <p class="note">这是一个笔记（note）。</p>
 
-  <p class="example">This is an example.</p>
+  <p class="example">这是一个例子。</p>
 
-  <p class="XXX">This is an open issue.</p>
+  <p class="XXX">这是一个开放问题（open issue）。</p>
 
-  <p class="warning">This is a warning.</p>
+  <p class="warning">这是一个警告。</p>
 
   <pre class="idl extract">interface <dfn data-anolis-xref="">Example</dfn> {
-  // this is an IDL definition
+  // 这是一个 IDL 定义
 };</pre>
 
   <dl class="domintro"><dt><var data-anolis-xref="">variable</var> = <var data-anolis-xref="">object</var> . <code data-anolis-xref="">method</code>( [ <var data-anolis-xref="">optionalArgument</var> ] )</dt>
 
    <dd>
 
-    <p>This is a note to authors describing the usage of an interface.</p>
+    <p>这是一个向创作者们描述一个接口用法的笔记。</p>
 
    </dd>
 
-  </dl><pre class="css">/* this is a CSS fragment */</pre>
+  </dl><pre class="css">/* 这是一个CSS片段 */</pre>
 
-  <p>The defining instance of a term is marked up like <dfn data-anolis-xref="x-this" id="x-this">this</dfn>. Uses of that
-  term are marked up like <a data-anolis-xref="x-this" href="https://www.w3.org/TR/html5/introduction.html#x-this">this</a> or like <i data-anolis-xref="x-this"><a href="https://www.w3.org/TR/html5/introduction.html#x-this">this</a></i>.</p>
+  <p>像<dfn data-anolis-xref="x-this" id="x-this">这样</dfn>标记一个术语的定义实例。像<a data-anolis-xref="x-this" href="https://www.w3.org/TR/html5/introduction.html#x-this">这样</a>或像<i data-anolis-xref="x-this"><a href="https://www.w3.org/TR/html5/introduction.html#x-this">这样</a></i>标记该术语的用法（Uses）。</p>
 
-  <p>The defining instance of an element, attribute, or API is marked up like <dfn data-anolis-xref="x-that" id="x-that"><code>this</code></dfn>. References to that element, attribute, or API are marked
-  up like <code data-anolis-xref="x-that"><a href="https://www.w3.org/TR/html5/introduction.html#x-that">this</a></code>.</p>
+  <p>像<dfn data-anolis-xref="x-that" id="x-that"><code>这样</code></dfn>来标记一个元素、属性或API的定义实例（defining instance）。像<code data-anolis-xref="x-that"><a href="https://www.w3.org/TR/html5/introduction.html#x-that">这样</a></code>标记该元素、属性或API的参考资料。</p>
 
-  <p>Other code fragments are marked up <code data-anolis-xref="">like this</code>.</p>
+  <p><code data-anolis-xref="">像这样</code>标记其他的代码片段。</p>
 
-  <p>Variables are marked up like <var data-anolis-xref="">this</var>.</p><!--<p class="impl">This is an implementation requirement.</p>-->
+  <p>像<var data-anolis-xref="">这样</var>标记变量。</p><!--<p class="impl">This is an implementation requirement.</p>-->
 
   
 
-  <p>In an algorithm, steps in <a data-anolis-xref="synchronous section" href="https://www.w3.org/TR/html5/webappapis.html#synchronous-section">synchronous sections</a> are
-  marked with ⌛.</p>
+  <p>在一个算法之中，<a data-anolis-xref="synchronous section" href="https://www.w3.org/TR/html5/webappapis.html#synchronous-section">synchronous sections</a>以 ⌛ 来标记。</p>
 
-  <p>In some cases, requirements are given in the form of lists with conditions and corresponding
-  requirements. In such cases, the requirements that apply to a condition are always the first set
-  of requirements that follow the condition, even in the case of there being multiple sets of
-  conditions for those requirements. Such cases are presented as follows:</p>
+  <p>在有些情况下，要求以列表的形式和条件以及相关要求一同给出。在这些情况下，即使在那些要求有许多套对应条件的情况下，适用于一个条件的要求总是第一套满足该条件的要求。这种情况如下所示：</p>
 
-  <dl class="switch"><dt>This is a condition
-   
-   </dt><dt>This is another condition
-   
-   </dt><dd>This is the requirement that applies to the conditions above.
+  <dl class="switch"><dt>这是一个条件
+   </dt><dt>这是一个条件
+   </dt><dd>这是适用于上述条件的要求。
 
-   
-
-   </dd><dt>This is a third condition
-   
-   </dt><dd>This is the requirement that applies to the third condition.
-
-  
+   </dd><dt>这是第三个条件
+   </dt><dd>这是一个适用于第三个条件的要求。
 
   </dd></dl><h3 id="fingerprint"><span class="secno">1.8 </span>隐私问题</h3>
 
