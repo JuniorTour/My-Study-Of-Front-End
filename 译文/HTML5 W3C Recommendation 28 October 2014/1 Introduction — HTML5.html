@@ -520,36 +520,15 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
   </dd></dl><h3 id="fingerprint"><span class="secno">1.8 </span>隐私问题</h3>
 
   <p><i>本节是非规范的。</i></p>
-  <p>Some features of HTML trade user convenience for a measure of user privacy.</p>
+  <p>一些HTML的特性以用户便利性交换了一定程度的用户隐私。</p>
 
-  <p>In general, due to the Internet's architecture, a user can be distinguished from another by the
-  user's IP address. IP addresses do not perfectly match to a user; as a user moves from device to
-  device, or from network to network, their IP address will change; similarly, NAT routing, proxy
-  servers, and shared computers enable packets that appear to all come from a single IP address to
-  actually map to multiple users. Technologies such as onion routing can be used to further
-  anonymize requests so that requests from a single user at one node on the Internet appear to come
-  from many disparate parts of the network.</p>
+  <p>通常，由于互联网的架构，一个用户可以被其他人以该用户的IP地址识别。IP地址并不只匹配一个用户；当用户从设备或网络之间切换时，他们的IP地址也会改变；类似地，NAT路由（NAT routing），代理服务器和共享的计算机使得好像是来自一个IP地址的包（packets）实际上对应着多个用户。类似洋葱路由（onion routing）等技术可以用来进一步地隐匿请求，以至于来自互联网上一个节点的单个用户的请求好像来自这个网络许多不同的部分一样。</p>
 
-  <p>However, the IP address used for a user's requests is not the only mechanism by which a user's
-  requests could be related to each other. Cookies, for example, are designed specifically to enable
-  this, and are the basis of most of the Web's session features that enable you to log into a site
-  with which you have an account.</p>
+  <p>但是用于一个用户请求的IP地址并不是让用户可以彼此关联的唯一的机制。例如Cookie就是专为实现这一点来设计的，也是大多数网页的会话（session）特性的基础，使得你可以登入一个你拥有账户的站点。</p>
 
-  <p>There are other mechanisms that are more subtle. Certain characteristics of a user's system can
-  be used to distinguish groups of users from each other; by collecting enough such information, an
-  individual user's browser's "digital fingerprint" can be computed, which can be as good, if not
-  better, as an IP address in ascertaining which requests are from the same user.</p>
+  <p>还有其他一些更加精妙的机制。用户的系统的一些特性可以被用来从其他用户之中区别一部分用户；通过收集足够的该类信息，一个个体用户的浏览器的“数字指纹（digital fingerprint）”可以被计算出来，用来确定哪些请求来自同一个用户，这就算没有比IP地址更好，也至少像IP地址一样好。</p>
 
-  <p>Grouping requests in this manner, especially across multiple sites, can be used for both benign
-  (and even arguably positive) purposes, as well as for malevolent purposes. An example of a
-  reasonably benign purpose would be determining whether a particular person seems to prefer sites
-  with dog illustrations as opposed to sites with cat illustrations (based on how often they visit
-  the sites in question) and then automatically using the preferred illustrations on subsequent
-  visits to participating sites. Malevolent purposes, however, could include governments combining
-  information such as the person's home address (determined from the addresses they use when getting
-  driving directions on one site) with their apparent political affiliations (determined by
-  examining the forum sites that they participate in) to determine whether the person should be
-  prevented from voting in an election.</p>
+  <p>以这种方式分类请求，尤其是跨越（across）多个站点，既可以被用于良性的（甚至是有争议的积极的）目的，也可以被用于恶性的目的。一个良性目的的例子可以是用来确定一个特定的用户是更喜欢带有狗类插图的站点还是相对的带有猫类插图的站点（取决于他们访问该站点的频率），之后自动地在后来的访问之中使用更受喜爱的插图来组成站点。恶性目的，可以包括政府通过结合一个人的家庭住址（取决于他们在一个站点上获取驾驶方向所使用的地址）和他们明显的的政治隶属（通过检查他们参加的论坛网站来获知）从而决定这个人是否应该被阻止在一场选举中投票。</p>
 
   <p>Since the malevolent purposes can be remarkably evil, user agent implementors are encouraged to
   consider how to provide their users with tools to minimize leaking information that could be used
