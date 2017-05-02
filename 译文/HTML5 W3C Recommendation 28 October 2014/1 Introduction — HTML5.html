@@ -524,44 +524,29 @@ if(document.URL.indexOf("iqiyi.com") >= 0){
 
   <p>通常，由于互联网的架构，一个用户可以被其他人以该用户的IP地址识别。IP地址并不只匹配一个用户；当用户从设备或网络之间切换时，他们的IP地址也会改变；类似地，NAT路由（NAT routing），代理服务器和共享的计算机使得好像是来自一个IP地址的包（packets）实际上对应着多个用户。类似洋葱路由（onion routing）等技术可以用来进一步地隐匿请求，以至于来自互联网上一个节点的单个用户的请求好像来自这个网络许多不同的部分一样。</p>
 
-  <p>但是用于一个用户请求的IP地址并不是让用户可以彼此关联的唯一的机制。例如Cookie就是专为实现这一点来设计的，也是大多数网页的会话（session）特性的基础，使得你可以登入一个你拥有账户的站点。</p>
+  <p>但是用于一个用户请求的IP地址并不是让用户的请求可以相互关联的唯一机制。例如Cookie就是专为实现这一点来设计的，也是大多数网页的会话（session）特性的基础，使得你可以登入一个你拥有账户的站点。</p>
 
-  <p>还有其他一些更加精妙的机制。用户的系统的一些特性可以被用来从其他用户之中区别一部分用户；通过收集足够的该类信息，一个个体用户的浏览器的“数字指纹（digital fingerprint）”可以被计算出来，用来确定哪些请求来自同一个用户，这就算没有比IP地址更好，也至少像IP地址一样好。</p>
+  <p>还有其他一些更加精妙的机制。用户的系统的一些特性可以被用来从其他用户之中区别一部分用户；通过收集足够的该类信息，一个个体用户的浏览器的“数字指纹（digital fingerprint）”可以被计算出来，当做一个IP地址，用来确定哪些请求来自同一个用户，这就算没有比IP地址更好，也至少像IP地址一样好。</p>
 
-  <p>以这种方式分类请求，尤其是跨越（across）多个站点，既可以被用于良性的（甚至是有争议的积极的）目的，也可以被用于恶性的目的。一个良性目的的例子可以是用来确定一个特定的用户是更喜欢带有狗类插图的站点还是相对的带有猫类插图的站点（取决于他们访问该站点的频率），之后自动地在后来的访问之中使用更受喜爱的插图来组成站点。恶性目的，可以包括政府通过结合一个人的家庭住址（取决于他们在一个站点上获取驾驶方向所使用的地址）和他们明显的的政治隶属（通过检查他们参加的论坛网站来获知）从而决定这个人是否应该被阻止在一场选举中投票。</p>
+  <p>以这种方式分类请求，尤其是跨越（across）多个站点，既可以被用于良性的（即使是有争议的积极的）目的，也可以被用于恶性的目的。一个良性目的的例子可以是用来确定一个特定的用户是更喜欢带有狗类插图的站点还是相对的带有猫类插图的站点（取决于他们访问该站点的频率），之后自动地在后来的访问之中使用更受喜爱的插图来组成站点。恶性目的，可以包括政府通过结合一个人的家庭住址（取决于他们在一个站点上获取驾驶方向所使用的地址）和他们明显的的政治隶属（通过检查他们参加的论坛网站来获知）从而决定这个人是否应该被阻止在一场选举中投票。</p>
 
-  <p>Since the malevolent purposes can be remarkably evil, user agent implementors are encouraged to
-  consider how to provide their users with tools to minimize leaking information that could be used
-  to fingerprint a user.</p>
+  <p>因为恶性的目的可能非常有害，所以我们鼓励用户代理的实现者去考虑如何给他们的用户提供相应的工具来尽量减少可能被用于追踪（fingerprint）一个用户的信息泄露。</p>
 
-  <p>Unfortunately, as the first paragraph in this section implies, sometimes there is great benefit
-  to be derived from exposing the very information that can also be used for fingerprinting
-  purposes, so it's not as easy as simply blocking all possible leaks. For instance, the ability to
-  log into a site to post under a specific identity requires that the user's requests be
-  identifiable as all being from the same user, more or less by definition. More subtly, though,
-  information such as how wide text is, which is necessary for many effects that involve drawing
-  text onto a canvas (e.g. any effect that involves drawing a border around the text) also leaks
-  information that can be used to group a user's requests. (In this case, by potentially exposing,
-  via a brute force search, which fonts a user has installed, information which can vary
-  considerably from user to user.)</p>
+  <p>不幸的是，就像本节第一段所表述的，有时候暴露那些可被用于追踪目的（fingerprinting purposes）关键信息会有巨大的好处，所以这并不像简单地屏蔽所有可能的泄露那样容易（so it's not as easy as simply blocking all possible leaks）。例如，登入一个站点来以特定身份来邮寄的能力需要这个用户的请求可以被识别出全部来自于同一个用户，more or less by definition。更细微地，像是文本有多宽这样的的信息，对于许多把文本写入一个画布的特效必不可少（例如任意和给文本画一个边框相关的特效），但是着也会泄露可以被用于分组一个用户的请求的信息。（在这种情况下，通过潜在的泄露，利用暴力搜索，一个用户安装了哪个字体，用户与用户之间的信息会有很大的变化。）</p>
 
-  <p>Features in this specification which can be <dfn data-anolis-xref="fingerprinting vector" id="fingerprinting-vector">used to
-  fingerprint the user</dfn> are marked as this paragraph is.
-  
-  <a class="fingerprint" data-anolis-xref="fingerprinting vector" href="https://www.w3.org/TR/html5/introduction.html#fingerprinting-vector"><img alt="(This is a fingerprinting vector.)" height="21" src="./1 Introduction — HTML5_files/fingerprint.png" width="15"></a>
+  <p>本规范之中可以<dfn data-anolis-xref="fingerprinting vector" id="fingerprinting-vector">用于追踪用户</dfn>的特性会像这一段一样标记。
+  <a class="fingerprint" data-anolis-xref="fingerprinting vector" href="https://www.w3.org/TR/html5/introduction.html#fingerprinting-vector"><img alt="（这是一个fingerprinting vector。）" height="21" src="./1 Introduction — HTML5_files/fingerprint.png" width="15"></a>
   </p>
 
-  <p>Other features in the platform can be used for the same purpose, though, including, though not
-  limited to:</p>
+  <p>这个平台之中其他可以用于同一个目的的特性，包括但不限于：</p>
 
-  <ul><li>The exact list of which features a user agents supports.</li>
+  <ul><li>一个用户代理支持特性的确切列表。</li>
 
-   <li>The maximum allowed stack depth for recursion in script.</li>
+   <li>脚本之中递归所允许的最大的最大堆栈（stack depth）深度。</li>
 
-   <li>Features that describe the user's environment, like Media Queries and the <code><a href="https://www.w3.org/TR/html5/infrastructure.html#screen">Screen</a></code>
-   object. <a href="https://www.w3.org/TR/html5/references.html#refsMQ">[MQ]</a> <a href="https://www.w3.org/TR/html5/references.html#refsCSSOMVIEW">[CSSOMVIEW]</a></li>
+   <li>描述用户环境的特性，像是媒体查询（Media Queries）和<code><a href="https://www.w3.org/TR/html5/infrastructure.html#screen">屏幕</a></code>对象。<a href="https://www.w3.org/TR/html5/references.html#refsMQ">[MQ]</a> <a href="https://www.w3.org/TR/html5/references.html#refsCSSOMVIEW">[CSSOMVIEW]</a></li>
 
-   <li>The user's time zone.</li>
+   <li>用户的时区。</li>
 
   </ul><h3 id="a-quick-introduction-to-html"><span class="secno">1.9 </span>HTML的简介</h3>
 

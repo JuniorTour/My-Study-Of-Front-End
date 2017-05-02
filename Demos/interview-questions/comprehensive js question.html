@@ -44,6 +44,17 @@
     for (var i=0;i<outerResult.length;i++) {
         console.log(outerResult[i]());
     }
+
+    function fooTwo() {
+        var _this=this;
+        window.setTimeout(function () {
+            console.log('_this===obj : '+_this===obj);   //true
+        },200);
+    }
+    var obj={
+        a:1
+    };
+    fooTwo.call(obj);
 </script>
 </body>
 </html>

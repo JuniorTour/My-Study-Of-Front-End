@@ -6,49 +6,75 @@
     <title>JS Bin</title>
     <style>
         .card-list {
-            width:500%;
+            width:100%;
             height:366px;
             border: 5px solid red;
+            overflow-x: scroll; /*enable the slide of x-axis.*/
+            overflow-y: hidden;
+            white-space: nowrap;    /*no line wrap for a ele.*/
+        }
+        /*.card-list::-webkit-scrollbar {*/
+            /*display: none;*/
+        /*}*/
+        .card-list:hover {
+            overflow-x: hidden;
         }
         .card {
-            width:40%;
+            width:80%;
             height:100%;
-            float: left;
-            position: relative;
+            background-color: red;
+            display: inline-block;
+            /*position: relative;*/
             margin: 0 50px;
         }
-        .card img {
-            width:100%;
-            height:100%;
+        .card-two {
+            background-color: blue;
         }
         .brand {
             /*暂时忽略该部分，留待日后处理*/
             display: none;
         }
+        .with-ellipsis {
+            width:100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .white-space-test {
+            width:100%;
+        }
+        .pre-line {
+            white-space: pre-line;
+        }
+        .pre-wrap {
+            white-space: pre-wrap;
+        }
     </style>
 </head>
 <body>
 <div class="card-list">
-    <div class="card">
-        <img class="brand-image" src="//img.alicdn.com/imgextra/i3/90919986/TB2_.xGaWi5V1BjSspnXXa.3XXa_!!90919986-0-fans.jpg" />
+    <div class="card card-one">
         <div class="brand">
-            <img class="brand-logo" src="//img.alicdn.com/imgextra/TB1wKXDPVXXXXXwapXXSutbFXXX.jpg_170x120Q50s50.jpg" />
             <div class="brand-desc">
                 <span class="brand-name">相宜本草</span>
                 <span class="brand-slogan">310.7万粉丝</span>
             </div>
         </div>
     </div>
-    <div class="card">
-        <img class="brand-image" src="//img.alicdn.com/imgextra/i3/90919986/TB2_.xGaWi5V1BjSspnXXa.3XXa_!!90919986-0-fans.jpg" />
+    <div class="card card-two">
         <div class="brand">
-            <img class="brand-logo" src="//img.alicdn.com/imgextra/TB1wKXDPVXXXXXwapXXSutbFXXX.jpg_170x120Q50s50.jpg" />
             <div class="brand-desc">
                 <span class="brand-name">相宜本草</span>
                 <span class="brand-slogan">310.7万粉丝</span>
             </div>
         </div>
     </div>
+</div>
+<h1>A interview question of Ali</h1>
+<p class="with-ellipsis">A really really really really really really really really really really really really really really really long paragraph.</p>
+<div class="white-space-test">
+    <p class="pre-line">A really really really really really really really really really really really really really really really long paragraph.</p>
+    <p class="pre-wrap">A really really really really really really really really really really really really really really really long paragraph.</p>
 </div>
 </body>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>module-programing</title>
+</head>
+<body>
+<script>
+    /*Learn from JavaScript模块化编程（一）：模块的写法-阮一峰*/
+    var PublicModule={
+        /*
+        * Disadvantage:
+        * 1.Expose the private property to public,not secure.*/
+        _count:10,
+        m1:function () {
+            console.log(this._count);
+        }
+    };
+
+    /*Immediately Invoke Function Expression,IIFE*/
+    var immediatelyInvokedModule=(function () {
+        var _count=10;
+        var m1=function () {
+            console.log(_count);
+        };
+        return {
+            m1:m1
+        }
+    })();
+
+    /*宽放大模式：基于可以继承其他模块的放大模式，允许加载一个空对象。*/
+    var looseAugmentationModule=(function (mod) {
+        var _count=10;
+        mod.m3=function () {
+            console.log(_count);
+        };
+        return mod;
+    })(window.module1||{});
+</script>
+</body>
+</html>

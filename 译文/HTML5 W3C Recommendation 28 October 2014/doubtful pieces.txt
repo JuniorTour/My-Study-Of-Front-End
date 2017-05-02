@@ -1,6 +1,8 @@
 Doubtful Pieces:
 1 Introduction - HTML5.html
 
-1.0284,appear to come from many disparate parts of the network.
-2.0285,which a user's requests could be related to each other.
+//1.0284,appear to come from many disparate parts of the network.
+//2.0285,which a user's requests could be related to each other.
 3.0288,
+4.0293
+5.0294,0296,298

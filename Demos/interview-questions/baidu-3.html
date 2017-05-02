@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baidu-3</title>
+    <style>
+        body,html{padding: 0;margin: 0;font-size: 14px;color:#000;}
+        table {border-collapse: collapse;width: 100%;table-layout: fixed;}
+        td,th {border: 1px solid #e1e1e1;padding: 0;height: 20px;line-height: 20px;text-align: center;}
+        .current{color:red;}
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+    <tr><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th><th>日</th></tr>
+    </thead>
+    <tbody>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    </tbody>
+</table>
+
+<script>
+    function calendar(year, month) {
+        //test
+        var th=document.querySelector('th');
+        th.innerHTML='12323423';
+
+        var tbody=document.querySelector('tbody');
+        var tds=tbody.querySelectorAll('td');
+        var i,date=1;
+
+        for (i=0;i<tds.length;i++) {
+            tds[i].innerHTML='';
+        }
+
+        //add date:
+        for (i=5;date<31;i++) {
+            var currentTd=tds[i];
+            if (date==27) {
+                currentTd.classList='current';
+            }
+            currentTd.innerHTML=date++;
+        }
+        return 0;
+    }
+
+    window.onload=function () {
+        calendar();
+    }
+</script>
+</body>
+</html>
