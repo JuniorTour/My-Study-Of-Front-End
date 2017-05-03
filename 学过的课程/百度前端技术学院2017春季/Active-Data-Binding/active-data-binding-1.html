@@ -83,7 +83,9 @@
                 console.log('The new val is : '+newVal);
 
                 //event emit
-                _this.eventBus.emit(key,val,newVal);
+                /*如果此处不用实现保存的_this，而是直接用this，那么this将指向Object，而非我们想要的Observer。*/
+                console.log(this);  //Object
+                _this.eventBus.emit(key,val,newVal);    //_this:Observer
 
                 //??????
                 if (newVal===val)  return;

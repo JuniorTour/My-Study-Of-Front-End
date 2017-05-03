@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>inherit example</title>
+</head>
+<body>
+	<script>
+		function parent(age) {
+			this.name=['jack','mary','xi'];
+			this.age=age;
+		}
+		parent.prototype.run=function () {
+			return this.name+' are both '+this.age;
+		}
+		function child(age) {
+			// alert(this.age)
+			// parent.call(this.age);//对象冒充，给超类型传参数。
+			parent.call(this,age);	//应该是传入两个参数：this和age。
+		}
+		child.prototype=new parent();	//原型链继承
+		var test=new child(18);
+		alert(test.run());
+	</script>
+</body>
+</html>
