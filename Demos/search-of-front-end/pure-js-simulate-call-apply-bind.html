@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pure-js-simulate-call-apply-bind</title>
+</head>
+<body>
+<script>
+    /*参考文章：
+    * https://segmentfault.com/a/1190000009257663，JavaScript深入之call和apply的模拟实现
+    * https://segmentfault.com/a/1190000009265185，可能遇到假的面试题：不用call和apply方法模拟实现ES5的bind方法
+    * https://segmentfault.com/a/1190000009271416，JavaScript深入之bind的模拟实现*/
+
+    /*一句话介绍call：call()方法在使用一个指定的this值和若干个指定的参数值的前提下调用某个函数或方法。*/
+
+    var foo = {
+        value: 65536
+    };
+
+    function bar(name,age) {
+        console.log('name,age : '+name,age);
+        console.log(this.value);
+        return 'thanks~';
+    }
+
+    console.log(bar.call(foo,'me',21)); //name,age : me 21 65536
+
+    /*模拟步骤：
+     1.将函数设为对象的属性
+     2.执行该函数,A.注意call方法可带“任意个”参数，B.且参数可以为null和undefined，C.并且函数是可以有返回值的。
+     3.删除该函数*/
+
+    Function.prototype.myCall=function(context) {
+        context=context||window;    //B.处理参数为null和undefined的情况
+        context.fn=this;    //把调用myCall的函数设为对象的方法
+        var targetArg=[];   //A.注意call方法可带“任意个”参数
+        for (var i=1, len=arguments.length;i<len;i++) {
+//            targetArg.push(arguments[i]);
+            /*直接这样，最后的targetArg是： ["me", 21]，经过'context.fn('+targetArg+')'之后，
+            * 是"context.fn(me,21)"，把me当成了一个变量，而非一个字符串，所以不行。*/
+
+            targetArg.push('arguments['+i+']');
+            /*targetArg是:["arguments[1]", "arguments[2]"]，经过...后，
+            * 是"context.fn(arguments[1],arguments[2])"，可行！*/
+
+            /*也就是说之所以选择，用字符串拼接，是因为考虑到参数可能是字符串，直接传给eval会导致，转换成变量，无法执行。*/
+        }
+        var result=eval('context.fn('+targetArg+')');   //C.函数是可以有返回值的。
+        //context.fn();
+        delete context.fn;
+        return result;
+    };
+
+    Function.prototype.myApply=function (context,argArr) {
+        context=context||window;
+        context.fn=this;
+        var result;
+
+        if (argArr) {
+            var targetArg=[];
+            for (var i= 0,len=arguments.length;i<len;i++) {
+                //注意，此处是argArr参数，而非arguments了。
+                targetArg.push('argArr['+i+']');
+            }
+            result=eval('context.fn('+targetArg+')');
+        } else {
+            result=context.fn();
+        }
+        return result;
+    };
+
+    /*上面的实现（包括后面的实现），其实是一个典型的“Monkey patching(猴子补丁)”，即“给内置对象扩展方法”。
+    所以，如果面试者能进行一下“嗅探”，进行兼容处理，就是锦上添花了。
+    即：
+     Function.prototype.bind = Function.prototype.bind || function (context) {
+     ...
+     }*/
+
+    /*用一句话总结bind的用法：该方法创建一个新新新新新新函数，称为绑定函数，
+    绑定函数会以创建它时传入bind方法的第一个参数作为this，
+    传入bind方法的第二个以及以后的参数，将优先当做预设的初始参数传给新函数，
+    传递给绑定函数的参数会跟在其后。
+    例如：偏函数（Partial Function）
+    */
+    function list() {
+        return Array.prototype.slice.call(arguments);
+        /*这一句的意思是：*/
+//        return Array.prototype.slice(arguments);
+        /*上一句不行，因为slice的语法是：arr.slice(beginIndexNum,endIndexNum)，参数需为数字。*/
+    }
+    var list1=list(1,2,3);  //[1,2,3]
+    //A partial function:
+    var partialList=list.bind(undefined,65536);
+    var list3=partialList();    //[65535]
+    var list2=partialList(1,2,3);   //[65536,1,2,3]
+
+
+//    Function.prototype.myBind= Function.prototype.bind || function (context,arg) {
+    Function.prototype.myBind= function (context,arg) {
+        if (typeof this !=='function') {
+            throw new Error("Function.prototype.bind - what is trying to be bound is not callable");
+        }
+
+        var self=this;
+    };
+
+    console.log("bar.myCall(foo,'me',21) : "+bar.myCall(foo,'me',21)); //name,age : me 21 65536
+    console.log("bar.myApply(foo,'me',21) : "+bar.myApply(foo,['me',21]));
+</script>
+</body>
+</html>

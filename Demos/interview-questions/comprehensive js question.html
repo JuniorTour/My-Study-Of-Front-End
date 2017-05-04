@@ -48,6 +48,7 @@
     function fooTwo() {
         var _this=this;
         window.setTimeout(function () {
+            /*如果不实现保存_this，到了setTimeout之中，this就会指向window，不是我们想要的结果。*/
             console.log('_this===obj : '+_this===obj);   //true
         },200);
     }

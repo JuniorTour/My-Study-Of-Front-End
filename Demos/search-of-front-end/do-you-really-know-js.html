@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do-you-really-know-js</title>
+</head>
+<body>
+<script>
+    //1
+    //变量声明被前置，等于：
+    /*
+    var a1;
+     if(!('a1' in window)) {    //('a1' in window)===true
+        a1=1;
+     }
+    * */
+    if(!('a1' in window)) {
+        var a1=1;
+    }
+    console.log('a1 : '+a1);    //undefined
+    
+    //2
+    var a2= 2,
+            b2=function a2 (x) {
+                x&&a2(--x);
+            };
+    console.log('a2 : '+a2);    //2,not function a2() {...}
+    
+    //3，函数声明优先级高于变量声明，但是！！！如果变量赋值了，则赋值变量声明高于函数声明。
+    function a3(x) {
+        return x*2;
+    }
+    var a3;
+    console.log('a3 : '+a3);    //function a3(x) {...}
+
+    //4，在非严格模式之中，arguments对象通常与参数是“动态”绑定的；在严格模式（'use strict')之中，则只是一个参数的拷贝。
+    function b4(x,y,a) {
+        arguments[2]=4;
+        console.log('4.a : '+a);    //4.a : 4
+    }
+    b4(1,2,3);
+
+    /*5，在非严格模式之中，给call传入null和undefined，call会把全局对象当做this；
+    在严格模式（'use strict')之中，则会是相应的null和undefined。*/
+    function a5() {
+        console.log('a5 : '+this);  //this===window
+    }
+    a5.call(null);  //a5 : [object Window]
+</script>
+</body>
+</html>
