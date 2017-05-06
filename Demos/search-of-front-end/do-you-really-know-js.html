@@ -35,6 +35,7 @@
 
     //4，在非严格模式之中，arguments对象通常与参数是“动态”绑定的；在严格模式（'use strict')之中，则只是一个参数的拷贝。
     function b4(x,y,a) {
+//        'use strict';
         arguments[2]=4;
         console.log('4.a : '+a);    //4.a : 4
     }

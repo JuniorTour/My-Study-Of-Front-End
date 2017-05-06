@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue-essentials-review</title>
+    <script src="src/vue.js"></script>
+</head>
+<body>
+<!--
+Referred Article:
+https://segmentfault.com/a/1190000007847988
+-->
+
+<div id="el"></div>
+
+<div id="app1">
+    {{msg}}
+   <button v-on:click="sayHello">Click Me!</button>
+    <!--定义在Vue实例的data接口上的数据的绑定灵活的，可以绑定在DOM节点内部，也可以绑在属性上；
+    绑定数据到节点属性上时，需要使用v-bind指令，这个元素节点的 title属性和 Vue 实例的 message属性绑定到一起，
+    从而建立数据与该属性值的绑定，也可以使用v-bind:href="url"的缩写方式:href="url"；
+    v-once指令能够让你执行一次性的插值，当数据改变时，插值处的内容不会更新；-->
+    <div v-html="htmlContent" v-bind:style="red" v-bind:title="msg"></div>
+    <p v-once><!--使用JS表达式处理数据：-->{{num+100}}</p>
+    <p v-if="visible">{{msg+',I am visible'}}</p>
+    <p v-if="visible">{{msg | capitalize}}</p>
+</div>
+
+<script>
+    /*使用Vue构造函数创建一个Vue实例，然后通过Vue实例的el接口实现和HTML元素的挂载；*/
+    var el1=new Vue({
+        el:'#el',
+        data: {},
+        methods:{}
+    });
+    //扩展Vue构造器
+    var MyComponent = Vue.extend({
+        //扩展选项
+    });
+    var vm1 = new MyComponent({});
+    /*构造函数Vue需要传入一个选项对象，可包含挂载元素、数据、方法和生命周期钩子等；
+     构造函数Vue可以通过extend方法实现扩展, 从而可以用预定义的选项创建可复用的组件构造函数，
+     但是构建组件的常用方法是使用Vue.component()接口去实现；*/
+
+
+    var app1=new Vue({
+        el:'#app1',
+        /*Vue实例将代理data对象的所有属性，也就是说部署在data对象上的所有属性和方法都将直接成为Vue实例的属性和方法*/
+        data: {
+//            HTML部分实现数据的动态绑定，这个数据是vue实例的属性值；
+            msg:'hello world!',
+            sayHello: function () {
+                //this===window
+//                console.log(this.msg);
+                console.log(app1.$data.msg);
+            },
+            //使用{{message}}的mustache语法只能将数据解释为纯文本，为了输出HTML，可以使用v-html指令；
+            htmlContent:'<p>Nice to meet you~</p>',
+            red:'color:red;font-weight:bold;',
+            num:65436,
+            visible:true
+            /*
+             //如果想要获取到app这一实例中选项的对象，Vue提供$进行获取
+             app.$el === document.getElementById('app')//true
+             app.$data.message//hello world
+             */
+        },
+        filters:{
+            capitalize: function (val) {
+                if (!val) return '';
+                val=val.toString();
+                return val.charAt(0).toUpperCase()+val.slice(1);
+            }
+        }
+    })
+</script>
+</body>
+</html>
