@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="245d3670-3895-4aed-8406-06a940ee5abe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/vue-guide/src/vue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/vue-guide/vue-essentials-review.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Demos/example.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/01.hello vue.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/02.vue instance.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/03.template syntax.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/04.calculated property.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/05.class and style.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/06.conditional rendering.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/07.list rendering.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/08.event handling.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/09.form input bindings.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/10.component-1.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Demos/Combined Form.html" afterPath="$PROJECT_DIR$/看过的书/精通CSS（第2版）/Combined Form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/vue-guide/vue-essentials-review-2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demos/search-of-front-end/do-you-really-know-js.html" afterPath="$PROJECT_DIR$/Demos/search-of-front-end/do-you-really-know-js.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demos/search-of-front-end/pure-js-simulate-call-apply-bind.html" afterPath="$PROJECT_DIR$/Demos/search-of-front-end/pure-js-simulate-call-apply-bind.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/mistakes of learning vue.txt" afterPath="$PROJECT_DIR$/学过的课程/vue-guide/mistakes of learning vue.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/vue-essentials-review.html" afterPath="$PROJECT_DIR$/学过的课程/vue-guide/vue-essentials-review.html" />
     </list>
     <ignored path="Web前端.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,21 +80,32 @@
         <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/mistakes of learning vue.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+              <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vue-essentials-review.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vue-essentials-review.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/vue-essentials-review.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8170581">
-              <caret line="71" column="62" selection-start-line="71" selection-start-column="62" selection-end-line="71" selection-end-column="62" />
+            <state vertical-scroll-proportion="-52.173912">
+              <caret line="110" column="97" selection-start-line="110" selection-start-column="97" selection-end-line="110" selection-end-column="97" />
               <folding>
-                <element signature="e#881#943#0" expanded="false" />
-                <element signature="e#994#1016#0" expanded="false" />
+                <element signature="e#1434#1496#0" expanded="false" />
+                <element signature="e#1547#1569#0" expanded="false" />
+                <element signature="e#1883#2763#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vue-essentials-review-2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/vue-essentials-review-2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5488257">
+              <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,9 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Demos/my blog/portfolio.css" />
-        <option value="$PROJECT_DIR$/作品/网易主页/my-netease.html" />
-        <option value="$PROJECT_DIR$/作品/旧版京东/京东首页.html" />
         <option value="$PROJECT_DIR$/作品/旧版京东/京东购物.html" />
         <option value="$PROJECT_DIR$/作品/老式化工-201510/netgather chemical.html" />
         <option value="$PROJECT_DIR$/Demos/my blog/juniortour-portfolio.html" />
@@ -182,7 +177,10 @@
         <option value="$PROJECT_DIR$/Demos/interview-questions/baidu-3.html" />
         <option value="$PROJECT_DIR$/Demos/search-of-front-end/pure-js-simulate-call-apply-bind.html" />
         <option value="$PROJECT_DIR$/Demos/search-of-front-end/do-you-really-know-js.html" />
+        <option value="$PROJECT_DIR$/学过的课程/vue-guide/mistakes of learning vue.txt" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/vue-essentials-review.html" />
+        <option value="$PROJECT_DIR$/学过的课程/vue-guide/vue-seentials-review-2.html" />
+        <option value="$PROJECT_DIR$/学过的课程/vue-guide/vue-essentials-review-2.html" />
       </list>
     </option>
   </component>
@@ -465,6 +463,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="学过的课程" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap-3.3.5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="学过的课程" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap-3.3.5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Demos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -670,34 +708,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Demos/job/resume.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4130435">
-          <caret line="139" column="44" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/作品/My-Web-Calculator/js/fastclick.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../编程资料/fastclick-master/examples/layer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.565217">
-          <caret line="14" column="73" selection-start-line="14" selection-start-column="73" selection-end-line="49" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/作品/My-Web-Calculator/my-calculator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41140026">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Demos/job/juniortour-resume.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.90830237">
@@ -1000,22 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/pure-js-simulate-call-apply-bind.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4347825">
-          <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/mistakes of learning vue.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/Essentials-Part/01.hello vue.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22867738">
@@ -1032,14 +1026,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/pure-js-simulate-call-apply-bind.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.4347825">
+          <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/各种特效/ToTop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3522868">
+          <caret line="124" column="7" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/mistakes of learning vue.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/bootstrap-3.3.5/dist/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.7017543">
+          <caret line="3388" column="14" selection-start-line="3388" selection-start-column="14" selection-end-line="3388" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/bootstrap文档/2.全局CSS/5.Button and Inline Image.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/vue-essentials-review.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8170581">
-          <caret line="71" column="62" selection-start-line="71" selection-start-column="62" selection-end-line="71" selection-end-column="62" />
+        <state vertical-scroll-proportion="-52.173912">
+          <caret line="110" column="97" selection-start-line="110" selection-start-column="97" selection-end-line="110" selection-end-column="97" />
           <folding>
-            <element signature="e#881#943#0" expanded="false" />
-            <element signature="e#994#1016#0" expanded="false" />
+            <element signature="e#1434#1496#0" expanded="false" />
+            <element signature="e#1547#1569#0" expanded="false" />
+            <element signature="e#1883#2763#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/vue-essentials-review-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5488257">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>

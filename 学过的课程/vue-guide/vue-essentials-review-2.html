@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue-essentials-review-2</title>
+    <script src="src/vue.js"></script>
+    <style>
+        .isActive {
+            color: #5cb85c;
+        }
+        .hasError {
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+<div id="app1">
+    <p v-bind:class="{isActive:isActive,hasError:hasError}">v-bind:class="{isActive:isActive,hasError:hasError}"</p>
+    <button @click="changeState">Click to change state!</button>
+    <p v-bind:class="[isActiveArr,hasErrorArr]">v-bind:class="[isActiveArr,hasErrorArr]"</p>
+    <p v-bind:class="classObj">v-bind:class="classObj"</p>
+    <hr>
+
+    <p v-bind:style="[styleObj,styleArrEle]">数组语法可以将多个样式对象应用到一个元素上：v-bind="[styleObj,styleArrEle]"</p>
+    <hr>
+
+    <template v-if="ok">
+        <h4>template v-if="ok"</h4>
+        <p>BTW,I am a whole template</p>
+        <p>v-if是真实的条件渲染，当进行条件切换时，它会销毁和重建条件块的内容，并且它支持template语法；</p>
+    </template>
+    <p v-else>else,you will see me.</p>
+    <button @click="okOrNot">okOrNot</button>
+    <hr>
+
+    <p v-show="show">v-show="show",v-show的条件切换时基于css的display属性，所以不会销毁和重建条件块的内容；</p>
+    <button @click="showOrHide">showOrHide</button>
+    <hr>
+
+    <ol>
+        <li v-for="(val,key,index) in listObj">
+            listObj[{{index}}] = {{key}} : {{val}}
+        </li>
+    </ol>
+    <p>v-for指令能够让我们循环渲染列表型数据（数组，对象），数据放在data对象中，类型可以如下：</p>
+    <hr>
+    
+    <div>
+        <span v-for="n in 10">{{n+' '}}</span>
+        <br>
+        <span>evenNumbers : </span><span v-for="n in evenNumbers">{{n+' '}}</span>
+    </div>
+</div>
+
+<script>
+    var app1=new Vue ({
+        el: '#app1',
+        data: {
+            classObj: {
+                isActive:true,
+                hasError:true
+            },
+            isActive:true,
+            hasError:false,
+            /*你也可以通过传递数组的方式为class赋值v-bind:class="[staticClass,activeClass,errorClass]"，
+            此时你要在data对象上为数组的元素的属性赋值：*/
+            isActiveArr:'isActive',
+            hasErrorArr:'hasError',
+            styleObj:{
+                fontSize: '32px',
+                fontWeight:'bold'
+            },
+            styleArrEle:{
+                background:'blue'
+            },
+            ok: true,
+            show: true,
+            listObj: {
+                one: 'one',
+                two: 'two',
+                three: 'three'
+            },
+            numbers:[1,2,3,4,5,6,7,8,9,0]
+        },
+        methods: {
+            changeState: function () {
+                this.isActive=this.isActive?false:true;
+                this.hasError=this.hasError?false:true;
+            },
+            showOrHide: function () {
+                this.show=this.show?false:true;
+            },
+            okOrNot:function () {
+                this.ok=this.ok?false:true;
+            }
+        },
+        computed: {
+            evenNumbers: function () {
+                return this.numbers.filter(function (v) {
+                    return v%2===0;
+                })
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -78,6 +78,10 @@ method: {...}
 
 9.Can not understand the Component...
 
+10.data :{
+    items [...]    NOT items {...}
+}
+
 三、Error and Warning：
 1.If a function is not defined,the error will be reminded:
     vue.js:525 [Vue warn]: Error when rendering root instance:

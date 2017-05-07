@@ -22,8 +22,24 @@ https://segmentfault.com/a/1190000007847988
     v-once指令能够让你执行一次性的插值，当数据改变时，插值处的内容不会更新；-->
     <div v-html="htmlContent" v-bind:style="red" v-bind:title="msg"></div>
     <p v-once><!--使用JS表达式处理数据：-->{{num+100}}</p>
+    <!--条件指令控制DOM元素的显示操作-->
     <p v-if="visible">{{msg+',I am visible'}}</p>
-    <p v-if="visible">{{msg | capitalize}}</p>
+    <p v-if="visible"><!--使用过滤器来格式化数据：
+    过滤器设计目的就是用于文本转换。
+    过滤器可以用在两个地方：mustache 插值和 v-bind 表达式。
+    过滤器应该被添加在 JavaScript 表达式的尾部，由“管道”符指示。
+    过滤器可以串联：
+    {{ message | filterA | filterB }}
+    过滤器是 JavaScript 函数，因此可以接受参数：
+    {{ message | filterA('arg1', arg2) }}
+    (模板语法->过滤器)-->{{msg | capitalize}}</p>
+    <ol>
+        <li v-for="item in things">{{item.text}}</li>
+    </ol>
+    <!--v-on指令用于监听事件操作，click="reverseMessage"定义点击事件后执行的回调函数；
+    v-on指令也可以采用缩写方式：@click="method"-->
+    <button @click="reverseStrFunc">{{reverseStr}}</button>
+    <p>{{reversedMsg}}</p>
 </div>
 
 <script>
@@ -49,27 +65,55 @@ https://segmentfault.com/a/1190000007847988
         data: {
 //            HTML部分实现数据的动态绑定，这个数据是vue实例的属性值；
             msg:'hello world!',
+            reverseStr: 'Click to reverse me!!!',
             sayHello: function () {
                 //this===window
 //                console.log(this.msg);
-                console.log(app1.$data.msg);
+                /*
+                 //如果想要获取到app这一实例中选项的对象，Vue提供$进行获取
+                 app.$el === document.getElementById('app')//true
+                 app.$data.message//hello world
+                 */
+                console.log('app1.$data.msg = '+app1.$data.msg);
             },
             //使用{{message}}的mustache语法只能将数据解释为纯文本，为了输出HTML，可以使用v-html指令；
             htmlContent:'<p>Nice to meet you~</p>',
             red:'color:red;font-weight:bold;',
             num:65436,
-            visible:true
-            /*
-             //如果想要获取到app这一实例中选项的对象，Vue提供$进行获取
-             app.$el === document.getElementById('app')//true
-             app.$data.message//hello world
-             */
+            visible:true,
+            things: [
+                {text:'one'},
+                {text:'two'},
+                {text:'three'}
+            ]
         },
         filters:{
             capitalize: function (val) {
                 if (!val) return '';
                 val=val.toString();
                 return val.charAt(0).toUpperCase()+val.slice(1);
+            }
+        },
+        methods: {
+            reverseStrFunc: function () {
+                /*this.reverseStr.split('‘)，以 空字符 为分割标志结果是：
+                * c,l,i,c,k,' ',t,o...  RIGHT!!!
+                 *this.reverseStr.split(’ ‘）以 空格 为分割标志结果是：
+                 * ’click','to',...     WRONG!!!*/
+                this.reverseStr=this.reverseStr.split('').reverse().join('');
+            }
+        },
+        computed: {
+            /*通过Vue实例的methods接口，我们在模板中调用reversedMessage函数同样实现需求；
+             methods与computed方法的区别在于：computed的数据依赖于app.message，
+             只要message未变，则访问ReverseMessage计算属性将立即返回之前的计算结果，而methods则每次重新渲染时总是执行函数；
+             如果有缓存需要，请使用computed方法，否则使用methods替代；
+             Performance!! Performance!! Performance!! Performance!! Performance!! Performance!! */
+            reversedMsg: function () {
+                /*Vue实例提供computed对象，我们可以在对象内部定义需要进行计算的属性ReverseMessage，
+                而提供的函数将作为属性的getter，即获取器；
+                 上述的代码使得app.ReverseMessage依赖于app.message；*/
+                return this.msg.split('').reverse().join('');
             }
         }
     })
