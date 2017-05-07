@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue-essentials-review-3</title>
+    <script src="src/vue.js"></script>
+</head>
+<body>
+<h3>
+    组件可以扩展 HTML 元素，封装可重用的代码。在较高层面上，组件是自定义元素;
+    通过Vue.component()接口将大型应用拆分为各个组件，从而使代码更好具有维护性、复用性以及可读性
+</h3>
+<div id="app1">
+    <my-component></my-component>
+</div>
+
+<div id="app2">
+    <p>局部注册组件:可以定义一个子组件，在实例的components接口中将子组件挂载到父组件上，
+        子组件只在父组件的作用域下有效；</p>
+    <my-component msg="inline msg."></my-component>
+    <my-component v-bind:msg="dataMsg"></my-component>
+</div>
+
+<div id="app3">
+    <simple-counter></simple-counter>
+    <simple-counter></simple-counter>
+    <simple-counter></simple-counter>
+</div>
+
+<script>
+    Vue.component('another-component',{
+        template:'<p>another-component</p>'
+    });
+    Vue.component('my-component',{
+        template:'<p>Nice to meet you~~</p>'
+    });
+    /*注册行为必须在创建实例之前；
+     component的template接口定义组件的html元素；*/
+
+    var app1=new Vue({
+        el:'#app1',
+        data:{},
+        components: {
+        }
+    });
+
+    //子组件
+    var childComponent={
+        props:['msg'],
+        template:'<h3>v-bind:msg="dataMsg"=>Child component:{{msg}}</h3>'
+    };
+    //父实例，我认为文档之中一直说的父组件即这个父实例。很奇怪？？？这样有歧义啊，迷惑了好久。
+    var app2=new Vue({
+        el: '#app2',
+        data:{
+            dataMsg:'prop msg.'
+        },
+        components: {
+            'my-component':childComponent
+        }
+    });
+
+    var data={counter:0};
+    Vue.component('simple-counter',{
+        template: '<button v-on:click="counter+=1">{{counter}}</button>',
+        data: function () {
+            return data;
+//            return {counter:0};
+        }
+    });
+
+    var app3=new Vue({
+        el:'#app3'
+    })
+</script>
+</body>
+</html>

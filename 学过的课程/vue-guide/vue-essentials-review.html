@@ -101,12 +101,16 @@ https://segmentfault.com/a/1190000007847988
                  *this.reverseStr.split(’ ‘）以 空格 为分割标志结果是：
                  * ’click','to',...     WRONG!!!*/
                 this.reverseStr=this.reverseStr.split('').reverse().join('');
+            },
+            /*可以看到，如果methods之中有和data之中同名的函数，会被data的覆盖。*/
+            sayHello: function () {
+                console.log('From methods : '+app1.$data.msg);
             }
         },
         computed: {
             /*通过Vue实例的methods接口，我们在模板中调用reversedMessage函数同样实现需求；
              methods与computed方法的区别在于：computed的数据依赖于app.message，
-             只要message未变，则访问ReverseMessage计算属性将立即返回之前的计算结果，而methods则每次重新渲染时总是执行函数；
+             只要message未变，则访问ReverseMessage计算属性将立即返回之前的计算结果，而methods在每次重新渲染时总是执行函数；
              如果有缓存需要，请使用computed方法，否则使用methods替代；
              Performance!! Performance!! Performance!! Performance!! Performance!! Performance!! */
             reversedMsg: function () {
