@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>book list by Vue.js</title>
+    <script src="../../src/vue.js"></script>
+    <style>
+        * {
+            padding: 0;
+            border: 0;
+            margin: 0;
+        }
+        
+        body {
+            font: 22px/1.2 "microsoft yahei",sans-serif;
+        }
+        
+        .container {
+            width:80%;
+            padding: 30px;
+            margin: 30px auto;
+        }
+        .app {
+            width:100%;
+        }
+        .heading {
+            margin: 30px 0;
+        }
+        .app table {
+            width:100%;
+            border-collapse: collapse;
+            /*border: 1px solid #000;*/
+            margin: 50px 0;
+        }
+        .app td {
+            width:25%;
+            border: 1px solid #000;
+        }
+        .total-price {
+            text-align: right;
+        }
+        .add-book-panel {
+            margin: 50px 0;
+        }
+        .add-book-panel label {
+            display: block;
+        }
+        .add-book-panel input {
+            border: 1px solid #000;
+        }
+        .btn {
+            width:60px;
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="heading">Hello Vue.js</h1>
+    <div class="app">
+        <table>
+            <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>书名</td>
+                    <td>作者</td>
+                    <td>价格</td>
+                    <td>操作</td>
+                </tr>
+            </thead>
+            <tbody>
+            <tr v-for="book in bookList">
+                <td>{{book.id}}</td>
+                <td>{{book.name}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.price}}</td>
+                <td>
+                    <delete-btn v-on:delete-a-book="deleteABook"></delete-btn>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <h3 class="total-price">{{totalPrice}}</h3>
+
+        <div class="add-book-panel">
+            <h3>Add a book:</h3>
+            <label for="book-name-input">
+                Name:
+                <input type="text" id="book-name-input" v-model="book.name">
+            </label>
+            <label for="book-author-input">
+                Author:
+                <input type="text" id="book-author-input" v-model="book.author">
+            </label>
+            <label for="book-price-input">
+                Price:
+                <input type="text" id="book-price-input" v-model="book.price">
+            </label>
+            <button @click.prevent="addABook" class="btn">Add it!</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    Vue.component('delete-btn',{
+        template:'<button @click.prevent="deleteABook" class="btn">Delete</button>',
+        methods:{
+            deleteABook: function () {
+                this.$emit('delete-a-book');
+            }
+        }
+    });
+    var app=new Vue({
+        el:'.app',
+        data: {
+//            totalPrice:0,
+            book:{
+                id:0,
+                /*如何实现id递增？？*/
+                name:'',
+                author:'',
+                price:0
+            },
+            bookList: [{
+                    id: 1,
+                    author: '曹雪芹',
+                    name: '红楼梦',
+                    price: 32.0
+                }, {
+                    id: 2,
+                    author: '施耐庵',
+                    name: '水浒传',
+                    price: 30.0
+                }, {
+                    id: 3,
+                    author: '罗贯中',
+                    name: '三国演义',
+                    price: 24.0
+                }, {
+                    id: 4,
+                    author: '吴承恩',
+                    name: '西游记',
+                    price: 20.0
+                }
+            ]
+        },
+        methods: {
+            addABook: function () {
+                this.bookList.push(this.book);
+            },
+            deleteABook: function() {
+//                this.bookList.$remove(book);
+                var index=this.bookList.indexOf(this.book);
+                /*如何获取到当前删除按钮的索引？？？*/
+                this.bookList.splice(index,1);
+            }
+        },
+        computed: {
+            totalPrice:function () {
+                var totalPrice=0;
+                this.bookList.forEach(function (val) {
+                    totalPrice+=window.parseInt(val.price);
+                });
+                return totalPrice;
+            },
+            bookId: function () {
+                var idNum=this.bookList.length;
+                return idNum+1;
+            }
+        }
+    })
+</script>
+</body>
+</html>

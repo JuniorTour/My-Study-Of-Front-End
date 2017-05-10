@@ -17,20 +17,67 @@
 <div id="app2">
     <p>局部注册组件:可以定义一个子组件，在实例的components接口中将子组件挂载到父组件上，
         子组件只在父组件的作用域下有效；</p>
+    <p>
+        <!--<my-component msg="inline msg."></my-component>-->
+        法一：msg="inline msg."，通过属性传入一个普通字符串
+    </p>
     <my-component msg="inline msg."></my-component>
+    <p>
+        法二：v-bind:msg="dataMsg"，把父组件的数据动态绑定到子组件上，父的变化会传导给子，但是不会反过来。
+    </p>
+    <p>
+        v-model="dataMsg":
+        <input type="text" v-model="dataMsg">
+    </p>
     <my-component v-bind:msg="dataMsg"></my-component>
 </div>
 
 <div id="app3">
-    <simple-counter></simple-counter>
-    <simple-counter></simple-counter>
-    <simple-counter></simple-counter>
+    <p>total={{total}}</p>
+    <pre>
+        点击子组件即通过
+        methods: {
+            increment: function () {
+                this.counter+=1;
+                this.$emit('increment');
+            }
+        }，触发自定义的increment事件；
+    父组件在使用子组件的地方直接用v-on:increment="incrementTotal"来监听子组件触发的increment事件，从而调用incrementTotal方法，给total加一。</pre>
+    <button-counter v-on:increment="incrementTotal"></button-counter>
+    <button-counter @increment="incrementTotal"></button-counter>
+    <p>在本例中，子组件已经和它外部完全解耦了。它所做的只是报告自己的内部事件，
+        至于父组件是否关心则与它无关。留意到这一点很重要。</p>
+</div>
+
+<div id="app4">
+    <h2>Slot 分发内容</h2>
+    <p>我对分发内容的理解是：
+    对于一些需要组合组件，内容分发 API 是非常有用的机制。可以通过在template之中设置相应的slot元素作为插槽，
+    来组合。
+    </p>
+    <p>
+        如果子组件模板一个slot都不包含，则父组件内容将会被丢弃；
+        当子组件模板只有一个没有属性的 slot 时，父组件整个内容片段将插入到 slot 所在的 DOM 位置，并替换掉 slot 标签本身；
+        只有在宿主元素为空，且没有要插入的内容时才显示备用内容；
+    </p>
+    <slot-component>
+        <p slot="origin-content">slot="origin-content"，原来的内容。</p>
+        <p>原来的内容。</p>
+    </slot-component>
+</div>
+
+<div id="app5">
+    <slot-component>
+        <h1 slot="header">具名slot:slot="header"</h1>
+
+        <p slot="origin-content">slot="origin-content",原来的内容。</p>
+        <p>原来的内容。</p>
+
+        <p slot="footer">slot="footer"</p>
+    </slot-component>
 </div>
 
 <script>
-    Vue.component('another-component',{
-        template:'<p>another-component</p>'
-    });
     Vue.component('my-component',{
         template:'<p>Nice to meet you~~</p>'
     });
@@ -61,16 +108,55 @@
     });
 
     var data={counter:0};
-    Vue.component('simple-counter',{
-        template: '<button v-on:click="counter+=1">{{counter}}</button>',
+    Vue.component('button-counter',{
+        template: '<button v-on:click="increment">{{counter}}</button>',
         data: function () {
-            return data;
-//            return {counter:0};
+//            return data;
+            return {counter:0};
+        },
+        methods: {
+            increment: function () {
+                this.counter+=1;
+                this.$emit('increment');
+                /*注意，html对大小写不敏感，也就是说如果发送的事件是驼峰写法，那么要注意兼容性！*/
+            }
         }
     });
 
     var app3=new Vue({
-        el:'#app3'
+        el:'#app3',
+        data: {
+            total:0
+        },
+        methods: {
+            incrementTotal: function () {
+                this.total+=1;
+            }
+        }
+    });
+
+    Vue.component('slot-component',{
+        template:'<div class="inner">' +
+        '<h3>Inner the component template.</h3>' +
+        '<slot>If no content delivery,show me.</slot>' +
+        '</div>',
+        data: {}
+    });
+    var app4=new Vue({
+        el:'#app4',
+        data: {
+        }
+    });
+
+    Vue.component('slot-component',{
+        template: '<div>' +
+        '<header><slot name="header"></slot></header>' +
+        '<main><slot name="origin-content"></slot></main>' +
+        '<footer><slot name="footer"></slot></footer>'
+    });
+    var app5=new Vue({
+        el: '#app5',
+        data: {}
     })
 </script>
 </body>
