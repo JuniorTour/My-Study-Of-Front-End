@@ -33,7 +33,8 @@
             margin: 50px 0;
         }
         .app td {
-            width:25%;
+            text-align: center;
+            width:20%;
             border: 1px solid #000;
         }
         .total-price {
@@ -75,7 +76,8 @@
                 <td>{{book.author}}</td>
                 <td>{{book.price}}</td>
                 <td>
-                    <delete-btn v-on:delete-a-book="deleteABook"></delete-btn>
+                    <!--可以直接将上下文对象传给方法！-->
+                    <button @click.prevent="deleteABook(book)" class="btn">Delete</button>
                 </td>
             </tr>
             </tbody>
@@ -94,6 +96,7 @@
             </label>
             <label for="book-price-input">
                 Price:
+                <!--要给v-model指令设置初始值，可以通过data的相应属性。-->
                 <input type="text" id="book-price-input" v-model="book.price">
             </label>
             <button @click.prevent="addABook" class="btn">Add it!</button>
@@ -102,14 +105,17 @@
 </div>
 
 <script>
-    Vue.component('delete-btn',{
-        template:'<button @click.prevent="deleteABook" class="btn">Delete</button>',
-        methods:{
-            deleteABook: function () {
-                this.$emit('delete-a-book');
-            }
-        }
-    });
+//    Vue.component('delete-btn',{
+//        template:'<button @click.prevent="deleteABook" class="btn">Delete</button>',
+//        data: function() {
+//            return {bookId:0};
+//        },
+//        methods:{
+//            deleteABook: function () {
+//                this.$emit('delete-a-book');
+//            }
+//        }
+//    });
     var app=new Vue({
         el:'.app',
         data: {
@@ -117,11 +123,12 @@
             book:{
                 id:0,
                 /*如何实现id递增？？*/
-                name:'',
-                author:'',
-                price:0
+                name:'边城',
+                author:'沈从文',
+                price:10
             },
-            bookList: [{
+            bookList: [
+                {
                     id: 1,
                     author: '曹雪芹',
                     name: '红楼梦',
@@ -146,13 +153,23 @@
         },
         methods: {
             addABook: function () {
+                this.book.id=this.bookList.length+1;
                 this.bookList.push(this.book);
+                this.book={};   //初始化book
             },
-            deleteABook: function() {
-//                this.bookList.$remove(book);
-                var index=this.bookList.indexOf(this.book);
+            resortBookList: function () {
+                this.bookList.forEach(function (currentVal,index) {
+//                    console.log('index = '+index);
+                    currentVal.id=index+1;
+                })
+            },
+            deleteABook: function(book) {
+//                this.bookList.$remove(book);  //deprecated in vue 2.0!!!
+//                var bookId=window.parseInt(evt.target.title);
+                var index=this.bookList.indexOf(book);
                 /*如何获取到当前删除按钮的索引？？？*/
                 this.bookList.splice(index,1);
+                this.resortBookList();
             }
         },
         computed: {
@@ -162,10 +179,6 @@
                     totalPrice+=window.parseInt(val.price);
                 });
                 return totalPrice;
-            },
-            bookId: function () {
-                var idNum=this.bookList.length;
-                return idNum+1;
             }
         }
     })
