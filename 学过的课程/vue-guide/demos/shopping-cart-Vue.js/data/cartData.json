@@ -1,0 +1,42 @@
+{
+  "status":1,
+  "result":{
+    "totalMoney":109,
+    "list":[
+      {
+        "productId":"600100002115",
+        "productName":"春日游",
+        "productPrice":10,
+        "productQuantity":1,
+        "productImage":"img/goods-1.jpg",
+        "parts":[
+          {
+            "partId":"10001",
+            "partName":"沉醉东风",
+            "imgSrc":"img/part-1.jpg"
+          },
+          {
+            "partId":"10002",
+            "partName":"小楼听雨又一春",
+            "imgSrc":"img/part-1.jpg"
+          }
+        ]
+    },
+      {
+        "productId":"600100002120",
+        "productName":"所谓君子兮",
+        "productPrice":20,
+        "productQuantity":5,
+        "productImage":"img/goods-2.jpg",
+        "parts":[
+          {
+            "partId":"20001",
+            "partName":"胡为乎泥中",
+            "imgSrc":"img/part-2.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  "message":"error msg  "
+}

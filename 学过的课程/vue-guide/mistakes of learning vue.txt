@@ -82,6 +82,10 @@ method: {...}
     items [...]    NOT items {...}
 }
 
+11.Use v-bind:src="item.img" instead of src="item.img" in 2.0.
+The browser will parse the str in src="item.img" as url,so this method is WRONG.
+So does the alt and title and so on.
+
 三、Error and Warning：
 1.If a function is not defined,the error will be reminded:
     vue.js:525 [Vue warn]: Error when rendering root instance:
