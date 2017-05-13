@@ -5,7 +5,7 @@ var app=new Vue({
     el:'#app',
     data: {
         totalMoney:0,
-        productList:[]
+        productList:[],
     },
     filters: {
         formatMoney: function (val) {
@@ -31,10 +31,32 @@ var app=new Vue({
                 this.totalMoney=res.body.result.totalMoney;
                 this.productList=res.body.result.list;
             });
+        },
+        changeAmount: function (target,amount) {
+            switch (amount) {
+                case -1:
+                    target.productQuantity-=1;
+                    if (target.productQuantity<0) target.productQuantity=0;
+                    break;
+                case 1:
+                    target.productQuantity+=1;
+                    break;
+            }
+        },
+        checkItem: function (item) {
+            //console.log('this.checked : '+this.checked);
+            if (typeof item.checked == 'undefined') {
+                Vue.set(item,'checked',true);
+                //this.$set(item,'checked',true);
+            } else {
+                /*注意要用item.checked而非this.checked。
+                * 此处的this指向的是这个vue实例，app。*/
+                item.checked=!item.checked;
+            }
         }
-    },
+    }
 });
 
 Vue.filter('globalFormatMoney',function (val,type) {
     return '￥ '+val+' '+type
-})
+});

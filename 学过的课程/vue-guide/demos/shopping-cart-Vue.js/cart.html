@@ -67,7 +67,7 @@
                   <li v-for="item in productList">
                     <div class="cart-tab-1">
                       <div class="cart-item-check">
-                        <a href="javascript:void 0" class="item-check-btn">
+                        <a href="#" class="item-check-btn" v-bind:class="{check:item.checked}" @click.prevent="checkItem(item)">
                           <svg class="icon icon-ok"><use xlink:href="#icon-ok"></use></svg>
                         </a>
                       </div>
@@ -91,9 +91,9 @@
                       <div class="item-quantity">
                         <div class="select-self select-self-open">
                           <div class="quantity">
-                            <a href="javascript:void 0">-</a>
-                            <input type="text" value="5" v-model="item.productQuantity">
-                            <a href="javascript:void 0">+</a>
+                            <a href="#" v-on:click.prevent="changeAmount(item,-1)">-</a>
+                            <input type="text" value="5" v-model="item.productQuantity" disabled="disabled">
+                            <a href="javascript:void 0" @click="changeAmount(item,1)">+</a>
                           </div>
                         </div>
                         <div class="item-stock">有货</div>

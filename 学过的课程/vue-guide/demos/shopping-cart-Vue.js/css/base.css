@@ -37,7 +37,6 @@ h3,
 h4,
 h5,
 h6,
-hgroup,
 p,
 blockquote,
 figure,
@@ -202,9 +201,9 @@ html {
 
 body {
   font-size: 1.4rem;
-  font-family: sans-serif;
   color: #333;
-  font-family: "akkurat", sans-serif; }
+  font-family: "akkurat", sans-serif;
+}
 
 .container {
   max-width: 1280px;
@@ -253,7 +252,6 @@ body {
     color: #d1434a; }
 
 .btn--gray-white {
-  background-color: none;
   border: 1px #605F5F solid;
   color: #605F5F; }
   .btn--gray-white:hover {
@@ -264,7 +262,8 @@ body {
   background-color: #ccc;
   border: 1px #ccc solid;
   color: #fff;
-  cursor: disabled; }
+  cursor: not-allowed;
+}
   .btn--dis:hover {
     background-color: #ccc;
     color: #fff; }
@@ -272,7 +271,8 @@ body {
 input[type="text"], textarea {
   padding: .5em 20px;
   border: 1px solid #bbb;
-  background: #white; }
+  background: white;
+}
 
 .up-down-btn {
   color: #EE7A23; }

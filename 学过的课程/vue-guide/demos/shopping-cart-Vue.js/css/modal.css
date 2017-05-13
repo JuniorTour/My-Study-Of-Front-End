@@ -1,3 +1,13 @@
+.quantity a {
+    font-size: 2rem;
+    padding: 0.5em;
+}
+.quantity a:active {
+    background-color: #eee;
+}
+.quantity input[type='text'] {
+    width:4em;
+}
 .md-modal {
     position: fixed;
     top: 50%;
