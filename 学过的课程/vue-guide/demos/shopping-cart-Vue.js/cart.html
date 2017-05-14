@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Shopping-Cart-Vue.js</title>
     <meta charset="utf-8">
     <meta content="IE=dege,chrom=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
@@ -117,19 +117,20 @@
             <!-- footer -->
             <div class="cart-foot-wrap">
               <div class="cart-foot-l">
-                <div class="item-all-check">
+                <div class="item-all-check" @click="checkAll()">
                   <a href="javascript:void 0">
-                    <span class="item-check-btn" >
+                    <span class="item-check-btn" :class="{check : checkAllFlag}">
                       <svg class="icon icon-ok"><use xlink:href="#icon-ok"></use></svg>
                     </span>
-                    <span>全选</span>
+                    <span v-if="checkAllFlag">取消全选</span>
+                    <span v-else="">全选</span>
                   </a>
                 </div>
-                <div class="item-all-del">
-                  <a href="javascript:void 0" class="item-del-btn">
-                    <span>取消全选</span>
-                  </a>
-                </div>
+                <!--<div class="item-all-del">-->
+                  <!--<a href="javascript:void 0" class="item-del-btn">-->
+                    <!--<span>取消全选</span>-->
+                  <!--</a>-->
+                <!--</div>-->
               </div>
               <div class="cart-foot-r">
                 <div class="item-total">

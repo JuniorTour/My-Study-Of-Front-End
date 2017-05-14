@@ -426,7 +426,7 @@
     display: inline-block;
     width: 60px;
     height: 60px;
-    background: url(../../img/icon_sprite@2x.png) no-repeat 0 0;
+    /*background: url(../../img/icon_sprite@2x.png) no-repeat 0 0;*/
     background-size: 128px 122px; }
   .apply-promotion .type.type-cash i {
     background-position: -68px 0; }
@@ -471,7 +471,7 @@
     display: inline-block;
     width: 12px;
     height: 12px;
-    background: url(../../img/info.png) no-repeat 0 0;
+    /*background: url(../../img/info.png) no-repeat 0 0;*/
     background-size: 100% auto;
     border-radius: 50%; }
   .tips_pop .tips_pop_box {
@@ -537,7 +537,7 @@
 
 .order-create-pic {
   width: 288px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   margin-bottom: 18px; }
   .order-create-pic img {
     width: 100%; }
@@ -563,7 +563,8 @@
     padding: 0 10px; }
   .order-create-main .order-create-btn-wrap .btn {
     width: 100%;
-    min-width: auto; }
+    /*min-width: auto; */
+  }
   .order-create-main .order-create-btn-wrap:after {
     visibility: hidden;
     display: block;
@@ -584,7 +585,7 @@
       font-size: 20px; }
   .order-create-main .get-lecode .get-lecode-tips {
     color: #999;
-    line-height: 16px;
+    /*line-height: 16px;*/
     line-height: 18px; }
 
 @media only screen and (max-width: 767px) {
@@ -665,6 +666,7 @@
   .cart-foot-wrap .item-all-del {
     float: left;
     margin-top: 2px;
+    margin-left: 2em;
   }
   .cart-foot-wrap .cart-foot-r {
     float: right; }
