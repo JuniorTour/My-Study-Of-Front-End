@@ -63,11 +63,15 @@
         <div class="addr-list-wrap">
           <div class="addr-list">
             <ul>
-              <li>
+              <!-- :class="{check:index===selectedIndex}"
+                  @click.prevent="selectedIndex=index"
+                  妙~~~-->
+              <li v-for="(item,index) in filteredAddressList" :class="{check:index===selectedIndex}"
+                  @click.prevent="selectedIndex=index">
                 <dl>
-                  <dt>JackBean</dt>
-                  <dd class="address">北京朝阳区朝阳公园</dd>
-                  <dd class="tel">13356576785</dd>
+                  <dt>{{item.userName}}</dt>
+                  <dd class="address">{{item.streetName}}</dd>
+                  <dd class="tel">{{item.tel}}</dd>
                 </dl>
                 <div class="addr-opration addr-edit">
                   <a href="javascript:;" class="addr-edit-btn">
@@ -79,10 +83,10 @@
                     <svg class="icon icon-del"><use xlink:href="#icon-del"></use></svg>
                   </a>
                 </div>
-                <div class="addr-opration addr-set-default">
+                <div class="addr-opration addr-set-default" v-if="!item.isDefault" @click.prevent="setDefault(item.addressId)">
                   <a href="javascript:;" class="addr-set-default-btn" ><i>设为默认</i></a>
                 </div>
-                <div class="addr-opration addr-default">默认地址</div>
+                <div class="addr-opration addr-default" v-else="">默认地址</div>
               </li>
 
               <li class="addr-new">
@@ -97,7 +101,7 @@
           </div>
 
           <div class="shipping-addr-more">
-            <a class="addr-more-btn up-down-btn" href="javascript:">
+            <a class="addr-more-btn up-down-btn" href="javascript:" @click.prevent="loadMoreAddress">
               more
               <i class="i-up-down">
                 <i class="i-up-down-l"></i>
@@ -114,11 +118,11 @@
         <div class="shipping-method-wrap">
           <div class="shipping-method">
             <ul>
-              <li>
+              <li :class="{check:selectedShippingMethod===1}" @click.prevent="selectedShippingMethod=1">
                 <div class="name">标准配送</div>
                 <div class="price">Free</div>
               </li>
-              <li>
+              <li :class="{check:selectedShippingMethod===2}" @click.prevent="selectedShippingMethod=2">
                 <div class="name">高级配送</div>
                 <div class="price">180</div>
               </li>
@@ -126,7 +130,7 @@
           </div>
         </div>
         <div class="next-btn-wrap">
-          <a href="javascript:;" class="btn btn--red">下一步</a>
+          <a href="cart.html" class="btn btn--red">下一步</a>
         </div>
         <div class="md-modal modal-msg md-modal-transition" id="showModal">
           <div class="md-modal-inner">
@@ -196,8 +200,8 @@
   </div>
 
 
-    <script src="js/lib/vue.min.js"></script>
-    <script src="js/lib/vue-resource.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/vue-resource.js"></script>
     <script src="js/address.js"></script>
 </body>
 </html>

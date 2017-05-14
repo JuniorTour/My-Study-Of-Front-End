@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my-carousel</title>
+    <style>
+        /*reset*/
+        * {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+        button {
+            outline: none;
+        }
+        li {
+            list-style: none;
+        }
+
+        .container {
+            width:960px;
+            margin-top: 50px;
+        }
+        .carousel-wrapper {
+            width:520px;
+            height:280px;
+            overflow: hidden;   /*KEY POINT!!!*/
+            position: relative;
+            margin: 100px auto;
+        }
+        .carousel-item-wrapper {
+            width:3640px;
+            height:280px;
+            position: absolute;
+            top: 0;
+            left: -520px;
+            transition: left .2s ease-in;
+        }
+        .carousel-item a {
+            display: block;
+            background-color: red;
+            width:520px;
+            height: 280px;
+        }
+
+        /*When you use <img>,you can delete the following background-color part.*/
+        .carousel-item:nth-child(1) a {
+            background-color: rgb(129,194,214);
+            /*as a copy of fifth one, its color/img is same as fifth one.*/
+        }
+        .carousel-item:nth-child(2) a {
+            background-color: rgb(129,146,214);
+        }
+        .carousel-item:nth-child(3) a {
+            background-color: rgb(217,179,230);
+        }
+        .carousel-item:nth-child(4) a {
+            background-color: rgb(220,247,161);
+        }
+        .carousel-item:nth-child(5) a {
+            background-color: rgb(131,252,216);
+        }
+        .carousel-item:nth-child(6) a {
+            background-color: rgb(129,194,214);
+        }
+        .carousel-item:nth-child(7) a {
+            background-color: rgb(129,146,214);
+            /*as a copy of second one, its color/img is same as second one.*/
+        }
+
+        .carousel-item {
+            float: left;
+        }
+        .carousel-index-mark {
+            font-size:60px;
+            color: black;
+            position: absolute;
+            top: 0;
+        }
+        .carousel-control-wrapper {
+            transition: all .2s;
+        }
+        .carousel-wrapper:hover button {
+            display: block;
+        }
+        .carousel-control-wrapper button {
+            transition: all .2s linear;
+            display: none;
+            width:24px;
+            height:36px;
+            line-height:36px;
+            background-color: rgba(0,0,0,.3);
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+        }
+        button#prev {
+            left:0;
+        }
+        button#next {
+            right:0;
+        }
+        button i {
+            font-size: 18px;
+        }
+        .carousel-index-wrapper {
+            width:65px;
+            height:13px;
+            overflow: hidden;
+            position: absolute;
+            bottom:15px;
+            left:50%;
+            margin-left: -33px;
+        }
+        .carousel-index-btn {
+            width:9px;
+            height:9px;
+            float: left;
+            margin:2px;
+            background-color: #b7b7b7;
+            border-radius: 50%;
+            text-indent: -999em;
+            /*For Accessibility,I keep the string in the element for Screen Reader and declare text-indent to
+            hide the string for style.*/
+            cursor: pointer;
+        }
+        .active-carousel-index-btn {
+            background-color: #f44103;
+        }
+    </style>
+</head>
+<body>
+<div class="carousel-wrapper">
+    <div class="carousel-item-wrapper" style="left: -520px;">
+        <div class="carousel-item">
+            <a href="#">
+                <!--As an demo,I use pure background color as example instead of img.-->
+                <!--<img src="img/carousel-img-5" alt="">-->
+            </a>
+            <div class="carousel-index-mark">
+                copy-5
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="#">
+                <!--<img src="img/carousel-img-1" alt="">-->
+            </a>
+            <div class="carousel-index-mark">
+                1
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="#">
+                <!--<img src="img/carousel-img-2" alt="">-->
+            </a>
+            <div class="carousel-index-mark">
+                2
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="#">
+                <!--<img src="img/carousel-img-3" alt="">-->
+            </a>
+            <div class="carousel-index-mark">
+                3
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="#">
+                <!--<img src="img/carousel-img-4" alt="">-->
+            </a>
+            <div class="carousel-index-mark">
+                4
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="#">
+                <!--<img src="img/carousel-img-5" alt="">-->
+            </a>
+            <div class="carousel-index-mark">
+                5
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="#">
+                <!--<img src="img/carousel-img-1" alt="">-->
+            </a>
+            <div class="carousel-index-mark">
+                copy-1
+            </div>
+        </div>
+    </div>
+    <div class="carousel-control-wrapper">
+        <button id="prev">
+            <!--prev-->
+            <i>&lt;</i>
+        </button>
+        <button id="next">
+            <!--next-->
+            <i>&gt;</i>
+        </button>
+    </div>
+    <div class="carousel-index-wrapper">
+        <ul>
+            <li class="carousel-index-btn active-carousel-index-btn" id="carousel-to-1">carousel-index-1</li>
+            <li class="carousel-index-btn" id="carousel-to-2">carousel-index-2</li>
+            <li class="carousel-index-btn" id="carousel-to-3">carousel-index-3</li>
+            <li class="carousel-index-btn" id="carousel-to-4">carousel-index-4</li>
+            <li class="carousel-index-btn" id="carousel-to-5">carousel-index-5</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    var carouselInfo={
+        itemWidth:520,
+        itemNum:7,
+        totalWidth:7*520
+    };
+
+    window.onload=function () {
+        carouselControl();
+    };
+    
+    function carouselControl () {
+        var prev = document.querySelector("#prev");
+        var next = document.querySelector("#next");
+        var carouselWrapper=document.querySelector(".carousel-wrapper");
+        var indexBtns = document.querySelectorAll(".carousel-index-btn");
+
+        prev.onclick = function () {
+            slide(-1);
+        };
+        next.onclick = function () {
+            slide(1);
+        };
+
+        for (var i = 0; i < indexBtns.length; i++) {
+            (function (i) {
+                indexBtns[i].onclick = function () {
+                    slideTo(i+1)
+                }
+            })(i);
+        }
+
+        var scrollTimer;
+        function play() {
+            scrollTimer=setInterval(function () {
+                slide(1);
+            },2000 );
+        }
+        play();
+
+        function stop() {
+            clearInterval(scrollTimer);
+        }
+
+        carouselWrapper.onmouseover=function () {
+            stop();
+        };
+        carouselWrapper.onmouseout=function () {
+            play();
+        };
+    }
+
+    function getAbsoluteValue(v) {
+        return (v<0)?-v:v;
+    }
+
+    function slide(slideItemNum) {
+        var itemWrapper=document.querySelector(".carousel-item-wrapper");
+        var currentLeftOffset=(itemWrapper.style.left)?parseInt(itemWrapper.style.left): 0,
+                targetLeftOffset=currentLeftOffset-(slideItemNum*carouselInfo.itemWidth);
+
+        if (getAbsoluteValue(targetLeftOffset)>=carouselInfo.totalWidth) {
+            targetLeftOffset+=carouselInfo.totalWidth;
+        }
+        if (targetLeftOffset>0) {
+            targetLeftOffset-=carouselInfo.totalWidth;
+        }
+        itemWrapper.style.left=targetLeftOffset+'px';
+    }
+    
+    function slideTo(targetIndex) {
+        var itemWrapper=document.querySelector(".carousel-item-wrapper");
+        itemWrapper.style.left=-(targetIndex*carouselInfo.itemWidth)+'px';
+    }
+
+    function indexBtnClassSwitch(activeTarget) {
+        //delete the past active-index class
+        var activeBtn=document.querySelectorAll(".active-carousel-index-btn")[0];
+        activeBtn.className=activeBtn.className.replace(" active-carousel-index-btn","");
+
+        activeTarget.className+=" active-carousel-index-btn";
+    }
+
+    function startCirculatoryPlay (itemWrapper,targetOffset) {
+        itemWrapper.style.transition="none";
+        itemWrapper.style.left=targetOffset+"px";
+        setTimeout(function () {
+            itemWrapper.style.transition="left .2s ease-in";
+        },20);
+    }
+</script>
+</body>
+</html>

@@ -49,6 +49,11 @@ Carefully distinguish :style and :class!!
 "components and v-for" in list-rendering,
 
 6.methods and computed is different:
+            /*通过Vue实例的methods接口，我们在模板中调用reversedMessage函数同样实现需求；
+             methods与computed方法的区别在于：computed的数据依赖于app.message，
+             只要message未变，则访问ReverseMessage计算属性将立即返回之前的计算结果，而methods在每次重新渲染时总是执行函数；
+             如果有缓存需要，请使用computed方法，否则使用methods替代；
+             Performance!! Performance!! Performance!! Performance!! Performance!! Performance!! */
     ,
             computed: {
                 evenNumbers: function () {
@@ -89,6 +94,15 @@ The browser will parse the str in src="item.img" as url,so this method is WRONG.
 So does the alt and title and so on.
 
 12.The :class="{className:objProperty}" must contain {} as a symbol of Object or Array!!
+
+13.:class="{'md-show':delModalShow}" If the class is kebab-case(短横线隔开式),it must be wrapper as a str!!!
+
+14.@click.prevent="showDelModal();saveTargetItem(item)",currently I just know this syntax for binding multiple func.
+It can be  optimize to a single method, @click.prevent="showDelModal(item)"
+
+15.The scope inner the directive is the current instance,it doesn't need this anymore.
+
+16.As a small framework(19kb min+gzip),vue.js has the ability to render the page,it is more performant than jquery and handlebars!
 
 三、Error and Warning：
 1.If a function is not defined,the error will be reminded:
