@@ -17,10 +17,6 @@
             list-style: none;
         }
 
-        .container {
-            width:960px;
-            margin-top: 50px;
-        }
         .carousel-wrapper {
             width:520px;
             height:280px;
@@ -239,7 +235,8 @@
         for (var i = 0; i < indexBtns.length; i++) {
             (function (i) {
                 indexBtns[i].onclick = function () {
-                    slideTo(i+1)
+                    slideTo(i+1);
+//                    switchIndexBtn(this);
                 }
             })(i);
         }
@@ -248,7 +245,7 @@
         function play() {
             scrollTimer=setInterval(function () {
                 slide(1);
-            },2000 );
+            },2000);
         }
         play();
 
@@ -272,6 +269,7 @@
         var itemWrapper=document.querySelector(".carousel-item-wrapper");
         var currentLeftOffset=(itemWrapper.style.left)?parseInt(itemWrapper.style.left): 0,
                 targetLeftOffset=currentLeftOffset-(slideItemNum*carouselInfo.itemWidth);
+//                targetNum=(getAbsoluteValue(targetLeftOffset)/520)%carouselInfo.itemNum;
 
         if (getAbsoluteValue(targetLeftOffset)>=carouselInfo.totalWidth) {
             targetLeftOffset+=carouselInfo.totalWidth;
@@ -280,22 +278,44 @@
             targetLeftOffset-=carouselInfo.totalWidth;
         }
         itemWrapper.style.left=targetLeftOffset+'px';
+//        switchIndexBtn(targetNum);
+
+//        if (targetLeftOffset>0) {
+//            /*此处的一个疑难在于，过渡属性结束在0.2s之后，如果立刻就定位回真5，这个定位还是会有“本不想要的”过渡。
+//            * 有没有什么办法可以在过渡结束之后，再定位跳转？？
+//            * setTimeout？不太优雅
+//            *
+//            * 我想了一下，还是逻辑没有想好，可以这样：
+//            * 滑动到首尾的copy时正常走，继续向两端滑动时才开始做特殊处理。
+//            * 这个特殊处理的逻辑是：先不滑动不滑动不滑动不滑动不滑动，
+//            * 取消过渡，定位至原item，再恢复过渡，开始向目标滑动。
+//            * 例如，由copy-5继续向4滑动时，先不滑动，取消过渡，并定位至5，再恢复过渡，重新定位itemWrapper，由5向4过渡滑动！*/
+//            itemWrapper.style.transition="none";
+//            itemWrapper.style.left=(-5)*carouselInfo.itemWidth+'px';
+//            window.setTimeout(function () {
+//                itemWrapper.style.transition="left .2s ease-in";
+//                itemWrapper.style.left=(-4)*carouselInfo.itemWidth+'px';
+//            },20);
+//        }
     }
     
-    function slideTo(targetIndex) {
+    function slideTo(targetNum) {
         var itemWrapper=document.querySelector(".carousel-item-wrapper");
-        itemWrapper.style.left=-(targetIndex*carouselInfo.itemWidth)+'px';
+        itemWrapper.style.left=-(targetNum*carouselInfo.itemWidth)+'px';
+        switchIndexBtn(targetNum);
     }
 
-    function indexBtnClassSwitch(activeTarget) {
+    function switchIndexBtn(targetNum) {
         //delete the past active-index class
-        var activeBtn=document.querySelectorAll(".active-carousel-index-btn")[0];
+        var activeBtn=document.querySelector(".active-carousel-index-btn");
         activeBtn.className=activeBtn.className.replace(" active-carousel-index-btn","");
 
-        activeTarget.className+=" active-carousel-index-btn";
+        //add a new active btn
+        var targetBtn=document.querySelectorAll(".carousel-index-btn")[targetNum-1];
+        targetBtn.className+=" active-carousel-index-btn";
     }
 
-    function startCirculatoryPlay (itemWrapper,targetOffset) {
+    function jumpHandle (itemWrapper,targetOffset) {
         itemWrapper.style.transition="none";
         itemWrapper.style.left=targetOffset+"px";
         setTimeout(function () {
