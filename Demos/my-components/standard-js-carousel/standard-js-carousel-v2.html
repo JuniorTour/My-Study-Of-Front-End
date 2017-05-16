@@ -225,18 +225,25 @@
         var carouselWrapper=document.querySelector(".carousel-wrapper");
         var indexBtns = document.querySelectorAll(".carousel-index-btn");
 
+        var currentItemNum=1;
         prev.onclick = function () {
             slide(-1);
+            currentItemNum-=1;
+            if (currentItemNum==0) currentItemNum=5;
+            switchIndexBtn(currentItemNum);
         };
         next.onclick = function () {
             slide(1);
+            currentItemNum+=1;
+            if (currentItemNum==6) currentItemNum=1;
+            switchIndexBtn(currentItemNum);
         };
 
         for (var i = 0; i < indexBtns.length; i++) {
             (function (i) {
                 indexBtns[i].onclick = function () {
                     slideTo(i+1);
-//                    switchIndexBtn(this);
+                    currentItemNum=i+1;
                 }
             })(i);
         }
@@ -248,7 +255,6 @@
             },2000);
         }
         play();
-
         function stop() {
             clearInterval(scrollTimer);
         }
@@ -261,24 +267,23 @@
         };
     }
 
-    function getAbsoluteValue(v) {
-        return (v<0)?-v:v;
-    }
-
     function slide(slideItemNum) {
         var itemWrapper=document.querySelector(".carousel-item-wrapper");
         var currentLeftOffset=(itemWrapper.style.left)?parseInt(itemWrapper.style.left): 0,
                 targetLeftOffset=currentLeftOffset-(slideItemNum*carouselInfo.itemWidth);
-//                targetNum=(getAbsoluteValue(targetLeftOffset)/520)%carouselInfo.itemNum;
 
-        if (getAbsoluteValue(targetLeftOffset)>=carouselInfo.totalWidth) {
+        if (Math.abs(targetLeftOffset)>=carouselInfo.totalWidth) {
             targetLeftOffset+=carouselInfo.totalWidth;
         }
         if (targetLeftOffset>0) {
             targetLeftOffset-=carouselInfo.totalWidth;
         }
-        itemWrapper.style.left=targetLeftOffset+'px';
+
+//        var targetNum=getAbsoluteValue(targetLeftOffset)/520;
 //        switchIndexBtn(targetNum);
+
+        itemWrapper.style.left=targetLeftOffset+'px';
+
 
 //        if (targetLeftOffset>0) {
 //            /*此处的一个疑难在于，过渡属性结束在0.2s之后，如果立刻就定位回真5，这个定位还是会有“本不想要的”过渡。

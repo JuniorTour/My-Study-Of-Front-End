@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,
+    minimum-scale=1,maximum-scale=1.0,minimal-ui">
+    <!--The following two meta tags will be helpful in the "add to home screen" function in ios safari.
+    It will make the page more native-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <title>Whack-Mole-Vue.js</title>
+    <script src="js/vue.js"></script>
+    <style>
+        * {
+            padding: 0;
+            border: none;
+            margin:0;
+        }
+        html {
+            height: 100%;
+            /*A hack used to let 100% height valid.*/
+        }
+        body {
+            height: 100%;
+            /*A hack used to let 100% height valid.*/
+            -moz-user-select:none;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .app {
+            width:640px;
+            height: 100%;
+            outline: 1px solid red;
+            margin: 0 auto;
+            position: relative;
+        }
+        .target {
+            display: inline-block;
+            width:50%;
+            height:200px;
+        }
+        .mole {
+            background-color: green;
+        }
+        .rabbit {
+            background-color: yellow;
+        }
+        .final-score {
+            width:50%;
+            text-align: center;
+            position: absolute;
+            left:0;
+            bottom: 0;
+        }
+        .btn {
+            width:60px;
+            height:32px;
+        }
+    </style>
+</head>
+<body>
+<div class="app">
+    <div class="play-panel">
+        <div class="target mole" @click.prevent="addScore()"></div><!--Handle with the space between inline-block ele.
+    --><div class="target rabbit" @click.prevent="deductScore()"></div>
+    </div>
+    <div class="control-panel">
+        <h2 class="final-score">{{finalScore}}</h2>
+        <button class="pause-tn">Pause</button>
+        <div class="info">Proudly made by juniortour.</div>
+    </div>
+</div>
+
+<script>
+    new Vue ({
+        el:'.app',
+        data:{
+            finalScore:0
+        },
+        mounted:function () {
+            this.$nextTick(function () {
+                this.startGame();
+            });
+        },
+        methods:{
+            startGame: function () {
+                /*开始游戏：
+                * 1.初始化游戏：根据所选难度，渲染页面。
+                * （难度主要区分在：出现的洞口数量多少，每轮动物出现的频率快慢）
+                * 2.间隔随机生成地鼠和兔子，并相应的绑定点击事件
+                * 3.计算得分
+                * 4.分享功能？
+                * 5.随机事件、彩蛋：随机出现一只金地鼠，获得大量得分。*/
+            },
+            addScore: function () {
+                this.finalScore+=10;
+            },
+            deductScore: function () {
+                this.finalScore-=10;
+            },
+            getRandomInt: function (min,max) {
+                min=Math.ceil(min); //向上取整
+                max=Math.floor(max);    //向下取整
+                return  Math.floor(Math.random()*(max-min+1)+min);
+            }
+        },
+        computed: {
+        }
+    })
+</script>
+</body>
+</html>
