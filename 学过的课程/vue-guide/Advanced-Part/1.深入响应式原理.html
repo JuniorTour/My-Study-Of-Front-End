@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1.深入响应式原理</title>
+    <script src="../src/vue.js"></script>
+</head>
+<body>
+<div class="app">
+    <example></example>
+</div>
+
+<script>
+    Vue.component('example', {
+        template: '<span @click="updateMessage">{{ message }}</span>',
+        data: function () {
+            return {
+                message: 'not updated'
+            }
+        },
+        methods: {
+            updateMessage: function () {
+                this.message = 'updated'
+                console.log(this.$el.textContent) // => '没有更新'
+                this.$nextTick(function () {
+                    console.log(this.$el.textContent) // => '更新完成'
+                })
+            }
+        }
+    })
+
+    var vm = new Vue({
+        el:'.app',
+        data:{
+            a:1,
+            someObj:{}
+        },
+    })
+    // `vm.a` 是响应的
+    vm.b = 2
+    // `vm.b` 是非响应的
+
+    Vue.set(vm.someObj,'c',3); //'vm.c'是响应的
+
+</script>
+</body>
+</html>

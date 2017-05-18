@@ -20,7 +20,7 @@
         .carousel-wrapper {
             width:520px;
             height:280px;
-            overflow: hidden;   /*KEY POINT!!!*/
+            overflow: hidden;   /*关键*/
             position: relative;
             margin: 100px auto;
         }
@@ -31,6 +31,7 @@
             top: 0;
             left: -520px;
             /*transition: left .2s ease-in;*/
+            /*默认不使用CSS声明的过渡属性，避免一次滑动多页的bug。*/
         }
         .carousel-item a {
             display: block;
@@ -39,10 +40,10 @@
             height: 280px;
         }
 
-        /*When you use <img>,you can delete the following background-color part.*/
+        /*使用不同背景色的a替代图片。*/
         .carousel-item:nth-child(1) a {
             background-color: rgb(129,194,214);
-            /*as a copy of fifth one, its color/img is same as fifth one.*/
+            /*第五张图片的复制*/
         }
         .carousel-item:nth-child(2) a {
             background-color: rgb(129,146,214);
@@ -61,7 +62,7 @@
         }
         .carousel-item:nth-child(7) a {
             background-color: rgb(129,146,214);
-            /*as a copy of second one, its color/img is same as second one.*/
+            /*第一张图片的复制*/
         }
 
         .carousel-item {
@@ -117,8 +118,7 @@
             background-color: #b7b7b7;
             border-radius: 50%;
             text-indent: -999em;
-            /*For Accessibility,I keep the string in the element for Screen Reader and declare text-indent to
-            hide the string for style.*/
+            /*这个-999em的文字对齐声明有助于增强可访问性。*/
             cursor: pointer;
         }
         .active-carousel-index-btn {
@@ -211,6 +211,7 @@
 <script>
     var carouselInfo={
         itemWidth:520,
+        trueItemNum:5,
         itemNum:7,
         totalWidth:7*520
     };
@@ -300,8 +301,10 @@
             /*switch 的语法是：当case之中的表达式等于switch (val)的val时，执行后面的statement（语句）。*/
             case (targetLeftOffset>0):
                 itemWrapper.style.transition="none";
-                itemWrapper.style.left='-2600px';
-                targetLeftOffset=-2080;
+                itemWrapper.style.left=-carouselInfo.trueItemNum*carouselInfo.itemWidth+'px';
+                /*在这里即相当于：itemWrapper.style.left='-2600px';*/
+                targetLeftOffset=-(carouselInfo.trueItemNum-1)*carouselInfo.itemWidth;
+//                targetLeftOffset=-2080;
                 break;
             case (targetLeftOffset<-3120):
                 itemWrapper.style.transition="none";
@@ -328,7 +331,9 @@
             itemWrapper.style.transition="left .2s ease-in";
             itemWrapper.style.left=targetLeftOffset+'px';
         },0);
-        /*神奇地用setTimeout-0解决了！*/
+        /*神奇地用setTimeout-0解决了！
+        * 看了看bootstrap的源码，似乎也用了setTimeout-0。
+        * http://stackoverflow.com/questions/779379/why-is-settimeoutfn-0-sometimes-useful*/
     }
     
     function slideTo(targetNum) {

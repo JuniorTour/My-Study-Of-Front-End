@@ -104,6 +104,29 @@ It can be  optimize to a single method, @click.prevent="showDelModal(item)"
 
 16.As a small framework(19kb min+gzip),vue.js has the ability to render the page,it is more performant than jquery and handlebars!
 
+17.The declaration of components should be earlier than the use of it:
+
+<div class="app">
+    <example></example>
+</div>
+
+<script>
+    Vue.component('example', {
+        template: '<span @click="updateMessage">{{ message }}</span>',
+    })
+
+    var vm = new Vue({
+        el:'.app',
+        data:{
+            a:1,
+            someObj:{}
+        },
+    })
+    //here is invalid!
+    Vue.component('example', {
+        template: '<span @click="updateMessage">{{ message }}</span>',
+    })
+
 三、Error and Warning：
 1.If a function is not defined,the error will be reminded:
     vue.js:525 [Vue warn]: Error when rendering root instance:

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.过渡效果</title>
+    <script src="../src/vue.js"></script>
+    <style>
+        .transition-enter-active, .transition-leave-active {
+            transition: opacity .5s
+        }
+        .transition-enter, .transition-leave-active {
+            opacity: 0
+        }
+    </style>
+</head>
+<body>
+<div class="app1">
+    <button @click.prevent="show=!show">Toggle</button>
+    <transition name="transition">
+        <p v-if="show">Show me!</p>
+    </transition>
+</div>
+<script>
+let app1=new Vue({
+    el:'.app1',
+    data: {
+        show:true
+    }
+})
+</script>
+</body>
+</html>
