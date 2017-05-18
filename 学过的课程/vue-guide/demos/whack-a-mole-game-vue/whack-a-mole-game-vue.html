@@ -6,9 +6,10 @@
     minimum-scale=1,maximum-scale=1.0,minimal-ui">
     <!--The following two meta tags will be helpful in the "add to home screen" function in ios safari.
     It will make the page more native-->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <!--<meta name="apple-mobile-web-app-capable" content="yes" />-->
     <meta name="apple-mobile-web-app-status-bar-style" content="white" />
-    <title>Whack-Mole-Vue.js</title>
+    <title>Whack-mole-holes-Vue.js</title>
     <script src="js/vue.js"></script>
     <style>
         * {
@@ -21,54 +22,123 @@
             /*A hack used to let 100% height valid.*/
         }
         body {
-            height: 100%;
+            height: 95%;
             /*A hack used to let 100% height valid.*/
             -moz-user-select:none;
             font-size: 16px;
-            margin: 0;
+            margin: 2.5%;
         }
+        .clearfix {zoom:1;}
+        .clearfix:before,.clearfix:after {
+            content: ' ';
+            display: table;
+        }
+        .clearfix:after { clear: both;}
 
         .app {
-            width:640px;
-            height: 100%;
+            width:95%;
+            height: 95%;
+            padding: 2.5%;
             outline: 1px solid red;
             margin: 0 auto;
             position: relative;
         }
         .target {
-            display: inline-block;
-            width:50%;
+            float: left;
+            width:20%;
             height:200px;
+            margin: 2.5%;
         }
-        .mole {
+        .mole-hole {
             background-color: green;
         }
-        .rabbit {
+        .rabbit-hole {
             background-color: yellow;
         }
-        .final-score {
-            width:50%;
-            text-align: center;
+        .control-panel {
+            width:95%;
+            padding: 1% 2.5%;
             position: absolute;
             left:0;
             bottom: 0;
         }
+        .control-panel table {
+            width: 100%;
+        }
+        .control-panel table td {
+            width:25%;
+            text-align: center;
+        }
+        .final-score-table-data {
+            width:50%;
+        }
+        .final-score {
+            text-align: center;
+        }
+        .addingScore {
+            /*display: none;*/
+            position: absolute;
+            top: -100%;
+            left: 40%;
+            opacity:1;
+            animation: addScore 1.3s linear infinite;
+        }
         .btn {
             width:60px;
             height:32px;
+            border-radius: 4px;
+        }
+        .pause-btn {
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4;
+        }
+        .info-btn {
+            color: #fff;
+            background-color: #5bc0de;
+            border-color: #46b8da;
+        }
+        .info-panel {
+            display: none;
+        }
+
+        @keyframes addScore {
+           100% {
+               top:-20%;
+               left: 45%;
+               opacity: 0;
+           }
         }
     </style>
 </head>
 <body>
 <div class="app">
-    <div class="play-panel">
-        <div class="target mole" @click.prevent="addScore()"></div><!--Handle with the space between inline-block ele.
-    --><div class="target rabbit" @click.prevent="deductScore()"></div>
+    <div class="play-panel clearfix">
+        <div class="target mole-hole" @click.prevent="addScore()" v-for="n in holeNum"
+         :data-holenum="n">{{n}}</div>
+        <!--<div class="target rabbit-hole" @click.prevent="deductScore()"></div>-->
     </div>
-    <div class="control-panel">
-        <h2 class="final-score">{{finalScore}}</h2>
-        <button class="pause-tn">Pause</button>
-        <div class="info">Proudly made by juniortour.</div>
+    <div class="control-panel clearfix">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <button class="btn pause-btn">Pause</button>
+                    </td>
+                    <td class="final-score-table-data">
+                        <h2 class="addingScore">+10</h2>
+                        <!--<h2 class="deductingScore">-10</h2>-->
+                        <h2 class="final-score">{{finalScore}}</h2>
+                    </td>
+                    <td>
+                        <button class="btn info-btn">I</button>
+                        <div class="info-panel">
+                            Proudly made by juniortour.
+                        </div>
+                    </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 
@@ -76,7 +146,10 @@
     new Vue ({
         el:'.app',
         data:{
-            finalScore:0
+            finalScore:0,
+            difficulty:'normal',
+            holeNum:6,
+            isRabbitHole:true
         },
         mounted:function () {
             this.$nextTick(function () {
@@ -91,13 +164,36 @@
                 * 2.间隔随机生成地鼠和兔子，并相应的绑定点击事件
                 * 3.计算得分
                 * 4.分享功能？
-                * 5.随机事件、彩蛋：随机出现一只金地鼠，获得大量得分。*/
+                * 5.随机事件、彩蛋：随机出现一只金地鼠，获得大量得分，但是消失的较快。*/
+                switch (this.difficulty) {
+                    case 'easy':
+                        this.holeNum=4;
+//                        this.freshRate=1
+                        break;
+                    case 'normal':
+                        this.holeNum=6;
+//                        this.freshRate=1
+                        break;
+                    case 'difficult':
+                        this.holeNum=12;
+//                        this.freshRate=1
+                        break;
+                }
+
+                let randomInt=this.getRandomInt(1,6);
+                console.log('randomInt = '+randomInt);
+                //stupid method
+                let rabbitHoleHole=document.querySelector('div[data-holenum='+'"'+randomInt+'"'+']');
+                rabbitHoleHole.classList+=' rabbit-hole';
             },
             addScore: function () {
                 this.finalScore+=10;
             },
             deductScore: function () {
                 this.finalScore-=10;
+            },
+            gamePause: function () {
+
             },
             getRandomInt: function (min,max) {
                 min=Math.ceil(min); //向上取整

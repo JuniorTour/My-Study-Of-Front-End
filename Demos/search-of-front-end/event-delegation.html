@@ -12,6 +12,10 @@
 </ul>
 <script>
     var EventUtil={
+        /*DOM二级的addEventListener相对于on+sth的优点是：
+         * 1.addEventListener可以先后添加多个事件，同时这些事件还不会相互覆盖。
+         * 2.addEventListener可以控制事件触发阶段，通过第三个可选的useCapture参数选择冒泡还是捕获。
+         * 3.addEventListener对任何DOM元素都有效，而不仅仅是HTML元素。*/
         addHandler:function (ele,type,handler) {
             if(ele.addEventListener) {
                 ele.addEventListener(type,handler,false)
@@ -33,7 +37,9 @@
         },
 
         getEvent: function (event) {
-            return event?event:window.event
+            return event?event:window.event;
+            /*window.event是ie专有的属性。并且已经不再是标准了！
+            * 但是在IE中还能用。*/
         },
 
         getTarget: function (event) {
