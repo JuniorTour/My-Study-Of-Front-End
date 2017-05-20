@@ -5,11 +5,34 @@
     <title>2.过渡效果</title>
     <script src="../src/vue.js"></script>
     <style>
+        /*
+        opacity:0   opacity:1               opacity:1 -> opacity:0
+
+         v-enter    v-enter-active      v-leave    v-leave-active
+
+         不太明白什么是enter和leave。
+        */
         .transition-enter-active, .transition-leave-active {
-            transition: opacity .5s
+            transition: opacity 3s
         }
         .transition-enter, .transition-leave-active {
             opacity: 0
+        }
+        /*.transition-enter{*/
+            /*!*background-color: red;*!*/
+            /*margin-right: 200px;*/
+        /*}*/
+        /*.transition-leave {*/
+            /*background-color: green;*/
+            /*margin-right: 200px;*/
+        /*}*/
+
+
+        .color-enter-active, .color-leave-active {
+            transition: color 3s
+        }
+        .color-enter, .color-leave-active {
+            color: red;
         }
     </style>
 </head>
@@ -17,14 +40,22 @@
 <div class="app1">
     <button @click.prevent="show=!show">Toggle</button>
     <transition name="transition">
-        <p v-if="show">Show me!</p>
+        <p>Show me!</p>
     </transition>
+    <transition-group name="color" mode="out-in">
+        <p key="content">在 “on” 按钮和 “off” 按钮的过渡中，两个按钮都被重绘了，
+            一个离开过渡的时候另一个开始进入过渡。这是 &lt;transition&gt; 的默认行为 - 进入和离开同时发生。</p>
+        <button v-bind:key="isEditing" @click.prevent="isEditing=!isEditing">
+            {{ isEditing ? 'Save' : 'Edit' }}
+        </button>
+    </transition-group>
 </div>
 <script>
 let app1=new Vue({
     el:'.app1',
     data: {
-        show:true
+        show:true,
+        isEditing:true
     }
 })
 </script>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3.过渡状态</title>
+    <script src="../src/vue.js"></script>
+    <script src="src/tween.js@16.3.4"></script>
+</head>
+<body>
+<div id="animated-number-demo">
+    <input v-model.number="number" type="number" step="20">
+    <p>{{ animatedNumber }}</p>
+</div>
+
+<script>
+    new Vue({
+        el: '#animated-number-demo',
+        data: {
+            number: 0,
+            animatedNumber: 0
+        },
+        /*通过 watcher 我们能监听到任何数值属性的数值更新。*/
+        watch: {
+            number: function(newValue, oldValue) {
+                var vm = this
+                function animate (time) {
+                    requestAnimationFrame(animate)
+                    TWEEN.update(time)
+                }
+                new TWEEN.Tween({ tweeningNumber: oldValue })
+                        .easing(TWEEN.Easing.Quadratic.Out)
+                        .to({ tweeningNumber: newValue }, 500)
+                        .onUpdate(function () {
+                            vm.animatedNumber = this.tweeningNumber.toFixed(0)
+                        })
+                        .start()
+                animate()
+            }
+        }
+    })
+</script>
+</body>
+</html>

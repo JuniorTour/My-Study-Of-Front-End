@@ -209,6 +209,22 @@
 </div>
 
 <script>
+    function addLoadEvent(func) {
+        var oldLoad=window.onload;
+        if (typeof oldLoad !='function') {
+            window.onload=func;
+        }   else    {
+            window.onload=function() {
+                oldLoad();
+                func();
+            }
+        }
+    }
+
+//    addLoadEvent(preventDefaultAnchors);
+//    addLoadEvent(carouselControl);
+
+    /*用一个对象把轮播的相关参数封装起来，优点是便于扩展升；缺点是同时也增加了文件的体积。*/
     var carouselInfo={
         itemWidth:520,
         trueItemNum:5,
@@ -216,13 +232,14 @@
         totalWidth:7*520
     };
 
-    window.onload=function () {
-        preventDefaultAnchors();
-        carouselControl();
-    };
+//    window.onload=function () {
+//        preventDefaultAnchors();
+//        carouselControl();
+//    };
 
     function preventDefaultAnchors() {
         var allAnchors=document.querySelectorAll('a');
+        /*FF AND IE ERROR!!!*/
         allAnchors.forEach(function (val,index) {
             val.addEventListener('click',function (e) {
                 e.preventDefault();
@@ -308,8 +325,10 @@
                 break;
             case (targetLeftOffset<-3120):
                 itemWrapper.style.transition="none";
-                itemWrapper.style.left='-520px';
-                targetLeftOffset=-1040;
+                itemWrapper.style.left=-carouselInfo.itemWidth+'px';
+//                itemWrapper.style.left='-520px';
+                targetLeftOffset=-carouselInfo.itemWidth*2;
+//                targetLeftOffset=-1040;
                 break;
         }
         /*此处的一个疑难在于，过渡属性结束在0.2s之后，如果立刻就定位回真5，这个定位还是会有“本不想要的”过渡。
@@ -327,13 +346,23 @@
 //        var targetNum=getAbsoluteValue(targetLeftOffset)/520;
 //        switchIndexBtn(targetNum);
 
+//        itemWrapper.addEventListener('transitionend',function () {
+//            itemWrapper.removeEventListener('transitionend',function () {});
+//            console.log('transition end.');
+//        })
         setTimeout(function () {
             itemWrapper.style.transition="left .2s ease-in";
             itemWrapper.style.left=targetLeftOffset+'px';
-        },0);
+        },20);
         /*神奇地用setTimeout-0解决了！
         * 看了看bootstrap的源码，似乎也用了setTimeout-0。
-        * http://stackoverflow.com/questions/779379/why-is-settimeoutfn-0-sometimes-useful*/
+        * http://stackoverflow.com/questions/779379/why-is-settimeoutfn-0-sometimes-useful
+        * 根据第二个回答，我个人的理解是：setTimeout-0相当于异步执行内部的代码，
+        * 具体到这个轮播，就是在上一轮非过渡定位的页面渲染工作（switch语句内部的case）结束之后，再执行setTimeout内部的过渡位移工作。
+        * 从而避免了，非过渡的定位还未结束，就恢复了过渡属性，使得这一次非过渡的定位也带有过渡效果。*/
+
+        /*偶尔有几次观察到即使用了setTimeout-0也会出现之前的bug：......，而且难以重现和观测。
+        * 所以试着加上了20ms的延迟，测试还会不会出现这个bug，从而进一步判断原因。*/
     }
     
     function slideTo(targetNum) {
@@ -351,6 +380,9 @@
         var targetBtn=document.querySelectorAll(".carousel-index-btn")[targetNum-1];
         targetBtn.className+=" active-carousel-index-btn";
     }
+
+//    preventDefaultAnchors();
+    carouselControl();
 </script>
 </body>
 </html>

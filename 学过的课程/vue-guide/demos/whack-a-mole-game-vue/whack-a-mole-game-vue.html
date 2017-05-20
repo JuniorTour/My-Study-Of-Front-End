@@ -49,6 +49,9 @@
             height:200px;
             margin: 2.5%;
         }
+        .hole {
+            background-color: black;
+        }
         .mole-hole {
             background-color: green;
         }
@@ -93,10 +96,18 @@
             background-color: #337ab7;
             border-color: #2e6da4;
         }
+        .pause-btn:active {
+            background-color: #286090;
+            border-color: #204d74;
+        }
         .info-btn {
             color: #fff;
             background-color: #5bc0de;
             border-color: #46b8da;
+        }
+        .info-btn:active {
+            background-color: #31b0d5;
+            border-color: #269abc;
         }
         .info-panel {
             display: none;
@@ -105,8 +116,9 @@
         @keyframes addScore {
            100% {
                top:-20%;
-               left: 45%;
+               left: 43%;
                opacity: 0;
+               transform: scale(1.2);
            }
         }
     </style>
@@ -114,7 +126,7 @@
 <body>
 <div class="app">
     <div class="play-panel clearfix">
-        <div class="target mole-hole" @click.prevent="addScore()" v-for="n in holeNum"
+        <div class="target hole" @click.prevent="addScore()" v-for="n in holeNum"
          :data-holenum="n">{{n}}</div>
         <!--<div class="target rabbit-hole" @click.prevent="deductScore()"></div>-->
     </div>
@@ -162,6 +174,11 @@
                 * 1.初始化游戏：根据所选难度，渲染页面。
                 * （难度主要区分在：出现的洞口数量多少，每轮动物出现的频率快慢）
                 * 2.间隔随机生成地鼠和兔子，并相应的绑定点击事件
+                *
+                * 难点！！
+                * 大致逻辑是：默认都是.hole的class，需要“随机”决定某些是.mole-hole或.rabbit-hole，
+                * 并且！！！要相应的更新点击事件！！！
+                *
                 * 3.计算得分
                 * 4.分享功能？
                 * 5.随机事件、彩蛋：随机出现一只金地鼠，获得大量得分，但是消失的较快。*/
@@ -180,11 +197,14 @@
                         break;
                 }
 
-                let randomInt=this.getRandomInt(1,6);
-                console.log('randomInt = '+randomInt);
-                //stupid method
-                let rabbitHoleHole=document.querySelector('div[data-holenum='+'"'+randomInt+'"'+']');
-                rabbitHoleHole.classList+=' rabbit-hole';
+                let timer=setInterval(()=>{
+                    let randomInt=this.getRandomInt(1,6);
+                    console.log('randomInt = '+randomInt);
+
+                    //stupid method
+                    let rabbitHoleHole=document.querySelector('div[data-holenum='+'"'+randomInt+'"'+']');
+                    rabbitHoleHole.classList+=' rabbit-hole';
+                },200)
             },
             addScore: function () {
                 this.finalScore+=10;
@@ -193,7 +213,8 @@
                 this.finalScore-=10;
             },
             gamePause: function () {
-
+                showOverlay();
+                stopRandom();
             },
             getRandomInt: function (min,max) {
                 min=Math.ceil(min); //向上取整

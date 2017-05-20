@@ -127,6 +127,8 @@ It can be  optimize to a single method, @click.prevent="showDelModal(item)"
         template: '<span @click="updateMessage">{{ message }}</span>',
     })
 
+18.感觉只靠读文档难以融会贯通啊！！！
+
 三、Error and Warning：
 1.If a function is not defined,the error will be reminded:
     vue.js:525 [Vue warn]: Error when rendering root instance:
