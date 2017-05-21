@@ -209,6 +209,7 @@
 </div>
 
 <script>
+    //便于拓展的方法一
     function addLoadEvent(func) {
         var oldLoad=window.onload;
         if (typeof oldLoad !='function') {
@@ -221,8 +222,14 @@
         }
     }
 
-//    addLoadEvent(preventDefaultAnchors);
-//    addLoadEvent(carouselControl);
+    addLoadEvent(preventDefaultAnchors);
+    addLoadEvent(carouselControl);
+
+        //不便于拓展的方法二：
+//    window.onload=function () {
+//        preventDefaultAnchors();
+//        carouselControl();
+//    };
 
     /*用一个对象把轮播的相关参数封装起来，优点是便于扩展升；缺点是同时也增加了文件的体积。*/
     var carouselInfo={
@@ -232,19 +239,25 @@
         totalWidth:7*520
     };
 
-//    window.onload=function () {
-//        preventDefaultAnchors();
-//        carouselControl();
-//    };
-
     function preventDefaultAnchors() {
         var allAnchors=document.querySelectorAll('a');
-        /*FF AND IE ERROR!!!*/
-        allAnchors.forEach(function (val,index) {
-            val.addEventListener('click',function (e) {
+
+        for(var i=0;i<allAnchors.length;i++) {
+            allAnchors[i].addEventListener('click',function (e) {
                 e.preventDefault();
             },false);
-        });
+        }
+        /*火狐和IE不支持NodeList的forEach方法*/
+//        var a = ['a', 'b', 'c'];
+//
+//        a.forEach(function(element) {
+//            console.log(element);
+//        });
+//        allAnchors.forEach(function (val,index) {
+//            val.addEventListener('click',function (e) {
+//                e.preventDefault();
+//            },false);
+//        });
     }
     
     function carouselControl () {
@@ -380,9 +393,6 @@
         var targetBtn=document.querySelectorAll(".carousel-index-btn")[targetNum-1];
         targetBtn.className+=" active-carousel-index-btn";
     }
-
-//    preventDefaultAnchors();
-    carouselControl();
 </script>
 </body>
 </html>
