@@ -1,0 +1,23 @@
+1.
+        .carousel-wrapper {
+            overflow: visible;
+            width:25%;
+            height:50%;
+            outline: 3px solid #000;
+            margin: 5% auto;
+            position: relative;
+        }
+        .carousel-item-wrapper {
+            width:200%;
+            height:80%;
+            position: absolute;
+            top:10%;
+            /*绝对定位的半分比值，仅仅只相对于相对定位元素的宽/高。
+            此处的.carousel-item-wrapper会居中与父元素.carousel-wrapper，
+            因为item-wrapper距离父元素.carousel-wrapper顶部为10%，相应的底部即为：
+            100%-80%-10%=10%也是10%，故居中。*/
+            left: 0;
+        }
+
+2.Chrome的styles面板可以很方便的可视化的添加text-shadow、box-shadow等特效。
+只需要点击每一个声明块右下角的三个点图标即可！

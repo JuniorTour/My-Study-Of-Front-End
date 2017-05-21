@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片轮播循环原理演示</title>
+    <style>
+        * {
+            padding: 0;
+            border: none;
+            margin: 0;
+        }
+
+        .container {
+            width:100%;
+            height:500px;
+            text-align: center;
+        }
+        .container h2 {
+            margin-top: 50px;
+        }
+        .carousel-wrapper {
+            overflow: visible;
+            width:15%;
+            height:50%;
+            outline: 3px solid #000;
+            margin: 5% auto;
+            position: relative;
+        }
+        .carousel-item-wrapper {
+            width:400%;
+            height:80%;
+            outline: 3px solid #f00;
+            position: absolute;
+            top:10%;
+            /*绝对定位的半分比值，仅仅只相对于相对定位元素的宽/高。*/
+            /*left: 0;*/
+            left: -100%;
+            /*animation: loop-demo 4s linear 1 2s;*/
+            /*animation-timing-function: steps(1);*/
+        }
+        .loop-animation {
+            animation: loop-demo 4s linear infinite 2s;
+            animation-timing-function: steps(1);
+        }
+        .carousel-item {
+            float: left;
+            width:25%;
+            height:100%;
+            line-height:200px;
+        }
+        .carousel-item:nth-child(1) {
+            background-color: rgb(129,194,214);
+        }
+        .carousel-item:nth-child(2) {
+            background-color: rgb(129,146,214);
+        }
+        .carousel-item:nth-child(3) {
+            background-color: rgb(129,194,214);
+        }
+        .carousel-item:nth-child(4) {
+            background-color: rgb(129,146,214);
+        }
+
+        @keyframes loop-demo {
+            0%{left: 0;}
+            50%{left: -200%;}
+            100%{left: -100%}
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>父元素利用overflow:hidden;作为窗口</h2>
+    <div class="carousel-wrapper">
+        <div class="carousel-item-wrapper">
+            <div class="carousel-item">copy-2</div>
+            <div class="carousel-item">1</div>
+            <div class="carousel-item">2</div>
+            <div class="carousel-item">copy-1</div>
+        </div>
+    </div>
+    <button onclick="playAgain()">再次播放动画</button>
+    <p>当从开头的1号图片向2号图片移动时，其逻辑是：<br>
+    （1）先移动至1号前一位的copy-2号，（2）当到达copy-2号时，立即定位至真正的2号图片。<br>
+        从而形成视觉欺骗，就好像在循环播放一样。<br>
+    从结尾的2号图片向1号图片移动的逻辑同理。</p>
+</div>
+
+<script>
+    var itemWrapper=document.querySelector('.carousel-item-wrapper');
+    itemWrapper.addEventListener('animationended',function () {
+        itemWrapper.classList.remove('loop-animation');
+    })
+    function  playAgain () {
+        itemWrapper.classList.add('loop-animation');
+    }
+</script>
+</body>
+</html>
