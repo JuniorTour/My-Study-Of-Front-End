@@ -1,9 +1,39 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <!--<div class="header">-->
+    <!--Header-->
+    <!--</div>-->
+    <v-header></v-header>
+    <div class="tab">
+      <div class="tab-item">商品</div>
+      <div class="tab-item">评论</div>
+      <div class="tab-item">商家</div>
+    </div>
+    <div class="content">
+      Content
+    </div>
+  </div>
 </template>
 
-<script type="text/ecmascript-6">
+<script>
+  import header from 'components/header/header.vue'
+
+  export default {
+    components: {
+      'v-header': header
+    }
+  }
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus">
+<style lang="stylus" rel="stylesheet/stylus" type="text/stylus">
+  #app .tab {
+    display: flex;
+    width:100%;
+    height:40px;
+    line-height:40px;
+  }
+  .tab-item {
+    flex: 1;
+    text-align: center;
+  }
 </style>
