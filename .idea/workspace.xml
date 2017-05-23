@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="245d3670-3895-4aed-8406-06a940ee5abe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/vue-guide/demos/summary in making ele app.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/app/vendor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/summary-of-learning-webpack.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/index.html" afterPath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/App.vue" afterPath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/header.vue" afterPath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/header.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/stylus/mixin.styl" afterPath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/stylus/mixin.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/goods/goods.vue" afterPath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/goods/goods.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/ratings/ratings.vue" afterPath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/ratings/ratings.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/seller/seller.vue" afterPath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/seller/seller.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/main.js" afterPath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/package.json" afterPath="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/webpack.config.js" afterPath="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/web-pack/webpack-demodist/bundle.js" afterPath="$PROJECT_DIR$/学过的课程/web-pack/webpack-demodist/bundle.js" />
     </list>
     <ignored path="Web前端.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,34 +37,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="standard-js-carousel-v2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Demos/my-components/standard-js-carousel/standard-js-carousel-v2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#8695#8868#0" expanded="false" />
-                <element signature="e#8908#9082#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loop-theory-demonstration.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Demos/my-components/standard-js-carousel/loop-theory-demonstration.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="5.longest-palindromic-substring.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demos/leetcode/5.longest-palindromic-substring.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,8 +50,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.212121">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="-9.909091">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -78,28 +60,18 @@
       <file leaf-file-name="App.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.91741073">
-              <caret line="36" column="22" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.5316456">
+              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/index.html">
+      <file leaf-file-name="mixin.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/stylus/mixin.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.630435">
-              <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/header.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.6086956">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+            <state vertical-scroll-proportion="-1.4050633">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -110,13 +82,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="middle" />
         <option value="txt" />
-        <option value="Mark Down" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Vue File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Mark Down" />
       </list>
     </option>
   </component>
@@ -127,20 +99,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/vue-seentials-review-2.html" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/vue-essentials-review-2.html" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/vue-essentials-review.html" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/Essentials-Part/10.component-1.html" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/vue-essentials-review-3.html" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/package.json" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/css/base.css" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/css/modal.css" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/data/cart.json" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/data/cartData.json" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/css/checkout.css" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/js/address.js" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/address.html" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/cart.html" />
         <option value="$PROJECT_DIR$/Demos/my-components/standard-js-carousel/standard-js-carousel.html" />
         <option value="$PROJECT_DIR$/Demos/search-of-front-end/emulate-new-operator.html" />
         <option value="$PROJECT_DIR$/译文/一种新的微型清浮技巧/Demo_ A new micro clearfix hack — Nicolas Gallagher.html" />
@@ -165,19 +125,31 @@
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/build/dev-server.js" />
         <option value="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/app/index.html" />
         <option value="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/node_modules/.bin/webpack" />
-        <option value="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/app/index.js" />
         <option value="$PROJECT_DIR$/学过的课程/web-pack/mistakes-of-webpack.md" />
-        <option value="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/webpack.config.js" />
         <option value="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/package.json" />
         <option value="$PROJECT_DIR$/Demos/leetcode/5.longest-palindromic-substring.html" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/stylus/icon.styl" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/static/css/reset.css" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/book-list/index.html" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/.eslintrc.js" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/main.js" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/header.vue" />
+        <option value="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/css/main.css" />
+        <option value="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/index.html" />
+        <option value="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/app/verdor.js" />
+        <option value="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/app/index.js" />
+        <option value="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/webpack.config.js" />
+        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/package.json" />
+        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/goods/goods.vue" />
+        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/mistakes in making ele app.md" />
+        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/seller/seller.vue" />
+        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/ratings/ratings.vue" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/index.html" />
+        <option value="$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/summary-of-learning-webpack.md" />
+        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/static/css/reset.css" />
+        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/main.js" />
+        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/cart.html" />
+        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/stylus/mixin.styl" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/App.vue" />
+        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/summary in making ele app.md" />
       </list>
     </option>
   </component>
@@ -581,40 +553,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="学过的课程" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vue-guide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eleme-by-vue.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Demos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -693,9 +631,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\vue-guide\demos\eleme-by-vue.js" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\Demos" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\vue-guide\demos\eleme-by-vue.js\src\common\stylus" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\vue-guide\demos\eleme-by-vue.js" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\vue-guide\demos\eleme-by-vue.js\src\common\fonts" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\vue-guide\Advanced-Part\src" />
     </key>
@@ -792,8 +730,8 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.146875" sideWeight="0.4960452" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.325462" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273495" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3252376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973601" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -859,150 +797,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/whack-a-mole-game-vue/whack-a-mole-game-vue.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="216" column="29" selection-start-line="216" selection-start-column="29" selection-end-line="216" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/10.2 practical animation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.425926">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/pure-js-simulate-call-apply-bind.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="132" column="27" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/Advanced-Part/1.深入响应式原理.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9849537">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/Advanced-Part/2.过渡效果.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.97826">
-          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/Advanced-Part/3.过渡状态.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7280093">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/advanced images gallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8043478">
-          <caret line="71" column="40" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/job/juniortour-resume.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33796296">
-          <caret line="46" column="60" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/job/juniortour-portfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.045138888">
-          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="50" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/my-components/standard-js-carousel/theory-demonstration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/my-components/standard-js-carousel/loop-theory-demonstration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/my-components/standard-js-carousel/standard-js-carousel-v2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#8695#8868#0" expanded="false" />
-            <element signature="e#8908#9082#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/inherit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/node_modules/.bin/webpack">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12197802">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/module-programing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/web-pack/Summary of mistakes in leaning webpack.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
@@ -1029,38 +823,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/dist/bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1223814">
-          <caret line="17177" column="94" selection-start-line="17177" selection-start-column="77" selection-end-line="17177" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33035713">
           <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36633664">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/app/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36633664">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="49" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1096,26 +864,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/static/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3325893">
-          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/book-list/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.8649554">
           <caret line="175" column="31" selection-start-line="175" selection-start-column="31" selection-end-line="175" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/build/dev-server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.0935094">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1160,30 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Game/饿了吗代码/vue-sell-master/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.578125">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Game/饿了吗代码/vue-sell-master/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Game/饿了吗代码/vue-sell-master/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.8493304">
-          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.8043478">
@@ -1200,82 +928,270 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Game/饿了吗代码/vue-sell-1.0/src/App.vue">
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/node_modules/vue-router/dist/vue-router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.2173913">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.44480875">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Game/饿了吗代码/vue-sell-1.0/src/main.js">
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/node_modules/vue/dist/README.md">
+      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.13058823">
+            <caret line="2" column="160" selection-start-line="2" selection-start-column="160" selection-end-line="2" selection-end-column="160" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/dist/bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33295456">
+          <caret line="10356" column="49" selection-start-line="10356" selection-start-column="46" selection-end-line="10356" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/app/vendor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          <caret line="0" column="62" selection-start-line="0" selection-start-column="62" selection-end-line="0" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/build/build.js">
+    <entry file="file://$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.180418">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.08515535">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Game/饿了吗代码/vue-sell-master/src/components/header/header.vue">
+    <entry file="file://D:/Game/vue_tutorial/project/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2712054">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.3125683">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Game/饿了吗代码/vue-sell-1.0/src/components/header/header.vue">
+    <entry file="file://$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/app/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4955357">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.041950114">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/package.json">
+    <entry file="file://$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2388393">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.21288837">
+          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37755102">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/node_modules/vue/dist/vue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52568305">
+          <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Game/vue_tutorial/饿了吗代码/vue-sell-2.0/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1070195">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/header.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6086956">
+        <state vertical-scroll-proportion="0.08515535">
           <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Game/vue_tutorial/饿了吗代码/vue-sell-1.0/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.21288837">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5972382">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/build/dev-client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/build/dev-server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/build/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="14.757576">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/build/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08736718">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/goods/goods.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.021739">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/seller/seller.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4130435">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/ratings/ratings.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25546604">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/web-pack/webpack-demo/summary-of-learning-webpack.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/static/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5212888">
+          <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38319907">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.212121">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="-9.909091">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/summary in making ele app.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="-0.30588236">
+            <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6292517">
+          <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="20" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.630435">
-          <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.5109321">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Game/vue_tutorial/project/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.8734177">
+          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/stylus/mixin.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4050633">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91741073">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.5316456">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding />
         </state>
       </provider>
