@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>webpack-get-started</title>
     <!--<script src="https://unpkg.com/lodash@4.16.6"></script>-->
+    <!--由ExtractTextPlugin生成的总css，需要显式地引入。-->
+    <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
-
+<h1>This is body!</h1>
 <!--<script src="app/index.js"></script>-->
 <script src="dist/bundle.js"></script>
 </body>

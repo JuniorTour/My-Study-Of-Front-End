@@ -13,10 +13,11 @@
   "devDependencies": {
     "css-loader": "^0.28.2",
     "extract-text-webpack-plugin": "^2.1.0",
-    "style-loader": "^0.18.0",
+    "style-loader": "^0.18.1",
     "webpack": "^2.5.1"
   },
   "dependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1"
   }
 }

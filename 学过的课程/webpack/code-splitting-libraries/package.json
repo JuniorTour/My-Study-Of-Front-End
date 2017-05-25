@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "moment": "^2.18.1"
+  },
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  }
+}
