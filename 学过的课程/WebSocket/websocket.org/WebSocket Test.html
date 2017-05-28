@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket Test</title>
+</head>
+<body>
+<h1>WebSocket Test</h1>
+<div id="input">
+    <label for="input-msg">Input Message:
+        <input type="text" id="input-msg">
+    </label>
+    <button id="send" onclick="wsUtil.sendMsg()">Send</button>
+</div>
+<div id="output"></div>
+
+<script>
+    let wsUrl='ws://echo.websocket.org/'
+    let currentWS=new WebSocket(wsUrl)
+
+    let wsUtil={
+        onOpen:(evt)=>{
+            outputToScreen('Connected!')
+        },
+        onClose:(evt)=>{
+            outputToScreen('Disconnected!')
+        },
+        onMessage:(evt)=>{
+            outputToScreen('<span style="color: blue">Response: '+evt.data+'</span>')
+            currentWS.close()
+        },
+        onError:(evt)=>{
+            outputToScreen('<span style="color: red">Error: '+evt.data+'</span>')
+        },
+        sendMsg:()=>{
+            let inputMsg=document.querySelector('#input-msg').value
+            currentWS.send(inputMsg)
+        }
+    }
+
+    function outputToScreen(msg) {
+        let output=document.querySelector('#output')
+        let h3=document.createElement('h3')
+        h3.innerHTML=msg
+        output.appendChild(h3)
+    }
+
+    function testWebSocket(){
+        currentWS.onopen=(evt)=>{wsUtil.onOpen(evt)}
+        currentWS.onclose=(evt)=>{wsUtil.onClose(evt)}
+        currentWS.onmessage=(evt)=>{wsUtil.onMessage(evt)}
+        currentWS.onerror=(evt)=>{wsUtil.onError(evt)}
+    }
+
+    window.onload=()=>{
+        testWebSocket();
+    }
+</script>
+</body>
+</html>

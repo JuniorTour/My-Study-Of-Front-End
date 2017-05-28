@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-layout-demo</title>
+    <style>
+        * {
+            padding: 0;
+            border: none;
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            padding: 30px 5%;
+            background-color: pink;
+        }
+        .row {
+            width:100%;
+            /*height:200px;*/
+            background-color: #00b3ee;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            padding: 50px 0;
+            margin: 10px 0;
+        }
+        .row-title {
+            color: #fff;
+            position: absolute;
+            top: 2.5%;
+            left:2.5%;
+        }
+        .flex-container {
+            display: flex;
+            position: relative;
+            width:20%;
+            height:200px;
+            outline: 1px solid #000;
+            margin: 2.5%;
+            color: #fff;
+            /*内部项目居中*/
+            align-items: center;
+        }
+        .prop-description {
+            position: absolute;
+            top: -15%;
+            color: #fff;
+        }
+        .my-description::before {
+            content: '*** ';
+            font-weight:bold;
+            color: #f00;
+        }
+        .my-description {
+            font-size: 12px;
+            position: absolute;
+            top: 105%;
+        }
+        .item {
+            width:50px;
+            height:50px;
+            margin: 10px;
+            background-color: #FFFF66;
+            outline: 1px solid #f38181;
+
+            font-size: 24px;
+            color: #000;
+            /*序号文字居中*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tall-item {
+            height: 80px;
+        }
+        div[class*='baseline'] .item {
+            text-decoration: underline;
+        }
+        .flex-direction-row {
+            flex-direction: row;
+        }
+        /*flex-direction:*/
+        .flex-direction-row-reverse {
+            flex-direction: row-reverse;
+        }
+        .flex-direction-column {
+            flex-direction: column;
+        }
+        .flex-direction-column-reverse {
+            flex-direction: column-reverse;
+        }
+
+        /**/
+        .flex-wrap-wrap {
+            flex-wrap: wrap;
+        }
+        .flex-wrap-nowrap {
+            flex-wrap: nowrap;
+        }
+        .flex-wrap-wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+        /* flex-flow: <flex-direction> || <flex-wrap>; 默认值为row nowrap。*/
+
+        /**/
+        .justify-content-flex-start {
+            justify-content: flex-start;
+        }
+        .justify-content-flex-end {
+            justify-content:flex-end;
+        }
+        .justify-content-center {
+            justify-content:center;
+        }
+        .justify-content-space-between {
+            justify-content:space-between;
+        }
+        .justify-content-space-around {
+            justify-content:space-around;
+        }
+
+        /**/
+        .align-items-flex-start {
+            align-items:flex-start;
+        }
+        .align-items-flex-end {
+            align-items:flex-end;
+        }
+        .align-items-center {
+            align-items:center;
+        }
+        .align-items-baseline {
+            align-items:baseline;
+        }
+        .align-items-stretch {
+            align-items:stretch;
+        }
+        .align-items-stretch .item {
+            height:auto;
+        }
+
+        /**/
+        div[class*="align-content"] {
+            flex-wrap: wrap;
+        }
+        .align-content-flex-start {
+            align-content:flex-start;
+        }
+        .align-content-flex-end {
+            align-content: flex-end;
+        }
+        .align-content-center {
+            align-content:center;
+        }
+        .align-content-baseline {
+            align-content:baseline;
+        }
+        .align-content-stretch {
+            align-content:stretch;
+        }
+
+        /*应用在项目上的属性：*/
+        .flex-container-large {
+            width:100%;
+            height:500px;
+        }
+        .order-one {
+            order:1;
+        }
+        .order-negative-one {
+            order:-1;
+        }
+        .flex-grow-two {
+            flex-grow: 2;
+        }
+        .flex-shrink-half {
+            flex-shrink: 0.5;
+        }
+        .flex-basis-100px {
+            flex-basis: 100px;
+        }
+        .align-self-flex-end {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>主要参考：http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool</h1>
+    <div class="row">
+        <h2 class="row-title">flex-direction: </h2>
+        <div class="flex-container flex-direction-row">
+            <p class="prop-description">row;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="flex-container flex-direction-row-reverse">
+            <p class="prop-description"> row-reverse;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="flex-container flex-direction-column">
+            <p class="prop-description"> column;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="flex-container flex-direction-column-reverse">
+            <p class="prop-description"> reverse;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </div>
+    <div class="row">
+        <h2 class="row-title">flex-wrap: </h2>
+        <div class="flex-container flex-wrap-nowrap">
+            <p class="prop-description"> nowrap;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+        <div class="flex-container flex-wrap-wrap">
+            <p class="prop-description"> wrap;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <p class="my-description">上面折行了的项目，行与行之间相距的距离无法控制？？似乎只是取决于子元素与父元素的高度差。</p>
+        </div>
+        <div class="flex-container flex-wrap-wrap-reverse">
+            <p class="prop-description"> wrap-reverse;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+    </div>
+    <div class="row justify-content">
+        <h2 class="row-title">justify-content: 属性定义了项目在主轴上的对齐方式。 </h2>
+        <div class="flex-container justify-content-flex-start">
+            <p class="prop-description"> flex-start;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="flex-container  justify-content-flex-end">
+            <p class="prop-description"> flex-end;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="flex-container  justify-content-center">
+            <p class="prop-description"> center;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="flex-container justify-content-space-between">
+            <p class="prop-description"> space-between;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="flex-container justify-content-space-around">
+            <p class="prop-description"> space-around;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </div>
+    <div class="row align-item">
+        <h2 class="row-title">align-items 属性定义项目在交叉轴上如何对齐。</h2>
+        <div class="flex-container align-items-flex-start">
+            <p class="prop-description"> flex-start;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="flex-container  align-items-flex-end">
+            <p class="prop-description"> flex-end;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="flex-container  align-items-center">
+            <p class="prop-description"> center;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="flex-container align-items-baseline">
+            <p class="prop-description"> baseline;</p>
+            <div class="item">1</div>
+            <div class="item tall-item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="flex-container align-items-stretch">
+            <p class="prop-description"> stretch;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </div>
+    <div class="row align-content">
+        <h2 class="row-title">align-content 属性定义了多根轴线的对齐方式。在单行显示，即只有一根轴线，该属性不起作用。</h2>
+        <div class="flex-container align-content-flex-start">
+            <p class="prop-description"> flex-start;与交叉轴的起点对齐。</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <p class="my-description">这一块就只有一行，align-content:flex-start;不会起作用。</p>
+        </div>
+        <div class="flex-container align-content-flex-start">
+            <p class="prop-description"> flex-start;与交叉轴的起点对齐。</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+        <div class="flex-container  align-content-flex-end">
+            <p class="prop-description"> flex-end;与交叉轴的终点对齐。</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+        <div class="flex-container  align-content-center">
+            <p class="prop-description"> center;与交叉轴的中点对齐。</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+        <div class="flex-container align-content-baseline">
+            <p class="prop-description"> baseline;项目的第一行文字的基线对齐。</p>
+            <div class="item">1</div>
+            <div class="item tall-item">2</div>
+            <div class="item">3</div>
+            <div class="item tall-item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+        <div class="flex-container align-content-stretch">
+            <p class="prop-description"> stretch;（默认值）：轴线占满整个交叉轴。</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+    </div>
+    <div class="row item-props">
+        <div class="flex-container flex-direction-row flex-wrap-wrap">
+            <p class="prop-description">2.order-one:2;默认为0。</p>
+            <div class="item">1</div>
+            <div class="item order-one">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item order-negative-one">-1</div>
+            <div class="item">6</div>
+        </div>
+        <div class="flex-container flex-direction-row">
+            <p class="prop-description">3.flex-grow:2;</p>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item flex-grow-two">3</div>
+        </div>
+        <div class="flex-container flex-direction-row">
+            <p class="prop-description">1.flex-shrink:0.5;</p>
+            <div class="item flex-shrink-half">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="flex-container flex-direction-row">
+            <p class="prop-description">2.flex-basis:100px;flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。</p>
+            <div class="item">1</div>
+            <div class="item flex-basis-100px">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="flex-container flex-direction-row">
+            <p class="prop-description">2.flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]</p>
+            <div class="item">1</div>
+            <div class="item flex-grow-two">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="flex-container flex-direction-row">
+            <p class="prop-description">2.align-self:flex-end</p>
+            <div class="item">1</div>
+            <div class="item align-self-flex-end">2</div>
+            <div class="item">3</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

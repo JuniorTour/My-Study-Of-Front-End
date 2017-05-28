@@ -1,10 +1,11 @@
 #webstorm setting files:
-/.idea/
+/.idea
+
 
 #node-modules
 \node_modules
 
-#my job information
+#job information
 demos/job
 
 #OmegaT files
