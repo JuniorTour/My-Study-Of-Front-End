@@ -64,13 +64,15 @@
         if (!event._constructed) {
           return;
         }
-        this.$emit('select', type);
+        this.selectType = type;
+        this.$dispatch('ratingtype.select', type);
       },
       toggleContent(event) {
         if (!event._constructed) {
           return;
         }
-        this.$emit('toggle');
+        this.onlyContent = !this.onlyContent;
+        this.$dispatch('content.toggle', this.onlyContent);
       }
     }
   };

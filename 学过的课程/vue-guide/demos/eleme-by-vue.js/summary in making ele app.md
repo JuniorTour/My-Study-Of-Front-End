@@ -6,7 +6,7 @@
 1.通过ipconfig(win)/ifconfig(mac)查看本机ipv4 地址，一般是192.168.1.1xx。
 2.注意暂时关闭pc的防火墙，所有防火墙，所有！！
 3.手机访问相应的192.168.1.1xx:8080，记得加上端口号！！
-(～￣▽￣)～ 
+(～￣▽￣)～
 
 ##### 3.retina屏1px border hack：
 
@@ -34,3 +34,5 @@
       transform: scaleY(0.5);
     }
   }
+
+##### 4.Sticky Footer:

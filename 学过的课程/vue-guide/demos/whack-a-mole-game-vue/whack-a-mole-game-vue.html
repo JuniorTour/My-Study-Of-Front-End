@@ -127,7 +127,7 @@
 <div class="app">
     <div class="play-panel clearfix">
         <div class="target hole" @click.prevent="addScore()" v-for="n in holeNum"
-         :data-holenum="n">{{n}}</div>
+         :data-holenum="n" :class="{rabbit:holesType[n-1]}">{{n}}</div>
         <!--<div class="target rabbit-hole" @click.prevent="deductScore()"></div>-->
     </div>
     <div class="control-panel clearfix">
@@ -158,6 +158,15 @@
     new Vue ({
         el:'.app',
         data:{
+            holesType:[
+                {0:false},
+                {1:false},
+                {2:true},
+                {3:false},
+                {4:true},
+                {5:true},
+                {6:false},
+            ],
             finalScore:0,
             difficulty:'normal',
             holeNum:6,
@@ -197,14 +206,14 @@
                         break;
                 }
 
-                let timer=setInterval(()=>{
-                    let randomInt=this.getRandomInt(1,6);
-                    console.log('randomInt = '+randomInt);
-
-                    //stupid method
-                    let rabbitHoleHole=document.querySelector('div[data-holenum='+'"'+randomInt+'"'+']');
-                    rabbitHoleHole.classList+=' rabbit-hole';
-                },200)
+//                let timer=setInterval(()=>{
+//                    let randomInt=this.getRandomInt(1,6);
+//                    console.log('randomInt = '+randomInt);
+//
+//                    //stupid method
+//                    let rabbitHoleHole=document.querySelector('div[data-holenum='+'"'+randomInt+'"'+']');
+//                    rabbitHoleHole.classList+=' rabbit-hole';
+//                },200)
             },
             addScore: function () {
                 this.finalScore+=10;
