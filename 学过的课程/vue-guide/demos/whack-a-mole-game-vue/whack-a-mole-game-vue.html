@@ -22,10 +22,11 @@
             /*A hack used to let 100% height valid.*/
         }
         body {
-            height: 100%;
+            height: 95%;
             /*A hack used to let 100% height valid.*/
             -moz-user-select:none;
             font-size: 16px;
+            margin: 2.5%;
         }
         .clearfix {zoom:1;}
         .clearfix:before,.clearfix:after {
@@ -35,26 +36,19 @@
         .clearfix:after { clear: both;}
 
         #app {
-            width:100%;
-            height: 100%;
-            /*padding: 2.5%;*/
-            /*outline: 1px solid red;*/
-            /*margin: 0 auto;*/
+            width:95%;
+            height: 95%;
+            padding: 2.5%;
+            outline: 1px solid red;
+            margin: 0 auto;
             position: relative;
-        }
-        .play-panel {
-            width:100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
         }
         .hole {
             background-color: black;
             float: left;
-            /*width:30%;*/
-            height:100px;
-            margin: 1.65%;
-            flex: 0 0 30%;
+            width:20%;
+            height:200px;
+            margin: 2.5%;
         }
         .mole-hole {
             background-color: green;
@@ -91,9 +85,8 @@
             animation: addScore 1.3s linear infinite;
         }
         .btn {
-            color: #fff;
-            width:90px;
-            height:48px;
+            width:60px;
+            height:32px;
             border-radius: 4px;
         }
         .pause-btn {
@@ -105,43 +98,6 @@
             background-color: #286090;
             border-color: #204d74;
         }
-
-        .pause-overlay {
-            width: 100%;
-            height: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 100;
-            color: #fff;
-            text-align: center;
-            background: rgba(7, 17, 27, 0.8);
-            backdrop-filter: blur(10px);
-            display: none;
-            /*display: flex;*/
-            flex-direction: column;
-            justify-content: center;
-        }
-        .pause-overlay a {
-            color: #fff;
-        }
-        .btn-group {
-            margin: 5% 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .btn-group .btn {
-            margin: 5% 0;
-        }
-        .resume-btn {
-            background-color: #5cb85c;
-            border-color: #4cae4c;
-        }
-        .resume-btn:active {
-            background-color: #449d44;
-            border-color: #398439;
-        }
         .info-btn {
             color: #fff;
             background-color: #5bc0de;
@@ -152,8 +108,9 @@
             border-color: #269abc;
         }
         .info-panel {
-            color: #fff;
+            display: none;
         }
+
         @keyframes addScore {
            100% {
                top:-20%;
@@ -167,32 +124,32 @@
 <body>
 <div id="app">
     <div class="play-panel clearfix">
-        <div class="hole" @click.prevent="addScore(index)" v-for="(val,index) in holeType"
-             :class="holeType[index]===-1?'mole-hole':''">
-            {{index}}
-        </div>
-        <!--{'rabbit-hole':val,'mole-hole':!val}-->
+        <div class="hole" @click.prevent="addScore(val)" v-for="(val,index) in holeType"
+         :class="{'rabbit-hole':val,'mole-hole':!val}">{{index}}</div>
         <!-- :class="holeType[n-1]==1?'rabbit-hole':'mole-hole'"-->
         <!--<div class="target rabbit-hole" @click.prevent="deductScore()"></div>-->
     </div>
     <div class="control-panel clearfix">
-        <button class="btn pause-btn">Pause</button>
-        <div class="final-score">
-            <h2 class="addingScore">+10</h2>
-            <!--<h2 class="deductingScore">-10</h2>-->
-            <h1 class="final-score">{{finalScore}}</h1>
-        </div>
-    </div>
-    <!--暂停时的遮蔽浮层-->
-    <div class="pause-overlay" v-show="pauseOverlayShow">
-        <div class="btn-group">
-            <button class="btn resume-btn">Resume</button>
-            <button class="btn info-btn">Restart</button>
-        </div>
-        <div class="info-panel">
-            <h3>Proudly made by <a href="http://juniortour.net">juniortour</a>.</h3>
-            <p>如果觉得不错的话，给我在<a href="https://github.com/JuniorTour">gayhub上点个赞</a>，鼓励一下我吧~( • ̀ω•́ )✧热烈欢迎我和交流！</p>
-        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <button class="btn pause-btn">Pause</button>
+                    </td>
+                    <td class="final-score-table-data">
+                        <h2 class="addingScore">+10</h2>
+                        <!--<h2 class="deductingScore">-10</h2>-->
+                        <h2 class="final-score">{{finalScore}}</h2>
+                    </td>
+                    <td>
+                        <button class="btn info-btn">About</button>
+                        <div class="info-panel">
+                            Proudly made by juniortour.
+                        </div>
+                    </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 
@@ -203,15 +160,15 @@
         el:'#app',
         data:{
             /*目前的一个难点是：如何实现动态切换一“组”，注意是一组！洞穴的class？
-             * 1.想要利用数组储存这组洞穴，但是发现Vue似乎不支持对数组元素实现动态class绑定；
-             * 问题似乎在于，我这个实例的数组元素没有双向绑定？？？
-             * 2.如果换成单个的对象来控制，岂不是要有很多重复的对象？*/
+            * 想要利用数组储存这组洞穴，但是发现Vue似乎不支持对数组元素实现动态class绑定；
+            * 如果换成单个的对象来控制，岂不是要有很多重复的对象？*/
+            isA:[true,true],
 //            holeType:[rabbitHoleType,moleHoleType,moleHoleType,moleHoleType,rabbitHoleType,moleHoleType],
-            holeType: [normalHoleType, normalHoleType, normalHoleType, normalHoleType, normalHoleType, normalHoleType,],
+            holeType:[true,true,false,true,true,false],
             finalScore:0,
             difficulty:'normal',
             holeNum:6,
-            pauseOverlayShow:true
+//            isRabbitHole:true
         },
         mounted:function () {
             this.$nextTick(function () {
@@ -247,42 +204,34 @@
                         break;
                 }
 
-                //蛤出现计时器：
-
-                //兔子出现计时器：
-
-                //地鼠出现计时器：
-                let moleTimer = setInterval(() => {
-                    let randomInt = this.getRandomInt(0, 5);
-                    console.log('randomInt = ' + randomInt);
-
-//                this.holeType[index]=!this.holeType[index]
-                    /*Excited!!!终于实现了！！
-                     原来原因在于：???
-                     如果对象是响应式的，确保属性被创建后也是响应式的，同时触发视图更新。
-                     Vue.set方法主要用于避开 Vue 不能检测属性被添加的限制。*/
-//                this.$set(this.holeType,index,!this.holeType[index])
-                    Vue.set(this.holeType, randomInt, moleHoleType)
-                    /*困惑的地方是：文档里说data选项之中提前声明的属性才是响应式的；
-                     * 可在这里，我已经在data中声明了holeType[]了啊？他应该是响应式的了啊？？*/
-                    console.log('holeType[' + randomInt + '] = moleHoleType')
-                }, 1000)
+//                let timer=setInterval(()=>{
+//                    let randomInt=this.getRandomInt(1,6);
+//                    console.log('randomInt = '+randomInt);
+//
+//                    //stupid method
+//                    let rabbitHoleHole=document.querySelector('div[data-holenum='+'"'+randomInt+'"'+']');
+//                    rabbitHoleHole.classList+=' rabbit-hole';
+//                },200)
             },
-            addScore: function () {
-                this.finalScore += 10
-                getScoreAnimation()
+            addScore: function (val) {
+//                this.finalScore+=10;
+                val=!val
+//                this.holeType[n]=!this.holeType[n]
+//                console.log(this.holeType[n])
+//                this.isA[0]=!this.isA[0]
+//                console.log(this.isA[0])
             },
             deductScore: function () {
-                this.finalScore-=10
+                this.finalScore-=10;
             },
             gamePause: function () {
-                showOverlay()
-                stopRandom()
+                showOverlay();
+                stopRandom();
             },
             getRandomInt: function (min,max) {
-                min=Math.ceil(min) //向上取整
-                max=Math.floor(max)    //向下取整
-                return  Math.floor(Math.random()*(max-min+1)+min)
+                min=Math.ceil(min); //向上取整
+                max=Math.floor(max);    //向下取整
+                return  Math.floor(Math.random()*(max-min+1)+min);
             }
         },
         computed: {
