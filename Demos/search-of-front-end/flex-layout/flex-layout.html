@@ -39,7 +39,9 @@
             outline: 1px solid #000;
             margin: 2.5%;
             color: #fff;
-            /*内部项目居中*/
+        }
+        div[class*='flex-direction-']  {
+            /*内部项目垂直居中*/
             align-items: center;
         }
         .prop-description {
@@ -158,6 +160,9 @@
         }
         .align-content-stretch {
             align-content:stretch;
+        }
+        .align-content-stretch .item {
+            height: auto;
         }
 
         /*应用在项目上的属性：*/
@@ -313,7 +318,7 @@
         </div>
     </div>
     <div class="row align-content">
-        <h2 class="row-title">align-content 属性定义了多根轴线的对齐方式。在单行显示，即只有一根轴线，该属性不起作用。</h2>
+        <h2 class="row-title">align-content 属性定义了多根轴线的对齐方式。在单行显示，即只有一根轴线时，该属性不起作用。</h2>
         <div class="flex-container align-content-flex-start">
             <p class="prop-description"> flex-start;与交叉轴的起点对齐。</p>
             <div class="item">1</div>
@@ -370,12 +375,12 @@
     <div class="row item-props">
         <div class="flex-container flex-direction-row flex-wrap-wrap">
             <p class="prop-description">2.order-one:2;默认为0。</p>
-            <div class="item">1</div>
-            <div class="item order-one">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
+            <div class="item">0</div>
+            <div class="item order-one">1</div>
+            <div class="item">0</div>
+            <div class="item">0</div>
             <div class="item order-negative-one">-1</div>
-            <div class="item">6</div>
+            <div class="item">0</div>
         </div>
         <div class="flex-container flex-direction-row">
             <p class="prop-description">3.flex-grow:2;</p>
@@ -384,7 +389,7 @@
             <div class="item flex-grow-two">3</div>
         </div>
         <div class="flex-container flex-direction-row">
-            <p class="prop-description">1.flex-shrink:0.5;</p>
+            <p class="prop-description">1.flex-shrink:0.5;属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。</p>
             <div class="item flex-shrink-half">1</div>
             <div class="item">2</div>
             <div class="item">3</div>
