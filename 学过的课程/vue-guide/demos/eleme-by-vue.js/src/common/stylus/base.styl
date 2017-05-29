@@ -5,7 +5,8 @@ body, html
 
 .clearfix
   zoom 1
-  &:after
+  //加上before，避免上外边距出界。相当于为父元素添加了boder和padding
+  &:before,&:after
     display: table
     content: ""
     clear: both

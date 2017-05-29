@@ -22,7 +22,7 @@
         <i class="icon-keyboard_arrow_right"></i>
       </div>
     </div>
-    <div class="bulletin-wrapper">
+    <div class="bulletin-wrapper" @click="showDetail">
       <span class="bulletin-title"></span>
        <span class="bulletin-text">{{seller.bulletin}}</span>
       <i class="icon-keyboard_arrow_right"></i>
@@ -30,7 +30,7 @@
     <div class="background">
       <img :src="seller.avatar" width="100%" height="100%">
     </div>
-    <div v-show="detailShow" class="detail">
+    <div v-show="detailShow" class="detail" @click="hideDetail" transition="fade">
       <div class="detail-wrapper clearfix">
         <div class="detail-main">
           <h1 class="name">{{seller.name}}</h1>
@@ -84,6 +84,9 @@
     methods: {
       showDetail() {
         this.detailShow = true
+      },
+      hideDetail() {
+        this.detailShow = false
       }
     },
     created() {
@@ -220,12 +223,14 @@
       width: 100%
       height: 100%
       overflow: auto
+      /*仅支持ios*/
       backdrop-filter: blur(10px)
-      opacity: 1
+      transition: all 0.5s
       background: rgba(7, 17, 27, 0.8)
-      &.fade-enter-active, &.fade-leave-active
-        transition: all 0.5s
-      &.fade-enter, &.fade-leave-active
+      &.fade-transition
+        opacity: 1
+        background: rgba(7, 17, 27, 0.8)
+      &.fade-enter, &.fade-leave
         opacity: 0
         background: rgba(7, 17, 27, 0)
       .detail-wrapper

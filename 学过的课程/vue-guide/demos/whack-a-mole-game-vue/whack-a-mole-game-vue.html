@@ -30,12 +30,12 @@
         }
         .clearfix {zoom:1;}
         .clearfix:before,.clearfix:after {
-            content: ' ';
+            content: '';
             display: table;
         }
         .clearfix:after { clear: both;}
 
-        .app {
+        #app {
             width:95%;
             height: 95%;
             padding: 2.5%;
@@ -43,14 +43,12 @@
             margin: 0 auto;
             position: relative;
         }
-        .target {
+        .hole {
+            background-color: black;
             float: left;
             width:20%;
             height:200px;
             margin: 2.5%;
-        }
-        .hole {
-            background-color: black;
         }
         .mole-hole {
             background-color: green;
@@ -124,10 +122,11 @@
     </style>
 </head>
 <body>
-<div class="app">
+<div id="app">
     <div class="play-panel clearfix">
-        <div class="target hole" @click.prevent="addScore()" v-for="n in holeNum"
-         :data-holenum="n" :class="{rabbit:holesType[n-1]}">{{n}}</div>
+        <div class="hole" @click.prevent="addScore(val)" v-for="(val,index) in holeType"
+         :class="{'rabbit-hole':val,'mole-hole':!val}">{{index}}</div>
+        <!-- :class="holeType[n-1]==1?'rabbit-hole':'mole-hole'"-->
         <!--<div class="target rabbit-hole" @click.prevent="deductScore()"></div>-->
     </div>
     <div class="control-panel clearfix">
@@ -143,7 +142,7 @@
                         <h2 class="final-score">{{finalScore}}</h2>
                     </td>
                     <td>
-                        <button class="btn info-btn">I</button>
+                        <button class="btn info-btn">About</button>
                         <div class="info-panel">
                             Proudly made by juniortour.
                         </div>
@@ -155,22 +154,21 @@
 </div>
 
 <script>
-    new Vue ({
-        el:'.app',
+    const rabbitHoleType=1,moleHoleType=-1,normalHoleType=0;
+
+    let app=new Vue ({
+        el:'#app',
         data:{
-            holesType:[
-                {0:false},
-                {1:false},
-                {2:true},
-                {3:false},
-                {4:true},
-                {5:true},
-                {6:false},
-            ],
+            /*目前的一个难点是：如何实现动态切换一“组”，注意是一组！洞穴的class？
+            * 想要利用数组储存这组洞穴，但是发现Vue似乎不支持对数组元素实现动态class绑定；
+            * 如果换成单个的对象来控制，岂不是要有很多重复的对象？*/
+            isA:[true,true],
+//            holeType:[rabbitHoleType,moleHoleType,moleHoleType,moleHoleType,rabbitHoleType,moleHoleType],
+            holeType:[true,true,false,true,true,false],
             finalScore:0,
             difficulty:'normal',
             holeNum:6,
-            isRabbitHole:true
+//            isRabbitHole:true
         },
         mounted:function () {
             this.$nextTick(function () {
@@ -215,8 +213,13 @@
 //                    rabbitHoleHole.classList+=' rabbit-hole';
 //                },200)
             },
-            addScore: function () {
-                this.finalScore+=10;
+            addScore: function (val) {
+//                this.finalScore+=10;
+                val=!val
+//                this.holeType[n]=!this.holeType[n]
+//                console.log(this.holeType[n])
+//                this.isA[0]=!this.isA[0]
+//                console.log(this.isA[0])
             },
             deductScore: function () {
                 this.finalScore-=10;
