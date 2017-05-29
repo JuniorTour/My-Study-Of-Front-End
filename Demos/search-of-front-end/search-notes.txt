@@ -40,3 +40,17 @@
   表示带有以 attr 命名的，且值包含有"value"的属性的元素。
   [attr operator value i]
   在带有属性值的属性选型选择器表达式的右括号（]括号）前添加用空格间隔开的字母i（或I）可以忽略属性值的大小写（ASCII字符范围内的字母）
+
+4.for in 和 for of
+
+            /*
+            * for...in循环将迭代对象的所有可枚举属性和从它的构造函数的 prototype 继承而来的属性，即是说for in会把prototype
+            * 上的属性也迭代到。
+            * for...in 遍历（当前对象及其原型上的）每一个属性名称,而 for...of遍历（当前对象上的）每一个属性值。
+            * 注意，for in只能获取到属性“名名名名名名名”，而非属性本身！
+            * 而，for of则能获取到属性“值值值值值值值值”。
+            * 但是，for of不能用于对象上，只适用于可迭代对象(包括 Array, Map, Set, String, TypedArray，arguments 对象等等。
+            *
+            * https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...of
+            * https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in
+            **/
