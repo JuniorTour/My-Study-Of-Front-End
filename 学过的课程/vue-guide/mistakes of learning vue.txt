@@ -143,6 +143,17 @@ It can be  optimize to a single method, @click.prevent="showDelModal(item)"
                         如果对象是响应式的，确保属性被创建后也是响应式的，同时触发视图更新。
                         Vue.set方法主要用于避开 Vue 不能检测属性被添加的限制。
 
+20.利用v-cloak指令和css，隐藏尚未编译的mustache标签，直到实例准备完毕。
+        [v-cloak] {
+            display:none
+        }
+        <div v-cloak>{{msg}}</div>
+
+21.Vue 2.3 的methods不支持箭头函数？？？
+使用箭头函数作为方法无效？
+没错！参见官方文档API，因为箭头函数绑定了父级作用域的上下文，所以this将不会指向实例。
+
+
 三、Error and Warning：
 1.If a function is not defined,the error will be reminded:
     vue.js:525 [Vue warn]: Error when rendering root instance:

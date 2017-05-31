@@ -221,7 +221,7 @@
             }
         }
     }
-
+    //给文档加载完成后的load事件绑定相应的处理函数：
     addLoadEvent(preventDefaultAnchors);
     addLoadEvent(carouselControl);
 
@@ -231,7 +231,7 @@
 //        carouselControl();
 //    };
 
-    /*用一个对象把轮播的相关参数封装起来，优点是便于扩展升；缺点是同时也增加了文件的体积。*/
+    /*用一个对象把轮播组件的相关参数封装起来，优点是便于扩展升；缺点是同时也增加了文件的体积。*/
     var carouselInfo={
         itemWidth:520,
         trueItemNum:5,
@@ -240,6 +240,7 @@
     };
 
     function preventDefaultAnchors() {
+        //阻止a标签默认的点击跳转行为
         var allAnchors=document.querySelectorAll('a');
 
         for(var i=0;i<allAnchors.length;i++) {

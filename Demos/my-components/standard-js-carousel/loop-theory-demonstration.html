@@ -61,6 +61,16 @@
             background-color: rgb(129,146,214);
         }
 
+        .description {
+            margin-bottom: 50px;
+        }
+        .btn {
+            width: 120px;
+            height: 36px;
+            border: 1px solid #000;
+            border-radius: 8px;
+        }
+
         @keyframes loop-demo {
             0%{left: 0;}
             50%{left: -200%;}
@@ -79,11 +89,19 @@
             <div class="carousel-item">copy-1</div>
         </div>
     </div>
-    <button onclick="playAgain()">再次播放动画</button>
-    <p>当从开头的1号图片向2号图片移动时，其逻辑是：<br>
-    （1）先移动至1号前一位的copy-2号，（2）当到达copy-2号时，立即定位至真正的2号图片。<br>
-        从而形成视觉欺骗，就好像在循环播放一样。<br>
-    从结尾的2号图片向1号图片移动的逻辑同理。</p>
+    <div class="description">
+        <button class="btn" onclick="playAgain()">再次播放动画</button>
+        <p>
+            当从开头的1号图片向2号图片移动时，其逻辑是：<br>
+            （1）先移动至1号前一位的copy-2号，
+            <br>
+            （2）当到达copy-2号时，立即定位至真正的2号图片。
+            <br>
+            从而形成视觉欺骗，就好像在循环播放一样。
+            <br>
+            从结尾的2号图片向1号图片移动的逻辑同理。
+        </p>
+    </div>
 </div>
 
 <script>

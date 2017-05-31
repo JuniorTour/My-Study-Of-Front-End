@@ -73,6 +73,10 @@
         .rabbit-hole {
             background-color: yellow;
         }
+
+        .ha-hole {
+            background-color: #c7254e;
+        }
         .final-score {
             width:100%;
             text-align: center;
@@ -90,12 +94,13 @@
         }
         .addingScore {
             /*display: none;*/
+            color: #c7254e;
             position: absolute;
             top: -100%;
             left: 15%;
             opacity:1;
             transform: scale(2);
-            animation: addScore 1.3s linear infinite;
+            animation: getScoreCalc 1.3s linear infinite;
         }
         .btn {
             color: #fff;
@@ -126,8 +131,7 @@
             text-align: center;
             background: rgba(7, 17, 27, 0.8);
             backdrop-filter: blur(10px);
-            display: none;
-            /*display: flex;*/
+            display: flex;
             flex-direction: column;
             justify-content: center;
         }
@@ -163,7 +167,8 @@
         .info-panel {
             color: #fff;
         }
-        @keyframes addScore {
+
+        @keyframes getScoreCalc {
            100% {
                top:-20%;
                left: 43%;
@@ -177,13 +182,14 @@
 <div id="app">
     <div class="title-bar">
         <h1 class="page-title">打地鼠</h1>
-        <button class="btn pause-btn">| |</button>
+        <button class="btn pause-btn" @click.prevent="gamePause">| |</button>
     </div>
     <div class="play-panel clearfix">
-        <div class="hole" @click.prevent="addScore(index)" v-for="(val,index) in holeType"
-             :class="holeType[index]===1?'mole-hole':(holeType[index]===-1?'rabbit-hole':'')">
+        <div class="hole" @click.prevent="getScoreCalc(computedHoleClass[index],index)" v-for="(val,index) in holeType"
+             :class="computedHoleClass[index]">
             {{index}}
         </div>
+        <!--holeType[index]===1?'mole-hole':(holeType[index]===-1?'rabbit-hole':'')-->
         <!--{'rabbit-hole':val,'mole-hole':!val}-->
         <!-- :class="holeType[n-1]==1?'rabbit-hole':'mole-hole'"-->
         <!--<div class="target rabbit-hole" @click.prevent="deductScore()"></div>-->
@@ -193,9 +199,8 @@
         <!--<h2 class="deductingScore">-10</h2>-->
         <h1>{{finalScore}}</h1>
     </div>
-    </div>
     <!--暂停时的遮蔽浮层-->
-    <div class="pause-overlay" v-show="pauseOverlayShow">
+    <div class="pause-overlay" v-show="pauseOverlayShow" @click.prevent="hideOverlay()">
         <div class="btn-group">
             <button class="btn resume-btn">Resume</button>
             <button class="btn info-btn">Restart</button>
@@ -208,7 +213,7 @@
 </div>
 
 <script>
-    const rabbitHoleType=1,moleHoleType=-1,normalHoleType=0,haHoleType=-2;
+    const rabbitHoleType = 1, moleHoleType = -1, normalHoleType = 0, haHoleType = -2
 
     let app=new Vue ({
         el:'#app',
@@ -217,12 +222,10 @@
              * 1.想要利用数组储存这组洞穴，但是发现Vue似乎不支持对数组元素实现动态class绑定；
              * 问题似乎在于，我这个实例的数组元素没有双向绑定？？？
              * 2.如果换成单个的对象来控制，岂不是要有很多重复的对象？*/
-//            holeType:[rabbitHoleType,moleHoleType,moleHoleType,moleHoleType,rabbitHoleType,moleHoleType],
-            holeType: [normalHoleType, normalHoleType, normalHoleType, normalHoleType, normalHoleType, normalHoleType,],
+            holeType: [normalHoleType, normalHoleType, normalHoleType, normalHoleType, normalHoleType, normalHoleType, normalHoleType, normalHoleType, normalHoleType, normalHoleType, normalHoleType, normalHoleType],
             finalScore:0,
             difficulty:'normal',
-            holeNum:6,
-            pauseOverlayShow:true
+            pauseOverlayShow: false
         },
         mounted:function () {
             this.$nextTick(function () {
@@ -261,12 +264,16 @@
                         break;
                 }
 
-                this.rabbitTimer()
+                //Add timer to instance,not very elegant...
+                this.rabbitTimer = this.rabbitTimer()
+                this.moleTimer = this.moleTimer()
+                this.haTimer = this.haTimer()
+                this.resetHoleTimer = this.resetHoleTimer()
             },
             moleTimer: function () {
                 //地鼠出现计时器：
                 let moleTimer = setInterval(() => {
-                    let randomInt = this.getRandomInt(0, 5);
+                    let randomInt = this.getRandomHoleIndex(0, this.holeType.length - 1);
                     /*Excited!!!终于实现了！！
                      原因在于：https://cn.vuejs.org/v2/guide/list.html#注意事项
                      由于 JavaScript 的限制， Vue 不能检测以下变动的数组：
@@ -286,40 +293,98 @@
                     /*困惑的地方是：文档里说data选项之中提前声明的属性才是响应式的；
                      * 可在这里，我已经在data中声明了holeType[]了啊？他应该是响应式的了啊？？*/
 //                    console.log('holeType[' + randomInt + '] = moleHoleType')
-                }, 1000)
+                }, 500)
+                return moleTimer
             },
             rabbitTimer:function () {
                 //兔子出现计时器：
-                let moleTimer = setInterval(() => {
-                    let randomInt = this.getRandomInt(0, 5);
+                let rabbitTimer = setInterval(() => {
+                    let randomInt = this.getRandomHoleIndex();
                     Vue.set(this.holeType, randomInt, rabbitHoleType)
-                }, 1000)
+                }, 800)
+                return rabbitTimer
             },
             haTimer:function () {
                 //蛤出现计时器：
-                let moleTimer = setInterval(() => {
-                    let randomInt = this.getRandomInt(0, 5);
+                let haTimer = setInterval(() => {
+                    let randomInt = this.getRandomHoleIndex();
                     Vue.set(this.holeType, randomInt, haHoleType)
-                }, 1000)
+                }, 2000)
+                return haTimer
             },
-            addScore: function () {
-                this.finalScore += 10
-                getScoreAnimation()
+            resetHoleTimer: function () {
+                //还原洞穴计时器：
+                let resetHoleTimer = setInterval(() => {
+                    let randomInt = this.getRandomHoleIndex();
+                    Vue.set(this.holeType, randomInt, normalHoleType)
+                }, 300)
+                return resetHoleTimer
             },
-            deductScore: function () {
-                this.finalScore-=10
+            getScoreCalc: function (clickedClass, resetTargetIndex) {
+                switch (clickedClass) {
+                    case 'mole-hole':
+                        this.finalScore += 10
+                        break
+                    case 'rabbit-hole':
+                        this.finalScore -= 10
+                        break
+                    case 'ha-hole':
+                        //this.deductOneSecond()
+                        break
+                    case '':
+                        break
+                }
+                this.resetClickedHole(resetTargetIndex)
+//                showGetScoreAnimation()
+            },
+            resetClickedHole: function (resetTargetIndex) {
+                Vue.set(this.holeType, resetTargetIndex, normalHoleType)
             },
             gamePause: function () {
-                showOverlay()
-                stopRandom()
+                this.showOverlay()
+                this.stopRandomGeneration()
             },
-            getRandomInt: function (min,max) {
-                min=Math.ceil(min) //向上取整
-                max=Math.floor(max)    //向下取整
+            stopRandomGeneration: function () {
+                clearInterval(this.rabbitTimer)
+                clearInterval(this.haTimer)
+                clearInterval(this.resetHoleTimer)
+                clearInterval(this.moleTimer)
+            },
+            showOverlay: function () {
+                this.pauseOverlayShow = true
+            },
+            hideOverlay: function () {
+                this.pauseOverlayShow = false
+            },
+            getRandomHoleIndex: function () {
+                let min = 0, max = this.holeType.length - 1
+//                min=Math.ceil(min) //向上取整
+//                max=Math.floor(max)    //向下取整
                 return  Math.floor(Math.random()*(max-min+1)+min)
             }
         },
         computed: {
+            computedHoleClass: function () {
+                let tempArr = []
+                this.holeType.forEach((val, index) => {
+                    switch (val) {
+                        case moleHoleType:
+                            tempArr.push('mole-hole')
+                            break
+                        case rabbitHoleType:
+                            tempArr.push('rabbit-hole')
+                            break
+                        case haHoleType:
+                            tempArr.push('ha-hole')
+                            break
+                        case normalHoleType:
+                            tempArr.push('')
+                            break
+                    }
+                })
+//                console.log('tempArr = '+tempArr)
+                return tempArr
+            }
         }
     })
 </script>
