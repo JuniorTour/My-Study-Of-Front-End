@@ -5,9 +5,43 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
     <title>first-vue</title>
     <link rel="stylesheet" type="text/css" href="static/css/reset.css">
+    <style>
+      /* 跳转页面动画 */
+      .slide-enter,.slide_back-enter {
+        position: absolute;
+        width: 100%;
+      }
+      .slide-leave,.slide_back-leave {
+        position: absolute;
+        width: 100%;
+      }
+      .slide-enter-active,.slide_back-enter-active {
+        transition: all 0.3s linear;
+      }
+      .slide-leave-active {
+        position: absolute;
+        transition: all 0.3s linear;
+        transform: translate(-100%);
+      }
+      .slide-enter{
+        transform: translateX(100%);
+      }
+      .slide_back-leave-active {
+        position: absolute;
+        transition: all 0.3s linear;
+        transform: translate(100%);
+      }
+      .slide_back-enter {
+        transform: translateX(-100%);
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
+  <div id="app">
+    <transition :name="transitionName">
+      <router-view></router-view>
+    </transition>
+  </div>
     <script type="text/javascript">
       // 计算html的font-size
       (function(){

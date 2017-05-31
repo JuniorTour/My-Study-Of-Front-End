@@ -181,7 +181,7 @@
     </div>
     <div class="play-panel clearfix">
         <div class="hole" @click.prevent="addScore(index)" v-for="(val,index) in holeType"
-             :class="holeType[index]===-1?'mole-hole':''">
+             :class="holeType[index]===1?'mole-hole':(holeType[index]===-1?'rabbit-hole':'')">
             {{index}}
         </div>
         <!--{'rabbit-hole':val,'mole-hole':!val}-->
@@ -208,7 +208,7 @@
 </div>
 
 <script>
-    const rabbitHoleType=1,moleHoleType=-1,normalHoleType=0;
+    const rabbitHoleType=1,moleHoleType=-1,normalHoleType=0,haHoleType=-2;
 
     let app=new Vue ({
         el:'#app',
@@ -236,13 +236,16 @@
                 * （难度主要区分在：出现的洞口数量多少，每轮动物出现的频率快慢）
                 * 2.间隔随机生成地鼠和兔子，并相应的绑定点击事件
                 *
-                * 难点！！
+                * a.难点！！
                 * 大致逻辑是：默认都是.hole的class，需要“随机”决定某些是.mole-hole或.rabbit-hole，
                 * 并且！！！要相应的更新点击事件！！！
+                * 已解决！决定不用更新点击事件，而是传递相应的holeType给getScore()用以判断得分情况。
+                * b.另一个难点：如何在设置了一个洞穴的类型，即出现动物之后，让他过一段时间后消失？
+                * c.如何暂停生成？计时器如何传递出函数用来clear？
                 *
                 * 3.计算得分
                 * 4.分享功能？
-                * 5.随机事件、彩蛋：随机出现一只金地鼠，获得大量得分，但是消失的较快。*/
+                * 5.随机事件、彩蛋：随机出现蛤，点一下-1s。*/
                 switch (this.difficulty) {
                     case 'easy':
                         this.holeNum=4;
@@ -258,25 +261,45 @@
                         break;
                 }
 
-                //蛤出现计时器：
-
-                //兔子出现计时器：
-
+                this.rabbitTimer()
+            },
+            moleTimer: function () {
                 //地鼠出现计时器：
                 let moleTimer = setInterval(() => {
                     let randomInt = this.getRandomInt(0, 5);
-//                    console.log('randomInt = ' + randomInt);
-
-//                this.holeType[index]=!this.holeType[index]
                     /*Excited!!!终于实现了！！
-                     原来原因在于：???
+                     原因在于：https://cn.vuejs.org/v2/guide/list.html#注意事项
+                     由于 JavaScript 的限制， Vue 不能检测以下变动的数组：
+                     1.当你利用索引直接设置一个项时，例如： vm.items[indexOfItem] = newValue
+
+                     为了解决第一类问题，以下两种方式都可以实现和 vm.items[indexOfItem] = newValue 相同的效果， 同时也将触发状态更新：
+                     // Vue.set
+                     Vue.set(example1.items, indexOfItem, newValue)
+                     // Array.prototype.splice`
+                     example1.items.splice(indexOfItem, 1, newValue)
+
                      如果对象是响应式的，确保属性被创建后也是响应式的，同时触发视图更新。
                      Vue.set方法主要用于避开 Vue 不能检测属性被添加的限制。*/
 //                this.$set(this.holeType,index,!this.holeType[index])
                     Vue.set(this.holeType, randomInt, moleHoleType)
+
                     /*困惑的地方是：文档里说data选项之中提前声明的属性才是响应式的；
                      * 可在这里，我已经在data中声明了holeType[]了啊？他应该是响应式的了啊？？*/
 //                    console.log('holeType[' + randomInt + '] = moleHoleType')
+                }, 1000)
+            },
+            rabbitTimer:function () {
+                //兔子出现计时器：
+                let moleTimer = setInterval(() => {
+                    let randomInt = this.getRandomInt(0, 5);
+                    Vue.set(this.holeType, randomInt, rabbitHoleType)
+                }, 1000)
+            },
+            haTimer:function () {
+                //蛤出现计时器：
+                let moleTimer = setInterval(() => {
+                    let randomInt = this.getRandomInt(0, 5);
+                    Vue.set(this.holeType, randomInt, haHoleType)
                 }, 1000)
             },
             addScore: function () {

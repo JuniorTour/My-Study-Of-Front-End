@@ -129,6 +129,20 @@ It can be  optimize to a single method, @click.prevent="showDelModal(item)"
 
 18.感觉只靠读文档难以融会贯通啊！！！
 
+19.
+                        https://cn.vuejs.org/v2/guide/list.html#注意事项
+                        由于 JavaScript 的限制， Vue 不能检测以下变动的数组：
+                        1.当你利用索引直接设置一个项时，例如： vm.items[indexOfItem] = newValue
+
+                        为了解决第一类问题，以下两种方式都可以实现和 vm.items[indexOfItem] = newValue 相同的效果， 同时也将触发状态更新：
+                        // Vue.set
+                        Vue.set(example1.items, indexOfItem, newValue)
+                        // Array.prototype.splice`
+                        example1.items.splice(indexOfItem, 1, newValue)
+
+                        如果对象是响应式的，确保属性被创建后也是响应式的，同时触发视图更新。
+                        Vue.set方法主要用于避开 Vue 不能检测属性被添加的限制。
+
 三、Error and Warning：
 1.If a function is not defined,the error will be reminded:
     vue.js:525 [Vue warn]: Error when rendering root instance:
