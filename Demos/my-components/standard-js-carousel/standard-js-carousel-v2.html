@@ -30,8 +30,7 @@
             position: absolute;
             top: 0;
             left: -520px;
-            /*transition: left .2s ease-in;*/
-            /*默认不使用CSS声明的过渡属性，避免一次滑动多页的bug。*/
+            transition: left .2s ease-in;
         }
         .carousel-item a {
             display: block;
@@ -249,16 +248,6 @@
             },false);
         }
         /*火狐和IE不支持NodeList的forEach方法*/
-//        var a = ['a', 'b', 'c'];
-//
-//        a.forEach(function(element) {
-//            console.log(element);
-//        });
-//        allAnchors.forEach(function (val,index) {
-//            val.addEventListener('click',function (e) {
-//                e.preventDefault();
-//            },false);
-//        });
     }
     
     function carouselControl () {
@@ -305,10 +294,10 @@
         * 3.addEventListener对任何DOM元素都有效，而不仅仅是HTML元素。*/
     }
 
-    function nextItem (currentItemNum) {
+    function nextItem(currentItemNum) {
         slide(1);
-        currentItemNum+=1;
-        if (currentItemNum==6) currentItemNum=1;
+        currentItemNum += 1;
+        if (currentItemNum == 6) currentItemNum = 1;
         switchIndexBtn(currentItemNum);
 
         return currentItemNum;
@@ -316,8 +305,8 @@
 
     function prevItem(currentItemNum) {
         slide(-1);
-        currentItemNum-=1;
-        if (currentItemNum==0) currentItemNum=5;
+        currentItemNum -= 1;
+        if (currentItemNum == 0) currentItemNum = 5;
         switchIndexBtn(currentItemNum);
 
         return currentItemNum;
@@ -333,11 +322,12 @@
             case (targetLeftOffset>0):
                 itemWrapper.style.transition="none";
                 itemWrapper.style.left=-carouselInfo.trueItemNum*carouselInfo.itemWidth+'px';
-                /*在这里即相当于：itemWrapper.style.left='-2600px';*/
+                /*此处即相当于：itemWrapper.style.left='-2600px';*/
                 targetLeftOffset=-(carouselInfo.trueItemNum-1)*carouselInfo.itemWidth;
 //                targetLeftOffset=-2080;
                 break;
-            case (targetLeftOffset<-3120):
+            case (targetLeftOffset<-(carouselInfo.totalWidth-carouselInfo.itemWidth)):
+                //此处即相当于：targetLeftOffset<-3120
                 itemWrapper.style.transition="none";
                 itemWrapper.style.left=-carouselInfo.itemWidth+'px';
 //                itemWrapper.style.left='-520px';
@@ -376,7 +366,9 @@
         * 从而避免了，非过渡的定位还未结束，就恢复了过渡属性，使得这一次非过渡的定位也带有过渡效果。*/
 
         /*偶尔有几次观察到即使用了setTimeout-0也会出现之前的bug：......，而且难以重现和观测。
-        * 所以试着加上了20ms的延迟，测试还会不会出现这个bug，从而进一步判断原因。*/
+        * 所以试着加上了20ms的延迟，测试还会不会出现这个bug，从而进一步判断原因。
+        *
+        * 加上了20ms延迟之后，没有再看到过这个bug。*/
     }
     
     function slideTo(targetNum) {

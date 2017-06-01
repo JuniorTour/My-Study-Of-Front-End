@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>my-carousel</title>
+    <title>Carousel-Loop-Demonstration</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
     <style>
         /*reset*/
         * {
@@ -17,18 +18,30 @@
             list-style: none;
         }
 
+        .window-title {
+            font-size: 20px;
+            text-align: center;
+        }
+        .description {
+            text-align: center;
+            font-size: 16px;
+        }
+        .description h3,.description pre {
+            font-family: 'microsoft yahei',PingFang-SC-Regular,Helvetica,sans-serif;
+        }
         .carousel-wrapper {
-            width:520px;
-            height:280px;
-            overflow: hidden;   /*关键*/
+            width:120px;
+            height:140px;
+            /*overflow: hidden;   !*关键*!*/
             position: relative;
-            margin: 100px auto;
+            margin: 20px auto;
+            outline: 3px solid #000;
         }
         .carousel-item-wrapper {
             width:3640px;
-            height:280px;
+            height:140px;
             position: absolute;
-            top: 0;
+            top: 20px;
             left: -520px;
             /*transition: left .2s ease-in;*/
             /*默认不使用CSS声明的过渡属性，避免一次滑动多页的bug。*/
@@ -36,8 +49,8 @@
         .carousel-item a {
             display: block;
             background-color: red;
-            width:520px;
-            height: 280px;
+            width:120px;
+            height: 100px;
         }
 
         /*使用不同背景色的a替代图片。*/
@@ -69,7 +82,7 @@
             float: left;
         }
         .carousel-index-mark {
-            font-size:60px;
+            font-size:30px;
             color: black;
             position: absolute;
             top: 0;
@@ -127,8 +140,9 @@
     </style>
 </head>
 <body>
+<h2 class="window-title">显示窗口：</h2>
 <div class="carousel-wrapper">
-    <div class="carousel-item-wrapper" style="left: -520px;">
+    <div class="carousel-item-wrapper" style="left: -600px;">
         <div class="carousel-item">
             <a href="#">
                 <!--As an demo,I use pure background color as example instead of img.-->
@@ -199,13 +213,23 @@
     </div>
     <div class="carousel-index-wrapper">
         <ul>
-            <li class="carousel-index-btn active-carousel-index-btn" id="carousel-to-1">carousel-index-1</li>
+            <li class="carousel-index-btn" id="carousel-to-1">carousel-index-1</li>
             <li class="carousel-index-btn" id="carousel-to-2">carousel-index-2</li>
             <li class="carousel-index-btn" id="carousel-to-3">carousel-index-3</li>
             <li class="carousel-index-btn" id="carousel-to-4">carousel-index-4</li>
-            <li class="carousel-index-btn" id="carousel-to-5">carousel-index-5</li>
+            <li class="carousel-index-btn active-carousel-index-btn" id="carousel-to-5">carousel-index-5</li>
         </ul>
     </div>
+</div>
+<div class="description">
+    <h3>移动端竖屏查看效果更佳</h3>
+    <pre>
+        当从结尾的5号项目向1号项目移动时，其逻辑是：
+        （1）先过渡移动至5号后一位的copy-1号，
+        （2）当到达copy-1号时，立即取消过渡效果，定位至真正的1号图片。
+        从而形成视觉欺骗，就好像在循环播放一样。
+        从开头的的1号项目向5号图片移动的逻辑同理。
+    </pre>
 </div>
 
 <script>
@@ -224,19 +248,12 @@
     //给文档加载完成后的load事件绑定相应的处理函数：
     addLoadEvent(preventDefaultAnchors);
     addLoadEvent(carouselControl);
-
-        //不便于拓展的方法二：
-//    window.onload=function () {
-//        preventDefaultAnchors();
-//        carouselControl();
-//    };
-
     /*用一个对象把轮播组件的相关参数封装起来，优点是便于扩展升；缺点是同时也增加了文件的体积。*/
     var carouselInfo={
-        itemWidth:520,
+        itemWidth:120,
         trueItemNum:5,
         itemNum:7,
-        totalWidth:7*520
+        totalWidth:7*120
     };
 
     function preventDefaultAnchors() {
@@ -248,17 +265,6 @@
                 e.preventDefault();
             },false);
         }
-        /*火狐和IE不支持NodeList的forEach方法*/
-//        var a = ['a', 'b', 'c'];
-//
-//        a.forEach(function(element) {
-//            console.log(element);
-//        });
-//        allAnchors.forEach(function (val,index) {
-//            val.addEventListener('click',function (e) {
-//                e.preventDefault();
-//            },false);
-//        });
     }
     
     function carouselControl () {
@@ -267,7 +273,7 @@
         var carouselWrapper=document.querySelector(".carousel-wrapper");
         var indexBtns = document.querySelectorAll(".carousel-index-btn");
 
-        var currentItemNum=1;   //标记当前所在的图片编号，用于配合index btn。
+        var currentItemNum=5;   //标记当前所在的图片编号，用于配合index btn。
         prev.onclick = function () {
             currentItemNum=prevItem(currentItemNum);
         };
@@ -298,11 +304,6 @@
 
         carouselWrapper.addEventListener('mouseover',stop);
         carouselWrapper.addEventListener('mouseout',play,false);
-
-        /*DOM二级的addEventListener相对于on+sth的优点是：
-        * 1.addEventListener可以先后添加多个事件，同时这些事件还不会相互覆盖。
-        * 2.addEventListener可以控制事件触发阶段，通过第三个可选的useCapture参数选择冒泡还是捕获。
-        * 3.addEventListener对任何DOM元素都有效，而不仅仅是HTML元素。*/
     }
 
     function nextItem (currentItemNum) {
@@ -337,7 +338,7 @@
                 targetLeftOffset=-(carouselInfo.trueItemNum-1)*carouselInfo.itemWidth;
 //                targetLeftOffset=-2080;
                 break;
-            case (targetLeftOffset<-3120):
+            case (targetLeftOffset<-(carouselInfo.totalWidth-carouselInfo.itemWidth)):
                 itemWrapper.style.transition="none";
                 itemWrapper.style.left=-carouselInfo.itemWidth+'px';
 //                itemWrapper.style.left='-520px';

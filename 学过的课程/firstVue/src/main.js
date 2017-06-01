@@ -23,6 +23,8 @@ const routes = [
 ]
 
 // let routerDepth = ['/']
+/*这样做还是不好，需要作者在写路由时，按顺序写，不方便。
+* 应该要能不按顺序写也能分别出路径的深度。*/
 // routes.forEach(function (val, index) {
 //   console.log(val.path)
 //   if (val.path!=='/') {
@@ -57,7 +59,7 @@ new Vue({
       /*这个方式非常不优雅！
        * 现在我有两种思路：
        * 1.声明一个routerDepth数组变量，通过根据routes动态生成该数组的元素，用于此处以indexOf匹配路径深度。
-       * 2.仍使用官方文档的split方法，特别处理'/'路径
+       * 2.仍使用官方文档的split方法，特殊对待'/'路径。
        * 3.把'/'路径改成''空路径，可以访问，但是动画效果不对！*/
 
       // const toDepth = to.path.substring(0, to.path.length - 2).split('/').length
