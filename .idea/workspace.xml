@@ -2,262 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="245d3670-3895-4aed-8406-06a940ee5abe" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/学过的课程/firstVue/src/assets/img/eg_3.jpeg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/firstVue/src/assets/img/eg_1.jpg" afterPath="$PROJECT_DIR$/学过的课程/firstVue/static/img/eg_1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/firstVue/src/assets/img/eg_2.jpg" afterPath="$PROJECT_DIR$/学过的课程/firstVue/static/img/eg_2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Advanced-Part/1.深入响应式原理.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/Advanced-Part/1.深入响应式原理.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Advanced-Part/2.过渡效果.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/Advanced-Part/2.过渡效果.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Advanced-Part/3.过渡状态.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/Advanced-Part/3.过渡状态.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Advanced-Part/responsive-data.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/Advanced-Part/responsive-data.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Advanced-Part/src/tween.js@16.3.4" afterPath="$PROJECT_DIR$/学过的课程/Vue/Advanced-Part/src/tween.js@16.3.4" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Advanced-Part/transition.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/Advanced-Part/transition.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Essentials-Part/01.hello vue.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/Essentials-Part/01.hello vue.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Essentials-Part/02.vue instance.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/Essentials-Part/02.vue instance.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Essentials-Part/03.template syntax.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/Essentials-Part/03.template syntax.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Essentials-Part/04.calculated property.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/Essentials-Part/04.calculated property.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Essentials-Part/05.class and style.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/Essentials-Part/05.class and style.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Essentials-Part/06.conditional rendering.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/Essentials-Part/06.conditional rendering.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Essentials-Part/07.list rendering.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/Essentials-Part/07.list rendering.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Essentials-Part/08.event handling.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/Essentials-Part/08.event handling.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Essentials-Part/09.form input bindings.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/Essentials-Part/09.form input bindings.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/Essentials-Part/10.component-1.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/Essentials-Part/10.component-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/book-list/index.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/book-list/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/.babelrc" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/.babelrc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/.editorconfig" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/.editorconfig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/.eslintignore" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/.eslintignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/.eslintrc.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/.eslintrc.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/.gitignore" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/README.md" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/build/build.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/build/build.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/build/dev-client.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/build/dev-client.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/build/dev-server.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/build/dev-server.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/build/utils.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/build/utils.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/build/webpack.base.conf.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/build/webpack.base.conf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/build/webpack.dev.conf.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/build/webpack.dev.conf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/build/webpack.prod.conf.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/build/webpack.prod.conf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/config/dev.env.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/config/dev.env.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/config/index.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/config/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/config/prod.env.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/config/prod.env.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/config/test.env.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/config/test.env.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/data.json" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/data.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/index.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/package.json" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/prod.server.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/prod.server.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/PSD/外卖01_商品页.mkm" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/PSD/外卖01_商品页.mkm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/PSD/外卖01_商品页_spec.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/PSD/外卖01_商品页_spec.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/PSD/外卖02_商品页_公告及优惠信息.mkm" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/PSD/外卖02_商品页_公告及优惠信息.mkm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/PSD/外卖02_商品页_公告及优惠信息_spec.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/PSD/外卖02_商品页_公告及优惠信息_spec.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/PSD/外卖03_商品页_购物车详情.mkm" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/PSD/外卖03_商品页_购物车详情.mkm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/PSD/外卖03_商品页_购物车详情_spec.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/PSD/外卖03_商品页_购物车详情_spec.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/PSD/外卖04_商品页面_商品详情.mkm" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/PSD/外卖04_商品页面_商品详情.mkm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/PSD/外卖04_商品页面_商品详情_spec.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/PSD/外卖04_商品页面_商品详情_spec.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/PSD/外卖05_评价页.mkm" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/PSD/外卖05_评价页.mkm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/PSD/外卖05_评价页_spec.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/PSD/外卖05_评价页_spec.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/PSD/外卖06_商家页.mkm" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/PSD/外卖06_商家页.mkm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/PSD/外卖06_商家页_spec.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/PSD/外卖06_商家页_spec.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/SVG/add_circle.svg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/SVG/add_circle.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/SVG/arrow_lift.svg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/SVG/arrow_lift.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/SVG/check_circle.svg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/SVG/check_circle.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/SVG/close.svg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/SVG/close.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/SVG/favorite.svg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/SVG/favorite.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/SVG/keyboard_arrow_right.svg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/SVG/keyboard_arrow_right.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/SVG/remove_circle_outline.svg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/SVG/remove_circle_outline.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/SVG/shopping_cart.svg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/SVG/shopping_cart.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/SVG/thumb_down.svg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/SVG/thumb_down.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/SVG/thumb_up.svg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/SVG/thumb_up.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/brand@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/brand@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/brand@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/brand@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/bulletin@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/bulletin@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/bulletin@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/bulletin@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/decrease_1@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/decrease_1@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/decrease_1@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/decrease_1@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/decrease_2@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/decrease_2@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/decrease_2@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/decrease_2@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/decrease_3@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/decrease_3@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/decrease_3@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/decrease_3@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/decrease_4@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/decrease_4@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/decrease_4@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/decrease_4@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/discount_1@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/discount_1@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/discount_1@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/discount_1@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/discount_2@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/discount_2@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/discount_2@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/discount_2@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/discount_3@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/discount_3@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/discount_3@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/discount_3@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/discount_4@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/discount_4@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/discount_4@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/discount_4@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/guarantee_1@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/guarantee_1@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/guarantee_1@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/guarantee_1@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/guarantee_2@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/guarantee_2@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/guarantee_2@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/guarantee_2@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/guarantee_3@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/guarantee_3@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/guarantee_3@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/guarantee_3@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/guarantee_4@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/guarantee_4@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/guarantee_4@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/guarantee_4@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/invoice_1@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/invoice_1@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/invoice_1@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/invoice_1@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/invoice_2@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/invoice_2@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/invoice_2@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/invoice_2@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/invoice_3@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/invoice_3@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/invoice_3@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/invoice_3@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/invoice_4@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/invoice_4@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/invoice_4@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/invoice_4@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/special_1@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/special_1@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/special_1@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/special_1@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/special_2@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/special_2@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/special_2@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/special_2@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/special_3@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/special_3@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/special_3@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/special_3@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/special_4@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/special_4@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/special_4@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/special_4@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star24_half@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star24_half@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star24_half@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star24_half@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star24_off@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star24_off@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star24_off@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star24_off@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star24_on@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star24_on@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star24_on@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star24_on@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star36_half@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star36_half@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star36_half@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star36_half@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star36_off@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star36_off@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star36_off@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star36_off@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star36_on@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star36_on@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star36_on@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star36_on@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star48_half@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star48_half@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star48_half@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star48_half@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star48_off@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star48_off@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star48_off@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star48_off@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star48_on@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star48_on@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/img/star48_on@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/img/star48_on@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/外卖01_商品页.jpg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/外卖01_商品页.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/外卖02_商品页_公告及优惠信息.jpg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/外卖02_商品页_公告及优惠信息.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/外卖03_商品页_购物车详情.jpg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/外卖03_商品页_购物车详情.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/外卖04_商品页面_商品详情.jpg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/外卖04_商品页面_商品详情.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/外卖05_评价页.jpg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/外卖05_评价页.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/外卖06_商家页.jpg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/外卖06_商家页.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/标注/外卖01_商品页_spec.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/标注/外卖01_商品页_spec.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/标注/外卖02_商品页_公告及优惠信息_spec.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/标注/外卖02_商品页_公告及优惠信息_spec.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/标注/外卖03_商品页_购物车详情_spec.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/标注/外卖03_商品页_购物车详情_spec.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/标注/外卖04_商品页面_商品详情_spec.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/标注/外卖04_商品页面_商品详情_spec.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/标注/外卖05_评价页_spec.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/标注/外卖05_评价页_spec.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/resource/标注/外卖06_商家页_spec.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/resource/标注/外卖06_商家页_spec.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/App.vue" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/App.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/fonts/sell-icon.eot" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/fonts/sell-icon.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/fonts/sell-icon.svg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/fonts/sell-icon.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/fonts/sell-icon.ttf" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/fonts/sell-icon.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/fonts/sell-icon.woff" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/fonts/sell-icon.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/js/date.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/js/date.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/js/store.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/js/store.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/js/util.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/js/util.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/stylus/base.styl" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/stylus/base.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/stylus/icon.styl" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/stylus/icon.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/stylus/index.styl" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/stylus/index.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/stylus/mixin.styl" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/stylus/mixin.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/cartcontrol/cartcontrol.vue" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/cartcontrol/cartcontrol.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/food/food.vue" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/food/food.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/goods/decrease_3@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/goods/decrease_3@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/goods/decrease_3@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/goods/decrease_3@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/goods/discount_3@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/goods/discount_3@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/goods/discount_3@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/goods/discount_3@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/goods/goods.vue" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/goods/goods.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/goods/guarantee_3@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/goods/guarantee_3@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/goods/guarantee_3@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/goods/guarantee_3@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/goods/invoice_3@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/goods/invoice_3@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/goods/invoice_3@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/goods/invoice_3@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/goods/special_3@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/goods/special_3@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/goods/special_3@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/goods/special_3@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/brand@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/brand@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/brand@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/brand@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/bulletin@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/bulletin@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/bulletin@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/bulletin@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/decrease_1@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/decrease_1@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/decrease_1@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/decrease_1@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/decrease_2@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/decrease_2@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/decrease_2@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/decrease_2@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/discount_1@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/discount_1@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/discount_1@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/discount_1@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/discount_2@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/discount_2@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/discount_2@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/discount_2@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/guarantee_1@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/guarantee_1@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/guarantee_1@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/guarantee_1@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/guarantee_2@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/guarantee_2@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/guarantee_2@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/guarantee_2@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/header.vue" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/header.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/invoice_1@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/invoice_1@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/invoice_1@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/invoice_1@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/invoice_2@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/invoice_2@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/invoice_2@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/invoice_2@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/special_1@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/special_1@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/special_1@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/special_1@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/special_2@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/special_2@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/header/special_2@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/special_2@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/ratings/ratings.vue" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/ratings/ratings.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/ratingselect/ratingselect.vue" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/ratingselect/ratingselect.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/seller/decrease_4@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/seller/decrease_4@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/seller/decrease_4@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/seller/decrease_4@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/seller/discount_4@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/seller/discount_4@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/seller/discount_4@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/seller/discount_4@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/seller/guarantee_4@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/seller/guarantee_4@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/seller/guarantee_4@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/seller/guarantee_4@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/seller/invoice_4@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/seller/invoice_4@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/seller/invoice_4@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/seller/invoice_4@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/seller/seller.vue" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/seller/seller.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/seller/special_4@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/seller/special_4@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/seller/special_4@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/seller/special_4@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/shopcart/shopcart.vue" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/shopcart/shopcart.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/split/split.vue" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/split/split.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star.vue" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star24_half@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star24_half@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star24_half@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star24_half@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star24_off@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star24_off@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star24_off@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star24_off@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star24_on@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star24_on@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star24_on@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star24_on@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star36_half@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star36_half@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star36_half@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star36_half@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star36_off@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star36_off@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star36_off@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star36_off@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star36_on@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star36_on@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star36_on@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star36_on@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star48_half@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star48_half@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star48_half@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star48_half@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star48_off@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star48_off@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star48_off@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star48_off@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star48_on@2x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star48_on@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/components/star/star48_on@3x.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star48_on@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/main.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/main.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/static/.gitkeep" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/static/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/static/css/reset.css" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/static/css/reset.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/summary in making ele app.md" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/summary in making ele app.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/address.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/address.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/cart.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/cart.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/css/base.css" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/css/base.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/css/checkout.css" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/css/checkout.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/css/modal.css" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/css/modal.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/css/reset.css" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/css/reset.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/data/address.json" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/data/address.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/data/cartData.json" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/data/cartData.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/img/goods-1.jpg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/img/goods-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/img/goods-2.jpg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/img/goods-2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/img/part-1.jpeg" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/img/part-1.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/js/address.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/js/address.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/js/cart.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/js/cart.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/js/vue-resource.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/js/vue-resource.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/js/vue.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/js/vue.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/shopping-cart-Vue.js/package.json" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/whack-a-mole-game-vue/js/vue.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/whack-a-mole-game-vue/js/vue.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/whack-a-mole-game-vue/whack-a-mole-game-vue.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/whack-a-mole-game-vue/whack-a-mole-game-vue.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/demos/whack-a-mole-game-vue/whack-mole-design.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/whack-a-mole-game-vue/whack-mole-design.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/lifecycle.png" afterPath="$PROJECT_DIR$/学过的课程/Vue/lifecycle.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/mistakes of learning vue.txt" afterPath="$PROJECT_DIR$/学过的课程/Vue/mistakes of learning vue.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/review/vue-essentials-review-2.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/review/vue-essentials-review-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/review/vue-essentials-review-3.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/review/vue-essentials-review-3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/review/vue-essentials-review.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/review/vue-essentials-review.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/学过的课程/vue-guide/src/vue.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/src/vue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/作品/vue-weibo/src/components/discrovery/discovery.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/作品/vue-weibo/src/components/header/header.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/作品/vue-weibo/src/components/home/home.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/作品/vue-weibo/src/components/message/message.vue" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/作品/vue-weibo/src/assets/logo.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/asus_pc.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/asus_pc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demos/my-components/standard-js-carousel/cyclic-carousel-by-standard-js-html-css.md" afterPath="$PROJECT_DIR$/Demos/my-components/standard-js-carousel/cyclic-carousel-by-standard-js-html-css.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demos/my-components/standard-js-carousel/loop-demonstartion.html" afterPath="$PROJECT_DIR$/Demos/my-components/standard-js-carousel/loop-demonstartion.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/firstVue/src/components/list.vue" afterPath="$PROJECT_DIR$/学过的课程/firstVue/src/components/list.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/firstVue/src/main.js" afterPath="$PROJECT_DIR$/学过的课程/firstVue/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/firstVue/src/pages/detail.vue" afterPath="$PROJECT_DIR$/学过的课程/firstVue/src/pages/detail.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/vue-weibo/.eslintrc.js" afterPath="$PROJECT_DIR$/作品/vue-weibo/.eslintrc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/vue-weibo/index.html" afterPath="$PROJECT_DIR$/作品/vue-weibo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/vue-weibo/package.json" afterPath="$PROJECT_DIR$/作品/vue-weibo/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/vue-weibo/src/App.vue" afterPath="$PROJECT_DIR$/作品/vue-weibo/src/App.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/vue-weibo/src/router/index.js" afterPath="$PROJECT_DIR$/作品/vue-weibo/src/router/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/index.html" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/index.html" />
     </list>
     <ignored path="Web前端.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -277,16 +34,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="whack-a-mole-game-vue.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/whack-a-mole-game-vue/whack-a-mole-game-vue.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -309,6 +56,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+              <folding>
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="home.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/src/pages/home.vue">
           <provider selected="true" editor-type-id="text-editor">
@@ -321,14 +80,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/index.html">
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="408">
+              <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".eslintrc.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/作品/vue-weibo/.eslintrc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="803">
+              <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/作品/vue-weibo/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="4" column="50" lean-forward="true" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="44" lean-forward="true" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
               <folding>
-                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#140#161#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/router/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -343,15 +154,13 @@
         <option value="Mark Down" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Vue File" />
         <option value="HTML File" />
+        <option value="Vue File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>container</find>
-      <find>order-one</find>
       <find>shrin</find>
       <find>insert</find>
       <find>&quot;</find>
@@ -380,6 +189,8 @@
       <find>500</find>
       <find>index-btn</find>
       <find>#app</find>
+      <find>css</find>
+      <find>stylus</find>
     </findStrings>
     <replaceStrings>
       <replace>::</replace>
@@ -405,14 +216,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/学过的课程/webpack/webpack-demo/app/index.js" />
-        <option value="$PROJECT_DIR$/学过的课程/webpack/webpack-demo/app/code-splitting-libraries.js" />
-        <option value="$PROJECT_DIR$/学过的课程/webpack/webpack-demo/webpack.config.js" />
-        <option value="$PROJECT_DIR$/学过的课程/webpack/webpack-demo/index.html" />
-        <option value="$PROJECT_DIR$/学过的课程/webpack/code-splitting-libraries/index.js" />
-        <option value="$PROJECT_DIR$/学过的课程/webpack/code-splitting-libraries/webpack.config.js" />
-        <option value="$PROJECT_DIR$/学过的课程/webpack/Summary of mistakes in leaning webpack.md" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/common/stylus/mixin.styl" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/App.vue" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/data.json" />
         <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/eleme-by-vue.js/src/main.js" />
@@ -456,6 +259,14 @@
         <option value="$PROJECT_DIR$/学过的课程/firstVue/src/pages/detail.vue" />
         <option value="$PROJECT_DIR$/学过的课程/Vue/demos/whack-a-mole-game-vue/whack-a-mole-game-vue.html" />
         <option value="$PROJECT_DIR$/学过的课程/firstVue/src/main.js" />
+        <option value="$PROJECT_DIR$/作品/vue-weibo/build/webpack.base.conf.js" />
+        <option value="$PROJECT_DIR$/作品/vue-weibo/src/components/header/header.vue" />
+        <option value="$PROJECT_DIR$/作品/vue-weibo/src/components/home/home.vue" />
+        <option value="$PROJECT_DIR$/作品/vue-weibo/src/router/index.js" />
+        <option value="$PROJECT_DIR$/作品/vue-weibo/src/App.vue" />
+        <option value="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/index.html" />
+        <option value="$PROJECT_DIR$/作品/vue-weibo/index.html" />
+        <option value="$PROJECT_DIR$/作品/vue-weibo/.eslintrc.js" />
       </list>
     </option>
   </component>
@@ -559,7 +370,321 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="学过的课程" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My-Study-Of-Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="学过的课程" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My-Study-Of-Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="学过的课程" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eleme-by-vue.js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My-Study-Of-Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="学过的课程" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eleme-by-vue.js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My-Study-Of-Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="学过的课程" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firstVue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My-Study-Of-Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="学过的课程" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firstVue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My-Study-Of-Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="学过的课程" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firstVue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My-Study-Of-Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My-Study-Of-Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue-weibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My-Study-Of-Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue-weibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My-Study-Of-Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue-weibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="router" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My-Study-Of-Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue-weibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My-Study-Of-Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue-weibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="message" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web前端" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My-Study-Of-Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="作品" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue-weibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="header" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -722,11 +847,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\作品\vue-weibo\src\components\message" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\学过的课程\firstVue\static" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\学过的课程\firstVue\src\pages" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\Demos\search-of-front-end\flex-layout'" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\vue-guide\demos\eleme-by-vue.js" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\Web前端\学过的课程\web-pack\webpack-demo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\Demos\my-components\standard-js-carousel" />
@@ -853,12 +978,12 @@
       <workItem from="1495940575793" duration="26342000" />
       <workItem from="1496044509813" duration="7969000" />
       <workItem from="1496195333217" duration="15954000" />
-      <workItem from="1496281006789" duration="14860000" />
+      <workItem from="1496281006789" duration="19159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88654000" />
+    <option name="totallyTimeSpent" value="92953000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -871,8 +996,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14895834" sideWeight="0.4960452" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14895834" sideWeight="0.4960452" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32677597" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32440782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -944,140 +1070,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/build/dev-client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/build/dev-server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="60" column="71" lean-forward="false" selection-start-line="60" selection-start-column="71" selection-end-line="60" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/whack-a-mole-game-vue/js/vue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/search-notes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="38" column="15" lean-forward="true" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/header/header.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4148">
-          <caret line="225" column="16" lean-forward="false" selection-start-line="225" selection-start-column="16" selection-end-line="228" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/bootstrap文档/2.全局CSS/5.Button and Inline Image.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/flex-layout/flex-examples.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="220" column="95" lean-forward="false" selection-start-line="220" selection-start-column="95" selection-end-line="220" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/flex-layout/Flex 布局示例.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/flex-layout/flex-layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="391" column="91" lean-forward="false" selection-start-line="391" selection-start-column="91" selection-end-line="391" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/star/star.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/看过的书/DOM编程艺术/advanced images gallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="76" column="23" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/src/App.vue" />
-    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="6" column="108" lean-forward="true" selection-start-line="6" selection-start-column="108" selection-end-line="7" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/static/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/src/components/homeHeader.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="38" column="3" lean-forward="false" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../firstVue-master/src/pages/Home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/.eslintrc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/src/components/detailHeader.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Game/vue_tutorial/饿了吗代码/vue-sell-1.0/src/components/header/header.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="31" column="61" lean-forward="false" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/Vue/mistakes of learning vue.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="837">
@@ -1301,6 +1293,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/src/components/list.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="78" column="49" lean-forward="false" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#268#303#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/译文/一种新的微型清浮技巧/Demo_ A new micro clearfix hack — Nicolas Gallagher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="24" column="65" lean-forward="true" selection-start-line="24" selection-start-column="65" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/components/food/food.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7208">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="871">
+          <caret line="63" column="7" lean-forward="true" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/build/webpack.dev.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/build/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-367">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="82" column="24" lean-forward="false" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/build/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="53" column="10" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/whack-a-mole-game-vue/whack-a-mole-game-vue.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
@@ -1321,29 +1412,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/main.js">
+    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/src/components/list.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="78" column="49" lean-forward="false" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+        <state relative-caret-position="578">
+          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#268#303#0" expanded="true" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/components/message/message.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/components/discrovery/discovery.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/components/header/header.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/components/home/home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="44" lean-forward="true" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
+          <folding>
+            <element signature="e#140#161#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1358,21 +1474,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/译文/一种新的微型清浮技巧/Demo_ A new micro clearfix hack — Nicolas Gallagher.html">
+    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="748">
+          <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/index.html">
+    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="544">
+          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="4" column="50" lean-forward="true" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="803">
+          <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
