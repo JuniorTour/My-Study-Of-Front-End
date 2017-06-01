@@ -17,7 +17,7 @@ const routes = [
     component: Detail
   },
   {
-    path: '',
+    path: '/',
     component: Home
   }
 ]
@@ -69,8 +69,16 @@ new Vue({
       // const fromDepth = from.path.substring(0, from.path.length - 2).split('/').length
 
       //官方文档方法：
-      const toDepth = to.path.split('/').length
-      const fromDepth = from.path.split('/').length
+      // console.log('to.path : ' + to.path)
+      // console.log('to.path.length : ' + to.path.length)
+      // console.log('from.path : ' + from.path)
+      // console.log('from.path.length : ' + from.path.length)
+
+      /*特殊处理'/' 和 ‘’ 路由路径，
+      *如果处理到这两个路径，总是把它们当做最浅层的路径，把相应的depth记作0。
+      * 从而使得其他的所有路径，即使是同级的 '/detail' ，相应的depth为2，也比这两个路径比较起来更深，以应用上正确的过渡动画。*/
+      const toDepth = ((to.path.length) <= 1) ? 0 : to.path.split('/').length
+      const fromDepth = ((from.path.length) <= 1) ? 0 : from.path.split('/').length
       // 根据路由深度，来判断是该从右侧进入还是该从左侧进入
       this.transitionName = toDepth < fromDepth ? 'slide_back' : 'slide'
     }

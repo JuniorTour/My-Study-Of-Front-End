@@ -6,7 +6,7 @@ categories:
   - JavaScript-demo
 date: 2017-06-1 20:18:00
 ---
-前段时间学习仿制了淘宝首页，其中收获最大的的就是这个**循环**播放的图片轮播组件，本文就将相关经验分享给大家。
+前段时间学习了淘宝首页的静态页面，其中收获较大的的就是这个**循环**播放的图片轮播组件，本文就将相关制作经验分享给大家。
 
 先看看在线DEMO：[原生JS循环播放图片轮播组件](http://http://juniortour.net/master-pieces/js/standard-js-carousel/standard-js-carousel.html) （我的得意之作，(～￣▽￣)～，支持IE8+）
 
@@ -19,9 +19,9 @@ date: 2017-06-1 20:18:00
 
 #### 1.先说基本的非循环无过渡图片轮播：
 
-这个思路还是很简单的，通过观察一些图片轮播就可以发现，图片轮播一般是以一个尺寸较小的父元素作为窗口，包裹住一组较长的长条状的内容子元素，利用` overflow: hidden; `，只显示出父元素大小的长条的一部分，并通过改变父元素的定位或translate3d属性，实现改变显示图片。
+这个思路还是很简单的，通过观察一些图片轮播就可以发现，图片轮播一般是以一个尺寸较小的父元素作为窗口，包裹住一组较长的长条状的项目（item）子元素，再利用` overflow: hidden; `，将父元素作为“窗口”，只显示出的项目子元素的一部分，并通过改变父元素的定位或translate3d属性，实现多张图片项目动态播放。
 
-基本原理可以参考demo：[图片轮播基本原理演示]()
+基本原理可以参考这个demo：[图片轮播基本原理演示]()
 
 #### 2.比较有意思的其实是**循环**的功能：
 
@@ -29,9 +29,9 @@ date: 2017-06-1 20:18:00
 
 有多种思路可以实现循环播放，我观察到淘宝网首页的图片轮播是这样的思路：
 
->复制开头和结尾的项目，并分别放在开头和结尾，当播放到开头或结尾的项目，继续播放，需要循环时，临时取消transition属性，并立即用定位跳转至相应真正的开头或结尾之后，再恢复原来的transition，继续正常滚动播放，从而利用视觉上的“欺骗”，实现带有过渡效果的循环播放。
+>复制开头和结尾的项目，并分别放在开头和结尾，当播放到开头或结尾的项目，继续播放，需要循环时，临时取消transition属性，并立即用定位跳转至相应的真正的开头或结尾之后，再恢复原来的transition，继续正常滚动播放，从而利用视觉上的“欺骗”，实现带有过渡效果的循环播放。
 
-相应的原理可以参考demo：[图片轮播循环原理演示]()
+相应的原理可以参考这个demo：[图片轮播循环原理演示]()
 
 ### 二、HTML标记部分
 
@@ -41,7 +41,7 @@ date: 2017-06-1 20:18:00
 
 外层的`.carousel-wrapper`包裹着轮播的三个主要部分，分别是：
 
-`.carousel-item-wrapper`：项目内容部分（作为演示，本文中的demo使用a标签代替了图片，大家可以自行尝试替换为图片；同时添加了文字序号标记，以便于观察理解，**尤其要注意两个复制的开头和结尾copy-1和copy-5）**。
+`.carousel-item-wrapper`：项目内容部分（作为演示，本文中的demo使用a标签代替了图片，大家可以自行尝试替换为图片；同时添加了文字序号标记，以便于观察理解，**尤其要注意两个复制的开头和结尾项目copy-1和copy-5）**。
 
 `.carousel-control-wrapper`：控制按钮部分，即两个用于控制左右移动的按钮。
 
@@ -131,7 +131,7 @@ date: 2017-06-1 20:18:00
 ```
 
 ### 三、CSS样式部分
-总的来说比较简单，关键部分我加上了注释，有不明白的地方，欢迎和我交流。
+总的来说比较简单，特殊的地方我加上了注释，有不明白的地方，欢迎和我交流。
 
 ``` css
     /*reset*/
@@ -256,7 +256,7 @@ date: 2017-06-1 20:18:00
 ```
 
 ### 四、JS部分
-这一部分稍微有些复杂，因此我们逐步来实现各部分功能以便于理解。
+这一块是主要部分，内容较多，因此我们逐步来实现各部分功能以便于理解。
 #### 0.功能和结构分析：
 根据最开始的思路讲解，我们把这个轮播的JavaScript功能大致分为以下4个部分：
 1.左右滑动按钮功能
@@ -320,7 +320,6 @@ function slide(slideItemNum) {
     var currentLeftOffset=(itemWrapper.style.left)?parseInt(itemWrapper.style.left): 0,
         targetLeftOffset=currentLeftOffset-(slideItemNum*carouselInfo.itemWidth);
 
-
     itemWrapper.style.left=targetLeftOffset+'px';
 }
 ```
@@ -336,7 +335,7 @@ function carouselControl() {
     //添加索引按钮的引用
     var indexBtns = document.querySelectorAll(".carousel-index-btn");
 
-    //标记当前所在的图片编号，用于配合index btn。
+    //标记当前所在的图片编号，用于配合控制.index-btn。
     var currentItemNum = 1;
     prev.onclick = function () {
         //把滑动功能和切换索引按钮功能装入一个函数之中，以便于获取当前索引：
@@ -393,11 +392,11 @@ function slide(slideItemNum) {
 
 function switchIndexBtn(targetNum) {
     //切换当前的索引按钮
-    //delete the past active-index class
+    //删除过去激活的.active-carousel-index-btn
     var activeBtn=document.querySelector(".active-carousel-index-btn");
     activeBtn.className=activeBtn.className.replace(" active-carousel-index-btn","");
 
-    //add a new active btn
+    //添加新的激活索引按钮
     var targetBtn=document.querySelectorAll(".carousel-index-btn")[targetNum-1];
     targetBtn.className+=" active-carousel-index-btn";
 }
@@ -408,22 +407,7 @@ function switchIndexBtn(targetNum) {
 #### 3.实现自动播放功能：
 ``` javascript
 function carouselControl() {
-    var prev = document.querySelector("#prev");
-    var next = document.querySelector("#next");
-    var carouselWrapper = document.querySelector(".carousel-wrapper");
-    //添加索引按钮的引用
-    var indexBtns = document.querySelectorAll(".carousel-index-btn");
-
-    //标记当前所在的图片编号，用于配合index btn。
-    var currentItemNum = 1;
-    prev.onclick = function () {
-        //把滑动功能和切换索引按钮功能装入一个函数之中，以便于获取当前索引：
-        currentItemNum=prevItem(currentItemNum);
-    };
-    next.onclick = function () {
-        //把滑动功能和切换索引按钮功能装入一个函数之中，以便于获取当前索引：
-        currentItemNum=nextItem(currentItemNum);
-    };
+    //省略前面重复的代码......
 
     for (var i = 0; i < indexBtns.length; i++) {
         //利用立即调用函数，解决闭包的副作用，传入相应的index值
@@ -435,7 +419,7 @@ function carouselControl() {
         })(i);
     }
 
-    //添加定时器和绑定事件
+    //添加定时器
     var scrollTimer;
     function play() {
         scrollTimer=setInterval(function () {
@@ -448,6 +432,7 @@ function carouselControl() {
         clearInterval(scrollTimer);
     }
 
+    //绑定事件
     carouselWrapper.addEventListener('mouseover',stop);
     carouselWrapper.addEventListener('mouseout',play,false);
 
@@ -468,7 +453,7 @@ function slide(slideItemNum) {
         targetLeftOffset = currentLeftOffset - (slideItemNum * carouselInfo.itemWidth);
 
     /*不在这里跳转了。先处理偏移值，实现循环，再跳转。*/
-//        itemWrapper.style.left = targetLeftOffset + 'px';
+    //itemWrapper.style.left = targetLeftOffset + 'px';
 
     switch (true) {
             /*switch 的语法是：当case之中的表达式等于switch (val)的val时，执行后面的statement（语句）。*/
@@ -477,31 +462,31 @@ function slide(slideItemNum) {
             itemWrapper.style.left=-carouselInfo.trueItemNum*carouselInfo.itemWidth+'px';
             /*此处即相当于：itemWrapper.style.left='-2600px';*/
             targetLeftOffset=-(carouselInfo.trueItemNum-1)*carouselInfo.itemWidth;
-//                targetLeftOffset=-2080;
+            //相当于：targetLeftOffset=-2080;
             break;
         case (targetLeftOffset<-(carouselInfo.totalWidth-carouselInfo.itemWidth)):
             //此处即相当于：targetLeftOffset<-3120
             itemWrapper.style.transition="none";
             itemWrapper.style.left=-carouselInfo.itemWidth+'px';
-//                itemWrapper.style.left='-520px';
+            //相当于：itemWrapper.style.left='-520px';
             targetLeftOffset=-carouselInfo.itemWidth*2;
-//                targetLeftOffset=-1040;
+            //相当于：targetLeftOffset=-1040;
             break;
     }
 
     /*这里我使用了setTimeout(fn,0)的hack
-     * 参考bootstrap的carousel.js源码，似乎也用了setTimeout(fn,0)这一hack。
+     * 参考bootstrap的carousel.js源码，似乎也利用了setTimeout(fn,0)这一hack。
      *
      * stackoverflow上有对这一hack的讨论和解释：
      * http://stackoverflow.com/questions/779379/why-is-settimeoutfn-0-sometimes-useful
-     * 根据第二个回答，我个人的理解是：setTimeout-0相当于异步执行内部的代码fn，
+     * 根据第二个回答，我个人的理解是：setTimeout(fn,0)相当于异步执行内部的代码fn，
      * 具体到这个轮播，就是在上一轮非过渡定位的页面渲染工作（switch语句内部的case）结束之后，再执行setTimeout内部的过渡位移工作。
      * 从而避免了，非过渡的定位还未结束，就恢复了过渡属性，使得这一次非过渡的定位也带有过渡效果。
      **/
 
-    // 各位可以试一试，把setTimeout内部的代码放在外部，“循环”时会有什么样的错误效果。
-//        itemWrapper.style.transition="left .2s ease-in";
-//        itemWrapper.style.left=targetLeftOffset+'px';
+    //各位可以试一试，把setTimeout内部的代码放在外部，“循环”时会有什么样的错误效果。
+    //itemWrapper.style.transition="left .2s ease-in";
+    //itemWrapper.style.left=targetLeftOffset+'px';
 
     setTimeout(function () {
         itemWrapper.style.transition="left .2s ease-in";
@@ -520,4 +505,4 @@ function slide(slideItemNum) {
 
 #### 2.在线demo：[原生JS循环播放图片轮播组件](http://http://juniortour.net/master-pieces/js/standard-js-carousel/standard-js-carousel.html) 
 
-~~很惭愧，只做了一点简单的工作。~~
+很惭愧，只做了一点简单的工作。
