@@ -1,6 +1,14 @@
 <template>
   <div id="app">
     <v-header></v-header>
+    <div class="tab-group">
+      <div class="tab">
+        <router-link to="/home">首页</router-link>
+        <router-link to="/message">消息</router-link>
+        <router-link to="/discovery">发现</router-link>
+        <router-link to="/me">我</router-link>
+      </div>
+    </div>
     <router-view></router-view>
   </div>
 </template>

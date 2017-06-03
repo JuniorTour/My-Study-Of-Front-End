@@ -1,6 +1,7 @@
 <template>
 <div class="header">
-  Header
+  <div class="user-and-group">JuniorTour</div>
+  <div class="iconfont icon-zhuanfa"></div>
 </div>
 </template>
 
