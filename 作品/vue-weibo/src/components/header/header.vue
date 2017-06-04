@@ -5,9 +5,9 @@
     <i class="iconfont icon-xiangxiajiantou"></i>
   </div>
   <div class="icon-group">
-    <span class="iconfont icon-xiangxiajiantou"></span>
-    <span class="iconfont icon-xiangxiajiantou"></span>
-    <span class="iconfont icon-xiangxiajiantou"></span>
+    <a class="iconfont icon-xie"></a>
+    <a class="iconfont icon-sousuo"></a>
+    <a class="iconfont icon-shuaxin"></a>
   </div>
 </div>
 </template>
@@ -38,9 +38,17 @@
       color: #f07c10;
       position absolute
       top 0
-      right 0
+      right -8px
 
   .icon-group
     float: right;
-    padding 0 12px
+    /*padding 0 12px*/
+    a.iconfont
+      display inline-block
+      width: 46px
+      font-size: 22px
+      height: 44px
+      line-height: 44px
+      color: #444
+      text-align: center
 </style>
