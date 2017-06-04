@@ -54,3 +54,5 @@
             * https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...of
             * https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in
             **/
+
+5.line-height的百分比值相对于自身的font-size值

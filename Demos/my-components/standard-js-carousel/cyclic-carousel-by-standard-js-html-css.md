@@ -8,10 +8,9 @@ date: 2017-06-1 20:18:00
 ---
 前段时间学习了淘宝首页的静态页面，其中收获较大的的就是这个**循环**播放的图片轮播组件，本文就将相关制作经验分享给大家。
 
-先看看在线DEMO：[原生JS循环播放图片轮播组件](http://http://juniortour.net/master-pieces/js/standard-js-carousel/standard-js-carousel.html) （我的得意之作，(～￣▽￣)～，支持IE8+）
+先看看在线DEMO：[原生JS循环播放图片轮播组件](http://juniortour.net/demo/standard-js-carousel/standard-js-carousel.html) （我的得意之作，(～￣▽￣)～，支持IE8+）
 
-以及GitHub仓库地址及完整代码：
-[]()
+以及GitHub仓库地址及完整代码：[JuniorTour/simple-standard-js-carousel](https://github.com/JuniorTour/simple-standard-js-carousel)
 
 <!--more-->
 
@@ -21,7 +20,7 @@ date: 2017-06-1 20:18:00
 
 这个思路还是很简单的，通过观察一些图片轮播就可以发现，图片轮播一般是以一个尺寸较小的父元素作为窗口，包裹住一组较长的长条状的项目（item）子元素，再利用` overflow: hidden; `，将父元素作为“窗口”，只显示出的项目子元素的一部分，并通过改变父元素的定位或translate3d属性，实现多张图片项目动态播放。
 
-基本原理可以参考这个demo：[图片轮播基本原理演示]()
+基本原理可以参考这个demo：[图片轮播基本原理演示](http://juniortour.net/demo/standard-js-carousel/basic-theory-demonstration.html)
 
 #### 2.比较有意思的其实是**循环**的功能：
 
@@ -31,7 +30,7 @@ date: 2017-06-1 20:18:00
 
 >复制开头和结尾的项目，并分别放在开头和结尾，当播放到开头或结尾的项目，继续播放，需要循环时，临时取消transition属性，并立即用定位跳转至相应的真正的开头或结尾之后，再恢复原来的transition，继续正常滚动播放，从而利用视觉上的“欺骗”，实现带有过渡效果的循环播放。
 
-相应的原理可以参考这个demo：[图片轮播循环原理演示]()
+相应的原理可以参考这个demo：[图片轮播循环原理演示](http://juniortour.net/demo/standard-js-carousel/loop-theory-demonstration.html)
 
 ### 二、HTML标记部分
 
@@ -324,7 +323,7 @@ function slide(slideItemNum) {
 }
 ```
 
-第1步的demo：[carousel-step-1](carousel-step-1.html)
+第1步的demo：[carousel-step-1](http://juniortour.net/demo/standard-js-carousel/carousel-step-1.html)
 
 #### 2.实现索引按钮跳转功能：
 ``` javascript
@@ -402,7 +401,7 @@ function switchIndexBtn(targetNum) {
 }
 ```
 
-第2步的demo：[carousel-step-2](carousel-step-2.html)
+第2步的demo：[carousel-step-2](http://juniortour.net/demo/standard-js-carousel/carousel-step-2.html)
 
 #### 3.实现自动播放功能：
 ``` javascript
@@ -443,7 +442,7 @@ function carouselControl() {
 }
 ```
 
-第3步的demo：[carousel-step-3](carousel-step-3.html)
+第3步的demo：[carousel-step-3](http://juniortour.net/demo/standard-js-carousel/carousel-step-3.html)
 
 #### 4.关键点：实现循环播放功能：
 ``` javascript
@@ -495,14 +494,14 @@ function slide(slideItemNum) {
 }
 ```
 
-第4步的demo：[carousel-step-4](carousel-step-4.html)
+第4步的demo：[carousel-step-4](http://juniortour.net/demo/standard-js-carousel/carousel-step-4.html)
 
 至此，就完成了一个完整的循环播放图片轮播，欣赏一下自己的杰作吧~~~ヾ(✿ﾟ▽ﾟ)ノ
 
 ### 五、源码及示例：
 
-#### 1.GitHub仓库地址及完整代码：[]()
+#### 1.GitHub仓库地址及完整代码：[JuniorTour/simple-standard-js-carousel](https://github.com/JuniorTour/simple-standard-js-carousel)
 
-#### 2.在线demo：[原生JS循环播放图片轮播组件](http://http://juniortour.net/master-pieces/js/standard-js-carousel/standard-js-carousel.html) 
+#### 2.在线demo：[原生JS循环播放图片轮播组件](http://juniortour.net/demo/standard-js-carousel/standard-js-carousel.html) 
 
 很惭愧，只做了一点简单的工作。

@@ -9,7 +9,9 @@
         <router-link to="/me">我</router-link>
       </div>
     </div>
-    <router-view></router-view>
+    <transition :name="transitionName">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -18,6 +20,11 @@
 
 export default {
   name: 'app',
+  data(){
+    return {
+      transitionName: 'slide_back'
+    }
+  },
   components: {
     'v-header': header
   }
@@ -25,17 +32,41 @@ export default {
 </script>
 
 <style lang="stylus">
+  /* 跳转页面动画 */
+  .slide-enter-active, .slide_back-enter-active {
+    transition: all 3s linear;
+  }
+
+  .slide-enter, .slide_back-enter {
+    /*position: absolute;*/
+    width: 100%;
+  }
+
+  .slide-leave, .slide_back-leave {
+    /*position: absolute;*/
+    width: 100%;
+  }
+
+  .slide-leave-active {
+    /*position: absolute;*/
+    /*transition: all 3s linear;*/
+    transform: translate(-100%);
+  }
+  .slide_back-leave-active {
+    /*position: absolute;*/
+    /*transition: all 3s linear;*/
+    transform: translate(100%);
+  }
+
+  .slide-enter {
+    transform: translateX(100%);
+  }
+  .slide_back-enter {
+    transform: translateX(-100%);
+  }
+
   #app
     color: red
     a
       color: #000
-
-  /*#app {*/
-  /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
-  /*-webkit-font-smoothing: antialiased;*/
-  /*-moz-osx-font-smoothing: grayscale;*/
-  /*text-align: center;*/
-  /*color: #2c3e50;*/
-  /*margin-top: 60px;*/
-  /*}*/
 </style>
