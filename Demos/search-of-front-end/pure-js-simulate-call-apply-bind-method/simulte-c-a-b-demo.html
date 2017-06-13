@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pure-js-simulate-call-apply-bind-method-DEMO</title>
+</head>
+<body>
+<script>
+  //一、call()
+  console.log('%c一、call()：', 'font-size:24px;font-weight:bold;')
+  function foo () {
+    console.log('this.val = ', this.val)
+  }
+  let obj = {
+    val: 1
+  }
+
+  console.log('foo.call(obj) : ')
+  foo.call(obj) //1
+
+  Function.prototype.myCall = function (context) {
+    context = context || window    //B.处理参数为null和undefined的情况
+    context.fn = this                    //1.把调用myCall的函数设为对象的方法
+    let targetArg = []                   //A.注意call方法可带“任意个”参数
+    for (let i = 1, len = arguments.length; i < len; i++) {
+      //targetArg.push(arguments[i]);
+        /*直接像上一句这样，最后的targetArg是： ["me", 21]，经过'context.fn('+targetArg+')'之后，
+         * 是"context.fn(me,21)"，把me当成了一个变量，而非一个字符串，所以不行。*/
+
+      targetArg.push('arguments[' + i + ']')
+        /*targetArg是:["arguments[1]", "arguments[2]"]，经过'context.fn('+targetArg+')'后，
+         * 是"context.fn(arguments[1],arguments[2])"，可行！*/
+
+        /*也就是说之所以选择，用字符串拼接，是因为考虑到参数可能是字符串，直接传给eval会导致，转换成变量，无法执行。*/
+    }
+    let result = eval('context.fn(' + targetArg + ')')   //C.函数可以有返回值。
+    //context.fn();
+    delete context.fn
+    return result
+  }
+
+  console.log('foo.myCall(obj) : ')
+  foo.myCall(obj) //1
+
+  //二、apply
+  console.log('%c二、apply()：', 'font-size:24px;font-weight:bold;')
+  Function.prototype.myApply = function (context, argArr) {
+    context = context || window
+    context.fn = this
+    let result
+
+    if (argArr) {
+      let targetArg = []
+      for (let i = 0, len = argArr.length; i < len; i++) {
+        //注意，此处是argArr参数，而非arguments了。
+        targetArg.push('argArr[' + i + ']')
+      }
+      result = eval('context.fn(' + targetArg + ')')
+    } else {
+      result = context.fn()
+    }
+    return result
+  }
+
+  function applyFoo () {
+    console.log('this.val = ', this.val)
+    console.log('arguments = ', arguments)
+  }
+  let applyObj = {
+    val: 1
+  }
+  console.log('applyFoo.myApply(applyObj,[1,2]) : ')
+  applyFoo.myApply(applyObj, [1, 2]) //1
+
+  //三、
+  console.log('%c三、bind()：', 'font-size:24px;font-weight:bold;')
+  function bindFoo () {
+    //用call把arguments指定为this值，用于slice()处理，slice 方法可以把一个类数组（Array-like）对象/集合转换成一个数组。
+    console.log('Array.prototype.slice.call(arguments) = ', Array.prototype.slice.call(arguments))
+  }
+  bindFoo(1, 2, 3)  //[1,2,3]
+
+  let bindedFoo = bindFoo.bind(undefined, '预先绑定的参数')
+  bindedFoo()    //[“预先绑定的参数”]
+  bindedFoo(1, 2, 3)   //[“预先绑定的参数”,1,2,3]
+
+  Function.prototype.myBind = function (context) {
+    if (typeof this !== 'function') {
+      throw new Error('Function.prototype.bind - what is trying to be bound is not callable.')
+    }
+
+    let self = this
+    //获取传入的从[1]开始的参数作为预设参数：
+    let args = Array.prototype.slice.call(arguments, 1)
+
+    let fBound = function () {
+      //2.这是预设参数之外传入的参数，即bind返回的新函数调用时传入的参数
+      let bindArgs = Array.prototype.slice.call(arguments)
+    /* “this instanceof self”用于判断是否用作构造函数。
+     * 因为在使用new时，绑定函数内的this值会被改成fBound，fBound是self（即originConstructor）的实例，
+     * 因为它来自于originConstructor.myBind(func, 'daisy')，通过Object.getPrototypeOf(this) === self.prototype，可以检测出来。
+     * 而没有使用new时，this则是Window，不是self的实例。
+     *
+     * 1.如果结果为true，用作了构造函数，那么原来绑定的this值要被忽略，构造函数中的this要指向实例fBound，用于构造新的实例。
+     * 此时在myApply内部最终会指向：context.fn(argArr[0],argArr[1])。
+     * 即fBound.originConstructor(argArr[0],argArr[1])。
+     *
+     * 2.如果结果为false，那么就是没有用作构造函数，用myApply把预先绑定的this传入即可。*/
+
+      self.myApply(this instanceof self ? this : context, args.concat(bindArgs))
+      // self.myApply(context,args.concat(bindArgs))
+    }
+    //new构造出一个实例的时候，也会继承原来构造函数的原型
+    /*如果只是fBound.prototype = this.prototype，当我们直接修改fBound.prototype的时候，
+     也会一并顺带修改绑定函数的prototype，这不是我们想要的结果。
+     这个时候，我们可以通过一个空函数来进行中转：*/
+    let fEmpty = function () {}
+    fEmpty.prototype = this.prototype
+    fBound.prototype = new fEmpty()
+
+    return fBound
+  }
+
+  let egObj = {
+    value: 1
+  }
+
+  function originConstructor (name, age) {
+    this.habit = 'shopping'
+    console.log(this.value)
+    console.log(name)
+    console.log(age)
+  }
+
+  originConstructor.prototype.friend = 'kevin'
+
+  let fBound = originConstructor.myBind(egObj, 'daisy')
+
+  let bindObj = new fBound('18')
+  let bindVar = fBound('18')
+
+  console.log(bindObj.habit)
+  console.log(bindObj.friend)
+
+  console.log('MDN：警告 :这部分演示了 JavaScript 的能力并且记录了 bind() 的超前用法。以下展示的方法并不是最佳的解决方案且可能不应该用在任何生产环境中。')
+</script>
+</body>
+</html>

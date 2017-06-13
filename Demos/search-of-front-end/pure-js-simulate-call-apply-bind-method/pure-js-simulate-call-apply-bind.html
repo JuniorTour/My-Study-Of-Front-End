@@ -115,10 +115,10 @@
             //2.这是预设参数之外传入的参数，即bind返回的新函数调用时传入的参数
             var bindArgs=Array.prototype.slice.call(arguments);
             /* this instanceof self用于判断是否用作构造函数。
-             * 因为在使用new时，绑定函数内的this值会被改成fBound，fBound是self（即originConstructor）的实例。
+             * 因为在使用new时，绑定函数内的this值会被改成新的实例-fBound，fBound是self（即originConstructor）的实例。
              * 而没有使用new时，this则是Window。
-             * 如果结果为true，那么原来绑定的this值要被忽略，应该将构造函数中的this指向实例，用于构造新的实例。
-             * 如果结果为false，那么就是没有用作构造函数，用apply即可。*/
+             * 如果结果为true，用作构造函数，那么原来绑定的this值要被忽略，应该将构造函数中的this指向实例，用于构造新的实例。
+             * 如果结果为false，没有用作构造函数，用apply即可。*/
             self.myApply(this instanceof self ? this : context, args.concat(bindArgs));
             //详细原理见：https://segmentfault.com/a/1190000009286643，《JavaScript深入之new的模拟实现》
 //            self.myApply(context,args.concat(bindArgs));
