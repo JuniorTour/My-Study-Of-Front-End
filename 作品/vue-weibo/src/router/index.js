@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-//引入主要页面。@'的设置，见build/webpack.base.conf.js
+//引入主要页面。'@'的路径设置，见build/webpack.base.conf.js
 import Login from '@/pages/Login/Login.vue'
 import Home from '@/pages/Home/Home.vue'
 import Message from '@/pages/Message/Message.vue'

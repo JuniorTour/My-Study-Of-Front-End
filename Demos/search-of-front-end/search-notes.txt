@@ -1,4 +1,4 @@
-1.
+﻿1.
         .carousel-wrapper {
             overflow: visible;
             width:25%;
@@ -56,3 +56,11 @@
             **/
 
 5.line-height的百分比值相对于自身的font-size值
+
+6.border-radius: 0 0 50% 50%;
+等价于：
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+注意，是上左、上右、下左和下右。

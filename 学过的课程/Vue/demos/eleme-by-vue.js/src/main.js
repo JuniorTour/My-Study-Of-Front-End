@@ -24,7 +24,7 @@ router.map({
   '/': {
     component: goods
   },
-  '/goods': {
+  '/goods': {·
     component: goods
   },
   '/ratings': {
