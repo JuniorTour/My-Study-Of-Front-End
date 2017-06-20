@@ -64,3 +64,7 @@
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
 注意，是上左、上右、下左和下右。
+
+7.对于三个值的margin：
+Three values apply first to top, second to left and right and third to bottom.
+这三个值分别应用于：上，左和右，下。

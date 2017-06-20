@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4.flex:1</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .wrapper {
+            flex: 1;
+            /*flex: auto;*/
+            /*auto就等于1，计算之后均是：
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: auto;*/
+        }
+        footer {
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <span>Header</span>
+    </header>
+    <main>
+        <p>我是内容</p>
+    </main>
+</div>
+
+<footer>
+    <span>Fotter</span>
+</footer>
+</body>
+</html>

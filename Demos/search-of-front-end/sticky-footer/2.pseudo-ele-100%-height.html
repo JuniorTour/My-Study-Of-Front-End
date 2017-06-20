@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.pseudo-ele-100%-height</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        html,body {
+            height: 100%;
+            width:100%;
+        }
+        .wrapper {
+            height: auto !important;
+            height: 100%;
+            min-height: 100%;
+            margin-bottom: -80px;   /*负外边距将footer吸上来。*/
+        }
+        .wrapper:after {
+            /*用伪元素替代内边距*/
+            content: '';
+            display: block;
+            height: 80px;
+        }
+        footer {
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <span>Header</span>
+    </header>
+    <main>
+        <p>我是内容</p>
+    </main>
+</div>
+
+<footer>
+    <span>Fotter</span>
+</footer>
+</body>
+</html>

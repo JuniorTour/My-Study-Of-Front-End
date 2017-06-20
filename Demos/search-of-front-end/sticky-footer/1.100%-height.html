@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1.100%height</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        html,body {
+            height: 100%;
+            width:100%;
+        }
+        .wrapper {
+            height: auto !important;
+            height: 100%;
+            min-height: 100%;
+            padding-bottom: 80px;   /*内边距避免内容过多时，与footer重叠。*/
+            margin-bottom: -80px;   /*负外边距将footer吸上来。*/
+            box-sizing: border-box; /*使100%height包括内边距。*/
+        }
+        footer {
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <span>Header</span>
+    </header>
+    <main>
+        <p>我是内容</p>
+        <a href="https://segmentfault.com/a/1190000009810138">https://segmentfault.com/a/1190000009810138</a>
+    </main>
+</div>
+
+<footer>
+    <span>Fotter</span>
+</footer>
+</body>
+</html>

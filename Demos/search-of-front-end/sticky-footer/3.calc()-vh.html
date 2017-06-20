@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3.calc()-vh</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .wrapper {
+            min-height: calc(100vh - 80px);
+            /*vh是视口高度的1/100。
+                vm...宽度的...
+
+                +和-运算符的两边必须始终要有空白符，*和/运算符不需要空白符，但考虑到统一性，仍然推荐加上空白符。*/
+        }
+        footer {
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <span>Header</span>
+    </header>
+    <main>
+        <p>我是内容</p>
+    </main>
+</div>
+
+<footer>
+    <span>Fotter</span>
+</footer>
+</body>
+</html>

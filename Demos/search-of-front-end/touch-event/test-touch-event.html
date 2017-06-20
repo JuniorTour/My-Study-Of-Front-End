@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test-touch-event</title>
+    <style>
+        .container {
+            width:100%;
+            height: 500px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+<div class="container">Container</div>
+
+<script>
+    let container=document.querySelector('.container')
+
+    container.addEventListener('touchstart',e=>{
+        console.log('container was touched.')
+        console.log(e)
+    })
+    container.addEventListener('touchmove',e=>{
+        console.log('touch MOVE')
+        console.log(e)
+    })
+    container.addEventListener('touchend',e=>{
+        console.log('touch END')
+        console.log(e)
+    })
+    container.addEventListener('touchleave',e=>{
+        console.log('touch LEAVE')
+        //似乎无效？
+        console.log(e)
+    })
+    container.addEventListener('touchcancel',e=>{
+        console.log('touch CANCEL')
+        //似乎无效？
+        console.log(e)
+    })
+</script>
+</body>
+</html>

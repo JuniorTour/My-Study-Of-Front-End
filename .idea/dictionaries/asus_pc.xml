@@ -42,6 +42,10 @@
       <w>timeupdate</w>
       <w>tmall</w>
       <w>todos</w>
+      <w>touchend</w>
+      <w>touchleave</w>
+      <w>touchmove</w>
+      <w>touchstart</w>
       <w>unpkg</w>
       <w>webp</w>
       <w>weibo</w>

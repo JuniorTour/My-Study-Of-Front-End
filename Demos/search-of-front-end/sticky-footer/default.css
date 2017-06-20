@@ -1,0 +1,15 @@
+*{
+  padding:0;
+  margin: 0;
+}
+header{
+  line-height: 80px;
+}
+header,footer{
+  background-color: #ccc;
+  text-align: center;
+}
+main{
+  text-align: center;
+  font-size: 30px;
+}
