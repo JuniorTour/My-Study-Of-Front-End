@@ -1,5 +1,6 @@
-﻿1.
-        .carousel-wrapper {
+﻿1. 绝对定位的百分比值：
+``` css
+   .carousel-wrapper {
             overflow: visible;
             width:25%;
             height:50%;
@@ -18,12 +19,12 @@
             100%-80%-10%=10%也是10%，故居中。*/
             left: 0;
         }
-
-2.Chrome的styles面板可以很方便的可视化的添加text-shadow、box-shadow等特效。
+```
+2. Chrome的styles面板可以很方便的可视化的添加text-shadow、box-shadow等特效。
 只需要点击每一个声明块右下角的三个点图标即可！
 
-3.属性选择器通过已经存在的属性名或属性值匹配元素。
-
+3. 属性选择器通过已经存在的属性名或属性值匹配元素。
+``` css
   [attr]
   表示带有以 attr 命名的属性的元素。
   [attr=value]
@@ -40,9 +41,8 @@
   表示带有以 attr 命名的，且值包含有"value"的属性的元素。
   [attr operator value i]
   在带有属性值的属性选型选择器表达式的右括号（]括号）前添加用空格间隔开的字母i（或I）可以忽略属性值的大小写（ASCII字符范围内的字母）
-
-4.for in 和 for of
-
+```
+4. for in 和 for of
             /*
             * for...in循环将迭代对象的所有可枚举属性和从它的构造函数的 prototype 继承而来的属性，即是说for in会把prototype
             * 上的属性也迭代到。
@@ -55,9 +55,9 @@
             * https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in
             **/
 
-5.line-height的百分比值相对于自身的font-size值
+5. line-height的百分比值相对于自身的font-size值
 
-6.border-radius: 0 0 50% 50%;
+6. border-radius: 0 0 50% 50%;
 等价于：
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -65,6 +65,34 @@
     border-bottom-left-radius: 50%;
 注意，是上左、上右、下左和下右。
 
-7.对于三个值的margin：
+7. 对于三个值的margin：
 Three values apply first to top, second to left and right and third to bottom.
 这三个值分别应用于：上，左和右，下。
+
+8. rem 技术方案
+所有元素的尺寸大小，边距，行高 等于都是用了rem 相对宽度来表达
+整个页面的宽度是 10rem 1rem就等于屏幕宽度十分之一，这样就为不同移动设备页面开发带来了方便的**等比缩放**能力。所有元素的大小设定都使用针对html标签的 font-size 比例来计算。
+
+1rem=html font-size =screen width /10 = 屏幕宽度/10
+
+[使用Flexible实现手淘H5页面的终端适配 - amfe/article](https://github.com/amfe/article/issues/17)
+
+#### 我的理解：
+> 例如，为了适配device-pixel-ratio = 2 的 retina **高清**屏幕，令设计稿宽750px。
+
+类似于栅格系统，我们把屏幕分为10份，作为等比例缩放的参照标准。
+
+对于iphone 6，其**设备独立像素**宽度为375pt * 667pt，而其dpr为2，根据公式，我们可以得知其**物理像素**为750pt * 1334pt。
+将html元素的font-size设置为750px/10 = 75px，也即1rem=75px，则整个屏幕宽度为10rem。
+此时，使用 1 rem 作为单位就是页面的1/10宽。
+
+在不同的屏幕上，CSS像素所呈现的物理尺寸是一致的，而不同的是CSS像素所对应的物理像素具数是不一致的。
+在普通屏幕下1个CSS像素对应1个物理像素，而在Retina屏幕下，1个CSS像素对应的却是4个物理像素。
+
+但是为了适配其他机型，让其他机型都是1 rem = 页面的1/10宽，就需要**动态设置html的font-size**。
+
+比如，对于iphone 5，其**设备独立像素**宽度为320px，其**物理像素**为750pt * 1334pt。
+将html元素的font-size设置为640px/10 = 64px，则整个屏幕宽度为10rem。
+此时， 1 rem 就还是页面的1/10宽。
+
+这样虽然屏幕的大小变化了，但是相应的布局的比例仍保持不变，该是1rem即1/10页面宽的元素，还是保持1/10的页面宽度，实现了我们想要的不同设备的一致显示效果。

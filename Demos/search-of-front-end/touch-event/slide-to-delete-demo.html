@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>slide-to-delete-demo</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            border: 1px solid #000;
+            width: 20rem;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .container li {
+            list-style: none;
+            width: 20rem;
+            height: 3rem;
+            font-size: 2em;
+            background-color: #c7254e;
+            border-bottom: 1px solid #FFFF66;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <ul>
+        <li>content1</li>
+        <li>content2</li>
+        <li>content3</li>
+    </ul>
+</div>
+
+<script>
+    let log=function (content) {
+        console.log(content)
+    }
+
+    let lists=document.querySelectorAll('.container li')
+    let demoLi=lists[0]
+
+    function startup() {
+        demoLi.addEventListener("touchstart", handleStart, false);
+//        demoLi.addEventListener("touchend", handleEnd, false);
+        demoLi.addEventListener("touchmove", handleMove, false);
+        log("Initialized.")
+    }
+    startup()
+
+    let ongoingTouches=new Array()
+
+    function handleStart(evt) {
+//        let touches = evt.changedTouches;   //从事件的TouchEvent.changedTouches 属性中拿到改变中的触摸点列表.
+        log('START evt:')
+//        log(touches)
+
+        /*一个疑问在于，据我观察，evt.changedTouches永远都只是一个只有一个元素的array，为什么需要遍历呢？？？*/
+        ongoingTouches.push(evt.changedTouches[0]);
+    }
+
+    function handleMove(evt) {
+        let currentTouch=evt.changedTouches[0]
+        log('move evt:')
+//        log(touches)
+
+        //判断是否向左滑动了：
+        if (currentTouch.pageX-ongoingTouches[0].pageX<=0) {
+            log('向左滑动了!')
+            /*实现了！*/
+            currentTouch.target.style.color='blue'
+        }
+
+//        ongoingTouches.push(evt.changedTouches[0]);
+//        ongoingTouches.splice(idx, 1, currentTouch);
+    }
+</script>
+</body>
+</html>
