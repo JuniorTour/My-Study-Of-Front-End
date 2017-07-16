@@ -11,70 +11,190 @@
 
         .container {
             border: 1px solid #000;
-            width: 20rem;
+            width: 30rem;
             overflow: hidden;
             margin: 0 auto;
         }
         .container li {
             list-style: none;
-            width: 20rem;
-            height: 3rem;
-            font-size: 2em;
+            font-size: 5em;
+            /*background-color: #48fb48;*/
+            width: 30rem;
+            height: 40rem;
+            border-bottom: 5px solid #FFFF66;
+            position: relative;
+        }
+
+        .behind {
+            width:100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .behind a {
+            float: left;
+        }
+        .btn {
+            width:100%;
+            height: 100%;
+        }
+        .btn-delete {
             background-color: #c7254e;
-            border-bottom: 1px solid #FFFF66;
+        }
+        .item-content {
+            width:100%;
+            height: 100%;
+            position: relative;
+            background-color: #fff;
+            transition: transform .2s linear;
         }
     </style>
 </head>
 <body>
 <div class="container">
     <ul>
-        <li>content1</li>
-        <li>content2</li>
-        <li>content3</li>
+        <li>
+            <div class="behind">
+                <a class="btn btn-delete">Delete</a>
+            </div>
+            <p class="item-content">item-content-1</p>
+            <!--这样的HTML顺序也有讲究，后面的item-content是relative，和前面absolute的behind是同级的，
+            但因为HTML的顺序，item-content就会覆盖住behind。-->
+        </li>
+        <li>
+            <div class="behind">
+                <a class="btn btn-delete">Delete</a>
+            </div>
+            <p class="item-content">item-content-2</p>
+            <!--这样的HTML顺序也有讲究，后面的item-content是relative，和前面absolute的behind是同级的，
+            但因为HTML的顺序，item-content就会覆盖住behind。-->
+        </li>
+        <li>
+            <div class="behind">
+                <a class="btn btn-delete">Delete</a>
+            </div>
+            <p class="item-content">item-content-3</p>
+            <!--这样的HTML顺序也有讲究，后面的item-content是relative，和前面absolute的behind是同级的，
+            但因为HTML的顺序，item-content就会覆盖住behind。-->
+        </li>
     </ul>
 </div>
 
 <script>
+    /*To-do:
+    * 1. 重构结构，如this.pageX和touch.pageX，模仿vux。
+    * 2. 还原位置功能。
+    * 3. 精确区分上下滚动和左右滑动，参考vux。
+    * 4.支持PC鼠标事件，参考vux，注意相互的触发顺序。
+    *       touchstart > mouseover > mousemove > mousedown > mouseup > click > touchend
+    *
+    * 参考资料：
+    * https://developer.mozilla.org/zh-CN/docs/Web/API/Touch_events
+    * https://vux.li/demos/v2/#/component/swipeout
+    * https://github.com/airyland/vux/blob/v2/src/components/swipeout/swipeout-item.vue
+    * https://github.com/ksloan/jquery-mobile-swipe-list*/
     let log=function (content) {
         console.log(content)
     }
 
-    let lists=document.querySelectorAll('.container li')
-    let demoLi=lists[0]
+    let touchStatus={
+        isOpen:false,
+        startPageX:undefined,
+        startPageY:undefined,
+        touchedPageX:undefined,
+        touchedPageY:undefined,
+        distX:undefined,
+        distY:undefined,
+        menuWidth:100
+    }
+    let demoItem=document.querySelectorAll('.container li p')[1]
+    let itemContent=document.querySelectorAll('.item-content')[1]
+    let deleteBtn=document.querySelectorAll('.btn-delete')[1]
 
     function startup() {
-        demoLi.addEventListener("touchstart", handleStart, false);
-//        demoLi.addEventListener("touchend", handleEnd, false);
-        demoLi.addEventListener("touchmove", handleMove, false);
+        demoItem.addEventListener("touchstart", handleStart, false);
+        demoItem.addEventListener("touchmove", handleMove, false);
+//        demoItem.addEventListener("touchend", handleEnd, false);
+
+        //应对点击事件
+        demoItem.addEventListener("mousedown", handleStart, false);
+        demoItem.addEventListener("mouseup", handleMove, false);
+
+        itemContent.addEventListener("mousedown", resetItem, false)
+
+        deleteBtn.addEventListener('mousedown',deleteItem,false)
+
         log("Initialized.")
     }
     startup()
 
-    let ongoingTouches=new Array()
+    function handleStart(ev) {
+        if (touchStatus.isOpen) {
+//            ev.preventDefault()
+            return
+        }
+        const currentTouch = ev.touches ? ev.touches[0] : ev
+        log('START ev:')
+        log(ev)
 
-    function handleStart(evt) {
-//        let touches = evt.changedTouches;   //从事件的TouchEvent.changedTouches 属性中拿到改变中的触摸点列表.
-        log('START evt:')
-//        log(touches)
-
-        /*一个疑问在于，据我观察，evt.changedTouches永远都只是一个只有一个元素的array，为什么需要遍历呢？？？*/
-        ongoingTouches.push(evt.changedTouches[0]);
+        touchStatus.startPageX=currentTouch.pageX
+        touchStatus.startPageY=currentTouch.pageY
     }
 
-    function handleMove(evt) {
-        let currentTouch=evt.changedTouches[0]
-        log('move evt:')
-//        log(touches)
+    function handleMove(ev) {
+        if (touchStatus.startPageX===undefined) {
+            ev.preventDefault()
+            return
+        }
+        const currentTouch = ev.touches ? ev.touches[0] : ev
+        log('move ev:')
+        log(ev)
+
+        touchStatus.touchedPageX=currentTouch.pageX
+        touchStatus.touchedPageY=currentTouch.pageY
+        touchStatus.distX=touchStatus.touchedPageX-touchStatus.startPageX
+        touchStatus.distY=touchStatus.touchedPageY-touchStatus.startPageY
 
         //判断是否向左滑动了：
-        if (currentTouch.pageX-ongoingTouches[0].pageX<=0) {
+        if (touchStatus.distX<0&&(Math.abs(touchStatus.distY)<=30)) {
             log('向左滑动了!')
-            /*实现了！*/
-            currentTouch.target.style.color='blue'
+            /*实现了！注意“误触问题”，当向下滑动页面，手指向右上方移动时，也会触发！*/
+            if (touchStatus.distX<touchStatus.menuWidth) {
+                currentTouch.target.style.transform='translate3d('+touchStatus.distX+'px, 0, 0)'     /*用translate3d似乎可以利用上硬件加速。*/
+            } else {
+                currentTouch.target.style.transform='translate3d('+-touchStatus.menuWidth+'px, 0, 0)'
+            }
+            touchStatus.isOpen=true
+            ev.preventDefault()
+        }
+    }
+    
+    function resetItem(ev) {
+        if (demoItem.style.transform.indexOf('(0, 0, 0)')===-1) {
+            //没有不需要还原的项目，即有需要还原的项目：
+            demoItem.style.transform='translate3d(0, 0, 0)'
+            touchStatus.isOpen=false
+            touchStatus.touchedPageX=undefined
+            touchStatus.touchedPageY=undefined
+            touchStatus.startPageX=undefined
+            touchStatus.startPageY=undefined
         }
 
-//        ongoingTouches.push(evt.changedTouches[0]);
-//        ongoingTouches.splice(idx, 1, currentTouch);
+//        ev.preventDefault()
+    }
+    
+    function deleteItem() {
+//        demoItem.outerHTML=''
+        removeSelf(demoItem)
+    }
+
+    function removeSelf(target) {
+        /*《高程设》P404，移除事件处理程序以提高性能；
+        * 或者应该提前选择**事件代理**！*/
+        target.removeEventListener('touchstart',handleStart,false)
+        target.removeEventListener('touchmove', handleMove,false)
+        target.parentNode.parentNode.removeChild(target.parentNode)
     }
 </script>
 </body>

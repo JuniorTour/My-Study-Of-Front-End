@@ -13,35 +13,10 @@
  * 6.add key board support.
  */
 
-var EventUtil={
-    addHandler:function (el,type,handler) {
-        if (el.addEventListener) {
-            el.addEventListener(type,handler,false);
-        } else if (el.attachEvent) {
-            el.attachEvent('on'+type,handler);
-        } else {
-            el['on'+type]=handler;
-        }
-    },
-    removeHandler: function(el,type,handler) {
-        if (el.removeEventListener) {
-            el.removeEventListener(type,handler);
-        } else if (el.detachEvent) {
-            el.detachEvent(type,handler);
-        } else {
-            el['on'+type]=null;
-        }
-    },
-    getEvent: function (event) {
-        return event?event:window.event;
-    },
-    getTarget:function (event) {
-        return event.target||event.srcElement;
-    }
-};
 
 var Public={
     addOnloadEvent:function (func) {
+        /*这个函数在ff上有bug，有时会无效？？？*/
         var oldOnload=window.onload;
         if (typeof oldOnload!='function') {
             window.onload=func;
@@ -85,6 +60,33 @@ var Public={
             offsetLeft+=el.offsetLeft;
         }
         return offsetLeft;
+    }
+};
+
+var EventUtil={
+    addHandler:function (el,type,handler) {
+        if (el.addEventListener) {
+            el.addEventListener(type,handler,false);
+        } else if (el.attachEvent) {
+            el.attachEvent('on'+type,handler);
+        } else {
+            el['on'+type]=handler;
+        }
+    },
+    removeHandler: function(el,type,handler) {
+        if (el.removeEventListener) {
+            el.removeEventListener(type,handler);
+        } else if (el.detachEvent) {
+            el.detachEvent(type,handler);
+        } else {
+            el['on'+type]=null;
+        }
+    },
+    getEvent: function (event) {
+        return event?event:window.event;
+    },
+    getTarget:function (event) {
+        return event.target||event.srcElement;
     }
 };
 
@@ -133,9 +135,12 @@ var playListObj={
     //],
     /*Take the load speed into consideration,use the following src instead of local src.*/
     songSrc:[
-        'http://link.hhtjim.com/163/28921897.mp3',
-        'http://link.hhtjim.com/163/5266635.mp3',
-        'http://link.hhtjim.com/163/472006515.mp3'
+        //清平乐，网易云：http://music.163.com/#/song?id=28921897
+        'http://music.163.com/song/media/outer/url?id=28921897.mp3',
+        //喜洋洋(民乐合奏)，http://music.163.com/#/song?id=5266635
+        'http://music.163.com/song/media/outer/url?id=5266635.mp3',
+        //10《乐·花海》，网易云：http://music.163.com/#/song?id=472006515
+        'http://music.163.com/song/media/outer/url?id=472006515.mp3',
     ],
     albumCoverSrc:[
         'img/album-cover/cover-1.jpg',
@@ -195,7 +200,10 @@ function initiatePlay() {
     EventUtil.addHandler(volumeBarWrapper,'click',volumeBarControlFunc);
 }
 
-Public.addOnloadEvent(initiatePlay);
+/*这个函数在ff上有bug，有时会无效？？？*/
+// Public.addOnloadEvent(initiatePlay);
+
+initiatePlay()
 
 //暂停/开始按钮功能,pause/play btn func
 function pauseBtnFunc() {
@@ -279,8 +287,8 @@ function changeInfoFunc() {
     updateCurrentTime();
     var totalTime=document.querySelector('.total-time');
     totalTime.innerHTML=Public.parseTimeStr(audioPlayer.duration);
-    var coverImg=document.querySelector('.album-cover img');
-    coverImg.src=playListObj.albumCoverSrc[currentSongId];
+    var coverImg=document.querySelector('.album-cover');
+    coverImg.style.backgroundImage='url("'+playListObj.albumCoverSrc[currentSongId]+'")';
 }
 function updateCurrentTime() {
     var currentTime=document.querySelector('.current-time');
@@ -289,7 +297,7 @@ function updateCurrentTime() {
 
 //封面旋转动画控制功能,album-cover animation control function:
 function coverAnimationControlFunc(playState) {
-    var coverImg=document.querySelector('.album-cover img');
+    var coverImg=document.querySelector('.album-cover');
     coverImg.style.animationPlayState=playState;
 }
 function resetCoverAnimation () {

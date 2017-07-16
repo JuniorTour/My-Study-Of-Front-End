@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="245d3670-3895-4aed-8406-06a940ee5abe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demos/search-of-front-end/touch-event/mdn-touch-canvas.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demos/search-of-front-end/touch-event/slide-to-delete-demo.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Demos/search-of-front-end/search-notes.txt" afterPath="$PROJECT_DIR$/Demos/search-of-front-end/search-notes.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demos/search-of-front-end/basic-sort-algorithm/basic-algorithm-summary.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demos/search-of-front-end/basic-sort-algorithm/basic-sort-algorithm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demos/search-of-front-end/basic-sort-algorithm/basic-sort-algorithm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/audio-player/img/album-cover/cover-1.jpg" afterPath="$PROJECT_DIR$/作品/audio-player/img/album-cover/cover-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/audio-player/img/album-cover/cover-2.jpg" afterPath="$PROJECT_DIR$/作品/audio-player/img/album-cover/cover-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/audio-player/img/album-cover/cover-3.jpg" afterPath="$PROJECT_DIR$/作品/audio-player/img/album-cover/cover-3.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/asus_pc.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/asus_pc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demos/search-of-front-end/event-delegation.html" afterPath="$PROJECT_DIR$/Demos/search-of-front-end/event-delegation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demos/search-of-front-end/search-notes.md" afterPath="$PROJECT_DIR$/Demos/search-of-front-end/search-notes.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demos/search-of-front-end/touch-event/slide-to-delete-demo.html" afterPath="$PROJECT_DIR$/Demos/search-of-front-end/touch-event/slide-to-delete-demo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demos/search-of-front-end/touch-event/test-touch-event.html" afterPath="$PROJECT_DIR$/Demos/search-of-front-end/touch-event/test-touch-event.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/audio-player/css/audio-player.css" afterPath="$PROJECT_DIR$/作品/audio-player/css/audio-player.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/audio-player/index.html" afterPath="$PROJECT_DIR$/作品/audio-player/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作品/audio-player/js/main-control.js" afterPath="$PROJECT_DIR$/作品/audio-player/js/main-control.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/js/address.js" afterPath="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/js/address.js" />
     </list>
     <ignored path="Web前端.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,80 +36,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/App.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-              <folding>
-                <element signature="e#140#161#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/components/header/header.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="45" column="14" lean-forward="false" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="search-notes.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/search-notes.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <first_editor relative-caret-position="1428">
+                <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
                 <folding />
               </first_editor>
               <second_editor>
-                <js_state />
+                <js_state>
+                  <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:2222}" />
+                </js_state>
               </second_editor>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test-touch-event.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/touch-event/test-touch-event.html">
+      <file leaf-file-name="basic-sort-algorithm.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/basic-sort-algorithm/basic-sort-algorithm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="827">
-              <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mdn-touch-canvas.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/touch-event/mdn-touch-canvas.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="72" column="25" lean-forward="true" selection-start-line="72" selection-start-column="25" selection-end-line="73" selection-end-column="56" />
+            <state relative-caret-position="34">
+              <caret line="205" column="5" lean-forward="false" selection-start-line="205" selection-start-column="5" selection-end-line="205" selection-end-column="5" />
               <folding>
-                <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#184#579#0" expanded="false" />
+                <element signature="e#605#1044#0" expanded="false" />
+                <element signature="e#1072#1467#0" expanded="false" />
+                <element signature="e#1496#2021#0" expanded="false" />
+                <element signature="e#2052#2528#0" expanded="false" />
+                <element signature="e#2557#3004#0" expanded="false" />
+                <element signature="e#3036#3395#0" expanded="false" />
+                <element signature="e#3420#4029#0" expanded="false" />
+                <element signature="e#4056#4627#0" expanded="false" />
+                <element signature="e#4652#4992#0" expanded="false" />
+                <element signature="e#5021#5489#0" expanded="false" />
+                <element signature="e#5991#6339#0" expanded="false" />
+                <element signature="e#6494#6867#0" expanded="false" />
+                <element signature="e#6909#7116#0" expanded="false" />
+                <element signature="e#7202#7342#0" expanded="false" />
+                <element signature="e#7373#7775#0" expanded="false" />
+                <element signature="e#7804#7997#0" expanded="false" />
+                <element signature="e#8029#8449#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slide-to-delete-demo.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/touch-event/slide-to-delete-demo.html">
+      <file leaf-file-name="active-data-binding-1.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/Active-Data-Binding/active-data-binding-1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="-272">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emulate-new-operator.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/emulate-new-operator.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -115,53 +111,47 @@
         <option value="txt" />
         <option value="CSS File" />
         <option value="Vue File" />
-        <option value="Mark Down" />
         <option value="Stylus File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Mark Down" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.carousel-wrapper</find>
-      <find>默认不</find>
-      <find>5%</find>
-      <find>bottom</find>
-      <find>100px</find>
-      <find>1%</find>
-      <find>build</find>
-      <find>定位</find>
-      <find>500</find>
-      <find>index-btn</find>
-      <find>#app</find>
-      <find>css</find>
-      <find>stylus</find>
-      <find>final</find>
-      <find>@</find>
-      <find>icon</find>
-      <find>styl</find>
-      <find>url</find>
-      <find>font/</find>
-      <find>transitionName</find>
-      <find>port</find>
-      <find>/js</find>
-      <find>loop</find>
-      <find>0.3</find>
-      <find>0.1</find>
-      <find>v-</find>
-      <find>slide-left</find>
-      <find>slide-right</find>
-      <find>el</find>
-      <find>;</find>
+      <find>audio</find>
+      <find>-panle</find>
+      <find>albumCoverSrc</find>
+      <find>15%</find>
+      <find>.src</find>
+      <find>.album-cover-wrapper</find>
+      <find>left:</find>
+      <find>248</find>
+      <find>song-info</find>
+      <find />
+      <find>&amp;nbsp</find>
+      <find>var</find>
+      <find>j</find>
+      <find>temp</find>
+      <find>selection</find>
+      <find>self-comment</find>
+      <find>part-title</find>
+      <find>链接：</find>
+      <find>Node</find>
+      <find>960p</find>
+      <find>用过</find>
+      <find>Vue</find>
+      <find>.foot</find>
+      <find>95</find>
+      <find>info</find>
+      <find>basci-indor</find>
+      <find>basic-infor</find>
+      <find>outline</find>
+      <find>20px</find>
+      <find>h1</find>
     </findStrings>
     <replaceStrings>
-      <replace>::</replace>
-      <replace>let</replace>
-      <replace>#</replace>
-      <replace>png</replace>
-      <replace>syntax</replace>
-      <replace>#### **</replace>
       <replace>randomInt</replace>
       <replace>randomIn</replace>
       <replace>'</replace>
@@ -179,6 +169,19 @@
       <replace>slide-to-left</replace>
       <replace>slide-to-right</replace>
       <replace>demoLi</replace>
+      <replace>demoContent</replace>
+      <replace>demoItem</replace>
+      <replace>ev</replace>
+      <replace>undefined</replace>
+      <replace>80%</replace>
+      <replace>%20</replace>
+      <replace>let</replace>
+      <replace>k</replace>
+      <replace>currentTarget</replace>
+      <replace>content-block</replace>
+      <replace>section-title</replace>
+      <replace>basic-infor</replace>
+      <replace>basic-info</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -188,19 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Demos/my-components/standard-js-carousel/carousel-step-1.html" />
-        <option value="$PROJECT_DIR$/Demos/my-components/standard-js-carousel/carousel-step-2.html" />
-        <option value="$PROJECT_DIR$/Demos/my-components/standard-js-carousel/carousel-step-3.html" />
-        <option value="$PROJECT_DIR$/Demos/my-components/standard-js-carousel/standard-js-carousel-v2.html" />
-        <option value="$PROJECT_DIR$/Demos/my-components/standard-js-carousel/carousel-step-4.html" />
-        <option value="$PROJECT_DIR$/学过的课程/vue-guide/demos/whack-a-mole-game-vue/whack-a-mole-game-vue.html" />
-        <option value="$PROJECT_DIR$/Demos/my-components/standard-js-carousel/loop-demonstartion.html" />
-        <option value="$PROJECT_DIR$/学过的课程/firstVue/src/components/list.vue" />
-        <option value="$PROJECT_DIR$/学过的课程/firstVue/src/pages/detail.vue" />
-        <option value="$PROJECT_DIR$/学过的课程/firstVue/src/main.js" />
-        <option value="$PROJECT_DIR$/作品/vue-weibo/src/components/home/home.vue" />
-        <option value="$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/index.html" />
-        <option value="$PROJECT_DIR$/作品/vue-weibo/.eslintrc.js" />
         <option value="$PROJECT_DIR$/作品/vue-weibo/src/pages/Me/Me.vue" />
         <option value="$PROJECT_DIR$/作品/vue-weibo/src/pages/Home/Home.vue" />
         <option value="$PROJECT_DIR$/学过的课程/Vue/demos/whack-a-mole-game-vue/whack-a-mole-game-vue.html" />
@@ -233,12 +223,25 @@
         <option value="$PROJECT_DIR$/Demos/search-of-front-end/sticky-footer/2.pseudo-ele-100%-height.html" />
         <option value="$PROJECT_DIR$/Demos/search-of-front-end/sticky-footer/4.flex.html" />
         <option value="$PROJECT_DIR$/Demos/search-of-front-end/sticky-footer/foo.js" />
-        <option value="$PROJECT_DIR$/Demos/search-of-front-end/touch-event/test-touch-event.html" />
         <option value="$PROJECT_DIR$/Demos/search-of-front-end/search-notes.txt" />
-        <option value="$PROJECT_DIR$/Demos/search-of-front-end/search-notes.md" />
         <option value="$PROJECT_DIR$/Demos/search-of-front-end/event-delegation.html" />
         <option value="$PROJECT_DIR$/Demos/search-of-front-end/touch-event/mdn-touch-canvas.html" />
+        <option value="$PROJECT_DIR$/Demos/search-of-front-end/touch-event/test-touch-event.html" />
+        <option value="$PROJECT_DIR$/Demos/search-of-front-end/mark-of-my-study-of-music-and-bamboo-flute.md" />
+        <option value="$PROJECT_DIR$/../../mark-of-my-study-of-music-and-bamboo-flute.md" />
+        <option value="$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/js/address.js" />
         <option value="$PROJECT_DIR$/Demos/search-of-front-end/touch-event/slide-to-delete-demo.html" />
+        <option value="$PROJECT_DIR$/Demos/job/juniortour-portfolio.html" />
+        <option value="$PROJECT_DIR$/作品/audio-player/index.html" />
+        <option value="$PROJECT_DIR$/作品/audio-player/js/main-control.js" />
+        <option value="$PROJECT_DIR$/作品/audio-player/css/audio-player.css" />
+        <option value="$PROJECT_DIR$/译文/HTML5 W3C Recommendation 28 October 2014/html-5-recommendation-translation.md" />
+        <option value="$PROJECT_DIR$/../../translation-a-new-micro-clearfix-hack.md" />
+        <option value="$PROJECT_DIR$/Demos/search-of-front-end/search-notes.md" />
+        <option value="$PROJECT_DIR$/Demos/search-of-front-end/basic-sort-algorithm/basic-sort-algorithm.js" />
+        <option value="$PROJECT_DIR$/Demos/search-of-front-end/basic-sort-algorithm/basic-sort-algorithm.html" />
+        <option value="$PROJECT_DIR$/Demos/search-of-front-end/basic-sort-algorithm/basic-algorithm-summary.md" />
+        <option value="$PROJECT_DIR$/Demos/job/juniortour-resume.html" />
       </list>
     </option>
   </component>
@@ -419,7 +422,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="学过的课程" />
+              <option name="myItemId" value="作品" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -433,33 +436,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="学过的课程" />
+              <option name="myItemId" value="作品" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Vue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="My-Study-Of-Front-End" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="学过的课程" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Vue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demos" />
+              <option name="myItemId" value="audio-player" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -473,121 +454,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="学过的课程" />
+              <option name="myItemId" value="作品" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Vue" />
+              <option name="myItemId" value="audio-player" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eleme-by-vue.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="My-Study-Of-Front-End" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="学过的课程" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Vue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eleme-by-vue.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="My-Study-Of-Front-End" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="学过的课程" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Vue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eleme-by-vue.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="My-Study-Of-Front-End" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="学过的课程" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Vue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eleme-by-vue.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -619,29 +494,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="search-of-front-end" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web前端" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="My-Study-Of-Front-End" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="search-of-front-end" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="touch-event" />
+              <option name="myItemId" value="job" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -680,19 +533,19 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\作品\vue-weibo\src\assets" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\作品\vue-weibo\src\components\message" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\学过的课程\firstVue\static" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\学过的课程\firstVue\src\pages" />
-      <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\Demos\search-of-front-end\flex-layout'" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\作品\vue-weibo\src\assets\stylus" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\作品\vue-weibo\static" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\Demos\my-components\standard-js-carousel" />
       <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\学过的课程\firstVue\static" />
       <recent name="C:\Users\asus-pc\Desktop" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\作品\vue-weibo\src\assets" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\作品\vue-weibo\src\components\message" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\学过的课程\firstVue\static" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\学过的课程\firstVue\src\pages" />
+      <recent name="C:\Users\asus-pc\Desktop\Hello World\My-Study-Of-Front-End\Demos\search-of-front-end\flex-layout'" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -818,12 +671,22 @@
       <workItem from="1496578628492" duration="8326000" />
       <workItem from="1496924579472" duration="64000" />
       <workItem from="1497924629981" duration="12103000" />
-      <workItem from="1498100091891" duration="4479000" />
+      <workItem from="1498100091891" duration="11891000" />
+      <workItem from="1498229576088" duration="275000" />
+      <workItem from="1498311423976" duration="9721000" />
+      <workItem from="1498640360588" duration="1440000" />
+      <workItem from="1499175112924" duration="15413000" />
+      <workItem from="1499260500579" duration="13946000" />
+      <workItem from="1499311635448" duration="8000" />
+      <workItem from="1499764434179" duration="9240000" />
+      <workItem from="1499862052288" duration="1228000" />
+      <workItem from="1499872123322" duration="745000" />
+      <workItem from="1500191458243" duration="7627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135236000" />
+    <option name="totallyTimeSpent" value="202291000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -838,23 +701,23 @@
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14895834" sideWeight="0.4960452" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1484375" sideWeight="0.4960452" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32677597" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33934253" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13333334" sideWeight="0.5039548" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32440782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -905,185 +768,11 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="17" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/stylus/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/stylus/icon.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/build/webpack.base.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="60" column="18" lean-forward="false" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/build/dev-client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/config/prod.env.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/config/dev.env.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/build/dev-server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/src/pages/detail.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/src/pages/home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="6" column="106" lean-forward="false" selection-start-line="6" selection-start-column="106" selection-end-line="6" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../cyclic-carousel-by-standard-js-html-css.md" />
-    <entry file="file://$PROJECT_DIR$/Demos/my-components/standard-js-carousel/cyclic-carousel-by-standard-js-html-css.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="549">
-            <caret line="502" column="23" lean-forward="false" selection-start-line="502" selection-start-column="23" selection-end-line="502" selection-end-column="23" />
-          </first_editor>
-          <second_editor>
-            <js_state>
-              <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:224}" />
-            </js_state>
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="12" column="63" lean-forward="true" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="63" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Game/vue_tutorial/饿了吗代码/vue-sell-2.0/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/stylus/base.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/assets/stylus/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/assets/stylus/base.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/pages/Message/Message.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/pages/Discovery/Discovery.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/Summary-of-experience.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="306">
-            <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/firstVue/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="44" column="31" lean-forward="true" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/作品/vue-weibo/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
@@ -1107,13 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1145,16 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding>
-            <element signature="e#140#161#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/cart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1169,39 +841,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/assets/stylus/iconfont.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/sticky-footer/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/sticky-footer/1.100%-height.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="31" column="105" lean-forward="false" selection-start-line="31" selection-start-column="105" selection-end-line="31" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/sticky-footer/2.pseudo-ele-100%-height.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1226,25 +869,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/sticky-footer/4.flex.html">
+    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/stylus/mixin.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../个人网站/_posts备份/2017_5_19/_posts/shanbei-record-500-days.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="374">
+            <caret line="11" column="76" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="76" />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/mark-of-my-study-of-music-and-bamboo-flute.md" />
+    <entry file="file://$PROJECT_DIR$/../../mark-of-my-study-of-music-and-bamboo-flute.md" />
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/touch-event/mdn-touch-canvas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="72" column="25" lean-forward="false" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/看过的书/精通CSS（第2版）/Examples/roma/js/jquery-1.3.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="3092" column="0" lean-forward="false" selection-start-line="3092" selection-start-column="0" selection-end-line="3092" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/js/vue-resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="1403" column="0" lean-forward="false" selection-start-line="1403" selection-start-column="0" selection-end-line="1403" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/touch-event/slide-to-delete-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2652">
+          <caret line="92" column="67" lean-forward="false" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/shopping-cart-Vue.js/js/address.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/components/header/header.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
+        <state relative-caret-position="827">
           <caret line="45" column="14" lean-forward="false" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/学过的课程/Vue/demos/eleme-by-vue.js/src/common/stylus/mixin.styl">
+    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/vue-weibo/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/touch-event/test-touch-event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/audio-player/css/audio-player.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../个人网站/mark-of-my-study-of-music-and-bamboo-flute.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../个人网站/javascript-create-objective.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="34">
+            <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/译文/HTML5 W3C Recommendation 28 October 2014/html-5-recommendation-translation.md" />
+    <entry file="file://$PROJECT_DIR$/../../translation-a-new-micro-clearfix-hack.md" />
+    <entry file="file://$PROJECT_DIR$/Demos/job/juniortour-portfolio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="213" column="29" lean-forward="false" selection-start-line="213" selection-start-column="29" selection-end-line="213" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../个人网站/translation-a-new-micro-clearfix-hack.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="3" />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/basic-sort-algorithm/basic-algorithm-summary.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="3502">
+            <caret line="103" column="14" lean-forward="true" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
+          </first_editor>
+          <second_editor>
+            <js_state>
+              <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:2022}" />
+            </js_state>
+          </second_editor>
         </state>
       </provider>
     </entry>
@@ -1257,46 +1035,166 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <first_editor relative-caret-position="1428">
+            <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
             <folding />
           </first_editor>
           <second_editor>
-            <js_state />
+            <js_state>
+              <onLoadScroll type="JSON" value="{&quot;x&quot;:0,&quot;y&quot;:2222}" />
+            </js_state>
           </second_editor>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/touch-event/test-touch-event.html">
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/basic-sort-algorithm/basic-sort-algorithm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="2958">
+          <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/module-programing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/inherit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-159">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/sticky-footer/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/sticky-footer/4.flex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/sticky-footer/2.pseudo-ele-100%-height.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/do-you-really-know-js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="44" column="49" lean-forward="false" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/event-delegation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="45" column="49" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="49" />
+        <state relative-caret-position="-374">
+          <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/touch-event/mdn-touch-canvas.html">
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/basic-sort-algorithm/basic-sort-algorithm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="72" column="25" lean-forward="true" selection-start-line="72" selection-start-column="25" selection-end-line="73" selection-end-column="56" />
+        <state relative-caret-position="34">
+          <caret line="205" column="5" lean-forward="false" selection-start-line="205" selection-start-column="5" selection-end-line="205" selection-end-column="5" />
           <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#184#579#0" expanded="false" />
+            <element signature="e#605#1044#0" expanded="false" />
+            <element signature="e#1072#1467#0" expanded="false" />
+            <element signature="e#1496#2021#0" expanded="false" />
+            <element signature="e#2052#2528#0" expanded="false" />
+            <element signature="e#2557#3004#0" expanded="false" />
+            <element signature="e#3036#3395#0" expanded="false" />
+            <element signature="e#3420#4029#0" expanded="false" />
+            <element signature="e#4056#4627#0" expanded="false" />
+            <element signature="e#4652#4992#0" expanded="false" />
+            <element signature="e#5021#5489#0" expanded="false" />
+            <element signature="e#5991#6339#0" expanded="false" />
+            <element signature="e#6494#6867#0" expanded="false" />
+            <element signature="e#6909#7116#0" expanded="false" />
+            <element signature="e#7202#7342#0" expanded="false" />
+            <element signature="e#7373#7775#0" expanded="false" />
+            <element signature="e#7804#7997#0" expanded="false" />
+            <element signature="e#8029#8449#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/touch-event/slide-to-delete-demo.html">
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/sticky-footer/1.100%-height.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="827">
+          <caret line="31" column="105" lean-forward="false" selection-start-line="31" selection-start-column="105" selection-end-line="31" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/search-of-front-end/emulate-new-operator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/audio-player/js/main-control.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1629">
+          <caret line="242" column="1" lean-forward="true" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作品/audio-player/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demos/job/juniortour-resume.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1337">
+          <caret line="239" column="62" lean-forward="false" selection-start-line="239" selection-start-column="62" selection-end-line="239" selection-end-column="62" />
+          <folding>
+            <element signature="e#258#342#0" expanded="false" />
+            <element signature="e#354#394#0" expanded="false" />
+            <element signature="e#1593#1678#0" expanded="false" />
+            <element signature="e#1700#1785#0" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1500209944149" expanded="false" signature="6167:6216" ph="..." />
+            <marker date="1500209944149" expanded="false" signature="7471:8484" ph="..." />
+            <marker date="1500209944149" expanded="false" signature="8588:8637" ph="..." />
+            <marker date="1500209944149" expanded="false" signature="8691:8793" ph="..." />
+            <marker date="1500209944149" expanded="false" signature="9857:10025" ph="..." />
+            <marker date="1500209944149" expanded="false" signature="10045:10239" ph="..." />
+            <marker date="1500209944149" expanded="false" signature="10259:10466" ph="..." />
+            <marker date="1500209944149" expanded="false" signature="10486:10705" ph="..." />
+            <marker date="1500209944149" expanded="false" signature="10725:10951" ph="..." />
+            <marker date="1500209944149" expanded="false" signature="11119:11324" ph="..." />
+            <marker date="1500209944149" expanded="false" signature="11344:11442" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学过的课程/百度前端技术学院2017春季/Active-Data-Binding/active-data-binding-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

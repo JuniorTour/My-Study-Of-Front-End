@@ -1,4 +1,7 @@
 /*Default:*/
+html,body {
+    height: 100%;
+}
 body {
     font: 14px/1 "microsoft yahei",Arial,Helvetica,sans-serif;
     background-color: #FAFAFA;
@@ -33,46 +36,49 @@ a:hover {
 
 /*Main:*/
 .container {
-    width:960px;
-    height:320px;
-    border: 1px solid #00ff80;
-    padding: 0 50px;
-    margin: 50px auto;
+    max-width: 375px;
+    width:92%;
+    height:100%;
+    /*outline: 1px solid #00ff80;*/
+    padding: 0 4%;
+    margin: 0 auto;
+    /*overflow: hidden;*/
 }
 .control-panel {
-    width:65%;
-    height:82%;
-    float: left;
-    padding: 3% 0;
-    /*outline: 1px solid blue;*/
+    width:100%;
+}
+.song-info {
+    text-align: center;
+    margin: 10px 0;
 }
 .song-title {
-    font-size: 28px;
-    margin: 20px 0;
-    height:28px;
+    font-size: 24px;
+    line-height:28px;
 }
 .singer {
-    font-size: 18px;
-    margin-bottom: 30px;
-    height: 18px;
+    font-size: 14px;
+    line-height: 18px;
 }
 .sub-control-bar {
     color: #929292;
     user-select: none;
 }
-.sub-control-wrapper .icon {
-    margin-left: 20px;
+.sub-control-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.time-volume-wrapper {
-    float: left;
+.time-volume-wrapper,.sub-function-wrapper {
+    margin-bottom: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
 }
 .time-volume-wrapper i {
     font-style: normal;
 }
 .volume-btn {
     /*handle with the mouseover event.*/
-    display: inline-block;
-    width:165px;
     position: relative;
 }
 .volume-bar-wrapper {
@@ -81,7 +87,7 @@ a:hover {
     opacity: 0;
     position: absolute;
     top: 5px;
-    left: 45px;
+    left: 24px;
     width: 0;
     height:5px;
     background-color: #929292;
@@ -90,7 +96,7 @@ a:hover {
 .showed-volume-bar {
     display: block;
     opacity: 1;
-    width:100px;
+    width:60px;
 }
 .volume-bar {
     width:0;
@@ -100,9 +106,6 @@ a:hover {
 }
 .showed-volume-bar .volume-bar {
     width:80px;
-}
-.sub-function-wrapper {
-    float: right;
 }
 .volume-btn:hover .icon-yinliang {
     color: #000;
@@ -127,12 +130,17 @@ a:hover {
 }
 
 .main-control-wrapper {
-    margin-top: 60px;
+    margin-top: 8%;
     user-select: none;
+    display: flex;
+    justify-content: space-between;
 }
 .main-control-wrapper .icon {
     font-size: 42px;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
+}
+.icon-aixin {
+    width:42px;
 }
 .icon-aixin-loved {
     color: red;
@@ -143,24 +151,28 @@ a:hover {
 .like-discard-wrapper span:first-child .icon {
     margin-left:0;
 }
-.like-discard-wrapper {
-    float: left;
+.like-discard-wrapper, .play-control-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
-.play-control-wrapper {
-    float: right;
+.like-discard-wrapper i:nth-child(2), .play-control-wrapper  i:nth-child(2) {
+    margin-left: 20px;
 }
 
 
 .album-cover-wrapper{
-    width:35%;
-    height:100%;
-    float: right;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding: 2.5% 0;
+    overflow: hidden;
 }
-.album-cover img {
-    width:280px;
-    height:280px;
-    /*background-color: black;*/
-    margin: 20px 40px;
+.album-cover {
+    background: url("../img/album-cover/cover-1.jpg") no-repeat;
+    background-size: cover;
+    width:198px;
+    height:198px;
+    border: 1px solid #eee;
     border-radius: 50%;
     animation: roundRotation 10s linear infinite;
     animation-play-state: paused;
@@ -177,4 +189,17 @@ a:hover {
     0% {transform: rotate(0deg);}
     50% {transform: rotate(180deg);}
     100% {transform: rotate(360deg);}
+}
+
+@media screen and (min-width: 360px) {
+    .album-cover {
+        width:248px;
+        height:248px;
+    }
+}
+@media screen and (min-width: 414px) {
+    .album-cover {
+        width:298px;
+        height:298px;
+    }
 }

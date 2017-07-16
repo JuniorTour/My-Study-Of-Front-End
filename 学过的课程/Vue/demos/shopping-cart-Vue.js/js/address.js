@@ -22,6 +22,11 @@ new Vue ({
                     this.addressList=data.result;
                 }
             })
+            this.$http.interceptors.push(function (request, next) {
+                console.log('loading....')
+                this.isLoading = true
+                next()
+            })
         },
         loadMoreAddress: function () {
             this.listLength=this.addressList.length;
