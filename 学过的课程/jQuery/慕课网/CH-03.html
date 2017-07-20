@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ch-03. attr and style</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+<p class="demo"></p>
+<button id="removeAttr">removeAttr</button>
+
+
+<div class="div">
+    <a>:first-child</a>
+    <a>第二个元素</a>
+    <a>:last-child</a>
+</div>
+
+<script>
+    /*attr()有4种参数写法：
+     attr(传入属性名)：获取属性的值
+     attr(属性名, 属性值)：设置属性的值
+     attr(属性名, 函数)：根据函数的返回值设置属性
+     attr(attributesObj)：给指定元素设置多个属性值，即：{属性名一: “属性值一” , 属性名二: “属性值二” , … … }*/
+
+    $('p.demo').attr('value',function(i, val){
+        return '通过function设置' + val
+    })
+//    $('p.demo').removeAttr('value')
+    $('#removeAttr').click(()=>{
+        $('p.demo').removeAttr('value')
+    })
+
+    $('.div').text('hi')    //.text也会完全替换掉元素内的内容，包括html标记。
+
+    $('.div').data('hi','hello')    //两个值是写入属性
+    console.log("$('.div').data('hi') = "+$('.div').data('hi')) //一个值是读取属性
+    //并且，这个data并不同于html5的data-attr。
+</script>
+</body>
+</html>

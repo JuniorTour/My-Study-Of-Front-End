@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello world</title>
+    <script src="jquery.js"></script>
+    <style>
+        .parent > .children{}
+
+        .brother + .younger-brother{}
+
+        .child ~ .sibling{}
+    </style>
+</head>
+<body>
+<h1 id="headline"></h1>
+<p id="paragraph"></p>
+
+<input type="text" class="input-item not-select-input">
+<input type="text" class="input-item">
+<input type="text" class="input-item">
+
+<script>
+    $(document).ready(()=>{
+        let $h1 = $('#headline')
+        $h1.html('Hello world')
+        console.log($h1)
+
+        /*## 1. 从jQuery对象中获取dom*/
+        //jq object to dom object:
+//        let domH1=$h1.get(0)
+        let domH1=$h1[0]
+//        let domH1=$h1.first()     //只有一个该类型元素就不能用.first()了。
+        console.log(domH1)
+
+        $('.input-item').first().val('I am first')
+
+        //dom对象转换为jQuery对象
+        let para = document.querySelector('#paragraph')
+        let $para = $(para)
+        $para.html('I am a paragraph.').css('transform','rotate(-60deg)')
+
+        /*## 2. advanced selector*/
+        let $oddInput = $('.input-item:odd')
+        $oddInput.val('second content')
+        $('.input-item:not(.not-select-input)').css('color','blue')
+        /*Elements can be considered hidden for several reasons:
+
+         They have a CSS display value of none.
+         They are form elements with type="hidden".
+         Their width and height are explicitly set to 0.
+         An ancestor element is hidden, so the element is not shown on the page.
+
+         Elements with visibility: hidden or opacity: 0 are considered to be visible, since they still consume space in the layout.
+         During animations that hide an element, the element is considered to be visible until the end of the animation.*/
+        $(':hidden').html('hidden')
+
+        $('body input:nth-child(5)').val(':nth-child(5)')
+
+        //注意！是contains，带个sssssssssssssss结尾。
+        $('#menu_female a:contains("更多")').css('color','#C71585');
+
+
+        //索引小于4：
+        $('#menu_con .tag a:lt(4)').css('color','red')
+
+        //compare two ways of set css:
+        domH1.style.color = '#f00'
+        $h1.css('text-decoration','underline')
+    })
+</script>
+</body>
+</html>

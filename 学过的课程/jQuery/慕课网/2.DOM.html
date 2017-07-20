@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.DOM</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+<button id="addANode">Add a node</button>
+
+<br>
+<button id="addBeforeAnchor">add Before Anchor</button>
+<div id="anchor">An anchor.</div>
+<button id="addAfterAnchor">add After Anchor</button>
+
+<br>
+<div id="prepend">
+    <h2 class="prependTo">prependInto #prepend</h2>
+    <h3>prepend</h3>
+    <button id="empty">Empty me!</button>
+    <button id="removePrependTo">removePrependTo</button>
+</div>
+
+<br>
+<h3 id="remove-target">remove target</h3>
+<button id="toRemove">右右右右右右右右键点击 toRemove</button>
+
+<br>
+<h2 id="insert">Insert</h2>
+
+<br>
+<h3 id="detach-target">detach target</h3>
+<button id="detach">detach</button>
+
+<script>
+    //创建节点：
+    $('#addANode').on('click',()=>{
+//        $('<h1 class="generate-from-jq">Headline</h1>').appendTo('body')
+        $('body').append('<h1 class="generate-from-jq">append Headline to body</h1>')
+    })
+
+    $('#addBeforeAnchor').click(()=>{
+        $('#anchor').before('<h1 class="addBeforeAnchor">addBeforeAnchor</h1>')
+    })
+    $('#addAfterAnchor').click(()=>{
+        $('#anchor').after('<h1 class="addAfterAnchor">addAfterAnchor</h1>')
+    })
+
+//    $('<h2 class="prependTo">prependInto #prepend</h2>').prependTo('#prepend')
+    $('#prepend').prepend('<h2 class="prepend">prepended Me</h2>')
+    $('#empty').click(function () {
+        console.log('$this = ',$(this))
+        $('#prepend').empty()
+    })
+    $('#removePrependTo').mouseenter(function(){
+//        let removeTarget = $('.prependTo')
+//        $('#prepend').remove($('.prependTo'))
+        $('.prependTo').css('color','red')
+        /*.remove() 无参数时，移除的是调用的jq对象。
+        * 有参数时，http://jquery.cuishifeng.cn/remove.html中说移除的是匹配到的元素，
+        * 但我测试后发现并不会啊？？？*/
+    })
+    $('#toRemove').contextmenu(function (e) {
+        $('body').remove('#remove-target')
+        e.preventDefault()
+    })
+
+    $('<h2>insertBefore</h2>').insertBefore('#insert')
+    $('<h2>insertAfter</h2>').insertAfter('#insert')
+
+    let tempSavedH3
+    $('#detach').dblclick(()=>{
+        tempSavedH3 ===undefined?
+            tempSavedH3  = $('#detach-target').detach():
+            $('#detach').before(tempSavedH3)
+    })
+</script>
+</body>
+</html>
