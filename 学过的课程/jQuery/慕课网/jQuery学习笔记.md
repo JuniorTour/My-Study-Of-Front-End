@@ -17,6 +17,6 @@ $('p').click(function(){
     * 有参数时，http://jquery.cuishifeng.cn/remove.html中说移除的是匹配到的元素，
     * 但我测试后发现并不会？？？
     * 并且在stackoverfolw和GitHub上搜索到的一些代码也都是不传递参数给.remove()的，
-    * 直接用来移除点用的jq对象。
+    * 直接用来移除引用的jq对象。
     * http://api.jquery.com/remove/，也说支持传入参数，我在jsbin上测试反倒是也可以传入参数。*/
 ```
